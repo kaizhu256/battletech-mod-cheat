@@ -1,0 +1,219 @@
+{
+    "difficultyList": [
+        {
+            "DefaultIndex": 0,
+            "Enabled": true,
+            "ID": "cheat_contractreputationlosspercent_25",
+            "Name": "cheat_contractreputationlosspercent_25",
+            "Options": [
+                {
+                    "DifficultyConstants": [
+                        {
+                            "ConstantName": "TargetRepGoodFaithMod",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "0"
+                        },
+                        {
+                            "ConstantName": "TargetRepSuccessMod",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "-0.25"
+                        },
+                        {
+                            "ConstantName": "TargetRepGoodFaithMod",
+                            "ConstantType": "Story",
+                            "ConstantValue": "0"
+                        },
+                        {
+                            "ConstantName": "TargetRepSuccessMod",
+                            "ConstantType": "Story",
+                            "ConstantValue": "-0.25"
+                        }
+                    ],
+                    "ID": "cheat_contractreputationlosspercent_25_on",
+                    "Name": "On",
+                    "TelemetryEventDesc": "1"
+                }
+            ],
+            "StartOnly": false,
+            "TelemetryEventName": "cheat_contractreputationlosspercent_25",
+            "Toggle": false,
+            "Tooltip": "lose -25% (instead of -80%) reputation from contract-target",
+            "UIOrder": 1000,
+            "Visible": false
+        },
+        {
+            "DefaultIndex": 0,
+            "Enabled": true,
+            "ID": "cheat_contractlockbyreputation_off",
+            "Name": "cheat_contractlockbyreputation_off",
+            "Options": [
+                {
+                    "DifficultyConstants": [
+                        {
+                            "ConstantName": "DislikedMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "FriendlyMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "HatedMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "HonoredMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "IndifferentMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "LikedMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "LoathedMaxContractDifficulty",
+                            "ConstantType": "CareerMode",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "DislikedMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "FriendlyMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "HatedMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "HonoredMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "IndifferentMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "LikedMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        },
+                        {
+                            "ConstantName": "LoathedMaxContractDifficulty",
+                            "ConstantType": "Story",
+                            "ConstantValue": "10"
+                        }
+                    ],
+                    "ID": "cheat_contractlockbyreputation_off_on",
+                    "Name": "On",
+                    "TelemetryEventDesc": "1"
+                }
+            ],
+            "StartOnly": false,
+            "TelemetryEventName": "cheat_contractlockbyreputation_off",
+            "Toggle": false,
+            "Tooltip": "unlock all contract-difficulties",
+            "UIOrder": 1000,
+            "Visible": false
+        },
+        {
+            "DefaultIndex": 0,
+            "Enabled": true,
+            "ID": "cheat_pilotskillcost_low",
+            "Name": "cheat_pilotskillcost_low",
+            "Options": [
+                {
+                    "DifficultyConstants": [
+                        {
+                            "ConstantName": "PilotLevelCostExponent",
+                            "ConstantType": "Pilot",
+                            "ConstantValue": "1.1"
+                        }
+                    ],
+                    "ID": "cheat_pilotskillcost_low_on",
+                    "Name": "On",
+                    "TelemetryEventDesc": "1"
+                }
+            ],
+            "StartOnly": false,
+            "TelemetryEventName": "cheat_pilotskillcost_low",
+            "Toggle": false,
+            "Tooltip": "cheap pilot-skills",
+            "UIOrder": 1000,
+            "Visible": false
+        },
+        {
+            "DefaultIndex": 0,
+            "Enabled": true,
+            "ID": "cheat_contractsalvage_unlimited",
+            "Name": "cheat_contractsalvage_unlimited",
+            "Options": [
+                {
+                    "DifficultyConstants": [
+                        {
+                            "ConstantName": "ContractFloorSalvageBonus",
+                            "ConstantType": "Finances",
+                            "ConstantValue": "300"
+                        },
+                        {
+                            "ConstantName": "PrioritySalvageModifier",
+                            "ConstantType": "Salvage",
+                            "ConstantValue": "0"
+                        }
+                    ],
+                    "ID": "cheat_contractsalvage_unlimited_on",
+                    "Name": "On",
+                    "TelemetryEventDesc": "1"
+                }
+            ],
+            "StartOnly": false,
+            "TelemetryEventName": "cheat_contractsalvage_unlimited",
+            "Toggle": false,
+            "Tooltip": "",
+            "UIOrder": 1000,
+            "Visible": false
+        },
+        {
+            "DefaultIndex": 0,
+            "Enabled": true,
+            "ID": "cheat_shopsellprice_high",
+            "Name": "cheat_shopsellprice_high",
+            "Options": [
+                {
+                    "DifficultyConstants": [
+                        {
+                            "ConstantName": "ShopSellModifier",
+                            "ConstantType": "Finances",
+                            "ConstantValue": "0.5"
+                        }
+                    ],
+                    "ID": "cheat_shopsellprice_high_on",
+                    "Name": "On",
+                    "TelemetryEventDesc": "1"
+                }
+            ],
+            "StartOnly": false,
+            "TelemetryEventName": "cheat_shopsellprice_high",
+            "Toggle": false,
+            "Tooltip": "",
+            "UIOrder": 1000,
+            "Visible": false
+        }
+    ]
+}
