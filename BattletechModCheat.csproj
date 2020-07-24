@@ -7,8 +7,8 @@
     <ProjectGuid>{0426B3A3-D426-4F52-A46D-15815A127467}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyMod</RootNamespace>
-    <AssemblyName>MyMod</AssemblyName>
+    <RootNamespace>BattletechModCheat</RootNamespace>
+    <AssemblyName>BattletechModCheat</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -35,36 +35,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\0Harmony.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="InControl, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\InControl.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\InControl.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\Managed\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\BATTLETECH\BattleTech_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyMod.cs" />
+    <Compile Include="BattletechModCheat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="mod.json" />
@@ -75,9 +75,16 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
-      copy /y "$(TargetPath)" "$(ProjectDir)MyMod.dll"
+      copy /y "$(TargetPath)" "$(ProjectDir)"
+      if exist "\Games\BATTLETECH\Mods\BattletechModCheat\" (
+        copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\BattletechModCheat\"
+        copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\BattletechModCheat\"
+        copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\BattletechModCheat\"
+      )
+      <!--
       rd /s /q "$(ProjectDir)..\\.modtek\\Cache\\" "$(ProjectDir)..\\.modtek\\Database\\"
       "$(ProjectDir)..\\..\\BattleTech.exe"
+      -->
     </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -14,7 +14,7 @@ using System.Reflection.Emit;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace comGithubKaizhu256Battletech2018MyMod
+namespace BattletechModCheat
 {
     public class
     Dict2 : SortedList<string, string>
@@ -167,7 +167,7 @@ namespace comGithubKaizhu256Battletech2018MyMod
             Local.assetDifficultySettingsJson = File.ReadAllText(
                 Path.Combine(cwd, "DifficultySettings.json")
             );
-            var harmony = HarmonyInstance.Create("com.github.kaizhu256.MyMod");
+            var harmony = HarmonyInstance.Create("com.github.kaizhu256.BattletechModCheat");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
@@ -254,6 +254,8 @@ namespace comGithubKaizhu256Battletech2018MyMod
             return true;
         }
     }
+
+    // patch - cheat_armorinstall_free
 
     // patch - cheat_ammoboxcapacity_unlimited
     /*
