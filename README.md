@@ -1,10 +1,7 @@
 # BattletechModCheat
 
-# changelog 2020.7.24
-- merge cheats cheat_heatsinkweight_low, cheat_jumpjetweight_low to new cheat_mechweightlimit_off
-- rename cheats
-- remove cheat_combatturn_alwayson
-- optimize cheats
+#### changelog 2020.7.26
+- add cheat_weaponsize_1
 - none
 
 #### todo
@@ -77,5 +74,8 @@
 
     // cheat - mech can sprint-and-shoot
     "cheat_sprintshoot_on": "",
+
+    // cheat - weapons take up only 1 slot
+    "cheat_weaponsize_1": "",
 }
 ```

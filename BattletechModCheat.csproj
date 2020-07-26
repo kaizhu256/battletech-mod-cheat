@@ -81,8 +81,8 @@
         copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\BattletechModCheat\"
         copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\BattletechModCheat\"
         rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\"
-        "\Games\BATTLETECH\BattleTech.exe"
         <!--
+        "\Games\BATTLETECH\BattleTech.exe"
         -->
       )
     </PostBuildEvent>

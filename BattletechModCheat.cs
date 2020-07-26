@@ -254,6 +254,22 @@ namespace BattletechModCheat
                 );
                 values["ActivationCooldown"] = 1;
             }
+            // cheat_weaponsize_1
+            if (
+                values.ContainsKey("InventorySize")
+                && values.ContainsKey("WeaponEffectID")
+            )
+            {
+                values["InventorySize"] = 1;
+                Local.debugInline(
+                    "cheat_weaponsize_1",
+                    values["WeaponEffectID"]
+                );
+                Local.debugInline(
+                    "cheat_weaponsize_1",
+                    System.Environment.StackTrace
+                );
+            }
             */
             return true;
         }
@@ -920,6 +936,28 @@ namespace BattletechModCheat
             __result = true;
         }
 
+    }
+
+    // patch - cheat_weaponsize_1
+    [HarmonyPatch(typeof(WeaponDef))]
+    [HarmonyPatch("FromJSON")]
+    public class
+    Patch_WeaponDef_FromJSON
+    {
+        public static void
+        Postfix(WeaponDef __instance)
+        {
+            if (Local.state.getItem("cheat_weaponsize_1") == "")
+            {
+                return;
+            }
+            if (__instance.InventorySize > 1)
+            {
+                Traverse.Create(__instance).Property(
+                    "InventorySize"
+                ).SetValue(1);
+            }
+        }
     }
 
     // patch - difficulty_settings
