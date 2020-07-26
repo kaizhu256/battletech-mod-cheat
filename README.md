@@ -1,8 +1,10 @@
 # BattletechModCheat
 
-# changelog 2020.7.18
-- add cheat_armorinstall_free
-- rename project from MyMod to BattletechModCheat
+# changelog 2020.7.24
+- merge cheats cheat_heatsinkweight_low, cheat_jumpjetweight_low to new cheat_mechweightlimit_off
+- rename cheats
+- remove cheat_combatturn_alwayson
+- optimize cheats
 - none
 
 #### todo
@@ -17,50 +19,48 @@
     by replacing each cheat's flag from empty-string "" to "1":
 ```javascript
 {
-    // cheat - ammobox has unlimited ammo-capacity
-    "cheat_ammoboxcapacity_unlimited": "",
+    // cheat - ammoboxes have infinite ammo
+    // (roguetech-compatible)
+    "cheat_ammoboxcapacity_infinite": "1",
 
-    // cheat - armor-install is free in mechbay
-    "cheat_armorinstall_free": "",
+    // cheat - add/remove armor for free
+    // (roguetech-compatible)
+    "cheat_armorinstall_free": "1",
 
-    // cheat - combat-turns always-on during engagement
-    "cheat_combatturn_alwayson": "",
+    // cheat - no longer banned from contract due to poor reputation
+    // (roguetech-compatible)
+    "cheat_contractban_off": "1",
 
-    // cheat - contracts locked by lack-of-reputation are now available
-    "cheat_contractlockbyreputation_off": "",
+    // cheat - lose -25% (instead of -80%) reputation from contract's opposing faction
+    // (roguetech-compatible)
+    "cheat_contractreputationloss_low": "1",
 
-    // cheat - contract-reputation-loss is -25% (instead of -80%) against target
-    "cheat_contractreputationlosspercent_25": "",
+    // cheat - 300 salvage in contracts
+    // (roguetech-compatible)
+    "cheat_contractsalvage_300": "1",
 
-    // cheat - contract-salvage is unlimited
-    "cheat_contractsalvage_unlimited": "",
-
-    // cheat - contracts sorted by difficulty
+    // cheat - sort contracts by difficulty
     "cheat_contractsort_bydifficulty": "",
-
-    // cheat - heatsinks weigh 0.25 tons
-    "cheat_heatsinkweight_low": "",
 
     // cheat - skip intro
     "cheat_introskip_on": "",
 
-    // cheat - jumpjets weigh 0.25 tons
-    "cheat_jumpjetweight_low": "",
-
     // cheat - mechbay2 and mechbay3 can repair 2nd and 3rd mech simultaneously
     "cheat_mechbayrepair_multi": "",
 
-    // cheat - mechs have unlimited jumpjet slots
-    "cheat_mechjumpjet_unlimited": "",
+    // cheat - can add weapon/equipment/armor to mech over its weight-limit
+    // (roguetech-compatible)
+    "cheat_mechweightlimit_off": "1",
 
-    // cheat - pilot-ability-cooldowns are disabled
-    "cheat_pilotabilitycooldown_off": "",
+    // cheat - pilot-abilities have have 0 cooldown
+    "cheat_pilotabilitycooldown_0": "",
 
-    // cheat - pilot-skills can be reset by shift-clicking skills-tab in barracks
+    // cheat - reset pilot-skills by shift-clicking skills-tab in barracks
     "cheat_pilotskill_reset": "",
 
     // cheat - pilot-skills cost less
-    "cheat_pilotskillcost_low": "",
+    // (roguetech-compatible)
+    "cheat_pilotskillcost_low": "1",
 
     // cheat - unused pilot-xp is no longer nagged by darius if pilot-skills are maxed
     "cheat_pilotxpnag_off": "",
@@ -69,7 +69,8 @@
     "cheat_sensorlockfire_on": "",
 
     // cheat - sell items to shop for 50% (instead of 10%)
-    "cheat_shopsellprice_high": "",
+    // (roguetech-compatible)
+    "cheat_shopsellprice_high": "1",
 
     // cheat - mech can sprint-and-melee
     "cheat_sprintmelee_on": "",
@@ -78,16 +79,3 @@
     "cheat_sprintshoot_on": "",
 }
 ```
-
-#### build instruction (steam and gog window versions)
-1.  install BattleTech and ModTek
-2.  git clone https://github.com/kaizhu256/battletech-mod-cheat
-3.  to link references, copy installed BattleTech game
-    directory `BATTLETECH\BattleTech_Data\Managed\`
-    to parent-directory of `BattletechModCheat\`
-    e.g.:
-        `C:\development\BattletechModCheat\`
-        `C:\development\Managed\`
-4.  build this project in Visual Studio
-    output-file:
-        `C:\development\BattletechModCheat\bin\Debug\BattletechModCheat.dll`

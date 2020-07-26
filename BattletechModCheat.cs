@@ -4,6 +4,7 @@ using BattleTech.UI;
 using Harmony;
 using HBS;
 using HBS.Util;
+using Localize;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -67,7 +68,7 @@ namespace BattletechModCheat
         debugInline(string name, object obj)
         {
             /*
-             * this function will inline-debug <obj>
+             * this function will inline-debug <obj> to file ./debug.log
              */
             return debugLog(name, obj);
         }
@@ -76,9 +77,10 @@ namespace BattletechModCheat
         debugLog(string name, object obj)
         {
             /*
-             * this function will inline-debug <obj>
+             * this function will inline-debug <obj> to file ./debug.log
+             * example usage
+             * Local.debugLog("trace", System.Environment.StackTrace);
              */
-            // Local.debugLog(System.Environment.StackTrace);
             FileLog.Log("\ndebugLog " + name + " " + (
                 obj is string tt
                 ? (string)obj
@@ -195,9 +197,10 @@ namespace BattletechModCheat
         public static bool
         Prefix(Dictionary<string, object> values)
         {
-            // cheat_ammoboxcapacity_unlimited
+            /*
+            // cheat_ammoboxcapacity_infinite
             if (
-                Local.state.getItem("cheat_ammoboxcapacity_unlimited") != ""
+                Local.state.getItem("cheat_ammoboxcapacity_infinite") != ""
                 && (
                     values.ContainsKey("StartingAmmoCapacity")
                     || (
@@ -207,11 +210,19 @@ namespace BattletechModCheat
                 )
             )
             {
+                Local.debugInline(
+                    "cheat_ammoboxcapacity_infinite1",
+                    System.Environment.StackTrace
+                );
                 values["Capacity"] = 2000;
                 try
                 {
                     if (values["StartingAmmoCapacity"].ToString() != "0")
                     {
+                        Local.debugInline(
+                            "cheat_ammoboxcapacity_infinite2",
+                            null
+                        );
                         values["StartingAmmoCapacity"] = 2000;
                     }
                 }
@@ -225,40 +236,30 @@ namespace BattletechModCheat
                 && values.ContainsKey("DissipationCapacity")
             )
             {
+                Local.debugInline(
+                    "cheat_heatsinkweight_low",
+                    System.Environment.StackTrace
+                );
                 values["Tonnage"] = 0.25;
             }
-            // cheat_jumpjetweight_low
+            // cheat_pilotabilitycooldown_0
             if (
-                Local.state.getItem("cheat_jumpjetweight_low") != ""
-                && values.ContainsKey("JumpCapacity")
-            )
-            {
-                values["Tonnage"] = 0.25;
-            }
-            // cheat_mechjumpjet_unlimited
-            if (
-                Local.state.getItem("cheat_mechjumpjet_unlimited") != ""
-                && values.ContainsKey("MaxJumpjets")
-            )
-            {
-                values["MaxJumpjets"] = 20;
-            }
-            // cheat_pilotabilitycooldown_off
-            if (
-                Local.state.getItem("cheat_pilotabilitycooldown_off") != ""
+                Local.state.getItem("cheat_pilotabilitycooldown_0") != ""
                 && values.ContainsKey("ActivationCooldown")
             )
             {
+                Local.debugInline(
+                    "cheat_pilotabilitycooldown_0",
+                    System.Environment.StackTrace
+                );
                 values["ActivationCooldown"] = 1;
             }
+            */
             return true;
         }
     }
 
-    // patch - cheat_armorinstall_free
-
-    // patch - cheat_ammoboxcapacity_unlimited
-    /*
+    // patch - cheat_ammoboxcapacity_infinite
     [HarmonyPatch(typeof(AmmunitionBox))]
     [HarmonyPatch("InitStats")]
     public class
@@ -267,14 +268,14 @@ namespace BattletechModCheat
         public static void
         Postfix(StatCollection ___statCollection)
         {
-            if (Local.state.getItem("cheat_ammoboxcapacity_unlimited") == "")
+            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") == "")
             {
                 return;
             }
             ___statCollection.RemoveStatistic("AmmoCapacity");
-            ___statCollection.AddStatistic<int>("AmmoCapacity", 1000);
+            ___statCollection.AddStatistic<int>("AmmoCapacity", 5000);
             ___statCollection.RemoveStatistic("CurrentAmmo");
-            ___statCollection.AddStatistic<int>("CurrentAmmo", 1000);
+            ___statCollection.AddStatistic<int>("CurrentAmmo", 5000);
         }
     }
 
@@ -286,7 +287,7 @@ namespace BattletechModCheat
         public static void
         Postfix(StatCollection ___statCollection)
         {
-            if (Local.state.getItem("cheat_ammoboxcapacity_unlimited") == "")
+            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") == "")
             {
                 return;
             }
@@ -294,33 +295,14 @@ namespace BattletechModCheat
             ___statCollection.AddStatistic<int>("InternalAmmo", 1000);
         }
     }
-    */
 
-    // patch - cheat_combatturn_alwayson
-    [HarmonyPatch(typeof(EncounterLayerData))]
-    [HarmonyPatch("ContractInitialize")]
-    public class
-    Patch_EncounterLayerData_ContractInitialize
-    {
-        public static bool
-        Prefix(ref TurnDirectorBehaviorType ___turnDirectorBehavior)
-        {
-            if (Local.state.getItem("cheat_combatturn_alwayson") == "")
-            {
-                return true;
-            }
-            ___turnDirectorBehavior = (
-                TurnDirectorBehaviorType.AlwaysInterleaved
-            );
-            return true;
-        }
-    }
+    // patch - cheat_armorinstall_free
 
-    // patch - cheat_contractlockbyreputation_off
+    // patch - cheat_contractban_off
 
     // patch - cheat_contractreputationloss_cheap
 
-    // patch - cheat_contractsalvage_unlimited
+    // patch - cheat_contractsalvage_300
 
     // patch - cheat_contractsort_bydifficulty
     [HarmonyPatch(typeof(SGContractsWidget))]
@@ -556,10 +538,26 @@ namespace BattletechModCheat
         }
     }
 
-    // patch - cheat_mechjumpjet_unlimited
+    // patch - cheat_mechweightlimit_off
+    [HarmonyPatch(typeof(MechValidationRules))]
+    [HarmonyPatch("ValidateMechTonnage")]
+    public class
+    Patch_MechValidationRules_ValidateMechTonnage
+    {
+        public static void
+        Postfix(ref Dictionary<MechValidationType, List<Text>> errorMessages)
+        {
+            if (
+                Local.state.getItem("cheat_mechweightlimit_off") == ""
+            )
+            {
+                return;
+            }
+            errorMessages[MechValidationType.Overweight].Clear();
+        }
+    }
 
-    // patch - cheat_pilotabilitycooldown_off
-    /*
+    // patch - cheat_pilotabilitycooldown_0
     [HarmonyPatch(typeof(Ability))]
     [HarmonyPatch("ActivateCooldown")]
     public class
@@ -568,14 +566,13 @@ namespace BattletechModCheat
         public static void
         Postfix(Ability __instance)
         {
-            if (Local.state.getItem("cheat_pilotabilitycooldown_off") == "")
+            if (Local.state.getItem("cheat_pilotabilitycooldown_0") == "")
             {
                 return;
             }
             Traverse.Create(__instance).Property("CurrentCooldown").SetValue(0);
         }
     }
-    */
 
     // patch - cheat_pilotskill_reset
     [HarmonyPatch(typeof(SGBarracksMWDetailPanel))]
