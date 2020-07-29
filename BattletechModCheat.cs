@@ -52,8 +52,8 @@ namespace BattletechModCheat
     public class
     Local
     {
-        public static string
-        assetDifficultySettingsJson;
+        public static int
+        countJsonParse = 0;
 
         public static JsonSerializerSettings
         jsonSerializerSettings;
@@ -166,9 +166,6 @@ namespace BattletechModCheat
                 Local.jsonStringify(Local.state)
             );
             Local.stateChangedAfter();
-            Local.assetDifficultySettingsJson = File.ReadAllText(
-                Path.Combine(cwd, "DifficultySettings.json")
-            );
             var harmony = HarmonyInstance.Create("com.github.kaizhu256.BattletechModCheat");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
@@ -188,15 +185,21 @@ namespace BattletechModCheat
     public class
     Patch_JSONSerializationUtility_RehydrateObjectFromDictionary
     {
+        /*
         public static void
         Postfix(Dictionary<string, object> values, object target)
         {
             return;
         }
-
+        */
         public static bool
         Prefix(Dictionary<string, object> values)
         {
+            Local.countJsonParse += 1;
+            if (Local.countJsonParse % 10000 == 0)
+            {
+                Local.debugLog("countJsonParse", Local.countJsonParse);
+            }
             /*
             // cheat_ammoboxcapacity_infinite
             if (
@@ -254,7 +257,7 @@ namespace BattletechModCheat
                 );
                 values["ActivationCooldown"] = 1;
             }
-            // cheat_weaponsize_1
+            // cheat_mechcomponentsize_1
             if (
                 values.ContainsKey("InventorySize")
                 && values.ContainsKey("WeaponEffectID")
@@ -262,11 +265,11 @@ namespace BattletechModCheat
             {
                 values["InventorySize"] = 1;
                 Local.debugInline(
-                    "cheat_weaponsize_1",
+                    "cheat_mechcomponentsize_1",
                     values["WeaponEffectID"]
                 );
                 Local.debugInline(
-                    "cheat_weaponsize_1",
+                    "cheat_mechcomponentsize_1",
                     System.Environment.StackTrace
                 );
             }
@@ -276,39 +279,32 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_ammoboxcapacity_infinite
-    [HarmonyPatch(typeof(AmmunitionBox))]
-    [HarmonyPatch("InitStats")]
+    [HarmonyPatch(typeof(AmmunitionBoxDef))]
+    [HarmonyPatch("FromJSON")]
     public class
-    Patch_AmmunitionBox_InitStats
+    Patch_AmmunitionBoxDef_FromJSON
     {
         public static void
-        Postfix(StatCollection ___statCollection)
+        Postfix(AmmunitionBoxDef __instance)
         {
-            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") == "")
+            if (
+                Local.state.getItem("cheat_ammoboxcapacity_infinite") != ""
+                && __instance.Capacity > 0
+            )
             {
-                return;
+                Traverse.Create(__instance).Property(
+                    "Capacity"
+                ).SetValue(5000);
             }
-            ___statCollection.RemoveStatistic("AmmoCapacity");
-            ___statCollection.AddStatistic<int>("AmmoCapacity", 5000);
-            ___statCollection.RemoveStatistic("CurrentAmmo");
-            ___statCollection.AddStatistic<int>("CurrentAmmo", 5000);
-        }
-    }
-
-    [HarmonyPatch(typeof(Weapon))]
-    [HarmonyPatch("InitStats")]
-    public class
-    Patch_Weapon_InitStats
-    {
-        public static void
-        Postfix(StatCollection ___statCollection)
-        {
-            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") == "")
+            if (
+                Local.state.getItem("cheat_mechcomponentsize_1") != ""
+                && __instance.InventorySize > 1
+            )
             {
-                return;
+                Traverse.Create(__instance).Property(
+                    "InventorySize"
+                ).SetValue(1);
             }
-            ___statCollection.RemoveStatistic("InternalAmmo");
-            ___statCollection.AddStatistic<int>("InternalAmmo", 1000);
         }
     }
 
@@ -327,10 +323,7 @@ namespace BattletechModCheat
     Patch_SGContractsWidget_GetContractComparePriority
     {
         public static bool
-        Prefix(
-            ref int __result,
-            Contract contract
-        )
+        Prefix(ref int __result, Contract contract)
         {
             if (Local.state.getItem("cheat_contractsort_bydifficulty") == "")
             {
@@ -394,7 +387,6 @@ namespace BattletechModCheat
             Traverse.Create(__instance).Field("state").SetValue(3);
         }
     }
-
     [HarmonyPatch(typeof(SplashLauncher))]
     [HarmonyPatch("OnStart")]
     public class
@@ -410,7 +402,6 @@ namespace BattletechModCheat
             return false;
         }
     }
-
     [HarmonyPatch(typeof(SplashLauncher))]
     [HarmonyPatch("OnStep")]
     public class
@@ -426,7 +417,6 @@ namespace BattletechModCheat
             return false;
         }
     }
-
     [HarmonyPatch(typeof(SplashLauncher))]
     [HarmonyPatch("Start")]
     public class
@@ -447,7 +437,6 @@ namespace BattletechModCheat
             return false;
         }
     }
-
     [HarmonyPatch(typeof(SplashLauncher))]
     [HarmonyPatch("Update")]
     public class
@@ -497,7 +486,6 @@ namespace BattletechModCheat
             return true;
         }
     }
-
     [HarmonyPatch(typeof(TaskTimelineWidget))]
     [HarmonyPatch("RefreshEntries")]
     public class
@@ -551,6 +539,87 @@ namespace BattletechModCheat
                 cumulativeDays = elem.UpdateItem(cumulativeDays);
             }
             __instance.SortEntries();
+        }
+    }
+
+    // patch - cheat_mechcomponentsize_1
+    [HarmonyPatch(typeof(HeatSinkDef))]
+    [HarmonyPatch("FromJSON")]
+    public class
+    Patch_HeatSinkDef_FromJSON
+    {
+        public static void
+        Postfix(HeatSinkDef __instance)
+        {
+            if (
+                Local.state.getItem("cheat_mechcomponentsize_1") != ""
+                && __instance.InventorySize > 1
+            )
+            {
+                Traverse.Create(__instance).Property(
+                    "InventorySize"
+                ).SetValue(1);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(JumpJetDef))]
+    [HarmonyPatch("FromJSON")]
+    public class
+    Patch_JumpJetDef_FromJSON
+    {
+        public static void
+        Postfix(JumpJetDef __instance)
+        {
+            if (
+                Local.state.getItem("cheat_mechcomponentsize_1") != ""
+                && __instance.InventorySize > 1
+            )
+            {
+                Traverse.Create(__instance).Property(
+                    "InventorySize"
+                ).SetValue(1);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(MechComponentDef))]
+    [HarmonyPatch("FromJSON")]
+    public class
+    Patch_MechComponentDef_FromJSON
+    {
+        public static void
+        Postfix(MechComponentDef __instance)
+        {
+            if (
+                Local.state.getItem("cheat_mechcomponentsize_1") != ""
+                && __instance.InventorySize > 1
+            )
+            {
+                Traverse.Create(__instance).Property(
+                    "InventorySize"
+                ).SetValue(1);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(WeaponDef))]
+    [HarmonyPatch("FromJSON")]
+    public class
+    Patch_WeaponDef_FromJSON
+    {
+        public static void
+        Postfix(WeaponDef __instance)
+        {
+            if (
+                Local.state.getItem("cheat_mechcomponentsize_1") != ""
+                && __instance.InventorySize > 1
+            )
+            {
+                Traverse.Create(__instance).Property(
+                    "InventorySize"
+                ).SetValue(1);
+            }
         }
     }
 
@@ -712,7 +781,6 @@ namespace BattletechModCheat
             }
         }
     }
-
     [HarmonyPatch(typeof(SelectionStateSensorLock))]
     [HarmonyPatch("CanActorUseThisState")]
     public class
@@ -737,7 +805,6 @@ namespace BattletechModCheat
             }
         }
     }
-
     [HarmonyPatch(typeof(SelectionStateSensorLock))]
     [HarmonyPatch("ConsumesFiring", MethodType.Getter)]
     public class
@@ -753,7 +820,6 @@ namespace BattletechModCheat
             __result = false;
         }
     }
-
     [HarmonyPatch(typeof(SelectionStateSensorLock))]
     [HarmonyPatch("ConsumesMovement", MethodType.Getter)]
     public class
@@ -769,7 +835,6 @@ namespace BattletechModCheat
             __result = false;
         }
     }
-
     [HarmonyPatch(typeof(SelectionStateSensorLock))]
     [HarmonyPatch("CreateFiringOrders")]
     public class
@@ -791,7 +856,6 @@ namespace BattletechModCheat
             }
         }
     }
-
     [HarmonyPatch(typeof(SensorLockSequence))]
     [HarmonyPatch("CompleteOrders")]
     public class
@@ -826,7 +890,6 @@ namespace BattletechModCheat
             return false;
         }
     }
-
     [HarmonyPatch(typeof(SensorLockSequence))]
     [HarmonyPatch("ConsumesFiring", MethodType.Getter)]
     public class
@@ -842,7 +905,6 @@ namespace BattletechModCheat
             __result = false;
         }
     }
-
     [HarmonyPatch(typeof(SensorLockSequence))]
     [HarmonyPatch("ConsumesMovement", MethodType.Getter)]
     public class
@@ -938,28 +1000,6 @@ namespace BattletechModCheat
 
     }
 
-    // patch - cheat_weaponsize_1
-    [HarmonyPatch(typeof(WeaponDef))]
-    [HarmonyPatch("FromJSON")]
-    public class
-    Patch_WeaponDef_FromJSON
-    {
-        public static void
-        Postfix(WeaponDef __instance)
-        {
-            if (Local.state.getItem("cheat_weaponsize_1") == "")
-            {
-                return;
-            }
-            if (__instance.InventorySize > 1)
-            {
-                Traverse.Create(__instance).Property(
-                    "InventorySize"
-                ).SetValue(1);
-            }
-        }
-    }
-
     // patch - difficulty_settings
     [HarmonyPatch(typeof(SimGameDifficultySettingList))]
     [HarmonyPatch("FromJSON")]
@@ -970,18 +1010,257 @@ namespace BattletechModCheat
         Prefix(ref string json)
         {
             var ii = json.LastIndexOf("]");
-            json = (
-                json.Substring(0, ii)
-                + ","
-                + Local.assetDifficultySettingsJson
-                    .Replace("{\n    \"difficultyList\": [", "")
-                    .Replace("\n    ]\n}", "")
-                + json.Substring(ii)
-            );
+            json = json.Substring(0, ii) + @",
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_armorinstall_free"",
+    ""Name"": ""cheat_armorinstall_free"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""ArmorInstallCost"",
+                    ""ConstantType"": ""MechLab"",
+                    ""ConstantValue"": ""0""
+                },
+                {
+                    ""ConstantName"": ""ArmorInstallTechPoints"",
+                    ""ConstantType"": ""MechLab"",
+                    ""ConstantValue"": ""0""
+                }
+            ],
+            ""ID"": ""cheat_armorinstall_free_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_armorinstall_free"",
+    ""Toggle"": false,
+    ""Tooltip"": """",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+},
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_contractreputationloss_low"",
+    ""Name"": ""cheat_contractreputationloss_low"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""TargetRepGoodFaithMod"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""0""
+                },
+                {
+                    ""ConstantName"": ""TargetRepSuccessMod"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""-0.25""
+                },
+                {
+                    ""ConstantName"": ""TargetRepGoodFaithMod"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""0""
+                },
+                {
+                    ""ConstantName"": ""TargetRepSuccessMod"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""-0.25""
+                }
+            ],
+            ""ID"": ""cheat_contractreputationloss_low_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_contractreputationloss_low"",
+    ""Toggle"": false,
+    ""Tooltip"": ""lose -25% (instead of -80%) reputation from contract-target"",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+},
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_contractban_off"",
+    ""Name"": ""cheat_contractban_off"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""DislikedMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""FriendlyMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""HatedMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""HonoredMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""IndifferentMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""LikedMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""LoathedMaxContractDifficulty"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""DislikedMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""FriendlyMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""HatedMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""HonoredMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""IndifferentMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""LikedMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                },
+                {
+                    ""ConstantName"": ""LoathedMaxContractDifficulty"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""10""
+                }
+            ],
+            ""ID"": ""cheat_contractban_off_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_contractban_off"",
+    ""Toggle"": false,
+    ""Tooltip"": ""unlock all contract-difficulties"",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+},
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_pilotskillcost_low"",
+    ""Name"": ""cheat_pilotskillcost_low"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""PilotLevelCostExponent"",
+                    ""ConstantType"": ""Pilot"",
+                    ""ConstantValue"": ""1.1""
+                }
+            ],
+            ""ID"": ""cheat_pilotskillcost_low_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_pilotskillcost_low"",
+    ""Toggle"": false,
+    ""Tooltip"": ""cheap pilot-skills"",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+},
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_contractsalvage_300"",
+    ""Name"": ""cheat_contractsalvage_300"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""ContractFloorSalvageBonus"",
+                    ""ConstantType"": ""Finances"",
+                    ""ConstantValue"": ""300""
+                },
+                {
+                    ""ConstantName"": ""PrioritySalvageModifier"",
+                    ""ConstantType"": ""Salvage"",
+                    ""ConstantValue"": ""0""
+                }
+            ],
+            ""ID"": ""cheat_contractsalvage_300_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_contractsalvage_300"",
+    ""Toggle"": false,
+    ""Tooltip"": """",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+},
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_shopsellprice_high"",
+    ""Name"": ""cheat_shopsellprice_high"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""ShopSellModifier"",
+                    ""ConstantType"": ""Finances"",
+                    ""ConstantValue"": ""0.5""
+                }
+            ],
+            ""ID"": ""cheat_shopsellprice_high_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_shopsellprice_high"",
+    ""Toggle"": false,
+    ""Tooltip"": """",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+}
+            " + json.Substring(ii);
             return true;
         }
     }
-
     [HarmonyPatch(typeof(SimGameConstantOverride))]
     [HarmonyPatch("AddOverride")]
     [HarmonyPatch(new Type[] {
@@ -1009,7 +1288,6 @@ namespace BattletechModCheat
             return true;
         }
     }
-
     [HarmonyPatch(typeof(SimGameConstantOverride))]
     [HarmonyPatch("AddOverride")]
     [HarmonyPatch(new Type[] {
@@ -1031,7 +1309,6 @@ namespace BattletechModCheat
             return true;
         }
     }
-
     [HarmonyPatch(typeof(SimGameDifficulty))]
     [HarmonyPatch("ApplyAllSettings")]
     public class
@@ -1043,7 +1320,6 @@ namespace BattletechModCheat
             Local.stateChangedAfter();
         }
     }
-
     [HarmonyPatch(typeof(SimGameDifficultySettingsModule))]
     [HarmonyPatch("SaveSettings")]
     public class
