@@ -125,6 +125,260 @@ One of the command buttons is a 'Complete Mission' button. Pressing it will comp
 
 Then, save the game again exit the game, either delete the added registry key or change the dword value to 0 to disable the debug mode. Load the game and your save and continue as if nothing ever happened. :)
 
+# json-parse-stack-trace
+```csharp
+debugLog cheat_componentsize_1   at System.Environment.get_StackTrace () [0x00000] in <d7ac571ca2d04b2f981d0d886fa067cf>:0
+
+  at BattletechModCheat.Patch_JSONSerializationUtility_RehydrateObjectFromDictionary.Prefix (System.Collections.Generic.Dictionary`2[TKey,TValue] values) [0x00000] in <03a507d7e2ff4278943321530082f36d>:0
+
+  at HBS.Util.JSONSerializationUtility.RehydrateObjectFromDictionary_Patch1 (System.Object , System.Collections.Generic.Dictionary`2[TKey,TValue] , System.String , HBS.Stopwatch , HBS.Stopwatch , HBS.Util.JSONSerializationUtility+RehydrationFilteringMode , System.Func`2[System.String,System.Boolean][] ) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+
+  at HBS.Util.JSONSerializationUtility.FromJSON[T] (T target, System.String json, HBS.Util.JSONSerializationUtility+RehydrationFilteringMode filteringMode, System.Func`2[System.String,System.Boolean][] memberNamePredicates) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+	public static class JSONSerializationUtility
+		public static string FromJSON<T>(T target, string json, JSONSerializationUtility.RehydrationFilteringMode filteringMode = JSONSerializationUtility.RehydrationFilteringMode.Any, params Func<string, bool>[] memberNamePredicates)
+		{
+			Dictionary<string, object> values;
+			try
+			{
+				values = (Dictionary<string, object>)JSON.ToObject(json, true);
+			}
+			catch
+			{
+				values = (Dictionary<string, object>)JSON.ToObject(JSONSerializationUtility.StripHBSCommentsFromJSON(json), true);
+			}
+			Stopwatch convertTime = null;
+			Stopwatch reflectTime = null;
+			return JSONSerializationUtility.RehydrateObjectFromDictionary(target, values, "", convertTime, reflectTime, filteringMode, memberNamePredicates);
+		}
+
+  at HBS.Util.JSONSerializationUtility.FromJSON[T] (T target, System.String json) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+	public static class JSONSerializationUtility
+		public static string FromJSON<T>(T target, string json)
+		{
+			return JSONSerializationUtility.FromJSON<T>(target, json, JSONSerializationUtility.RehydrationFilteringMode.Any, null);
+		}
+
+  at BattleTech.WeaponDef.FromJSON (System.String json) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+	public class WeaponDef : MechComponentDef, IJsonTemplated, DataManager.ILoadDependencies
+  		public new void FromJSON(string json)
+		{
+			JSONSerializationUtility.FromJSON<WeaponDef>(this, json);
+			base.ComponentSubType = MechComponentType.Weapon;
+			if (base.statusEffects == null)
+			{
+				base.statusEffects = new EffectData[0];
+			}
+			this.UpgradeToDataDrivenEnums();
+			if (base.additionalData == null)
+			{
+				base.additionalData = new SerializableVariant[0];
+			}
+		}
+
+  at BattleTech.Data.DataManager+JsonLoadRequest`1[T].OnLoadedWithJSON (System.String json) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+		public abstract class JsonLoadRequest<T> : DataManager.StringDataLoadRequest<T> where T : class, IJsonTemplated, new()
+			protected virtual void OnLoadedWithJSON(string json)
+			{
+				if (string.IsNullOrEmpty(json))
+				{
+					base.NotifyLoadFailed();
+					return;
+				}
+				this.resource = Activator.CreateInstance<T>();
+				this.resource.FromJSON(json);
+				base.TryLoadDependencies(this.resource as DataManager.ILoadDependencies);
+			}
+			protected JsonLoadRequest(DataManager dataManager, BattleTechResourceType resourceType, string resourceId, uint requestWeight, PrewarmRequest prewarm) : base(dataManager, resourceType, resourceId, requestWeight, prewarm)
+			{
+				this.onTextLoaded = (Action<string>)Delegate.Combine(this.onTextLoaded, new Action<string>(this.OnLoadedWithJSON));
+			}
+
+  at BattleTech.Data.DataManager+StringDataLoadRequest`1[T].OnLoadedWithText (System.String text) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+		public abstract class StringDataLoadRequest<T> : DataManager.ResourceLoadRequest<T> where T : class
+			protected void OnLoadedWithText(string text)
+			{
+				if (string.IsNullOrEmpty(text))
+				{
+					base.NotifyLoadFailed();
+					return;
+				}
+				if (this.onTextLoaded != null)
+				{
+					this.onTextLoaded(text);
+				}
+			}
+			protected void OnLoadedWithTextAsset(TextAsset asset)
+			{
+				if (asset == null)
+				{
+					base.NotifyLoadFailed();
+					return;
+				}
+				this.OnLoadedWithText(asset.text);
+			}
+
+  at BattleTech.Data.DataManager+StringDataLoadRequest`1[T].OnLoadedWithTextAsset (UnityEngine.TextAsset asset) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+		public abstract class StringDataLoadRequest<T> : DataManager.ResourceLoadRequest<T> where T : class
+			protected void OnLoadedWithTextAsset(TextAsset asset)
+			{
+				if (asset == null)
+				{
+					base.NotifyLoadFailed();
+					return;
+				}
+				this.OnLoadedWithText(asset.text);
+			}
+			public override void Load()
+			{
+				try
+				{
+					base.Load();
+					if (base.State == DataManager.FileLoadRequest.RequestState.Requested)
+					{
+						base.State = DataManager.FileLoadRequest.RequestState.Processing;
+						base.StartTimeoutTracking(0f);
+						if (this.manifestEntry.IsFileAsset)
+						{
+							this.dataManager.dataLoader.LoadResource(this.manifestEntry.FilePath, new Action<string>(this.OnLoadedWithText));
+						}
+						else if (this.manifestEntry.IsResourcesAsset)
+						{
+							this.dataManager.RequestResourcesLoad<TextAsset>(this.manifestEntry.ResourcesLoadPath, new Action<TextAsset>(this.OnLoadedWithTextAsset));
+						}
+						else if (this.manifestEntry.IsAssetBundled)
+						{
+							this.dataManager.AssetBundleManager.RequestAsset<TextAsset>(this.resourceType, this.resourceId, new Action<TextAsset>(this.OnLoadedWithTextAsset));
+						}
+						else
+						{
+							DataManager.FileLoadRequest.logger.Log(string.Format("Text file {0} Request package type not supported", this.manifestEntry.Id));
+							base.NotifyLoadFailed();
+						}
+					}
+				}
+				catch (Exception ex)
+				{
+					base.NotifyLoadFailed();
+					string message = string.Format("Exception caught while loading manifest entry Name:[{0}] FileName:[{1}] AssetBundleName:[{2}]", this.manifestEntry.Name, this.manifestEntry.FileName, this.manifestEntry.AssetBundleName);
+					DataManager.FileLoadRequest.logger.LogError(message, ex);
+					throw new Exception(message, ex);
+				}
+			}
+
+  at BattleTech.Assetbundles.AssetBundleManager.RequestAsset[T] (BattleTech.BattleTechResourceType type, System.String id, System.Action`1[T] loadedCallback) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+		public abstract class ResourceLoadRequest<T> : DataManager.FileLoadRequest where T : class
+			public override void OnLoaded()
+			{
+				this.StoreData();
+				this.SetLoadComplete();
+			}
+			protected void TryLoadDependencies(DataManager.ILoadDependencies dependencyLoader)
+			{
+				this.DependencyLoader = dependencyLoader;
+				if (this.DependencyLoader != null)
+				{
+					this.State = DataManager.FileLoadRequest.RequestState.AwaitingDependencies;
+					this.dataManager.RequestDependencies(this);
+					return;
+				}
+				this.OnLoaded();
+			}
+					this.loadOverride(this.resourceId, delegate(object item)
+					{
+						if (item == null)
+						{
+							base.NotifyLoadFailed();
+							return;
+						}
+						this.resource = (item as T);
+						base.TryLoadDependencies(this.resource as DataManager.ILoadDependencies);
+					});
+
+  at BattleTech.Data.DataManager+StringDataLoadRequest`1[T].Load () [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+			public override void Load()
+			{
+				if (this.AlreadyLoaded)
+				{
+					base.State = DataManager.FileLoadRequest.RequestState.Processing;
+					this.resource = this.GetResource();
+					base.TryLoadDependencies(this.resource as DataManager.ILoadDependencies);
+					return;
+				}
+				if (this.loadOverride != null)
+				{
+					base.State = DataManager.FileLoadRequest.RequestState.Processing;
+					base.StartTimeoutTracking(0f);
+					this.loadOverride(this.resourceId, delegate(object item)
+					{
+						if (item == null)
+						{
+							base.NotifyLoadFailed();
+							return;
+						}
+						this.resource = (item as T);
+						base.TryLoadDependencies(this.resource as DataManager.ILoadDependencies);
+					});
+				}
+			}
+
+  at BattleTech.Data.DataManager.UpdateRequests () [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+	public class DataManager
+		private void UpdateRequests()
+		{
+			int num = 0;
+			int num2 = 0;
+			for (int i = 0; i < this.activeLoadBatches.Count; i++)
+			{
+				LoadRequest loadRequest = this.activeLoadBatches[i];
+				if (loadRequest.CurrentState == LoadRequest.State.Processing)
+				{
+					num += loadRequest.GetActiveLightRequestCount();
+					num2 += loadRequest.GetActiveHeavyRequestCount();
+					bool flag = DataManager.MaxConcurrentLoadsLight > 0 && num >= DataManager.MaxConcurrentLoadsLight;
+					bool flag2 = DataManager.MaxConcurrentLoadsHeavy > 0 && num2 >= DataManager.MaxConcurrentLoadsHeavy;
+					if (flag || flag2)
+					{
+						return;
+					}
+					for (DataManager.FileLoadRequest fileLoadRequest = loadRequest.PopPendingRequest(); fileLoadRequest != null; fileLoadRequest = loadRequest.PopPendingRequest())
+					{
+						if (!fileLoadRequest.ManifestEntryValid)
+						{
+							this.logger.LogError(string.Format("LoadRequest for {0} of type {1} has an invalid manifest entry. Any requests for this object will fail.", fileLoadRequest.ResourceId, fileLoadRequest.ResourceType));
+							fileLoadRequest.NotifyLoadFailed();
+						}
+						else if (!fileLoadRequest.RequestWeight.RequestAllowed)
+						{
+							this.logger.LogWarning(string.Format("LoadRequest for {0} of type {1} not allowed due to current request weight.", fileLoadRequest.ResourceId, fileLoadRequest.ResourceType));
+							fileLoadRequest.SetLoadComplete();
+						}
+						else
+						{
+							if (fileLoadRequest.IsMemoryRequest)
+							{
+								this.RemoveObjectOfType(fileLoadRequest.ResourceId, fileLoadRequest.ResourceType);
+							}
+							if (fileLoadRequest.RequestWeight.AllowedWeight == 10U)
+							{
+								num++;
+							}
+							else
+							{
+								num2++;
+							}
+							fileLoadRequest.Load();
+						}
+					}
+				}
+			}
+		}
+
+  at BattleTech.Data.DataManager.Update (System.Single deltaTime) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+
+  at BattleTech.GameInstance.Update (System.Single deltaTime) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+
+  at BattleTech.UnityGameInstance.Update () [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+```
 
 # harmony documentation wiki
 1. [Introduction](#Introduction)

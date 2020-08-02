@@ -56,6 +56,9 @@ namespace BattletechModCheat
         public static bool
         cheat_mechcomponentsize_1 = false;
 
+        public static bool
+        cheat_pilotabilitycooldown_0 = false;
+
         public static int
         countJsonParse = 0;
 
@@ -155,6 +158,9 @@ namespace BattletechModCheat
             Local.cheat_mechcomponentsize_1 = (
                 state["cheat_mechcomponentsize_1"] != ""
             );
+            Local.cheat_pilotabilitycooldown_0 = (
+                state["cheat_pilotabilitycooldown_0"] != ""
+            );
             try
             {
                 foreach (var item in Local.jsonParseDict2(
@@ -173,7 +179,9 @@ namespace BattletechModCheat
                 Local.jsonStringify(Local.state)
             );
             Local.stateChangedAfter();
-            var harmony = HarmonyInstance.Create("com.github.kaizhu256.BattletechModCheat");
+            var harmony = HarmonyInstance.Create(
+                "com.github.kaizhu256.BattletechModCheat"
+            );
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
@@ -207,19 +215,15 @@ namespace BattletechModCheat
             }
             */
             // cheat_mechcomponentsize_1
-            if (
-                Local.cheat_mechcomponentsize_1
-            )
+            if (Local.cheat_mechcomponentsize_1)
             {
                 var obj = target as MechComponentDef;
-                if (obj != null)
+                if (obj != null && obj.InventorySize > 1)
                 {
                     Traverse.Create(obj).Property("InventorySize").SetValue(1);
                 }
             }
-            if (
-                Local.cheat_mechcomponentsize_1
-            )
+            if (Local.cheat_mechcomponentsize_1)
             {
                 var obj = (
                     target as MechEngineer.Features.DynamicSlots.DynamicSlots
@@ -227,6 +231,17 @@ namespace BattletechModCheat
                 if (obj != null)
                 {
                     obj.ReservedSlots = 0;
+                }
+            }
+            // cheat_pilotabilitycooldown_0
+            if (Local.cheat_pilotabilitycooldown_0)
+            {
+                var obj = target as AbilityDef;
+                if (obj != null && obj.ActivationCooldown > 1)
+                {
+                    Traverse.Create(obj).Property(
+                        "ActivationCooldown"
+                    ).SetValue(1);
                 }
             }
         }
@@ -582,26 +597,6 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_pilotabilitycooldown_0
-    [HarmonyPatch(typeof(DictionaryStore<AbilityDef>))]
-    [HarmonyPatch("Add")]
-    public class
-    Patch_DictionaryStore_AbilityDef_Add
-    {
-        public static bool
-        Prefix(AbilityDef item)
-        {
-            if (
-                Local.state.getItem("cheat_pilotabilitycooldown_0") != ""
-                && item.ActivationCooldown > 1
-            )
-            {
-                Traverse.Create(item).Property(
-                    "ActivationCooldown"
-                ).SetValue(1);
-            }
-            return true;
-        }
-    }
 
     // patch - cheat_pilotskill_reset
     [HarmonyPatch(typeof(SGBarracksMWDetailPanel))]
