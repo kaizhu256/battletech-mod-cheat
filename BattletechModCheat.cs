@@ -56,9 +56,6 @@ namespace BattletechModCheat
         public static bool
         cheat_mechcomponentsize_1 = false;
 
-        public static bool
-        cheat_pilotabilitycooldown_0 = false;
-
         public static int
         countJsonParse = 0;
 
@@ -158,9 +155,6 @@ namespace BattletechModCheat
             Local.cheat_mechcomponentsize_1 = (
                 state["cheat_mechcomponentsize_1"] != ""
             );
-            Local.cheat_pilotabilitycooldown_0 = (
-                state["cheat_pilotabilitycooldown_0"] != ""
-            );
             try
             {
                 foreach (var item in Local.jsonParseDict2(
@@ -233,19 +227,6 @@ namespace BattletechModCheat
                 if (obj != null)
                 {
                     obj.ReservedSlots = 0;
-                }
-            }
-            // cheat_pilotabilitycooldown_0
-            if (
-                Local.cheat_pilotabilitycooldown_0
-            )
-            {
-                var obj = target as AbilityDef;
-                if (obj != null)
-                {
-                    Traverse.Create(obj).Property(
-                        "ActivationCooldown"
-                    ).SetValue(1);
                 }
             }
         }
@@ -601,6 +582,23 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_pilotabilitycooldown_0
+    [HarmonyPatch(typeof(DictionaryStore<AbilityDef>))]
+    [HarmonyPatch("Add")]
+    public class
+    Patch_DictionaryStore_AbilityDef_Add
+    {
+        public static bool
+        Prefix(AbilityDef item)
+        {
+            if (Local.state.getItem("cheat_pilotabilitycooldown_0") != "")
+            {
+                Traverse.Create(item).Property(
+                    "ActivationCooldown"
+                ).SetValue(0);
+            }
+            return true;
+        }
+    }
 
     // patch - cheat_pilotskill_reset
     [HarmonyPatch(typeof(SGBarracksMWDetailPanel))]
