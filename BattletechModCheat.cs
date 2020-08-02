@@ -3,6 +3,7 @@ using BattleTech.Framework;
 using BattleTech.UI;
 using Harmony;
 using HBS;
+using HBS.Data;
 using HBS.Util;
 using Localize;
 using Newtonsoft.Json;
@@ -52,6 +53,12 @@ namespace BattletechModCheat
     public class
     Local
     {
+        public static bool
+        cheat_mechcomponentsize_1 = false;
+
+        public static bool
+        cheat_pilotabilitycooldown_0 = false;
+
         public static int
         countJsonParse = 0;
 
@@ -148,6 +155,12 @@ namespace BattletechModCheat
                     File.ReadAllText(Path.Combine(cwd, "README.md"))
                 ).Groups[1].ToString()
             );
+            Local.cheat_mechcomponentsize_1 = (
+                state["cheat_mechcomponentsize_1"] != ""
+            );
+            Local.cheat_pilotabilitycooldown_0 = (
+                state["cheat_pilotabilitycooldown_0"] != ""
+            );
             try
             {
                 foreach (var item in Local.jsonParseDict2(
@@ -185,126 +198,82 @@ namespace BattletechModCheat
     public class
     Patch_JSONSerializationUtility_RehydrateObjectFromDictionary
     {
-        /*
         public static void
-        Postfix(Dictionary<string, object> values, object target)
+        Postfix(object target)
         {
-            return;
-        }
-        */
-        public static bool
-        Prefix(Dictionary<string, object> values)
-        {
+            /*
             Local.countJsonParse += 1;
             if (Local.countJsonParse % 10000 == 0)
             {
                 Local.debugLog("countJsonParse", Local.countJsonParse);
-            }
-            /*
-            // cheat_ammoboxcapacity_infinite
-            if (
-                Local.state.getItem("cheat_ammoboxcapacity_infinite") != ""
-                && (
-                    values.ContainsKey("StartingAmmoCapacity")
-                    || (
-                        values.ContainsKey("AmmoID")
-                        && values.ContainsKey("Capacity")
-                    )
-                )
-            )
-            {
                 Local.debugInline(
-                    "cheat_ammoboxcapacity_infinite1",
-                    System.Environment.StackTrace
-                );
-                values["Capacity"] = 2000;
-                try
-                {
-                    if (values["StartingAmmoCapacity"].ToString() != "0")
-                    {
-                        Local.debugInline(
-                            "cheat_ammoboxcapacity_infinite2",
-                            null
-                        );
-                        values["StartingAmmoCapacity"] = 2000;
-                    }
-                }
-                catch (Exception)
-                {
-                }
-            }
-            // cheat_heatsinkweight_low
-            if (
-                Local.state.getItem("cheat_heatsinkweight_low") != ""
-                && values.ContainsKey("DissipationCapacity")
-            )
-            {
-                Local.debugInline(
-                    "cheat_heatsinkweight_low",
-                    System.Environment.StackTrace
-                );
-                values["Tonnage"] = 0.25;
-            }
-            // cheat_pilotabilitycooldown_0
-            if (
-                Local.state.getItem("cheat_pilotabilitycooldown_0") != ""
-                && values.ContainsKey("ActivationCooldown")
-            )
-            {
-                Local.debugInline(
-                    "cheat_pilotabilitycooldown_0",
-                    System.Environment.StackTrace
-                );
-                values["ActivationCooldown"] = 1;
-            }
-            // cheat_mechcomponentsize_1
-            if (
-                values.ContainsKey("InventorySize")
-                && values.ContainsKey("WeaponEffectID")
-            )
-            {
-                values["InventorySize"] = 1;
-                Local.debugInline(
-                    "cheat_mechcomponentsize_1",
-                    values["WeaponEffectID"]
-                );
-                Local.debugInline(
-                    "cheat_mechcomponentsize_1",
+                    "countJsonParse",
                     System.Environment.StackTrace
                 );
             }
             */
+            // cheat_mechcomponentsize_1
+            if (
+                Local.cheat_mechcomponentsize_1
+            )
+            {
+                var obj = target as MechComponentDef;
+                if (obj != null)
+                {
+                    Traverse.Create(obj).Property("InventorySize").SetValue(1);
+                }
+            }
+            if (
+                Local.cheat_mechcomponentsize_1
+            )
+            {
+                var obj = (
+                    target as MechEngineer.Features.DynamicSlots.DynamicSlots
+                );
+                if (obj != null)
+                {
+                    obj.ReservedSlots = 0;
+                }
+            }
+            // cheat_pilotabilitycooldown_0
+            if (
+                Local.cheat_pilotabilitycooldown_0
+            )
+            {
+                var obj = target as AbilityDef;
+                if (obj != null)
+                {
+                    Traverse.Create(obj).Property(
+                        "ActivationCooldown"
+                    ).SetValue(1);
+                }
+            }
+        }
+        /*
+        public static bool
+        Prefix(object target, Dictionary<string, object> values)
+        {
             return true;
         }
+        */
     }
 
     // patch - cheat_ammoboxcapacity_infinite
-    [HarmonyPatch(typeof(AmmunitionBoxDef))]
-    [HarmonyPatch("FromJSON")]
+    [HarmonyPatch(typeof(DictionaryStore<AmmunitionBoxDef>))]
+    [HarmonyPatch("Add")]
     public class
-    Patch_AmmunitionBoxDef_FromJSON
+    Patch_DictionaryStore_AmmunitionBoxDef_Add
     {
-        public static void
-        Postfix(AmmunitionBoxDef __instance)
+        public static bool
+        Prefix(AmmunitionBoxDef item)
         {
-            if (
-                Local.state.getItem("cheat_ammoboxcapacity_infinite") != ""
-                && __instance.Capacity > 0
-            )
+            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
             {
-                Traverse.Create(__instance).Property(
+                Traverse.Create(item).Property(
                     "Capacity"
                 ).SetValue(5000);
             }
-            if (
-                Local.state.getItem("cheat_mechcomponentsize_1") != ""
-                && __instance.InventorySize > 1
-            )
-            {
-                Traverse.Create(__instance).Property(
-                    "InventorySize"
-                ).SetValue(1);
-            }
+            return true;
         }
     }
 
@@ -542,86 +511,75 @@ namespace BattletechModCheat
         }
     }
 
+    // patch - cheat_enginehscap_infinite
+    /*
+    [HarmonyPatch(typeof(MechEngineer.Features.Engines.Engine))]
+    [HarmonyPatch("HeatSinksInternalMaxCount")]
+    public class
+    Patch_Engine_HeatSinksInternalMaxCount
+    {
+        public static void
+        Postfix(ref int __result)
+        {
+            if (Local.state.getItem("cheat_enginehscap_infinite") != "")
+            {
+                __result = 100;
+            }
+        }
+    }
+    */
+
     // patch - cheat_mechcomponentsize_1
-    [HarmonyPatch(typeof(HeatSinkDef))]
-    [HarmonyPatch("FromJSON")]
+    /*
+    [HarmonyPatch(typeof(MechComponentDef), MethodType.Constructor)]
+    [HarmonyPatch(new Type[] {
+        typeof(ComponentType),
+        typeof(MechComponentType),
+        typeof(EffectData[]),
+        typeof(TagSet),
+        typeof(DescriptionDef),
+        typeof(string),
+        typeof(string),
+        typeof(string),
+        typeof(int),
+        typeof(float),
+        typeof(ChassisLocations),
+        typeof(ChassisLocations),
+        typeof(bool)
+    })]
     public class
-    Patch_HeatSinkDef_FromJSON
+    Patch_MechComponentDef_constructor
     {
-        public static void
-        Postfix(HeatSinkDef __instance)
+        public static bool
+        Prefix(ref int InventorySize)
         {
-            if (
-                Local.state.getItem("cheat_mechcomponentsize_1") != ""
-                && __instance.InventorySize > 1
-            )
-            {
-                Traverse.Create(__instance).Property(
-                    "InventorySize"
-                ).SetValue(1);
-            }
+            InventorySize = 1;
+            return true;
+        }
+        public static void
+        Postfix(MechComponentDef __instance)
+        {
+            Traverse.Create(__instance).Property(
+                "InventorySize"
+            ).SetValue(1);
         }
     }
-
-    [HarmonyPatch(typeof(JumpJetDef))]
-    [HarmonyPatch("FromJSON")]
+    [HarmonyPatch(typeof(MechComponentDef), MethodType.Constructor)]
+    [HarmonyPatch(new Type[] {
+        typeof(MechComponentDef)
+    })]
     public class
-    Patch_JumpJetDef_FromJSON
-    {
-        public static void
-        Postfix(JumpJetDef __instance)
-        {
-            if (
-                Local.state.getItem("cheat_mechcomponentsize_1") != ""
-                && __instance.InventorySize > 1
-            )
-            {
-                Traverse.Create(__instance).Property(
-                    "InventorySize"
-                ).SetValue(1);
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(MechComponentDef))]
-    [HarmonyPatch("FromJSON")]
-    public class
-    Patch_MechComponentDef_FromJSON
+    Patch_MechComponentDef_constructor2
     {
         public static void
         Postfix(MechComponentDef __instance)
         {
-            if (
-                Local.state.getItem("cheat_mechcomponentsize_1") != ""
-                && __instance.InventorySize > 1
-            )
-            {
-                Traverse.Create(__instance).Property(
-                    "InventorySize"
-                ).SetValue(1);
-            }
+            Traverse.Create(__instance).Property(
+                "InventorySize"
+            ).SetValue(1);
         }
     }
-
-    [HarmonyPatch(typeof(WeaponDef))]
-    [HarmonyPatch("FromJSON")]
-    public class
-    Patch_WeaponDef_FromJSON
-    {
-        public static void
-        Postfix(WeaponDef __instance)
-        {
-            if (
-                Local.state.getItem("cheat_mechcomponentsize_1") != ""
-                && __instance.InventorySize > 1
-            )
-            {
-                Traverse.Create(__instance).Property(
-                    "InventorySize"
-                ).SetValue(1);
-            }
-        }
-    }
+    */
 
     // patch - cheat_mechweightlimit_off
     [HarmonyPatch(typeof(MechValidationRules))]
@@ -643,21 +601,6 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_pilotabilitycooldown_0
-    [HarmonyPatch(typeof(Ability))]
-    [HarmonyPatch("ActivateCooldown")]
-    public class
-    Patch_Ability_ActivateCooldown
-    {
-        public static void
-        Postfix(Ability __instance)
-        {
-            if (Local.state.getItem("cheat_pilotabilitycooldown_0") == "")
-            {
-                return;
-            }
-            Traverse.Create(__instance).Property("CurrentCooldown").SetValue(0);
-        }
-    }
 
     // patch - cheat_pilotskill_reset
     [HarmonyPatch(typeof(SGBarracksMWDetailPanel))]

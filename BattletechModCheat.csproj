@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -35,32 +35,38 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\0Harmony.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomComponents">
+      <HintPath>.\CustomComponents.dll</HintPath>
     </Reference>
     <Reference Include="InControl, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\InControl.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\InControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MechEngineer">
+      <HintPath>.\MechEngineer.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>\Games\BATTLETECH\Managed\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>\Games\BATTLETECH\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\BATTLETECH\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -77,11 +83,11 @@
     <PostBuildEvent>
       copy /y "$(TargetPath)" "$(ProjectDir)"
       if exist "\Games\BATTLETECH\Mods\BattletechModCheat\" (
-        copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\BattletechModCheat\"
+        copy /y "$(ProjectDir)BattletechModCheat.dll" "\Games\BATTLETECH\Mods\BattletechModCheat\"
         copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\BattletechModCheat\"
         copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\BattletechModCheat\"
-        rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\"
         <!--
+        rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\"
         "\Games\BATTLETECH\BattleTech.exe"
         -->
       )

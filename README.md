@@ -1,10 +1,11 @@
 # BattletechModCheat
 
-#### changelog 2020.7.29
-- rename cheat_weaponsize_1 to cheat_mechcomponentsize_1
+#### changelog 2020.8.2
+- optimize roguetech cheats with MechEngineer.dll
 - none
 
 #### todo
+- add cheat_enginehscap_infinite
 - none
 
 #### install instruction
@@ -40,7 +41,7 @@
     "cheat_contractsort_bydifficulty": "",
 
     // cheat - skip intro
-    "cheat_introskip_on": "",
+    "cheat_introskip_on": "1",
 
     // cheat - mechbay2 and mechbay3 can repair 2nd and 3rd mech simultaneously
     "cheat_mechbayrepair_multi": "",
@@ -53,7 +54,7 @@
     "cheat_mechweightlimit_off": "1",
 
     // cheat - pilot-abilities have have 0 cooldown
-    "cheat_pilotabilitycooldown_0": "",
+    "cheat_pilotabilitycooldown_0": "1",
 
     // cheat - reset pilot-skills by shift-clicking skills-tab in barracks
     "cheat_pilotskill_reset": "",
@@ -63,7 +64,7 @@
     "cheat_pilotskillcost_low": "1",
 
     // cheat - unused pilot-xp is no longer nagged by darius if pilot-skills are maxed
-    "cheat_pilotxpnag_off": "",
+    "cheat_pilotxpnag_off": "1",
 
     // cheat - mech can sensorlock-and-fire
     "cheat_sensorlockfire_on": "",
@@ -1511,7 +1512,7 @@ Patch classes can be public or private, static or not. Patch methods can be publ
 
 To patch constructors, do not use the method name ".ctor". Instead, omit the method name completely and only specify the argument types. Example:
 
-```cshapr
+```csharp
 [HarmonyPatch(typeof(TestClass))]
 [HarmonyPatch(new Type[] { })]
 
