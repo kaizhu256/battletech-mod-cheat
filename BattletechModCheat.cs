@@ -590,11 +590,14 @@ namespace BattletechModCheat
         public static bool
         Prefix(AbilityDef item)
         {
-            if (Local.state.getItem("cheat_pilotabilitycooldown_0") != "")
+            if (
+                Local.state.getItem("cheat_pilotabilitycooldown_0") != ""
+                && item.ActivationCooldown > 1
+            )
             {
                 Traverse.Create(item).Property(
                     "ActivationCooldown"
-                ).SetValue(0);
+                ).SetValue(1);
             }
             return true;
         }
