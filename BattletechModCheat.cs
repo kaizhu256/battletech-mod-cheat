@@ -3,7 +3,6 @@ using BattleTech.Framework;
 using BattleTech.UI;
 using Harmony;
 using HBS;
-using HBS.Data;
 using HBS.Util;
 using Localize;
 using Newtonsoft.Json;
@@ -54,10 +53,13 @@ namespace BattletechModCheat
     Local
     {
         public static bool
-        cheat_mechcomponentsize_1 = false;
+        cheat_enginevalidation_off;
 
         public static bool
-        cheat_pilotabilitycooldown_0 = false;
+        cheat_mechcomponentsize_1;
+
+        public static bool
+        cheat_pilotabilitycooldown_0;
 
         public static int
         countJsonParse = 0;
@@ -155,6 +157,9 @@ namespace BattletechModCheat
                     File.ReadAllText(Path.Combine(cwd, "README.md"))
                 ).Groups[1].ToString()
             );
+            Local.cheat_enginevalidation_off = (
+                state["cheat_enginevalidation_off"] != ""
+            );
             Local.cheat_mechcomponentsize_1 = (
                 state["cheat_mechcomponentsize_1"] != ""
             );
@@ -183,6 +188,41 @@ namespace BattletechModCheat
                 "com.github.kaizhu256.BattletechModCheat"
             );
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+            try
+            {
+                Local.Patch_MechEngineer();
+            }
+            catch (Exception err)
+            {
+                Local.debugLog("Patch_MechEngineer", err);
+            }
+        }
+
+        public static void
+        Patch_MechEngineer()
+        {
+            // cheat_enginevalidation_off
+            if (Local.state.getItem("cheat_enginevalidation_off") != "")
+            {
+                object engineSettings;
+                engineSettings = typeof(MechEngineer.Control).GetField(
+                    "settings",
+                    BindingFlags.NonPublic | BindingFlags.Static
+                ).GetValue(null);
+                // EngineFeature.settings => Control.settings.Engine
+                engineSettings = engineSettings.GetType().GetField(
+                    "Engine",
+                    BindingFlags.Instance | BindingFlags.Public
+                ).GetValue(engineSettings);
+                // set AllowMixingHeatSinkTypes
+                Traverse.Create(engineSettings).Field(
+                    "AllowMixingHeatSinkTypes"
+                ).SetValue(true);
+                // set EnforceRulesForAdditionalInternalHeatSinks
+                Traverse.Create(engineSettings).Field(
+                    "EnforceRulesForAdditionalInternalHeatSinks"
+                ).SetValue(false);
+            }
         }
     }
 
@@ -212,6 +252,15 @@ namespace BattletechModCheat
                     "countJsonParse",
                     System.Environment.StackTrace
                 );
+            }
+            // cheat_enginevalidation_off
+            if (Local.cheat_enginevalidation_off)
+            {
+                var obj = target as ChassisDef;
+                if (obj != null)
+                {
+                    Traverse.Create(obj).Property("MaxJumpjets").SetValue(500);
+                }
             }
             */
             // cheat_mechcomponentsize_1
@@ -255,21 +304,20 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_ammoboxcapacity_infinite
-    [HarmonyPatch(typeof(DictionaryStore<AmmunitionBoxDef>))]
-    [HarmonyPatch("Add")]
+    [HarmonyPatch(typeof(AmmunitionBoxDef))]
+    [HarmonyPatch("FromJSON")]
     public class
-    Patch_DictionaryStore_AmmunitionBoxDef_Add
+    Patch_AmmunitionBoxDef_FromJSON
     {
-        public static bool
-        Prefix(AmmunitionBoxDef item)
+        public static void
+        Postfix(AmmunitionBoxDef __instance)
         {
             if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
             {
-                Traverse.Create(item).Property(
+                Traverse.Create(__instance).Property(
                     "Capacity"
                 ).SetValue(5000);
             }
-            return true;
         }
     }
 
@@ -507,23 +555,50 @@ namespace BattletechModCheat
         }
     }
 
-    // patch - cheat_enginehscap_infinite
+    // patch - cheat_enginevalidation_off
     /*
-    [HarmonyPatch(typeof(MechEngineer.Features.Engines.Engine))]
-    [HarmonyPatch("HeatSinksInternalMaxCount")]
+    [HarmonyPatch(typeof(ChassisDef))]
+    [HarmonyPatch("FromJSON")]
     public class
-    Patch_Engine_HeatSinksInternalMaxCount
+    Patch_ChassisDef_FromJSON
     {
         public static void
-        Postfix(ref int __result)
+        Postfix(ChassisDef __instance)
         {
-            if (Local.state.getItem("cheat_enginehscap_infinite") != "")
+            if (Local.state.getItem("cheat_enginevalidation_off") != "")
             {
-                __result = 100;
+                Traverse.Create(__instance).Property(
+                    "MaxJumpjets"
+                ).SetValue(5000);
             }
         }
     }
     */
+    [HarmonyPatch(typeof(MechEngineer.Errors))]
+    [HarmonyPatch("Add")]
+    public class
+    Patch_MechEngineer_Errors_Add
+    {
+        public static bool
+        Prefix(MechValidationType type, string message)
+        {
+            if (
+                Local.state.getItem("cheat_enginevalidation_off") != ""
+                && (
+                    message.IndexOf(
+                        "JUMP JETS: This Mech mounts too many jumpjets "
+                    ) == 0
+                    || message.IndexOf(
+                        "HEAT SINKS: This Mech has too few heat sinks "
+                    ) == 0
+                )
+            )
+            {
+                return false;
+            }
+            return true;
+        }
+    }
 
     // patch - cheat_mechcomponentsize_1
     /*
@@ -586,13 +661,10 @@ namespace BattletechModCheat
         public static void
         Postfix(ref Dictionary<MechValidationType, List<Text>> errorMessages)
         {
-            if (
-                Local.state.getItem("cheat_mechweightlimit_off") == ""
-            )
+            if (Local.state.getItem("cheat_mechweightlimit_off") != "")
             {
-                return;
+                errorMessages[MechValidationType.Overweight].Clear();
             }
-            errorMessages[MechValidationType.Overweight].Clear();
         }
     }
 

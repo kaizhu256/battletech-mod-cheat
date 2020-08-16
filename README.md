@@ -1,11 +1,10 @@
 # BattletechModCheat
 
-#### changelog 2020.8.2
-- optimize roguetech cheats with MechEngineer.dll
+#### changelog 2020.8.3
+- add cheat_enginevalidation_off
 - none
 
 #### todo
-- add cheat_enginehscap_infinite
 - none
 
 #### install instruction
@@ -42,6 +41,10 @@
 
     // cheat - skip intro
     "cheat_introskip_on": "1",
+
+    // cheat - in roguetech, disable engine-limits on heatsinks and jumpjets
+    // (roguetech-compatible)
+    "cheat_enginevalidation_off": "1",
 
     // cheat - mechbay2 and mechbay3 can repair 2nd and 3rd mech simultaneously
     "cheat_mechbayrepair_multi": "",
