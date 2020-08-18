@@ -1,0 +1,182 @@
+{
+ "AMSHitChance": -0.2,
+ "AMSImmune": false,
+ "AOECapable": false,
+ "AOEDamage": 0,
+ "AOEHeatDamage": 0,
+ "AOEInstability": 0,
+ "AOERange": 0,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 150,
+ "AccuracyModifier": 6,
+ "AdditionalImpactVFX": "vfxPrfPrtl_artilleryExplosion",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "CenterTorso",
+ "AlwaysIndirectVisuals": false,
+ "AmmoCategory": "STREAK_Generic_Internal",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_vtol": -12
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 4",
+    "1shot",
+    "Streak",
+    "PipsIgnored: 1",
+    "AccuracyUnit: VTOL",
+    "AccuracyUnit2: +6",
+    "AccuracyUnit: Ground Units",
+    "AccuracyUnit2: -6",
+    "AMSChance: -20%",
+    "MissileHP: 8",
+    "Visibility: +7%",
+    "Signature: +7%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/explode"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 30,
+   "HeatDamagePerAmmo": 0,
+   "StabilityDamagePerAmmo": 10
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 4
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "Not quite as potent as the air-to-air Arrow missiles introduced by the Lyrans and the Wolves, this much smaller air-to-air missile version had its debut with the allied aerospace forces of the Duchy of Tamarind and Duchess Alys Rousset-Marik’s resistance movement. Built smaller and leaner, these so-called light air-to-air (LAA) missiles can be carried by smaller ﬁghters and create far less drag during atmospheric operations. With a little creativity a decent mechtech crew can bolt these onto a mech as an air defense measure.",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "BoltOn_Missile_LightAA_Twin",
+  "Manufacturer": "Generic",
+  "Model": "Light AA Missile",
+  "Name": "Light AA Missile Rack",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Light Missile Rack"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "HitGenerator": "Streak",
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 1,
+ "MaxMissRadius": 15,
+ "MaxRange": 840,
+ "MinMissRadius": 10,
+ "MinRange": 180,
+ "MissileHealth": 8,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 2,
+ "Streak": true,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+ "WeaponSubType": "LRM10",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.07",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.07",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

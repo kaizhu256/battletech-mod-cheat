@@ -1,0 +1,52 @@
+{
+ "AllowedLocations": "LeftTorso, RightTorso",
+ "BonusValueA": "* Artillery",
+ "BonusValueB": null,
+ "ComponentSubType": "Prototype_Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Description": {
+  "Cost": 3000000,
+  "Details": "Mortars are single-use artillery pieces that can be mounted in the side torso of any 'Mech. Functioning like a massive grenade when fired, mortars can deal substantial damage to all units within a targeted area.\n\nOnly a single artillery piece may be mounted on any 'Mech.",
+  "Icon": "uixSvgIcon_artillery",
+  "Id": "Gear_Mortar_MechMortar",
+  "Manufacturer": "Hellespont",
+  "Model": "Support Artillery",
+  "Name": "Mech Mortar",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Mortar"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 4,
+ "PrefabIdentifier": "",
+ "Tonnage": 7,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Activated ability (uses Firing action). Fires an artillery attack at target location for area effect damage. Has limited uses per mission.",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "Activation_Artillery_MechMortar",
+    "Name": "MORTAR FIRE"
+   },
+   "activeAbilityEffectData": {
+    "abilityName": "AbilityDef_Mortar_MechMortar"
+   },
+   "effectType": "ActiveAbility",
+   "targetingData": {
+    "alsoTargetsCreator": true,
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnActivation",
+    "forceVisRebuild": true
+   }
+  }
+ ]
+}

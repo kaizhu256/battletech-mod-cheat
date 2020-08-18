@@ -1,0 +1,41 @@
+{
+ "AdditionalCost": 4700,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "The platforms around here are meant to move automatically when they detect the size of the 'Mech we're working on, adjusting to be at just the right height. They're all off-line, and we've been working around that, but… let's get them fixed and speed this up.",
+ "Category": "REPAIR_REFIT",
+ "Description": {
+  "Cost": 0,
+  "Details": "The <i>Argo</i>'s 'Mech cubicles used to have a complex system of movable walkways and scaffolds for accessing any part of a damaged 'Mech. Those walkways, once brought online, make the job of repairing 'Mechs much simpler.",
+  "Icon": "uixSvgIcon_shipUpgrade_repairscaffold",
+  "Id": "argoUpgrade_mechBay_scaffolding",
+  "Name": "Repair Scaffolding",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "MECH_BAY",
+ "PurchaseCost": 200000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_mechBay1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_mechBay_scaffolding"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

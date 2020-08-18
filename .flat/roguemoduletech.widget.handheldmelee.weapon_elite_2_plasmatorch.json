@@ -1,0 +1,194 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "20 Var.Dmg.",
+ "BonusValueB": "+10MeleeDMG",
+ "CantHitUnaffecedByPathing": true,
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#FF00FF",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "MeleeWeapon.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 2",
+    "WpnAccuracy: +1",
+    "WpnCrits: X2",
+    "VariableDmg: 20",
+    "Melee2: 5",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 50,
+ "DamageVariance": 20,
+ "Description": {
+  "Cost": 1150000,
+  "Details": "Construction and engineering mechs use Plasma Torches to cut and weld metal. This Specific Torch was actually redesigned for Military use to act like an energy Lance. Not affected by PPC Cap.",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "Weapon_Elite_2_PlasmaTorch",
+  "Manufacturer": "Deadly Sins",
+  "Model": "Anti Mech Lance",
+  "Name": "Plasma Lance",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Plasma Lance"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 25,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 1,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Flamer",
+ "ProjectileScale": {
+  "x": 0.8,
+  "y": 0.8,
+  "z": 0.8
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPCER",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 10 more damage.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "StatusEffect-EliteTorch",
+    "Name": "Military Torch"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "5.0",
+    "operation": "Float_Add",
+    "statName": "DamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Melee",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ],
+ "weaponCategoryID": "SpecialMelee"
+}

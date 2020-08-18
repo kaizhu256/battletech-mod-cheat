@@ -1,0 +1,196 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "NegativeTwo",
+   "Id": "Gear_C3i",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "C3i",
+   "Range": 360,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#00e600",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Shares Sensor Information on nearby Targets",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "C3-SensorInfo",
+      "Name": "C3 Sensor Information"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "2",
+      "operation": "Int_Add",
+      "statName": "LV_PROBE_PING"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "Id": "Gear_C3icrit",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": true,
+   "Name": "C3i",
+   "Range": 360,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#ff9900",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Increased Sight/Sensors",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "C3iCritBuff",
+      "Name": "NCEWS Accuracy"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.2",
+      "operation": "Float_Multiply",
+      "statName": "CriticalChanceMultipler",
+      "targetCollection": "Weapon"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Morale Gain",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "lv-shares-sensors"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AuraCrits: 20%, 360",
+    "C3: 2, 360",
+    "Sharer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "C3i"
+   },
+   {
+    "CategoryID": "CockpitSensors"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00024"
+  }
+ },
+ "Description": {
+  "Cost": 1680000,
+  "Details": "The C3i was developed by ComStar from Draconis Combine technology. While expanding its military strength to ward off the Clan Invasion, the ComGuard found their current C3 Master Computer incapable of handling the complexities of senary units.",
+  "Icon": "C3Systems",
+  "Id": "Gear_Sensors_C3i",
+  "Manufacturer": "Comstar",
+  "Model": "Improved",
+  "Name": "Comstar C3 Improved",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "C3i Sensors"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 3,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Shows their vision when lancemates move",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Shares_Vision",
+    "Name": "Vision Sharing"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  }
+ ]
+}

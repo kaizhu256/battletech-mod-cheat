@@ -1,0 +1,457 @@
+{
+ "ChassisID": "chassisdef_shadowhawk_SHD-2D",
+ "Description": {
+  "Cost": 243318,
+  "Details": "The Shadow Hawk 2D is an interesting model. Its default payload sacrifices a lot of armor to mount a bit more firepower, though some argue the tradeoff isn't worth it. Its Alpha Strikes <i>are</i> better, though, so… I guess you can be the judge.",
+  "Icon": "uixTxrIcon_shadowhawk",
+  "Id": "mechdef_shadowhawk_SHD-2D",
+  "Manufacturer": null,
+  "Model": null,
+  "Name": "Shadow Hawk SHD-2D",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Shadow Hawk SHD-2D"
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 30,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 30,
+   "CurrentInternalStructure": 16,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "Head"
+  },
+  {
+   "AssignedArmor": 25,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 25,
+   "CurrentInternalStructure": 45,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "LeftArm"
+  },
+  {
+   "AssignedArmor": 45,
+   "AssignedRearArmor": 25,
+   "CurrentArmor": 45,
+   "CurrentInternalStructure": 65,
+   "CurrentRearArmor": 25,
+   "DamageLevel": "Functional",
+   "Location": "LeftTorso"
+  },
+  {
+   "AssignedArmor": 60,
+   "AssignedRearArmor": 30,
+   "CurrentArmor": 60,
+   "CurrentInternalStructure": 90,
+   "CurrentRearArmor": 30,
+   "DamageLevel": "Functional",
+   "Location": "CenterTorso"
+  },
+  {
+   "AssignedArmor": 45,
+   "AssignedRearArmor": 25,
+   "CurrentArmor": 45,
+   "CurrentInternalStructure": 65,
+   "CurrentRearArmor": 25,
+   "DamageLevel": "Functional",
+   "Location": "RightTorso"
+  },
+  {
+   "AssignedArmor": 25,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 25,
+   "CurrentInternalStructure": 45,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "RightArm"
+  },
+  {
+   "AssignedArmor": 25,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 25,
+   "CurrentInternalStructure": 65,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "LeftLeg"
+  },
+  {
+   "AssignedArmor": 25,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 25,
+   "CurrentInternalStructure": 65,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "RightLeg"
+  }
+ ],
+ "MechTags": {
+  "items": [
+   "unit_generic",
+   "unit_bracket_low",
+   "unit_bracket_med",
+   "unit_release",
+   "unit_jumpOK",
+   "unit_mech",
+   "unit_medium",
+   "unit_ready",
+   "unit_lance_assassin",
+   "unit_role_brawler",
+   "unit_range_short",
+   "unit_jumpOK",
+   "unit_armor_low",
+   "steiner",
+   "davion"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "emod_armorslots_standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_structureslots_standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_Generic_Standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Generic_Standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_275",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_std_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Engine_Heatsinks",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_kit_shs",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_shoulder",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_hand",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_shoulder",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_hand",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_hip",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_foot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_hip",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_foot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_SRM_SRM2_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_Autocannon_AC5_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_SRM_SRM2_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_LRM5_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_AC5",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftLeg",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftLeg",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightLeg",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightLeg",
+   "hasPrefabName": false
+  }
+ ],
+ "simGameMechPartCost": 243318
+}

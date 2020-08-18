@@ -1,0 +1,114 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.3,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "UAC10",
+ "AttackRecoil": 3,
+ "BattleValue": 210,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "component_type_lostech",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-4"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 3",
+    "WeaponJAM: 3",
+    "WeaponJAMFlat: 25%",
+    "Ultra",
+    "LosTech"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/uac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01103"
+  }
+ },
+ "Damage": 60,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 400000,
+  "Details": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/10 is your standard heavy gun, with all-around good damage, range, and heat efficiency.\n\n <b><color=#ffcc00>Uses UAC10 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "UltraAC",
+  "Id": "Weapon_Autocannon_AC10_Ultra",
+  "Manufacturer": "Western",
+  "Model": "Heavy Autocannon",
+  "Name": "UAC/10",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Ultra AC/10"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.05,
+ "HeatDamage": 0,
+ "HeatGenerated": 18,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 5,
+ "MaxRange": 720,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": -12,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -1,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.06,
+   "Id": "x2",
+   "UIName": "x2",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "UAC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 13,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

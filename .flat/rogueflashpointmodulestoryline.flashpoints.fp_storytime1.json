@@ -1,0 +1,57 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Short Split Template",
+  "Icon": "uixTxrSpot_campaignOutcomeVictory",
+  "Id": "fp_StoryTime1",
+  "Name": "Arano Restoration - Coronation"
+ },
+ "Difficulty": 2,
+ "FlashpointDescriberCastDefId": "castDef_FP_Dfisher",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Sure if you buy me a drink I will tell you a story. A princess is in danger, Can the hero get there in time. Probably not. But thats something for me to tell and you to buy me a few drinks over. ",
+ "InProgressTimeout": 0,
+ "InternalName": "limited gladiator 1",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_StoryTime1",
+ "PotentialEmployers": [
+  "MercenaryReviewBoard"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_StoryTime1_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreeRogueItemsG",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 9090909
+}

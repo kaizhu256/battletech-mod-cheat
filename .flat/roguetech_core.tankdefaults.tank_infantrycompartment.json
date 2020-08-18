@@ -1,0 +1,68 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "This is where infantry goes, if and when we get infantry. It reduces crit chance to represent the dead space in the vehicle where there's nothing vital to hit.",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Tank_InfantryCompartment",
+  "Manufacturer": "Generic",
+  "Model": "Infantry Compartment",
+  "Name": "Infantry Compartment",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Infantry Compartment"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "TankCritPenalizedCrew",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

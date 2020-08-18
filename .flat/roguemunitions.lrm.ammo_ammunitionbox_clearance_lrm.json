@@ -1,0 +1,65 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Clearance",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LRMDamage: -75%",
+    "AreaOfEffect: 40",
+    "AreaOfEffectDmg: 1",
+    "MineClearanceBoom: 2",
+    "ScatterRadius: 15, 120",
+    "NoAA",
+    "MissileHP: 2",
+    "LRMAmmo: 120"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "When fired, the Mine Clearance Missiles generate a large amount of overpressure above the suspected minefield. This overpressure simulates the weight of a BattleMech or combat vehicle and causes the mines to detonate. This clears the minefield, allowing friendly forces to pour through the gap. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Clearance_LRM",
+  "Manufacturer": "Generic",
+  "Model": "LRM",
+  "Name": "LRM Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM Mine Clearance"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

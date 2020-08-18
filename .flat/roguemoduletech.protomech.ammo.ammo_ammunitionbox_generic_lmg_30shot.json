@@ -1,0 +1,60 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LMG",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 30,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LMGAmmo: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/o/mg"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 0.25
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000031"
+  }
+ },
+ "Description": {
+  "Cost": 1000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "MachineGun",
+  "Id": "Ammo_AmmunitionBox_Generic_LMG_30shot",
+  "Manufacturer": "Generic",
+  "Model": "LMG",
+  "Name": "LMG Ammo 30 shots",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo LMG 30 shots"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.15,
+ "statusEffects": []
+}

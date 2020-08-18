@@ -1,0 +1,238 @@
+{
+ "BattleValue": 4252000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 708962,
+  "Details": "The -23 variant of the Assassin is an upgrade of the original model using Lostech; originally seen as a standardized field modification, in 3067 new production began at Hellespont 'Mech Works. The SRM-2 has been removed to upgrade the Medium Laser to a Medium Pulse Laser and an Artemis IV fire control system has been added for the LRM-5 launcher. Within the CCAF, TDF and MAF it is largely used as a cheap way to rebuild shattered forces and sees service mostly in green and reserve formations. The Capellans in particular use the -23 as a fire-support unit for pursuit and strike lances, though shortages of Artemis munitions means many are forced to use mine-delivery missiles.",
+  "Icon": "uixTxrIcon_assassin",
+  "Id": "chassisdef_assassin_ASN-23",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Assassin",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Assassin"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_assassin",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "assassin",
+ "PrefabIdentifier": "chrPrfMech_assassinBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 130,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Hunter-Killer & Ambusher",
+ "Tonnage": 40,
+ "TopSpeed": 185,
+ "TurnRadius": 90,
+ "VariantName": "ASN-23",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The -23 variant of the Assassin is an upgrade of the original model using Lostech; originally seen as a standardized field modification, in 3067 new production began at Hellespont 'Mech Works. The SRM-2 has been removed to upgrade the Medium Laser to a Medium Pulse Laser and an Artemis IV fire control system has been added for the LRM-5 launcher. Within the CCAF, TDF and MAF it is largely used as a cheap way to rebuild shattered forces and sees service mostly in green and reserve formations. The Capellans in particular use the -23 as a fire-support unit for pursuit and strike lances, though shortages of Artemis munitions means many are forced to use mine-delivery missiles.",
+ "weightClass": "MEDIUM"
+}

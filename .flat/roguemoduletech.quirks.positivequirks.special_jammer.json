@@ -1,0 +1,114 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+1 Tactics",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LocalEcm: 2",
+    "Quirk"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 130000,
+  "Details": "This BattleMech is equipped with specialised ECM gear shielding it against detection",
+  "Icon": "SpecialistSlot",
+  "Id": "Special_Jammer",
+  "Manufacturer": "General",
+  "Model": "Standard",
+  "Name": "Improved Sensors",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Jammer"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "IPSUM SUCKUM",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "LV_ECM_SHIELD",
+    "Name": "ECM_Shield_Jammer"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "LV_ECM_SHIELD_EMITTER_COUNT",
+    "Name": "ECM Shield Emitter Count"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD_EMITTER_COUNT"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

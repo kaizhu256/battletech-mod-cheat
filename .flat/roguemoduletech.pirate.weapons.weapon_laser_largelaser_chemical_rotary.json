@@ -1,0 +1,165 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.09,
+ "APMaxArmorThickness": 52,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "ChemLarge",
+ "AttackRecoil": 1,
+ "BattleValue": 333,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#8A2BE2",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "RotaryChemicalLaser: 7%",
+    "VariableDmg: 5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/chemical"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02008"
+  }
+ },
+ "Damage": 40,
+ "DamageVariance": 5,
+ "Description": {
+  "Cost": 700000,
+  "Details": "Apparently it wasn't enough to just weld some Medium Chemicals together, they HAD to do the same to Large ones too.... this doesn't smell like Machine Oil either... \n\n <b><color=#ffcc00>Uses Chem Large Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "ChemLaser",
+  "Id": "Weapon_Laser_LargeLaser_Chemical_Rotary",
+  "Manufacturer": "Krupp",
+  "Model": "Large Chem Laser",
+  "Name": "L Chem Laser",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Large Rotary Chem Laser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1125,
+ "HeatDamage": 0,
+ "HeatGenerated": 36,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 7.5,
+ "InventorySize": 6,
+ "MaxRange": 510,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "FireDelayMultiplier": 0.14,
+   "HeatGenerated": -24,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.12,
+   "FlatJammingChance": 0.07,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0105,
+   "HeatGenerated": -12,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.1,
+   "FlatJammingChance": 0.14,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.021,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "FireDelayMultiplier": 0.08,
+   "FlatJammingChance": 0.21,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0315,
+   "HeatGenerated": 12,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.06,
+   "FlatJammingChance": 0.28,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.042,
+   "HeatGenerated": 24,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.04,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0525,
+   "HeatGenerated": 36,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 11,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": []
+}

@@ -1,0 +1,41 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: 'Mechs piloted by this MechWarrior take 5% less stability damage.",
+  "Icon": "uixSvgIcon_action_evasivemove",
+  "Id": "TraitStabDamage5",
+  "Name": "Steadier 'Mech"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "5% Less Stab Damage",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "TraitStabDamage5",
+    "Name": "Leaning in"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "ReceivedInstabilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "ReqSkill": "Piloting",
+ "ReqSkillLevel": 5,
+ "ShortDesc": "-5% Stability Damage taken",
+ "Type": "Stability"
+}

@@ -1,0 +1,405 @@
+{
+ "ChassisID": "chassisdef_lupus_LUPUS-Prime",
+ "Description": {
+  "Cost": 1258759,
+  "Details": "The primary configuration of the Lupus replaces the Archer and Bombardier 'Mechs. A pair of LRM-20 launchers with improved Artemis IV guidance systems allows the warrior to destroy a foe before they can reach close range. The Lupus Prime also carries a set of jump jets which allowed a smart warrior the opportunity to hold the range open, bombarding the enemy with heavy missile barrages. The only drawback is the limited ammunition supply: A mere three tons of ammunition allows for only a brief engagement. Should the enemy close with the Lupus all is not lost. The ER Medium Laser in each arm allow the Lupus to slice off armor, and the ECM Suite makes the Lupus Prime more difficult to target.",
+  "Icon": "uixTxrIcon_lupus",
+  "Id": "mechdef_lupus_LUPUS-Prime",
+  "Manufacturer": null,
+  "Model": null,
+  "Name": "Lupus LUPUS-Prime",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Lupus LUPUS-Prime"
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 45,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 45,
+   "CurrentInternalStructure": 16,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "Head"
+  },
+  {
+   "AssignedArmor": 85,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 85,
+   "CurrentInternalStructure": 50,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "LeftArm"
+  },
+  {
+   "AssignedArmor": 90,
+   "AssignedRearArmor": 30,
+   "CurrentArmor": 90,
+   "CurrentInternalStructure": 70,
+   "CurrentRearArmor": 30,
+   "DamageLevel": "Functional",
+   "Location": "LeftTorso"
+  },
+  {
+   "AssignedArmor": 125,
+   "AssignedRearArmor": 40,
+   "CurrentArmor": 125,
+   "CurrentInternalStructure": 100,
+   "CurrentRearArmor": 40,
+   "DamageLevel": "Functional",
+   "Location": "CenterTorso"
+  },
+  {
+   "AssignedArmor": 90,
+   "AssignedRearArmor": 30,
+   "CurrentArmor": 90,
+   "CurrentInternalStructure": 70,
+   "CurrentRearArmor": 30,
+   "DamageLevel": "Functional",
+   "Location": "RightTorso"
+  },
+  {
+   "AssignedArmor": 85,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 85,
+   "CurrentInternalStructure": 50,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "RightArm"
+  },
+  {
+   "AssignedArmor": 93,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 93,
+   "CurrentInternalStructure": 70,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "LeftLeg"
+  },
+  {
+   "AssignedArmor": 93,
+   "AssignedRearArmor": -1,
+   "CurrentArmor": 93,
+   "CurrentInternalStructure": 70,
+   "CurrentRearArmor": -1,
+   "DamageLevel": "Functional",
+   "Location": "RightLeg"
+  }
+ ],
+ "MechTags": {
+  "items": [
+   "unit_mech",
+   "unit_heavy",
+   "unit_jumpOK",
+   "unit_indirectFire",
+   "unit_lance_assassin",
+   "unit_lance_support",
+   "unit_role_sniper",
+   "unit_release",
+   "unit_bracket_high",
+   "unit_totem",
+   "clancoyote"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "emod_armorslots_clanferrosfibrous",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_FCS_Clan_ARTEMISIV",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Guardian_ECM_CLAN",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Engine_Heatsinks",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_kit_cdhs",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_omni_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_omni_hand",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_shoulder",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_omni_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_omni_hand",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_shoulder",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_arm_part_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_hip",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_foot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_hip",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_leg_foot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_Laser_MediumLaserER_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_AMS_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_LRM20_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_LRM20_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_Laser_MediumLaserER_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Heavy",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Heavy",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Heavy",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Heavy",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Heavy",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "simGameMechPartCost": 1258759
+}

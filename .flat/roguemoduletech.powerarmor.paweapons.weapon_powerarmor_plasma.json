@@ -1,0 +1,159 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "High Heat|2XDmg Vs OH|",
+ "BonusValueB": "Range Variance",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#ADFF2F",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "paweapon"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BAWEAPON",
+    "PipsIgnored: +1",
+    "WpnAccuracy: +1",
+    "OHDamage: X2",
+    "PLASMADEBUFF: 10%",
+    "DmgFallOff: 75%",
+    "IsPlasma"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02016"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 460000,
+  "Details": "A Battle Armor Plasma Rifle carrying 8 shots. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+  "Icon": "plasma-bolt",
+  "Id": "Weapon_PowerArmor_PLASMA",
+  "Manufacturer": "Victory",
+  "Model": "Plasma Rifle",
+  "Name": "Plasma Rifle",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "BA Plasma Rifle"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.75,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireTerrainChance": 0.2875,
+ "HeatDamage": 10,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 5,
+ "InventorySize": 1,
+ "MaxRange": 240,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 2,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 0.5,
+  "y": 0.5,
+  "z": 0.25
+ },
+ "ProjectileSpeedMultiplier": 0.75,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  120,
+  160
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 8,
+ "Tonnage": 0.25,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPCER",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "High energy residue reduces heat efficiency.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "PA_PLASMA-Effect",
+    "Name": "Plasma Residue"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ],
+ "weaponCategoryID": "BattleArmor"
+}

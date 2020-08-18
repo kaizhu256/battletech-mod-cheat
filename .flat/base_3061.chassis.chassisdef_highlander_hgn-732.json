@@ -1,0 +1,240 @@
+{
+ "BattleValue": 9642000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 90,
+ "DFAInstability": 45,
+ "DFASelfDamage": 90,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2359906,
+  "Details": "The Highlander is one of the most well-known Star League Defense Force assault 'Mechs, serving with distinction for almost two centuries since first entering service in 2592. Initially designed as a dedicated city and installation defender, the original model featured a variety of weaponry along with fifteen and a half tons of Ferro-Fibrous armor, but perhaps its most useful asset were the three Hildco jump jets giving it a jumping range of 90 meters. The heaviest 'Mech design to feature jump jets at the time, their original task was to allow the Highlander the ability to jump over inconvenient obstacles such as buildings and outpace other 'Mechs with a faster ground speed, but because of this increased mobility and its versatile weaponry the Highlander proved to be a capable fighter on any battlefield and within decades nearly every BattleMech regiment of the Regular and Royal Armies featured them. However it was during the design's initial trial runs that pilots began using these 'Mechs in what would infamously become known as the \"Highlander Burial\". Leaping into the air and landing directly on their enemy, a Highlander could literally drive a light 'Mech into the ground. So successful was this maneuver that the design team re-engineered the legs to withstand repeated death-from-above attacks and turned what had been a desperation move into an art form, giving Highlander pilots an additional psychological edge.",
+  "Icon": "uixTxrIcon_highlander",
+  "Id": "chassisdef_highlander_HGN-732",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Highlander",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Highlander"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Reinforced_Legs",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_highlander",
+ "Heatsinks": 0,
+ "InitialTonnage": 9,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 145,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 290,
+   "MaxRearArmor": 145,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 45,
+ "MeleeInstability": 23,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "highlander",
+ "PrefabIdentifier": "chrPrfMech_highlander_SLDFBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Juggernaut & Heavy Cavalry",
+ "Tonnage": 90,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "HGN-732",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Highlander is a well known SLDF Era Battlemech. Originally designed as a base or installation defender, the HGN-732 is probably the most famous Highlander model. At long ranges, a Gauss Rifle and LRM 20 can effectively deter many more lightly armored opponents. If a mech does decide to close the distance, two Medium Lasers and a SRM 6 are waiting to meet them.",
+ "weightClass": "ASSAULT"
+}

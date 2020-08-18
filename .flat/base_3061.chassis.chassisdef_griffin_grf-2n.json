@@ -1,0 +1,224 @@
+{
+ "BattleValue": 6088000,
+ "ChassisTags": {
+  "items": [
+   "SLDFMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 55,
+ "DFAInstability": 28,
+ "DFASelfDamage": 55,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1376058,
+  "Details": "The Griffin 2N is an old Star League model that was among the most versatile 'Mechs in its heyday. Its weapons generated a lot of heat, but the old Double Heat Sinks were put in to handle it.",
+  "Icon": "uixTxrIcon_griffin",
+  "Id": "chassisdef_griffin_GRF-2N",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Griffin",
+  "Purchasable": false,
+  "Rarity": 2,
+  "UIName": "Griffin"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_griffin",
+ "Heatsinks": 0,
+ "InitialTonnage": 5.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 28,
+ "MeleeInstability": 14,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "griffin",
+ "PrefabIdentifier": "chrPrfMech_griffinBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker & Skirmisher",
+ "Tonnage": 55,
+ "TopSpeed": 80,
+ "TurnRadius": 90,
+ "VariantName": "GRF-2N",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Griffin 2N is an old Star League model that was among the most versatile 'Mechs in its heyday. Its weapons generated a lot of heat, but the old Double Heat Sinks were put in to handle it.",
+ "weightClass": "MEDIUM"
+}

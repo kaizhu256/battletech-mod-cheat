@@ -1,0 +1,235 @@
+{
+ "BattleValue": 1642000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 20,
+ "DFAInstability": 10,
+ "DFASelfDamage": 20,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 286905,
+  "Details": "The 2S variant was designed by Majesty Metals of the Magistracy of Canopus as a fast raider and tank hunter suitable for export throughout the periphery. Armed with twin SRM6s, loaded with 2 tons of munitions and fitted with MASC; the 2S is a fearsome knife fighter that can quickly close in and cripple it’s opponents. To make room for the missiles, the standard engine was substituted for an XL engine and paired with an endo steel chassis. Unfortunately the low armour and lack of CASE protected magazines has lead to a high mortality rate among it’s pilots; earning it the nickname dead woman's coffin. As the pilot often goes down with their mech – usually in a fiery explosion as the ammunition magazines detonate. Considered an expensive failure by the Magistracy, the design is nonetheless in high demand throughout the periphery with back orders sufficient to keep Magistracy Metals supplying the design for years to come.",
+  "Icon": "uixTxrIcon_locust",
+  "Id": "chassisdef_locust_LCT-2S",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Locust",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Locust"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Narrow_Low_Profile",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_locust",
+ "Heatsinks": 0,
+ "InitialTonnage": 2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 10,
+ "MeleeInstability": 5,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "locust",
+ "PrefabIdentifier": "chrPrfMech_locustBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Fast Striker",
+ "Tonnage": 20,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "LCT-2S",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The LCT-0S, or Dead Woman's Coffin, is designed to unleash a withering fusillade of SRMs, and then it will likely be destroyed. Since the only SRMs its armed with are unguided, it's unlikely to score any hits. Carrying subsequent salvos is only wasted tonnage",
+ "weightClass": "LIGHT"
+}

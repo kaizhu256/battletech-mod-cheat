@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Alliance Flashpoint for Steiner",
+  "Icon": "",
+  "Id": "fp_allianceSteiner",
+  "Name": "Steiner Alliance"
+ },
+ "Difficulty": 9,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Our allies in the Lyran Commonwealth have a special request for us. They insist that they can only give us details in person.",
+ "InProgressTimeout": 0,
+ "InternalName": "allianceSteiner",
+ "LanceDropTonnageHint": "Heavy",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_name_claybrooke"
+   ],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_allianceSteiner",
+ "PotentialEmployers": [
+  "Steiner"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "ALLIED_FACTION_Steiner"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_FP_allianceSteiner",
+ "TargetFaction": "Marik",
+ "UnitDropTonnageHint": "Light",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1000
+}

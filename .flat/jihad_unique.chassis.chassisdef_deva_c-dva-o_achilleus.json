@@ -1,0 +1,346 @@
+{
+ "BattleValue": 14124000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-0.75",
+   "OmniMech",
+   "HeroMech",
+   "projectb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Deva"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 70,
+ "DFAInstability": 35,
+ "DFASelfDamage": 70,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 6084138,
+  "Details": "Another of the Word of Blake's Celestial series OmniMechs, the Deva (named for celestial beings from the Hindu belief system) also makes extensive use of new technologies. It is built with a light fusion engine, a heavy-duty gyro that can take half again as much punishment as its standard counterpart, and the small cockpit common to all of the Celestials. The custom config of Opacus Venatori member Adept Achillius St. John carries a pair of arm-mounted Ramtech 9500V Large Variable Speed Pulse Lasers supported by two Diverse Optics ER Medium Lasers in the head, all four lasers linked to a Targeting Computer. A Supercharger ensures St. John reaches optimum range in an instant while three extra Double Heat Sinks allow him to constantly fire as he does.",
+  "Icon": "Deva",
+  "Id": "chassisdef_deva_C-DVA-O_achilleus",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Deva",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Deva"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_endosteel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_FCS_Buffered_VDNI",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_HeavyDuty_Omni",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_280",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_light_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Improved_Comms",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_archangel",
+ "Heatsinks": 0,
+ "InitialTonnage": 7,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 2
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 2
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 110,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 220,
+   "MaxRearArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 35,
+ "MeleeInstability": 18,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "archangel",
+ "PrefabIdentifier": "chrprfmech_archangelbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Custom WoB Mech",
+ "Tonnage": 70,
+ "TopSpeed": 75,
+ "TurnRadius": 90,
+ "VariantName": "C-DVA-O-A",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Another of the Word of Blake's Celestial series OmniMechs, the Deva (named for celestial beings from the Hindu belief system) also makes extensive use of new technologies. It is built with a light fusion engine, a heavy-duty gyro that can take half again as much punishment as its standard counterpart, and the small cockpit common to all of the Celestials. The custom config of Opacus Venatori member Adept Achillius St. John carries a pair of arm-mounted Ramtech 9500V Large Variable Speed Pulse Lasers supported by two Diverse Optics ER Medium Lasers in the head, all four lasers linked to a Targeting Computer. A Supercharger ensures St. John reaches optimum range in an instant while three extra Double Heat Sinks allow him to constantly fire as he does.",
+ "weightClass": "HEAVY"
+}

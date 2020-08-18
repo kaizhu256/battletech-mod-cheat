@@ -1,0 +1,67 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Generic_Standard"
+  },
+  "Flags": {
+   "flags": [
+    "ignore_damage",
+    "engine_part",
+    "default"
+   ]
+  },
+  "Lootable": {
+   "ItemID": "lootable_kit_shs"
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "[[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 15"
+   },
+   "Install": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "A Mech' <b>Cooling System</b> provides heat dissipation for components inside the mech and compatible extension points for additional heat sinks throughout the mech.",
+  "Icon": "thermometer-cold",
+  "Id": "emod_kit_shs",
+  "Manufacturer": "Generic",
+  "Model": "Cooling System",
+  "Name": "Cooling",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Cooling"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

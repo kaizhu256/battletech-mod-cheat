@@ -1,0 +1,688 @@
+{
+ "Settings": [
+  {
+   "Bonus": "ForbiddenRange",
+   "Full": "Can't fire at targets closer than {0} meters.",
+   "Long": "Forbidden Range {0}",
+   "Short": "Forbidden Range"
+  },
+  {
+   "Bonus": "FLAKmode",
+   "Full": "FLAK Mode: May fire std. ammo directly at airborne units: -3 acc. penalty, ignores evasion, no min range.",
+   "Long": "FLAK Mode",
+   "Short": "FLAK"
+  },
+  {
+   "Bonus": "DIRECTmode",
+   "Full": "Direct Mode: May fire directly at ground units within 600 meters: -4 acc. penalty, ignores evasion.",
+   "Long": "Direct Mode",
+   "Short": "Direct"
+  },
+  {
+   "Bonus": "DoesCluster",
+   "Full": "Hits cluster toward same location, affected by clustering modifiers.",
+   "Long": "Clustered Hits",
+   "Short": "Cluster"
+  },
+  {
+   "Bonus": "AmmoPerShot",
+   "Full": "Expends {0} ammunition per shot",
+   "Long": "Ammo Per Shot: {0}",
+   "Short": "Ammo Used: {0}"
+  },
+  {
+   "Bonus": "ScatterRadius",
+   "Full": "Shot can scatter by Min {0} and Max {1} distance",
+   "Long": "Min{0}Max{1}Scatter",
+   "Short": "Min{0}Max{1}Scatter"
+  },
+  {
+   "Bonus": "NoSelfHarm",
+   "Full": "The user is immune to this weapon's AOE effects.",
+   "Long": "No Self Harm",
+   "Short": "No Self Harm"
+  },
+  {
+   "Bonus": "ModesCanMisfire",
+   "Full": "Alternate fire modes can damage this weapon when it jams.",
+   "Long": "Alt-Fire modes can Misfire",
+   "Short": "Alt-Misfire"
+  },
+  {
+   "Bonus": "JumpAttacker",
+   "Full": "{0} Jump Attack Damage.",
+   "Long": "{0}J.Dmg.",
+   "Short": "{0}J.Dmg."
+  },
+  {
+   "Bonus": "IsMelee",
+   "Full": "Weapon can fire while making a melee attack. Requires a Hand in Location.",
+   "Long": "Melee Weapon",
+   "Short": "Melee Wpn"
+  },
+  {
+   "Bonus": "IsFireFist",
+   "Full": "Weapon can fire while making a melee attack. Counts as HandActuator.",
+   "Long": "Melee Weapon",
+   "Short": "Melee Wpn"
+  },
+  {
+   "Bonus": "1shot",
+   "Full": "Weapon carries internal ammo for a single salvo",
+   "Long": "One Shot",
+   "Short": "1-shot"
+  },
+  {
+   "Bonus": "IsArtillery",
+   "Full": "Indirect Artillery deals damage to a ground area from a long distance, ammo determines the size and power of the effect.",
+   "Long": "Artillery",
+   "Short": "Artillery"
+  },
+  {
+   "Bonus": "IsNOOK",
+   "Full": "Davy Crockett Tactical Nuclear Missiles: launched from an Arrow IV platform. Eradicates all life in a large area",
+   "Long": "Davy Crockett",
+   "Short": "Davy Crockett"
+  },
+  {
+   "Bonus": "IsRocket",
+   "Full": "Fires a salvo of {0} unguided rockets",
+   "Long": "Rocket Launcher",
+   "Short": "Rocket Launcher"
+  },
+  {
+   "Bonus": "IsIRocket",
+   "Full": "Fires a salvo of {0} guided rockets",
+   "Long": "Improved RL",
+   "Short": "Imp.RL"
+  },
+  {
+   "Bonus": "IsMortar",
+   "Full": "Mortars fire a range of ammunition types that are immune to AMS",
+   "Long": "Mortar",
+   "Short": "Mortar"
+  },
+  {
+   "Bonus": "IsInfernoRocket",
+   "Full": "Fires a salvo of {0} unguided Inferno rockets",
+   "Long": "Inferno Launcher",
+   "Short": "Inferno Launcher"
+  },
+  {
+   "Bonus": "IsThunderbolt",
+   "Full": "Fires a devastating guided missile",
+   "Long": "Thunderbolt Missile",
+   "Short": "Thunderbolt Missile"
+  },
+  {
+   "Bonus": "IsThermobolt",
+   "Full": "Fires a thermobaric Thunderbolt missile",
+   "Long": "Thermobaric Missile",
+   "Short": "Thermobaric Missile"
+  },
+  {
+   "Bonus": "IsPalasma",
+   "Full": "Weapon Gains {0} increased Range, Damage, Heat Damage and Heat generated for every 10 Heat",
+   "Long": "Plasma",
+   "Short": "Plasma"
+  },
+  {
+   "Bonus": "IsPlasma",
+   "Full": "Plasma Weapons fire superheated material, dealing kinetic damage and heat",
+   "Long": "Plasma",
+   "Short": "Plasma"
+  },
+  {
+   "Bonus": "BANOAMMO",
+   "Full": "Small Scale Battle Armor Ballistic weapon",
+   "Long": "No Ammo",
+   "Short": "No Ammo"
+  },
+  {
+   "Bonus": "IsMG",
+   "Full": "Machineguns are rapid-fire weapons with select-fire that increases rate-of-fire, but have recoil and can jam",
+   "Long": "MG",
+   "Short": "MG"
+  },
+  {
+   "Bonus": "IsGauss",
+   "Full": "Gauss Rifles are high damage, long-ranged weapons with low heat, Powers Down to prevent Explosion when out of Ammo",
+   "Long": "Gauss Rifle",
+   "Short": "Gauss Rifle"
+  },
+  {
+   "Bonus": "IsRISCGauss",
+   "Full": "Heavy Silver Bullet Gauss Rifles fires a shroud of shrapnel dealing Area of Effect Damage",
+   "Long": "Heavy SBGR",
+   "Short": "Heavy SBGR"
+  },
+  {
+   "Bonus": "IsHeavyGauss",
+   "Full": "Heavy Gauss Rifles fire a heavy projectile at hypersonic velocity",
+   "Long": "Heavy Gauss Rifle",
+   "Short": "Heavy Gauss Rifle"
+  },
+  {
+   "Bonus": "IsAPGauss",
+   "Full": "AP Gauss Rifles fire a barrage of {0} small projectiles",
+   "Long": "AP Gauss Rifle",
+   "Short": "AP Gauss Rifle"
+  },
+  {
+   "Bonus": "IsAC",
+   "Full": "Autocannons are single-shot ballistic weapons with multiple ammo types that suffer from recoil",
+   "Long": "Autocannon",
+   "Short": "Autocannon"
+  },
+  {
+   "Bonus": "IsHVAC",
+   "Full": "Hyper Velocity Autocannons fire special high-velocity ammunition with a {0} chance of misfiring",
+   "Long": "Hyper Velocity AC",
+   "Short": "HV.AC"
+  },
+  {
+   "Bonus": "IsLRM",
+   "Full": "Long-Range Missiles fire a large salvo and can use multiple ammo types",
+   "Long": "Long-Range Missile",
+   "Short": "Long-Range Missile"
+  },
+  {
+   "Bonus": "IsSRM",
+   "Full": "Short-Range Missiles fire a small salvo and can use multiple ammo types",
+   "Long": "Short-Range Missile",
+   "Short": "Short-Range Missile"
+  },
+  {
+   "Bonus": "IsRifle",
+   "Full": "Rifles are primitive projectile cannons; Requires Ammo installed in same Location",
+   "Long": "Rifle",
+   "Short": "Rifle"
+  },
+  {
+   "Bonus": "IsPepperbox",
+   "Full": "Pepperboxes are {0}-barreled cannons",
+   "Long": "Pepperbox",
+   "Short": "Pepperbox"
+  },
+  {
+   "Bonus": "IsLightAC",
+   "Full": "Light Autocannons are recoilless, low-mass and compact, but less powerful autocannons",
+   "Long": "Light Autocannon",
+   "Short": "Light AC"
+  },
+  {
+   "Bonus": "HeavyLaser",
+   "Full": "Heavy Lasers deal superior damage, but have a -1 accuracy penalty",
+   "Long": "Heavy Laser",
+   "Short": "Heavy Laser"
+  },
+  {
+   "Bonus": "HyperLaser",
+   "Full": "Hyper Lasers deal superior damage and can be overcharged, but can explode for {0} damage when destroyed",
+   "Long": "Hyper Laser",
+   "Short": "Hyper Laser"
+  },
+  {
+   "Bonus": "ImpHeavyLaser",
+   "Full": "Improved Heavy Lasers deal superior damage and have no accuracy penalty, but can explode for {0} damage when destroyed",
+   "Long": "Improved Heavy Laser",
+   "Short": "Imp.Heavy Laser"
+  },
+  {
+   "Bonus": "FluidGun",
+   "Full": "Fluid Guns fire a wide variety of liquids, even in melee",
+   "Long": "FluidGun",
+   "Short": "FluidGun"
+  },
+  {
+   "Bonus": "Bombast",
+   "Full": "Bombast Lasers can select between damage and range at cost of heat and accuracy",
+   "Long": "Bombast Laser",
+   "Short": "Bombast"
+  },
+  {
+   "Bonus": "Grazer",
+   "Full": "Grazers can select between standard, ER and pulse firing mode. More likely to TAC than normal lasers.",
+   "Long": "Grazer Laser",
+   "Short": "Grazer"
+  },
+  {
+   "Bonus": "IsLaser",
+   "Full": "Laser Weapons are lightweight and do not require ammo, but run very hot",
+   "Long": "Laser",
+   "Short": "Laser"
+  },
+  {
+   "Bonus": "RotaryChemicalLaser",
+   "Full": "Rotary Chemical Laser Weapons have select-fire of 1-6 shots, but have +1 Recoil and a chance to jam {0} on each shot after 1",
+   "Long": "Rot. Chemical Laser",
+   "Short": "Rot.Chem.Laser"
+  },
+  {
+   "Bonus": "ReEngineeredLaser",
+   "Full": "Re-engineered lasers deal increased damage to armor, but suffer against internals",
+   "Long": "ReEngineered Laser",
+   "Short": "ReEngineeredLaser"
+  },
+  {
+   "Bonus": "ChemicalLaser",
+   "Full": "Chemical Lasers need ammo, but are lighter and generate far less heat",
+   "Long": "Chemical Laser",
+   "Short": "ChemLaser"
+  },
+  {
+   "Bonus": "MultiLaser",
+   "Full": "Multishot Lasers fire a barrage of laser beams",
+   "Long": "Multishot",
+   "Short": "Multishot"
+  },
+  {
+   "Bonus": "NarcLauncher",
+   "Full": "NARC Launchers fire an array of tactical munitions",
+   "Long": "NARC Launcher",
+   "Short": "NARC"
+  },
+  {
+   "Bonus": "TAG",
+   "Full": "Target Acquisition Gear grants {0} to sensor checks on hit, decaying by -1 for each hex the target moved",
+   "Long": "Target Acquisition Gear",
+   "Short": "TAG"
+  },
+  {
+   "Bonus": "UltraLBX",
+   "Full": "Ultra Large-Bore Extended Autocannons have increased range, reduced weight and can fire cluster and slug ammo",
+   "Long": "U/LB-X Autocannon",
+   "Short": "UltraLBX"
+  },
+  {
+   "Bonus": "LBX",
+   "Full": "Large-Bore Extended Autocannons have increased range, reduced weight and can fire cluster and slug ammo",
+   "Long": "LB-X Autocannon",
+   "Short": "LBX"
+  },
+  {
+   "Bonus": "Shotgun",
+   "Full": "A Jury Rigged HandHeld LBX. Fires Cluster munitions.",
+   "Long": "LB-X Shotgun",
+   "Short": "LBX"
+  },
+  {
+   "Bonus": "SBGR",
+   "Full": "Silver Bullet Gauss Rifles fire a cluster of {0} projectiles",
+   "Long": "Silver Bullet Gauss",
+   "Short": "SB GR"
+  },
+  {
+   "Bonus": "JRSBGR",
+   "Full": "Jury Rigged Silver Bullet Gauss Rifles can select between solid slug, cluster or scrap metal ammunition",
+   "Long": "Jury Rigged Silver Bullet Gauss",
+   "Short": "JR SB GR"
+  },
+  {
+   "Bonus": "Canister",
+   "Full": "BFG 9000s fire a canister with {0} projectiles",
+   "Long": "Canister Gauss",
+   "Short": "Canister"
+  },
+  {
+   "Bonus": "HAGR",
+   "Full": "Hyper Assault Gauss Rifles fire 10 projectiles per burst",
+   "Long": "Hyper Assault Gauss",
+   "Short": "HA GR"
+  },
+  {
+   "Bonus": "Mjoelnir",
+   "Full": "Mjoelnir Auto Cannon can fire any AC Ammo and fires twice with Ultra.",
+   "Long": "Mjoelnir AC",
+   "Short": "Mjoelnir"
+  },
+  {
+   "Bonus": "Ultra",
+   "Full": "Ultra Autocannons have select-fire of 1 or 2 shots",
+   "Long": "Ultra Autocannon",
+   "Short": "U/AC"
+  },
+  {
+   "Bonus": "Hellstorm",
+   "Full": "Rotary Howitzer has select-fire of 1-6 shots, with increased heat, recoil and jam chance at higher fire rates",
+   "Long": "Rotary Howitzer",
+   "Short": "R/HWT"
+  },
+  {
+   "Bonus": "IsRotaryRifle",
+   "Full": "Rotary Rifles are primitive projectile cannons; select-fire of 1-6 shots; increased heat, recoil and jam chance at higher fire rates; Requires Ammo installed in same Location",
+   "Long": "Rotary Rifle",
+   "Short": "RotaryRifle"
+  },
+  {
+   "Bonus": "Rotary",
+   "Full": "Rotary Autocannons have select-fire of 1-6 shots, with increased heat, recoil and jam chance at higher fire rates",
+   "Long": "Rotary Autocannon",
+   "Short": "R/AC"
+  },
+  {
+   "Bonus": "RAPLBGR",
+   "Full": "Rotary Anti-personnel Large Bore Gauss Rifles have select-fire of 1-4 shots, with increased heat, recoil and jam chances at higher fire rates",
+   "Long": "Rotary AP LB Gauss Rifle",
+   "Short": "R/AP-LB-GR"
+  },
+  {
+   "Bonus": "Dakkaray",
+   "Full": "Pirate Rotary Autocannons fire a barrage of {0} shots, and have select-fire of 1-6 shots, with increased heat, recoil and jam chance at higher fire rates",
+   "Long": "Rotary Autocannon",
+   "Short": "R/AC"
+  },
+  {
+   "Bonus": "XPulse",
+   "Full": "X-Pulse Lasers have +1 accuracy and ignore 1 Evasion pip and fire one strong beam but have a Refire Penalty",
+   "Long": "X-Pulse Laser",
+   "Short": "XPulse"
+  },
+  {
+   "Bonus": "Pulse",
+   "Full": "Pulse Lasers have +1 accuracy and ignore 1 Evasion pip",
+   "Long": "Pulse Laser",
+   "Short": "Pulse"
+  },
+  {
+   "Bonus": "ERLaser",
+   "Full": "Extended Range Lasers have increased range, but generate more heat",
+   "Long": "ER Laser",
+   "Short": "ER Laser"
+  },
+  {
+   "Bonus": "ERPulse",
+   "Full": "Extended Range Pulse Lasers have +1 accuracy and ignore 1 Evasion pip",
+   "Long": "ER Pulse Laser",
+   "Short": "ER Pulse"
+  },
+  {
+   "Bonus": "VSPL",
+   "Full": "Variable Speed Pulse Lasers deal less damage based on distance moved",
+   "Long": "Variable Pulse Laser",
+   "Short": "VSPL"
+  },
+  {
+   "Bonus": "Streak",
+   "Full": "Streak Launcher makes one To-Hit roll; Only fires if the roll succeeds, if it does all missiles hit.",
+   "Long": "Streak Launcher",
+   "Short": "Streak"
+  },
+  {
+   "Bonus": "StreakMML",
+   "Full": "Streak Multi-Missile Launchers can fire either Streak LRM or SRM ammo",
+   "Long": "Streak MML",
+   "Short": "SMML"
+  },
+  {
+   "Bonus": "MML",
+   "Full": "Multi-Missile Launchers can fire either LRM or SRM ammo",
+   "Long": "Multi Missile Launcher",
+   "Short": "MML"
+  },
+  {
+   "Bonus": "MMLP",
+   "Full": "Jury Rigged Multi-Missile Launchers can fire SRM, LRM, MRM, HMRM ammo",
+   "Long": "Multi Missile Launcher",
+   "Short": "MML"
+  },
+  {
+   "Bonus": "PirateATM",
+   "Full": "Jury-Rigged ATMs can fire MRM, LRM or SRM ammo",
+   "Long": "Jury Rigged ATM",
+   "Short": "JR ATM"
+  },
+  {
+   "Bonus": "BFG",
+   "Full": "Jury-Rigged Railguns Deals More damage with less distance moved",
+   "Long": "Jury Rigged Railgun",
+   "Short": "JR Railgun"
+  },
+  {
+   "Bonus": "SuicideBomb",
+   "Full": "Using this weapon detonates the Units Engine, 3/4 of its traits effect added to Engine Explosion",
+   "Long": "Suicide Bomb",
+   "Short": "Suicide Bomb"
+  },
+  {
+   "Bonus": "ATM",
+   "Full": "Advanced Tactical Missile Launchers have an inbuilt Artemis IV system, and unique ammo",
+   "Long": "Adv. Tact. Mssl. Launcher",
+   "Short": "ATM"
+  },
+  {
+   "Bonus": "iATM",
+   "Full": "Improved Advanced Tactical Missile Launchers have an inbuilt Streak system, and unique ammo",
+   "Long": "Imp. Adv. Tact. Mssl. Launcher",
+   "Short": "iATM"
+  },
+  {
+   "Bonus": "MRM",
+   "Full": "Medium Range Missile Launchers fire a large volley of unguided missiles",
+   "Long": "Medium Range Mssl. Launcher",
+   "Short": "MRM"
+  },
+  {
+   "Bonus": "HMRM",
+   "Full": "Heavy Medium Range Missile Launchers fire a volley of missiles, and can use different ammo types",
+   "Long": "Heavy Medium Range Mssl. Launcher",
+   "Short": "HMRM"
+  },
+  {
+   "Bonus": "SawedOffArtillery",
+   "Full": "Short-barrelled Artillery featuring reduced weight and size, as well as reduced range and accuracy",
+   "Long": "Sawed Off Artillery",
+   "Short": "SawedOff Artillery"
+  },
+  {
+   "Bonus": "DefianceAC",
+   "Full": "Defiance AC: increased range; increased heat",
+   "Long": "Defiance",
+   "Short": "Defiance"
+  },
+  {
+   "Bonus": "FederatedAC",
+   "Full": "Federated AC: reduced jam rate; slightly reduced damage",
+   "Long": "Federated",
+   "Short": "Federated"
+  },
+  {
+   "Bonus": "KaliYamaAC",
+   "Full": "Kali Yama AC: increased damage; increased recoil; increased heat",
+   "Long": "Kali Yama",
+   "Short": "KaliYama"
+  },
+  {
+   "Bonus": "ImperatorAC",
+   "Full": "Imperator AC: Can Rapid Fire; Can Explode When Destroyed",
+   "Long": "Imperator",
+   "Short": "Imperator"
+  },
+  {
+   "Bonus": "ImperatorAC+",
+   "Full": "Imperator AC: Can Rapid Fire; Less Jam&Recoil with RF; Can Explode When Destroyed",
+   "Long": "Imperator+",
+   "Short": "Imperator+"
+  },
+  {
+   "Bonus": "RapidFireAC",
+   "Full": "Rapid Fire fires twice with {0} Chance to Jam and Damage itself",
+   "Long": "RF AC",
+   "Short": "RF AC"
+  },
+  {
+   "Bonus": "NorseGauss",
+   "Full": "Norse Storm Gauss Rifle: minor area-of-effect damage",
+   "Long": "NorseStorm",
+   "Short": "NorseStorm"
+  },
+  {
+   "Bonus": "DefianceGauss",
+   "Full": "Defiance Gauss Rifle: increased range; increased heat",
+   "Long": "Defiance",
+   "Short": "Defiance"
+  },
+  {
+   "Bonus": "BlackwellGauss",
+   "Full": "Blackwell Gauss Rifle: increased accuracy; increased jam rate",
+   "Long": "Blackwell",
+   "Short": "Blackwell"
+  },
+  {
+   "Bonus": "MydronAC",
+   "Full": "Mydron AC fire a burst of {0} shots",
+   "Long": "Mydron",
+   "Short": "Mydron"
+  },
+  {
+   "Bonus": "DeltaLRM",
+   "Full": "Delta LRM: resistance to AMS; has recoil",
+   "Long": "Delta",
+   "Short": "Delta"
+  },
+  {
+   "Bonus": "LongFireLRM",
+   "Full": "Longfire LRM: increased range; increased heat",
+   "Long": "LongFire",
+   "Short": "LongFire"
+  },
+  {
+   "Bonus": "TelosLRM",
+   "Full": "Telos LRM: increased accuracy; more vulnerable to AMS",
+   "Long": "Telos",
+   "Short": "Telos"
+  },
+  {
+   "Bonus": "ZeusLRM",
+   "Full": "Zeus LRM: increased damage; increased jam rate",
+   "Long": "Zeus",
+   "Short": "Zeus"
+  },
+  {
+   "Bonus": "HollySRM",
+   "Full": "Holly SRM: increased accuracy; more vulnerable to AMS",
+   "Long": "Holly",
+   "Short": "Holly"
+  },
+  {
+   "Bonus": "IrianSRM",
+   "Full": "Irian SRM: resistance to AMS; increased recoil",
+   "Long": "Irian",
+   "Short": "Irian"
+  },
+  {
+   "Bonus": "ValiantSRM",
+   "Full": "Valiant SRM: increased Critical Chance; reduced damage.",
+   "Long": "Valiant",
+   "Short": "Valiant"
+  },
+  {
+   "Bonus": "ExostarLaser",
+   "Full": "Exostar Laser: increased accuracy; {0} increased heat",
+   "Long": "Exostar",
+   "Short": "Exostar"
+  },
+  {
+   "Bonus": "MaxellLaser",
+   "Full": "Exostar Laser: ignore 1 Evasion; increased heat",
+   "Long": "Maxell",
+   "Short": "Maxell"
+  },
+  {
+   "Bonus": "DiverseOpticsLaser",
+   "Full": "Diverse Optics Laser: increased range, heat and damage variance.",
+   "Long": "Diverse Optics",
+   "Short": "DiverseOptics"
+  },
+  {
+   "Bonus": "IntekLaser",
+   "Full": "Intek Laser: Reduced heat and damage; increased range",
+   "Long": "Intek",
+   "Short": "Intek"
+  },
+  {
+   "Bonus": "RakerLaser",
+   "Full": "Raker Laser: increased accuracy and heat; single beam",
+   "Long": "Raker",
+   "Short": "Raker"
+  },
+  {
+   "Bonus": "BrightBloomLaser",
+   "Full": "BrightBloom Laser: increased range; damage falloff",
+   "Long": "BrightBloom",
+   "Short": "BrightBloom"
+  },
+  {
+   "Bonus": "MagnaLaser",
+   "Full": "Magna Laser: {0} increased damage and heat",
+   "Long": "Magna",
+   "Short": "Magna"
+  },
+  {
+   "Bonus": "BlazeFireLaser",
+   "Full": "BlazeFire Laser: increased damage; chance to jam",
+   "Long": "BlazeFire",
+   "Short": "BlazeFire"
+  },
+  {
+   "Bonus": "BlankenburgLaser",
+   "Full": "Blankenburg Laser: increased crit chance; variable damage",
+   "Long": "Blankenburg",
+   "Short": "Blankenburg"
+  },
+  {
+   "Bonus": "ThunderboltLaser",
+   "Full": "Thunderbolt Laser: reduced weight; increased size; Lightning Can Strike Twice In the Same Place&trade;",
+   "Long": "Thunderbolt",
+   "Short": "Thunderbolt"
+  },
+  {
+   "Bonus": "CeresArmsPPC",
+   "Full": "Ceres Arms PPC: Rugged; No damage from FIOFF misfire",
+   "Long": "Ceres Arms",
+   "Short": "CeresArms"
+  },
+  {
+   "Bonus": "DonalPPC",
+   "Full": "Donal PPC: Increased sensor disruption applied in AOE",
+   "Long": "Donal",
+   "Short": "Donal"
+  },
+  {
+   "Bonus": "TiegartPPC",
+   "Full": "Tiegart PPC: Compact size; Increased recoil, Increased heat",
+   "Long": "Tiegart",
+   "Short": "Tiegart"
+  },
+  {
+   "Bonus": "DefiancePPC",
+   "Full": "Defiance PPC: Optimized for long range; All range brackets increased.",
+   "Long": "Defiance",
+   "Short": "Defiance"
+  },
+  {
+   "Bonus": "MagnaPPC",
+   "Full": "Magna PPC: reduced weight; Increased recoil, Increased heat",
+   "Long": "Magna",
+   "Short": "Magna"
+  },
+  {
+   "Bonus": "RGR",
+   "Full": "Rotary Gauss Rifle: select-fire of 1-6 shots; with increased heat, recoil and jam chance at higher rates-of-fire, also has an additional mode",
+   "Long": "Rotary Gauss Rifle",
+   "Short": "R/GR"
+  },
+  {
+   "Bonus": "IsRail",
+   "Full": "Railguns: high damage; accurate; long-ranged ballistic weapons with moderate heat generation",
+   "Long": "Railgun",
+   "Short": "Railgun"
+  },
+  {
+   "Bonus": "IsProtoweapon",
+   "Full": "ProtoMech weapons can only be attached to ProtoMechs or Unique Mechs with the capability",
+   "Long": "ProtoMech Weapon",
+   "Short": "Protoweapon"
+  }
+ ]
+}

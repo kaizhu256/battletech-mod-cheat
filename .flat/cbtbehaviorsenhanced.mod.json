@@ -1,0 +1,194 @@
+{
+ "Author": "FrostRaptor",
+ "ConflictsWith": [
+  "CharlesB"
+ ],
+ "Contact": "",
+ "DLL": "CBTBehaviorsEnhanced.dll",
+ "DLLEntryPoint": "CBTBehaviorsEnhanced.Mod.Init",
+ "DependsOn": [
+  "IRBTModUtils",
+  "MechEngineer",
+  "CustomComponents"
+ ],
+ "Description": "Provides TableTop like behaviors for heat, movement, and more",
+ "Enabled": true,
+ "Hidden": true,
+ "Name": "CBTBehaviorsEnhanced",
+ "Settings": {
+  "Breaches": {
+   "ThinAtmoCheck": 0.03,
+   "VacuumCheck": 0.17
+  },
+  "Debug": false,
+  "EnablePermanentEvasion": true,
+  "Features": {
+   "BiomeBreaches": true,
+   "StartupChecks": true
+  },
+  "Heat": {
+   "Explosion": {
+    "57": 0.1,
+    "69": 0.2,
+    "84": 0.3,
+    "105": 0.4,
+    "120": 0.5,
+    "135": 0.6,
+    "150": 0.75
+   },
+   "Firing": {
+    "24": 1,
+    "39": 2,
+    "51": 3,
+    "72": 4,
+    "99": 5,
+    "123": 6,
+    "144": 7
+   },
+   "MaxHeat": 150,
+   "Movement": {
+    "15": -1,
+    "30": -2,
+    "45": -3,
+    "60": -4,
+    "75": -5,
+    "93": -6,
+    "111": -7,
+    "129": -8,
+    "147": -9
+   },
+   "PilotInjury": {
+    "84": 0.3,
+    "117": 0.6,
+    "141": 0.8
+   },
+   "ShowExtremeOverheatAnim": 90,
+   "ShowLowOverheatAnim": 42,
+   "Shutdown": {
+    "42": 0.1,
+    "54": 0.3,
+    "66": 0.6,
+    "78": 0.8,
+    "90": 0.9,
+    "102": 1,
+    "114": 1.1,
+    "126": 1.2,
+    "138": 1.3,
+    "150": -1
+   },
+   "ShutdownFallThreshold": 0.75,
+   "SystemFailures": {
+    "108": 0.3,
+    "132": 0.6
+   },
+   "WarnAtHeat": 42
+  },
+  "LocalizedCHUDTooltips": {
+   "AMMO_EXP_CHANCE": "\nAmmo Explosion on (d100+{0}) < {1}",
+   "AMMO_EXP_WARNING": "Guaranteed Ammo Explosion!",
+   "ATTACK_PENALTY": "\nAttack Penalty: +{0}",
+   "END_OF_TURN_HEAT": "Projected Heat: {0} of {1}",
+   "HEAT_AND_SINKING": "\n  Heat: {0} of {1}  Will Sink: {2} of {3} (<color=#{4}>x{5:#.#}</color>)",
+   "MOVEMENT_PENALTY": "\nMovement Penalty: -{0}m",
+   "OVERHEAT_ICON_TEXT ": "This unit will suffer penalties, may shutdown or even explode unless heat is reduced past critical levels.\n<i>Hover over the heat bar to see a detailed breakdown.</i>",
+   "OVERHEAT_ICON_TITLE": "OVERHEATING",
+   "PILOT_INJURY_CHANCE": "\nPilot Injury on (d100+{0}) < {1}",
+   "SHUTDOWN_CHANCE": "\nShutdown on (d100+{0}) < {1}",
+   "SHUTDOWN_ICON_TEXT": "This target is easier to hit, and Called Shots can be made against this target. When clicking the restart button, a piloting check will if the BattleMech restarts.",
+   "SHUTDOWN_ICON_TITLE": "SHUT DOWN",
+   "SHUTDOWN_WARNING": "\nGuaranteed Shutdown!",
+   "SYSTEM_FAILURE_CHANCE": "\nSystem Failure on (d100+{0}) < {1}",
+   "TITLE": "HEAT LEVEL"
+  },
+  "LocalizedFloaties": {
+   "AUTO_FAIL": "Automatic Failure",
+   "EXPLOSION_CHECK": "Ammo Explosion Check",
+   "FALLING_CHECK": "Falling Check",
+   "HULL_BREACH": "Hull Breach Check",
+   "INJURY_CHECK": "Pilot Injury Check",
+   "JUMP_AND_FALL": "Jumped with Damage",
+   "MELEE_CHARGE": "Charge Falling Check",
+   "MELEE_DFA": "DFA Falling Check",
+   "MELEE_KICK": "Kick Falling Check",
+   "RUN_AND_FALL": "Sprinted with Damage",
+   "SHUTDOWN_CHECK": "Shutdown Check",
+   "SHUTDOWN_FALL": "Falling from Shutdown",
+   "SHUTDOWN_OVERRIDE_FAILED": "Failed Shutdown Override",
+   "SHUTDOWN_OVERRIDE_SUCCESS": "Passed Shutdown Override",
+   "STARTUP_CHECK": "Startup Check",
+   "SYSTEM_FAILURE_CHECK": "System Failure Check",
+   "VOLATILE_EXPLOSION_CHECK": "Volatile Ammo Explosion Check"
+  },
+  "Melee": {
+   "AllowMeleeFromSprint": true,
+   "HitByChargeFallChance": 0.6,
+   "HitByDFAFallChance": 0.6,
+   "HitByKickFallChance": 0.3,
+   "MadeChargeFallChance": 0.6,
+   "MadeDFAFallChance": 0.9,
+   "MissedKickFallChance": 0.3,
+   "SkillMulti": 0.05
+  },
+  "Move": {
+   "FallAfterJumpChance": 0.3,
+   "FallAfterRunChance": 0.3,
+   "HeatMovePenalty": 24,
+   "MPMetersPerHex": 25,
+   "MinimumMove": 40,
+   "RunMulti": 1.5,
+   "SkillMulti": 0.05,
+   "SpeedAsMP": false
+  },
+  "Piloting": {
+   "DFAReductionMulti": 0.05,
+   "FallingDamagePerTenTons": 5,
+   "SkillMulti": 0.05,
+   "StabilityCheck": 0.3
+  },
+  "Quips": {
+   "Breach": [
+    "Shit, explosive decompression!",
+    "Hull breach detected!",
+    "I've lost something to atmo!",
+    "I hope life support holds up",
+    "I cant breathe!",
+    "There are cracks in my cockpit!",
+    "Components crippled by vacuum",
+    "Alot of red from that hit",
+    "Damn, lost alot of gear"
+   ],
+   "Knockdown": [
+    "Oh .. shit!",
+    "FML",
+    "This is going to hurt..",
+    "Can't keep her steady!",
+    "Gyro's not compensating!",
+    "Screw you gravity!",
+    "Going down",
+    "You're a bastard Newton",
+    "Stability lost, controls unresponsive!",
+    "Controls are locked up, can't stop the fall!",
+    "Past the critical point, she's going down!",
+    "Bracing for ground impact",
+    "Impact protection don't fail",
+    "Dampening neurohelm feedback",
+    "Hope the armor takes it",
+    "About to bite the dust!"
+   ],
+   "Startup": [
+    "Start damn you",
+    "Can't see through this heat",
+    "Where is the start button?",
+    "Override damn it, override!",
+    "Time to void the warranty",
+    "Why won't you turn on",
+    "I put in the startup sequence!"
+   ]
+  },
+  "ToHitSelfJumped": 2,
+  "Trace": false,
+  "dZ_Abilities": false
+ },
+ "Version": "0.4.10",
+ "Website": "https://github.com/IceRaptor/CBTBehaviorsEnhanced/"
+}

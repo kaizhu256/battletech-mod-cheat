@@ -1,0 +1,128 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "5 Var.Dmg|",
+ "BonusValueB": "X2 Damage vs Overheat.",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 1",
+    "WpnAccuracy: -1",
+    "OHDamage: X2",
+    "VariableDmg: 5",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 1
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 15,
+ "DamageVariance": 5,
+ "Description": {
+  "Cost": 20000,
+  "Details": "Construction and engineering 'Mechs use Arc Welders to join metal parts. In an emergency these high-temperature electric arcs can be used against 'Mechs in melee combat. Like all Industrial weapons, Arc Welders suffer a small inherent penalty to hit.",
+  "Icon": "uixSvgIcon_weapon_Support",
+  "Id": "Weapon_Industrial_ArcWelder",
+  "Manufacturer": "Wayland",
+  "Model": "Welder",
+  "Name": "Arc Welder",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Arc Welder"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 10,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 3,
+ "InventorySize": 1,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 2,
+ "PrefabIdentifier": "Flamer",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Small",
+ "WeaponSubType": "Flamer",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.96",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ],
+ "weaponCategoryID": "SpecialMelee"
+}

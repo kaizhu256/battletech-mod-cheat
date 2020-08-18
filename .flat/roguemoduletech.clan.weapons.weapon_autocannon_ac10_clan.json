@@ -1,0 +1,112 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.3,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "UAC10",
+ "AttackRecoil": 3,
+ "BattleValue": 210,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 3",
+    "WeaponJAM: 3",
+    "WeaponJAMFlat: 24%",
+    "Ultra"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/uac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01103"
+  }
+ },
+ "Damage": 60,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 900000,
+  "Details": "One of the most powerful and efficient weapons mounted in combat, AC/10s are known for their heavy damage and ability to stagger opponents. Like all Autocannon weaponry, AC/10s suffer from recoil effects from continuous fire. \n\n<b><color=#ffcc00>Uses UAC10 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "UltraAC",
+  "Id": "Weapon_Autocannon_AC10_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Heavy Autocannon",
+  "Name": "UAC/10 (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Ultra AC/10 (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.05,
+ "HeatDamage": 0,
+ "HeatGenerated": 21,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 3,
+ "MaxRange": 720,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.16,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": -11,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -1,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.24,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.06,
+   "Id": "x2",
+   "UIName": "x2",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "UAC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

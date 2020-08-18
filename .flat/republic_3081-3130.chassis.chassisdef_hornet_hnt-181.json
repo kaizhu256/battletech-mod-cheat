@@ -1,0 +1,235 @@
+{
+ "BattleValue": 1892000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  }
+ },
+ "DFADamage": 20,
+ "DFAInstability": 10,
+ "DFASelfDamage": 20,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 286905,
+  "Details": "The Hornet debuted in 2760 as an urban recon 'Mech, but lack of interest forced the design to be shelved two years later. In 2990, Kallon Industriesrediscovered the blueprints and resumed production. The upgraded HNT-171 started production in 3051. The production line was destroyed by the Capellans in 3069. The 'Mech is designed around the concept of being able to swiftly move through an urban environment with relatively heavy armor. Overall, because of its eclectic mix of weapons and relatively slow speed, the Hornet is only somewhat effective when inside of a city. When caught outside an urban environment the 'Mech is hard pressed to defend itself.",
+  "Icon": "Hornet",
+  "Id": "chassisdef_hornet_HNT-181",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Hornet",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Hornet"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Narrow_Low_Profile",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_hornet",
+ "Heatsinks": 0,
+ "InitialTonnage": 2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 10,
+ "MeleeInstability": 5,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "hornet",
+ "PrefabIdentifier": "chrprfmech_hornetbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker",
+ "Tonnage": 20,
+ "TopSpeed": 85,
+ "TurnRadius": 360,
+ "VariantName": "HNT-181",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Based on the 161, and producted by Coalition Armory Inc. this Hornet variant was produced by using a 100XL engine with ten Compact Heat Sinks. It is protected by three and a half tons of Ferro-Fibrous Armor, and uses an Endo Steel chassis. It carries a Small Re-Engineered Laser, Small Laser, and an MML-5 with two tons of ammunition in a CASE protected bay. It is most frequently seen in the service of AFFS and Filtvelt Coalition militias.",
+ "weightClass": "LIGHT"
+}

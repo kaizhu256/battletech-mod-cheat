@@ -1,0 +1,241 @@
+{
+ "BattleValue": 4124000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-0.80"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Stealth"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 45,
+ "DFAInstability": 23,
+ "DFASelfDamage": 45,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 779717,
+  "Details": "The Stealth is a heavy scout 'Mech that is in use by the Federated Suns and the Lyran Alliance. The 'Mech has a GM 315 XL Engine that allows the Stealth to move at speeds of 118.8 kph and the MASC system on board can push the 'Mech to 151.2 kph in short bursts. This amazing mobility is augmented by jump jets which the Stealth can use to jump up to two hundred and ten meters. The Stealth is also outfitted with a Cyclops-Beagle Sensory Active Probe that the Stealth can use to find hidden enemy units.",
+  "Icon": "Stealth",
+  "Id": "chassisdef_stealth_STH-1D",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Stealth",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Stealth"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Sensors",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_archer",
+ "Heatsinks": 0,
+ "InitialTonnage": 4.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 17,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 23,
+ "MeleeInstability": 12,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "archer",
+ "PrefabIdentifier": "chrPrfMech_archerBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker",
+ "Tonnage": 45,
+ "TopSpeed": 118,
+ "TurnRadius": 90,
+ "VariantName": "STH-1D",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Stealth is armed with an eclectic short range weapons arsenal. The primary weapons in this arsenal are a pair of Diplan M3 Medium Lasers which are backed up by a Shannon SH-60 SRM-6 and a Federated SuperStreak Streak SRM-2 which both allow the 'Mech to find weak spots in an enemy 'Mech's armor.",
+ "weightClass": "MEDIUM"
+}

@@ -1,0 +1,165 @@
+{
+ "AIBattleValue": 60,
+ "ArmorDamageModifier": 1,
+ "Category": "Fluid",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "CriticalDamageModifier": 1,
+ "Description": {
+  "Cost": 0,
+  "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
+  "Icon": null,
+  "Id": "Ammunition_Fluid_Oil",
+  "Name": "Fluid Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Oil"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "Instability": 8,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit is coated with oil. It will take 200% stability damage from all attacks until its next activation.",
+    "Icon": "uixSvgIcon_designMask_rough",
+    "Id": "Effect_OilInstability",
+    "Name": "OILSLICK"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Multiply",
+    "statName": "ReceivedInstabilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Runspeed is impaired by 50%.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "OilMove-Effect",
+    "Name": "Run Impaired"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "RunSpeed",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Walkspeed is impaired by 50%.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "OilMove-Effect2",
+    "Name": "Walk Impaired"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

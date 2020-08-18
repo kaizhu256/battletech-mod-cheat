@@ -1,0 +1,72 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_ArtemisIV",
+ "BattleValue": 0,
+ "BonusValueA": "+2 Accuracy|+100% Crit|",
+ "BonusValueB": "+2 Indirect Accuracy",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PipsIgnored: +1",
+    "WpnAccuracy: +1",
+    "IndirectAcc: -2",
+    "ArtemisClustering: +6",
+    "MissileHP: 2",
+    "LRMAmmo: 120",
+    "ReqArtemis"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   },
+   {
+    "CategoryID": "ArtemisIVammo"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  },
+  "TRGBColor": {
+   "Color": "#1813B2",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "Artemis IV LRM's have a ''smart'' Warhead that is able to efficiently guide itself towards any target, specifically designed to be used with and requiring the Artemis System offer these Missiles unparalleled Accuracy . \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_ArtemisIV_LRM",
+  "Manufacturer": "Generic",
+  "Model": "LRM Artemis IV",
+  "Name": "LRM Artemis IV Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM ARTIV"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

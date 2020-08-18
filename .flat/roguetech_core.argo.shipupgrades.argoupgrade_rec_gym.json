@@ -1,0 +1,47 @@
+{
+ "AdditionalCost": 1000,
+ "AssignedCastDefId": "castDef_DariusDefault",
+ "AssignedCastDescription": "I suspect a solid majority of the complaints I've received from the MechWarriors are simple idleness. With fitness facilities, I could solve that idleness for them, Commander. If you take my meaning.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "MechWarriors have to maintain their physical condition, and doing so in their own quarters is claustrophobic and distracting. Luckily, the <i>Argo</i> has a full gymnasium, needing only repair and power.",
+  "Icon": "uixSvgIcon_shipUpgrade_gym",
+  "Id": "argoUpgrade_rec_gym",
+  "Name": "Gymnasium",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_Gym",
+ "Location": "SHIP",
+ "PurchaseCost": 225000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_gym"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

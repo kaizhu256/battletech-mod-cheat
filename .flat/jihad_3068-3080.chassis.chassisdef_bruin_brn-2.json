@@ -1,0 +1,262 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 7718000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 80,
+ "DFAInstability": 40,
+ "DFASelfDamage": 80,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2615089,
+  "Details": "Introduced in 3083, the Bruin 2 was designed using lessons learned from the liberation of Terra from the Word of Blake. Droping the Gauss Rifle and both Medium Lasers allowsed the designers to mount 2 Large Pulse Lasers and 2 UAC/5's. Also added is a standard SRM 2 Launcher with inferno SRM missiles as ammunition. To augment the 'Mech's ability to handle infantry, it has been provided with Machine Guns.",
+  "Icon": "Bruin",
+  "Id": "chassisdef_bruin_BRN-2",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Bruin",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Bruin"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Rugged",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_bruin",
+ "Heatsinks": 0,
+ "InitialTonnage": 8,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 125,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 250,
+   "MaxRearArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 40,
+ "MeleeInstability": 20,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "bruin",
+ "PrefabIdentifier": "chrprfmech_bruinbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper",
+ "Tonnage": 80,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "BRN-2",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Introduced in 3083, the Bruin 2 was designed using lessons learned from the liberation of Terra from the Word of Blake. Droping the Gauss Rifle and both Medium Lasers allowsed the designers to mount 2 Large Pulse Lasers and 2 UAC/5's. Also added is a standard SRM 2 Launcher with inferno SRM missiles as ammunition. To augment the 'Mech's ability to handle infantry, it has been provided with Machine Guns.",
+ "weightClass": "ASSAULT"
+}

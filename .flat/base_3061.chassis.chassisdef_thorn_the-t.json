@@ -1,0 +1,236 @@
+{
+ "BattleValue": 1642000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-0.4-0.48-0.49"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Thorn"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 20,
+ "DFAInstability": 10,
+ "DFASelfDamage": 20,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 289423,
+  "Details": "Developed in 3038 by the Draconis Combine in an attempt to upgrade the 'Mech's short range firepower prior to the War of 3039, the THE-T is a field refit of the downgraded THE-S that swaps out the LRM launcher for an SRM-4.",
+  "Icon": "thorn",
+  "Id": "chassisdef_thorn_THE-T",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Thorn",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Thorn"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_kintaro",
+ "Heatsinks": 0,
+ "InitialTonnage": 2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 10,
+ "MeleeInstability": 5,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "kintaro",
+ "PrefabIdentifier": "chrPrfMech_kintaroBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker",
+ "Tonnage": 20,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "THE-T",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Developed in 3038 by the Draconis Combine in an attempt to upgrade the 'Mech's short range firepower prior to the War of 3039, the THE-T is a field refit of the downgraded THE-S that swaps out the LRM launcher for an SRM-4.",
+ "weightClass": "LIGHT"
+}

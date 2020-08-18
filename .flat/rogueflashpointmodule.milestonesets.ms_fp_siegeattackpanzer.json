@@ -1,0 +1,1017 @@
+{
+ "Milestones": [
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_001_Start",
+    "Name": "Start"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [
+       "fp_choice_b",
+       "fp_choice_a"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Flashpoint",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_100_A-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_002_Talk",
+    "Name": "Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "Bourbon & BattleMechs",
+        "High Orbit — Merlin",
+        "Conference",
+        null
+       ],
+       "value": "9cfae737aff9cd7e45a782b5",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_003_MissionSim",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_003_MissionSim",
+    "Name": "Mission Sim"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "Story_4_LiberationOfWeldry_Default",
+        "{ACTIVE}",
+        "{PLANETOWNER}",
+        "5",
+        "Panzyr_Attack_Default",
+        null,
+        null,
+        null,
+        null,
+        "{PLANETOWNER}"
+       ],
+       "value": "",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_004_TalkChoice",
+    "Name": "Talk Choice"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "Bourbon & BattleMechs II",
+        "High Orbit — Merlin",
+        "Conference",
+        null
+       ],
+       "value": "9cfae737aff9cd7e45a782b5",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_005_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_005_Branch",
+    "Name": "Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_100_A-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_a"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_200_B-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_b"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_300_Cancel-Talk",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_100_A-Mission",
+    "Name": "A-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "Panzyr_Attack_Default",
+        "{ACTIVE}",
+        "{PLANETOWNER}",
+        "5",
+        "ms_fp_SiegeAttackPanzer_301_Cancel-Complete",
+        null,
+        null,
+        null,
+        null,
+        "{PLANETOWNER}"
+       ],
+       "value": "",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_101_A-Talk",
+    "Name": "A-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "Bourbon & BattleMechs III",
+        "High Orbit — Merlin",
+        null,
+        null
+       ],
+       "value": "9cfae737aff9cd7e45a782b5",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_102_A-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_102_A-Complete",
+    "Name": "A-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_103_A-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_SiegeAttackPanzer_complete",
+       "flashpoint_SiegeAttackPanzer_a"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_103_A-Reward",
+    "Name": "A-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "900000",
+       "valueConstant": null
+      },
+      {
+       "name": "Reputation.MercenaryReviewBoard",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "8",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_200_B-Mission",
+    "Name": "B-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "Panzyr_Attack_Default",
+        "{ACTIVE}",
+        "{PLANETOWNER}",
+        "5",
+        "ms_fp_SiegeAttackPanzer_301_Cancel-Complete",
+        null,
+        null,
+        null,
+        null,
+        "{PLANETOWNER}"
+       ],
+       "value": "",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_201_B-Talk",
+    "Name": "B-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "Bourbon & BattleMechs III",
+        "High Orbit — Merlin"
+       ],
+       "value": "9cfae737aff9cd7e45a782b5",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_202_B-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_202_B-Complete",
+    "Name": "B-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_203_B-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_SiegeAttackPanzer_complete",
+       "flashpoint_SiegeAttackPanzer_b"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_203_B-Reward",
+    "Name": "B-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_300_Cancel-Talk",
+    "Name": "Cancel-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "Bourbon & BattleMechs III",
+        "High Orbit — Merlin"
+       ],
+       "value": "9cfae737aff9cd7e45a782b5",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_301_Cancel-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_301_Cancel-Complete",
+    "Name": "Cancel-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": null,
+       "value": "Ship",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_SiegeAttackPanzer_302_Cancel-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_SiegeAttackPanzer_complete",
+       "flashpoint_SiegeAttackPanzer_cancel"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_SiegeAttackPanzer_302_Cancel-Reward",
+    "Name": "Cancel-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "300000",
+       "valueConstant": null
+      },
+      {
+       "name": "Reputation.MercenaryReviewBoard",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "8",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  }
+ ],
+ "StartingMilestoneID": "ms_fp_SiegeAttackPanzer_001_Start"
+}

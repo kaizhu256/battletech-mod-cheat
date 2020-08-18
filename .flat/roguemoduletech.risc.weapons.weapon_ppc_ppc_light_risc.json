@@ -1,0 +1,170 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.075,
+ "APMaxArmorThickness": 39,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "1 Evasion Ignore",
+ "BonusValueB": "No Recoil",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#F9F93E",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long",
+   "PiratePPCCap"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 0",
+    "PipsIgnored: 1",
+    "TwinLinkedCap",
+    "WeaponJAMFlat: 12%",
+    "PPCDEBUFF: 1",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/lppc"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02013"
+  }
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 986000,
+  "Details": "What started as a RISC researcher's side-project to develop faster-firing PPCs wound up looking more like a Light PPC hooked up to a pair of capacitors. This arrangement allows the weapon to fire up to twice as fast but there is a chance that the  heat and charge build-up might jam up some of the shielding components. \n\n <b><color=#00ffff>Can Toggle Between Rapid Fire or Fast Charging the Capacitator</color> </b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PPC_LIGHT_RISC",
+  "Manufacturer": "RISC",
+  "Model": "Light Particle Projector Cannon",
+  "Name": "LPPC+TLCAP",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "L. PPC+TLCAP"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.0875,
+ "FlatJammingChance": 0.12,
+ "GunneryJammingBase": 7,
+ "GunneryJammingMult": 0.02,
+ "HeatDamage": 0,
+ "HeatGenerated": 46,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 6,
+ "InventorySize": 4,
+ "MaxRange": 460,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "AccuracyModifier": -1,
+   "EvasivePipsIgnored": 1,
+   "HeatGenerated": -23,
+   "Id": "x1",
+   "LongRange": 140,
+   "MaxRange": 260,
+   "MiddleRange": 80,
+   "MinRange": 90,
+   "RefireModifier": -1,
+   "ShortRange": 30,
+   "ShotsWhenFired": -1,
+   "UIName": "ACC",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "Id": "x2",
+   "RefireModifier": 1,
+   "UIName": "ROF",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  160,
+  280,
+  400
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 5,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

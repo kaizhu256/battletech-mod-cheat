@@ -1,0 +1,361 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "commander_career_freelancer"
+    ],
+    "tagSetSourceFile": "Tags/CommanderTags"
+   },
+   "Scope": "Commander"
+  },
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_pop_none"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Douglass…? Through your rush of old memories, Darius goes on. \"He claims to be a friend from your freelancing days. I'll put him through to your quarters.\"\r\n\r\nDouglass' voice has weathered with age. \"It's been a long time, {COMMANDER.FirstName}. I've heard you've been busy. Me too. But let's not beat around the bush… I need a favor.\"\r\n\r\nHis crew has had a rough go of it lately, and if he doesn't line up a new contract soon, he's going to lose them. He'd like to send them to the <i>Argo</i> for a little R&R while he does some networking on the planet below.",
+  "Icon": "uixTxrSpot_IncomingTransimission.png",
+  "Id": "event_co_oldFriend_FreeLancer",
+  "Name": "A Friend from the Old Days"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Refuse his request."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"I'm sorry, Douglass, but even for the sake of old times, I just can't help you right now.\"\r\n\r\nThere's a lengthy pause on the other end of the line before Douglass finally responds. His voice is like ice. \"Well, I guess I won't be owing you any favors. That's… disappointing, but I suppose you have to look after your own. Good luck out there.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Low Morale MW"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_oldFriend_FreeLancer"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Low impact",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Offer to make space in the Barracks."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Your old friend's ragtag crew of MechWarriors arrives with little fanfare. As Darius escorts them to the Barracks, they stare in awe at the <i>Argo</i>.\r\n\r\nOver the course of the next couple weeks, quarters are tight with the extra bodies sharing space in the Barracks. But Douglass's crew and the <i>Argo</i>'s MechWarriors get to know each other, sharing stories from around the Periphery.\r\n\r\nWhen Douglass returns to the <i>Argo</i>, he's visibly more relaxed than when he arrived. \"Thanks for taking care of my people. I'll send you a share of the payment when we're done. It's the least I can do!\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Small morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_oldFriend_FreeLancer"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Argo: Lounge]",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Also give his crew use of the Lounge."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_rec_lounge1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Your old friend's ragtag crew of MechWarriors arrive with little fanfare. As Darius escorts them to the Barracks, they stare in awe at the <i>Argo</i>.\r\n\r\nOver the course of the next couple weeks, Douglass's crew relaxes while he's lining up their next contract. Hanging out every day in the Lounge, they get to know the <i>Argo</i>'s MechWarriors, and the two groups are soon sharing stories from around the Periphery.\r\n\r\nWhen Douglass returns to the <i>Argo</i>, he's visibly more relaxed than when he arrived. \"Thanks for taking care of my people. I'll send you a share of the payment when we're done. It's the least I can do!\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Moderate Morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_oldFriend_FreeLancer"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "15",
+         "valueConstant": null
+        },
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Liked by {TGT_SYSTEM.OwnerDef.ShortName}]",
+    "Icon": "",
+    "Id": "outcome_3",
+    "Name": "Connect him with friends in the government."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Reputation.Owner",
+       "op": "GreaterThanOrEqual",
+       "val": 20,
+       "valueConstant": "[rep_liked_min]"
+      }
+     ],
+     "RequirementTags": {
+      "items": null,
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Your old friend's ragtag crew of MechWarriors arrive with little fanfare. As Darius escorts them to the Barracks, they stare in awe at the <i>Argo</i>.\r\n\r\nOver the course of the next couple weeks, Darius works closely with Douglass on lining up his next contract. Meanwhile, his crew gets to know the <i>Argo</i>'s MechWarriors, and the two groups are soon sharing stories from around the Periphery. \r\n\r\nWhen Douglass returns to the <i>Argo</i>, he's visibly more relaxed than when he arrived. \"Your XO was amazing. I'll send you a share of the payment when we're done. It's the least I can do!\"",
+      "Icon": "",
+      "Id": "outcome_3_0",
+      "Name": "Morale boost and Money"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_oldFriend_FreeLancer"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "150000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_co_oldFriend_FreeLancer"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Travel",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "argo_pod2"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

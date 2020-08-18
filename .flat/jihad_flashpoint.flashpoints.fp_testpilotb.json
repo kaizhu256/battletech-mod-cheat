@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "The Precentor is requesting help with a top Secret project.",
+  "Icon": "testpilot",
+  "Id": "fp_testpilotb",
+  "Name": "Test Pilot"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Praise Be. The Precentor would like our help with a SECRET project.",
+ "InProgressTimeout": 0,
+ "InternalName": "testpilot",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_testpilot",
+ "PotentialEmployers": [
+  "WordOfBlake"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_testpilot_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "ALLIED_FACTION_WordOfBlake"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_testpilottems",
+ "TargetFaction": "Locals",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1000
+}

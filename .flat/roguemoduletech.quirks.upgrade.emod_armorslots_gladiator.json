@@ -1,0 +1,191 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "Easier to Repair",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "cae_ai_explode",
+   "cae_ai_heat",
+   "cae_ai_speed"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "SuperCharger",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.15,
+   "FailCrit": true,
+   "FailDamageLocations": [
+    "CenterTorso"
+   ],
+   "FailFlatChance": 0.15,
+   "FailISDamage": 3,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Supercharged Engines",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "SuperchargerSprint",
+      "Name": "Supercharged"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.4",
+      "operation": "Float_Add",
+      "statName": "CBTBE_RunMultiMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": true,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     }
+    },
+    {
+     "Description": {
+      "Details": "Supercharged Engines",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "SuperchargerHeat",
+      "Name": "Supercharged"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-10",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     }
+    }
+   ]
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 1.1,
+   "ArmorTPCost": 1.1
+  },
+  "ArmorStructureChanges": {
+   "ArmorFactor": 2
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorProtection: x2",
+    "ArmorFactor: x2",
+    "TACImmune",
+    "Activatable",
+    "ActiveRunMod: +40%",
+    "ActiveHeatPerTurn: 10",
+    "FailChance: 15%",
+    "FailChanceTurn: 15%",
+    "FailLocation: CenterTorso",
+    "FailCritLoc",
+    "FailStruct: 3",
+    "ArmorTPCost: 10%",
+    "ArmorCBCost: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   },
+   {
+    "CategoryID": "Supercharger"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "0009"
+  },
+  "Weights": {
+   "ArmorFactor": 2
+  }
+ },
+ "Description": {
+  "Cost": 60000,
+  "Details": "Hardened Armor is a thicker armor type that uses multiple overlapping plates to provide additional protection against enemy fire. Though capable of diverting more damage than standard armor, the increased number of armor plates and their lack of flexibility makes any unit employing it more difficult to pilot, and can affect the speed as well. <b><color=#099ff2>Activatable: DEALS DAMAGE AND CRIT TO CENTER TORSO ON FAILURE</color></b>",
+  "Icon": "shieldcomb",
+  "Id": "emod_armorslots_gladiator",
+  "Manufacturer": "VEST",
+  "Model": "Hardened",
+  "Name": "Hardened Armor",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Gladiator"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "HardenedCritImmune",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CACAPProtection"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

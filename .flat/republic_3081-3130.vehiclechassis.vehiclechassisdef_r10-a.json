@@ -1,0 +1,143 @@
+{
+ "BattleValue": 939,
+ "Custom": {
+  "CustomWeights": [
+   {
+    "ComponentDefID": "Tank_InfantryCompartment",
+    "Tonnage": 4
+   }
+  ]
+ },
+ "Description": {
+  "Cost": 5302719,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_R10-A",
+  "Name": "R10 Mechanized ICV",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_apc",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": -4.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 170,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_5-8cv",
+ "PathingCapDefID": "pathingdef_medium_wheeled",
+ "PrefabBase": "apc",
+ "PrefabIdentifier": "chrPrfVhcl_apc",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 45,
+ "TopSpeed": 125,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "MEDIUM"
+}

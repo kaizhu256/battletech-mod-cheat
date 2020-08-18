@@ -1,0 +1,240 @@
+{
+ "BattleValue": 4100000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 45,
+ "DFAInstability": 23,
+ "DFASelfDamage": 45,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 765741,
+  "Details": "The 3M variant of the 'Mech was also introduced in 3048, built by Earthwerks Incorporated from their Keystone factory and using upgrades based on rediscovered Star League technology. First, the internal structure of the 'Mech has been redesigned to utilize a 1A Type7 Endo Steel chassis. The engine was then replaced with a GM 270 XL and the heat sinks were upgraded to double heat sinks. This allowed the weapons payload to be changed extensively, with all of the original weapons being stripped from the chassis. In their place the 'Mech carried two Diverse Optics Sunbeam ER Large Lasers as its primary weapons and two Martell Medium Pulse Lasers for close in work, with one of each mounted in either arm. Finally, a MainFire Point Defense Anti-Missile System replaced the right-arm machine gun, with two tons of both AMS and machine gun reloads carried in the CASE-protected left torso. The electronic systems were also replaced with an Achernar Electronics HID-8 comm system and Federated Hunter target-tracking system.",
+  "Icon": "uixTxrIcon_phoenixhawk",
+  "Id": "chassisdef_phoenix_hawk_PXH-3M",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Phoenix Hawk",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Phoenix Hawk"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Comms",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_phoenixhawk",
+ "Heatsinks": 0,
+ "InitialTonnage": 4.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 23,
+ "MeleeInstability": 12,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "phoenixhawk",
+ "PrefabIdentifier": "chrPrfMech_phoenixhawkBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 130,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Scout & Skirmisher",
+ "Tonnage": 45,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "PXH-3M",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The 3M variant of the 'Mech was also introduced in 3048, built by Earthwerks Incorporated from their Keystone factory and using upgrades based on rediscovered Star League technology. First, the internal structure of the 'Mech has been redesigned to utilize a 1A Type7 Endo Steel chassis. The engine was then replaced with a GM 270 XL and the heat sinks were upgraded to double heat sinks. This allowed the weapons payload to be changed extensively, with all of the original weapons being stripped from the chassis. In their place the 'Mech carried two Diverse Optics Sunbeam ER Large Lasers as its primary weapons and two Martell Medium Pulse Lasers for close in work, with one of each mounted in either arm. Finally, a MainFire Point Defense Anti-Missile System replaced the right-arm machine gun, with two tons of both AMS and machine gun reloads carried in the CASE-protected left torso. The electronic systems were also replaced with an Achernar Electronics HID-8 comm system and Federated Hunter target-tracking system.",
+ "weightClass": "MEDIUM"
+}

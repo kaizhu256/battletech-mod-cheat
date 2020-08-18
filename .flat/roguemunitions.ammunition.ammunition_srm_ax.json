@@ -1,0 +1,70 @@
+{
+ "AIBattleValue": 50,
+ "AccuracyModifier": 1,
+ "ArmorDamageModifier": 1.5,
+ "Category": "SRM",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#1D7F23",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "DamagePerShot": 0,
+ "Description": {
+  "Cost": 0,
+  "Details": "Short range missiles, capable of dealing heavy damage at close range via shaped charge warheads.",
+  "Icon": null,
+  "Id": "Ammunition_SRM_AX",
+  "Name": "SRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "AX"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 0.5,
+ "MissileHealth": 3,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_AcidSRM",
+    "Name": "Acid"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.01",
+    "operation": "Float_Add",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

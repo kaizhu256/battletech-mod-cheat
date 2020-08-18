@@ -1,0 +1,184 @@
+{
+ "Allies": {
+  "ChanceToSpawn": 0.27,
+  "EliteLances": {
+   "Conditions": [
+    "IsAlly"
+   ],
+   "Overrides": {
+    "ChanceToSpawn": 0.15,
+    "Max": 2
+   }
+  },
+  "LancePool": {
+   "ALL": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:BadlandsParched": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:DesertParched": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:HighlandsFall": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:HighlandsSpring": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:JungleTropical": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:LowlandsCoastal": [
+    "Damaged_Easy_MechsOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:LowlandsFall": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:LowlandsSpring": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:LunarVacuum": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:MartianVacuum": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:PolarFrozen": [
+    "Damaged_Easy_MechsOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:TundraFrozen": [
+    "Damaged_Easy_MechsOnly_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ],
+   "BIOME:UrbanHighTech": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6",
+    "VehicleScouts_D6"
+   ]
+  },
+  "Max": 1
+ },
+ "Enemy": {
+  "ChanceToSpawn": 0.32,
+  "EliteLances": {
+   "Conditions": [
+    "IsEnemy"
+   ],
+   "Overrides": {
+    "ChanceToSpawn": 0.3
+   },
+   "Suffix": "_Elite"
+  },
+  "ExcludeContractTypes": [],
+  "LancePool": {
+   "ALL": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:BadlandsParched": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:DesertParched": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:HighlandsFall": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:HighlandsSpring": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:JungleTropical": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:LowlandsCoastal": [
+    "Damaged_Easy_MechsOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:LowlandsFall": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:LowlandsSpring": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:LunarVacuum": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:MartianVacuum": [
+    "Damaged_Easy_TanksOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:PolarFrozen": [
+    "Damaged_Easy_MechsOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:TundraFrozen": [
+    "Damaged_Easy_MechsOnly_50",
+    "IndirectSolo_D6"
+   ],
+   "BIOME:UrbanHighTech": [
+    "Damaged_Easy_Mixed_50",
+    "IndirectSolo_D6"
+   ]
+  },
+  "Max": 1
+ },
+ "ExcludeContractTypes": [],
+ "IncludeContractTypes": [],
+ "LancePool": {
+  "ALL": [
+   "Damaged_Easy_Mixed_50"
+  ]
+ },
+ "RewardsPerLance": [
+  {
+   "Type": "ContractBonusRewardFlat",
+   "Value": "1500"
+  },
+  {
+   "Type": "ContractBonusRewardPct",
+   "Value": "0.1"
+  },
+  {
+   "Type": "ContractBonusEmployerReputation",
+   "Value": "1"
+  },
+  {
+   "Type": "ContractBonusTargetReputation",
+   "Value": "-2"
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "AdditionalCost": 3700,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "You always see cables and stuff hanging down from the ceiling and think, 'What the hell are those for?' Right? Lifting and turning entire 'Mechs. We get them back online, and we can lift a whole 'Mech. I mean, honestly? I just want to see that happen.",
+ "Category": "REPAIR_REFIT",
+ "Description": {
+  "Cost": 0,
+  "Details": "'Mechs were not really meant to bear their own weight while being refitted with new equipment. The <i>Argo</i>'s Mech Bay includes harnesses meant to hoist the 'Mech up for easier access while refitting.",
+  "Icon": "uixSvgIcon_shipUpgrade_refitharness",
+  "Id": "argoUpgrade_mechBay_refitHarness",
+  "Name": "Refit Harness",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "MECH_BAY",
+ "PurchaseCost": 180000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_mechBay1",
+   "argoUpgrade_power1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_mechBay_refitHarness"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

@@ -1,0 +1,107 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BattleValue": 0,
+ "BonusValueA": null,
+ "BonusValueB": null,
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "JumpCapacity: 1",
+    "JumpHeat: 3",
+    "MinWeightJJ: 10",
+    "MaxWeightJJ: 55",
+    "MaxCountJJ: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "StandardJJ"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "Jump Jets funnel superheated air to propel 'Mechs over obstacles in a controlled manner. Additionally, they may also be used to perform the dreaded 'Death from Above' attack. Standard Jump Jets are specially designed for use on 'Mechs up to 55 tons.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Generic_Standard",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Standard Jump Jet (S)",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Jump Jet (S)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 1,
+ "JumpCapacity": 1,
+ "MaxTonnage": 55,
+ "MinTonnage": 10,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "3",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Max Jump Jet Amount per Walk MP",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpAmount",
+    "Name": "Jump Jet Amount"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Set",
+    "statName": "JumpJetCountMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

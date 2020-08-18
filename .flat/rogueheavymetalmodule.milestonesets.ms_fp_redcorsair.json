@@ -1,0 +1,1659 @@
+{
+ "Milestones": [
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_001_Start",
+    "Name": "Start"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [
+       "fp_choice_b",
+       "fp_choice_a",
+       "fp_choice_c",
+       "fp_choice_b",
+       "fp_choice_d"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Flashpoint",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_002_Talk",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_002_Talk",
+    "Name": "Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "The Red Corsair",
+        "High Orbit",
+        "Conference",
+        null
+       ],
+       "value": "9c3d8d238c2c12ce919d5026",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_003_MissionSim",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_003_MissionSim",
+    "Name": "Mission Sim"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsair_simpleBattle1",
+        "Locals",
+        "ClanJadeFalcon",
+        "7",
+        "ms_fp_redcorsair_004_TalkChoice",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_004_TalkChoice",
+    "Name": "Talk Choice"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "The Red Corsair II",
+        "High Orbit"
+       ],
+       "value": "9c4e8cc19a31abe9306b5d1f",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_005_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_005_Branch",
+    "Name": "Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_100_A-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_a"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_200_B-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_b"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_500_CancelEarly-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_100_A-Mission",
+    "Name": "A-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsairally1_simpleBattle",
+        "ClanJadeFalcon",
+        "ClanWolf",
+        "7",
+        "ms_fp_redcorsair_101_A-Mission",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_101_A-Mission",
+    "Name": "A-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsairally2_captureBase",
+        "ClanJadeFalcon",
+        "ClanWolf",
+        "7",
+        "ms_fp_redcorsair_101_AA-Mission",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_101_AA-Mission",
+    "Name": "A-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_circleofequals2_simpleBattle",
+        "ClanJadeFalcon",
+        "ClanWolf",
+        "7",
+        "ms_fp_redcorsair_102_A-Talk",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_102_A-Talk",
+    "Name": "A-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "The Red Corsair",
+        "High Orbit"
+       ],
+       "value": "9c329273521bac79ac96c417",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_103_A-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_103_A-Complete",
+    "Name": "A-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_104_A-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_redcorsair_complete",
+       "flashpoint_redcorsair_a"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_104_A-Reward",
+    "Name": "A-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Reputation.MercenaryReviewBoard",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "-100",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_200_B-Mission",
+    "Name": "B-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsairnoally1_defendBase",
+        "Locals",
+        "ClanJadeFalcon",
+        "7",
+        "ms_fp_redcorsair_200_BB-Mission",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_200_BB-Mission",
+    "Name": "B-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsairnoally2_simpleBattle",
+        "Locals",
+        "ClanJadeFalcon",
+        "7",
+        "ms_fp_redcorsair_201_B-TalkChoice",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Options must either keep tag fp_choice_b, or remove it and also add cp_choice_c",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_201_B-TalkChoice",
+    "Name": "B-Talk Choice"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "The Red Corsair",
+        "High Orbit"
+       ],
+       "value": "9c6576d1bd17f29d891182fc",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_202_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_202_Branch",
+    "Name": "Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_300_B-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_b"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_400_C-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_c"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_600_CancelLate-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_300_B-Mission",
+    "Name": "B-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_circleofequals1_simpleBattle",
+        "ClanWolf",
+        "ClanJadeFalcon",
+        "7",
+        "ms_fp_redcorsair_301_B-Talk",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_301_B-Talk",
+    "Name": "B-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "The Red Corsair",
+        "High Orbit"
+       ],
+       "value": "9c329273521bac79ac96c417",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_302_B-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_302_B-Complete",
+    "Name": "B-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_303_B-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_redcorsair_complete",
+       "flashpoint_redcorsair_b"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_303_B-Reward",
+    "Name": "B-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Reputation.MercenaryReviewBoard",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "-100",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_400_C-Mission",
+    "Name": "C-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsairkellally2_simpleBattle",
+        "Locals",
+        "ClanWolf",
+        "7",
+        "ms_fp_redcorsair_400_CC-Mission",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_400_CC-Mission",
+    "Name": "C-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_redcorsairkellally1_simpleBattle",
+        "Locals",
+        "ClanWolf",
+        "7",
+        "ms_fp_redcorsair_401_C-Talk",
+        null,
+        null,
+        null
+       ],
+       "value": "",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_401_C-Talk",
+    "Name": "C-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "The Red Corsair",
+        "High Orbit"
+       ],
+       "value": "9c8c28b1e93c55622701a7ed",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_402_C-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_402_C-Complete",
+    "Name": "C-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_403_C-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_redcorsair_complete",
+       "flashpoint_redcorsair_c"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_403_C-Reward",
+    "Name": "C-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "1000000",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_500_CancelEarly-Complete",
+    "Name": "CancelEarly-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_501_CancelEarly-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_redcorsair_complete",
+       "flashpoint_redcorsair_cancelEarly"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_501_CancelEarly-Reward",
+    "Name": "CancelEarly-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_600_CancelLate-Complete",
+    "Name": "CancelLate-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_redcorsair_601_CancelLate-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_redcorsair_complete",
+       "flashpoint_redcorsair_cancelLate"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_redcorsair_601_CancelLate-Reward",
+    "Name": "CancelLate-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  }
+ ],
+ "StartingMilestoneID": "ms_fp_redcorsair_001_Start"
+}

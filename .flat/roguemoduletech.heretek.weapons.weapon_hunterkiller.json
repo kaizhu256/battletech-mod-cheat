@@ -1,0 +1,97 @@
+{
+ "AMSHitChance": -0.3,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.5,
+ "APDamage": 25,
+ "APMaxArmorThickness": 500,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "LeftTorso,RightTorso",
+ "AmmoCategory": "ThunderboltOS",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "1shot",
+    "EvasionIgnore: +1",
+    "WpnAccuracy: +1",
+    "InternalAmmo: 50",
+    "ThroughArmorDamage: 25",
+    "IsThunderbolt",
+    "AMSChance: -30%",
+    "Indirect"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/t/thunderbolt"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 50,
+   "HeatDamagePerAmmo": 15,
+   "StabilityDamagePerAmmo": 13
+  },
+  "InventorySorter": {
+   "SortKey": "03023"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 200000,
+  "Details": "While it seems to be similar to a Thunderbolt Missile does this missile carry a sophistic Shaped-Charge Warhead with advanced Guidance.",
+  "Icon": "thunderbolt",
+  "Id": "Weapon_HunterKiller",
+  "Manufacturer": "Omnissiah",
+  "Model": "Hunter-Killer Missile",
+  "Name": "Hunter-Killer Missile",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Hunter-Killer Missile"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireTerrainChance": 0.0625,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 14,
+ "InventorySize": 1,
+ "MaxRange": 720,
+ "MinRange": 150,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "srm2",
+ "ProjectileSpeedMultiplier": 1.4,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 1,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

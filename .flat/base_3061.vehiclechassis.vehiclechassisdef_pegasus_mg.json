@@ -1,0 +1,139 @@
+{
+ "BattleValue": 993,
+ "CustomParts": {
+  "MoveClamp": 0.5,
+  "MoveCost": "Hover"
+ },
+ "Description": {
+  "Cost": 998325,
+  "Details": "",
+  "Icon": "Pegasus",
+  "Id": "vehiclechassisdef_PEGASUS_MG",
+  "Name": "Pegasus Scout Hovertank",
+  "Purchasable": false,
+  "Rarity": 3
+ },
+ "HardpointDataDefID": "hardpointdatadef_pegasus",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.6,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 130,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 105,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_8-12cv",
+ "PathingCapDefID": "pathingdef_light_hover",
+ "PrefabBase": "pegasus",
+ "PrefabIdentifier": "chrprfvhcl_pegasusbase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1.25,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1.25,
+ "Tonnage": 35,
+ "TopSpeed": 500,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "LIGHT"
+}

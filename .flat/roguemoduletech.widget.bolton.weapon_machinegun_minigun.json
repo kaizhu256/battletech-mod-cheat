@@ -1,0 +1,211 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "MGInternal",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "SpecialMelee: 2",
+    "WpnAccuracy: -1",
+    "InternalAmmoShot: 100",
+    "IsMG",
+    "Visibility: +4%",
+    "Signature: +4%",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "01501"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 6000,
+  "Details": "Facing Raiders or just have Pest Problems? Need something to make some Noise or scare of the Wildlife? Look no further, our Patented 'Minigun' offers you Solution at Great Prices!. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_MachineGun_Minigun",
+  "Manufacturer": "QuicSell",
+  "Model": "Minigun",
+  "Name": "Minigun",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Minigun"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 0.2,
+ "InventorySize": 1,
+ "MaxRange": 190,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "Id": "x2",
+   "ShotsWhenFired": -6,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "Id": "x4",
+   "ShotsWhenFired": -4,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "Id": "x6",
+   "RefireModifier": 1,
+   "ShotsWhenFired": -2,
+   "UIName": "x6",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "Id": "x8",
+   "RefireModifier": 1,
+   "UIName": "x8",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "Id": "x10",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x10",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "Id": "x12",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 4,
+   "UIName": "x12",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  110,
+  160
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 8,
+ "StartingAmmoCapacity": 100,
+ "Tonnage": 0,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.04",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.04",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "SpecialMelee"
+}

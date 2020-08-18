@@ -1,0 +1,69 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Narc",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 60,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Narc: 1",
+    "LRMDamage: -75%",
+    "Painter: +1",
+    "PainterSensors: 5%",
+    "PainterVisibility: 5%",
+    "MissileHP: 1",
+    "LRMAmmo: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ColorChangeRule": "t0",
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  },
+  "TRGBColor": {
+   "Color": "#00FFFF",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "Some pirate got their hands on a couple tons of NARC ammo but not their Launchers and decided to rebuild this Missile Rack to fire Missile's that stick to the target and send a low energy targeting signal to all friendly's. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Narc_LRM",
+  "Manufacturer": "SumPunk",
+  "Model": "Narc LRM",
+  "Name": "LRM Narc Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM Narc"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

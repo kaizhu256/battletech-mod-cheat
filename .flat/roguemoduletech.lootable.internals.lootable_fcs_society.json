@@ -1,0 +1,106 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanFCS",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "TEHeatgen: -8%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "A Society FCS Package attuned to the BattleMech's internals, exchanging scanning capabilities for improved Heat Regulation.",
+  "Icon": "targeting",
+  "Id": "lootable_FCS_Society",
+  "Manufacturer": "CLAN",
+  "Model": "Standard",
+  "Name": "Society FCS",
+  "Purchasable": true,
+  "Rarity": 20,
+  "UIName": "FCS Heat(S)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 20%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-SocietyCockpit2",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.92",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

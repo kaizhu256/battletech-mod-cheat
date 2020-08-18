@@ -1,0 +1,79 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-12% Armor Weight|",
+ "BonusValueB": "Reserves 14 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.1,
+   "ArmorTPCost": 1.05
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorFactor: -12%",
+    "Reserved: 10",
+    "ArmorTPCost: 5%",
+    "ArmorCBCost: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Ferro-Fibrous",
+   "ReservedSlots": 10,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Weights": {
+   "ArmorFactor": 0.89286
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+    "TechCost": "1.1 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 250000,
+  "Details": "Ferro-Fibrous armor (FF) is a special type of armor used by vehicles and BattleMechs. Utilizing a weave of ferro-steel, ferro-titanium, and diamond weave fibers which boosts the tensile strength of the plating, it provides more protection per ton than standard armor, but takes up more space on the 'Mech or vehicle.",
+  "Icon": "shieldcomb",
+  "Id": "emod_armorslots_ferrosfibrous",
+  "Manufacturer": "L.A.W.",
+  "Model": "Armor",
+  "Name": "Ferro-Fibrous Armor",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Ferro-Fibrous"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

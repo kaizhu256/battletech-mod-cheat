@@ -1,0 +1,1609 @@
+{
+ "Milestones": [
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_001_Start",
+    "Name": "Start"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Flashpoint",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_002_TalkChoice",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_002_TalkChoice",
+    "Name": "Talk Choice"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name}",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        "Conference",
+        null
+       ],
+       "value": "9caaf9ff484fe7d2823c5d7e",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_003_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_003_Branch",
+    "Name": "Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_100_Mission1",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_choice_1_BYOM"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_1_agree"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_400_Cancel-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_1_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_100_Mission1",
+    "Name": "Mission1"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "1e98726a-1b02-4bad-9d88-866d916aacb6",
+        "c_fp_fightingGhosts_1_defendBase",
+        "GrayDeathLegion",
+        "Kurita",
+        "7",
+        "ms_fp_fightingGhosts_101_Mission1_Objective_Branch",
+        null,
+        null,
+        "ms_fp_fightingGhosts_400_Cancel-Complete",
+        null,
+        null
+       ],
+       "value": "mapGeneral_paupersCanyon_aWst",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_101_Mission1_Objective_Branch",
+    "Name": "Mission1_Objective_Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_200_TalkCM",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_MLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_mission1_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_1200_TalkCML",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_LLD",
+        "fp_fg_mission1_MLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_1300_TalkC",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_mission1_MLD",
+        "fp_fg_mission1_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_1400_TalkCL",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_LLD",
+        "fp_fg_mission1_RLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_mission1_MLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_301_FinalTalk",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_mission1_RLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_200_TalkCM",
+    "Name": "TalkCM"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name} II",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        null,
+        null
+       ],
+       "value": "9cb9e452eb58302abeccf6b9",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_201_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_201_Branch",
+    "Name": "Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_300_Mission2CM",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_MLD",
+        "fp_fg_mission1_RLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_2_agree",
+        "fp_fg_mission1_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_400_Cancel-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_1_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_500_Mission2C",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_RLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_2_agree",
+        "fp_fg_mission1_MLD",
+        "fp_fg_mission1_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_600_Mission2CL",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_RLD",
+        "fp_fg_mission1_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_2_agree",
+        "fp_fg_mission1_MLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_700_Mission2ML",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission1_LLD",
+        "fp_fg_mission1_MLD",
+        "fp_fg_mission1_RLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_choice_2_agree"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_300_Mission2CM",
+    "Name": "Mission2CM"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "fbc713b4-b147-4f8f-ba70-200f9f6073bc",
+        "c_fp_fightingGhosts_2_seekAndDestroyCM",
+        "GrayDeathLegion",
+        "Kurita",
+        "8",
+        "ms_fp_fightingGhosts_301_FinalTalk",
+        null,
+        null,
+        "ms_fp_fightingGhosts_400_Cancel-Complete",
+        null,
+        null
+       ],
+       "value": "mapGeneral_Interchange_aDes",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_301_FinalTalk",
+    "Name": "FinalTalk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name} III",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        "Conference",
+        null
+       ],
+       "value": "9ce541dfe3b11346c4e6077c",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_302_Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_302_Complete",
+    "Name": "Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_303_Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "fp_finished_fightingGhosts"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [
+       "fp_fg_mission1_LLD",
+       "fp_fg_mission1_MLD",
+       "fp_fg_mission1_RLD",
+       "fp_fg_choice_1_cancel",
+       "fp_fg_choice_1_agree",
+       "fp_fg_choice_2_agree"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_303_Reward",
+    "Name": "Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        null
+       ],
+       "value": "Argo",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_fightingGhosts_complete"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "1000000",
+       "valueConstant": null
+      },
+      {
+       "name": "Reputation.MercenaryReviewBoard",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "10",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_400_Cancel-Complete",
+    "Name": "Cancel-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        null
+       ],
+       "value": "Ship",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_FailFlashpoint",
+       "additionalValues": null,
+       "value": "0",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": [
+        null,
+        null
+       ],
+       "value": null,
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [
+       "fp_fg_mission1_LLD",
+       "fp_fg_mission1_MLD",
+       "fp_fg_mission1_RLD",
+       "fp_fg_choice_1_cancel",
+       "fp_fg_choice_1_agree",
+       "fp_fg_choice_2_agree"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_500_Mission2C",
+    "Name": "Mission2C"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "fbc713b4-b147-4f8f-ba70-200f9f6073bc",
+        "c_fp_fightingGhosts_2_seekAndDestroyC",
+        "GrayDeathLegion",
+        "Kurita",
+        "6",
+        "ms_fp_fightingGhosts_301_FinalTalk",
+        null,
+        null,
+        "ms_fp_fightingGhosts_400_Cancel-Complete",
+        null,
+        null
+       ],
+       "value": "mapGeneral_Interchange_aDes",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_600_Mission2CL",
+    "Name": "Mission2CL"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "fbc713b4-b147-4f8f-ba70-200f9f6073bc",
+        "c_fp_fightingGhosts_2_seekAndDestroyCL",
+        "GrayDeathLegion",
+        "Kurita",
+        "7",
+        "ms_fp_fightingGhosts_301_FinalTalk",
+        null,
+        null,
+        "ms_fp_fightingGhosts_400_Cancel-Complete",
+        null,
+        null
+       ],
+       "value": "mapGeneral_Interchange_aDes",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_700_Mission2ML",
+    "Name": "Mission2ML"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        null,
+        "6e7a814e-e7d7-484a-be86-f6baac24ddb0",
+        "c_fp_fightingGhosts_2_seekAndDestroyML",
+        "GrayDeathLegion",
+        "Kurita",
+        "7",
+        "ms_fp_fightingGhosts_701_Branch3",
+        null,
+        null,
+        "ms_fp_fightingGhosts_400_Cancel-Complete",
+        null,
+        null
+       ],
+       "value": "mapGeneral_Interchange_aDes",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        null
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_701_Branch3",
+    "Name": "Branch3"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_500_Mission2C",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_fg_mission2_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_600_Mission2CL",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_fg_mission2_LLD"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_1200_TalkCML",
+    "Name": "TalkCML"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name} II",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        null,
+        null
+       ],
+       "value": "9c4f58090c862547a3f5dc46",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_201_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_1300_TalkC",
+    "Name": "TalkC"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name} II",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        null,
+        null
+       ],
+       "value": "9c365b9cc01fc662eaf79c3f",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_201_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_fightingGhosts_1400_TalkCL",
+    "Name": "TalkCL"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name} II",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        null,
+        null
+       ],
+       "value": "9cf91e2234973f0a3c50db45",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_fightingGhosts_201_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  }
+ ],
+ "StartingMilestoneID": "ms_fp_fightingGhosts_001_Start"
+}

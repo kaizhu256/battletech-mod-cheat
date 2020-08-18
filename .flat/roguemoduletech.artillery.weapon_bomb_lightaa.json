@@ -1,0 +1,124 @@
+{
+ "AMSHitChance": -0.2,
+ "AMSImmune": false,
+ "AOECapable": false,
+ "AOEDamage": 0,
+ "AOEHeatDamage": 0,
+ "AOEInstability": 0,
+ "AOERange": 0,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 150,
+ "AccuracyModifier": 6,
+ "AdditionalImpactVFX": "vfxPrfPrtl_artilleryExplosion",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": false,
+ "AmmoCategory": "STREAK_Generic_Internal",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_vtol": -12
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long",
+   "BLACKLISTED",
+   "Bomb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 0.5",
+    "1shot",
+    "Streak",
+    "PipsIgnored: 1",
+    "AccuracyUnit: VTOL",
+    "AccuracyUnit2: +6",
+    "AccuracyUnit: Ground Units",
+    "AccuracyUnit2: -6",
+    "AMSChance: -20%",
+    "MissileHP: 6",
+    "Bomb"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/explode"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 30,
+   "HeatDamagePerAmmo": 0,
+   "StabilityDamagePerAmmo": 10
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 57600,
+  "Details": "TWO Hardpoints, Half Ton Carry (VTOL 20 tons minimum mass). Not quite as potent as the air-to-air Arrow missiles introduced by the Lyrans and the Wolves, this much smaller air-to-air missile version had its debut with the allied aerospace forces of the Duchy of Tamarind and Duchess Alys Rousset-Marik’s resistance movement. Built smaller and leaner, these so-called light air-to-air (LAA) missiles can be carried by smaller ﬁghters and create far less drag during atmospheric operations.",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "Weapon_Bomb_LightAA",
+  "Manufacturer": "Generic",
+  "Model": "Light AA Missile",
+  "Name": "Light AA Missile",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Light AA Missile"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "HitGenerator": "Streak",
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 2,
+ "MaxRange": 720,
+ "MinRange": 150,
+ "MissileHealth": 6,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Streak": true,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

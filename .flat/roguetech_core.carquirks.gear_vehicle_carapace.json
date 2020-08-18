@@ -1,0 +1,303 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Repairs Initiated",
+   "ButtonName": "Black Carapace",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Repairs Complete",
+   "NoUniqueCheck": true,
+   "Repair": {
+    "AffectInstalledLocation": true,
+    "Armor": 12,
+    "BuildingLocations": [],
+    "InnerStructure": 4,
+    "MechArmorLocations": [],
+    "MechStructureLocations": [],
+    "TurnsSinceDamage": 3,
+    "VehicleLocations": [],
+    "repairTrigger": {
+     "AtEndOfTurn": true,
+     "OnActivation": false,
+     "OnDamage": "None"
+    }
+   },
+   "presistantVFX": {
+    "VFXPrefab": "vfxprfprtl_heatventsm_loop",
+    "VFXScaleX": 1,
+    "VFXScaleY": 1,
+    "VFXScaleZ": 1
+   }
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 30
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Black-Carapace"
+  },
+  "Flags": {
+   "flags": [
+    "no_salvage"
+   ]
+  },
+  "Lootable": {
+   "ItemID": "Gear_Black_Carapace"
+  }
+ },
+ "Description": {
+  "Cost": 1,
+  "Details": "Stealth Armor quirk for the BOLLA tank.",
+  "Icon": "uixSvgIcon_equipment_TTS",
+  "Id": "Gear_Vehicle_Carapace",
+  "Manufacturer": "None",
+  "Model": "None",
+  "Name": "Vehicle Stealth",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Black Carapace"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "IPSUM SUCKUM",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "LV_ECM_SHIELD",
+    "Name": "ECM_Shield_VCP"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD"
+   },
+   "targetingData": {
+    "effectTargetType": "AlliesWithinRange",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 190,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "Aura"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Jamming ECM, reduces sensor checks for enemies in field",
+    "Icon": "uixSvgIcon_action_sensorlock",
+    "Id": "LV_ECM_JAM",
+    "Name": "ECM Jammer"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1,
+    "uniqueEffectIdStackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "EnemiesWithinRange",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 280,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "Aura"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Guardian ECM making this unit harder to hit.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "GECMInterference",
+    "Name": "GECM Interference"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "ToHitThisActor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to detect with stealth",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Stealth_Effect",
+    "Name": "STEALTH"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.7_3_2_3_4",
+    "operation": "Set",
+    "statName": "LV_STEALTH"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to see with eyes",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_MIMETIC",
+    "Name": "MIMETIC ARMOR"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.7_3_4",
+    "operation": "Set",
+    "statName": "LV_MIMETIC"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Signature_Decrease_Stealth",
+    "Name": "Stealth Signature Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Visibility_Decrease_Stealth",
+    "Name": "Stealth Visbility Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Immune to Hull Breach",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "BreachImmunity",
+    "Name": "BreachImmunity"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CBTBE_HullBreachImmunity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

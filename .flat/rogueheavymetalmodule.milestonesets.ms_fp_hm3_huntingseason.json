@@ -1,0 +1,350 @@
+{
+ "Milestones": [
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_HM3_huntingSeason_001_Start",
+    "Name": "Start"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [
+       "fp_choice_b",
+       "fp_choice_a"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Flashpoint",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_HM3_huntingSeason_002_Talk",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_HM3_huntingSeason_002_Talk",
+    "Name": "Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name}",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        "Conference",
+        null
+       ],
+       "value": "5d1b8cb862303578440000a5",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_HM3_huntingSeason_003_MissionSim",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_HM3_huntingSeason_003_MissionSim",
+    "Name": "Mission Sim"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "HM3_huntingSeason_1_3wayBattle",
+        "Locals",
+        "Locals",
+        "5",
+        "ms_fp_HM3_huntingSeason_004_Talk",
+        null,
+        null,
+        null,
+        null,
+        "Locals"
+       ],
+       "value": "mapGeneral_boggyRocks_vLow",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "HeavyMetalFlashpointCampaign"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_HM3_huntingSeason_004_Talk",
+    "Name": "Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "{TGT_FLASHPOINT.Def.Description.Name} II",
+        "High Orbit — {TGT_FLASHPOINT.CurSystem.Name}",
+        null,
+        null
+       ],
+       "value": "5d03df74623035e83700008e",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_HM3_huntingSeason_005-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_HM3_huntingSeason_005-Complete",
+    "Name": "Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_HM3_huntingSeason_006_Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_HM3_huntingSeason_complete"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [
+      {
+       "EventID": "forcedevent_co_HM4_bullShark",
+       "MaxDaysWait": 90,
+       "MinDaysWait": 90,
+       "Probability": 100,
+       "RetainPilot": false,
+       "Scope": "Company"
+      }
+     ],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_HM3_huntingSeason_006_Reward",
+    "Name": "Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  }
+ ],
+ "StartingMilestoneID": "ms_fp_HM3_huntingSeason_001_Start"
+}

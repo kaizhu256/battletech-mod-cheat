@@ -1,0 +1,54 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The LifeSupport is destroyed and the pilot will suffer overheat damage.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CriticalEffect-LifeSupport1",
+    "Name": "LifeSupport Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "ReceiveHeatDamageInjury"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Second status effect for destroyed LifeSupport, overheat + shutdown should produce 2 injuries",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CriticalEffect-LifeSupport2",
+    "Name": "LifeSupport Destroyed (second)"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "ReceiveShutdownInjury"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

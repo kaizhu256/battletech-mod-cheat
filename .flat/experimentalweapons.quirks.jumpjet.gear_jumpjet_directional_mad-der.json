@@ -1,0 +1,219 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BattleValue": 0,
+ "BonusValueA": null,
+ "BonusValueB": null,
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DFA: +10%",
+    "DFASelfDamage: -10%",
+    "DFAAcc: +1",
+    "JumpCapacity: 0.75",
+    "JumpHeat: 2"
+   ]
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "This specially modified directional thruster modified for the special MAD-DER Marauder variant works in conjunction with the LAM system strapped into the mech's chassis, while it wasn't possible to remove all the weight cost from the thruster, its lighter then its normal counterparts. And since its linked directly into the engine core, its not possible to remove it, but its destruction won't affect the engine core itself.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Directional_MAD-DER",
+  "Manufacturer": "MAD-Choppers",
+  "Model": "MAD-DER",
+  "Name": "Directional Thruster (MAD-DER)",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": " Directional Thruster (MAD-DER)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 1,
+ "JumpCapacity": 0.75,
+ "MaxTonnage": 85,
+ "MinTonnage": 60,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_DamageDFA-JJ",
+    "Name": "DFA DAMAGE INCREASED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "DFA",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_SelfDamageDFA-JJ",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.90",
+    "operation": "Float_Multiply",
+    "statName": "DFASelfDamage",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "DFA",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal +1 Acc.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_DFAACC_JJ",
+    "Name": "DFA Accuracy Boost"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "DFA",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

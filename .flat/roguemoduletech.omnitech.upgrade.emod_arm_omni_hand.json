@@ -1,0 +1,172 @@
+{
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "OmniActuator.{location}",
+   "Hand.{location}",
+   "Hand",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MeleeAcc: +1",
+    "Melee: +3%",
+    "MeleeStab: +2%",
+    "StandUP: 5%",
+    "HandActuator"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "OmniHandActuator"
+   }
+  ],
+  "CriticalEffects": {
+   "OnDestroyedEffectIDs": [
+    "CriticalEffect-ArmHandActuatorDestroyed-{location}"
+   ]
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "ActuatorArm3"
+  }
+ },
+ "Description": {
+  "Cost": 60000,
+  "Details": "A Hand Actuator specifically designed for the OmniPods of a OmniMech. Allows to add a Hand Actuator even on OmniChassis normally not fitting these. Requires a Lower Arm or OmniPod Lower Arm Actuator. \n\n<b><color=#ffcc00>CANNOT BE USED WITH ARM MOUNTED BALLISTICS OR PPC'S.</color></b>",
+  "Icon": "metal-hand",
+  "Id": "emod_arm_omni_hand",
+  "Manufacturer": "CLAN",
+  "Model": "Standard",
+  "Name": "Hand Actuator",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "OmniPod Hand"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Chance to stand up improved by actuator",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "ActuatorStandUp",
+    "Name": "Intact Actuator"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.05",
+    "operation": "Float_Add",
+    "statName": "CAEStoodUpRollMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks attempted have their hit improved by 1.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ArmHandActuator",
+    "Name": "Hand Actuator"
+   },
+   "durationData": {},
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 50% Extra damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMelee",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.03",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 20% Extra stab damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMeleeStab",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.02",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

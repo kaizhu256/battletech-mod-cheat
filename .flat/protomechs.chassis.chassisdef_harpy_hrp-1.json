@@ -1,0 +1,342 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [
+   "mech_no_stability",
+   "heat_damage_to_normal",
+   "ProtoMech",
+   "mr-resize-0.7"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Harpy"
+  }
+ },
+ "DFADamage": 2,
+ "DFAInstability": 1,
+ "DFASelfDamage": 2,
+ "DFAToHitModifier": -5,
+ "Description": {
+  "Cost": 47619,
+  "Details": "The Harpy, the first ProtoMech ever created, it is about as effective as a single elemental, it did however show that Protomechs could be a effective weapon. This Variant carries a MG and 20 rounds of ammo.",
+  "Icon": "Harpy",
+  "Id": "chassisdef_harpy_HRP-1",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Harpy",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Harpy"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_armorslots_proto",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_structureslots_standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_Proto",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "Head",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Proto",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_protocore_010",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_proto",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Engine_Heatsinks",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_kit_cdhs_protomech",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Proto_Standard",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Proto_Standard",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftLeg",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Proto_Standard",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightLeg",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_piranha",
+ "Heatsinks": 0,
+ "InitialTonnage": 0.2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 5,
+   "Location": "Head",
+   "MaxArmor": 15,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 5,
+   "InventorySlots": 7,
+   "Location": "LeftArm",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 6,
+   "Location": "LeftTorso",
+   "MaxArmor": 6,
+   "MaxRearArmor": 3,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 13,
+   "Location": "CenterTorso",
+   "MaxArmor": 6,
+   "MaxRearArmor": 3,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 6,
+   "Location": "RightTorso",
+   "MaxArmor": 6,
+   "MaxRearArmor": 3,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 5,
+   "InventorySlots": 7,
+   "Location": "RightArm",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 1,
+ "MeleeInstability": 0.5,
+ "MeleeToHitModifier": -4,
+ "MovementCapDefID": "movedef_protomech",
+ "PathingCapDefID": "pathingdef_ultralight",
+ "PrefabBase": "piranha",
+ "PrefabIdentifier": "chrprfmech_piranhabase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1.2,
+ "Signature": -0.9,
+ "SpotterDistanceMultiplier": 1.1,
+ "Stability": 700,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Ambusher",
+ "Tonnage": 2,
+ "TopSpeed": 65,
+ "TurnRadius": 360,
+ "VariantName": "HRP-1",
+ "VisibilityMultiplier": 0.3,
+ "YangsThoughts": "Well boss we got ourselves a Protomech, What are your plans with it? With it only weighing 2 tons total not much you can squeeze in here but its fairly cheap and maneuverable.",
+ "weightClass": "LIGHT"
+}

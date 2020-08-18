@@ -1,0 +1,85 @@
+{
+ "Description": {
+  "Cost": 0,
+  "Details": "",
+  "Icon": "",
+  "Id": "lancedef_mech_d6_dynamic_MCDuel",
+  "Name": "Dynamic Dif 6 Duel",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Difficulty": 6,
+ "LanceTags": {
+  "items": [
+   "lance_type_dynamic",
+   "lance_type_MCduel"
+  ],
+  "tagSetSourceFile": "Tags/LanceTags"
+ },
+ "LanceUnits": [
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_bracket_low",
+     "unit_generic",
+     "unit_assault",
+     "unit_light"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d8",
+     "pilot_npc_high"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_bracket_low",
+     "unit_generic",
+     "unit_assault",
+     "unit_light"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d8",
+     "pilot_npc_high"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  }
+ ]
+}

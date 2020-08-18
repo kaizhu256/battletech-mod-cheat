@@ -1,0 +1,331 @@
+{
+ "BattleValue": 6577000,
+ "ChassisTags": {
+  "items": [
+   "OmniMech",
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 65,
+ "DFAInstability": 33,
+ "DFASelfDamage": 65,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 6742069,
+  "Details": "The Linebacker B is a sniper configuration. The 'Mech carries a powerful Gauss Rifle for fearsome long range hitting power. For close combat, the 'Mech has three ER Medium Lasers and a single ER Small Laser. ",
+  "Icon": "uixTxrIcon_linebacker",
+  "Id": "chassisdef_linebacker_LBK-B",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Linebacker",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Linebacker"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_clanendosteel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Omnimech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_390",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_cxl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Stable",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_linebacker",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 33,
+ "MeleeInstability": 17,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "linebacker",
+ "PrefabIdentifier": "chrprfmech_linebackerbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 160,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Brawler & Close Assault",
+ "Tonnage": 65,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "LBK-B",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Linebacker B is a sniper configuration. The 'Mech carries a powerful Gauss Rifle for fearsome long range hitting power. For close combat, the 'Mech has three ER Medium Lasers and a single ER Small Laser. ",
+ "weightClass": "HEAVY"
+}

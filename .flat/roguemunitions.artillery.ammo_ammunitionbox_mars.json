@@ -1,0 +1,63 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_MARS",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 30,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MARSAmmo: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/t/arrowiv"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 8,
+   "HeatDamagePerAmmo": 8,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_MARS",
+  "Manufacturer": "Sterope Defense Industries",
+  "Model": "M270 MLRS",
+  "Name": "MARS Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo MARS"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

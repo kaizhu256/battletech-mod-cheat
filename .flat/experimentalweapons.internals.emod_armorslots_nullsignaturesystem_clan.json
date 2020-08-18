@@ -1,0 +1,277 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "Reqs. ECM",
+ "BonusValueB": "CASE ENABLED!",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanArmor",
+   "StealthArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationIsBuff": true,
+   "ActivationMessage": "NSS On",
+   "ActiveByDefault": true,
+   "ButtonName": "Stealth",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "NSS Off",
+   "Linkage": {
+    "OnActivate": {
+     "Activate": [
+      "Camouflage",
+      "ECM Mode"
+     ],
+     "Deactivate": []
+    },
+    "OnDeactivate": {
+     "Activate": [],
+     "Deactivate": [
+      "Camouflage"
+     ]
+    }
+   },
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Makes the carrier much harder to detect with stealth",
+      "Icon": "uixSvgIcon_status_ECM-ghost",
+      "Id": "LV_Stealth_Effect",
+      "Name": "STEALTH"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.String",
+      "modValue": "0.3_5_2_4_6",
+      "operation": "Set",
+      "statName": "LV_STEALTH"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Signature Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Signature_Decrease_CNSS",
+      "Name": "Stealth Signature Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.25",
+      "operation": "Float_Multiply",
+      "statName": "SensorSignatureModifier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Visibility Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Visibility_Decrease_CNSS",
+      "Name": "Stealth Visbility Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.88",
+      "operation": "Float_Multiply",
+      "statName": "SpottingVisibilityMultiplier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat generation",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Generation_CNSS",
+      "Name": "Increased Heat"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.15",
+      "operation": "Float_Multiply",
+      "statName": "HeatGenerated",
+      "targetCollection": "Weapon"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat Capacity Penalty",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Capacity_CNSS",
+      "Name": "Decreased Heat Capacity"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-12",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 1.75,
+   "ArmorTPCost": 1.85
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CASE",
+    "Stealth",
+    "StealthSensors: 70%, 5, 2, 4, 6",
+    "StealthReserved: 1",
+    "Visibility: -12%",
+    "Signature: -75%",
+    "HeatGenerated: +15%",
+    "HeatPerTurn: +12",
+    "ReqECM",
+    "ArmorTPCost: 85%",
+    "ArmorCBCost: 75%"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   },
+   {
+    "CategoryID": "StealthSystem"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Null Signature System"
+  },
+  "ErrorMessage": "Null Signature System requires a ECM!",
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "Linked_NullSignatureSystemClan",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "Linked_NullSignatureSystemClan",
+     "Location": "RightTorso"
+    },
+    {
+     "ComponentDefId": "Linked_NullSignatureSystemClan",
+     "Location": "LeftArm"
+    },
+    {
+     "ComponentDefId": "Linked_NullSignatureSystemClan",
+     "Location": "RightArm"
+    },
+    {
+     "ComponentDefId": "Linked_NullSignatureSystemClan",
+     "Location": "LeftLeg"
+    },
+    {
+     "ComponentDefId": "Linked_NullSignatureSystemClan",
+     "Location": "RightLeg"
+    }
+   ]
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "2800 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "2.0 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 3000000,
+  "Details": "Developed by the Society under wraps to research into upgrading the SLDF era NSS with top clan era technology. While being superior, it doesn't bring any of the advantages later developed with Chameleon Armor or Void-SS. Reserves 6 slots and requires an ECM. <b><color=#00ff00>CASE Enabled</color></b>",
+  "Icon": "StealthArmor",
+  "Id": "emod_armorslots_NullSignatureSystem_CLAN",
+  "Manufacturer": "Society",
+  "Model": "Armor",
+  "Name": "NSS (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "NSS (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

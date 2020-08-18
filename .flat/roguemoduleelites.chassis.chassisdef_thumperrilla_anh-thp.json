@@ -1,0 +1,244 @@
+{
+ "BattleValue": 20581000,
+ "ChassisTags": {
+  "items": [
+   "PrototypeMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 100,
+ "DFAInstability": 50,
+ "DFASelfDamage": 100,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2957488,
+  "Details": "This Legendary variant is barely spoken of for fear it might appear, bringing 4 massive Thumper Cannons to the field on a very very slow platform.",
+  "Icon": "uixTxrIcon_annihilator",
+  "Id": "chassisdef_thumperrilla_ANH-THP",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Annihilator",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Annihilator"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Accurate_Category_Ballistics",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_annihilator",
+ "Heatsinks": 0,
+ "InitialTonnage": 10,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 160,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 320,
+   "MaxRearArmor": 160,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "annihilator",
+ "PrefabIdentifier": "chrPrfMech_annihilatorBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Munchkin",
+ "Tonnage": 100,
+ "TopSpeed": 40,
+ "TurnRadius": 90,
+ "VariantName": "ANH-THP",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "This Legendary variant is barely spoken of for fear it might appear, bringing 4 massive Thumper Cannons to the field on a very very slow platform.",
+ "weightClass": "ASSAULT"
+}

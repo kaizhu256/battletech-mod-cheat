@@ -1,0 +1,164 @@
+{
+ "Description": {
+  "Cost": 0,
+  "Details": "",
+  "Icon": "",
+  "Id": "lancedef_mech_d10_dynamic_battle",
+  "Name": "Dynamic Dif 10 Battle",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Difficulty": 10,
+ "LanceTags": {
+  "items": [
+   "lance_bracket_high",
+   "lance_type_battle",
+   "lance_type_dynamic",
+   "lance_type_mech",
+   "lance_type_notallvehicles",
+   "lance_type_roguetech"
+  ],
+  "tagSetSourceFile": "Tags/LanceTags"
+ },
+ "LanceUnits": [
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant",
+     "unit_generic"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "locked": false,
+   "pilotId": "Tagged",
+   "pilotSimGameID": null,
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d10",
+     "pilot_npc_high"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitSimGameID": null,
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "unit_legendary",
+     "{CUR_TEAM.faction}",
+     "unit_bracket_high"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant",
+     "unit_generic",
+     "unit_assault"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "locked": false,
+   "pilotId": "Tagged",
+   "pilotSimGameID": null,
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d10",
+     "pilot_npc_high"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitSimGameID": null,
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "{CUR_TEAM.faction}",
+     "unit_bracket_high"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant",
+     "unit_legendary",
+     "unit_generic"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "locked": false,
+   "pilotId": "Tagged",
+   "pilotSimGameID": null,
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d10"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitSimGameID": null,
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "{CUR_TEAM.faction}",
+     "unit_bracket_high"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant",
+     "unit_legendary",
+     "unit_generic",
+     "unit_assault"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "locked": false,
+   "pilotId": "Tagged",
+   "pilotSimGameID": null,
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d10"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitSimGameID": null,
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "{CUR_TEAM.faction}",
+     "unit_bracket_high"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  }
+ ]
+}

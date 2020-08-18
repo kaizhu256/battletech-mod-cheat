@@ -1,0 +1,160 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 2.625,
+ "APMaxArmorThickness": 525,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "Torso",
+ "AmmoCategory": "HGAUSS",
+ "AttackRecoil": 10,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "BLACKLISTED",
+   "component_type_stock",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-5",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: X2",
+    "HAMMERFIST: 10%",
+    "DmgFallOff: 45%",
+    "WpnRecoil: 4",
+    "WeaponJAM: 5",
+    "IsHeavyGauss",
+    "WeaponBoom: 100"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/gaussrifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 175,
+   "HeatDamagePerAmmo": 30,
+   "StabilityDamagePerAmmo": 45
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  }
+ },
+ "Damage": 175,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 875000,
+  "Details": "This Prototype Hammerfist Heavy Gauss Rifle is permanently affixed to the Dreka Chassis, sporting superior Range and Damage to the final production model at cost of runnign very hot with a chance that the Capacitator may fail to charge in time.<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_Prototype_HEAVY",
+  "Manufacturer": "Defiance",
+  "Model": "Hammerfist HGR",
+  "Name": "Heavy Gauss Rifle",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Prototype HGR"
+ },
+ "DisallowedLocations": "Arms",
+ "DistantVariance": 0.45,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 12,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 45,
+ "InventorySize": 8,
+ "MaxRange": 630,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  190,
+  310,
+  450
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 18,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "HGR hit destablized Gyro, reducing stability threshhold by 10%.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Hammerfist-Effect",
+    "Name": "Hammer Struk"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "UnsteadyThreshold",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

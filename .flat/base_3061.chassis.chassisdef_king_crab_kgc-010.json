@@ -1,0 +1,246 @@
+{
+ "BattleValue": 10206000,
+ "ChassisTags": {
+  "items": [
+   "SLDFMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 100,
+ "DFAInstability": 50,
+ "DFASelfDamage": 100,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2828902,
+  "Details": "This version of the King Crab was created by the Star League to be a command 'Mech and introduced alongside the original 000 model in 2743. Conceived in secret between Cosara and the Terran Hegemony, it was an attempt to produce a deadly command 'Mech by mounting a pair of newly-developed Hellstar Magna PPCs in either side torso backed by bya pair of SRM-6's. A pair of newly developed LBX/10's replaced the standard autocannon. The 010 model was more than capable of taking down an Atlas, but the entire line left with Kerensky during the Exodus and even knowledge of the design's existence became lost during the Succession Wars.",
+  "Icon": "uixTxrIcon_kingcrab",
+  "Id": "chassisdef_king_crab_KGC-010",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "King Crab",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "King Crab"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Command_Mech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_kingcrab",
+ "Heatsinks": 0,
+ "InitialTonnage": 10,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14.5,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14.5,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": -1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 155,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 310,
+   "MaxRearArmor": 155,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "kingcrab",
+ "PrefabIdentifier": "chrPrfMech_kingcrabBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Command Mech",
+ "Tonnage": 100,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "KGC-010",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "This version of the King Crab was created by the Star League to be a command 'Mech and introduced alongside the original 000 model in 2743. Conceived in secret between Cosara and the Terran Hegemony, it was an attempt to produce a deadly command 'Mech by mounting a pair of newly-developed Hellstar Magna PPCs in either side torso backed by bya pair of SRM-6's. A pair of newly developed LBX/10's replaced the standard autocannon. The 010 model was more than capable of taking down an Atlas, but the entire line left with Kerensky during the Exodus and even knowledge of the design's existence became lost during the Succession Wars.",
+ "weightClass": "ASSAULT"
+}

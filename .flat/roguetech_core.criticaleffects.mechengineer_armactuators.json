@@ -1,0 +1,106 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The {side} shoulder actuator was destroyed, reducing weapon accuracy by 5 for weapons in the same arm.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-ShoulderDestroyed-{location}",
+    "Name": "{side} Shoulder Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "4",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The {side} upper arm actuator was destroyed, reducing weapon accuracy by 1 for weapons in the same arm.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-ArmUpperActuatorDestroyed-{location}",
+    "Name": "{side} Upper Arm Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The {side} lower arm actuator was destroyed, reducing weapon accuracy by 1 for weapons in the same arm.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-ArmLowerActuatorDestroyed-{location}",
+    "Name": "{side} Lower Arm Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Ignored",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-ArmHandActuatorDestroyed-{location}",
+    "Name": "Hand Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

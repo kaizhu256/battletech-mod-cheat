@@ -1,0 +1,239 @@
+{
+ "BattleValue": 7718000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 80,
+ "DFAInstability": 40,
+ "DFASelfDamage": 80,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2085185,
+  "Details": "Terry Ford's \"Number Seven\" is built around an 320-rated standard engine, the slower engine allows it to retain the 'Mech's ten tons of armor and head mounted small laser while freeing up weight to carry a Large Laser in each side torso supported by a Medium Laser in each arm and the right torso. Twenty-five single heat sinks and four jump jets ensure Number Seven surprising mobility and endurance in battle.",
+  "Icon": "uixTxrIcon_charger",
+  "Id": "chassisdef_number_seven_CGR-N7",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Charger",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Charger"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Barrel_Fist",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_charger",
+ "Heatsinks": 0,
+ "InitialTonnage": 8,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 125,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 250,
+   "MaxRearArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 40,
+ "MeleeInstability": 20,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "charger",
+ "PrefabIdentifier": "chrprfmech_chargerhotd-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Support & Skirmisher",
+ "Tonnage": 80,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "CGR-N7",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Terry Ford's \"Number Seven\" is built around an 320-rated standard engine, the slower engine allows it to retain the 'Mech's ten tons of armor and head mounted small laser while freeing up weight to carry a Large Laser in each side torso supported by a Medium Laser in each arm and the right torso. Twenty-five single heat sinks and four jump jets ensure Number Seven surprising mobility and endurance in battle.",
+ "weightClass": "ASSAULT"
+}

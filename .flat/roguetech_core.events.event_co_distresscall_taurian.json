@@ -1,0 +1,397 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_event_pox",
+     "planet_other_plague",
+     "planet_pop_none"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_faction_taurian"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Sumire catches your attention on the bridge. \"Commander, I've picked up a distress call from a nearby civilian transport. It's not exactly our job to assist in matters like this, but we may be the nearest ship available.\"\r\n\r\nShe studies the display. \"On the other hand, it looks like the ship's engines are in a critical state. They could explode before we get there.\"",
+  "Icon": "uixTxrSpot_UnidentifiedObject.png",
+  "Id": "event_co_distressCall_Taurian",
+  "Name": "Distress Call"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation Option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Stay out of it."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Later that day, you learn from the planetary news feed that the transport was lost with all hands. It's a tough life here on the Periphery, and survivors quickly learn to look out for their own first and always.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_DistressCall"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Safe option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Investigate carefully."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "When the <i>Argo</i> arrives at the source of the distress beacon, a bleak picture greets you. The transport drifts aimlessly, no longer even venting oxygen from a gaping hole in its hull.\r\n\r\nWhile you're too late to help, your tech staff does manage to salvage some scrap for the Mech Bay from the floating tomb. Grim work, but necessary for survival in the Periphery.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "No survivors are found"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_DistressCall"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "When the <i>Argo</i> arrives at the source of the distress beacon, it's clear you made the right decision. A handful of void-suited passengers spin aimlessly away from a gaping hole in the hull, hoping against hope for rescue.\r\n\r\nYour tech staff manage to scoop up the survivors just before the transport explodes.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "You rescue some survivors"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.TaurianConcordat",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": "[rep_gain_small]"
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_DistressCall"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Risky option",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Mount an immediate rescue expedition."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "When the <i>Argo</i> arrives at the source of the distress beacon, it's clear you made the right decision. A handful of void-suited passengers spin aimlessly away from a gaping hole in the hull, hoping against hope for rescue.\r\n\r\nYour tech staff manage to scoop up the survivors just before the transport explodes.",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "You rescue some survivors"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.TaurianConcordat",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": "[rep_gain_small]"
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_DistressCall"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "When the <i>Argo</i> arrives at the source of the distress beacon, you feel a momentary surge of hope: a handful of void-suited passengers spin aimlessly away from a gaping hole in the hull, awaiting rescue.\r\n\r\nThen an explosion abruptly brightens the starry expanse, enveloping the transport, the survivors, and the <i>Argo</i>. Dr. Murad's team spends the rest of the day repairing the damage. You spend the rest of the day repairing bruised morale.",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "The transport self-destructs"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_DistressCall"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_DistressCall"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Funds",
+    "op": "GreaterThan",
+    "val": 10000,
+    "valueConstant": "10000"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

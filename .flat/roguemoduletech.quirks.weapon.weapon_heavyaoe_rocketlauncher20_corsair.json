@@ -1,0 +1,156 @@
+{
+ "AMSHitChance": -0.1,
+ "AOECapable": true,
+ "AOEDamage": 3,
+ "AOEHeatDamage": 2,
+ "AOEInstability": 1,
+ "AOERange": 40,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ColorChangeRule": "Random",
+ "ColorSpeedChange": 3,
+ "ColorsTable": [
+  {
+   "C": "#FF69B4",
+   "I": 5
+  },
+  {
+   "C": "#FF0000",
+   "I": 5
+  },
+  {
+   "C": "#FFA500",
+   "I": 5
+  },
+  {
+   "C": "#FFFF00",
+   "I": 5
+  },
+  {
+   "C": "#008000",
+   "I": 5
+  },
+  {
+   "C": "#40E0D0",
+   "I": 5
+  },
+  {
+   "C": "#4B0082",
+   "I": 5
+  },
+  {
+   "C": "#9400D3",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartShoulder, PartUpper"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "1shot",
+    "WpnAccuracy: -1",
+    "AMSChance: -10%",
+    "HeatDamage: +1",
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 3",
+    "AreaOfEffectHeatDmg: 2",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainDuration: 2",
+    "FireTerrainStrength: 2",
+    "IsRocket: 20",
+    "InternalAmmo: 12",
+    "ShoulderMount"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   },
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 12,
+   "StabilityDamagePerAmmo": 4
+  },
+  "InventorySorter": {
+   "SortKey": "03004"
+  }
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 29000,
+  "Details": "Heavy Rocket Launcher operate on the same Principle as the normal widespread Rocket Launcher, being unguided bolted on One Shot Throwaway Launchers do they carrier a heavier payload..<b><color=#F79232>5 Salvos</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_HEAVYAOE_ROCKETLAUNCHER20_Corsair",
+  "Manufacturer": "Death Blossom",
+  "Model": "Rocket Launcher",
+  "Name": "RL20",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Heavy RL20 Hydra"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDurationWithoutForest": 2,
+ "FireOnSuccessHit": true,
+ "FireTerrainCellRadius": 1,
+ "FireTerrainChance": 1,
+ "FireTerrainStrength": 2,
+ "HeatDamage": 0,
+ "HeatGenerated": 27,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 6,
+ "MaxRange": 440,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 20,
+ "StartingAmmoCapacity": 100,
+ "Tonnage": 8,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": []
+}

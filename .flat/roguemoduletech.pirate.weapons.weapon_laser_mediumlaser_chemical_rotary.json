@@ -1,0 +1,164 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.05,
+ "APMaxArmorThickness": 30,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "ChemMedium",
+ "AttackRecoil": 1,
+ "BattleValue": 130,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#800080",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "RotaryChemicalLaser: 5%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/chemical"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02005"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 300000,
+  "Details": "Yeah Just when you believe they've sniffed the last Moonshine, one of them gets the idea to weld a bunch of Medium Chem Lasers together with half working RAC feeder.... Theres a cup welded in here.... \n\n <b><color=#ffcc00>Uses Chem Medium Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "ChemLaser",
+  "Id": "Weapon_Laser_MediumLaser_Chemical_Rotary",
+  "Manufacturer": "Drunkard",
+  "Model": "Medium Chem Laser",
+  "Name": "M Chem Laser",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Medium Rotary Chem Laser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0625,
+ "HeatDamage": 0,
+ "HeatGenerated": 15,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3.3,
+ "InventorySize": 5,
+ "MaxRange": 360,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "FireDelayMultiplier": 0.14,
+   "HeatGenerated": -10,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.12,
+   "FlatJammingChance": 0.05,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0075,
+   "HeatGenerated": -5,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "FireDelayMultiplier": 0.08,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0225,
+   "HeatGenerated": 5,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.06,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 10,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "FireDelayMultiplier": 0.04,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0375,
+   "HeatGenerated": 15,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 4,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
+ "WeaponSubType": "MediumLaser",
+ "statusEffects": []
+}

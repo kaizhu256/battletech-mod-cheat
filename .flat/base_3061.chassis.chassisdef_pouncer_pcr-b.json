@@ -1,0 +1,319 @@
+{
+ "BattleValue": 3610000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech",
+   "OmniMech",
+   "mr-resize-1.1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": [
+   {
+    "CategoryID": "Armor",
+    "DefID": "default_armorslots_clanferrosfibrous",
+    "Location": "CenterTorso",
+    "Type": "Upgrade"
+   }
+  ]
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 3526396,
+  "Details": "The Pouncer was originally a test bed design that was upgraded to combat specifications on the orders of then-IlKhan Ulric Kerensky, as it was realized that a more mobile 'Mech was needed when combating Inner Sphere forces. The Pouncer is built on a lightweight DSAM Endo 4 Endo Steel chassis and is powered by a 240 XL engine which gives it a maximum speed of 97.2 km/h. The 'Mech's mobility is enhanced with five Grandthrust Mk. Four jump jets that allow it to jump up to one hundred and fifty meters. For protection from enemy fire, the Pouncer has a respectable six tons of Forging ZM15 Ferro-Fibrous armor. Overall, the Pouncer is an excellent OmniMech with fifteen and a half tons of pod space, allowing it to carry a wide variety of weapons payloads.",
+  "Icon": "Pouncer",
+  "Id": "chassisdef_pouncer_PCR-B",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Pouncer",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Pouncer"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_clanendosteel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Omnimech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_240",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_cxl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_JumpAttack",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_adder",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "adder",
+ "PrefabIdentifier": "chrPrfMech_adderbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Fast Striker Omni",
+ "Tonnage": 40,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "PCR-B",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Pouncer was originally a test bed design that was upgraded to combat specifications on the orders of then-IlKhan Ulric Kerensky, as it was realized that a more mobile 'Mech was needed when combating Inner Sphere forces. The Pouncer is built on a lightweight DSAM Endo 4 Endo Steel chassis and is powered by a 240 XL engine which gives it a maximum speed of 97.2 km/h. The 'Mech's mobility is enhanced with five Grandthrust Mk. Four jump jets that allow it to jump up to one hundred and fifty meters. For protection from enemy fire, the Pouncer has a respectable six tons of Forging ZM15 Ferro-Fibrous armor. Overall, the Pouncer is an excellent OmniMech with fifteen and a half tons of pod space, allowing it to carry a wide variety of weapons payloads.",
+ "weightClass": "MEDIUM"
+}

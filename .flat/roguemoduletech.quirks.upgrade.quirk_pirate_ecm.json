@@ -1,0 +1,202 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "NegativeOne",
+   "HideOnNotSelected": false,
+   "Id": "Gear_Piratejammer",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "WAAAAA",
+   "Range": 360,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#00e600",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Increases spotting distance by 50m.",
+      "Icon": "uixSvgIcon_equipment_Comms",
+      "Id": "PirateJammer_IniPenalty",
+      "Name": "SPOTTING DISTANCE INCREASED"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-2",
+      "operation": "Int_Add",
+      "statName": "BaseInitiative"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Increases spotting distance by 50m.",
+      "Icon": "uixSvgIcon_equipment_Comms",
+      "Id": "PirateJammer_MoralePenalty",
+      "Name": "SPOTTING DISTANCE INCREASED"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-2",
+      "operation": "Int_Add",
+      "statName": "MoraleBonusGain"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "ECM",
+ "BonusValueB": "",
+ "ComponentSubType": "Prototype_ElectronicWarfare",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ElectronicCounterMeasures"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PirateJammer: 2, 360",
+    "Visibility: +15%",
+    "Signature: +15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitSensors"
+   },
+   {
+    "CategoryID": "ECM"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair",
+    "default"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00203"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Pirate_ECM"
+  }
+ },
+ "Description": {
+  "Cost": 330000,
+  "Details": "Basically still Electronics Counter Measures that scrambles Enemy Targeting and Missile Systems, though less elegant because it simply sends ancient Heavy Metal and Rock over any and all frequencies, even IR and Magnetic...",
+  "Icon": "enrage",
+  "Id": "Quirk_Pirate_ECM",
+  "Manufacturer": "Onslaught",
+  "Model": "Hatebox",
+  "Name": "Hatebox",
+  "Purchasable": true,
+  "Rarity": 9,
+  "UIName": "ECM (P)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "PirateJammer_Signature",
+    "Name": "Stealth Signature Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "PirateJammer_Visibility",
+    "Name": "Stealth Visbility Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

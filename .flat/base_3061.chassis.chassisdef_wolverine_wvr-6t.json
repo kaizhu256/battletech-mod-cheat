@@ -1,0 +1,230 @@
+{
+ "BattleValue": 5897000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 55,
+ "DFAInstability": 28,
+ "DFASelfDamage": 55,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1227830,
+  "Details": "A Taurian variant, the WVR-6T design was created to capitalize on the less expensive ballistic weapons that were readily available within the Concordat to reduce their reliance on Star League member states. The 6T was also meant to act as anti-pirate garrison 'Mech, utilizing its long range AC/5 and LRM-5 combo to engage raiders at range.  While the swap out of the Medium Laser for a Small Laser and the addition of two Machine Guns allow this Wolverine variant to better engage with the light vehicles and infantry common to raiding forces.",
+  "Icon": "uixTxrIcon_wolverine",
+  "Id": "chassisdef_wolverine_WVR-6T",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Wolverine",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Wolverine"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Comms",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_wolverine",
+ "Heatsinks": 0,
+ "InitialTonnage": 5.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -2.5,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 28,
+ "MeleeInstability": 14,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "wolverine",
+ "PrefabIdentifier": "chrPrfMech_wolverineBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper & Cavalry",
+ "Tonnage": 55,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "WVR-6T",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Not sure I totally agree with the mixed loadout on the 6T, but it seems like it can stay at range to harass the enemy, while being able to dish out some serious damage if things get up close and personal.  Now, imagine what I could do with these specs on a Shadow Hawk chassis...",
+ "weightClass": "MEDIUM"
+}

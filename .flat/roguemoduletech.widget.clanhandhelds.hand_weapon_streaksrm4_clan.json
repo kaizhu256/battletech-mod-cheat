@@ -1,0 +1,113 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.4,
+ "APCriticalChanceMultiplier": 0.025,
+ "APMaxArmorThickness": 25,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "STREAK_Generic_Internal",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 3",
+    "MissileHP: 4",
+    "WpnAccuracy: +1",
+    "PipsIgnored: +1",
+    "Streak",
+    "DoesCluster",
+    "HandHeldAmmo: 52",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 3
+  },
+  "InventorySorter": {
+   "SortKey": "03027"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 8,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 380000,
+  "Details": "A single Streak SRM4 Launcher System.\n\n <b><color=#ffcc00>52 Rounds.</color></b>",
+  "Icon": "panzerfaust",
+  "Id": "Hand_Weapon_STREAKSRM4_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "HH Clan Streak LRM4",
+  "Name": "HH Clan Streak SRM4",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "HandHeld StreakSRM4 (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "HitGenerator": "Streak",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 480,
+ "MinRange": 0,
+ "MissileHealth": 4,
+ "MissileVolleyIntervalMultiplier": 2,
+ "MissileVolleySize": 10,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm5",
+ "ProjectileSpeedMultiplier": 1.3,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 4,
+ "StartingAmmoCapacity": 52,
+ "StatusEffectsPerHit": true,
+ "Streak": true,
+ "Tonnage": 0,
+ "Type": "SRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM4",
+ "WeaponSubType": "SRM4",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

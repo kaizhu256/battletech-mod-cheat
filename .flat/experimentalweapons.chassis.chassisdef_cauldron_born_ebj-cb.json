@@ -1,0 +1,351 @@
+{
+ "BattleValue": 3749000,
+ "ChassisTags": {
+  "items": [
+   "SocietyMech",
+   "HeroMech",
+   "OmniMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 2,
+ "Description": {
+  "Cost": 7520000,
+  "Details": "Like An unstoppable Zombie, the mech known as the cauldron born takes the battlefeild striking fear into its opponents. </color></b>",
+  "Icon": "cauldronborn",
+  "Id": "chassisdef_cauldron_born_EBJ-CB",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Ebon Jaguar",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Ebon Jaguar"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_clanendosteel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Omnimech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_325",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_cxl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Actuator_CoolingJacket",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Actuator_CoolingJacket",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Narrow_Low_Profile",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_ebonjaguar",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": -2,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 2,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "ebonjaguar",
+ "PrefabIdentifier": "chrprfmech_ebonjaguarbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1.25,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1.25,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Long Range Fire Support",
+ "Tonnage": 65,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "EBJ-CB",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Looks Like the Jags have come to play with this one. I bet they would nuke us from orbit if they could.",
+ "weightClass": "HEAVY"
+}

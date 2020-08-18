@@ -1,0 +1,135 @@
+{
+ "BattleValue": 993,
+ "Custom": {
+  "CustomWeights": [
+   {
+    "ComponentDefID": "Tank_InfantryCompartment",
+    "Tonnage": 5
+   }
+  ]
+ },
+ "CustomParts": {
+  "MoveClamp": 0.5,
+  "MoveCost": "Hover"
+ },
+ "Description": {
+  "Cost": 7202917,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_BANDIT-A_CLAN",
+  "Name": "Bandit Hovercraft",
+  "Purchasable": false,
+  "Rarity": 3
+ },
+ "HardpointDataDefID": "hardpointdatadef_bandit",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.6,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 200,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 200,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 200,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 160,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_9-14cv",
+ "PathingCapDefID": "pathingdef_medium_hover",
+ "PrefabBase": "bandit",
+ "PrefabIdentifier": "chrprfvhcl_banditbase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 50,
+ "TopSpeed": 500,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "MEDIUM"
+}

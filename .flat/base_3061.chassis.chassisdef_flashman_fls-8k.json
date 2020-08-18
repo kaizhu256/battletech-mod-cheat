@@ -1,0 +1,269 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 1892000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-0.75"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Flashman"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 100,
+ "DFAInstability": 50,
+ "DFASelfDamage": 100,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2006132,
+  "Details": "The Flashman is an underrated heavy 'Mech, commonly called a \"flashbulb\" by MechWarriors for its heavy-energy configuration. The Flashman, which was first introduced in 2701, is a 'Mech that is capable of engaging an enemy for extended periods of time with little re-supply. The primary weapons on the Flashman FLS-8K are three Large Lasers mounted in the right arm, left arm, and center torso. These are backed up by five Medium Lasers, two mounted in either arm coaxial to the large lasers, two in the left torso and one in the right. The Flashman also carries an Anti-Missile System with one ton of ammo in the right torso to defend against missile attacks, and a Flamer in the head, to deter infantry attacks. The use of a Faust/Shinji AT/TS targeting-tracking system gives the Flashman a level of accuracy few can match, while fifteen double heat sinks give it an effective heat management system. The 'Mech is also notable for using an extralight engine which makes it fast for its size, though not at the expense of protection thanks to thirteen and a half tons of armor.",
+  "Icon": "Imp",
+  "Id": "chassisdef_flashman_FLS-8K",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Flashman",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Flashman"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Rugged",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_imp",
+ "Heatsinks": 0,
+ "InitialTonnage": 7.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "imp",
+ "PrefabIdentifier": "chrprfmech_impbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 80,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 75,
+ "TopSpeed": 86,
+ "TurnRadius": 220,
+ "VariantName": "FLS-8K",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The base variant of the Flashman is better than its reputation makes you think, the combination of all those lasers with so many heat sinks means it can keep dishing out serious damage when most other 'Mechs will have to vent heat.",
+ "weightClass": "HEAVY"
+}

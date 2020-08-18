@@ -1,0 +1,132 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.4,
+ "APCriticalChanceMultiplier": 0.04,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "WpnRecoil: +2",
+    "MML",
+    "IndirectMML",
+    "WeaponJAMFlat: 15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/mml"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 12,
+   "ExplosionDamagePerAmmo": 6,
+   "HeatDamage": 4,
+   "HeatDamagePerAmmo": 2,
+   "StabilityDamage": 4,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "no_salvage",
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03024"
+  }
+ },
+ "Damage": 4,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 712500,
+  "Details": "A Product of the RISC MML Program for the Raptor II Experimentals, it has an Advanced Targeting System that Securely Guides in the First Volley. \n\n <b><color=#ffcc00>Uses SRM/LRM Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_RISC_MML_10_Quirk",
+  "Manufacturer": "RISC",
+  "Model": "Multi Missile Launcher",
+  "Name": "MML 10",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Artemis+MML 10"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireTerrainChance": 0.005,
+ "FlatJammingChance": 0.15,
+ "GunneryJammingBase": 3,
+ "GunneryJammingMult": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 13,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 5,
+ "MaxRange": 690,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "LRM",
+   "Id": "LRM",
+   "UIName": "LRM",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "SRM",
+   "DamagePerShot": 4,
+   "FireTerrainChance": 0.005,
+   "Id": "SRM",
+   "IndirectFireCapable": false,
+   "Instability": 1,
+   "LongRange": -360,
+   "MaxRange": -360,
+   "MiddleRange": -240,
+   "MinRange": -180,
+   "ShortRange": -120,
+   "UIName": "SRM",
+   "WeaponEffectID": "WeaponEffect-Weapon_SRM4",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 10,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 5,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM10",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

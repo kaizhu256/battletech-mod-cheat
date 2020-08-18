@@ -1,0 +1,69 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_RifleLight_APFSDS",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 15,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LRifleAmmo.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorDmgMod: +60%",
+    "StructureDmgMod: -30%",
+    "DmgFallOff: 50%",
+    "VariableDmg: 10",
+    "Crits: +25%",
+    "Protected: 50%",
+    "LightRifleAmmo: 15"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/a/rifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 15,
+   "StabilityDamagePerAmmo": 4
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000003"
+  },
+  "TRGBColor": {
+   "Color": "#30723F",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "This ammunition is an attempt to make primitive Rifle weapons effective in the face of modern armor. Armor Piercing Fin Stabilized Discarding Sabot munitions have been used for centuries. Essentially a long heavy metal dart they punch through armor using kinetic energy alone; no explosive warhead is used. This means ammo explosions are less dangerous, but their damage decreases at long range. Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "rifle",
+  "Id": "Ammo_AmmunitionBox_Rifle_Light_APFSDS",
+  "Manufacturer": "Generic",
+  "Model": "Light Rifle",
+  "Name": "Light Rifle Ammo Sabot",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo Light Rifle Sabot"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

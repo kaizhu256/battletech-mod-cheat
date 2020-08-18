@@ -1,0 +1,242 @@
+{
+ "AdditionalObjects": [
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [
+      "pilot_cautious",
+      "pilot_dependable",
+      "pilot_military",
+      "pilot_spacer"
+     ],
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": "0"
+     }
+    ],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "SecondaryMechWarrior"
+   },
+   "Scope": "SecondaryMechWarrior"
+  }
+ ],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "argo_pod3",
+     "event_mw_targetPractice"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "\"We have a request to set up a live shooting range,\" Darius says in the staff meeting. \"[[TGT_MW,{TGT_MW.Callsign}]] says the pressure-safe target pistols aren't sufficiently realistic to keep the MechWarriors' skills sharp. That said, I'm not sure if the <i>Argo</i> has an appropriate location for that kind of thing.\"\r\n\r\n\"For what, an indoor firing range?\" Dr. Murad tilts her head, her brow furrowing. \"I believe that I can find a spot in Gamma Pod. It's still a mess over there anyway. Use an armor plate as a backstop… yes, it should be fine if they're careful.\"\r\n\r\nHer eyes shift to you. \"Your MechWarriors are careful, aren't they?\"",
+  "Icon": "uixTxrSpot_ArgoPod.png",
+  "Id": "event_mw_targetPractice",
+  "Name": "Target Practice"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Deny the request",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Deny the request."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You break Dr. Murad's stare. \"Unfortunately, caution isn't really their strong suit. [[TGT_MW,{TGT_MW.Callsign}]] with {TGT_MW.DET} military background is one thing, but some of the others… well, let's not tempt fate with live fire. Darius, tell {TGT_MW.Callsign} {TGT_MW.SUBJ}'ll just have to show the others how to improve with indoor target pistols.\"\r\n\r\nDarius nods, and moves on to the next item on his list.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "safe option"
+     },
+     "Results": [],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Set up the target range",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Set up the target range."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You nod at Dr. Murad. \"[[TGT_MW,{TGT_MW.Callsign}]] is ex-military. If {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} running this, there shouldn't be any real risk. Darius, make it happen, but stress to {TGT_MW.Callsign} that final responsibility lies with {TGT_MW.OBJ}.\"\r\n\r\nIt doesn't take long for the MechWarriors to get the shooting range set up and start using their auto-pistols. {TGT_MW.Callsign} manages the range well. There are no immediate problems.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Good outcome"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_targetPractice"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "You nod at Dr. Murad. \"[[TGT_MW,{TGT_MW.Callsign}]] is ex-military. If {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} running this, there shouldn't be any real risk. Darius, make it happen, but stress to {TGT_MW.Callsign} that final responsibility lies with {TGT_MW.OBJ}.\"\r\n\r\nAs soon as {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:get|Default:gets} the go-ahead, {TGT_MW.Callsign} starts organizing the shooting range. The MechWarriors produce a wide variety of small arms, some of which rather stretch the definition.\r\n\r\nWhen Darius catches [[SCN_MW,{SCN_MW.Callsign}]] toting a [[DM.BaseDescriptionDefs[LoreGyroslugRifle],Gyroslug Rifle]] and explosive ammunition through the corridor, he calls {TGT_MW.Callsign} in for a heated dressing-down. Afterward, the shooting range becomes pistols-only, and locks appear on all Gyroslug Rifle cases.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Bad Outcome"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "pilot_military"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

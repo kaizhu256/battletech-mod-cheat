@@ -1,0 +1,143 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "50% Crit Protection|",
+ "BonusValueB": "5% Less Dmg Taken",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.15,
+   "ArmorTPCost": 1.15
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CritRes: 25%",
+    "DamageTaken: -5%",
+    "ArmorTPCost: 15%",
+    "ArmorCBCost: 15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Spall_Liner_Upgrade"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "1.1 * [[Chassis.Tonnage]] / 20"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Hard hits can break pieces off the inside of armor, without piercing it, turning them into shrapnel. This reinforced lining material slows or catches this spall before it can cause damage.",
+  "Icon": "uixSvgIcon_mwFury",
+  "Id": "Gear_Spall_Liner_Quirk",
+  "Manufacturer": "RISC",
+  "Model": "Spall Liner",
+  "Name": "Spall Liner",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Lined Armor"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit resists critical hits.",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "Spall_Liner_Effect",
+    "Name": "Spall Liner"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Chassis takes less Damage",
+    "Icon": "uixSvgIcon_roomMechBay",
+    "Id": "Spall_Liner_Effect2",
+    "Name": "Spall Liner"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "-0.05",
+    "operation": "Float_Add",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

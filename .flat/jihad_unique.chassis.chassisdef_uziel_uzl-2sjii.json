@@ -1,0 +1,239 @@
+{
+ "BattleValue": 4124000,
+ "ChassisTags": {
+  "items": [
+   "HeroMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 50,
+ "DFAInstability": 25,
+ "DFASelfDamage": 50,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 935519,
+  "Details": "Won in combat on Arc-Royal after the Wolf's Dragoons arrival, the reborn Black Widow Company's XO Jacob Kincaid set about upgrading his new 'Mech significantly.",
+  "Icon": "Uziel",
+  "Id": "chassisdef_uziel_UZL-2SJII",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Uziel",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Uziel"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Cowl",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_uziel",
+ "Heatsinks": 0,
+ "InitialTonnage": 5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 2
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 2
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 25,
+ "MeleeInstability": 13,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "uziel",
+ "PrefabIdentifier": "chrprfmech_uzielbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 130,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Flanker and All-Range Combat",
+ "Tonnage": 50,
+ "TopSpeed": 65,
+ "TurnRadius": 90,
+ "VariantName": "UZL-2SJII",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Won in combat on Arc-Royal after the Wolf's Dragoons arrival, the reborn Black Widow Company's XO Jacob Kincaid set about upgrading his new 'Mech significantly.",
+ "weightClass": "MEDIUM"
+}

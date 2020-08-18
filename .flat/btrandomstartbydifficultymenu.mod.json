@@ -1,0 +1,105 @@
+{
+ "Author": "IceRaptor",
+ "Contact": "",
+ "DLL": "IRTweaks.dll",
+ "DependsOn": [
+  "IRBTModUtils",
+  "Custom Ammo Categories"
+ ],
+ "Description": "Allows setting unique starting lances and faction bonuses through the difficulty menu",
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [
+  {
+   "Path": "data",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "Path": "custom",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "Path": "BaseDescriptionDef",
+   "Type": "BaseDescriptionDef"
+  },
+  {
+   "Path": "Menus",
+   "Type": "SimGameDifficultySettingList"
+  }
+ ],
+ "Name": "BTRandomStartByDifficultyMenu",
+ "Settings": {
+  "Abilities": {
+   "FlexibleSensorLockId": "AbilityDefT8A",
+   "JuggernautId": "AbilityDefGu5",
+   "MultiTargetId": "AbilityMultiTracker"
+  },
+  "Combat": {
+   "CalledShot": {
+    "Modifier": 9,
+    "PilotTags": {
+     "pilot_assassin": 2,
+     "pilot_drunk": -2,
+     "pilot_reckless": -1
+    }
+   },
+   "FlexibleSensorLock": {
+    "FreeActionWithAbility": true
+   },
+   "PainTolerance": {
+    "HeadHitArmorOnlyMulti": 0.5,
+    "KnockdownDamage": 6,
+    "PenaltyPerAmmoExplosionRatio": 1,
+    "PenaltyPerHeadDamage": 5,
+    "PenaltyPerHeatDamageInjuryRatio": 1,
+    "ResistPerGuts": 10,
+    "ShutdownDamage": 12,
+    "TorsoDestroyedDamage": 10
+   },
+   "PilotAttributesMax": 20,
+   "SpawnProtection": {
+    "ApplyGuard": true,
+    "ApplyToAllies": true,
+    "ApplyToEnemies": true,
+    "ApplyToNeutrals": true,
+    "ApplyToReinforcements": true,
+    "EvasionPips": 6
+   }
+  },
+  "Debug": false,
+  "Fixes": {
+   "AlternateMechNamingStyle": true,
+   "BraceOnMeleeWithJuggernaut": true,
+   "BuildingDamageColorChange": true,
+   "BulkPurchasing": true,
+   "CombatLog": false,
+   "DisableCampaign": true,
+   "DisableCombatSaves": true,
+   "DisableMPHashCalculation": true,
+   "ExtendedStats": true,
+   "FlexibleSensorLock": true,
+   "MechbayLayout": false,
+   "MultiTargetStat": true,
+   "PainTolerance": true,
+   "PathfinderTeamFix": true,
+   "PreventHeadShots": true,
+   "RandomStartByDifficulty": true,
+   "ReduceSaveCompression": true,
+   "ShowAllArgoUpgrades": true,
+   "SkipDeleteSavePopup": true,
+   "SkirmishAlwaysUnlimited": true,
+   "SkirmishReset": true,
+   "SpawnProtection": true,
+   "StreamlinedMainMenu": true,
+   "UrbanExplosionsFix": true,
+   "WeaponTooltip": true
+  },
+  "Store": {
+   "QuantityOnControl": 20,
+   "QuantityOnShift": 5
+  },
+  "Trace": false
+ },
+ "Version": "0.1.0",
+ "Website": "https://github.com/IceRaptor/BTRandomStartByDifficultyMenu"
+}

@@ -1,0 +1,55 @@
+{
+ "AdditionalCost": 400,
+ "AssignedCastDefId": "castDef_SumireDefault",
+ "AssignedCastDescription": "Commander, have you seen these simulator pods? They're fantastic! I take back everything bad I've ever said about the <i>Argo</i>. We gotta get these things running ASAP.",
+ "Category": "TRAINING",
+ "Description": {
+  "Cost": 0,
+  "Details": "This set of networked Battle Pods allow MechWarriors to compete against one another in simulated 'Mech battles, generating experience for participating MechWarriors. Each MechWarrior with less than 200,000 total experience will gain 30 experience points per day.",
+  "Icon": "uixSvgIcon_shipUpgrade_training1",
+  "Id": "argoUpgrade_trainingModule1",
+  "Name": "Training Module 1",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_TrainingModules",
+ "Location": "SHIP",
+ "PurchaseCost": 90000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_power1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "ExperiencePerDay",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 30,
+   "valueConstant": ""
+  },
+  {
+   "name": "ExperiencePerDayCap",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 200000,
+   "valueConstant": ""
+  },
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_trainingModule1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

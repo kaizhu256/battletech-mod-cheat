@@ -1,0 +1,41 @@
+{
+ "AdditionalCost": 5500,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "Okay, what we've got here is a fully outfitted machine shop, and a whole lot of data on 'Mech specifications. Get this back online, and we'll be machining our own parts, probably better than the ones coming out of the Taurian factories. Faster, too.",
+ "Category": "REPAIR_REFIT",
+ "Description": {
+  "Cost": 0,
+  "Details": "Maintaining 'Mechs in the Succession War era is complicated by the relative rarity of precision-manufactured parts. The <i>Argo</i>'s machine shop, once repaired and brought online, can help address this lack.",
+  "Icon": "uixSvgIcon_shipUpgrade_machineshop",
+  "Id": "argoUpgrade_mechBay_machineShop",
+  "Name": "Machine Shop",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "MECH_BAY",
+ "PurchaseCost": 400000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_mechBay3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_mechBay_machineShop"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

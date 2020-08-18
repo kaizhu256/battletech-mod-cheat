@@ -1,0 +1,267 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [
+   "RISCBattleMech",
+   "PrototypeMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": [
+   {
+    "CategoryID": "Cockpit",
+    "DefID": "Gear_Cockpit_SLDF_Standard",
+    "Location": "Head",
+    "Type": "Upgrade"
+   },
+   {
+    "CategoryID": "CockpitFCS",
+    "DefID": "Gear_FCS_EnergyPlus",
+    "Location": "Head",
+    "Type": "Upgrade"
+   },
+   {
+    "CategoryID": "CockpitSensors",
+    "DefID": "Gear_Sensors_TrackerMK2",
+    "Location": "Head",
+    "Type": "Upgrade"
+   }
+  ]
+ },
+ "DFADamage": 65,
+ "DFAInstability": 33,
+ "DFASelfDamage": 65,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2225185,
+  "Details": "The 'Loki' stays true to it's namesake, bringing a maddening array of Weapons, Chaos and Trickery to any that cross it's patch.",
+  "Icon": "uixTxrIcon_hellbringer",
+  "Id": "chassisdef_loki_HBR-P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Hellbringer",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Hellbringer"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Searchlight",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_hellbringer",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 15,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 33,
+ "MeleeInstability": 17,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "hellbringer",
+ "PrefabIdentifier": "chrprfmech_hellbringerbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Looted Hellbringer",
+ "Tonnage": 65,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "HBR-P",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Hellbringer Prime bears similarities in design and appearance to the classic Warhammer. The primary weapons are indeed a pair of ER PPCs.",
+ "weightClass": "HEAVY"
+}

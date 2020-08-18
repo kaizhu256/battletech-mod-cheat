@@ -1,0 +1,95 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "- 6 Heat / Turn",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeatPerTurn: -4",
+    "TEHeatgen: -4%",
+    "BankBoom: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Heatsink"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 20,
+   "HeatDamage": 20,
+   "StabilityDamage": 20
+  },
+  "EngineHeatSink": {
+   "Abbreviation": "PDHS",
+   "FullName": "Proto Double Heat Sinks",
+   "Tag": "PDHS"
+  },
+  "InventorySorter": {
+   "SortKey": "00015"
+  }
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "These Prototype Double Heat Sinks were created by House Davion researchers. Unlike the Double Heat Sinks used by the Star League and after the War of 3039 these prototype units were smaller. As an experiment, they worked adequately, but their use of liquid heavy metals instead of the safer (if larger) radiators used in SLDF double heat sinks meant that they have been highly unstable. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_equipment_Heatsink",
+  "Id": "Gear_HeatSink_Prototype_Double",
+  "Manufacturer": "Friden",
+  "Model": "Prototype",
+  "Name": "Prototype Heatsink (D)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Prototype DHS"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 4,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "PDHSHeatGen",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.96",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

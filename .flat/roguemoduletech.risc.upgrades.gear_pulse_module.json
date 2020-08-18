@@ -1,0 +1,282 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Accuracy",
+ "BonusValueB": "+ 20% Laser Heat",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "cae_ai_offence",
+   "cae_ai_explode",
+   "cae_ai_heat"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "PulseModule",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.15,
+   "FailFlatChance": 0.1,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Increased Laser Accuracy.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "StatusEffect-Attack_PMODULE",
+      "Name": "Pulse Module"
+     },
+     "actorBurningData": null,
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": 1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "floatieData": null,
+     "instantModData": null,
+     "nature": "Buff",
+     "poorlyMaintainedEffectData": null,
+     "statisticData": {
+      "additionalRules": "NotSet",
+      "appliesEachTick": false,
+      "effectsPersistAfterDestruction": false,
+      "modType": "System.Single",
+      "modValue": "2.0",
+      "operation": "Float_Add",
+      "statName": "EvasivePipsIgnored",
+      "targetAmmoCategory": "NotSet",
+      "targetCollection": "Weapon",
+      "targetWeaponCategory": "NotSet",
+      "targetWeaponSubType": "NotSet",
+      "targetWeaponType": "Laser"
+     },
+     "tagData": null,
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": true,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     },
+     "vfxData": null
+    },
+    {
+     "Description": {
+      "Details": "Increased Laser Accuracy.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "StatusEffect-Attack2_PMODULE",
+      "Name": "Pulse Module"
+     },
+     "actorBurningData": null,
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": 1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "floatieData": null,
+     "instantModData": null,
+     "nature": "Buff",
+     "poorlyMaintainedEffectData": null,
+     "statisticData": {
+      "additionalRules": "NotSet",
+      "appliesEachTick": false,
+      "effectsPersistAfterDestruction": false,
+      "modType": "System.Single",
+      "modValue": "-2.0",
+      "operation": "Float_Add",
+      "statName": "AccuracyModifier",
+      "targetAmmoCategory": "NotSet",
+      "targetCollection": "Weapon",
+      "targetWeaponCategory": "NotSet",
+      "targetWeaponSubType": "NotSet",
+      "targetWeaponType": "Laser"
+     },
+     "tagData": null,
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": true,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     },
+     "vfxData": null
+    },
+    {
+     "Description": {
+      "Details": "Heat generation increased by 20%.",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "StatusEffect-Heat_PMODULE",
+      "Name": "Increased Heat"
+     },
+     "actorBurningData": null,
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": 1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "floatieData": null,
+     "instantModData": null,
+     "nature": "Buff",
+     "poorlyMaintainedEffectData": null,
+     "statisticData": {
+      "additionalRules": "NotSet",
+      "appliesEachTick": false,
+      "effectsPersistAfterDestruction": false,
+      "modType": "System.Single",
+      "modValue": "1.2",
+      "operation": "Float_Multiply",
+      "statName": "HeatGenerated",
+      "targetAmmoCategory": "NotSet",
+      "targetCollection": "Weapon",
+      "targetWeaponCategory": "NotSet",
+      "targetWeaponSubType": "NotSet",
+      "targetWeaponType": "Laser"
+     },
+     "tagData": null,
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     },
+     "vfxData": null
+    },
+    {
+     "Description": {
+      "Details": "Maintains a constant heat generation of 9.",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "StatusEffect-Heat2_PMODULE",
+      "Name": "Increased Heat"
+     },
+     "actorBurningData": null,
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": 1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "floatieData": null,
+     "instantModData": null,
+     "nature": "Debuff",
+     "poorlyMaintainedEffectData": null,
+     "statisticData": {
+      "additionalRules": "NotSet",
+      "appliesEachTick": false,
+      "effectsPersistAfterDestruction": false,
+      "modType": "System.Int32",
+      "modValue": "-9",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity",
+      "targetAmmoCategory": "NotSet",
+      "targetCollection": "NotSet",
+      "targetWeaponCategory": "NotSet",
+      "targetWeaponSubType": "NotSet",
+      "targetWeaponType": "NotSet"
+     },
+     "tagData": null,
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     },
+     "vfxData": null
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Activatable",
+    "ActiveAccuracy: +2",
+    "ActiveLaserEvasionIgnore: 2",
+    "ActiveLaserHeatGenerated: +20%",
+    "ActiveHeatPerTurn: +9",
+    "FailChance: 10%",
+    "FailChanceTurn: 15%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "WeaponBoom: 50"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PulseModule"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 50
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 840000,
+  "Details": "Developed by the Republic Institute of Strategic Combat just shortly prior to the infamous Black Out, the Laser Pulse Module is designed to be fitted on any Standard or ER Laser, giving it an alternate fire mode which increases the heat output but increases the accuracy along the same lines as a Pulse Laser. When Destroyed Explodes.",
+  "Icon": "energise",
+  "Id": "Gear_Pulse_Module",
+  "Manufacturer": "RISC",
+  "Model": "Pulse Module",
+  "Name": "Pulse Module",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Laser Pulse Module"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 4,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": []
+}

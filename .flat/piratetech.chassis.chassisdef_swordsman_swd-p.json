@@ -1,0 +1,257 @@
+{
+ "BattleValue": 3087000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Hand",
+   "RightLimit": "Hand"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Swordsman"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 50,
+ "DFAInstability": 25,
+ "DFASelfDamage": 50,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 708962,
+  "Details": "The Swordsman was an early Federated Suns medium-class BattleMech which was originally built in 2463 as House Davion's third in-house BattleMech design. The design was tainted by heavy use in the Davion Civil War of 2525-2540. Eventually, production ended and the design was relegated to the dustbin of history. However, in the 3060s, the mech was put back into production by House Davion to supplement their forces in the FedCom Civil War. The SWD-2 is the stock production design, mounting heavy armor and firepower for the tonnage: 7.5 tons of armor and a grab-bag mix of guns including an AC/5, LRM-5, SRM-4, two Medium Lasers, and a Small Laser.",
+  "Icon": "uixTxrIcon_swordsman",
+  "Id": "chassisdef_swordsman_SWD-P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Swordsman",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Swordsman"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Weapon_Melee",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": true,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_icarusii",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 4,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 4,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 10,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "icarusii",
+ "PrefabIdentifier": "chrprfmech_icarusiibase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Age of War Trooper",
+ "Tonnage": 40,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "SWD-P",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Swordsman was an early Federated Suns medium-class BattleMech which was originally built in 2463 as House Davion's third in-house BattleMech design. The design was tainted by heavy use in the Davion Civil War of 2525-2540. Eventually, production ended and the design was relegated to the dustbin of history. However, in the 3060s, the mech was put back into production by House Davion to supplement their forces in the FedCom Civil War. The SWD-2 is the stock production design, mounting heavy armor and firepower for the tonnage: 7.5 tons of armor and a grab-bag mix of guns including an AC/5, LRM-5, SRM-4, two Medium Lasers, and a Small Laser.",
+ "weightClass": "MEDIUM"
+}

@@ -1,0 +1,49 @@
+{
+ "Author": "IceRaptor",
+ "Contact": "",
+ "DLL": "IttyBittyLivingSpace.dll",
+ "DependsOn": [
+  "CustomComponents",
+  "IRBTModUtils"
+ ],
+ "Description": "Makes the tight storage aboard dropships more expensive.",
+ "Enabled": true,
+ "Hidden": true,
+ "Name": "IttyBittyLivingSpace",
+ "Settings": {
+  "Debug": false,
+  "GearCostPerUnit": 75,
+  "GearExponent": 1.25,
+  "GearFactor": 0.85,
+  "PartsCostPerTon": 7,
+  "PartsExponent": 1.65,
+  "PartsFactor": 0.15,
+  "PartsStorageTagMultis": {
+   "ClanMech": 0.1,
+   "EliteMech": 0.15,
+   "HeroMech": 0.08,
+   "OmniMech": 0.1,
+   "Primitive": -0.1,
+   "PrototypeMech": 0.1,
+   "RISCBattleMech": 0.1,
+   "SLDFMech": 0.1,
+   "SocietyMech": 0.15
+  },
+  "Trace": false,
+  "UpkeepChassisMulti": 0.002,
+  "UpkeepChassisTagMultis": {
+   "ClanMech": 0.1,
+   "EliteMech": 0.15,
+   "HeroMech": 0.08,
+   "OmniMech": 0.1,
+   "Primitive": -0.1,
+   "PrototypeMech": 0.1,
+   "RISCBattleMech": 0.1,
+   "SLDFMech": 0.1,
+   "SocietyMech": 0.15
+  },
+  "UpkeepGearMulti": 0.002
+ },
+ "Version": "0.8.0",
+ "Website": "https://github.com/IceRaptor/IttyBittyLivingSpace"
+}

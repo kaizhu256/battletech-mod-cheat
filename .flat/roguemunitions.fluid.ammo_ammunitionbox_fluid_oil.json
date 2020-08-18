@@ -1,0 +1,62 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Fluid_Oil",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 8,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Oilslick: X2",
+    "ImpMove: 50%",
+    "StabDamage: 8",
+    "FluidOilAmmo: 8"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/s/m/melee"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "HeatDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 8
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000036"
+  }
+ },
+ "Description": {
+  "Cost": 10000,
+  "Details": "Pressurized Canister containing Oil for the Fluid gun, impairing a Targets Stability and Movement. On a Critical Hit, the Pressurized Container will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "uixSvgIcon_ammoBox_Support",
+  "Id": "Ammo_AmmunitionBox_Fluid_Oil",
+  "Manufacturer": "Generic",
+  "Model": "Oil",
+  "Name": "Oil Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Fluid Oil"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

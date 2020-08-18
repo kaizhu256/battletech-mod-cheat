@@ -1,0 +1,89 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Hit Defense",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "JumpAttacker: +10%",
+    "Quirk"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 130000,
+  "Details": "This Mech has a specialised TTS allowing it to easier hit Weak Spots during a Jump maneuver",
+  "Icon": "SpecialistSlot",
+  "Id": "Special_JumpAttack",
+  "Manufacturer": "General",
+  "Model": "Standard",
+  "Name": "Aerial Assault",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Aerial Assault"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Increases damage dealt after jumping by 20% and boosts the distance this unit can travel when jumping by 20%.",
+    "Icon": "uixSvgIcon_action_jump",
+    "Id": "StatusEffect-Jump-DamageBoost",
+    "Name": "VECTORED THRUST KIT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Add",
+    "statName": "JumpingWeaponDamageModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

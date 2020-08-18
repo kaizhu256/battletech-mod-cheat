@@ -1,0 +1,152 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 345,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "SpecialMelee: 20",
+    "MeleeAcc: -1",
+    "Melee: +200",
+    "MeleeStab: +100%",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "SpecialMelee"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 20
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 2100000,
+  "Details": "Well Boss, this 'Mace' is basically just a Locust, filled up with all kinds of steel and stuff to make it be a 20 ton Club to bludgeon unsuspecting Pilots with.",
+  "Icon": "thor-hammer",
+  "Id": "Special_Mace_Locust",
+  "Manufacturer": "Bergan",
+  "Model": "Locust LCT-1V",
+  "Name": "Locust",
+  "Purchasable": false,
+  "Rarity": 30,
+  "UIName": "Locust Stick"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Melee attacks deal 20% Extra stab damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMeleeStab",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal [AMT] more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-Attack_DamageMelee-T6",
+    "Name": "MELEE DAMAGE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "200.0",
+    "operation": "Float_Add",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks have +2 Accuracy.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "StatusEffect-EliteSword",
+    "Name": "Solaris ChainSword"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

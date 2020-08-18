@@ -1,0 +1,183 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "AntiMissileInternal",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": false,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#cc9900",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 3",
+    "AMS",
+    "AMSDmg: 1",
+    "AMSAcc: 20%",
+    "AMSShots: 60",
+    "InternalAmmoShot: 200",
+    "Visibility: +6%",
+    "Signature: +6%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 3
+  },
+  "InventorySorter": {
+   "SortKey": "00025"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 330000,
+  "Details": "An AMS System, complete autonomous with Ammo and Tracking Systems. Its not the most Ammo Efficient, but you can wire this on pretty much an Mech with enough Capacity. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "BoltOn_Weapon_AMS",
+  "Manufacturer": "Yankee Weapon Systems",
+  "Model": "McArthur",
+  "Name": "BoltOn AMS",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "BoltOn AMS"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 160,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 1,
+   "AMSHitChance": 0.2,
+   "AMSShootsEveryAttack": false,
+   "Id": "On",
+   "IsAMS": true,
+   "ShotsWhenFired": 60,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  90,
+  90
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 200,
+ "Tonnage": 0,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.06",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.06",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

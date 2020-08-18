@@ -1,0 +1,236 @@
+{
+ "BattleValue": 7144000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 65,
+ "DFAInstability": 33,
+ "DFASelfDamage": 65,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1403505,
+  "Details": "A militarized BattleMech version of Achernar's Loader King IndustrialMech, the Roughneck is a low-cost heavy 'Mech intended for price conscious buyers such as planetary militias and down-on-their-luck mercenary units. Featuring a mixed if short ranged weapons loadout, the Roughneck's primary weapons are an AC/10 and SRM-4 in its torsos, supported by a trio of Machine Guns and a head-mounted Small Laser. While tying it to supply lines, two tons of SRM and autocannon rounds provide adequate field endurance, only a ton and a half of rounds supporting three machine guns run dry quickly.",
+  "Icon": "uixTxrIcon_roughneck",
+  "Id": "chassisdef_roughneck_RGH-1P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Roughneck",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Roughneck"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_roughneck",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 33,
+ "MeleeInstability": 17,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "roughneck",
+ "PrefabIdentifier": "chrprfmech_roughneckbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 160,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Militarized Loadermech",
+ "Tonnage": 65,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "RGH-1P",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A militarized BattleMech version of Achernar's Loader King IndustrialMech, the Roughneck is a low-cost heavy 'Mech intended for price conscious buyers such as planetary militias and down-on-their-luck mercenary units. Featuring a mixed if short ranged weapons loadout, the Roughneck's primary weapons are an AC/10 and SRM-4 in its torsos, supported by a trio of Machine Guns and a head-mounted Small Laser. While tying it to supply lines, two tons of SRM and autocannon rounds provide adequate field endurance, only a ton and a half of rounds supporting three machine guns run dry quickly.",
+ "weightClass": "HEAVY"
+}

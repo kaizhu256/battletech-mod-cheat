@@ -1,0 +1,243 @@
+{
+ "BattleValue": 6577000,
+ "ChassisTags": {
+  "items": [
+   "PrototypeMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 70,
+ "DFAInstability": 35,
+ "DFASelfDamage": 70,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2095748,
+  "Details": "The 'Thor' was built to bring Thunder and Lightning by a disgruntled Raselhague Militia man who managed to refurbish a broken Summoner, carrying the devastating Mjoelner Ultra AutoCannon",
+  "Icon": "uixTxrIcon_summoner",
+  "Id": "chassisdef_thor_SMN-P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Summoner",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Summoner"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Computer",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_summoner",
+ "Heatsinks": 0,
+ "InitialTonnage": 7,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 110,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 220,
+   "MaxRearArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 35,
+ "MeleeInstability": 18,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "summoner",
+ "PrefabIdentifier": "chrprfmech_summonerbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 160,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Looted Summoner",
+ "Tonnage": 70,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "SMN-P",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The 'Thor' was built to bring Thunder and Lightning by a disgruntled Raselhague Militia man who managed to refurbish a broken Summoner, carrying the devastating Mjoelner Ultra AutoCannon",
+ "weightClass": "HEAVY"
+}

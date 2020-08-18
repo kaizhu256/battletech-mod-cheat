@@ -1,0 +1,358 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [
+   "mech_no_stability",
+   "heat_damage_to_normal",
+   "PowerArmor",
+   "ProtoMech",
+   "MR-Resize-0.5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Toadie"
+  }
+ },
+ "DFADamage": 100,
+ "DFAInstability": 60,
+ "DFASelfDamage": 0,
+ "DFAToHitModifier": -5,
+ "Description": {
+  "Cost": 76364,
+  "Details": "The standard against which all battle armor is measured, the Elemental battle armor was first introduced in 2868 by Clan Wolf in a Trial of Possession against the Nova Cats. It was a marvel of Clan engineering that allowed a small group of operators to take down large 'Mechs and survive the encounter. While it is possible for a normal-sized human to use the battle armor, this design is tailored for the Clans' giant Elemental warriors and only they can bring out its fullest potential.",
+  "Icon": "Elemental",
+  "Id": "chassisdef_elemental_toad",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Elemental",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Elemental"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Elemental_Harjel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "PA_Controls",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "PA_Systems",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "PA_BoardingClaw",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftArm",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_BoardingClaw",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightArm",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_Legs",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftLeg",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_Legs",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightLeg",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_JumpJets",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Type_Elemental",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_elemental",
+ "Heatsinks": 0,
+ "InitialTonnage": 0.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 1,
+   "Location": "Head",
+   "MaxArmor": 25,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 4,
+   "Location": "LeftArm",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 3,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 37,
+   "InventorySlots": 7,
+   "Location": "CenterTorso",
+   "MaxArmor": 125,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 3,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 4,
+   "Location": "RightArm",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 2,
+   "Location": "LeftLeg",
+   "MaxArmor": 75,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 2,
+   "Location": "RightLeg",
+   "MaxArmor": 75,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 50,
+ "MeleeInstability": 30,
+ "MeleeToHitModifier": -4,
+ "MovementCapDefID": "movedef_battlearmor",
+ "PathingCapDefID": "pathingdef_ultralight",
+ "PrefabBase": "elemental",
+ "PrefabIdentifier": "chrprfmech_elementalbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1.2,
+ "Signature": -0.9,
+ "SpotterDistanceMultiplier": 1.1,
+ "Stability": 700,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Powered Infantry",
+ "Tonnage": 5,
+ "TopSpeed": 65,
+ "TurnRadius": 360,
+ "VariantName": "TOAD",
+ "VisibilityMultiplier": 0.3,
+ "YangsThoughts": "The standard against which all battle armor is measured, the Elemental battle armor was first introduced in 2868 by Clan Wolf in a Trial of Possession against the Nova Cats. It was a marvel of Clan engineering that allowed a small group of operators to take down large 'Mechs and survive the encounter. While it is possible for a normal-sized human to use the battle armor, this design is tailored for the Clans' giant Elemental warriors and only they can bring out its fullest potential.",
+ "weightClass": "LIGHT"
+}

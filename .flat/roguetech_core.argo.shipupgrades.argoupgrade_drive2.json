@@ -1,0 +1,66 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Drive"
+   ],
+   "value": "2"
+  }
+ ],
+ "AdditionalCost": 2300,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "The <i>Argo</i>'s drive is <i>far</i> more powerful than I suspected. We may not ever bring it completely back online, but for now I can increase our thrust. While 2 g is not comfortable and the crew will complain, we'll cut our travel times significantly.",
+ "Category": "DRIVE_SYSTEM",
+ "Description": {
+  "Cost": 0,
+  "Details": "The <i>Argo</i> can, in a pinch, generate quite a bit more thrust than it first seemed. By repairing a number of drive subsystems meant to increase thrust efficiency, it’s possible to get the <i>Argo</i> up to an uncomfortable 2 g of sustained thrust.",
+  "Icon": "uixSvgIcon_shipUpgrade_drive2",
+  "Id": "argoUpgrade_drive2",
+  "Name": "Drive Upgrades",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_ArgoDrive2",
+ "Location": "ENGINEERING",
+ "PurchaseCost": 760000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_drive1",
+   "argoUpgrade_power3",
+   "argoUpgrade_structure2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "DriveTravelMultiplier",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 0.7,
+   "valueConstant": ""
+  },
+  {
+   "name": "DriveTravelMultiplier_Display",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 30,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_drive2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 20
+}

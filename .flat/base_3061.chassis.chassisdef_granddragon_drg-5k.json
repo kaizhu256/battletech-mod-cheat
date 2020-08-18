@@ -1,0 +1,247 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 5383000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1310047,
+  "Details": "The DGR-5K Grand Dragon introduced in 3050 incorporates a number of lostech improvements over the original DRG-1G.Mounted in its right arm is a Lord's Light 2 ER PPC. The ER PPC is backed up by a LRM-10 in the center torso, which gives the 'Mech an impressive and formidable long-range striking capability. The launcher is fed by a two-ton reload bin in the left torso protected by CASE. If an enemy 'Mech gets into close ranges, the Grand Dragon carries three Victory 23R Medium Lasers for defense, one in the left arm and two split between the rear-facing left and right torso. Protected by ten tons of armor, the Grand Dragon uses thirteen double heat sinks for excellent heat management and uses a 16.5 ton Hermes 360 XL engine to achieve a moderate cruising speed of 64 km/h.",
+  "Icon": "uixTxrIcon_dragon",
+  "Id": "chassisdef_granddragon_DRG-5K",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Grand Dragon",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Grand Dragon"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Stable",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": true,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_dragon",
+ "Heatsinks": 0,
+ "InitialTonnage": 6,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "dragon",
+ "PrefabIdentifier": "chrPrfMech_dragonBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher & Brawler",
+ "Tonnage": 60,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "DRG-5K",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The DGR-5K Grand Dragon introduced in 3050 incorporates a number of lostech improvements over the original DRG-1G.Mounted in its right arm is a Lord's Light 2 ER PPC. The ER PPC is backed up by a LRM-10 in the center torso, which gives the 'Mech an impressive and formidable long-range striking capability. The launcher is fed by a two-ton reload bin in the left torso protected by CASE. If an enemy 'Mech gets into close ranges, the Grand Dragon carries three Victory 23R Medium Lasers for defense, one in the left arm and two split between the rear-facing left and right torso. Protected by ten tons of armor, the Grand Dragon uses thirteen double heat sinks for excellent heat management and uses a 16.5 ton Hermes 360 XL engine to achieve a moderate cruising speed of 64 km/h.",
+ "weightClass": "HEAVY"
+}

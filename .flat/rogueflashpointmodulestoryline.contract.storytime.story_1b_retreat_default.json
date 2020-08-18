@@ -1,0 +1,3184 @@
+{
+ "ID": "Story_1B_Retreat_Default",
+ "OnContractFailureResults": [
+  {
+   "Actions": [
+    {
+     "Type": "Contract_IgnoreMissionResults",
+     "additionalValues": [],
+     "value": "",
+     "valueConstant": ""
+    }
+   ],
+   "AddedTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "ForceEvents": [],
+   "RemovedTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Requirements": null,
+   "ResultDuration": 0,
+   "Scope": "Company",
+   "Stats": [],
+   "TemporaryResult": false
+  }
+ ],
+ "OnContractSuccessResults": [
+  {
+   "Actions": [
+    {
+     "Type": "Contract_IgnoreMissionResults",
+     "additionalValues": [],
+     "value": "",
+     "valueConstant": ""
+    }
+   ],
+   "AddedTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "ForceEvents": [],
+   "RemovedTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Requirements": null,
+   "ResultDuration": 0,
+   "Scope": "Company",
+   "Stats": [
+    {
+     "name": "NextStoryMilestone",
+     "set": false,
+     "typeString": "System.Int32",
+     "value": "1",
+     "valueConstant": ""
+    }
+   ],
+   "TemporaryResult": false
+  }
+ ],
+ "buildingList": [],
+ "cameraFocusHelperList": [
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe"
+   },
+   "name": "PlayerLanceSpawner"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "fddf5e8b-07c6-492b-861e-2d9c2bde80ee"
+   },
+   "name": "AranoFriendlyLance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "4fc2fc4b-8910-4076-a920-ee9d47a26f83"
+   },
+   "name": "TraitorLance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca"
+   },
+   "name": "NeutralLance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "260fe12c-bfa8-475f-b2db-1b07912f5c74"
+   },
+   "name": "Fight2Lance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "fbd78399-decf-41d3-9efd-63274770d629"
+   },
+   "name": "03_DestroyLanceSpawner"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "10e8686f-8d19-4058-9541-119c4dff041c"
+   },
+   "name": "TargetLance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "1aa92bf0-d78c-4a80-b082-ac78e69546fa"
+   },
+   "name": "05_MainHostileLanceSpawner"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "5eebb0be-1c3f-408d-a8ee-ec7502941328"
+   },
+   "name": "LanceSpawner"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "6ae831e5-b379-4988-ae68-c9df9f4f7317"
+   },
+   "name": "Region_HIDDENHack"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "4c9c0539-6856-42b7-b073-1cd59ea605cf"
+   },
+   "name": "Region_SpotRuins"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "bbd9b5ea-1401-4451-b0d0-518b0215429d"
+   },
+   "name": "Region_Ambush"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "48e3841f-656a-4868-9bbb-1b3ed2ea6f56"
+   },
+   "name": "Region_Armory"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "2b481671-af07-4c65-9194-4e5180c6ae46"
+   },
+   "name": "Region_SpotArmory"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "5f2cc755-6634-4303-88e1-33c802082691"
+   },
+   "name": "Region_TriggerCaptain"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "47eb36af-25f3-4b9e-8b1e-af47549fce3c"
+   },
+   "name": "Region_EvacZone"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "e6fa7ec7-8075-4c69-b140-b5bdbc97fbd2"
+   },
+   "name": "06_Region_KameaOccupy"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "f916f447-fe71-4294-8c18-e8bb2aec41bf"
+   },
+   "name": "Region"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "043d9de6-3ed1-48bb-a1b0-af31243898d9"
+   },
+   "name": "Region_2"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "c6137ed3-1aa4-47b4-aa03-2a6e5fed5dc7"
+   },
+   "name": "Region_3"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "ff4865de-faeb-4abd-93e3-12fbb7ec862e"
+   },
+   "name": "Region_4"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "325c890b-e6b9-4b49-81dc-d2df4eba1aed"
+   },
+   "name": "CameraFocus_TourneyPavillion"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "4f177ee1-5ceb-4c04-992b-2fbcae8867db"
+   },
+   "name": "CameraFocus_GuardMechs"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "dcce954f-0af2-42f0-8395-b7757057473d"
+   },
+   "name": "WorldPoint_Rotorua"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "f5fd4b35-8bfd-4fcd-bd7c-f75c881624df"
+   },
+   "name": "WorldPoint_VictoriaLance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "921e0e2d-089f-48b9-82e3-f3a45ada1ce9"
+   },
+   "name": "chrPrfVhcl_leopard-MANAGED"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "57aa30e8-32c6-434e-997a-af1eda321a9a"
+   },
+   "name": "chrPrfVhcl_union-MANAGED"
+  }
+ ],
+ "chunkList": [],
+ "contractDisplayStyle": "BaseFlashpoint",
+ "contractName": "Coronation Day",
+ "contractObjectiveList": [
+  {
+   "contractObjective": {
+    "EncounterObjectGuid": "3901d8e9-3588-421d-857a-3df1212b0e0c"
+   },
+   "description": "",
+   "forPlayer": "Player1",
+   "isPrimary": true,
+   "objectiveGuids": [
+    "f37407b9-9cf5-49a4-807a-8ba8b757dfe8",
+    "5e5516a8-ad97-4508-b553-ee3d909b3871",
+    "bbbaac63-1bd8-4e92-9c80-f4db66a50628",
+    "63c72019-3497-4b09-ad8b-b22a648e449c",
+    "493344ed-c792-4b3f-9e42-40802b633f88",
+    "308b1f36-b583-4982-8b54-4338bf9caf3a",
+    "f55bfc23-dcc2-4eae-862b-5c58c75c4117",
+    "01feafd6-882d-44e7-93ab-3d9825803a66",
+    "5de869bc-0916-4577-9e2d-93ac2e331a49",
+    "5e5516a8-ad97-4508-b553-ee3d909b3871",
+    "3a4192be-2a53-4383-94ac-19c08883ea5f",
+    "9c5739b4-b936-4deb-bec5-afb2e0ca670b",
+    "6a150125-08bf-4ca2-8e7e-375067912baf"
+   ],
+   "title": "Occupy this region"
+  }
+ ],
+ "contractRewardOverride": 300000,
+ "contractType": "Story_1B_Retreat",
+ "dialogueList": [
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "3d1097b0-5e92-4dd3-8764-901881dc2480"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Some sort of explosion… looks recent, too. Do you think it was an accident?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "No chance. You see those scorch marks on the rubble? That's laser fire. We need to get you out of here, Kamea—right now.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_FP_Dfisher",
+     "words": "What do you mean there was no Shadowhawk LAM there?\r\n Who was there that day, not you I guarantee it.\r\n Now you going to buy me a drink or what?\r\n",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_FP_Dfisher",
+     "words": "That is the problem with you young ones, You don't stop talking long enough for a man to tell a story.\r\n Now where was I. Oh yea... then the princess said: ",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Medium",
+     "cameraFocusGuid": "4f177ee1-5ceb-4c04-992b-2fbcae8867db",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 30,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Yes… I think you're right. There's a patrol of Royal Guard 'Mechs up ahead—we should go to them.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_DestroyedGuardPost",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "b35f5c6f-4f4d-41b4-be29-cb69be07338f"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_SE01_AranoGuardsmanDefault",
+     "words": "Hail, Mastiff! Hail, Lady Arano! We were preparing for Lady Arano's coronation parade when we got word of a disturbance along the Cormorant Road.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "A guard post behind us was attacked—Sir Raju found evidence of laser fire. Is the road behind you clear?\r",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_SE01_AranoGuardsmanDefault",
+     "words": "Aye, all the way to the southern gate. Lead the way, Sir Raju—we'll fall in behind you and guard your six.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "...Tell me something, guardsman. If the road is clear, why is your BattleMech damaged?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_AranoGuardsman",
+     "words": "Our 'Mechs are overdue for maintenance. But that isn't important right now—we need to worry about Lady Arano's safety. Now, my lady, if you'll come with us…",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "No… you're lying to us. It's my coronation day—no MechTech would've sent you out for parade duty in that condition. I am your sovereign, sir—you will <i>tell me</i> what happened here!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_SE01_AranoGuardsmanDefault",
+     "words": "Damn it, girl—we don't have time for this. TAKE THEM! Kill the old man and the MechWarrior, but take Lady Arano alive!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Int_AranoTraitors",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "e78c9347-ef96-4f43-b6e6-9196f90dc1cf"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "[static] Kamea? [static] …Kamea, can you hear me?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Alexander, we were just attacked! The Royal Guard—<i>my own guardsmen</i>—tried to take me prisoner!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "It's happening here, too… the Royal Guard are killing one another in the halls! Lord Karosas's House Guard just got gunned down in front of me—the Tourney Pavilion is a slaughterhouse!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "I won't let these seditionists—or whoever they are—steal my birthright. We need to rally every loyalist we can find and make a push on the capital. I'll take the throne by force if I must!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "Go to Rotorua Township, to the armory. Your soldiers are using it as a rallying point—I heard Lord Decimis send his House Guard there a few minutes ago. Someone's here… I have to move. Rally what forces you can and meet me at the tourney grounds. Be safe.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "You heard him, Mastiff—Rotorua Township. We’ll go there, rally our fighters, and march on the southern gate with an army at our back.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_Mastiff01",
+     "words": "Kamea… I know that you and Lord Madeira are friends, but we can't take what he told you on faith. Right now, we don't know who we can trust.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "In this case, we do. Alexander has been my closest friend and confidant for as long as I can remember. His loyalty is beyond question; I trust him with my life… and yours. Now take me to the armory.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "As you command, my lady.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_AlexanderCall_1",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "eca6a110-2fbd-49c4-b9a4-04f4525f935a"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "[static] Kamea… [static] Kamea, do you read me?! It's Espinosa—your uncle! Do you hear me? [static] House Espinosa is usurping the throne!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_FP_Dfisher",
+     "words": "I mean what a Dick right,\r\n Could have just settled it in a duel on Solaris.\r\n No I don't want any water that isn't little and from Marik space.\r\n As I was saying,\r\n The princess was shooken up as she exclaimed:",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "It can't be. My uncle… <i>Victoria</i>…",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "Kamea, I just watched an Espinosa BattleMech plow through an alley full of civilians. This is happening, and it's happening <i>now</i>!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "Your loyalists have fallen back to the Market District—that's where they're making their stand. What's left of the Royal Guard are doing their best, but there's something wrong with their BattleMechs— Wait, what's that sound? <i>OH, GODS!</i>",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_AlexanderCall_2",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "832a91d1-e2f2-42ad-b792-74b622f60c0b"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "[static] Kamea… do you read me?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Alexander! Thank the gods! I thought I'd lost you when the bombs fell…",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "You very nearly did. Kamea, the city is lost. We have to get off of this planet, and we need to do it now.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "I can't abandon Coromodir—this is my <i>home</i>, my <i>birthright</i>... ",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "The battle's over, Kamea. Lord Madeira has the right of it—it's time for you to run. Escape from this madness, and live to restore the Coalition another day.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "You're… you're both right. My uncle has won. The Reach is his.\r",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "We'll mourn for it later—the both of us. For now, you need to move! I have a DropShip waiting at Shepherd's Pass, I'm on my way there right now. Hurry and meet me there—please.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "We're… we're on our way.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_AlexanderCall_3",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "f80674d8-3910-426a-9bff-1c311e8dca9e"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "This is your last chance, cousin. Don't make me order your death.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Do whatever you must, betrayer.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "A headstrong fool to the end. Damn you for this. [sigh] Captain Haust, destroy them. Mastiff, my cousin… all of them. Leave no survivors.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_VictoriaCall_2",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "247a6acb-394e-48e0-9891-95f4382974bc"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MadeiraDefault",
+     "words": "Thank the gods you made it, Kamea! Captain Halvorsen's prepping the engines now—in another five minutes we'll be ready to depart.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Five minutes is a long time. {COMMANDER.Callsign}, you see Lady Arano to the docking ramp. When she's aboard, come back to me—we'll hold this pass against whatever comes.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_AlexanderCall_4",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "6c18eb62-2909-488d-a1d9-f7916ceb4d36"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Medium",
+     "cameraFocusGuid": "f5fd4b35-8bfd-4fcd-bd7c-f75c881624df",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 100,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "All units: advance! I want you to take down that DropShip—destroy <i>everyone</i> and <i>everything</i> that stands in your way!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "All right, {COMMANDER.Callsign}. I trained you for this. We'll fight side by side, watch each other's backs. Above all else, we will <i>keep</i> Lady Arano <i>safe</i>. Protect the DropShip—it's all that matters.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_VictoriaCall_3",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "2a3fa03f-c280-4706-b945-03aff51865ac"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Close",
+     "cameraFocusGuid": "d50f1e9d-0a0b-4dc8-9a06-a33233aaa8a1",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_Computer",
+     "words": "Warning: engine heat critical. Warning [ERROR] SHUTDOWN INITIATED. [ERROR] REACTOR OFFLINE. WEAPONS OFFLINE. SYSTEMS INOPERABLE.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "Trouble with your Mech, {COMMANDER.Callsign}? Shame. That's been happening to a lot of Royal Guard BattleMechs lately.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "You have numbers on us, and you've resorted to sabotage… and you're <i>gloating</i> about it? You've got no honor, you vicious little brat—not you nor your backstabbing father.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "Shut your mouth, old man. My father is a great man, and I swear to all the gods, you will <i>suffer</i> if you insult him again.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_Mastiff01",
+     "words": "Your father is a coward, and so are you. {COMMANDER.Callsign}, I want you to eject—now. Punch out. You're no good to anybody in a broken 'Mech, and I won't let you die today.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_Mastiff01",
+     "words": "Eject, MechWarrior. NOW. That's an order!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_BlackJackShutdown",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "67182ec2-19d5-4c96-affb-fbbe5d1a979d"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Medium",
+     "cameraFocusGuid": "47eb36af-25f3-4b9e-8b1e-af47549fce3c",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Now come for me, Victoria… your teacher is waiting. Come and show me what you've learned.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_PostBlackJackShutdown",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "0b1f2f8f-590e-4bd8-b637-1cede2e34aec"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "It's over, Kamea. Your ascendency… the Arano legacy… all of it.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Victoria… what have you done?!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "…You know, Kamea… for years, I loved you like a sister. But then my father helped me see it. Your family's complacency. What it's done to the Reach. Our nation dwindles like a dying star, and House Arano is to blame.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "My father offered you a path to glory. I'd have fought under your banner proudly… served as your strong right hand. It was like a knife in my heart when you turned him away.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_Mastiff01",
+     "words": "Damn it, Victoria, I taught you better than this!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "You taught me <i>lies</i>! Kamea, for the love that I once bore you, I'm going to give you a chance to surrender. I'll even spare the old man and his MechWarrior if you stand down now. I don't want to see you hurt, but you <i>cannot</i> be allowed to rule.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "I'll see you hanged for this, Victoria. You and your father both! Do you hear me?! You are <i>traitors</i> to the Reach, and I will <i>fight you</i> to the last!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "Then you truly are a fool. I'll spare you in spite of yourself… but you've cost your royal escort their lives.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Inter_VictoriaCall_1",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "a947cce2-d6f6-441b-aab2-5c1b00c8bfed"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_265_victoria",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_VictoriaDefault",
+     "words": "Attention, all Espinosa forces: this is Lady Victoria Espinosa. Lady Arano is to be apprehended and taken alive, by my command. Fail to follow these instructions and you will have <i>me</i> to deal with.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostVictoriaCall_1",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "4f6affe7-0fd5-4d27-adf8-efd687f270d9"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_254_kamea",
+     "cameraDistance": "Medium",
+     "cameraFocusGuid": "dcce954f-0af2-42f0-8395-b7757057473d",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 75,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Oh, no. No, nooo… we're too late…",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_ArmorySiteSeen",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "c0eb97f3-f556-4d69-b30c-791ebf1fb725"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_010_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "…Strange. Those are Royal Guard 'Mechs up ahead. What are they doing this far away from the tourney?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Whatever the reason, I'm glad to see them.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_AranoSignaturesAhead",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "1d4cefee-0bc6-4170-80df-eb9fe7281533"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_080_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Fall back, Kamea—get behind us!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_090_kamea",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "You didn't train me to cower, Raju. You trained me to fight.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_095_com",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_Computer",
+     "words": "SAFETIES DISENGAGED.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_StandDown",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "1c4fca53-8578-48c1-89a5-e04a0d264de4"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_220_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Good hit!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_KameaDestroysEnemyMech",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "0a933877-fe1c-4320-8fd6-f138c31590ad"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_230_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Nice job, kid—one fewer hostile on the board!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PlayerDestroysEnemyMech",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "d1f5eb42-56c0-4bc4-8222-8c9350f2e09b"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_240_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Damn you for making me do that, son. Damn you.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_MastiffDestroysEnemyMech",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "2c05f7db-e77c-4a24-9ec8-7b8f981ba9a7"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_280_com",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_Computer",
+     "words": "INCOMING TRANSMISSION.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_290_santiago",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_EspinosaPrologue",
+     "words": "Attention, citizens of Coromodir VI! This is Lord Santiago Espinosa. With the unanimous support of the Founding Houses, I have assumed control of the Aurigan Coalition. For your own protection, I urge you to remain calm and stay indoors until otherwise instructed.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_300_santiago",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_EspinosaPrologue",
+     "words": "All hostile units: stand down, and you have my oath that you will not be harmed. Resist and you will be fired upon.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_305_kamea",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "My father placed his faith in that man. <i>I</i> gave him my trust. He was <i>family</i>.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_Espinosa",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "39837812-62bd-4893-9c70-54cf7197d4e6"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_045_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "This is damned odd, and I don't like it. Kid, keep your head on a swivel and be ready for anything.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostIntro",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "0f5a9b3e-d425-42ef-9246-e9fdcb32f827"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_055_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Whatever's happening here, I won't let it derail your coronation. Your people need you.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_065_kamea",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Thank you, Raju. I will prove myself worthy of the faith you've placed in me.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_075_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Of that I have no doubt.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostDestroyedGuardpost",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "ae2b47c3-5f7d-4eb1-9600-720396849ff1"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_245_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Traitors in the Guard… and I fear this is only the beginning.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "m010_247_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "Follow me, keep close, and remember your training. Things are likely to get ugly between here and there. ",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_AmbushAftermath",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "4439eed3-c037-4a22-bd4a-835436f707eb"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_256_kamea",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Alexander?! <i>ALEXANDER!</i>",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostAlexanderCall_2",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "b35fa989-193b-4041-8629-622150dcd9d8"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_275_kamea",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "You get to that ship, Alexander. I <i>mean</i> it. I <i>will not</i> lose you <i>and</i> my throne on the same day!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostAlexanderCall_3",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "e0037d78-8bad-4109-8bb8-a808a83f5123"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_315_kamea",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "Thank you, Sir Raju. Thank you both. I won't forget what you've done for me today—I promise you that.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostAlexanderCall_4",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "99bbd016-ba01-493c-934c-712848db911a"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_308_haust",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_SE01_CaptainHaustDefault",
+     "words": "As you command, my lady",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_PostVictoriaCall_2",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "558f1e1f-8e5f-43d8-8915-322269290fbc"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "m010_325_raju",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "It's been an honor, kid. Remember me.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Async_Eject",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "73df8d9c-a274-48fd-98c9-2bd0d7860e83"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 0,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "I'm going to miss this, Raju… the clarity of purpose that I feel in the cockpit of a BattleMech. The simplicity of it. But there they are, just up ahead—the city gates, and my future, all laid out before me.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Medium",
+     "cameraFocusGuid": "325c890b-e6b9-4b49-81dc-d2df4eba1aed",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 50,
+     "selectedCastDefId": "castDef_KameaPrologue",
+     "words": "…Wait. What's that smoke?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "325c890b-e6b9-4b49-81dc-d2df4eba1aed",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": 20,
+     "selectedCastDefId": "castDef_MastiffDefault",
+     "words": "A guard post—one of the small ones that dot the roads leading into the capital. But the emergency band's been quiet all morning… I haven't heard anything about any fire.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "MissionStartDialogue",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
+   },
+   "dialogueContent": [],
+   "name": "MissionSuccessDialogue",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
+   },
+   "dialogueContent": [],
+   "name": "MissionFailureDialogue",
+   "overrideDialogueBucketId": ""
+  }
+ ],
+ "difficulty": 1,
+ "difficultyUIModifier": 0,
+ "disableAfterAction": true,
+ "disableCancelButton": true,
+ "disableLanceConfiguration": true,
+ "disableNegotations": true,
+ "employerTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "AuriganRestoration",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "fddf5e8b-07c6-492b-861e-2d9c2bde80ee"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "AranoFriendlyLance",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "Tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [
+        "spawn_poorly_maintained_75"
+       ],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_panther1b_PNT-9R",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "37634f3f-6855-4572-b526-1fa66e770831"
+      },
+      "unitTagSet": {
+       "items": [
+        "unit_light"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [
+        "spawn_poorly_maintained_75"
+       ],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_shadowhawk_SHD-2D",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "c2f52419-e1ba-43db-bb53-f2d21eba4f8c"
+      },
+      "unitTagSet": {
+       "items": [
+        "unit_light"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Employer"
+ },
+ "encounterPlayStyle": "SinglePlayer",
+ "expirationTimeOverride": -1,
+ "finalDifficulty": 0,
+ "hostileToAllTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [],
+  "teamGuid": "3c9f3a20-ab03-4bcb-8ab6-b1ef0442bbf0",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Hostile to All"
+ },
+ "longDescription": "",
+ "mapMood": "Mission1b",
+ "maxNumberOfPlayerUnits": 3,
+ "negotiatedSalary": 0.5,
+ "negotiatedSalvage": 0.5,
+ "neutralToAllTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "NeutralLance",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "Tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "turretdef_Light_Laser",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "d3d56802-d950-451a-80e9-b9a6aefede2d"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitType": "Turret"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "turretdef_Light_Laser",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "04e4f6de-1396-442f-923d-fabbfdecda13"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitType": "Turret"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "61612bb3-abf9-4586-952a-0559fa9dcd75",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Neutral to All"
+ },
+ "objectiveList": [
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "bbbaac63-1bd8-4e92-9c80-f4db66a50628"
+   },
+   "title": "HIDDEN HACK"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "3a4192be-2a53-4383-94ac-19c08883ea5f"
+   },
+   "title": "Investigate the Guard Post"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "9c5739b4-b936-4deb-bec5-afb2e0ca670b"
+   },
+   "title": "Rendezvous with the Royal Guard"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "01feafd6-882d-44e7-93ab-3d9825803a66"
+   },
+   "title": "Eliminate Hostile Guardsmen"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "f37407b9-9cf5-49a4-807a-8ba8b757dfe8"
+   },
+   "title": "All Friendly Units Must Survive"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "5de869bc-0916-4577-9e2d-93ac2e331a49"
+   },
+   "title": "Head to Rotorua Township"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "7d5d6fbe-5f21-4a57-aca9-a0df50a72c12"
+   },
+   "title": "HIDDEN Spot Armory"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "63c72019-3497-4b09-ad8b-b22a648e449c"
+   },
+   "title": "Destroy the Enemy Forces"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "f4a22ab7-5a1c-4b7c-8c97-98dbecdc4ab4"
+   },
+   "title": "HIDDEN Fight2DialogDriver"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "493344ed-c792-4b3f-9e42-40802b633f88"
+   },
+   "title": "Destroy the Espinosa Vehicles"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "6a150125-08bf-4ca2-8e7e-375067912baf"
+   },
+   "title": "Get to the landing zone"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "5e5516a8-ad97-4508-b553-ee3d909b3871"
+   },
+   "title": "Proceed to the Evac Zone"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "308b1f36-b583-4982-8b54-4338bf9caf3a"
+   },
+   "title": "Destroy Captain Haust's Forces"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "f55bfc23-dcc2-4eae-862b-5c58c75c4117"
+   },
+   "title": "Get Kamea to the dropship"
+  },
+  {
+   "OnFailureResults": [],
+   "OnSuccessResults": [],
+   "description": "",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "2d6b0fa9-2ca7-4df1-acbc-e2b211cf748b"
+   },
+   "title": "Artillery hits in "
+  }
+ ],
+ "overrideAutoCompleteDialogueId": null,
+ "player1Team": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "Player1sMercUnit",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "PlayerLanceSpawner",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "Tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "heraldrydef_restoration",
+      "customUnitName": "",
+      "pilotDefId": "pilot_story_mastiff",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_centurion_CN9-A",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_restoration",
+      "customUnitName": "",
+      "pilotDefId": "pilot_story_kamea_mid",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_kintaro_KTO-18",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "ebc06b6a-c5a8-4165-95ce-480bcf335570"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_restoration",
+      "customUnitName": "",
+      "pilotDefId": "pilot_commander",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_shadow_hawk_lam_SHD-X2",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "d50f1e9d-0a0b-4dc8-9a06-a33233aaa8a1"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "bf40fd39-ccf9-47c4-94a6-061809681140",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Player 1"
+ },
+ "player2Team": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "Player2sMercUnit",
+  "lanceOverrideList": [],
+  "teamGuid": "757173dd-b4e1-4bb5-9bee-d78e623cc867",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Player 2"
+ },
+ "requirementList": [],
+ "salvagePotential": 0,
+ "scope": "STANDARD",
+ "shortDescription": "",
+ "startingFogOfWarVisibility": "Surveyed",
+ "targetTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "AuriganDirectorate",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "260fe12c-bfa8-475f-b2db-1b07912f5c74"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "Fight2Lance",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [
+      "spawn_poorly_maintained_75"
+     ],
+     "tagSetSourceFile": "Tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "vehicledef_STRIKER",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "e95c5b54-9e00-41c0-8e9f-f3ea8cc14295"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Vehicle"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "vehicledef_GALLEON",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "cf771d41-9981-45c2-9564-515bb5f3bff8"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Vehicle"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "vehicledef_SCORPION",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "76c437f8-8856-4856-a066-55a716fbf82e"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Vehicle"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "vehicledef_STRIKER",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "30020357-fdf3-4e2e-9a57-5a77af888bee"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Vehicle"
+     }
+    ]
+   },
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "fbd78399-decf-41d3-9efd-63274770d629"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "03_DestroyLanceSpawner",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [
+      "spawn_poorly_maintained_75"
+     ],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_locust_LCT-1S",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "e820dfe9-2b97-4f0f-bbac-dc7632b20075"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_cicada_CDA-2A",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "85304c16-7180-44c8-b67b-b2cc9eb7657b"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_spider_SDR-5V",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "df39530d-4f38-4b0d-b4e2-5c058a5fd3b5"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     }
+    ]
+   },
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "10e8686f-8d19-4058-9541-119c4dff041c"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "TargetLance",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [
+      "spawn_poorly_maintained_75"
+     ],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "vehicledef_STRIKER",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "f6a5d450-d3af-47f0-80d1-c5e53a4d8e45"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Vehicle"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilot_d2_recruit",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "vehicledef_SCORPION",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "ae11ab47-d0ce-4980-b3b3-39c957c34a99"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Vehicle"
+     }
+    ]
+   },
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "1aa92bf0-d78c-4a80-b082-ac78e69546fa"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "05_MainHostileLanceSpawner",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [
+      "spawn_poorly_maintained_50"
+     ],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "Haust",
+      "pilotDefId": "pilot_d3_gunner",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [
+        "spawn_poorly_maintained_50"
+       ],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_wolverine_WVR-6R",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "8209df93-213e-4530-a65d-57cd0fcd08c1"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     }
+    ]
+   },
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "5eebb0be-1c3f-408d-a8ee-ec7502941328"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "LanceSpawner",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "Tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_catapult_CPLT-K2",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "5f39d31e-85a6-45fd-8eea-423318fcd6d6"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_griffin_GRF-1N",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "cad74f12-1da0-402c-9944-bef3689910e5"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_panther_PNT-9R",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "a0682fc2-7358-47ac-8052-1c0eb32e9266"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_panther_PNT-9R",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "d586d686-1e20-4abc-9fff-3302ade5891b"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_orion_ON1-K",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "e5cdf16f-04a7-478c-b718-9608daf20fdb"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_orion_ON1-K",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "ba4a2b3d-0ef5-4f2d-b516-9535623ee99e"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_trebuchet_TBT-5N",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "b534bedc-a859-4859-b633-0ea75df76619"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "heraldrydef_directorate",
+      "customUnitName": "",
+      "pilotDefId": "pilot_default",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "Tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechdef_trebuchet_TBT-5N",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "Tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "8a0332bd-21b8-4f2c-8a14-654562b129d3"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "unitType": "Mech"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "be77cadd-e245-4240-a93e-b99cc98902a5",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Target"
+ },
+ "targetsAllyTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "595ade9e-ccae-4a52-b35a-5cf0bdd29843"
+  },
+  "faction": "Betrayers",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "Tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "4fc2fc4b-8910-4076-a920-ee9d47a26f83"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "name": "TraitorLance",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [
+      "spawn_poorly_maintained_75"
+     ],
+     "tagSetSourceFile": "Tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": []
+   }
+  ],
+  "teamGuid": "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Target's Ally"
+ },
+ "travelOnly": false,
+ "useTravelCostPenalty": false,
+ "usesExpiration": false,
+ "weight": 1
+}

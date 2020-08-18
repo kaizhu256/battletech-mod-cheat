@@ -1,0 +1,57 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Steel Beast Seeks Revenge",
+  "Icon": "rsteelbeast",
+  "Id": "fp_RSteelBeast",
+  "Name": "Return of the Steel Beast. This is both <b><color=#f0ff00>Long</color></b> and <b><color=#ff0d00>HARD </color></b>"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Someone is causing Problems and blaming it on us. If we ignore this we may lose rep with the MRBC.Warning this Flashpoint is both <b><color=#f0ff00>Long</color></b> and <b><color=#ff0d00>HARD </color></b>",
+ "InProgressTimeout": 0,
+ "InternalName": "RSteelBeast",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_RSteelBeast",
+ "PotentialEmployers": [
+  "MercenaryReviewBoard"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_gladiator_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreeClanItemsClanScouts",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 100
+}

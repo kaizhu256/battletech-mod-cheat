@@ -1,0 +1,201 @@
+{
+ "ChassisID": "vehiclechassisdef_SKALPEL",
+ "Description": {
+  "Cost": 1846800,
+  "Details": "",
+  "Icon": "",
+  "Id": "vehicledef_SKALPEL",
+  "Name": "Skalpel Hovertank",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 120,
+   "CurrentArmor": 120,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Front"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Left"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Right"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Rear"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Turret"
+  }
+ ],
+ "VehicleTags": {
+  "items": [
+   "mr-resize-1.40",
+   "unit_vehicle",
+   "unit_medium",
+   "unit_release",
+   "unit_lance_vanguard",
+   "unit_hover",
+   "unit_advanced",
+   "unit_bracket_high",
+   "jarnfolk",
+   "delphi",
+   "chainelane",
+   "axumite"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "Weapon_Laser_LargeLaser_Chemical",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_Laser_LargeLaser_Chemical",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_SRM_SRM6_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 2,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_Chem_Large",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_Chem_Large",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_Chem_Large",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_Chem_Large",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_Chem_Large",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_CrewCompartment",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_FCS_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_Sensors_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Hover_Left",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_Hover_Right",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_armorslots_standard",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Turret",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "emod_engine_105",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Coolant_System",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_FuelCell",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  }
+ ]
+}

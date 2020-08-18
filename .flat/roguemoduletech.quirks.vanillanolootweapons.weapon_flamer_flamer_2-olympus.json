@@ -1,0 +1,101 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "+ 5 Dmg. (H)",
+ "BonusValueB": "+ 1 Accuracy.",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Energy",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2",
+   "range_close",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "OHDamage: 20%",
+    "AlwaysStartsFire",
+    "DmgFallOff: 30%",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/flamer"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02001"
+  }
+ },
+ "Damage": 3,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 30000,
+  "Details": "Flamer weapons are unique in that they deal little physical damage but instead expel superheated plasma, applying substantial heat to their target. When done properly, this can hamper enemy return fire or even cause the targeted unit to shut down from overheating.",
+  "Icon": "dragon-breath",
+  "Id": "Weapon_Flamer_Flamer_2-Olympus",
+  "Manufacturer": "Olympus",
+  "Model": "Heat Damage Flamethrower",
+  "Name": "Flamer (Deprecated)",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Flamer (Deprecated)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.3,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDelayMultiplier": 0.12,
+ "FireOnSuccessHit": true,
+ "HeatDamage": 3,
+ "HeatGenerated": 9,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.2,
+ "PrefabIdentifier": "Flamer",
+ "ProjectileSpeedMultiplier": 0.3,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  90,
+  120
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

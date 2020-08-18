@@ -1,0 +1,130 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "X2 Armor Protection|",
+ "BonusValueB": "X2 Armor Weight|-20% Movement",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.5,
+   "ArmorTPCost": 1.5
+  },
+  "ArmorStructureChanges": {
+   "ArmorFactor": 2
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorProtection: x2",
+    "ArmorFactor: x2",
+    "TACImmune",
+    "WalkSpeed: -20%",
+    "ArmorTPCost: 50%",
+    "ArmorCBCost: 50%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Weights": {
+   "ArmorFactor": 2
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "1.15 * [[Chassis.Tonnage]] / 13"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "Hardened Armor is a thicker armor type that uses multiple overlapping plates to provide additional protection against enemy fire. Though capable of diverting more damage than standard armor, the increased number of armor plates and their lack of flexibility makes any unit employing it more difficult to pilot, and can affect the speed as well. In fact, Hardened Armor is so heavy that it cannot be mounted on hovercraft, VTOLs, or WiGE vehicles. Reduces incoming Critical Hits.",
+  "Icon": "shieldcomb",
+  "Id": "Gear_armorslots_Hardened",
+  "Manufacturer": "NAIS",
+  "Model": "Hardened",
+  "Name": "Hardened Armor",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Hardened"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "HardenedPenaltyWalk",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "HardenedCritImmune",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CACAPProtection"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

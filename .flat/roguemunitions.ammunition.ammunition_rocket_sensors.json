@@ -1,0 +1,128 @@
+{
+ "AlwaysIndirectVisuals": true,
+ "ArmorDamageModifier": 1,
+ "Category": "SensorRocket",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#BA55D3",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "Description": {
+  "Cost": 0,
+  "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
+  "Icon": null,
+  "Id": "Ammunition_Rocket_Sensors",
+  "Name": "LRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Sensor"
+ },
+ "FireOnSuccessHit": true,
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "HideIfOnlyVariant": true,
+ "ISDamageModifier": 1,
+ "MineField": {
+  "AOEDamage": 0,
+  "AOEHeat": 0,
+  "AOEInstability": 0,
+  "AOERange": 50,
+  "CantHitUnaffecedByPathing": true,
+  "Chance": 0.75,
+  "Count": 2,
+  "Damage": 0,
+  "FireOnSuccessHit": true,
+  "FireTerrainChance": 0.001,
+  "Heat": 0,
+  "InstallCellRange": 6,
+  "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "VFXMinDistance": 30,
+  "VFXprefab": "vfxPrfPrtl_ECMtargetAdd_burst",
+  "statusEffects": [
+   {
+    "Description": {
+     "Details": "Remote Sensor Triggered",
+     "Icon": "uixSvgIcon_equipment_TTS",
+     "Id": "Snitched",
+     "Name": "DETECTED!"
+    },
+    "durationData": {
+     "duration": 2,
+     "stackLimit": -1
+    },
+    "effectType": "StatisticEffect",
+    "nature": "Buff",
+    "statisticData": {
+     "modType": "System.Single",
+     "modValue": "0.15",
+     "operation": "Float_Add",
+     "statName": "SensorSignatureModifier"
+    },
+    "targetingData": {
+     "effectTargetType": "Creator",
+     "effectTriggerType": "Passive",
+     "showInStatusPanel": false,
+     "showInTargetPreview": false
+    }
+   },
+   {
+    "Description": {
+     "Details": "Remote Sensor Triggered",
+     "Icon": "uixSvgIcon_equipment_Gyro",
+     "Id": "Snitched2",
+     "Name": "DETECTED!"
+    },
+    "durationData": {
+     "duration": 2,
+     "stackLimit": -1
+    },
+    "effectType": "StatisticEffect",
+    "nature": "Buff",
+    "statisticData": {
+     "modType": "System.Single",
+     "modValue": "0.15",
+     "operation": "Float_Add",
+     "statName": "SpottingVisibilityMultiplier"
+    },
+    "targetingData": {
+     "effectTargetType": "Creator",
+     "effectTriggerType": "Passive",
+     "showInStatusPanel": false,
+     "showInTargetPreview": false
+    }
+   },
+   {
+    "Description": {
+     "Details": "Remote Sensor Triggered",
+     "Icon": "uixSvgIcon_equipment_Gyro",
+     "Id": "Snitched3",
+     "Name": "DETECTED!"
+    },
+    "durationData": {
+     "duration": 2,
+     "stackLimit": -1
+    },
+    "effectType": "StatisticEffect",
+    "nature": "Buff",
+    "statisticData": {
+     "modType": "System.Int32",
+     "modValue": "1",
+     "operation": "Int_Add",
+     "statName": "LV_PROBE_PING"
+    },
+    "targetingData": {
+     "effectTargetType": "Creator",
+     "effectTriggerType": "Passive",
+     "showInStatusPanel": false,
+     "showInTargetPreview": false
+    }
+   }
+  ]
+ },
+ "SpreadRange": 100,
+ "Type": "Normal"
+}

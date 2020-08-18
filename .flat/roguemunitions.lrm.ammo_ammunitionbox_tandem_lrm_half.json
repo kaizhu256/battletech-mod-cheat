@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Tandem",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 60,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ThroughArmorDamage: 2",
+    "LRMDamage: -90%",
+    "AmmoJAMFlat: 35%",
+    "MissileHP: 2",
+    "LRMAmmo: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 3,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000042"
+  },
+  "TRGBColor": {
+   "Color": "#EE82EE",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 150000,
+  "Details": "In an Attempt to Improve LRM's, Scientists applied a somewhat ancient Technique, remodelling the Warhead into a Shaped Charge, does it loose the Majority of its Destructive Potential for the Ability to Punch through nearly any Armor on the Modern Battlefield.Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Tandem_LRM_half",
+  "Manufacturer": "RISC",
+  "Model": "LRM",
+  "Name": "LRM Ammo",
+  "Purchasable": true,
+  "Rarity": 9,
+  "UIName": "Ammo LRM Tandem [Half]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

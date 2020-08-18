@@ -1,0 +1,64 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CoolingSystemCDHS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Generic_Double_Clan"
+  },
+  "InventorySorter": {
+   "SortKey": "00016"
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   },
+   "Install": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 3500000,
+  "Details": "Converts an SHS engine to CDHS. A Mech' <b>Cooling System</b> provides heat dissipation for components inside the mech and compatible extension points for additional heat sinks throughout the mech. It differs from the closed cooling system of the engine.",
+  "Icon": "thermometer-cold",
+  "Id": "emod_kit_cdhs",
+  "Manufacturer": "Clan",
+  "Model": "Engine Kit",
+  "Name": "Engine Kit (C)",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Heat Sink Kit (C)"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

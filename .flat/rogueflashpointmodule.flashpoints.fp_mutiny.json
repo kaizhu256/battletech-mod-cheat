@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "We got a message from someone claiming they need our help.",
+  "Icon": "mutiny",
+  "Id": "fp_mutiny",
+  "Name": "Mutiny"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Received a Secret communication off channel. The Pirate Queen needs our help. ",
+ "InProgressTimeout": 0,
+ "InternalName": "Mutiny",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_mutiny",
+ "PotentialEmployers": [
+  "AuriganPirates"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_mutiny_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "ALLIED_FACTION_AuriganPirates"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_mutinyitems",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1000
+}

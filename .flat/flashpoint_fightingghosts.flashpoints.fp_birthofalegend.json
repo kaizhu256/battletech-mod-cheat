@@ -1,0 +1,65 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "The journey with Grey Death Legion",
+  "Icon": "BOAL_Title_Card.png",
+  "Id": "fp_birthOfALegend",
+  "Name": "Birth Of A Legend"
+ },
+ "Difficulty": 4,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Duke Hassid Ricol of the Draconis Combine is trying to seize the Trell. We have been contacted by an individual representing planetary government.",
+ "InProgressTimeout": 0,
+ "InternalName": "birthOfALegend",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [
+    "fp_finished_birthOfALegend"
+   ],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_name_trell(trellwan)"
+   ],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_birthOfALegend",
+ "PotentialEmployers": [
+  "Locals"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_birthOfALegend_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_Weapon_uncommon",
+ "Tags": {
+  "items": [],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "Kurita",
+ "UnitDropTonnageHint": "Light",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 10
+}

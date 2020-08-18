@@ -1,0 +1,52 @@
+{
+ "Actions": [],
+ "AdditionalCost": 1000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "'Mechs assembling 'Mechs so that our 'Mechs can go to battle properly equipped. It might sound silly, but the <i>Argo</i> is a big ship and every bit of efficiency helps us.",
+ "Category": "STRUCTURE",
+ "Description": {
+  "Cost": 0,
+  "Details": "<b><color=#F79232>Reduces the monthly upkeep of all stored inventory items by 5%. This includes equipment, weapons, salvaged 'Mechs and stored 'Mechs.</color></b> \n\n An optimised inventory system for the <i>Argo</i> is an excellent start, but we can cut storage costs further. If you're willing to front the cost for a few, rugged WorkMechs, we'd save a ton of labour and time managing our storage. This will translate into cheaper storage costs in the long run.",
+  "Icon": "uixSvgIcon_shipUpgrade_repairscaffold",
+  "Id": "argoUpgrade_storage2",
+  "Name": "Storage Space",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_ArgoStructure2",
+ "Location": "SHIP",
+ "PurchaseCost": 270000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_mechBay2",
+   "argoUpgrade_pod2",
+   "argoUpgrade_storage"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "IBLS_MechbayUpkeepModifier",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 0.9,
+   "valueConstant": ""
+  },
+  {
+   "name": "IBLS_CargoStorageModifier",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 0.9,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_storage2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

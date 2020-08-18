@@ -1,0 +1,240 @@
+{
+ "BattleValue": 10581000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 702570,
+  "Details": "Keeping the top speed of the ASN-21 as well as its base weapon load of missiles, the ASN-101 is a rare Federated Suns variant that drops two jump jets and a half ton of armor to mount a trio of Small Lasers, giving the ASN-101 a much better close-in punch compared to its progenitor.",
+  "Icon": "uixTxrIcon_assassin",
+  "Id": "chassisdef_assassin_ASN-101",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Assassin",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Assassin"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_assassin",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "assassin",
+ "PrefabIdentifier": "chrPrfMech_assassinBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 130,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Flanker and Assassin",
+ "Tonnage": 40,
+ "TopSpeed": 60,
+ "TurnRadius": 90,
+ "VariantName": "ASN-101",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Keeping the top speed of the ASN-21 as well as its base weapon load of missiles, the ASN-101 is a rare Federated Suns variant that drops two jump jets and a half ton of armor to mount a trio of Small Lasers, giving the ASN-101 a much better close-in punch compared to its progenitor.",
+ "weightClass": "MEDIUM"
+}

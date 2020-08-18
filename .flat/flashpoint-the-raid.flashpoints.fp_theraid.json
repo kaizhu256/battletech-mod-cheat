@@ -1,0 +1,57 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "A \"very hard\" Flashpoint that can possibly grant a whole AS7-D-HT as a reward.",
+  "Icon": "uixTxrSpot_fp_theRaid.png",
+  "Id": "fp_theRaid",
+  "Name": "The Raid"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_LocalsDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Tiverton wants to eradicate the Black Market cabal in their system and direct assaults have failed. They want to use your companies Black Market access as a trojan horse. Expect extreme opposition and back-to-back engagements, be prepared for anything.",
+ "InProgressTimeout": 0,
+ "InternalName": "theRaid",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_name_Tiverton"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_theRaid",
+ "PotentialEmployers": [
+  "Locals"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_Mech_SLDF",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 10
+}

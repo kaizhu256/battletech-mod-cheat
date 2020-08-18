@@ -1,0 +1,220 @@
+{
+ "BattleValue": 5171000,
+ "ChassisTags": {
+  "items": [
+   "Primitive"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 55,
+ "DFAInstability": 28,
+ "DFASelfDamage": 55,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 830789,
+  "Details": "First introduced in 2467, this first generation of the Shadow Hawk employs early BattleMech technology in its weaponry, equipment and its armor. This design was first produced by Lang Industries on Caph, where it was designed as part of the Hegemony's efforts to keep ahead of the Inner Sphere's newly stolen BattleMech technology.",
+  "Icon": "uixTxrIcon_shadowhawk",
+  "Id": "chassisdef_shadow_hawk_SHD-1R",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Shadow Hawk",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Shadow Hawk"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_shadowhawk",
+ "Heatsinks": 0,
+ "InitialTonnage": 5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 2.5
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 2.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 28,
+ "MeleeInstability": 14,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "shadowhawk",
+ "PrefabIdentifier": "chrPrfMech_shadowhawkBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker Cavalry",
+ "Tonnage": 50,
+ "TopSpeed": 80,
+ "TurnRadius": 90,
+ "VariantName": "SHD-1R",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "First introduced in 2467, this first generation of the Shadow Hawk employs early BattleMech technology in its weaponry, equipment and its armor. This design was first produced by Lang Industries on Caph, where it was designed as part of the Hegemony's efforts to keep ahead of the Inner Sphere's newly stolen BattleMech technology.",
+ "weightClass": "MEDIUM"
+}

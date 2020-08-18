@@ -1,0 +1,192 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BattleValue": 0,
+ "BonusValueA": null,
+ "BonusValueB": null,
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DFA: +5%",
+    "JumpAttacker: +1%",
+    "DFAAcc: +1",
+    "JumpCapacity: 0.75",
+    "JumpHeat: 2",
+    "MinWeightJJ: 60",
+    "MaxWeightJJ: 85",
+    "MaxCountJJ: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "DirectionalJJ"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "Directional Jump Jets are a specialized selection of smaller Jump Jets strategically placed around the chassis, capable to grant finer control over a Jump, improving the Death From Above Maneuver. Specially designed for use on 'Mechs from 60 to 85 tons.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Directional_Heavy",
+  "Manufacturer": "Generic",
+  "Model": "Heavy",
+  "Name": "Directional Jump Jet (H)",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": " Directional Jet (H)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 1,
+ "JumpCapacity": 0.75,
+ "MaxTonnage": 85,
+ "MinTonnage": 60,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 1.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Max Jump Jet Amount per Walk MP",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpAmount",
+    "Name": "Jump Jet Amount"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Set",
+    "statName": "JumpJetCountMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_DamageDFA-JJ",
+    "Name": "DFA DAMAGE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases damage dealt after jumping by 20% and boosts the distance this unit can travel when jumping by 20%.",
+    "Icon": "uixSvgIcon_action_jump",
+    "Id": "StatusEffect-Jump-DamageBoost",
+    "Name": "VECTORED THRUST KIT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.01",
+    "operation": "Float_Add",
+    "statName": "JumpingWeaponDamageModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_DFAACC_JJ",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

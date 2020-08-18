@@ -1,0 +1,77 @@
+{
+ "AccuracyModifier": 5,
+ "ArmorDamageModifier": 1,
+ "Category": "ArrowIV",
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.2,
+ "Description": {
+  "Cost": 0,
+  "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
+  "Icon": null,
+  "Id": "Ammunition_ArrowIV_Fascam_Inferno",
+  "Name": "AC/20 Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "FASCAM-I"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "MineField": {
+  "AOEDamage": 1,
+  "AOEHeat": 1,
+  "AOEInstability": 1,
+  "AOERange": 33,
+  "Chance": 0.7,
+  "Count": 60,
+  "Damage": 1,
+  "FireDurationWithoutForest": 2,
+  "FireOnSuccessHit": true,
+  "FireTerrainCellRadius": 4,
+  "FireTerrainChance": 1,
+  "FireTerrainStrength": 2,
+  "Heat": 1,
+  "InstallCellRange": 15,
+  "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "VFXMinDistance": 30,
+  "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
+  "statusEffects": [
+   {
+    "Description": {
+     "Details": "Reduce Heat Damage by 1%",
+     "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+     "Id": "HeatDamageTakenSoftCapMultiplier",
+     "Name": "Heat Damage SoftCap"
+    },
+    "durationData": {
+     "duration": 1,
+     "stackLimit": 45,
+     "ticksOnActivations": true,
+     "useActivationsOfTarget": true
+    },
+    "effectType": "StatisticEffect",
+    "nature": "Buff",
+    "statisticData": {
+     "modType": "System.Single",
+     "modValue": "0.98",
+     "operation": "Float_Multiply",
+     "statName": "CACIncomingHeatMult"
+    },
+    "targetingData": {
+     "effectTargetType": "NotSet",
+     "effectTriggerType": "OnHit",
+     "extendDurationOnTrigger": 0,
+     "forcePathRebuild": false,
+     "forceVisRebuild": false,
+     "range": 0,
+     "showInStatusPanel": false,
+     "showInTargetPreview": false,
+     "specialRules": "NotSet",
+     "triggerLimit": 0
+    }
+   }
+  ]
+ },
+ "MissileHealth": 20,
+ "Type": "Normal"
+}

@@ -1,0 +1,164 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 5,
+ "AOEHeatDamage": 30,
+ "AOEInstability": 2,
+ "AOERange": 60,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 10,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "vfxPrfPrtl_artilleryImpact_single",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": false,
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 0,
+ "BattleValue": 32,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "BLACKLISTED",
+   "Bomb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "Cooldown": 1,
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 2",
+    "InternalAmmoShots: 2",
+    "AreaOfEffect: 60",
+    "AreaOfEffectHeatDmg: 30",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 40",
+    "FireTerrainDuration: 10",
+    "FireTerrainStrength: 15",
+    "WpnCooldown: 1",
+    "NoAA",
+    "Bomb"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/explode"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 5,
+   "HeatDamagePerAmmo": 30,
+   "StabilityDamagePerAmmo": 5
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 44000,
+  "Details": "Inferno Bombs are air-dropped munitions which utilize the same Inferno technology found in other weapon systems. While less common than normal high-explosive bombs, Inferno Bombs are useful for wreaking havoc on enemy formations or 'defoliating' forest or jungle areas",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "Weapon_Bomb_2_Inferno",
+  "Manufacturer": "Generic",
+  "Model": "Bomb Inferno",
+  "Name": "Bomb Inferno",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Bomb Rack Inferno x2"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireOnSuccessHit": true,
+ "FireTerrainCellRadius": 10,
+ "FireTerrainChance": 1,
+ "FireTerrainStrength": 15,
+ "HeatDamage": 10,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 5,
+ "InventorySize": 2,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectileScale": {
+  "x": 2,
+  "y": 2,
+  "z": 2
+ },
+ "ProjectileSpeedMultiplier": 0.5,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  180,
+  180
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 2,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "AC20",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

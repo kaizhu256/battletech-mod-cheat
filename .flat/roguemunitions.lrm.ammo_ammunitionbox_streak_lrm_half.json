@@ -1,0 +1,63 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_STREAK",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 60,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MissileHP: 3",
+    "LRMAmmo: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/slrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00041"
+  },
+  "TRGBColor": {
+   "Color": "#1B801B",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Streak_LRM_half",
+  "Manufacturer": "Generic",
+  "Model": "Streak LRM",
+  "Name": "Streak LRM Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Streak LRM [Half]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

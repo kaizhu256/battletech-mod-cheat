@@ -1,0 +1,154 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AntiMissile",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": false,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#cc9900",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 63,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AMS",
+    "AMSSINGLE",
+    "AMSDmg: 1",
+    "AMSAcc: 55%",
+    "AMSShots: 30",
+    "AMSHeat: 1",
+    "OLAMSMULTI",
+    "OLAMSShots: 60",
+    "OLAMSHeat: 4",
+    "OLAMSJam: 30%",
+    "AMSDirectMG: 10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "w/s/a/ams"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00025"
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 460000,
+  "Details": "The Anti-Missile System is used to destroy missiles before they strike their target. This is accomplished by using a short ranged rapid firing weapon which shoots at the missiles. \n\n<b><color=#ffcc00>Uses AMS Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_AMS_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Star Screen",
+  "Name": "Clan AMS",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "AMS (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 140,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 1,
+   "AMSHitChance": 0.55,
+   "AMSShootsEveryAttack": false,
+   "HeatGenerated": 1,
+   "Id": "On",
+   "IsAMS": true,
+   "ShotsWhenFired": 30,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 1,
+   "AMSHitChance": 0.55,
+   "AMSShootsEveryAttack": true,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "HeatGenerated": 4,
+   "Id": "Overload",
+   "IsAMS": true,
+   "ShotsWhenFired": 60,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  },
+  {
+   "DamagePerShot": 1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "HeatGenerated": 12,
+   "Id": "MG",
+   "ShotsWhenFired": 10,
+   "UIName": "MG",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  120,
+  120
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0.5,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": []
+}

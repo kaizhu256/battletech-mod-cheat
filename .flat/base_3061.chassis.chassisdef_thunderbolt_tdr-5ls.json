@@ -1,0 +1,245 @@
+{
+ "BattleValue": 6057000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 65,
+ "DFAInstability": 33,
+ "DFASelfDamage": 65,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1378211,
+  "Details": "Developed in 2850 as the Second Succession War saw more and more technologies disappear, the 5LS was a downgraded field refit and a factory model of the now impossible to build 5L. While the ER Large Laser and Starfish Small Pulse Lasers were retained, the standard LRM-15 and Bical SRM-2 rack were noticeably less accurate than the 5L's more advanced launchers, but nothing compared to the replacement of the 5L's double heat sinks with fifteen standard models and the heat management issues that resulted. Production of even the \"primitive\" 5LS would end during the Third Succession War.",
+  "Icon": "uixTxrIcon_thunderbolt",
+  "Id": "chassisdef_thunderbolt_TDR-5LS",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Thunderbolt",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Thunderbolt"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_MultiTrack",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_thunderbolt",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 33,
+ "MeleeInstability": 17,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "thunderbolt",
+ "PrefabIdentifier": "chrPrfMech_thunderboltBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Heavy Skirmisher",
+ "Tonnage": 65,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "TDR-5LS",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Developed in 2850 as the Second Succession War saw more and more technologies disappear, the 5LS was a downgraded field refit and a factory model of the now impossible to build 5L. While the ER Large Laser and Starfish Small Pulse Lasers were retained, the standard LRM-15 and Bical SRM-2 rack were noticeably less accurate than the 5L's more advanced launchers, but nothing compared to the replacement of the 5L's double heat sinks with fifteen standard models and the heat management issues that resulted. Production of even the \"primitive\" 5LS would end during the Third Succession War.",
+ "weightClass": "HEAVY"
+}

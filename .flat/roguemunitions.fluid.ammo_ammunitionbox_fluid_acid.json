@@ -1,0 +1,63 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Fluid_Acid",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 8,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Acid: 30%",
+    "WeaponDamage: +6",
+    "ArmorDmgMod: +50%",
+    "StructureDmgMod: -50%",
+    "FluidAcidAmmo: 8"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/s/m/melee"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 8,
+   "HeatDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000036"
+  }
+ },
+ "Description": {
+  "Cost": 10000,
+  "Details": "Pressurized Canister containing Acid for the Fluid gun, weakening a targets Armor Drastically. On a Critical Hit, the Pressurized Container will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "uixSvgIcon_ammoBox_Support",
+  "Id": "Ammo_AmmunitionBox_Fluid_Acid",
+  "Manufacturer": "Generic",
+  "Model": "Acid",
+  "Name": "Acid Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Fluid Acid"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

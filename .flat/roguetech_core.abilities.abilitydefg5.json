@@ -1,0 +1,90 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "25% Increased Critical Strike Chance. +4 to Clustering Roll modifiers. +5% to Called Shot Multiplier.",
+  "Icon": "bandit",
+  "Id": "AbilityDefG5",
+  "Name": "Bandit"
+ },
+ "DisplayParams": "ShowInMWTRay",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "BanditCalledShot",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "CalledShotBonusMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Missile weapon attacks have their hit improved by 3.",
+    "Icon": "AdvancedTC",
+    "Id": "BanditCrits",
+    "Name": "Missile WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "CriticalChanceMultipler",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Substantially increases the clustering of this unit's LRM weapons and boosts the stability damage of SRMs by 50%.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "BanditClustering",
+    "Name": "MISSILERY SUITE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "4",
+    "operation": "Float_Add",
+    "statName": "ClusteringModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ReqSkill": "Gunnery",
+ "ReqSkillLevel": 5
+}

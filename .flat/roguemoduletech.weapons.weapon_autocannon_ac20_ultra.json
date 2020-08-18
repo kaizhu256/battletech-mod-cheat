@@ -1,0 +1,114 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 200,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "UAC20",
+ "AttackRecoil": 4,
+ "BattleValue": 281,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "component_type_lostech",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-4"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 4",
+    "WeaponJAM: 4",
+    "WeaponJAMFlat: 35%",
+    "Ultra",
+    "LosTech"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/uac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01104"
+  }
+ },
+ "Damage": 100,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 500000,
+  "Details": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/20 is one of the most fearsome weapons on the battlefield. \n\n <b><color=#ffcc00>Uses UAC20 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "UltraAC",
+  "Id": "Weapon_Autocannon_AC20_Ultra",
+  "Manufacturer": "Kali Yama",
+  "Model": "Shredder Autocannon",
+  "Name": "UAC/20",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ultra AC/20 "
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.08,
+ "HeatDamage": 0,
+ "HeatGenerated": 40,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 25,
+ "InventorySize": 7,
+ "MaxRange": 420,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -22,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -1,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.08,
+   "Id": "x2",
+   "UIName": "x2",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "UAC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  210,
+  300
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 15,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

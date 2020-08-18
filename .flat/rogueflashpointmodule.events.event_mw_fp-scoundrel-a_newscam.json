@@ -1,0 +1,328 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_scoundrel_followupEvent",
+     "flashpoint_scoundrel_followupEvent-1a",
+     "flashpoint_scoundrel_followupEvent-1b"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_scoundrel_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  },
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Injuries",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": "0"
+    }
+   ],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Commander"
+  },
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_pop_none",
+     "planet_pop_small"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_faction_davion"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "A comm's buzz wakes you. Darius has a message from the planet's surface. \"You're not going to believe this, Commander. It's Ayasha Hadley.\"\r\n\r\n\"Commander {COMMANDER.LastName}! I feel awful about how we left things, but no hard feelings, right? I <i>really</i> didn't want to go to jail.\"\r\n\r\nSeeing your stony response, she continues. \"I like you, Commander. You must know that. So I just had to bring you this opportunity that could benefit us both.\"\r\n\r\nShe continues as if you'd agreed. \"You have a MechWarrior in your employ, goes by the callsign [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Gender?Male:He's|Female:She's|NonBinary:They're} the spitting image of a certain Davion official who has access to a Mydron research facility I'd very much like to see the inside of.\"\r\n\r\n\"Let me borrow {TGT_MW.OBJ} for a few weeks. If you play along, I'll give you one of whatever I find in there. What do you say? Partners?\"",
+  "Icon": "uixTxrSpot_IllicitDealings.png",
+  "Id": "event_mw_FP-scoundrel-A_NewScam",
+  "Name": "Dirty Rotten Scoundrels"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation choice",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Refuse to participate in her scheme."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"Ms. Hadley, after what you pulled the last time, you’re at the top of my list of people not to trust. Given my line of work, I hope you appreciate that.\"\r\n\r\nThe thief manages to pout and smile at the same time. \"Oh, Commander, that's just because you don't know me yet. I'm very good to my friends.\"\r\n\r\nWaving her hands to concede defeat, \"Very well. Perhaps next time.\" At that, the signal cuts off before you can say another word.\r\n\r\nDarius pops in, having clearly been listening to the call. \"I'm not sure if I hate her or love her.\"",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "Nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "flashpoint_scoundrel_followupEvent"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "safe choice",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Go along with the plan."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] waves goodbye as {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:climb|Default:climbs} aboard the shuttle.\r\n\r\nDarius arches an eyebrow at you, clearly as curious as you are as to how this will turn out.\r\n\r\nLater that week, you receive a coded message from Ms. Hadley. \"Commander, thanks for loaning me your MechWarrior. {TGT_MW.Gender?Male:He's|Female:She's|NonBinary:They're} a natural. I've already arranged shipment of the fruits of our labor.\"\r\n\r\nShe shrugs innocently. \"<i>But</i> I'm going to hang onto {TGT_MW.Callsign} a few weeks longer. I have some new leads I need to follow. And it's a two person job.\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "MW time-out, criminal, get something"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [
+         "pilot_criminal"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "flashpoint_scoundrel_followupEvent-1a"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_Autocannon_AC20_1-Mydron",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        },
+        {
+         "name": "Item.WeaponDef.Weapon_Autocannon_AC10_1-Mydron",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "risky option",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Capture her and turn her over to the Federated Suns."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Lady Alexandria Cunningham thanks you profusely as her agents slap Ayasha Hadley into restraints and march her aboard the nearby transport.\r\n\r\nIt's not until you arrive back on the <i>Argo</i> that Darius asks, \"Commander, did you see [[TGT_MW,{TGT_MW.Callsign}]] get on board?\" The sinking feeling in your stomach is echoed in Darius' face.\r\n\r\nLater that week, you receive a coded message from Ms. Hadley. \"I'm disappointed that you didn't want to play along, Commander. But it did speed my plans quite a bit, because of where Lady Cunningham decided to keep me prisoner. A temporary arrangement, of course.\"\r\n\r\n\"Don't worry about your MechWarrior. I'll deliver {TGT_MW.OBJ} safe and sound, just like I promised, just as soon as I'm done with {TGT_MW.OBJ}.\"",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "success, sort of"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "flashpoint_scoundrel_followupEvent-1b"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.Davion",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "3",
+         "valueConstant": "[rep_gain_large]"
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [
+         "pilot_criminal"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "pilot_criminal",
+    "pilot_honest"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 100
+}

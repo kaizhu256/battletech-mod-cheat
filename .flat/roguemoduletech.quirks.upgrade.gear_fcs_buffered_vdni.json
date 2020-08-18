@@ -1,0 +1,640 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Neural",
+ "BonusValueB": "Interface",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_variant",
+   "TargetingComputer",
+   "DirectNeuralInterface",
+   "cae_ai_offence",
+   "cae_ai_defence"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "Buffered VDNI",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.03,
+   "FailCrit": true,
+   "FailDamageLocations": [
+    "Head"
+   ],
+   "FailFlatChance": 0.01,
+   "FailPilotingBase": 2,
+   "FailPilotingMult": 0.15,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Take Damage on Overheat",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "DNI-Penalty",
+      "Name": "OverheatPilotDamage"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Boolean",
+      "modValue": "true",
+      "operation": "Set",
+      "statName": "ReceiveHeatDamageInjury"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTargetsCreator": true,
+      "effectTriggerType": "Passive"
+     }
+    },
+    {
+     "Description": {
+      "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "MaxEvasion",
+      "Name": "EVASIVE MOVE"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "2",
+      "operation": "Int_Add",
+      "statName": "MaxEvasivePips"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive"
+     }
+    },
+    {
+     "Description": {
+      "Details": "PASSIVE: Attacking with a single weapon ignores COVER and GUARDED on the target.",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "TC-Headshot",
+      "Name": "BREACHING SHOT"
+     },
+     "durationData": {
+      "duration": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Boolean",
+      "modValue": "true",
+      "operation": "Set",
+      "statName": "IRTCalledShotAlwaysAllow"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Buffs Gunnery Skill",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "StatusEffect_Cockpit_Skill_Gunnery",
+      "Name": "Gunnery Buff"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "Gunnery",
+      "targetCollection": "Pilot"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Buffs Piloting Skill",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "StatusEffect_Cockpit_Skill_Piloting",
+      "Name": "Piloting Buff"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "Piloting",
+      "targetCollection": "Pilot"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Buffs Guts Skill",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "StatusEffect_Cockpit_Skill_Guts",
+      "Name": "Guts Buff"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "Guts",
+      "targetCollection": "Pilot"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Buffs Tactics Skill",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "StatusEffect_Cockpit_Skill_Tactics",
+      "Name": "Tactics Buff"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "Tactics",
+      "targetCollection": "Pilot"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AcePilot",
+    "AccuracyER: +2",
+    "AccuracyLR: +1",
+    "AccuracyMR: +1",
+    "AccuracyMin: +2",
+    "Recoil: -1",
+    "StabDamageTaken: -10%",
+    "Sensors: +10%",
+    "Sight: +10%",
+    "TCFCS",
+    "Activatable",
+    "ActivePilotOverheat",
+    "ActiveSkillGunnery: +1",
+    "ActiveSkillPiloting: +1",
+    "ActiveSkillGuts: +1",
+    "ActiveSkillTactics: +1",
+    "ActiveEvaMax: +2",
+    "ActiveAllowsHeadshot",
+    "FailChance: 0%",
+    "FailChanceTurn: 3%",
+    "FailLocation: Head",
+    "FailCritLoc",
+    "FailReducPilot",
+    "FCS",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "TargetingComputer"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   },
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "LifeSupportA"
+   },
+   {
+    "CategoryID": "CockpitSensors"
+   }
+  ],
+  "CriticalHitStates": {
+   "DeathMethod": "PilotKilled",
+   "HitEffects": [
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-50% Sight and Sensor",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCSensorsDestroyed",
+       "Name": "Sensors Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "0.5",
+       "operation": "Float_Multiply",
+       "statName": "SensorDistanceAbsolute"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-50% Sight and Sensor",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCSensorsDestroyed2",
+       "Name": "Sensors Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "0.5",
+       "operation": "Float_Multiply",
+       "statName": "SpotterDistanceAbsolute"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "Take Damage on Overheat",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCLifeSupportDestroyed",
+       "Name": "Life Support Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Boolean",
+       "modValue": "true",
+       "operation": "Set",
+       "statName": "ReceiveHeatDamageInjury"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    }
+   ],
+   "MaxStates": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00202"
+  },
+  "Lootable": {
+   "ItemID": "Gear_FCS_VDNI"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]]/6"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 830000,
+  "Details": "Buffered Vehicular Direct Neural Interface was an improvement on standard VDNI developed for the Manei Domini. Introduced several years after the start of the Jihad, buffered VDNI was available only to those who held the rank of Omicron. While operating similarly to standard VDNI, the buffered model further enhanced the neurological fail-safes to create a safer, more potent system.",
+  "Icon": "interface",
+  "Id": "Gear_FCS_Buffered_VDNI",
+  "Manufacturer": "Word of Blake",
+  "Model": "Buffered VDNI Cockpit",
+  "Name": "Buffered VDNI Cockpit",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Buffered VDNI w/ Small Cockpit"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit can use its movement before or after shooting.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "InterFaceMoveAfterShoot",
+    "Name": "ACE PILOT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CanMoveAfterShooting"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increased Sensors",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "BAProbe",
+    "Name": "HP-CockpitSensors-Sensor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by 50%.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "HP-CockpitSensors-Spot",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CockpitInitativeEffect",
+    "Name": "CockpitTechBonus"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccER",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "CACExtraLongRangeAccuracyMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccLR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "CACLongRangeAccuracyMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccMR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "CACMediumRangeAccuracyMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccSR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "CACMinRangeAccuracyMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TCRecoil",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Incoming stability damage reduced by 10%.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-DNI-StabDefense",
+    "Name": "INCOMING STABILITY DAMAGE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "ReceivedInstabilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

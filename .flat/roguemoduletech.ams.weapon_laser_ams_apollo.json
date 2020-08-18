@@ -1,0 +1,174 @@
+{
+ "AMSShootsEveryAttack": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": true,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#800000",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.4,
+   "ArmorTPCost": 1.3
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorTPCost: 30%",
+    "ArmorCBCost: 40%",
+    "LAMS",
+    "AdvAMS",
+    "AMSMULTI",
+    "AMSDmg: 2",
+    "AMSAcc: 30%",
+    "AMSShots: 10",
+    "AMSHeat: 10",
+    "OLAMSDmg: 3",
+    "OLAMSAcc: 40%",
+    "OLAMSShots: 20",
+    "OLAMSHeat: 20",
+    "OLAMSJam: 50%",
+    "OLAMSRange: 180"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "Armor"
+   },
+   {
+    "CategoryID": "w/s/a/lams"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00025"
+  },
+  "Lootable": {
+   "ItemID": "Weapon_Laser_AMS_Integrated"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "2000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "1.5 * [[Chassis.Tonnage]] / 13"
+   }
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 530000,
+  "Details": "This unique Armor has an Integrated LAMS Prototype, capable to defend its owner and allies from the majority of Missile Attacks made during Battle. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_Laser_AMS_Apollo",
+  "Manufacturer": "Eris Ent.",
+  "Model": "Clean-Sweep",
+  "Name": "LAMS",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Integrated Advanced Laser AMS"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 3,
+ "IsAAMS": true,
+ "IsAMS": true,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 2,
+   "AMSHitChance": 0.3,
+   "Id": "On",
+   "ShotsWhenFired": 10,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 3,
+   "AMSHitChance": 0.4,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "HeatGenerated": 10,
+   "Id": "Overload",
+   "MaxRange": 180,
+   "ShotsWhenFired": 20,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  140,
+  160
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 2.5,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
+ "WeaponSubType": "SmallLaser",
+ "statusEffects": []
+}

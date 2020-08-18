@@ -1,0 +1,253 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 3610000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Hand",
+   "RightLimit": "Lower"
+  }
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 690138,
+  "Details": "This Chimera variant introduced in 3069, carries a C3 Slave unit and replaces the standard weaponry with a Snub-Nose PPC, Small Laser, Small Pulse Laser, and a quartet of Medium Lasers. It also carries a Sword in the right arm, and uses Triple Strength Myomer to maximize damage. It's also equipped with a larger XL Engine that permits a cruising ground speed of 76km/h. When the Triple Strength Myomer activates, it reaches a maximum ground speed of 120km/h. The 2K also has a 210 meter jump range.",
+  "Icon": "Chimera",
+  "Id": "chassisdef_chimera_CMA-2K",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Chimera",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Chimera"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Nimble",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_chimera",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14.5,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14.5,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": -1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "chimera",
+ "PrefabIdentifier": "chrprfmech_chimerabase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker",
+ "Tonnage": 40,
+ "TopSpeed": 97,
+ "TurnRadius": 90,
+ "VariantName": "CMA-2K",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "This Chimera variant introduced in 3069, carries a C3 Slave unit and replaces the standard weaponry with a Snub-Nose PPC, Small Laser, Small Pulse Laser, and a quartet of Medium Lasers. It also carries a Sword in the right arm, and uses Triple Strength Myomer to maximize damage. It's also equipped with a larger XL Engine that permits a cruising ground speed of 76km/h. When the Triple Strength Myomer activates, it reaches a maximum ground speed of 120km/h. The 2K also has a 210 meter jump range.",
+ "weightClass": "MEDIUM"
+}

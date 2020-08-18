@@ -1,0 +1,621 @@
+{
+ "AdditionalObjects": [
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [
+      "pilot_lucky"
+     ],
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": "0"
+     }
+    ],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "SecondaryMechWarrior"
+   },
+   "Scope": "SecondaryMechWarrior"
+  }
+ ],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Travel",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": "0"
+    }
+   ],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  },
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_pop_none"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Darius meets you in the galley bearing some unfamiliar fruits and a number of spice packets. \"[[TGT_MW,{TGT_MW.Callsign}]] returned from shore leave with gifts: a big bag of this produce, some spices, and a bunch of meat from a hunting trip. I've got no idea what the animal is called, but the haunches are bigger than I am.\" \r\n\r\nHe turns one of the strange fruits in the light and its color shifts from green to iridescent purple. \"How do you feel about adding this to our stocks? Could make for a nice change of pace.\"",
+  "Icon": "uixTxrSpot_MessDeckFull.png",
+  "Id": "event_mw_localFood",
+  "Name": "Restocking the Kitchen"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Safe option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Decide that unusual food is too risky, given the diverse origins of the crew."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius passes along your decision to [[TGT_MW,{TGT_MW.Callsign}]]. \"The company can't risk the safety of its crew and the battle-readiness of its MechWarriors by exposing them to foreign, untested foods.\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:don't|Default:doesn't} contest the ruling, instead consigning the food to the incinerator as directed. It smells <i>delicious</i>, and {TGT_MW.Callsign} sighs longingly before heading off to yet another predictable dinner in the mess.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Low Morale Pilot"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Risky option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Applaud {TGT_MW.Callsign}'s generosity and welcome the treat."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "As the crew cautiously pokes at the mystery meat, [[TGT_MW,{TGT_MW.Callsign}]] devours {TGT_MW.Det} meal with relish. \"Don't you love how the smokiness balances the sweetness? It isn't every day you get to eat something that had fur <i>and</i> feathers. And the local hunters told me that these vestigial haunches are the best parts of the animal—the main locomotive limbs are too tough to chew.\" By the end of the meal, the other MechWarriors agree that {TGT_MW.Callsign}'s mystery animal is, in fact, delicious, and they give a collective thumbs-up to the experiment.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "MW morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "As your MechWarriors serve themselves heaping portions of the mystery meat, [[TGT_MW,{TGT_MW.Callsign}]] dives into {TGT_MW.Det} meal with relish. \"Don't you love how the smokiness balances the sweetness? It isn't every day you get to eat something that had fur <i>and</i> feathers. And the local hunters told me that these vestigial haunches are the best parts of the animal—the main locomotive limbs are too tough to chew.\" Soon enough, everyone on the crew is raving about the flavor and texture of {TGT_MW.Callsign}'s mystery animal, and they give a collective thumbs-up to the experiment.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Company morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "The deliciously-spiced meal turns to ash in your mouth when [[SCN_MW,{SCN_MW.Callsign}]] suddenly clutches {SCN_MW.Det} throat and falls, gasping, to the floor. You hop over your table to pull {SCN_MW.DET} twitching form away from obstacles. Then you're tugged out of the way by one medic while another plunges a syringe of epinephrine into the victim's thigh.\r\n\r\nAs {SCN_MW.Callsign}'s allergic reaction subsides, you glance around and see the aghast expression on [[TGT_MW,{TGT_MW.Callsign}]]'s face. A dozen plates are pushed forward in unison.",
+      "Icon": "",
+      "Id": "outcome_1_2",
+      "Name": "Small morale loss & a random injury"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_jinxed"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[{TGT_MW.Callsign}: Periphery]",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Anticipate a delicious meal, since {TGT_MW.Callsign} knows the area."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "pilot_periphery"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "MechWarrior"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "In the mess hall, [[TGT_MW,{TGT_MW.Callsign}]] chides {TGT_MW.Det} fellow MechWarriors, \"Come on, back home we ate critters like this all the time. Well, not <i>exactly</i> like this… our birds weren't furry, and they only had <i>two</i> legs.\" Sumire's nose wrinkles as she pokes at the meat with a fork. \"Technically, I think that'd make {TGT_MW.Callsign}'s mystery animal a monotreme, like a platypus or an echidna. It does smell pretty good, though.\"\r\n\r\nAfter some initial hesitation, the crew enthusiastically devours the evening's grand experiment, and are soon toasting {TGT_MW.Callsign} for a job well done.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "Moderate morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

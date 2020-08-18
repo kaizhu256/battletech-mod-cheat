@@ -1,0 +1,135 @@
+{
+ "BattleValue": 993,
+ "Custom": {
+  "CustomWeights": [
+   {
+    "ComponentDefID": "Tank_InfantryCompartment",
+    "Tonnage": 4
+   }
+  ]
+ },
+ "Description": {
+  "Cost": 8156207,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_BOLLA_Black",
+  "Name": "Bolla Stealth Tank",
+  "Purchasable": false,
+  "Rarity": 2
+ },
+ "HardpointDataDefID": "hardpointdatadef_bollasrm",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  },
+  {
+   "x": -1.5,
+   "y": 4,
+   "z": 0
+  },
+  {
+   "x": 1.5,
+   "y": 4,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": -3.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 170,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 180,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_5-8cv",
+ "PathingCapDefID": "pathingdef_heavy_wheeled",
+ "PrefabBase": "bollasrm",
+ "PrefabIdentifier": "chrprfvhcl_bollasrm",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 60,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "HEAVY"
+}

@@ -1,0 +1,230 @@
+{
+ "BattleValue": 4048000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 50,
+ "DFAInstability": 25,
+ "DFASelfDamage": 50,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 858333,
+  "Details": "Designed by the Explorer Corps to provide heavy fire support in environments unsuited to a normal tank or support unit, the 4E is a field refit that mounts a Thumper Artillery piece in place of the standard AC/20. Removing a mostly superfluous s heat sink, frees up the weight for the 4E retain it’s secondary weaponry should it be engaged by head hunter units. By 3010, the Explorer Corps had entered into a long term contract with Kali Yama Weapons to produce limited numbers of this design under licence. The design spread to other interested parties, after the Corps relaxed their licensing arrangements, following the Scarlet Fist debacle; in which the a lone Corps pilot – Larissa ‘‘Raza’’ Brooks – managed to successfully evaded the pirate band responsible for the destruction of her lance, before stalking them back to their base and levelling it with repeated Thumper volleys in the middle of the night.",
+  "Icon": "uixTxrIcon_hunchback",
+  "Id": "chassisdef_hunchback_HBK-4E",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Hunchback",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Hunchback"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_hunchback",
+ "Heatsinks": 0,
+ "InitialTonnage": 5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 4.5,
+   "z": 2
+  },
+  {
+   "x": -2.5,
+   "y": 4.5,
+   "z": 2
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 25,
+ "MeleeInstability": 13,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "hunchback",
+ "PrefabIdentifier": "chrPrfMech_hunchbackBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Fire Support",
+ "Tonnage": 50,
+ "TopSpeed": 65,
+ "TurnRadius": 90,
+ "VariantName": "HBK-4E",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Designed by the Explorer Corps to provide heavy fire support in environments unsuited to a normal tank or support unit, the 4E is a field refit that mounts a Thumper Artillery piece in place of the standard AC/20. Removing a mostly superfluous s heat sink, frees up the weight for the 4E retain it’s secondary weaponry should it be engaged by head hunter units. By 3010, the Explorer Corps had entered into a long term contract with Kali Yama Weapons to produce limited numbers of this design under licence. The design spread to other interested parties, after the Corps relaxed their licensing arrangements, following the Scarlet Fist debacle; in which the a lone Corps pilot – Larissa ‘‘Raza’’ Brooks – managed to successfully evaded the pirate band responsible for the destruction of her lance, before stalking them back to their base and levelling it with repeated Thumper volleys in the middle of the night.",
+ "weightClass": "MEDIUM"
+}

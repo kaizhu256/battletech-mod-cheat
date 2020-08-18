@@ -1,0 +1,647 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "In the morning briefing, Darius presents an unexpected opportunity. \"[[TGT_MW,{TGT_MW.Callsign}]]'s family has informed us that their grand-matriarch is getting married again. They've requested {TGT_MW.Callsign} be given leave to return home for the ceremony. {TGT_MW.SUBJ_C} would be gone for a month, but the family is willing to compensate us to the tune of ¢50,000.\"",
+  "Icon": "uixTxrSpot_IncomingTransimission.png",
+  "Id": "event_mw_wealthyWeddings",
+  "Name": "Weddings of the Rich and Famous"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Safe option, possible morale effect",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Disallow the leave."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "While [[TGT_MW,{TGT_MW.Callsign}]]'s family regrets your refusal, you detect in their reply a touch of pride that their heir is so valued by {TGT_MW.Det} employer.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "nothing"
+     },
+     "Results": [],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "While [[TGT_MW,{TGT_MW.Callsign}]]'s family regrets your refusal, you detect in their reply a touch of pride that their heir is so valued by {TGT_MW.Det} employer.\r\n\r\n{TGT_MW.Callsign} also takes this as a gesture of appreciation, which takes the sting out of missing the family reunion.",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "While [[TGT_MW,{TGT_MW.Callsign}]]'s family regrets your refusal, you detect in their reply a touch of pride that their heir is so valued by {TGT_MW.Det} employer.\r\n\r\n{TGT_MW.Callsign} is, however, greatly disappointed to be missing the family reunion.",
+      "Icon": "",
+      "Id": "outcome_0_2",
+      "Name": "morale loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Safe option, money",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Allow the leave of absence."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]]'s family expresses their gratitude for your flexibility.\r\n\r\nThe next day, as the MechWarrior prepares to board the shuttle, a few other members of the crew arrive in the shuttle bay to see {TGT_MW.Obj} off. It sounds like they have a few requests for special souvenirs to be slipped through customs.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Unavailable for N days"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "50000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Risky option, less time",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Negotiate for a shorter leave."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]]'s family is willing to accept a shorter visit from their beloved heir.\r\n\r\nThe next day, as the MechWarrior prepares to board the shuttle, a few other members of the crew arrive in the shuttle bay to see {TGT_MW.Obj} off. It sounds like they have a few requests for special souvenirs to be slipped through customs.",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "They take what they can get"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "50000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "14",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]]'s family is displeased with your decision, but they accept a shorter visit. That does mean a smaller reimbursement, though.\r\n\r\nThe next day, as the MechWarrior prepares to board the shuttle, a few other members of the crew arrive in the shuttle bay to see {TGT_MW.Obj} off. It sounds like they have a few requests for special souvenirs to be slipped through customs.",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "They lower their donation"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "20000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "14",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]]'s family is indifferent to your requirements, as long as you allow the leave. They even deposit their reimbursement in full up-front.\r\n\r\nThe next day, as {TGT_MW.Callsign}'s shuttle departs, Darius thinks aloud, \"You realize that we're probably not going to see {TGT_MW.OBJ} for a full month no matter what the family agreed to. We lose our leverage when that shuttle leaves.\"",
+      "Icon": "",
+      "Id": "outcome_2_2",
+      "Name": "stays longer anyway"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "50000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Risky option, more money",
+    "Icon": "",
+    "Id": "outcome_3",
+    "Name": "Negotiate for more compensation."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Apparently, to [[TGT_MW,{TGT_MW.Callsign}]]'s family, money is no object. They pay the higher fee without hesitation.\r\n\r\nThe next day, as the MechWarrior prepares to board the shuttle, a few other crew members arrive in the shuttle bay to see {TGT_MW.Obj} off. It sounds like they have a few requests for special souvenirs to be slipped through customs.",
+      "Icon": "",
+      "Id": "outcome_3_0",
+      "Name": "They accept"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Apparently [[TGT_MW,{TGT_MW.Callsign}]] isn't as critical to the matriarch's wedding plans as originally implied. No money is forthcoming, and {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:aren't|Default:isn't} going anywhere. The MechWarrior isn't happy about it, either.",
+      "Icon": "",
+      "Id": "outcome_3_1",
+      "Name": "They refuse"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]]'s family seems indifferent on the details of your requirements, as long as you allow the leave.\r\n\r\nThe next day, as {TGT_MW.Callsign}'s shuttle departs, Darius thinks aloud, \"Y'know, it's probably gonna be <i>way</i> more than a month before we see {TGT_MW.OBJ} again, regardless of what the family agreed to. The wealthy do like to get their money's worth.\"",
+      "Icon": "",
+      "Id": "outcome_3_2",
+      "Name": "stays longer for that money"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "60",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "pilot_wealthy"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

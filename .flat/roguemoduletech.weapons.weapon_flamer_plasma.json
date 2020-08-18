@@ -1,0 +1,168 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SPlasma",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Plasma",
+ "AttackRecoil": 4,
+ "BattleValue": 210,
+ "BonusValueA": "Bonus vs Overheat|",
+ "BonusValueB": "Damage Falloff.",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#ADFF2F",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long",
+   "OmniRestriction.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "OHDamage: 50%",
+    "VariableDmg: 5",
+    "PLASMADEBUFF: 15%",
+    "DmgFallOff: 15%",
+    "WpnRecoil: 2",
+    "WeaponBoom: 35",
+    "IsPlasma"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/plasma"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 35,
+   "HeatDamagePerAmmo": 70,
+   "StabilityDamagePerAmmo": 10
+  },
+  "InventorySorter": {
+   "SortKey": "02016"
+  }
+ },
+ "Damage": 35,
+ "DamageVariance": 5,
+ "Description": {
+  "Cost": 660000,
+  "Details": "This Plasma Cannon prototype accelerates and superheats a cartridge of 'plastic foam' into an excited state and release it as plasma, creating a tremendous kinetic and thermal impact. \n\n<b><color=#ffcc00>Uses Plasma Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "plasma-bolt",
+  "Id": "Weapon_FLAMER_PLASMA",
+  "Manufacturer": "Victory",
+  "Model": "Plasma Cannon",
+  "Name": "Plasma Cannon",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Plasma Cannon"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.15,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.3625,
+ "HeatDamage": 20,
+ "HeatGenerated": 21,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 2,
+ "MaxRange": 600,
+ "MinRange": 90,
+ "OverheatedDamageMultiplier": 1.5,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 1,
+  "y": 1,
+  "z": 0.7
+ },
+ "ProjectileSpeedMultiplier": 0.75,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "High energy residue reduces heat efficiency by 15%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "PLASMA-Effect",
+    "Name": "Plasma Residue"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 1,
+    "stackLimit": 5,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

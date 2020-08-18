@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Alliance Flashpoint for Liao",
+  "Icon": "",
+  "Id": "fp_allianceLiao",
+  "Name": "Liao Alliance"
+ },
+ "Difficulty": 9,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Our allies in the Capellan Confederation have a special request for us. They insist that they can only give us details in person.",
+ "InProgressTimeout": 0,
+ "InternalName": "allianceLiao",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_name_desolateplains"
+   ],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_allianceLiao",
+ "PotentialEmployers": [
+  "Liao"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "ALLIED_FACTION_Liao"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_FP_generic_SLDF_double",
+ "TargetFaction": "Davion",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1000
+}

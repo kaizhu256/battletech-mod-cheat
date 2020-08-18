@@ -1,0 +1,248 @@
+{
+ "BattleValue": 8144000,
+ "ChassisTags": {
+  "items": [
+   "PrototypeMech",
+   "mr-resize-0.91"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 75,
+ "DFAInstability": 38,
+ "DFASelfDamage": 75,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2264861,
+  "Details": "A Solaris refit of the Rakshasa that upgrades its Electronics with Stealth and ECM technology. Named for Shapeshifting Hindu Demons of ancient Terra. A fan favourite during its time in the arenas, designed to ambush its prey from close range.",
+  "Icon": "Rakshasa",
+  "Id": "chassisdef_asura_MDG-X",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Rakshasa",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Rakshasa"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_madcatmkii",
+ "Heatsinks": 0,
+ "InitialTonnage": 7.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": -2,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 38,
+ "MeleeInstability": 19,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "madcatmkii",
+ "PrefabIdentifier": "chrprfmech_madcatmkiibase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Heavy Striker",
+ "Tonnage": 75,
+ "TopSpeed": 76,
+ "TurnRadius": 180,
+ "VariantName": "MDG-X",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A Solaris refit of the Rakshasa that upgrades its Electronics with Stealth and ECM technology. Named for Shapeshifting Hindu Demons of ancient Terra. A fan favourite during its time in the arenas, designed to ambush its prey from close range.",
+ "weightClass": "HEAVY"
+}

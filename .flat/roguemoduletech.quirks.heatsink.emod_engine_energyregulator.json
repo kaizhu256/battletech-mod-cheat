@@ -1,0 +1,115 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": " ",
+ "BonusValueB": " ",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EnergyHeatGenerated: -15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "Flags": {
+   "flags": [
+    "engine_part",
+    "default",
+    "not_broken"
+   ]
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]]",
+    "TechCost": "[[Chassis.Tonnage]] / 100"
+   },
+   "Install": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]]",
+    "TechCost": "[[Chassis.Tonnage]] / 100"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "This System allows the engine to more efficiently control the powerflow and dissipation of Energy Weapons.",
+  "Icon": "EngineCooling",
+  "Id": "emod_engine_EnergyRegulator",
+  "Manufacturer": "Vlar",
+  "Model": "Energy Cooling System",
+  "Name": "Energy Cooling",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Energy Cooling"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_GenReduction-T1",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

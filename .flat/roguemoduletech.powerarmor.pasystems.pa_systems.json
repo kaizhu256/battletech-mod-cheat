@@ -1,0 +1,250 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ProtoEngine",
+   "PAGear",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EvaMax: +2",
+    "EvaPips: +3"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   },
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EngineCore"
+   },
+   {
+    "CategoryID": "Gyro"
+   },
+   {
+    "CategoryID": "Armor"
+   },
+   {
+    "CategoryID": "Structure"
+   }
+  ],
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Compact_Standard"
+  },
+  "EngineCore": {
+   "Rating": "5"
+  },
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "Flags": {
+   "flags": [
+    "vital",
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "TonnageLimit": {
+   "Max": 10,
+   "Min": 5
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]]",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "All Battle Armors are Powered by a reliable low scale fusion engine and supported by a simply Gyro Stabilizer. They usually operate in Teams of 5 units.",
+  "Icon": "thermometer-cold",
+  "Id": "PA_Systems",
+  "Manufacturer": "Vlar",
+  "Model": "Basic Systems",
+  "Name": "PowerArmour",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "BA Systems"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 300,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Supercharged Engines",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "SuperchargerWalk",
+    "Name": "Supercharged"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "MaxEvasion",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "GainEvasion",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "3",
+    "operation": "Int_Add",
+    "statName": "EvasivePipsGainedAdditional"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "The gyro helps establish center-of-mass equilibrium for the BattleMech.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "GyroGenericThreshhold",
+    "Name": "Gyroscopic Orientation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "4000.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "WalkSpeed reduced 50%.",
+    "Icon": "uixSvgIcon_equipment_HeatBank",
+    "Id": "PowerArmorReduceMove",
+    "Name": "Movement Adjusment"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "PASSIVE: Attacking with a single weapon ignores COVER and GUARDED on the target.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "PowerArmorEject",
+    "Name": "No Ejection"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "false",
+    "operation": "Set",
+    "statName": "CanEject",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

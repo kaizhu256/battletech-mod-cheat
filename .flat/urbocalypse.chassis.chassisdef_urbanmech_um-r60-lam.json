@@ -1,0 +1,344 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 3892000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  }
+ },
+ "CustomParts": {
+  "CustomParts": [],
+  "FiringArc": 360
+ },
+ "DFADamage": 30,
+ "DFAInstability": 15,
+ "DFASelfDamage": 30,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 382143,
+  "Details": "A long lost prototype produced by Orguss Industries, this LAM was a failed experiment. Designed to capitalise on the Star League LAM tech, the UM-R60-LAM is a mech without a purpose. To slow for front line combat or special operations work and not nimble enough for dog fighting at close range, Orguss struggled to find a willing buyer for their wonder machine. Armed with a large pulse laser and a single small laser, it lacked the range of it's ground based counterparts or rival LAM models. Rumour has it that Orguss sealed the unsold models in a storage cache and forgot about them; and that the cache has survived the chaos of the succession wars.",
+  "Icon": "UrbieLAM",
+  "Id": "chassisdef_urbanmech_UM-R60-LAM",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "UrbanMech",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "UrbanMech"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_armorslots_LAM",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_structureslots_LAM",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engine_130",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_Engine_LAM",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Extreme_Torso_Twist",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Quirk_JumpJet_LAM",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Quirk_JumpJet_LAM",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Quirk_JumpJet_LAM",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Quirk_PartialWing_LAM",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Quirk_PartialWing_LAM_LTslot",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_urbielord",
+ "Heatsinks": 0,
+ "InitialTonnage": 3,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 70,
+   "MaxRearArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 70,
+   "MaxRearArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 15,
+ "MeleeInstability": 8,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "urbielord",
+ "PrefabIdentifier": "chrprfmech_urbielordbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 130,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Land Air Mech",
+ "Tonnage": 30,
+ "TopSpeed": 85,
+ "TurnRadius": 360,
+ "VariantName": "UM-R60-LAM",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A long lost prototype produced by Orguss Industries, this LAM was a failed experiment. Designed to capitalise on the Star League LAM tech, the UM-R60-LAM is a mech without a purpose. To slow for front line combat or special operations work and not nimble enough for dog fighting at close range, Orguss struggled to find a willing buyer for their wonder machine. Armed with a large pulse laser and a single small laser, it lacked the range of it's ground based counterparts or rival LAM models. Rumour has it that Orguss sealed the unsold models in a storage cache and forgot about them; and that the cache has survived the chaos of the succession wars.",
+ "weightClass": "LIGHT"
+}

@@ -1,0 +1,148 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.2,
+ "APMaxArmorThickness": 104,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 317,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 15,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 2",
+    "WpnRecoil: 3",
+    "MineClearanceBoom: 2",
+    "ModesCanMisfire"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/hppc"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02014"
+  }
+ },
+ "Damage": 75,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 780000,
+  "Details": "Researched by the Draconis Combine, the Heavy PPC is a larger, more potent version of the Particle Projector Cannon, capable of delivering a devastating blow to both the enemy and their sensors. \n\n <b><color=#00ffff>Left Click on Chance to Hit during battle to toggle the Field Inhibitor.  (FIOFF) Has no minimum range penalty but can Misfire.</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PPC_HEAVY",
+  "Manufacturer": "Fusigon",
+  "Model": "Heavy Particle Projector Cannon",
+  "Name": "HPPC",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Heavy PPC"
+ },
+ "DisallowedLocations": "All",
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.225,
+ "HeatDamage": 0,
+ "HeatGenerated": 45,
+ "IndirectFireCapable": false,
+ "Instability": 16,
+ "InventorySize": 4,
+ "MaxRange": 720,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "Id": "FION",
+   "UIName": "FION",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AccuracyModifier": 1,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "Id": "FIOFF",
+   "MinRange": -90,
+   "UIName": "FIOFF",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

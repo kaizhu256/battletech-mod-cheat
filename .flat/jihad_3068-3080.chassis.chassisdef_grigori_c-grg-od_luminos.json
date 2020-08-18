@@ -1,0 +1,345 @@
+{
+ "BattleValue": 13749000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-1.1-0.9-1.0",
+   "OmniMech",
+   "projectb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Grigori"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 4841379,
+  "Details": "The Grigori is one of the Word of Blake's new Celestial series OmniMechs designed by Doctor Devon Cortland. The Grigori (named after fallen angels from Christianity) was added to the Word of Blake Militia's arsenal in late 3069 as Doctor Cortland oversaw the final production personally. It is constructed on a standard chassis, but makes use of eleven tons of Light Ferro-Fibrous armor, a light fusion engine, and an XL Gyro; as well as the small cockpit that is common to all of the Celestials. Like the other Celestials, the Grigori has a C3i Computer to help direct its fire. Six Improved Jump Jets vault the Grigori D up to 180 meters. A Heavy and a Light PPC allow it to snipe effectively. Two ER Mediums and a pair of ER Smalls back up the PPCs in case an enemy gets under their minimum range.",
+  "Icon": "Grigori",
+  "Id": "chassisdef_grigori_C-GRG-OD_luminos",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Grigori",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Grigori"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_FCS_Buffered_VDNI",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_XL_Omni",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_240",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_light_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Improved_Sensors",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_preta",
+ "Heatsinks": 0,
+ "InitialTonnage": 6,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 2.5
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 2.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "preta",
+ "PrefabIdentifier": "chrPrfMech_pretabase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Fire Support",
+ "Tonnage": 60,
+ "TopSpeed": 70,
+ "TurnRadius": 90,
+ "VariantName": "C-GRG-OD",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Grigori is one of the Word of Blake's new Celestial series OmniMechs designed by Doctor Devon Cortland. The Grigori (named after fallen angels from Christianity) was added to the Word of Blake Militia's arsenal in late 3069 as Doctor Cortland oversaw the final production personally. It is constructed on a standard chassis, but makes use of eleven tons of Light Ferro-Fibrous armor, a light fusion engine, and an XL Gyro; as well as the small cockpit that is common to all of the Celestials. Like the other Celestials, the Grigori has a C3i Computer to help direct its fire. Six Improved Jump Jets vault the Grigori D up to 180 meters. A Heavy and a Light PPC allow it to snipe effectively. Two ER Mediums and a pair of ER Smalls back up the PPCs in case an enemy gets under their minimum range.",
+ "weightClass": "HEAVY"
+}

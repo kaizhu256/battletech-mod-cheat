@@ -1,0 +1,157 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "- 6 Heat / Turn",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EndMoveHeat: -6",
+    "Signature: +10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Heatsink"
+   }
+  ],
+  "EngineHeatSink": {
+   "Abbreviation": "LHS",
+   "FullName": "Laser Heat Sinks",
+   "Tag": "LHS"
+  },
+  "InventorySorter": {
+   "SortKey": "00015"
+  }
+ },
+ "Description": {
+  "Cost": 930000,
+  "Details": "Functionally identical to a Clan-tech double heat sink, the lack of liquid and gas in the system reduces the chances of heat-based ammunition cook-off and means that laser heat sinks don't get the decreased performance on warmer worlds that single and double heat sinks have, while at the same time preventing laser heat sinks from taking advantage of immersion in water or colder weather to boost their performance.",
+  "Icon": "uixSvgIcon_equipment_Heatsink",
+  "Id": "Gear_HeatSink_Generic_Laser_Clan",
+  "Manufacturer": "Clan",
+  "Model": "Clan Double",
+  "Name": "Laser Heat Sink (C)",
+  "Purchasable": false,
+  "Rarity": 20,
+  "UIName": "Laser Heat Sink (C)"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Laser Heat Sink system increasing signature by 10%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "LDHS_Signature_Increase_10",
+    "Name": "Laser Heat Sink"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.10",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Laser Heat Sink system venting 6 heat",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "LHS_Heat_Venting_6",
+    "Name": "Laser Heat Sink"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "-6",
+    "operation": "Int_Add",
+    "statName": "EndMoveHeat",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

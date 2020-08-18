@@ -1,0 +1,265 @@
+{
+ "BattleValue": 3610000,
+ "ChassisTags": {
+  "items": [
+   "HeroMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": [
+   {
+    "CategoryID": "CockpitFCS",
+    "DefID": "Gear_FCS_Defiance",
+    "Location": "Head",
+    "Type": "Upgrade"
+   }
+  ]
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 765926,
+  "Details": "Cicada Hero 'Mech is supposedly a prototype of an advanced Cicada. Outfitted with Ferro-Fibrous Armor, Double Heat Sinks, an XL engine, and Endo Steel skeleton, it still manages to outpace all medium 'Mechs and almost all light 'Mechs. Its armament is optimized for short range, with four medium lasers and a pair of SRM-2s fed by an experimental ammo system, giving it a light armament by medium 'Mech standards, but still much better than the older 2A, 2B, and 3C variants. Though the design was highly successful in testing, a combination of the extreme price of production, the relative fragility of the 'Mech, and the difficulty of piloting the 'Mech due to its extreme speed and higher inertia (as compared to comparably fast light 'Mechs) prevented the X-5 from entering production. The few prototype models deployed in combat after testing concluded proved to be a deadly force on the battlefield. Lessons learned with this model were applied to the 3F variant, though the missile capability was dropped due to jamming issues.",
+  "Icon": "uixTxrIcon_cicada",
+  "Id": "chassisdef_cicada_CDA-X5",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Cicada",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Cicada"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_engine_330",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Special_Nimble",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_cicada",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "cicada",
+ "PrefabIdentifier": "chrPrfMech_cicadaBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1.2,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Scout & Sniper",
+ "Tonnage": 40,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "CDA-X5",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Cicada Hero 'Mech is supposedly a prototype of an advanced Cicada. Outfitted with Ferro-Fibrous Armor, Double Heat Sinks, an XL engine, and Endo Steel skeleton, it still manages to outpace all medium 'Mechs and almost all light 'Mechs. Its armament is optimized for short range, with four medium lasers and a pair of SRM-2s fed by an experimental ammo system, giving it a light armament by medium 'Mech standards, but still much better than the older 2A, 2B, and 3C variants. Though the design was highly successful in testing, a combination of the extreme price of production, the relative fragility of the 'Mech, and the difficulty of piloting the 'Mech due to its extreme speed and higher inertia (as compared to comparably fast light 'Mechs) prevented the X-5 from entering production. The few prototype models deployed in combat after testing concluded proved to be a deadly force on the battlefield. Lessons learned with this model were applied to the 3F variant, though the missile capability was dropped due to jamming issues.",
+ "weightClass": "MEDIUM"
+}

@@ -1,0 +1,98 @@
+{
+ "Author": "LadyAlekto & Cargo Vroom & Akodoreign & Morphyum",
+ "ConflictsWith": [],
+ "Contact": "fakeemail@fakeemail.com",
+ "DLL": "FlashpointEnabler.dll",
+ "DependsOn": [
+  "RogueTech Core"
+ ],
+ "Description": "Module containing Flashpoint stuff",
+ "Enabled": true,
+ "Manifest": [
+  {
+   "AddToDB": true,
+   "Path": "events",
+   "Type": "SimGameEventDef"
+  },
+  {
+   "Path": "pilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "lance/gladiator",
+   "Type": "LanceDef"
+  },
+  {
+   "Path": "Mech",
+   "Type": "MechDef"
+  },
+  {
+   "Path": "FPMechs",
+   "Type": "MechDef"
+  },
+  {
+   "Path": "Chassis",
+   "Type": "ChassisDef"
+  },
+  {
+   "Path": "Portrait",
+   "Type": "Sprite"
+  },
+  {
+   "Path": "contract/",
+   "Type": "ContractOverride"
+  },
+  {
+   "AddToAddendum": "ConversationTexture",
+   "Path": "textures",
+   "Type": "Texture2D"
+  },
+  {
+   "Path": "flashpoints",
+   "Type": "FlashpointDef"
+  },
+  {
+   "Path": "milestoneSets",
+   "Type": "SimGameMilestoneSet"
+  },
+  {
+   "Path": "simGameConversations",
+   "Type": "SimGameConversations"
+  },
+  {
+   "Path": "cast",
+   "Type": "CastDef"
+  },
+  {
+   "Path": "conversationBuckets",
+   "Type": "ConversationContent"
+  },
+  {
+   "Path": "dialoguebuckets",
+   "Type": "DialogBucketDef"
+  },
+  {
+   "Path": "data",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "Path": "TurretChassis",
+   "Type": "TurretChassisDef"
+  },
+  {
+   "Path": "Turret",
+   "Type": "TurretDef"
+  },
+  {
+   "Path": "vehiclechassis",
+   "Type": "VehicleChassisDef"
+  },
+  {
+   "Path": "vehicle",
+   "Type": "VehicleDef"
+  }
+ ],
+ "Name": "Rogue Flashpoint Module",
+ "Version": "0.1.0",
+ "Website": "https://github.com/Morphyum/FlashpointEnabler"
+}

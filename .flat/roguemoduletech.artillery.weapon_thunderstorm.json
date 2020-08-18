@@ -1,0 +1,136 @@
+{
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0,
+ "APMaxArmorThickness": 0,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "TBOLT20",
+ "AttackRecoil": 1,
+ "BattleValue": 1000,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsThunderbolt",
+    "Indirect"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/t/thunderbolt"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03022"
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 2100000,
+  "Details": "The Thunderbolt launcher is an offshoot of standard LRM technology. Instead of firing groups of missiles, the Thunderbolt launcher fires a single missile. It suffers from reduced range, and is susceptible to AMS. \n\n <b><color=#ffcc00>Uses TBOLT20, TBOLTM15, TBOLTM10, TBOLTM5 Ammo.</color></b>",
+  "Icon": "thunderbolt",
+  "Id": "Weapon_LRM_Thunderstorm",
+  "Manufacturer": "NAIS",
+  "Model": "Thunderbolt Missile Launcher",
+  "Name": "Thunderstorm",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Thunderstorm"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 70,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 0,
+ "InventorySize": 12,
+ "MaxRange": 720,
+ "MinRange": 150,
+ "Modes": [
+  {
+   "APCriticalChanceMultiplier": 0.5,
+   "APMaxArmorThickness": 500,
+   "Damage": 100,
+   "FireTerrainChance": 0.125,
+   "Id": "tbm20",
+   "Instability": 25,
+   "ShotsWhenFired": 3,
+   "UIName": "TBM20",
+   "isBaseMode": true
+  },
+  {
+   "APCriticalChanceMultiplier": 0.375,
+   "APMaxArmorThickness": 375,
+   "AmmoCategory": "TBOLT15",
+   "Damage": 75,
+   "FireTerrainChance": 0.09375,
+   "HeatGenerated": 10,
+   "Id": "tbm15",
+   "Instability": 18,
+   "ShotsWhenFired": 4,
+   "UIName": "TBM15",
+   "isBaseMode": false
+  },
+  {
+   "APCriticalChanceMultiplier": 0.25,
+   "APMaxArmorThickness": 275,
+   "AmmoCategory": "TBOLT10",
+   "Damage": 55,
+   "FireTerrainChance": 0.0625,
+   "HeatGenerated": 20,
+   "Id": "tbm10",
+   "Instability": 14,
+   "ShotsWhenFired": 6,
+   "UIName": "TBM10",
+   "isBaseMode": false
+  },
+  {
+   "APCriticalChanceMultiplier": 0.125,
+   "APMaxArmorThickness": 125,
+   "AmmoCategory": "TBOLT5",
+   "Damage": 25,
+   "FireTerrainChance": 0.03125,
+   "HeatGenerated": 30,
+   "Id": "tbm5",
+   "Instability": 6.25,
+   "ShotsWhenFired": 12,
+   "UIName": "TBM5",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm15",
+ "ProjectileSpeedMultiplier": 1.2,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 32,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM15",
+ "WeaponSubType": "LRM20",
+ "statusEffects": []
+}

@@ -1,0 +1,127 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "AC5Internal",
+ "AttackRecoil": 2,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "HandHeld",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 6",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "HandHeldAmmo: 15",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 6
+  },
+  "InventorySorter": {
+   "SortKey": "01012"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 35,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 260000,
+  "Details": "A Handheld Light AC 5 with 1 ton of Ammo and a Half Ton of Armor",
+  "Icon": "HandHeldRifle",
+  "Id": "Hand_Weapon_Autocannon_AC5_LIGHT",
+  "Manufacturer": "GM",
+  "Model": "Tactical Autocannon",
+  "Name": "Light AC/5",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Handheld Light AC/5"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 8.75,
+ "InventorySize": 1,
+ "MaxRange": 480,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  240,
+  420
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 15,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC5",
+ "WeaponSubType": "AC5",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Hand held weapons armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-HandHeldArmor-{location}",
+    "Name": "HandHeld Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "40",
+    "operation": "Float_Add",
+    "statName": "{location}.Armor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

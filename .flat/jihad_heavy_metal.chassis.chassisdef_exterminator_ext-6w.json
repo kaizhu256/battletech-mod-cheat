@@ -1,0 +1,251 @@
+{
+ "BattleValue": 7144000,
+ "ChassisTags": {
+  "items": [
+   "SLDFMech",
+   "PrototypeMech",
+   "mr-resize-1.2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 65,
+ "DFAInstability": 33,
+ "DFASelfDamage": 65,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1707386,
+  "Details": "The Exterminator is a BattleMech that was designed in 2630 for the most dubious, but necessary, of purposes: Headhunting. Advanced systems allowed it to easily infiltrate enemy lines. Once the Exterminator had breached the enemy's rear, its mission was to find and destroy as much of the enemy's command structure as possible. This mission profile included attacking Mobile Headquarters, field bases and command level officers. Rather than be part of the standard formation, Exterminators were attached to a regimental or higher headquarters unit, often as a fifth member of the command lance itself, before being assigned to individual units.",
+  "Icon": "Exterminator",
+  "Id": "chassisdef_exterminator_EXT-6W",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Exterminator",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Exterminator"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Nimble",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_assassin",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 33,
+ "MeleeInstability": 17,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "assassin",
+ "PrefabIdentifier": "chrPrfMech_assassinBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Hunter-Killer & Ambusher",
+ "Tonnage": 65,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "EXT-6W",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Exterminator is a BattleMech that was designed in 2630 for the most dubious, but necessary, of purposes: Headhunting. Advanced systems allowed it to easily infiltrate enemy lines. Once the Exterminator had breached the enemy's rear, its mission was to find and destroy as much of the enemy's command structure as possible. This mission profile included attacking Mobile Headquarters, field bases and command level officers. Rather than be part of the standard formation, Exterminators were attached to a regimental or higher headquarters unit, often as a fifth member of the command lance itself, before being assigned to individual units.",
+ "weightClass": "HEAVY"
+}

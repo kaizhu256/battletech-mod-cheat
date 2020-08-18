@@ -1,0 +1,130 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 30,
+ "AOEInstability": 15,
+ "AOERange": 60,
+ "APArmorShardsMod": 0.6,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 45,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RifleHeavy",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "HRifle.{location}",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.3,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 30",
+    "IsArtillery",
+    "Indirect",
+    "NoAA",
+    "IsRifle",
+    "WpnRecoil: 3",
+    "DFAccuracy: -1",
+    "ScatterRadius: 20, 80",
+    "ForbiddenRange: 150"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01303"
+  }
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 300000,
+  "Details": "Need to remind your Neighbor of the Noise? Chug some Budget over to the Rowdy Town over? Cant Afford a Fancy Long Tom? Look no Further we at Quicsell work hard to bring you finest in Weapons, Our Howitzer 2000 is based on well known Lyran designs coming straight from Terra! \n\n <b><color=#ffcc00>Uses Heavy Rifle Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Rifle_Howitzer",
+  "Manufacturer": "Quicsell",
+  "Model": "Budget Delivery",
+  "Name": "Howitzer Cannon",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Howitzer 2000"
+ },
+ "DirectFireModifier": 1,
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.05,
+ "HeatDamage": 0,
+ "HeatGenerated": 15,
+ "ImprovedBallistic": true,
+ "Instability": 3,
+ "InventorySize": 5,
+ "MaxMissRadius": 20,
+ "MaxRange": 1200,
+ "MinMissRadius": 15,
+ "MinRange": 200,
+ "Modes": [
+  {
+   "AlwaysIndirectVisuals": false,
+   "DirectFireModifier": 1,
+   "ForbiddenRange": 150,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "LongRange": -450,
+   "MaxRange": -600,
+   "MiddleRange": -300,
+   "MinRange": -100,
+   "ShortRange": -150,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": true,
+   "DirectFireModifier": 1,
+   "ForbiddenRange": 150,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  300,
+  600,
+  900
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

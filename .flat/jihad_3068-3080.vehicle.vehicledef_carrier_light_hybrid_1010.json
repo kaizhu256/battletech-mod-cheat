@@ -1,0 +1,204 @@
+{
+ "ChassisID": "vehiclechassisdef_CARRIER_LIGHT_HYBRID_1010",
+ "Description": {
+  "Cost": 1906600,
+  "Details": "",
+  "Icon": "MLRS3",
+  "Id": "vehicledef_CARRIER_LIGHT_HYBRID_1010",
+  "Name": "Light Hybrid Carrier (TBM/LRM)",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 100,
+   "CurrentArmor": 100,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Front"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Left"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Right"
+  },
+  {
+   "AssignedArmor": 60,
+   "CurrentArmor": 60,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Rear"
+  },
+  {
+   "AssignedArmor": 80,
+   "CurrentArmor": 80,
+   "CurrentInternalStructure": 20,
+   "DamageLevel": "Functional",
+   "Location": "Turret"
+  }
+ ],
+ "VehicleTags": {
+  "items": [
+   "mr-resize-1.50",
+   "unit_vehicle",
+   "unit_medium",
+   "unit_wheels",
+   "unit_release",
+   "unit_carrier",
+   "unit_indirectFire",
+   "unit_lance_support",
+   "unit_advanced",
+   "unit_bracket_low",
+   "locals",
+   "magistracyofcanopus",
+   "marian",
+   "taurianconcordat",
+   "rasalhague",
+   "outworld",
+   "ives",
+   "elysia",
+   "oberon",
+   "valkyrate",
+   "circinus",
+   "illyrian",
+   "lothian",
+   "aurigandirectorate",
+   "auriganrestoration",
+   "hanse",
+   "castile",
+   "tortuga",
+   "auriganpirates"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "Weapon_LRM_LRM10_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_LRM10_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_Thunderbolt10",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Thunderbolt_TB10",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Thunderbolt_TB10",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Gear_TargetingTrackingSystem_I3F1",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_CrewCompartment",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_Sensors_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Wheeled_Left",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_Wheeled_Right",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_armorslots_standard",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Turret",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "emod_engine_140",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Coolant_System",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_FuelCell",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  }
+ ]
+}

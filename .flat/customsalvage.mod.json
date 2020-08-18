@@ -1,0 +1,221 @@
+{
+ "Author": "Denadan",
+ "DLL": "CustomSalvage.dll",
+ "DLLEntryPoint": "CustomSalvage.Control.Init",
+ "DependsOn": [
+  "CustomComponents"
+ ],
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [],
+ "Name": "CustomSalvage",
+ "Settings": {
+  "AdaptModWeight": 0.33,
+  "AdaptPartBaseCost": 0.01,
+  "AllowDropBlackListed": true,
+  "AllowScrapToParts": true,
+  "ApplyPartPriceMod": true,
+  "AssemblyVariants": true,
+  "BGColors": [
+   {
+    "Color": "#ff00ff",
+    "Tag": "unit_primitive"
+   },
+   {
+    "Color": "#ff33cc10",
+    "Tag": "unit_hero"
+   },
+   {
+    "Color": "#ff33cc10",
+    "Tag": "unit_totem"
+   },
+   {
+    "Color": "#ff33cc10",
+    "Tag": "unit_prototype"
+   },
+   {
+    "Color": "#ff33cc10",
+    "Tag": "unit_legendary"
+   },
+   {
+    "Color": "#ff33cc10",
+    "Tag": "unit_elite"
+   },
+   {
+    "Color": "#b2babb10",
+    "Tag": "unit_assault"
+   },
+   {
+    "Color": "#f0b27a10",
+    "Tag": "unit_heavy"
+   },
+   {
+    "Color": "#82e0aa10",
+    "Tag": "unit_medium"
+   },
+   {
+    "Color": "#85c1e910",
+    "Tag": "unit_light"
+   }
+  ],
+  "BaseTP": 10,
+  "BrokeByTag": [
+   {
+    "BaseTp": "30",
+    "Component": "0.01",
+    "Limb": "0.01",
+    "tag": "unit_elite"
+   },
+   {
+    "BaseTp": "20",
+    "Component": "0.005",
+    "Limb": "0.005",
+    "tag": "unit_prototype"
+   },
+   {
+    "BaseTp": "15",
+    "Component": "0.0075",
+    "Limb": "0.0075",
+    "tag": "unit_hero"
+   },
+   {
+    "BaseTp": "18",
+    "Component": "0.007",
+    "Limb": "0.007",
+    "tag": "unit_totem"
+   },
+   {
+    "BaseTp": "5",
+    "Component": "0.015",
+    "Limb": "0.015",
+    "tag": "unit_primitive"
+   },
+   {
+    "BaseTp": "13",
+    "Component": "0.011",
+    "Limb": "0.011",
+    "tag": "OmniMech"
+   },
+   {
+    "BaseTp": "14",
+    "Component": "0.007",
+    "Limb": "0.007",
+    "tag": "ClanMech"
+   },
+   {
+    "BaseTp": "16",
+    "Component": "0.008",
+    "Limb": "0.008",
+    "tag": "SocietyMech"
+   },
+   {
+    "BaseTp": "11",
+    "Component": "0.0085",
+    "Limb": "0.0085",
+    "tag": "SLDFMech"
+   },
+   {
+    "BaseTp": "16",
+    "Component": "0.0085",
+    "Limb": "0.0085",
+    "tag": "RISCBattleMech"
+   }
+  ],
+  "BrokenMech": true,
+  "CenterTorsoDestroyedParts": 1,
+  "CentralTorsoRepaired": false,
+  "ComponentChancePerTp": 0.01,
+  "ComponentMaxChance": 0.95,
+  "ComponentMinChance": 0.2,
+  "EjectRecoveryBonus": 0.5,
+  "ExclideVariants": [],
+  "ExcludeTags": [
+   "BLACKLISTED",
+   "exclude_variant"
+  ],
+  "ExcludedColor": "magenta",
+  "HeadRecoveryPenaly": 0,
+  "HeadRepaired": false,
+  "LeftArmRepaired": false,
+  "LeftLegRepaired": false,
+  "LeftTorsoRepaired": false,
+  "LimbChancePerTp": 0.01,
+  "LimbMaxChance": 0.9,
+  "LimbMinChance": 0.1,
+  "LimbRecoveryPenalty": 0.05,
+  "LogLevel": "Error",
+  "LostMechAction": "MoveItemsAndPartsToSalvage",
+  "MaxAdaptMod": 5,
+  "MaxScrapParts": 0.89,
+  "MaxVariantsInDescription": 5,
+  "MinPartsToAssembly": 0.33,
+  "MinPartsToAssemblySpecial": 0.5,
+  "MinScrapParts": 0.49,
+  "MinStructure": 0.25,
+  "NoSalvageMechTag": "NOSALVAGE",
+  "NotReadyColor": "white",
+  "OmniNormalMod": 0,
+  "OmniSpectialtoNormalMod": 0.25,
+  "OmniSpectialtoSpecialMod": 0.1,
+  "OmniTechTag": "OmniMech",
+  "PartCountType": "PartDestroyed",
+  "RandomStructureOnRepairedLimbs": true,
+  "ReadyColor": "#32CD32",
+  "RecoveryMod": 1,
+  "RecoveryType": "PartDestroyed",
+  "RepairChanceByTP": true,
+  "RepairComponentsFunctionalThreshold": 0.25,
+  "RepairComponentsNonFunctionalThreshold": 0.5,
+  "RepairMechComponents": true,
+  "RepairMechLimbs": true,
+  "RepairMechLimbsChance": 0.33,
+  "RightArmRepaired": false,
+  "RightLegRepaired": false,
+  "RightTorsoRepaired": false,
+  "SalvageArmWeight": 0.65,
+  "SalvageHeadWeight": 0.5,
+  "SalvageLegWeight": 0.65,
+  "SalvageTorsoWeight": 1,
+  "SalvageTurrets": true,
+  "SalvageTurretsComponentChance": 0.33,
+  "ShowDEBUGChances": false,
+  "SpecialTags": [
+   {
+    "Mod": 2,
+    "Tag": "unit_legendary"
+   },
+   {
+    "Mod": 1.2,
+    "Tag": "unit_hero"
+   },
+   {
+    "Mod": 1.75,
+    "Tag": "unit_prototype"
+   },
+   {
+    "Mod": 1.5,
+    "Tag": "unit_totem"
+   },
+   {
+    "Mod": 2,
+    "Tag": "unit_elite"
+   },
+   {
+    "Mod": 0.5,
+    "Tag": "unit_primitive"
+   },
+   {
+    "Mod": 0.85,
+    "Tag": "OmniMech"
+   }
+  ],
+  "StoredMechColor": "#7FFFD4",
+  "TorsoRecoveryPenalty": 0.1,
+  "UnEquipedMech": false,
+  "UpgradeSalvage": false,
+  "VABLDestroyedMod": 0.68,
+  "VACTDestroyedMod": 0.35,
+  "VariantsColor": "yellow"
+ },
+ "Website": "https://github.com/Denadan/CustomSalvage"
+}

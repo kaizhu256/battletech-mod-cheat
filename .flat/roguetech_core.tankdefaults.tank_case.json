@@ -1,0 +1,63 @@
+{
+ "AllowedLocations": "Torso",
+ "BattleValue": 0,
+ "BonusValueA": "Redirects",
+ "BonusValueB": "Redirects",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CASE"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true,
+   "MaximumDamage": 0
+  },
+  "Category": [
+   {
+    "CategoryID": "TANKCASE"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair",
+    "ignore_damage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "0011"
+  },
+  "Lootable": {
+   "ItemID": "emod_case"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "CASE is short for Cellular Ammunition Storage Equipment. In an internal explosion event, CASE prevents the explosion from travelling to adjacent mech compartments. While CASE does not prevent damage to occur in the protected area, it does prevent it from passing through, helping to prevent ammo explosions to reach the center torso of a mech.",
+  "Icon": "uixSvgIcon_action_end",
+  "Id": "Tank_CASE",
+  "Manufacturer": "Defiance",
+  "Model": "Vehicle CASE",
+  "Name": "C.A.S.E.",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "C.A.S.E."
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": null
+}

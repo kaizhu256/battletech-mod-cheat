@@ -1,0 +1,297 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Breaching Shot",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "lv-shares-sensors"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LanceResolve: +1",
+    "LanceAcc: +1",
+    "Tacticon: +1",
+    "AllLanceSensors: +5%",
+    "AllLanceSight: +15%",
+    "AdvancedSensors: 1",
+    "Sharer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitSensors"
+   },
+   {
+    "CategoryID": "C3Master"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00019"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 650000,
+  "Details": "Advanced Targeting and Communication systems allow the Mech to link and feed sensor systems within the lance, combining a C3 Master System with a rather ancient Tacticon and more modern targeting computer.",
+  "Icon": "C3Systems",
+  "Id": "Gear_Sensors_Echidnae",
+  "Manufacturer": "Tanadi",
+  "Model": "C3",
+  "Name": "C3 Weapons Computer",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Prototype C3"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Provides detailed information on enemy units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ADVANCED_SENSORS",
+    "Name": "Advanced Sensors"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increased Sight/Sensors",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "C3-SensorGain",
+    "Name": "C3M Probe"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by 50m.",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "C3-Spotting_Gain",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a +4 bonus to actions that generate Morale.",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "Echidnae-C3-Acc",
+    "Name": "C3 Master Unit"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a +1 bonus to Resolve, Initiative and Accuracy for the whole Lance.",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "Echidnae-C3-Resolve",
+    "Name": "Overcharged C3"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MoraleBonusGain"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a [INVERSE_AMT] bonus to Lance Initiative.",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "StatusEffect-Echidnae-C3-Resolve",
+    "Name": "LANCE INITIATIVE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shows their vision when lancemates move",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Shares_Vision",
+    "Name": "Vision Sharing"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  }
+ ]
+}

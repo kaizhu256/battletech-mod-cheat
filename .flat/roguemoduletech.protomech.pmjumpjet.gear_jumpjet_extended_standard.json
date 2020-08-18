@@ -1,0 +1,83 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BattleValue": 0,
+ "BonusValueA": "10% Jump distance",
+ "BonusValueB": "100% Weight",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "JumpDistance: +10%"
+   ]
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "Originally developed by The Society for their experimental ProtoMechs, the Extended Jump Jet system boosts the thrust output of each jet at the cost of overall weight of the assembly. Each XJJ has a 10% longer jump range, but weighs twice as much.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Extended_Standard",
+  "Manufacturer": "Generic",
+  "Model": "Extended",
+  "Name": "ProtoMech Extended Jump Jet (S)",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Proto Jump Jet Extended (S)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 1,
+ "JumpCapacity": 1,
+ "MaxTonnage": 5,
+ "MinTonnage": 2,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0.1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Jump distance increased by 10%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "Improved Jump Jets",
+    "Name": "Jump Distance"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.10",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

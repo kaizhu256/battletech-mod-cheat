@@ -1,0 +1,115 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Railgun",
+ "AttackRecoil": 24,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "50 Dmg Variance",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "VariableDmg: 50",
+    "WpnCrits: +50%",
+    "WpnRecoil: 8",
+    "IsGauss",
+    "IsArtillery"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/railgun"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01418"
+  }
+ },
+ "Damage": 250,
+ "DamageVariance": 50,
+ "Description": {
+  "Cost": 6460000,
+  "Details": "The latest Railgun variant downscaled set to mountable into normal mech sized mech chassis. This versions brings a lot more improvements and a radical change in space conservation. The downside to this radical of an upgrade, is that the mech used in this, the Stone Rhino - R, has this permanently affixed into the chassis, sacrificing adaptability for role specialization. A specialized CASE system that spreads its capacitors safely around the torso makes it safer to use. Experimental close range firemode unlocked.  \n\n<b><color=#ffcc00>Uses Railgun Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Gauss_Railgun_PROTOTYPE",
+  "Manufacturer": "CLAN",
+  "Model": "DOWNSCALED",
+  "Name": "Prototype Railgun",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Railgun (SR)"
+ },
+ "DisallowedLocations": "Arms, LeftTorso, RightTorso",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "IndirectFireCapable": false,
+ "Instability": 40,
+ "InventorySize": 2,
+ "MaxRange": 980,
+ "MinRange": 380,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.4,
+   "Id": "x1",
+   "UIName": "Long-Range",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "DistantVariance": 2,
+   "DistantVarianceReversed": true,
+   "HeatGenerated": -30,
+   "Id": "x2",
+   "LongRange": -600,
+   "MaxRange": -600,
+   "MiddleRange": -350,
+   "MinRange": -200,
+   "RefireModifier": 1,
+   "ShortRange": -200,
+   "UIName": "Close-Range",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  380,
+  680,
+  980
+ ],
+ "RefireModifier": 8,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 22,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": []
+}

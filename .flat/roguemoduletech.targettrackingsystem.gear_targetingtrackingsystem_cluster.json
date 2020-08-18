@@ -1,0 +1,102 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "BattleComputer"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Clustering: +5",
+    "CalledShot: 4%",
+    "BattleComputer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "BCCluster"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00027"
+  }
+ },
+ "Description": {
+  "Cost": 1020000,
+  "Details": "Battle Computers are Modular Pieces that can be added to a Targeting Computer FCS, greatly enhancing the Combat capabilities of any Mech it is installed on.",
+  "Icon": "AdvancedTC",
+  "Id": "Gear_TargetingTrackingSystem_Cluster",
+  "Manufacturer": "MOA Industries",
+  "Model": "Oakley VI",
+  "Name": "battleComputer Clustering",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "BC Clustering"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "BC_CALLED_SHOT",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.04",
+    "operation": "Float_Multiply",
+    "statName": "CalledShotBonusMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Substantially increases the clustering of this unit's LRM weapons.",
+    "Icon": "AdvancedTC",
+    "Id": "StatusEffect_BCCluster",
+    "Name": "Laser Weapon Cluster Chance Improved"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "5",
+    "operation": "Float_Add",
+    "statName": "ClusteringModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

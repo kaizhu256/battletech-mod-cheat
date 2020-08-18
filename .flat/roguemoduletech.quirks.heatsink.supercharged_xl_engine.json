@@ -1,0 +1,150 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 50% Engine Weight",
+ "BonusValueB": "+ 6 Slots Required",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "SuperCharger",
+   "CanNotBeActivatedManualy": false,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.05,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "FailChancePerTurn": 0.2,
+   "FailFlatChance": 0.3,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Myomer Accelerator Signal Circuitry",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "MASCWalk",
+      "Name": "MASC"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1",
+      "operation": "Float_Add",
+      "statName": "CBTBE_RunMultiMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": true,
+      "forceVisRebuild": false,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Activatable",
+    "ActiveRunMod: +100%",
+    "FailChance: 30%",
+    "FailChanceTurn: 20%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "EngineWeight: -40%",
+    "EngineReserved: 6"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   },
+   {
+    "CategoryID": "Supercharger"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "vital",
+    "engine_part",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size3",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size3",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Weights": {
+   "EngineFactor": 0.6,
+   "ReservedSlots": 6
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "12000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 35",
+    "TechCost": "1.2 * [[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 3000000,
+  "Details": "This Prototype Extra Light Fusion Engine was modified to include a Super Charger, able to accelerate its Energy Output beyond all reasonable safety measure.",
+  "Icon": "power-generator",
+  "Id": "supercharged_xl_engine",
+  "Manufacturer": "Prototype",
+  "Model": "Extra-light",
+  "Name": "XL Engine",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Supercharged Engine XL"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

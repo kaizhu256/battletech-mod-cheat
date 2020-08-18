@@ -1,0 +1,339 @@
+{
+ "BattleValue": 3749000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech",
+   "OmniMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": [
+   {
+    "CategoryID": "CockpitFCS",
+    "DefID": "Gear_FCS_ImprovedTC_Clan",
+    "Location": "Head",
+    "Type": "Upgrade"
+   }
+  ]
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 6293793,
+  "Details": "The Vulture Mk III is a heavy class Clan OmniMech, which was originally produced by Alshain Weapons on Alshain in the beginning of the thirty-second century for the touman of Clan Ghost Bear. The 'Mech was built as the next generation of the Mad Dog, which was first produced in 2963. First deployed in 3109, the Vulture Mk III (also known as the Mad Dog Mk III by the Clans) generally serves as a support 'Mech to frontline units. It has since entered service in the Raven Alliance as part of Clan Snow Raven's touman.",
+  "Icon": "VultureMKIII",
+  "Id": "chassisdef_vulture_mk_iii_VLTIII-C",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Vulture Mk III",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Vulture Mk III"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_clanendosteel",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Omnimech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engine_300",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_cxl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Variable_Range_Targeting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_maddog",
+ "Heatsinks": 0,
+ "InitialTonnage": 6,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": -2,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "maddog",
+ "PrefabIdentifier": "chrprfmech_maddogbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 60,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "VLTIII-C",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A close-quarters fighter, the C Configuration utilizes eight Streak SRM-6 launchers split between the side torsos. Additionally, the 'Mech uses four Micro Pulse Lasers. The launchers are fed by four tons of ammunition. ",
+ "weightClass": "HEAVY"
+}

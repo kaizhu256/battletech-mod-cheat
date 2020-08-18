@@ -1,0 +1,113 @@
+{
+ "Description": {
+  "Cost": 0,
+  "Details": "",
+  "Icon": "",
+  "Id": "lancedef_mech_d7_gladiator_littlefriend",
+  "Name": "Dynamic Dif 7 Solo",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Difficulty": 7,
+ "LanceTags": {
+  "items": [
+   "lance_type_gladiator"
+  ],
+  "tagSetSourceFile": "Tags/LanceTags"
+ },
+ "LanceUnits": [
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d7",
+     "pilot_npc_high"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "unit_legendary",
+     "unit_bracket_high",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant",
+     "unit_bracket_low",
+     "unit_bracket_high"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d7",
+     "pilot_npc_high"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "{CUR_TEAM.faction}",
+     "unit_littlefriend"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_tanker_d7",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_vehicle",
+     "unit_light",
+     "unit_noncombatant",
+     "unit_vehicle_apc",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Vehicle"
+  }
+ ]
+}

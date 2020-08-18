@@ -1,0 +1,234 @@
+{
+ "AssemblyVariant": {
+  "Exclude": false,
+  "Include": true,
+  "PrefabID": "HollanderII"
+ },
+ "BattleValue": 4067000,
+ "ChassisTags": {
+  "items": [
+   "MR-Resize-1.15"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 45,
+ "DFAInstability": 23,
+ "DFASelfDamage": 45,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 786905,
+  "Details": "The F5 variant, called the Hollander II, is a variant of the Hollander that looks to alleviate the 'Mech's problems by building it on a chassis ten tons heavier than the original, pushing it into the medium weight class. First built in 3058 the 'Mech still carries a Gauss Rifle as its primary weapon, but is backed up by a single Medium Laser and a Streak SRM-2 launcher.",
+  "Icon": "HollanderII",
+  "Id": "chassisdef_hollander_ii_BZK-P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Hollander II",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Hollander II"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_hollander",
+ "Heatsinks": 0,
+ "InitialTonnage": 4.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 10,
+   "z": 0.5
+  },
+  {
+   "x": -3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": 3,
+   "y": 9,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 10,
+   "z": 0.5
+  },
+  {
+   "x": -3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": 3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": -2.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 23,
+ "MeleeInstability": 12,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "hollander",
+ "PrefabIdentifier": "chrprfmech_hollanderbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper",
+ "Tonnage": 45,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "BZK-P",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The F5 variant, called the Hollander II, is a variant of the Hollander that looks to alleviate the 'Mech's problems by building it on a chassis ten tons heavier than the original, pushing it into the medium weight class. First built in 3058 the 'Mech still carries a Gauss Rifle as its primary weapon, but is backed up by a single Medium Laser and a Streak SRM-2 launcher.",
+ "weightClass": "MEDIUM"
+}

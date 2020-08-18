@@ -1,0 +1,189 @@
+{
+ "ChassisID": "vehiclechassisdef_PADILLA_HEAVY_LRM",
+ "Description": {
+  "Cost": 15185625,
+  "Details": "",
+  "Icon": "",
+  "Id": "vehicledef_PADILLA_HEAVY_LRM",
+  "Name": "Padilla Heavy Artillery Tank (LRM)",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 140,
+   "CurrentArmor": 140,
+   "CurrentInternalStructure": 40,
+   "DamageLevel": "Functional",
+   "Location": "Front"
+  },
+  {
+   "AssignedArmor": 120,
+   "CurrentArmor": 120,
+   "CurrentInternalStructure": 40,
+   "DamageLevel": "Functional",
+   "Location": "Left"
+  },
+  {
+   "AssignedArmor": 120,
+   "CurrentArmor": 120,
+   "CurrentInternalStructure": 40,
+   "DamageLevel": "Functional",
+   "Location": "Right"
+  },
+  {
+   "AssignedArmor": 60,
+   "CurrentArmor": 60,
+   "CurrentInternalStructure": 40,
+   "DamageLevel": "Functional",
+   "Location": "Rear"
+  },
+  {
+   "AssignedArmor": 60,
+   "CurrentArmor": 60,
+   "CurrentInternalStructure": 40,
+   "DamageLevel": "Functional",
+   "Location": "Turret"
+  }
+ ],
+ "VehicleTags": {
+  "items": [
+   "mr-resize-1.25",
+   "unit_vehicle",
+   "unit_heavy",
+   "unit_tracks",
+   "unit_release",
+   "unit_lance_assassin",
+   "unit_lance_support",
+   "unit_advanced",
+   "unit_bracket_high",
+   "unit_indirectFire",
+   "liao",
+   "EmeraldDawn",
+   "SianTriumphant",
+   "HouseKhulan"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "Weapon_AMS",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_LRM20_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_LRM20_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile_double",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM_double",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Tank_CrewCompartment",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_FCS_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_Sensors_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Tracked_Left",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_Tracked_Right",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_armorslots_standard",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Turret",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "emod_engine_375",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size3",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size3",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_xl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Coolant_System",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  }
+ ]
+}

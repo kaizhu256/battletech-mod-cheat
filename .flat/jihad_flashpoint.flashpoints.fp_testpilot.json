@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Comstar is requesting help with a top Secret project.",
+  "Icon": "testpilot",
+  "Id": "fp_testpilot",
+  "Name": "Test Pilot"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Our Alliance with ComStar has proven lucrative. They would like our help with a SECRET project.",
+ "InProgressTimeout": 0,
+ "InternalName": "testpilot",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_testpilot",
+ "PotentialEmployers": [
+  "ComStar"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_testpilot_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "ALLIED_FACTION_ComStar"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_testpilottems",
+ "TargetFaction": "Locals",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1000
+}

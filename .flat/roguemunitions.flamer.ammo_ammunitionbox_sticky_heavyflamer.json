@@ -1,0 +1,70 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_HeavyFlamer_Sticky",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 16,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PIRATEFLAMERDEBUFF: 25%",
+    "Inferno: +5",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainStrength: 10",
+    "FireTerrainDuration: 3",
+    "FlamerDamage: -5",
+    "FlamerHeatDamage: -10",
+    "HeavyFlamerAmmo: 16",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/e/p/aflamer"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 10,
+   "HeatDamagePerAmmo": 10,
+   "StabilityDamagePerAmmo": 3
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000050"
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 0.7
+  }
+ },
+ "Description": {
+  "Cost": 50000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. On a Critical Hit, the Pressurized Container will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "pyromaniac",
+  "Id": "Ammo_AmmunitionBox_Sticky_HeavyFlamer",
+  "Manufacturer": "Generic",
+  "Model": "Heavy Flamer",
+  "Name": "Heavy Flamer Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Heavy Flamer Sticky"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

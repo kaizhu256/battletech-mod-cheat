@@ -1,0 +1,249 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [
+   "HeroMech",
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 75,
+ "DFAInstability": 38,
+ "DFASelfDamage": 75,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2757222,
+  "Details": "Reportedly piloted by Star Colonel Jaela Ward, the Orion IIC Hero 'Mech retains the right torso mounted Gauss Rifle unchanged but swaps the LRM rack for an ER PPC, upgrades the SRM-4 rack with Artemis IV FCS and downgrades the arm lasers to ER Medium Lasers. Carrying three tons of Gauss rounds and two of SRM reloads, the weight saved allows the mounting of two extra double heat sinks and MASC.",
+  "Icon": "uixTxrIcon_orioniic",
+  "Id": "chassisdef_skoll_ON1-IIC-SK",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Orion IIC",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Orion IIC"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Anti_Air_Targeting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_orioniic",
+ "Heatsinks": 0,
+ "InitialTonnage": 7.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 15,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 38,
+ "MeleeInstability": 19,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "orioniic",
+ "PrefabIdentifier": "chrprfmech_orioniicbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 160,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Custom Clan BattleMech",
+ "Tonnage": 75,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "ON1-IIC-SK",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Reportedly piloted by Star Colonel Jaela Ward, the Orion IIC Hero 'Mech retains the right torso mounted Gauss Rifle unchanged but swaps the LRM rack for an ER PPC, upgrades the SRM-4 rack with Artemis IV FCS and downgrades the arm lasers to ER Medium Lasers. Carrying three tons of Gauss rounds and two of SRM reloads, the weight saved allows the mounting of two extra double heat sinks and MASC.",
+ "weightClass": "HEAVY"
+}

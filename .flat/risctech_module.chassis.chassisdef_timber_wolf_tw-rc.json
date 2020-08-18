@@ -1,0 +1,253 @@
+{
+ "BattleValue": 8144000,
+ "ChassisTags": {
+  "items": [
+   "EliteMech",
+   "RISCBattleMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 75,
+ "DFAInstability": 38,
+ "DFASelfDamage": 75,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2808585,
+  "Details": "The Timber Wolf is a fast, heavy OmniMech. A signature design of the Clans' military might, it was arguably the first Clan OmniMech encountered by Inner Sphere forces on The Rock by Phelan Kell. Vaguely resembling a cross-over between the MAD (Marauder) and CAT (Catapult) series, the Timber Wolf was tagged with the Inner Sphere reporting name Mad Cat on first contact.",
+  "Icon": "Timberwolf",
+  "Id": "chassisdef_timber_wolf_TW-RC",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Timber Wolf",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Timber Wolf"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Experimental_TC",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_madcat",
+ "Heatsinks": 0,
+ "InitialTonnage": 7.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": -2,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 38,
+ "MeleeInstability": 19,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "madcat",
+ "PrefabIdentifier": "chrprfmech_madcatbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Mad Cat",
+ "Tonnage": 75,
+ "TopSpeed": 76,
+ "TurnRadius": 180,
+ "VariantName": "TW-RC",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Timber Wolf is a fast, heavy OmniMech. A signature design of the Clans' military might, it was arguably the first Clan OmniMech encountered by Inner Sphere forces on The Rock by Phelan Kell. Vaguely resembling a cross-over between the MAD (Marauder) and CAT (Catapult) series, the Timber Wolf was tagged with the Inner Sphere reporting name Mad Cat on first contact.",
+ "weightClass": "HEAVY"
+}

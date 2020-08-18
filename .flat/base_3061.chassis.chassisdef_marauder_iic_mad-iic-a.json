@@ -1,0 +1,250 @@
+{
+ "BattleValue": 8821000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "CustomParts": {
+  "CustomParts": [],
+  "FiringArc": 130
+ },
+ "DFADamage": 85,
+ "DFAInstability": 43,
+ "DFASelfDamage": 85,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2200926,
+  "Details": "A modern Clan take on the classic Succession Wars era MAR-3R Marauder, the A variant retains the arm-mounted weaponry of the standard Marauder IIC, removing the torso-mounted ER PPC and ER Small Lasers in exchange for a LB 5-X AC in its right torso supplied with single ton of ammo.",
+  "Icon": "uixTxrIcon_marauderiic",
+  "Id": "chassisdef_marauder_iic_MAD-IIC-A",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Marauder IIC",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Marauder IIC"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Hyper_Extending_Actuators",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_marauderiic",
+ "Heatsinks": 0,
+ "InitialTonnage": 8.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 135,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 270,
+   "MaxRearArmor": 135,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 43,
+ "MeleeInstability": 22,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "marauderiic",
+ "PrefabIdentifier": "chrprfmech_marauderiicbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Juggernaut & Ranged Assault",
+ "Tonnage": 85,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "MAD-IIC-A",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A modern Clan take on the classic Succession Wars era MAR-3R Marauder, the A variant retains the arm-mounted weaponry of the standard Marauder IIC, removing the torso-mounted ER PPC and ER Small Lasers in exchange for a LB 5-X AC in its right torso supplied with single ton of ammo.",
+ "weightClass": "ASSAULT"
+}

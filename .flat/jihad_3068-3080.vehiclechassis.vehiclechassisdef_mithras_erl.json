@@ -1,0 +1,119 @@
+{
+ "BattleValue": 993,
+ "Description": {
+  "Cost": 5452500,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_MITHRAS_ERL",
+  "Name": "Mithras Light Tank",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_turhan",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": -4.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 45,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 60,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_6-9cv",
+ "PathingCapDefID": "pathingdef_light_tracked",
+ "PrefabBase": "turhan",
+ "PrefabIdentifier": "chrprfvhcl_turhan",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 25,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Tracked",
+ "weightClass": "LIGHT"
+}

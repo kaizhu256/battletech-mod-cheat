@@ -1,0 +1,63 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 180,
+ "Description": {
+  "Details": "Ghost Stories",
+  "Icon": "uixTxrSpot_HeavyMetal.png",
+  "Id": "fp_HM1_ofUnknownOrigin",
+  "Name": "Of Unknown Origin"
+ },
+ "Difficulty": 4,
+ "FlashpointDescriberCastDefId": "castDef_KuritaRepDefault",
+ "FlashpointLength": "MEDIUM",
+ "FlashpointShortDescription": "Commander. I have an important task for you, a rescue operation at the utmost edge of the Rimward Frontier. Meet me at Tarragona and I'll fill you in on the details.",
+ "InProgressTimeout": 180,
+ "InternalName": "HM1_ofUnknownOrigin",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_HM1_ofUnknownOrigin",
+ "PotentialEmployers": [
+  "Kurita"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_HM1_ofUnknownOrigin_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_Item_rare",
+ "Tags": {
+  "items": [
+   "HeavyMetal_Campaign"
+  ],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "Unknown",
+ "UnitDropTonnageHint": "Heavy",
+ "UseAvailableTimeoutOverride": true,
+ "UseInProgressTimeoutOverride": true,
+ "Weight": 10
+}

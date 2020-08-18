@@ -1,0 +1,225 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 30,
+ "DFAInstability": 10,
+ "DFASelfDamage": 20,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 286905,
+  "Details": "Designed as a fast, jump-capable reconnaissance platform, the Stinger has served capably in that role for well over half a millennium, a testament to the utility of the original design",
+  "Icon": "Stinger",
+  "Id": "chassisdef_stinger_STG-3R",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Stinger",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Stinger"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Ubiquitous",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_stinger",
+ "Heatsinks": 0,
+ "InitialTonnage": 2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 10,
+ "MeleeInstability": 5,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "stinger",
+ "PrefabIdentifier": "chrPrfMech_stingerHotD-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Light Scout",
+ "Tonnage": 20,
+ "TopSpeed": 91,
+ "TurnRadius": 90,
+ "VariantName": "STG-3R",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Long history and all, Best to keep these units at range for flanking and spotting.",
+ "weightClass": "LIGHT"
+}

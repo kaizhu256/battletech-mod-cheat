@@ -1,0 +1,178 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 1.125,
+ "APMaxArmorThickness": 225,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "GAUSS",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "RGR: 3",
+    "WpnCrits: X2",
+    "PipsIgnored: 1",
+    "WpnAccuracy: -1",
+    "WpnRecoil: 7",
+    "WeaponJAM: 5",
+    "WeaponBoom: 200"
+   ]
+  },
+  "Category": {
+   "CategoryID": "w/a/g/gaussrifle"
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 200,
+   "HeatDamage": 50,
+   "StabilityDamage": 60
+  },
+  "InventorySorter": {
+   "SortKey": "01419"
+  }
+ },
+ "Damage": 75,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 9842000,
+  "Details": "A Clan Wolverine prototype Rotary Gauss Rifle. First Conceptualized on Project Omega, now added into a RACzilla's chassis. Generates a lot more heat for each shot fired. Has a special ''Overload'' mode, this mode shots a single superheated gauss shot which causes heavy damage to any targets, using this mode is normally not recommended since it causes heavy stress on the weapon, but helps in saving ammo.  \n\n<b><color=#ffcc00>Uses Gauss Ammo.</color></b> \n\n<b><color=#099ff2>REALLY VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_Rotary_Gauss_Rifle",
+  "Manufacturer": "Shall-Not-Be-Named",
+  "Model": "Project Omega",
+  "Name": "Rotary Gauss Rifle (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Rotary Gauss Rifle (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 55,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 8,
+ "MaxRange": 800,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "HeatGenerated": -40,
+   "Id": "x1",
+   "RefireModifier": -3,
+   "ShotsWhenFired": -3,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "HeatGenerated": -30,
+   "Id": "x2",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "HeatGenerated": -15,
+   "Id": "x3",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x3",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "Id": "x4",
+   "UIName": "x4",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "HeatGenerated": 15,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 1,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.35,
+   "FlatJammingChance": 0.4,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.06,
+   "HeatGenerated": 30,
+   "Id": "x6",
+   "RefireModifier": 4,
+   "ShotsWhenFired": 2,
+   "UIName": "x6",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.7,
+   "APArmorShardsMod": 0,
+   "APCriticalChanceMultiplier": 0.5,
+   "APMaxArmorThickness": 1,
+   "AccuracyModifier": -3,
+   "CriticalChanceMultiplier": 2,
+   "DamageOnJamming": true,
+   "DamagePerShot": 160,
+   "FlatJammingChance": 0.66,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.099,
+   "HeatDamagePerShot": 40,
+   "HeatGenerated": 75,
+   "Id": "x7",
+   "RefireModifier": 7,
+   "ShotsWhenFired": -3,
+   "UIName": "Overload",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  200,
+  400,
+  600
+ ],
+ "RefireModifier": 7,
+ "ShotsWhenFired": 4,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 30,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": []
+}

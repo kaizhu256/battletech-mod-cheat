@@ -1,0 +1,229 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 70,
+ "DFAInstability": 35,
+ "DFASelfDamage": 70,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1416509,
+  "Details": "Continuing the trend toward specialized BattleMechs, the Bombardier was proposed to the Star League in 2735 by Wakazashi Enterprises as an \"artillery 'Mech.\" The concept behind the design was to make a BattleMech that could replace less-mobile artillery vehicles, which might fall behind in an advance or be destroyed by counter-battery fire. It would be well-protected with twelve and a half tons of armor and use specialized missile racks which could carry diverse types of advanced missiles. Over years of testing and field exercises the Bombardier proved itself extremely effective at fulfilling the long-range fire support role, easily surpassing its vehicular counterparts and even inspiring talks of disbanding the SLDF's artillery arm once enough Bombardiers were operational.",
+  "Icon": "uixTxrIcon_bombardier",
+  "Id": "chassisdef_bombardier_BMB-12D",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Bombardier",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Bombardier"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Stable",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_archer",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 17,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 110,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 220,
+   "MaxRearArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 35,
+ "MeleeInstability": 18,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "archer",
+ "PrefabIdentifier": "chrPrfMech_archerBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Heavy Support",
+ "Tonnage": 65,
+ "TopSpeed": 86,
+ "TurnRadius": 90,
+ "VariantName": "BMB-12D",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Continuing the trend toward specialized BattleMechs, the Bombardier was proposed to the Star League in 2735 by Wakazashi Enterprises as an \"artillery 'Mech.\" The concept behind the design was to make a BattleMech that could replace less-mobile artillery vehicles, which might fall behind in an advance or be destroyed by counter-battery fire. It would be well-protected with twelve and a half tons of armor and use specialized missile racks which could carry diverse types of advanced missiles. Over years of testing and field exercises the Bombardier proved itself extremely effective at fulfilling the long-range fire support role, easily surpassing its vehicular counterparts and even inspiring talks of disbanding the SLDF's artillery arm once enough Bombardiers were operational.",
+ "weightClass": "HEAVY"
+}

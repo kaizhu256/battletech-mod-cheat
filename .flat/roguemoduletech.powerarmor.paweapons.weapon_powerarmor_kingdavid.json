@@ -1,0 +1,99 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.75,
+ "APCriticalChanceMultiplier": 0.675,
+ "APMaxArmorThickness": 135,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "paweapon"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DmgFallOff: 70%",
+    "WpnCrits: +50%",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10",
+    "BAWEAPON"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01414"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 375000,
+  "Details": "A Battle Armor 'King David' Gauss Rifle, carrying 8 shots. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_PowerArmor_KingDavid",
+  "Manufacturer": "David",
+  "Model": "Light Gauss Rifle",
+  "Name": "MagShot Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "BA KD Gauss"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.7,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 5,
+ "InventorySize": 1,
+ "MaxRange": 390,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectileScale": {
+  "x": 0.35,
+  "y": 0.35,
+  "z": 0.25
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  210,
+  300
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 0.33,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [],
+ "weaponCategoryID": "BattleArmor"
+}

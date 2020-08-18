@@ -1,0 +1,17 @@
+{
+ "Description": {
+  "Details": "Extra Target team reputation penalty for completing a specific objective",
+  "Icon": null,
+  "Id": "SimGameStatDesc_ContractBonusTargetReputation",
+  "Name": "Objective Bonus Reputation Penalty"
+ },
+ "infinitiveNegativeResult": "",
+ "infinitivePositiveResult": "",
+ "infinitiveSetResult": "",
+ "negativeResult": "You lose {RES_VALUE.ToString} Reputation with [[TEAM_TAR,{TEAM_TAR.FactionDef.Name}]]",
+ "positiveResult": "You gain {RES_VALUE.ToString} Reputation with [[TEAM_TAR,{TEAM_TAR.FactionDef.Name}]]",
+ "setResult": "Your Reputation with [[TEAM_TAR,{TEAM_TAR.FactionDef.Name}]] is now {RES_VALUE.ToString}",
+ "temporalNegativeResult": "You lose {RES_VALUE.ToString} Reputation with [[TEAM_TAR,{TEAM_TAR.FactionDef.Name}]] for {RES_DURATION.ToString} days",
+ "temporalPositiveResult": "You gain {RES_VALUE.ToString} Reputation with [[TEAM_TAR,{TEAM_TAR.FactionDef.Name}]] for {RES_DURATION.ToString} days",
+ "temporalSetResult": "Your Reputation with [[TEAM_TAR,{TEAM_TAR.FactionDef.Name}]] is now {RES_VALUE.ToString} for {RES_DURATION.ToString} days"
+}

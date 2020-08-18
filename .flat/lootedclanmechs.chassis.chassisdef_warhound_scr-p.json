@@ -1,0 +1,242 @@
+{
+ "BattleValue": 3749000,
+ "ChassisTags": {
+  "items": [
+   "RISCBattleMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ChassisDefaults": [
+   {
+    "CategoryID": "Armor",
+    "DefID": "Gear_Spall_Liner_Quirk",
+    "Location": "CenterTorso",
+    "Type": "Upgrade"
+   }
+  ]
+ },
+ "DFADamage": 55,
+ "DFAInstability": 28,
+ "DFASelfDamage": 55,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1780354,
+  "Details": "After weathering many an assault by Clan Warriors, RISC Engineers have refit these Warhounds - based upon the versatile Stormcrow. Carrying a Heavy Missile payload, it excells as a fast striker and fire support 'mech",
+  "Icon": "uixTxrIcon_stormcrow",
+  "Id": "chassisdef_warhound_SCR-P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Warhound",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Warhound"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Stable",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_stormcrow",
+ "Heatsinks": 0,
+ "InitialTonnage": 5.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": -2,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 28,
+ "MeleeInstability": 14,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "stormcrow",
+ "PrefabIdentifier": "chrprfmech_stormcrowbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Looted Stormcrow",
+ "Tonnage": 55,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "SCR-P",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "After weathering many an assault by Clan Warriors, RISC Engineers have refit these Warhounds - based upon the versatile Stormcrow. Carrying a Heavy Missile payload, it excells as a fast striker and fire support 'mech.",
+ "weightClass": "MEDIUM"
+}

@@ -1,0 +1,125 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 250,
+ "AOEEffectsFalloff": true,
+ "AOEHeatDamage": 0,
+ "AOEInstability": 125,
+ "AOERange": 100,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 100,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "vfxPrfPrtl_artilleryImpact_barrage",
+ "AdditionalImpactVFXScaleX": 2,
+ "AdditionalImpactVFXScaleY": 2,
+ "AdditionalImpactVFXScaleZ": 2,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": false,
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 0,
+ "BattleValue": 65,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ClearMineFieldRadius": 23,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "BLACKLISTED",
+   "Bomb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 5",
+    "1shot",
+    "AreaOfEffect: 100",
+    "AreaOfEffectDmg: 250",
+    "MineClearanceBoom: 3",
+    "NoAA",
+    "Bomb"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/explode"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 250,
+   "StabilityDamagePerAmmo": 50
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 125,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 44000,
+  "Details": "The 'Daisy Cutter', is one of the largest conventional bombs in common use. As it's name suggests it tends to flatten everything in a wide area.",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "Weapon_Bomb_DaisyCutter",
+  "Manufacturer": "Generic",
+  "Model": "Bomb Daisy Cutter",
+  "Name": "Bomb Daisy Cutter",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Bomb Daisy Cutter"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireOnSuccessHit": true,
+ "FireTerrainCellRadius": 6,
+ "FireTerrainChance": 0.1,
+ "FireTerrainStrength": 15,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 4,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectileScale": {
+  "x": 3,
+  "y": 3,
+  "z": 3
+ },
+ "ProjectileSpeedMultiplier": 0.5,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  180,
+  180
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

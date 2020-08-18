@@ -1,0 +1,79 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-50% Structure Weight|",
+ "BonusValueB": "Reserves 14 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "StructureFactor: -50%",
+    "StructureTPCost: 15%",
+    "StructureCBCost: 20%",
+    "Reserved: 14"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Structure"
+   }
+  ],
+  "Color": {
+   "UIColor": "Orange"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "OrangeHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Endo-Steel",
+   "ReservedSlots": 14,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00010"
+  },
+  "StructureRepair": {
+   "StructureCBCost": 1.2,
+   "StructureTPCost": 1.15
+  },
+  "Weights": {
+   "StructureFactor": 0.5
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "2500 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "2.5 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "Developed by the Terran Hegemony in 2487, Endo Steel was designed especially for use in BattleMech skeletons. Using zero-G manufacturing techniques that uniformly mix high-density steel with lower-density titanium and aluminum, the process produces a metal twice as strong per unit of weight as standard skeleton materials thus halving the weight of the chassis, but at an increase in overall bulk.",
+  "Icon": "Structure",
+  "Id": "emod_structureslots_endosteel",
+  "Manufacturer": "L.A.W.",
+  "Model": "Structure",
+  "Name": "Endo-Steel Structure",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Endo-Steel"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

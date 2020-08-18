@@ -1,0 +1,182 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "Bonus vs Overheat|",
+ "BonusValueB": "+10 Melee (H) Dmg.",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "MeleeWeapon.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 2",
+    "WpnAccuracy: +1",
+    "OHDamage: X3",
+    "VariableDmg: 2",
+    "MeleeHeat: 5",
+    "MultiLaser",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 10,
+ "DamageVariance": 2,
+ "Description": {
+  "Cost": 200000,
+  "Details": "A Laser Drill used to drill into a planets surface by superheating and bombarding the crust, was adapted to work as a 'Mech weapon, able to cut deep into a Chassis and tear it apart it apart.",
+  "Icon": "uixSvgIcon_weapon_Support",
+  "Id": "Weapon_Elite_2_LaserDrill",
+  "Manufacturer": "Wayland",
+  "Model": "Drill",
+  "Name": "Laser Drill",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Laser Drill"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 7,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 7,
+ "InventorySize": 1,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 3,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+ "WeaponSubType": "LargeLaserPulse",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.97",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 10 Heat damage.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "StatusEffect-EliteDrill",
+    "Name": "Solaris Laser Drill"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "5",
+    "operation": "Float_Add",
+    "statName": "HeatDamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Melee",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ],
+ "weaponCategoryID": "SpecialMelee"
+}

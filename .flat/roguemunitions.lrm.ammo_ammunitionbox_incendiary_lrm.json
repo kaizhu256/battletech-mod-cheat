@@ -1,0 +1,71 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_ILRM",
+ "BattleValue": 0,
+ "BonusValueA": "-25%Dmg&Stab|",
+ "BonusValueB": "+1 Heat Dmg.",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeatDamage: +1",
+    "LRMDamage: -50%",
+    "MissileHP: 2",
+    "ILRMAmmo: 120",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 3,
+   "HeatDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000040"
+  },
+  "TRGBColor": {
+   "Color": "#565B5B",
+   "SkipText": true
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 1
+  }
+ },
+ "Description": {
+  "Cost": 60000,
+  "Details": "Unlike Inferno Rounds, Incendiary Missile ammunition replaces parts of the explosive warhead with a cheaper non-gelled incendiary agent, one similar to phosphorous. While this effect is similar in principle to Inferno style rounds  the effect is heavily mitigated by atmospheric conditions. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Incendiary_LRM",
+  "Manufacturer": "Generic",
+  "Model": "LRM-I",
+  "Name": "LRM Incendiary Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM [INC]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

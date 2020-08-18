@@ -1,0 +1,50 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Power"
+   ],
+   "value": "2"
+  }
+ ],
+ "AdditionalCost": 700,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "This is a remarkable ship. I continue to be astonished at how <i>advanced</i> portions of the <i>Argo</i>'s infrastructure are. We're not even running the drive at half the power it can handle. More power means more thrust, Commander.",
+ "Category": "POWER_SYSTEM",
+ "Description": {
+  "Cost": 0,
+  "Details": "The <i>Argo</i> was intended to operate at a much higher total power throughput than the jury-rigged conduits can manage. With this upgrade we can bring some weapons online that should help us stave of some attackers.",
+  "Icon": "uixSvgIcon_shipUpgrade_power2",
+  "Id": "argoUpgrade_power3",
+  "Name": "High-Capacity Power Conduits",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_EngineeringInnards",
+ "Location": "ENGINEERING",
+ "PurchaseCost": 720000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_power2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_power3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 30
+}

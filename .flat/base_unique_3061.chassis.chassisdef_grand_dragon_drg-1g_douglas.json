@@ -1,0 +1,245 @@
+{
+ "BattleValue": 5383000,
+ "ChassisTags": {
+  "items": [
+   "HeroMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": [
+   {
+    "CategoryID": "Cooling",
+    "DefID": "emod_kit_dhs_royal",
+    "Location": "CenterTorso",
+    "Type": "HeatSink"
+   }
+  ]
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1454387,
+  "Details": "This Grand Dragon 1G model, was the custom 'Mech of Team Banzai MechWarrior Douglas Running-Elk. Simply known as the <b>Douglas</b>, Running-Elk preferred not to run at high temps and had the PPC removed and replaced by an AC/5. The LRM10 was downgraded to an LRM5 model and lastly, all but one Medium Laser was removed and an SRM6 placed in the left arm.",
+  "Icon": "uixTxrIcon_dragon",
+  "Id": "chassisdef_grand_dragon_DRG-1G_douglas",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Grand Dragon",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Grand Dragon"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Stable",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_dragon",
+ "Heatsinks": 0,
+ "InitialTonnage": 6,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "dragon",
+ "PrefabIdentifier": "chrPrfMech_dragonBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher & Brawler",
+ "Tonnage": 60,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "DRG-1G",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Now this one here is interesting. A custom 'Grand Dragon' nearly remade back into a 1N. The pilot was Professor Douglas Running-Elk who was both a MechWarrior and a Scholar. Interesting combination wouldn't you say?\n\nOriginally Running-Elk was merely the driver for Team Banzai's Coolant Truck, when he indirectly captured a Grand Dragon, a first generation 1G model, after saving the life of an enemy Kuritan MechWarrior.\n\nFor saving the life of the Kurita pilot and capturing the 'Grand Dragon', Douglas was promoted to MechWarrior and assigned what would become his personal 'Mech.",
+ "weightClass": "HEAVY"
+}

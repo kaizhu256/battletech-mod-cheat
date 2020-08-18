@@ -1,0 +1,109 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 1.2,
+ "APMaxArmorThickness": 240,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "GAUSS",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_extreme",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 6",
+    "WpnAccuracy: +1",
+    "PipsIgnored: 2",
+    "VariableDmg: 15",
+    "WeaponJAM: 5",
+    "DmgFallOff: 60%",
+    "IsGauss",
+    "WeaponBoom: 80"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/gaussrifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 80,
+   "HeatDamagePerAmmo": 20,
+   "StabilityDamagePerAmmo": 20
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01415"
+  }
+ },
+ "Damage": 80,
+ "DamageVariance": 15,
+ "Description": {
+  "Cost": 425000,
+  "Details": "A Prototype Gauss Rifle from the NAIS, firing a larger and heavier projectile with more force and speed than later production models. It does suffer occasional energy failures and recoil.<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_Gauss_Prototype",
+  "Manufacturer": "NAIS",
+  "Model": "Magnetic Cannon",
+  "Name": "Gauss Rifle",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Prototype Gauss Rifle"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.6,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 2,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 20,
+ "InventorySize": 5,
+ "MaxRange": 900,
+ "MinRange": 180,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  390,
+  780
+ ],
+ "RefireModifier": 6,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 15,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

@@ -1,0 +1,63 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 180,
+ "Description": {
+  "Details": "Wallo has a new shiny \"Toy\" he'd like you to show off to his closest \"friends.\"",
+  "Icon": "uixTxrSpot_MackAttack.png",
+  "Id": "fp_MackAttack",
+  "Name": "Mack Attack"
+ },
+ "Difficulty": 5,
+ "FlashpointDescriberCastDefId": "castDef_UW_bigScore_WalloDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "I have a most interesting and lucrative proposal for you commander.",
+ "InProgressTimeout": 180,
+ "InternalName": "MackAttack",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [
+    "planet_faction_magistracy"
+   ],
+   "tagSetSourceFile": "Tags/PlanetTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_industry_rich",
+    "planet_other_blackmarket",
+    "planet_other_megacity"
+   ],
+   "tagSetSourceFile": "Tags/PlanetTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_MackAttack",
+ "PotentialEmployers": [
+  "SecuritySolutionsInc"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "FP_holdfor_later"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_Item_rare",
+ "TargetFaction": "Unknown",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1
+}

@@ -1,0 +1,46 @@
+{
+ "AdditionalCost": 9000,
+ "AssignedCastDefId": "castDef_SumireDefault",
+ "AssignedCastDescription": "We've reached the limit of weight these engines can handle, Commander. It'll take some time to get them back up to spec.",
+ "Description": {
+  "Cost": 0,
+  "Details": "The Leopard has lost a lot of engine power over the years rusting away. As it stands, getting down to the planet won't be a problem but it'd be a one way trip with the engines in their current state. I help Yang get started of reparing the worst of the damage. <b><color=#F79232>Increases Drop Weight Limit by 50 tons</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_WeightLimit4",
+  "Name": "Engine Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 280000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot2",
+   "argoUpgrade_PilotSlot2",
+   "argoUpgrade_drive2",
+   "argoUpgrade_WeightLimit3",
+   "argoUpgrade_mechBay_machineShop"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_MaxTonnage",
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Weightlimit4"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10,
+ "shipUpgradeCategoryID": "BDDropTonnage"
+}

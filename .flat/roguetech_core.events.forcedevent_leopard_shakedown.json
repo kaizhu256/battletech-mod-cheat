@@ -1,0 +1,188 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "You're on the Leopard's bridge with Sumire, Yang, and Darius for the daily staff briefing. Darius says, \"We received three messages from the banks—\"\r\n\r\n\"Loan sharks,\" Sumire cuts in.\r\n\r\n\"—From the people who are financing us,\" Darius continues. \"They're considering rewriting the terms of our loans, so it will be easier to seize this ship if we miss a payment. As usual, they're only doing this because they believe we can't fight it in court.\"",
+  "Icon": "uixTxrSpot_IncomingTransimission.png",
+  "Id": "forcedevent_leopard_shakedown",
+  "Name": "Shakedown"
+ },
+ "EventType": "UNSELECTABLE",
+ "Options": [
+  {
+   "Description": {
+    "Details": "safe?",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Sweet talk the banks."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"I'll talk to them,\" you say, and the meeting moves on. Afterward, you record a response.\r\n\r\nIn it, you explain, with much gravitas, that you selected each of the banks for their prestige and reliability. You remind them of your impeccable payment history.\r\n\r\nYou conclude by expressing your desire for a long and fruitful financial relationship with them, hinting that you might seek additional loans when your current ones are paid in full.\r\n\r\nA few days later, the banks contact you to say their previous messages were 'sent in error' and should be ignored.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "sweet talk"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_leopard_loan_fair"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "less safe?",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Ignore the messages."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You say, \"We've never missed a payment. They're just probing us to see if we panic.\"\r\n\r\nDarius agrees, but says he will watch for the banks actually making changes to the loan contract. With that, the matter is dropped and the meeting moves on to other topics.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "ignore"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_leopard_loan_fair"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "clever? but unlocked?",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Educate the banks about their mistake."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"I'll deal with it,\" you say. Later, you record a response.\r\n\r\nIn it, you sternly remind your lienholders that as financial institutions operating on Detroit III, they must abide by local contract law. You even cite the relevant sections of legal code from memory.\r\n\r\nThen you point out that, as you've kept records of all payments and correspondence concerning the loans, you will be able to demonstrate in court that their proposed revisions to the agreed-upon terms would represent such a gross violation of the law that you would undoubtedly be awarded a second DropShip at the banks' expense.\r\n\r\nOnce the camera is off, Sumire says, \"There's no way they push you on this. Too bad—I like to see loan sharks grovel.\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "evidence"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_leopard_loan_fair"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

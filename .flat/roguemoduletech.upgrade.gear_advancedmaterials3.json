@@ -1,0 +1,56 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 30,
+ "BonusValueA": "-0.6t",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "Patchwork"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00012"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+    "TechCost": "1.15 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1300000,
+  "Details": "This is a collection of patchwork materials (e.g. ferro-fibrous armour, endo steel structure, or ultralight composites) which provide the same degree of protection at a lighter weight, but at the cost of critical slots. ",
+  "Icon": "metal-scales",
+  "Id": "Gear_AdvancedMaterials3",
+  "Manufacturer": "NAIS",
+  "Model": "Patchwork T3",
+  "Name": "Patchwork Materials T3",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Patchwork Materials T3"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": -0.6,
+ "statusEffects": []
+}

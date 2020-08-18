@@ -1,0 +1,183 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#CB2440",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Inferno: 1",
+    "InternalAmmo: 1",
+    "MissileHP: 2",
+    "IsInfernoRocket: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/rl"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "HeatDamagePerAmmo": 3,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03004"
+  },
+  "Lootable": {
+   "ItemID": "Weapon_LRM_INFERNOLAUNCHER20"
+  }
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 290000,
+  "Details": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>Smokey's Special has 3 salvos.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_QUIRK_INFERNOLAUNCHER20",
+  "Manufacturer": "Death Blossom",
+  "Model": "Rocket Launcher",
+  "Name": "RL20",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "I-RL20"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0225,
+ "HeatDamage": 2,
+ "HeatGenerated": 9,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 2,
+ "MaxRange": 460,
+ "MinRange": 0,
+ "MissileHealth": 2,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  100,
+  200,
+  400
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 20,
+ "StartingAmmoCapacity": 60,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 1.5,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.98",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit is coated with burning chemicals.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_InfernoRLHeat",
+    "Name": "INFERNO"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Subtract",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

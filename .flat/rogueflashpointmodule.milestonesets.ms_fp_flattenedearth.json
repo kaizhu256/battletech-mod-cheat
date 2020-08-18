@@ -1,0 +1,1316 @@
+{
+ "Milestones": [
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_001_Start",
+    "Name": "Start"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [
+       "fp_choice_b",
+       "fp_choice_a"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Flashpoint",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_002_Talk",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_002_Talk",
+    "Name": "Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "OPERATION: FLATTENED EARTH",
+        "High Orbit — Cavalor",
+        "Conference",
+        null
+       ],
+       "value": "5b730bcd6230355c17000041",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_003_BranchForCancel",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_003_BranchForCancel",
+    "Name": "Branch For Cancel"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_500_Cancel-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_004_MissionSim",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_choice_cancel"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_004_MissionSim",
+    "Name": "Mission Sim"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_flattenedEarth_1_assassinate",
+        "Liao",
+        "RazorbackMercs",
+        "7",
+        "ms_fp_flattenedEarth_005_TalkChoice",
+        null,
+        null
+       ],
+       "value": "mapGeneral_frigidSteppes_iTnd",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_005_TalkChoice",
+    "Name": "Talk Choice"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "OPERATION: FLATTENED EARTH II",
+        "High Orbit — Cavalor",
+        "Conference",
+        null
+       ],
+       "value": "5b730be56230355c1700004b",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_006_Branch",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_006_Branch",
+    "Name": "Branch"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_100_A-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_a"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_200_B-Mission",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_b"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_100_A-Mission",
+    "Name": "A-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_flattenedEarth_a1_simpleBattle",
+        "Liao",
+        "RazorbackMercs",
+        "7",
+        "ms_fp_flattenedEarth_101_A-Mission",
+        null,
+        null
+       ],
+       "value": "mapGeneral_taigaRiver_iTnd",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_101_A-Mission",
+    "Name": "A-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_StartContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_flattenedEarth_a2_destroyBase",
+        "Liao",
+        "RazorbackMercs",
+        "7",
+        "ms_fp_flattenedEarth_102_A-Talk",
+        null,
+        null
+       ],
+       "value": "mapGeneral_frostySlopes_iTnd",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_102_A-Talk",
+    "Name": "A-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "OPERATION: FLATTENED EARTH III",
+        "High Orbit — Cavalor",
+        null,
+        null
+       ],
+       "value": "5b730bf96230355c17000055",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_103_A-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_103_A-Complete",
+    "Name": "A-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_104_A-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_flattenedEarth_complete",
+       "flashpoint_flattenedEarth_a"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_104_A-Reward",
+    "Name": "A-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "1000000",
+       "valueConstant": null
+      },
+      {
+       "name": "Reputation.Liao",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "9",
+       "valueConstant": null
+      },
+      {
+       "name": "Morale",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "-5",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_200_B-Mission",
+    "Name": "B-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_AddContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_flattenedEarth_b1_simpleBattle",
+        "RazorbackMercs",
+        "Liao",
+        "7",
+        "ms_fp_flattenedEarth_201_B-Mission",
+        null,
+        null,
+        null
+       ],
+       "value": "mapGeneral_frostySlopes_iTnd",
+       "valueConstant": null
+      },
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": [
+        "BaseFlashpoint"
+       ],
+       "value": "Contract",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_201_B-Mission",
+    "Name": "B-Mission"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_StartContract",
+       "additionalValues": [
+        "",
+        "",
+        "c_fp_flattenedEarth_b2_captureEscort",
+        "RazorbackMercs",
+        "Liao",
+        "7",
+        "ms_fp_flattenedEarth_202_B-Talk",
+        null,
+        null,
+        null
+       ],
+       "value": "mapGeneral_sunkenHills_iTnd",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_202_B-Talk",
+    "Name": "B-Talk"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_StartConversation",
+       "additionalValues": [
+        "OPERATION: FLATTENED EARTH III",
+        "High Orbit — Cavalor",
+        null,
+        null
+       ],
+       "value": "5b730bf96230355c17000055",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_203_BranchForSellout",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": null,
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_203_BranchForSellout",
+    "Name": "Branch For Sellout"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_400_C-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [
+        "fp_choice_c"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    },
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_SetNextMilestone",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_300_B-Complete",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [
+        "fp_choice_c"
+       ],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Flashpoint"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_300_B-Complete",
+    "Name": "B-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_301_B-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_flattenedEarth_complete",
+       "flashpoint_flattenedEarth_b"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_301_B-Reward",
+    "Name": "B-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "2000000",
+       "valueConstant": null
+      },
+      {
+       "name": "Reputation.Liao",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "-12",
+       "valueConstant": null
+      },
+      {
+       "name": "Morale",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "5",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_400_C-Complete",
+    "Name": "B-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": null,
+       "value": "ms_fp_flattenedEarth_401_C-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_flattenedEarth_complete",
+       "flashpoint_flattenedEarth_c"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_401_C-Reward",
+    "Name": "B-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": null,
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": null,
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "Reputation.Liao",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "-6",
+       "valueConstant": null
+      },
+      {
+       "name": "Morale",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "5",
+       "valueConstant": null
+      },
+      {
+       "name": "Funds",
+       "set": false,
+       "typeString": "System.Int32",
+       "value": "2000000",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "flashpoint",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_500_Cancel-Complete",
+    "Name": "Cancel-Complete"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [
+      {
+       "Type": "System_ForceDropshipRoom",
+       "additionalValues": null,
+       "value": "Ship",
+       "valueConstant": null
+      },
+      {
+       "Type": "Flashpoint_CompleteFlashpoint",
+       "additionalValues": [
+        "itemCollection_loot_none",
+        "CompletedWithoutReward"
+       ],
+       "value": "ms_fp_flattenedEarth_501_Cancel-Reward",
+       "valueConstant": null
+      }
+     ],
+     "AddedTags": {
+      "items": [
+       "flashpoint_flattenedEarth_complete",
+       "flashpoint_flattenedEarth_cancel"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  },
+  {
+   "Description": {
+    "Details": "Extra rewards, including Reputation and bonus C-Bills go here",
+    "Icon": null,
+    "Id": "ms_fp_flattenedEarth_501_Cancel-Reward",
+    "Name": "Cancel-Reward"
+   },
+   "InvokeChance": 0,
+   "Repeatable": false,
+   "Requirements": [],
+   "Results": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": {
+      "ExclusionTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": [],
+      "RequirementTags": {
+       "items": [],
+       "tagSetSourceFile": ""
+      },
+      "Scope": "Company"
+     },
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [],
+     "TemporaryResult": false
+    }
+   ],
+   "Scope": "Company",
+   "UseRandomInvocation": false
+  }
+ ],
+ "StartingMilestoneID": "ms_fp_flattenedEarth_001_Start"
+}

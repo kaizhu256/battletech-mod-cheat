@@ -1,0 +1,102 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "MeleeWeapon.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "NoUniqueCheck": true,
+   "presistantVFX": {
+    "VFXPrefab": "vfxPrfPrtl_miningSmokePlume_sm_loop",
+    "VFXScaleX": 0.5,
+    "VFXScaleY": 0.5,
+    "VFXScaleZ": 0.5
+   }
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 2",
+    "WpnAccuracy: -1",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 9,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 50000,
+  "Details": "Agricultural 'Mechs use arm-mounted Chainsaws to fell trees and harvest timber. In an emergency these giant saws can be used against 'Mechs in melee combat. Like all Industrial weapons, Chainsaws suffer a small inherent penalty to hit.",
+  "Icon": "uixSvgIcon_weapon_Support",
+  "Id": "Weapon_Industrial_Chainsaw",
+  "Manufacturer": "Bunyan",
+  "Model": "Logger",
+  "Name": "Chainsaw",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Chainsaw"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 5,
+ "InventorySize": 1,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 5,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": [],
+ "weaponCategoryID": "SpecialMelee"
+}

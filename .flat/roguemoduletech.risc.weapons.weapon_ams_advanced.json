@@ -1,0 +1,162 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AntiMissile",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": true,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#800000",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AdvAMS",
+    "AMSDmg: 1",
+    "AMSAcc: 50%",
+    "AMSShots: 25",
+    "AMSHeat: 6",
+    "OLAMSMULTI",
+    "OLAMSAcc: 65%",
+    "OLAMSShots: 35",
+    "OLAMSHeat: 6",
+    "OLAMSJam: 30%",
+    "AMSDirectMG: 25"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "w/s/a/ams"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00025"
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1330000,
+  "Details": "The 'Iron Dome' Advanced Point Defense System, which is also known as APD or APDS, is an Anti-Missile System designed to protect multiple units from incoming missile fire, capable to blanket the sky with a shroud of metal.  \n\n<b><color=#ffcc00>Uses AMS Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_AMS_Advanced",
+  "Manufacturer": "RISC",
+  "Model": "Iron Dome",
+  "Name": "Adv. AMS",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "Adv. AMS"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 2,
+ "MaxRange": 220,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 1,
+   "AMSHitChance": 0.5,
+   "AMSShootsEveryAttack": false,
+   "HeatGenerated": 6,
+   "Id": "On",
+   "IsAAMS": true,
+   "IsAMS": true,
+   "ShotsWhenFired": 25,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 1,
+   "AMSHitChance": 0.65,
+   "AMSShootsEveryAttack": true,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "HeatGenerated": 6,
+   "Id": "Overload",
+   "IsAAMS": true,
+   "IsAMS": true,
+   "ShotsWhenFired": 35,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  },
+  {
+   "DamagePerShot": 1,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.0375,
+   "HeatGenerated": 20,
+   "Id": "MG",
+   "ShotsWhenFired": 25,
+   "UIName": "MG",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  110,
+  160
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 3,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": []
+}

@@ -1,0 +1,261 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Injuries",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": "0"
+    }
+   ],
+   "RequirementTags": {
+    "items": [
+     "commander_youth_accident"
+    ],
+    "tagSetSourceFile": "Tags/CommanderTags"
+   },
+   "Scope": "Commander"
+  },
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_pop_none"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "While planetside with Darius, networking for more contracts, the two of you stop off in a tavern for a drink.\r\n\r\nWhen you see the painting hanging above the bar, the rest of the world suddenly goes still and out-of-focus. A majestic Blackjack BJ-1 gazes down at you, straddling the horizon, its twin autocannons smoking. There's no mistaking your family's ancestral crest on the chassis.\r\n\r\nThe last time you saw this work of art, it was at an auction, being sold to pay off your family's debts.",
+  "Icon": "uixTxrSpot_HiringHall.png",
+  "Id": "event_co_thePast_Accident",
+  "Name": "A Painting of the Past"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "[¢25,000]",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Buy the painting."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 25000,
+       "valueConstant": "25000"
+      }
+     ],
+     "RequirementTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "The owner of the tavern called \"The Blackjack's Beer\" unsurprisingly resists selling the painting. But between your passionate appeals and Darius's persuasive negotiating style, you eventually wear her down.\r\n\r\nThe next day, back on the <i>Argo</i>, you lead a pair of technicians all over the Mech Bay, trying to find the perfect spot to hang it.\r\n\r\nYang looks on appreciatively. \"She's a fine 'Mech, Commander. That painting really captures her spirit. And… is it my imagination? But it seems like those autocannons are following me, no matter where I move…\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "You buy it"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_thePast_Accident"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-25000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "steal option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Steal the painting."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Having given up on dissuading you, Darius backs your play. That night, a lone security guard stumbles upon your impromptu burglary just as you remove the painting from its moorings on the wall. Seeing Darius pointing a gyroslug rifle in her direction, she quickly retreats.\r\n\r\nThe next day, back on the <i>Argo</i>, you lead a pair of technicians all over the Mech Bay, trying to find the perfect spot to hang it.\r\n\r\nDarius looks on appreciatively. \"Commander. I'm glad we didn't have to hurt anyone to put that painting where it belongs. Though it's strange how those autocannons seem to follow me, no matter where I move…\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "You steal it"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_thePast_Accident"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "let it go option",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Let the past go."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "After you finish telling Darius the entire story about the painting, he rests a hand on your shoulder. \"The past is the past. We can't change it, but we can remember it.\" He raises a glass and together you toast the painting hanging overhead.\r\n\r\n\"She's a fine 'Mech, Commander. And… is it my imagination? But it seems like those autocannons are following me, no matter where I move…\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_thePast_Accident"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_co_thePast_Accident"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Travel",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 100
+}

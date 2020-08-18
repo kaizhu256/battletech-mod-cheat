@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "LeftTorso",
+ "BonusValueA": "* Ignores 3 Evasion",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Description": {
+  "Cost": 0,
+  "Details": "The Assassin's unique Intercept System makes the 'Mech an unparalleled hunter-killer against lighter units. Its highly specialized predictive trajectory tracking allows it to ignore 3 EVASIVE charges on its targets.",
+  "Icon": "UixSvgIcon_specialEquip_System",
+  "Id": "Gear_General_Intercept_System",
+  "Manufacturer": "Garret",
+  "Model": "",
+  "Name": "Intercept System",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Intercept System"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit ignores [AMT] charges of EVASIVE when attacking targets.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-IntSys-IgnoreEvasion3",
+    "Name": "INTERCEPT SYSTEM"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "3",
+    "operation": "Float_Add",
+    "statName": "EvasivePipsIgnored",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

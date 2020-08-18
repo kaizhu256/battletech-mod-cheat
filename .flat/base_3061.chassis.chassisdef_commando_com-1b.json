@@ -1,0 +1,221 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 25,
+ "DFAInstability": 13,
+ "DFASelfDamage": 25,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 337500,
+  "Details": "The Large Laser mounted by most 1B models is nothing to sniff at, but it lacks the close-up impact of the SRMs it replaces. Best to keep these units at range for flanking and spotting.",
+  "Icon": "uixTxrIcon_commando",
+  "Id": "chassisdef_commando_COM-1B",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Commando",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Commando"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Narrow_Low_Profile",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_commando",
+ "Heatsinks": 0,
+ "InitialTonnage": 2.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 13,
+ "MeleeInstability": 7,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "commando",
+ "PrefabIdentifier": "chrPrfMech_commandoBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Light Sniper & Scout",
+ "Tonnage": 25,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "COM-1B",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Large Laser mounted by most 1B models is nothing to sniff at, but it lacks the close-up impact of the SRMs it replaces. Best to keep these units at range for flanking and spotting.",
+ "weightClass": "LIGHT"
+}

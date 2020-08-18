@@ -1,0 +1,155 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "Dr. Murad rewinds and restarts the video. The time stamp says 2:38am. Seven wet, naked bodies come flying out of the new Low-G pool installation and into the hall: four women, three men, all laughing and bouncing off each other.\r\n\r\n\"Well, this is way more nudity than I was prepared to see this morning,\" Sumire says.\r\n\r\nYang laughs, \"Seriously! How I am supposed to work with those people now?\"\r\n\r\nAt this point, Sumire begins cracking up. \"Too true.\"\r\n\r\nDr. Murad is still deadly serious. \"Well, Commander? What are we going to do about this?\"",
+  "Icon": "uixTxrSpot_LowGPool.png",
+  "Id": "event_co_poolSkinnyDipping",
+  "Name": "Skinny Dipping"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "One option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Erase the recording."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"Look, I'm willing to pretend that I never saw this recording. We're all adults on this ship. To be honest, I'd rather have 'naked swim night' than clean up blood and teeth after another fight. If this is how they want to blow off steam, so be it. Outside of maybe posting a sign that says 'No Running While Wet', let's just erase it and get on with real business.\"\r\n\r\nYang and Sumire put on their serious faces and everybody nods. Darius hits a button. \"All done.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_poolSkinnyDipping"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Other option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Address the crew."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Your voice echoes through the <i>Argo</i>. \"Attention, all crew and MechWarriors, this is your Commander. The leadership staff is very excited that the Low-G pool is getting used so frequently. At all hours, even. We expected you would use the pool to keep in shape during system travel, but it's also been a boon to morale.\"\r\n\r\n\"To that end, I wish to point out that there is a camera in the hallway just outside the door to the pool. Please wear appropriate swimwear at all times.\"\r\n\r\nEchoing down the hallways and through the vent shafts comes a single mortified voice. \"Oh my God!\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Morale boost"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_poolSkinnyDipping"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_co_poolSkinnyDipping"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "argo_rec_pool"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 100
+}

@@ -1,0 +1,65 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Journey with the Grey Death Legion",
+  "Icon": "fg_titlecard.png",
+  "Id": "fp_fightingGhosts",
+  "Name": "Fighting Ghosts"
+ },
+ "Difficulty": 7,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "MEDIUM",
+ "FlashpointShortDescription": "Steiner is planning to invade Altais and they will leverage Gray Death Legion to secure the beachhead. Grayson Carlyle has offered us to participate in the operation. For a reward.",
+ "InProgressTimeout": 0,
+ "InternalName": "fightingGhosts",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [
+    "fp_finished_fightingGhosts"
+   ],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_fightingGhosts",
+ "PotentialEmployers": [
+  "GrayDeathLegion"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_fightingGhosts_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_birthOfALegend_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_Weapons_SLDF_rare",
+ "Tags": {
+  "items": [],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "Kurita",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 50
+}

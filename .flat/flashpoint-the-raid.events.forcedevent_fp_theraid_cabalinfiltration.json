@@ -1,0 +1,440 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "Darius pulls up beside you in a hurry. \"We just lost a lifeboat and one of our MedTechs is missing, along with months of supplies.\"\r\n\r\nDarius frowns. \"Maybe a sleeper for the Black Market. I pulled up the Tech's files, background is clean, maybe too clean. I'm stepping up security with a buddy system, extra guard shifts and augmenting our lookouts immediately. Farah's crew will conduct interior patrols. We can't afford to use our MechWarriors, who should I pull to help monitor the exterior sensors?\"",
+  "Icon": "uixTxrSpot_VentilationGrate.png",
+  "Id": "forcedevent_FP_theRaid_cabalInfiltration",
+  "Name": "Cabal Infiltration"
+ },
+ "EventType": "UNSELECTABLE",
+ "Options": [
+  {
+   "Description": {
+    "Details": "MechTech and MedTechs go on duty.",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Assign everyone guard duty."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius provides an update. \"I got a little creative with the shifts.\"\r\n\r\nHe hesitates for a moment. \"That said, both our repair and medical facilities will be operating on skeleton crews. We're ready for another surprise attack or inside job. Commander, we can't keep this up forever. We need to finish this fight before it finishes us.\"",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "Darius orders everyone to help with guard duty."
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 10,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        },
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Assign the Medical Staff guard duty."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius nods, and makes the order.\r\n\r\n\"I'll brief the medical staff, it's not their job but we need to survive. Injuries are going to heal slowly, but we'll be alive to treat our wounds. We can't keep getting hit like this Commander, we need to end this fight ASAP.\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "Small hit to MedTechSkill"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 10,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Darius nods, and makes the order.\r\n\r\n\"I'll brief the medical staff, it's not their job but we need to survive. Injuries are going to heal slowly, but we'll be alive to treat our wounds. We can't keep getting hit like this Commander, it's making our MechWarriors talk about leaving. We need to end this fight ASAP.\"",
+      "Icon": null,
+      "Id": "outcome_1_1",
+      "Name": "Small hit to MedTech skill and morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 10,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Assign Yang's staff guard duty."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius nods, and makes the order.\r\n\r\n\"I'll brief Yang and his staff. The surprise attack is still fresh in their minds, so they'll be vigilant. Repairs are already going slowly, but we'll be alive to repair our damages. We can't keep getting hit like this Commander, we need to end this fight ASAP.\"",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "Small hit to MechTechSkill"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 10,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Darius nods, and makes the order.\r\n\r\n\"I'll brief Yang and his staff. The surprise attack is still fresh in their minds, so they'll be vigilant. Repairs are already going slowly, but we'll be alive to repair our damages. We can't keep getting hit like this Commander, it's making our MechWarriors talk about leaving. We need to end this fight ASAP.\"",
+      "Icon": null,
+      "Id": "outcome_2_1",
+      "Name": "Small hit to MechTech skill and morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 10,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": null,
+    "Id": "outcome_3",
+    "Name": "Direct Darius to keep everyone focused finishing this contract."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius provides an update. \"I told everyone what you told me, the best way to prevent more attacks is focusing to keep our 'Mechs and MechWarriors as ready to go.\"\r\n\r\nHe looks down. \"We can't keep this up forever Commander, the MechWarriors are already starting to talk about abandoning this endeavor. We need to finish this fight before we are attacked again.\"",
+      "Icon": null,
+      "Id": "outcome_3_0",
+      "Name": "Focus on the job at hand."
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 10,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "MedTechSkill",
+    "op": "GreaterThanOrEqual",
+    "val": 2,
+    "valueConstant": "2"
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

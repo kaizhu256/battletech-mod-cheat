@@ -1,0 +1,479 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "Auras": [
+  {
+   "AllyStealthAffection": "PositiveOne",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "Id": "Gear_ZECM_ECM",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": true,
+   "Name": "ECM",
+   "Range": 120,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#00f2ff",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "IPSUM SUCKUM",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_SHIELD",
+      "Name": "ECM_Shield_Athena"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_SHIELD_EMITTER_COUNT",
+      "Name": "ECM Shield Emitter Count"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD_EMITTER_COUNT"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "NegativeOne",
+   "HideOnNotSelected": false,
+   "Id": "Gear_ZECM_ECM_JAMMER",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "JAMMER",
+   "Range": 400,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#0066ff",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Jamming ECM, reduces sensor checks for enemies in field",
+      "Icon": "uixSvgIcon_action_sensorlock",
+      "Id": "LV_ECM_JAM",
+      "Name": "ECM Jammer"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1,
+      "uniqueEffectIdStackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "4",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAMMED"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Counter for the number of ECM emitters currently affecting an actor with jamming.",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_JAM_EMITTER_COUNT",
+      "Name": "ECM Jamming Emitter Count"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAM_EMITTER_COUNT"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "Breaching Shot",
+ "BonusValueB": "",
+ "ComponentSubType": "Prototype_ElectronicWarfare",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "ElectronicCounterMeasures",
+   "lv-shares-sensors"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Sensors: +20%",
+    "Sight: +15%",
+    "Signature: -35%",
+    "Visibility: -35%",
+    "Initiative: +1",
+    "IsECM: 1, 120",
+    "Jammer: 4, 400",
+    "IsProbe: 1",
+    "AdvancedSensors: 2",
+    "CockpitEWS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitSensors"
+   },
+   {
+    "CategoryID": "ECM"
+   },
+   {
+    "CategoryID": "Probe"
+   },
+   {
+    "CategoryID": "AdvECM"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00019"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Sensors_EWS"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 250000,
+  "Details": "A Electronic Warfware suite married to a targeting computer and Missile Targeting System, but cannot be used with any other TTS, Artemis or C3 System.",
+  "Icon": "EWS",
+  "Id": "Gear_EWS_Athena",
+  "Manufacturer": "Deadly Sins",
+  "Model": "Missile EWS",
+  "Name": "Athena Warfare Suite",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Athena EWS"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduces effectiveness of stealthed and ECM shielded units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_PROBE_CARRIER",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_CARRIER"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides detailed information on enemy units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ADVANCED_SENSORS",
+    "Name": "Advanced Sensors"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increased Sight/Sensors",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "BloodhoundProbe",
+    "Name": "Bloodhound Probe"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by 50m.",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "BAP-Spotting_Gain-T1",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Comms",
+    "Id": "CockpitInitativeEffect",
+    "Name": "CockpitTechBonus"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Active Null Signature Systems reduce visibility and grant Bulwark.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Angel-Signature_Decrease_45",
+    "Name": "Null Signature Systems"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.65",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a +2 difficulty to hit bonus.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "Angel-visi",
+    "Name": "Active Stealth Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.65",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

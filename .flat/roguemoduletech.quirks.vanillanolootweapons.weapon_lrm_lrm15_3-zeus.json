@@ -1,0 +1,116 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.031,
+ "APMaxArmorThickness": 30,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "+1Accuracy . +1 Dmg",
+ "BonusValueB": "+1 Evasion Ignore.",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant3",
+   "range_very-long",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WeaponJAMFlat: 10%",
+    "ZeusLRM",
+    "IsLRM",
+    "Indirect",
+    "DoesCluster"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/l/lrm"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03013"
+  }
+ },
+ "Damage": 6,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 290000,
+  "Details": "LRM15 Long-Range Missile racks deal substantial damage and stability impact over distance, often found in pairs on indirect-fire support units. Like all LRMs, LRM15s are capable of indirect fire over obstacles and terrain with the benefit of a spotter unit. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle Hot-Loading. (HL) missiles have no minimum range but can Misfire, damaging the launcher.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Weapon_LRM_LRM15_3-Zeus",
+  "Manufacturer": "Zeus",
+  "Model": "Long-Range Missile Launcher",
+  "Name": "LRM15 Zeus (Deprecated)",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "LRM15 Zeus (Deprecated)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.005,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 5,
+ "GunneryJammingMult": 0.015,
+ "HeatDamage": 0,
+ "HeatGenerated": 12,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1.25,
+ "InventorySize": 3,
+ "MaxRange": 840,
+ "MinRange": 180,
+ "MissileVolleyIntervalMultiplier": 3.1,
+ "MissileVolleySize": 15,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "Id": "STD",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AccuracyModifier": 1,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "Id": "Hotload",
+   "MinRange": -180,
+   "UIName": "HL",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm15",
+ "ProjectileSpeedMultiplier": 1.1,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 15,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 7,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM15",
+ "WeaponSubType": "LRM15",
+ "statusEffects": []
+}

@@ -1,0 +1,277 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-1.60-1.67-1.61",
+   "Superheavy"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 200,
+ "DFAInstability": 100,
+ "DFASelfDamage": 200,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 4690179,
+  "Details": "The most obscene mech to date, this... Abomination has double Rotary Gauss Rifle, theorized previously on the Project Omega TRO , with inmense fire power at long ronge.",
+  "Icon": "RACzilla_II",
+  "Id": "chassisdef_raczilla_ii_LVT-RACZII",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Leviathan",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Leviathan"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Gear_Cockpit_Cripple",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Head",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Distracting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_marauder",
+ "Heatsinks": 0,
+ "InitialTonnage": 39,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 32,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 170,
+   "InventorySlots": 13,
+   "Location": "LeftArm",
+   "MaxArmor": 340,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 210,
+   "InventorySlots": 15,
+   "Location": "LeftTorso",
+   "MaxArmor": 420,
+   "MaxRearArmor": 210,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 320,
+   "InventorySlots": 16,
+   "Location": "CenterTorso",
+   "MaxArmor": 640,
+   "MaxRearArmor": 320,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 210,
+   "InventorySlots": 15,
+   "Location": "RightTorso",
+   "MaxArmor": 420,
+   "MaxRearArmor": 210,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 170,
+   "InventorySlots": 13,
+   "Location": "RightArm",
+   "MaxArmor": 340,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 210,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 420,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 210,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 420,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 100,
+ "MeleeInstability": 50,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_superheavy",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "marauder",
+ "PrefabIdentifier": "chrPrfMech_marauderBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 250,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Super Heavy BRRRT",
+ "Tonnage": 200,
+ "TopSpeed": 64,
+ "TurnRadius": 290,
+ "VariantName": "LVT-RACZII",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The most obscene mech to date, this... Abomination has double Rotary Gauss Rifle, theorized previously on the Project Omega TRO , with inmense fire power at long ronge.",
+ "weightClass": "ASSAULT"
+}

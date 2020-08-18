@@ -1,0 +1,239 @@
+{
+ "BattleValue": 3087000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 35,
+ "DFAInstability": 18,
+ "DFASelfDamage": 35,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 638208,
+  "Details": "The 2E Firebee mounts a Star Cutter 80cm Large Laser, giving it respectable firepower. Up close, four Maui Crossbow SRM-2 launcher can unleash eight missiles. Whether it is using Inferno rounds or not, something that its two tons of ammunition allows MechWarriors to utilize on a regular basis, the Firebee is a potent anti-vehicle platform.",
+  "Icon": "Firebee",
+  "Id": "chassisdef_firebee_FRB-2E",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Firebee",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Firebee"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Combat_Computer",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_firebee",
+ "Heatsinks": 0,
+ "InitialTonnage": 3.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 4,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 4,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 1
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 18,
+ "MeleeInstability": 9,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "firebee",
+ "PrefabIdentifier": "chrprfmech_firebeebase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper & Light Brawler",
+ "Tonnage": 35,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "FRB-2E",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The 2E Firebee mounts a Star Cutter 80cm Large Laser, giving it respectable firepower. Up close, four Maui Crossbow SRM-2 launcher can unleash eight missiles. Whether it is using Inferno rounds or not, something that its two tons of ammunition allows MechWarriors to utilize on a regular basis, the Firebee is a potent anti-vehicle platform.",
+ "weightClass": "LIGHT"
+}

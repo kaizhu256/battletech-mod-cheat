@@ -1,0 +1,339 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [
+   "mech_no_stability",
+   "heat_damage_to_normal",
+   "ProtoMech",
+   "mr-resize-0.7"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  }
+ },
+ "DFADamage": 2,
+ "DFAInstability": 1,
+ "DFASelfDamage": 2,
+ "DFAToHitModifier": -5,
+ "Description": {
+  "Cost": 280800,
+  "Details": "This Oscar has been viciously torn apart by pirates in a attempt to fit one of thier broken pieces of weaponry in.",
+  "Icon": "uixTxrIcon_urbanmech",
+  "Id": "chassisdef_oscar_Oscar-P",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Oscar",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Oscar"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_kit_cdhs_protomech",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_protocore_004",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Engine_Heatsinks",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Proto_UL_P",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_armorslots_proto",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_structureslots_standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_Proto",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "Head",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_proto",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Weapon_Autocannon_ProtoAC5_JuryRigged",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightArm",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_urbanmech",
+ "Heatsinks": 0,
+ "InitialTonnage": 0.2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 5,
+   "Location": "Head",
+   "MaxArmor": 15,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 5,
+   "InventorySlots": 5,
+   "Location": "LeftArm",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 6,
+   "Location": "LeftTorso",
+   "MaxArmor": 6,
+   "MaxRearArmor": 3,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 13,
+   "Location": "CenterTorso",
+   "MaxArmor": 6,
+   "MaxRearArmor": 3,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 6,
+   "Location": "RightTorso",
+   "MaxArmor": 6,
+   "MaxRearArmor": 3,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 5,
+   "InventorySlots": 5,
+   "Location": "RightArm",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 5,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 10,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 1,
+ "MeleeInstability": 0.5,
+ "MeleeToHitModifier": -4,
+ "MovementCapDefID": "movedef_protomech",
+ "PathingCapDefID": "pathingdef_ultralight",
+ "PrefabBase": "urbanmech",
+ "PrefabIdentifier": "chrPrfMech_urbanmechBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1.2,
+ "Signature": -0.9,
+ "SpotterDistanceMultiplier": 1.1,
+ "Stability": 700,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Scout",
+ "Tonnage": 2,
+ "TopSpeed": 65,
+ "TurnRadius": 360,
+ "VariantName": "Oscar-P",
+ "VisibilityMultiplier": 0.3,
+ "YangsThoughts": "This Oscar has been viciously torn apart by pirates in a attempt to fit one of thier broken pieces of weaponry in.",
+ "weightClass": "LIGHT"
+}

@@ -1,0 +1,99 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 12 Initiative for this unit",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Initiative: +12"
+   ]
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00023"
+  }
+ },
+ "Description": {
+  "Cost": 940000,
+  "Details": "Gives the unit deploying this +12 initiative.",
+  "Icon": "uixSvgIcon_special_Equipment",
+  "Id": "Gear_General_Robinson_TG120_Drive_Train",
+  "Manufacturer": "Robinson Standard BattleWorks",
+  "Model": "TG 120",
+  "Name": "Robinson Standard BattleWorks TG 120 Improved Drive Train",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Drive Train"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Provides a [INVERSE_AMT] bonus to Unit Initiative.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Initiative_Gain-B2000",
+    "Name": "UNIT INITIATIVE INCREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "-12",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

@@ -1,0 +1,243 @@
+{
+ "BattleValue": 1892000,
+ "ChassisTags": {
+  "items": [
+   "Primitive"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Mackie"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 100,
+ "DFAInstability": 50,
+ "DFASelfDamage": 100,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2489226,
+  "Details": "The initial prototype Mackie was designated the MSK-5S, and carried a slightly different weapons load than the production model MSK-6S. Using an Autocannon/5 in the right arm instead of the AC/10, the MSK-5S also mounted a Large Laser in the center torso, rather than the twin Medium Lasers, and had two more heat sinks. Twenty tons of Primitive Armor protected the first generation Mackie. This armor, though heavier, provided less protection than later models. The MSK-5S was used by Colonel Kincaid in his now-famous combat trial versus the Merkava tanks.",
+  "Icon": "mackie",
+  "Id": "chassisdef_mackie_MSK-5S",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Mackie",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Mackie"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_mackie",
+ "Heatsinks": 0,
+ "InitialTonnage": 10,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 160,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 320,
+   "MaxRearArmor": 160,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "mackie",
+ "PrefabIdentifier": "chrprfmech_mackiebase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 80,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Granddady Mech",
+ "Tonnage": 100,
+ "TopSpeed": 65,
+ "TurnRadius": 220,
+ "VariantName": "MSK-5S",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The initial prototype Mackie was designated the MSK-5S, and carried a slightly different weapons load than the production model MSK-6S. Using an Autocannon/5 in the right arm instead of the AC/10, the MSK-5S also mounted a Large Laser in the center torso, rather than the twin Medium Lasers, and had two more heat sinks. Twenty tons of Primitive Armor protected the first generation Mackie. This armor, though heavier, provided less protection than later models. The MSK-5S was used by Colonel Kincaid in his now-famous combat trial versus the Merkava tanks. .",
+ "weightClass": "ASSAULT"
+}

@@ -1,0 +1,70 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Swarm",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LRMDamage: -50%",
+    "AreaOfEffect: 30",
+    "AreaOfEffectDmg: 2",
+    "DFMissileAcc: -2",
+    "WpnCrits: -80%",
+    "MissileHP: 2",
+    "Swarm",
+    "NoAA",
+    "LRMAmmo: 120"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  },
+  "TRGBColor": {
+   "Color": "#FAF43C",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 50000,
+  "Details": "The Swarm Missile System carries a Payload of Small Bomblets, instead of a conventional LRM Warhead, that showers a target Area with explosives. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Swarm_LRM",
+  "Manufacturer": "Generic",
+  "Model": "LRM",
+  "Name": "LRM Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM Swarm"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

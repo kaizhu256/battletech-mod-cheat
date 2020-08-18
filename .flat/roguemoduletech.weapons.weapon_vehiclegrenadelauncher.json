@@ -1,0 +1,91 @@
+{
+ "AMSImmune": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 40,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AlternateDamageCalc": false,
+ "AmmoCategory": "MORTAR",
+ "AttackRecoil": 1,
+ "BattleValue": 25,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: +1",
+    "Indirect",
+    "NoAA",
+    "IsMortar"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/mortar"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03011"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 80000,
+  "Details": "Based on the weapon used by infantry for centuries, the Grenade Launcher fires a small shell in a high arc that falls onto the target.\n\n <b><color=#ffcc00>Uses Mortar Ammo.</color></b>",
+  "Icon": "mortar",
+  "Id": "Weapon_VehicleGrenadeLauncher",
+  "Manufacturer": "Valiant",
+  "Model": "Grenade",
+  "Name": "Grenade Launcher",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Grenade Launcher"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 1,
+ "HitGenerator": "Cluster",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 2,
+ "InventorySize": 1,
+ "MaxRange": 840,
+ "MinRange": 180,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC2",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "SpreadRange": 30,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 1,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "AC2",
+ "statusEffects": []
+}

@@ -1,0 +1,246 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [
+   "SLDFMech",
+   "mr-resize-0.94"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Shootist"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 70,
+ "DFAInstability": 35,
+ "DFASelfDamage": 70,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1661934,
+  "Details": "The Shootist first saw service in 2621 as a heavily armored, electronic warfare-capable command 'Mech for SLDF Royal BattleMech Regiments. However, the Shootist's upgraded electronic suites proved no match for the cutting edge of electronic warfare of its own time. When the BattleMaster eclipsed the Shootist in its intended role as a command vehicle merely ten years after its introduction, the SLDF changed the Shootist's mission parameters. The Shootist's balanced mix of weapons and speed, and its heavy armor allowed it a new role: juggernaut for close-combat heavy lances, and later, a bodyguard unit for command lances. This role never proved favorable to the longevity of the Shootist; since the Succession Wars, this BattleMech is rarely seen outside of the ComGuards, Word of Blake Militia, and ancient Clan Brian Caches.",
+  "Icon": "Shootist",
+  "Id": "chassisdef_shootist_ST-8A",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Shootist",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Shootist"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Command_Mech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_battlemaster",
+ "Heatsinks": 0,
+ "InitialTonnage": 7,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 110,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 220,
+   "MaxRearArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 35,
+ "MeleeInstability": 18,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "battlemaster",
+ "PrefabIdentifier": "chrPrfMech_battlemasterBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Juggernaut",
+ "Tonnage": 70,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "ST-8A",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Shootist has a top speed of 64.8 km/h, giving it an average level of mobility for a heavy 'Mech. The 'Mech has thirteen double heat sinks that allow the Shootist to dissipate the waste heat that is produced by its heavy weapons payload. The Shootist carries twelve tons of MV Ferro-Fibrous armor with CASE to protect the 'Mech in the event of an ammunition explosion. The Shootist is armed to engage an enemy at various ranges. The only long-range weapon on the 'Mech is a Blankenburg ER Large Laser that has an effective range of five hundred and seventy meters. For medium to close range combat, the Shootist carries a devastating Deathgiver Autocannon/20 which is capable of downing most light and even some medium 'Mechs in a single salvo. Finally, for point blank defense, the 'Mech has two Blankenburg Medium Pulse Lasers and a Dinatech Mark III Small Laser.",
+ "weightClass": "HEAVY"
+}

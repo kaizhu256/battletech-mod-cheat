@@ -1,0 +1,112 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LAM-Turbine"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LamTurbine: 1.4, 1",
+    "MinWeightJJ: 5",
+    "MaxWeightJJ: 55",
+    "MaxCountJJ: 1.5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LAMTurbine"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 240000,
+  "Details": "A salvaged Land Air Mech Jet Turbine. Allows traversing large distances in mere moments.",
+  "Icon": "turbine",
+  "Id": "Gear_JumpJet_LAM_Standard",
+  "Manufacturer": "LexaTech",
+  "Model": "Meteor IX",
+  "Name": "LAM Turbine",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "LAM Turbine"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 1,
+ "JumpCapacity": 1.4,
+ "MaxTonnage": 55,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0.75,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Max Jump Jet Amount per Walk MP",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpAmount",
+    "Name": "Jump Jet Amount"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Set",
+    "statName": "JumpJetCountMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Acc. (Melee)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MeleeAcc: +2",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "The Angst Clear View 1A was designed for the Solaris Market. Each Clear View 1A system had to be painfully calibrated to the Pilot's Neurohelm. Coupled with a movement prediction algorithm, it allowed the 'Mech to engage in lightning fast strikes without telegraphing the intent of the Pilot. Closing the Enemies' dodging window by around half.",
+  "Icon": "uixSvgIcon_equipment_TTS",
+  "Id": "Gear_FCS_Beserk",
+  "Manufacturer": "Doering Electronics",
+  "Model": "Angst Clear View 1A",
+  "Name": "RockEm SockEm FCS ",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "FCS Beserker"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Energy Weapons.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-FCS_Energy",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

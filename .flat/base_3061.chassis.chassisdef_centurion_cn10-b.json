@@ -1,0 +1,245 @@
+{
+ "BattleValue": 4124000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Hand",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 50,
+ "DFAInstability": 25,
+ "DFASelfDamage": 50,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1216589,
+  "Details": "A heavier 55-ton version of the venerable Centurion, the CN10-B was built in 3057 and uses an Endo Steel chassis to save weight on the design while retaining the CN9-A's original ground speed through the use of a 220-rated standard fusion engine. Much like the CN9-D, the 10-B carries an LB-X Autocannon/10 as its primary weapon with an LRM-10 launcher with an Artemis IV fire control system, but these are backed up by a medium laser and a medium pulse laser.",
+  "Icon": "uixTxrIcon_centurion",
+  "Id": "chassisdef_centurion_CN10-B",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Centurion",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Centurion"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Pilot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_centurion",
+ "Heatsinks": 0,
+ "InitialTonnage": 5.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 2
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 2
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 25,
+ "MeleeInstability": 13,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "centurion",
+ "PrefabIdentifier": "chrPrfMech_centurionBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Brawler",
+ "Tonnage": 55,
+ "TopSpeed": 65,
+ "TurnRadius": 90,
+ "VariantName": "CN10-B",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A heavier 55-ton version of the venerable Centurion, the CN10-B was built in 3057 and uses an Endo Steel chassis to save weight on the design while retaining the CN9-A's original ground speed through the use of a 220-rated standard fusion engine. Much like the CN9-D, the 10-B carries an LB-X Autocannon/10 as its primary weapon with an LRM-10 launcher with an Artemis IV fire control system, but these are backed up by a medium laser and a medium pulse laser.",
+ "weightClass": "MEDIUM"
+}

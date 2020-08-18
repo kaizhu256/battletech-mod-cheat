@@ -1,0 +1,68 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "This is where we stick all the random nuts and bolts that fall off the vehicle while out in the field. And any other cargo.",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Tank_CargoCompartment",
+  "Manufacturer": "Generic",
+  "Model": "Cargo Compartment",
+  "Name": "Cargo Compartment",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Cargo Compartment"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "TankCritPenalizedCrew",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 180,
+ "Description": {
+  "Details": "The local government needs your assistance with a pirate problem",
+  "Icon": "uixTxrSpot_AKnightAtTheOmni.png",
+  "Id": "fp_AKnightAtTheOmni",
+  "Name": "A Knight at the Omni"
+ },
+ "Difficulty": 6,
+ "FlashpointDescriberCastDefId": "castDef_LocalsDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Commander we desperately need your assistance with a local pirate problem.",
+ "InProgressTimeout": 180,
+ "InternalName": "AKnightAtTheOmni",
+ "LanceDropTonnageHint": "Light",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_faction_independent",
+    "planet_other_blackmarket",
+    "planet_climate_terran"
+   ],
+   "tagSetSourceFile": "Tags/PlanetTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_AKnightAtTheOmni",
+ "PotentialEmployers": [
+  "Locals"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "FP_holdfor_later"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_Item_rare",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "Heavy",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1
+}

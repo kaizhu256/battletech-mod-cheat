@@ -1,0 +1,255 @@
+{
+ "BattleValue": 3087000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-0.73"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "CustomParts": {
+  "CustomParts": [],
+  "FiringArc": 130
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 690138,
+  "Details": "The Initiate started production after the Word of Blake retook Terra. This medium 'Mech has been produced in record numbers by the Word of Blake with no shortage of pilots. It is built on a Geometric 1000 Endo Steel chassis to save weight and is powered by a LTV 160 fusion engine that gives it a top speed of 64.8 km/h. For protection from enemy fire, the Initiate carries eight and a half tons of armor that allows the 'Mech to stand up to fire from most other 'Mechs of the same weight class or lower, and enjoys increased durability because of its CASE system that protects against ammunition explosions. Overall, the Initiate is a reliable trooper 'Mech that is capable of filling a variety of roles on the modern battlefield.",
+  "Icon": "Initiate",
+  "Id": "chassisdef_initiate_INI-04",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Initiate",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Initiate"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Hyper_Extending_Actuators",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_orion",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 15,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "orion",
+ "PrefabIdentifier": "chrPrfMech_orionBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 40,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "INI-04",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Introduced during the Jihad, this is a modernization of the 'Mech utilizing newer technologies. The WoB engineers first exchanged the 02 variant's fusion engine with a Light Fusion model. This new engine allowed for a slight increase of armor, but allow more room for this era's latest production weaponry. All the 'Mech's original weaponry has been removed in favor of a Seven-Tubed Multi-Missile Launcher, three Small Pulse Lasers, and a pair of Light PPCs. To keep the 'Mech more compatible with modern WoB formations, a C3i Computer was added. To help handle the 'Mech's heat load, an additional double heat sink was added as well.",
+ "weightClass": "MEDIUM"
+}

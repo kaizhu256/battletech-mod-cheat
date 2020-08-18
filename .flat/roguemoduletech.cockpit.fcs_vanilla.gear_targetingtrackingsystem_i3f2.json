@@ -1,0 +1,79 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Acc. (Indirect)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IndirectAcc: +3",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 750000,
+  "Details": "All 'Mechs come equipped with a stock targeting and tracking system—TTS—which can be upgraded for improved performance. Depending on its type, the TTS increases accuracy when attacking with Ballistic, Energy, or Missile weaponry. Does not stack with same type but different tiers do.",
+  "Icon": "targeting",
+  "Id": "Gear_TargetingTrackingSystem_I3F2",
+  "Manufacturer": "Intek",
+  "Model": "I3F200",
+  "Name": "Intek Improved Indirect Fire 200",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "FCS Indirect +"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Indirect Missiles Attacks gain +2 accuracy.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-I3F200",
+    "Name": "Indirect Fire Improved"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-3.0",
+    "operation": "Float_Add",
+    "statName": "ToHitIndirectModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

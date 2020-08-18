@@ -1,0 +1,67 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_ATM_HE",
+ "BattleValue": 0,
+ "BonusValueA": "+50% Dmg&Stab|",
+ "BonusValueB": "-30% Range|-2 Accuracy.",
+ "Capacity": 60,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ATMDamage: +4",
+    "StabDamage: +1",
+    "Range: -50%",
+    "MissileHP: 2",
+    "ATMAmmo: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/atm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 12,
+   "StabilityDamagePerAmmo": 4
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000044"
+  },
+  "TRGBColor": {
+   "Color": "#585169",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "High Explosive iATM ammo carries a larger payload in exchange for fuel. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "ATM",
+  "Id": "Ammo_AmmunitionBox_HE_ATM",
+  "Manufacturer": "CLAN",
+  "Model": "ATM HE",
+  "Name": "ATM HighExplosive Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo ATM HE"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

@@ -1,0 +1,243 @@
+{
+ "BattleValue": 8821000,
+ "ChassisTags": {
+  "items": [
+   "Primitive"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 85,
+ "DFAInstability": 43,
+ "DFASelfDamage": 85,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2129882,
+  "Details": "The original Longbow built in 2480, carried twin LRM-20s each with three tons of ammunition, supported by two Medium Lasers and a Small Laser. The Primitive Technology used limited the design's top speed to 54km/h, but this was deemed acceptable for a fire support unit.",
+  "Icon": "uixTxrIcon_longbow",
+  "Id": "chassisdef_longbow_LGB-0C",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Longbow",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Longbow"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Anti_Air_Targeting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_ionlongbow",
+ "Heatsinks": 0,
+ "InitialTonnage": 8.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 135,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 270,
+   "MaxRearArmor": 135,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 43,
+ "MeleeInstability": 22,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "ionlongbow",
+ "PrefabIdentifier": "chrprfmech_ionlongbowbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Missile Boat",
+ "Tonnage": 85,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "LGB-0C",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The original Longbow built in 2480, carried twin LRM-20s each with three tons of ammunition, supported by two Medium Lasers and a Small Laser. The Primitive Technology used limited the design's top speed to 54km/h, but this was deemed acceptable for a fire support unit.",
+ "weightClass": "ASSAULT"
+}

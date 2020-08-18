@@ -1,0 +1,184 @@
+{
+ "ActivationCooldown": 4,
+ "ActivationTime": "ConsumedByFiring",
+ "Description": {
+  "Details": "ACTION: A deadly precision Attack with 50% extra damage, +2 chance to hit and 30% reduced DFA self damage. Works for both DFA and Melee attacks. 4 turn cooldown with -1 defense. +1 Ini Injury&Melee Resist.",
+  "Icon": "uixSvgIcon_ability_bulwark",
+  "Id": "AbilityDefGu8",
+  "Name": "BERSERKER"
+ },
+ "DisplayParams": "ShowInMWTRay",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "DFA attacks deal [AMT] less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "GU8DFASelf",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "DFASelfDamage",
+    "targetWeaponSubType": "DFA"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 10% more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "GU8Melee",
+    "Name": "MELEE DAMAGE INCREASED"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 10% more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "GU8DFA",
+    "Name": "MELEE DAMAGE INCREASED"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "+2 Accuracy",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "GU8MELEEACC",
+    "Name": "GU8MELEEACC"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "+2 Accuracy",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "GU8DFAACC",
+    "Name": "GU8DFAACC"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a penalty to all attacks against this unit.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-BerserkerDebuff",
+    "Name": "HARDER TO HIT"
+   },
+   "durationData": {
+    "duration": 4,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "ToHitThisActor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ReqSkill": "Guts",
+ "ReqSkillLevel": 8,
+ "Targeting": "ActorSelf"
+}

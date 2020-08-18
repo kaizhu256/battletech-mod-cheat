@@ -1,0 +1,110 @@
+{
+ "AMSHitChance": -0.3,
+ "AOECapable": false,
+ "APArmorShardsMod": 0.01,
+ "APCriticalChanceMultiplier": 0.001,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "SensorRocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 1",
+    "AMSChance: -30%",
+    "SensorMines: 2",
+    "SensorRadius: 6",
+    "SensorChance: 75%",
+    "RemoteSensorPower: 1",
+    "RemoteSensorLRM",
+    "IsRocket: 5",
+    "InternalAmmo: 4",
+    "InternalAmmoShots: 5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 1
+  },
+  "InventorySorter": {
+   "SortKey": "03001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 8000,
+  "Details": "Replacing the Warhead with a selection of disposable Active and Passive Sensors Allows this to deploy Sensor in a Area as a Early Warning.<b><color=#F79232>5 Salvos</color> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_REMOTE_SENSOR",
+  "Manufacturer": "Death Blossom",
+  "Model": "Remote Sensor Dispenser",
+  "Name": "Remote Sensor Dispenser",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Remote Sensor Dispenser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 690,
+ "MinRange": 180,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 5,
+ "StartingAmmoCapacity": 25,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "Unguided": false,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM5",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

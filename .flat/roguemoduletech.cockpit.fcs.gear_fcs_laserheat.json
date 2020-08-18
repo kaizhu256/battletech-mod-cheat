@@ -1,0 +1,103 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Missile Acc",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LaserHeatGenerated: -15%",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 250000,
+  "Details": "The O-P 911 is a rather old Fire Control System. Surpassed by other models late in the Succession Wars by the O-P 1078. This model offered a dedicated system of capacitor controls to 'Mechs, decreasing the heat and energy consumption of Laser weaponry. ",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_LaserHeat",
+  "Manufacturer": "Doering Electronics",
+  "Model": "O-P 911",
+  "Name": "Starlight FCS",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "FCS Nova"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Missile weapon attacks have their hit improved by +2.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-ARTEMIS-BONUS",
+    "Name": "Artemis IV System"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy",
+    "targetWeaponType": "Laser"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

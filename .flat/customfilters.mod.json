@@ -1,0 +1,958 @@
+{
+ "Author": "Denadan",
+ "DLL": "CustomFilters.dll",
+ "DLLEntryPoint": "CustomFilters.Control.Init",
+ "DependsOn": [
+  "CustomComponents"
+ ],
+ "Enabled": true,
+ "Hidden": true,
+ "Name": "CustomFilters",
+ "Settings": {
+  "LogLevel": "Error",
+  "ShowBlacklistedSimGame": true,
+  "ShowBlacklistedSkirmish": false,
+  "ShowDebugButtons": false,
+  "Tabs": [
+   {
+    "Buttons": [
+     {
+      "Filter": {
+       "ComponentTypes": [
+        "Weapon"
+       ]
+      },
+      "Icon": "uixSvgIcon_weapon_Ballistic",
+      "Tag": "All",
+      "Tooltip": "Show All Weapon"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/a/a/ac",
+        "w/a/a/lac",
+        "w/a/a/hvac",
+        "w/a/a/rac",
+        "w/a/a/uac",
+        "w/a/a/lbx",
+        "w/a/a/rifle"
+       ]
+      },
+      "Icon": "RotaryAC",
+      "Tag": "",
+      "Tooltip": "Show Autocannons"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/a/g/gaussrifle",
+        "w/a/g/sb",
+        "w/a/g/hag",
+        "w/a/g/railgun",
+        "w/a/g/magshot",
+        "w/a/g/raplbgr",
+        "w/a/g/taser"
+       ]
+      },
+      "Icon": "GAUSS",
+      "Tag": "",
+      "Tooltip": "Show Magnetic rifles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/a/o/mg",
+        "w/a/o/artillery",
+        "w/a/o/mortar"
+       ]
+      },
+      "Icon": "Artillery",
+      "Tag": "",
+      "Tooltip": "Show Other Balistics"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/e/l/laser",
+        "w/e/l/pulse",
+        "w/e/l/x-pulse",
+        "w/e/l/vspl",
+        "w/e/l/er",
+        "w/e/l/erpulse",
+        "w/e/l/heavy",
+        "w/e/l/bombast",
+        "w/e/l/binary",
+        "w/e/l/re",
+        "w/e/l/chemical"
+       ]
+      },
+      "Icon": "uixSvgIcon_weapon_Energy",
+      "Tag": "",
+      "Tooltip": "Show Lasers"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/e/p/ppc",
+        "w/e/p/erppc",
+        "w/e/p/hppc",
+        "w/e/p/snppc",
+        "w/e/p/lppc",
+        "w/e/p/tsemp"
+       ]
+      },
+      "Icon": "PPC",
+      "Tag": "",
+      "Tooltip": "Show PPC"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/e/p/flamer",
+        "w/e/p/aflamer",
+        "w/e/p/plasma"
+       ]
+      },
+      "Icon": "dragon-breath",
+      "Tag": "",
+      "Tooltip": "Show Flamers and Plasma"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/m/s/srm",
+        "w/m/s/ssrm",
+        "w/m/s/mrm",
+        "w/m/s/hmrm",
+        "w/m/s/rl"
+       ]
+      },
+      "Icon": "SRM",
+      "Tag": "",
+      "Tooltip": "Show Direct fire Missiles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/m/l/lrm",
+        "w/m/l/slrm",
+        "w/m/l/elrm",
+        "w/m/l/enlrm",
+        "w/m/t/thunderbolt",
+        "w/m/t/arrowiv"
+       ]
+      },
+      "Icon": "lrm",
+      "Tag": "",
+      "Tooltip": "Show Indirect fire Missiles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/m/l/atm",
+        "w/m/l/iatm",
+        "w/m/s/mml"
+       ]
+      },
+      "Icon": "uixSvgIcon_weapon_Missile",
+      "Tag": "",
+      "Tooltip": "Show Multi Missile Systems"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/s/a/ams",
+        "w/s/a/lams",
+        "w/s/t/tag",
+        "w/s/t/narc",
+        "w/s/m/melee",
+        "w/s/m/ac",
+        "w/s/m/energy",
+        "w/s/m/pa",
+        "w/s/m/explode",
+        "ProtoAC",
+        "Fusiliade",
+        "iFusiliade",
+        "ProtoLRM",
+        "ProtoSRM",
+        "ProtoMelee",
+        "ProtoLBX"
+       ]
+      },
+      "Icon": "steelwing-emblem",
+      "Tag": "",
+      "Tooltip": "Show AMS/Tag/Support Weapons"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "w/s/h/HandHeld",
+        "w/s/h/BoltOn"
+       ]
+      },
+      "Icon": "HandHeldRifle",
+      "Tag": "",
+      "Tooltip": "Show Specialist Weapons"
+     },
+     {
+      "Debug": true,
+      "Filter": {
+       "NotCategories": [
+        "w/a/a/ac",
+        "w/a/a/lac",
+        "w/a/a/hvac",
+        "w/a/a/rac",
+        "w/a/a/uac",
+        "w/a/a/lbx",
+        "w/a/a/rifle",
+        "w/a/g/gaussrifle",
+        "w/a/g/sb",
+        "w/a/g/hag",
+        "w/a/g/railgun",
+        "w/a/g/magshot",
+        "w/a/g/raplbgr",
+        "w/a/g/taser",
+        "w/a/o/mg",
+        "w/a/o/artillery",
+        "w/a/o/mortar",
+        "w/e/l/laser",
+        "w/e/l/pulse",
+        "w/e/l/x-pulse",
+        "w/e/l/vspl",
+        "w/e/l/er",
+        "w/e/l/erpulse",
+        "w/e/l/heavy",
+        "w/e/l/bombast",
+        "w/e/l/binary",
+        "w/e/l/re",
+        "w/e/l/chemical",
+        "w/e/p/ppc",
+        "w/e/p/erppc",
+        "w/e/p/hppc",
+        "w/e/p/snppc",
+        "w/e/p/lppc",
+        "w/e/p/plasma",
+        "w/e/p/flamer",
+        "w/e/p/aflamer",
+        "w/m/s/srm",
+        "w/m/s/ssrm",
+        "w/m/s/mml",
+        "w/m/s/rl",
+        "w/m/s/mrm",
+        "w/m/s/hmrm",
+        "w/m/l/lrm",
+        "w/m/l/slrm",
+        "w/m/l/elrm",
+        "w/m/l/enlrm",
+        "w/m/l/atm",
+        "w/m/l/iatm",
+        "w/m/t/thunderbolt",
+        "w/m/t/arrowiv",
+        "w/s/a/ams",
+        "w/s/a/lams",
+        "w/s/t/tag",
+        "w/s/t/narc",
+        "w/s/m/melee",
+        "w/s/m/ac",
+        "w/s/m/energy",
+        "w/s/m/pa",
+        "w/s/m/explode"
+       ]
+      },
+      "Text": "err",
+      "tag": "!!!"
+     },
+     {
+      "Debug": true,
+      "Filter": {
+       "Categories": [
+        "ATM",
+        "iATM",
+        "Streak",
+        "StreakLRM",
+        "ArrowIV",
+        "Railgun",
+        "ParticleWeapon",
+        "SmartMissile",
+        "CGLauncher",
+        "HAGR",
+        "MRM",
+        "LBX",
+        "LGR",
+        "HGR",
+        "SBGR",
+        "HSBGR",
+        "UAC2",
+        "UAC5",
+        "UAC10",
+        "UAC20",
+        "RAC2",
+        "RAC5",
+        "RAC10",
+        "RAC20",
+        "PLASMA"
+       ]
+      },
+      "Text": "err",
+      "tag": "OLD!"
+     }
+    ],
+    "Caption": "WEAPON",
+    "Filter": {
+     "ComponentTypes": [
+      "Weapon"
+     ]
+    }
+   },
+   {
+    "Buttons": [
+     {
+      "Icon": "uixSvgIcon_weapon_Ballistic",
+      "Tag": "All",
+      "Tooltip": "Show All Ammos"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/a/a/ac",
+        "a/a/a/hvac",
+        "a/a/a/rifle"
+       ]
+      },
+      "Icon": "uixSvgIcon_weapon_Ballistic",
+      "Tag": "AC",
+      "Tooltip": "Show Autocannons and Riffle ammo"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/a/a/rac",
+        "a/a/a/uac",
+        "a/a/a/lbx"
+       ]
+      },
+      "Icon": "RotaryAC",
+      "Tag": "R/U/LB",
+      "Tooltip": "Show RAC, UAC and LBX ammo"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/a/g/gaussrifle",
+        "a/a/g/hag",
+        "a/a/g/railgun",
+        "a/a/g/raplbgr",
+        "a/a/g/taser"
+       ]
+      },
+      "Icon": "GAUSS",
+      "Tag": "g",
+      "Tooltip": "Show Gauss ammo"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/a/o/mg",
+        "a/a/o/artillery",
+        "a/a/o/mortar"
+       ]
+      },
+      "Icon": "Artillery",
+      "Tag": "etc",
+      "Tooltip": "Show MG and Artillery ammo"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/m/s/srm",
+        "a/m/s/ssrm"
+       ]
+      },
+      "Icon": "SRM",
+      "Tag": "srm",
+      "Tooltip": "Show SRM and SSRM missiles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/m/l/lrm",
+        "a/m/l/slrm"
+       ]
+      },
+      "Icon": "lrm",
+      "Tag": "lrm",
+      "Tooltip": "Show LRM and SLRM missiles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/m/s/mrm",
+        "a/m/s/hmrm"
+       ]
+      },
+      "Icon": "MRM",
+      "Tag": "mrm",
+      "Tooltip": "Show MRM and HMRM missiles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/m/l/atm",
+        "a/m/l/iatm"
+       ]
+      },
+      "Icon": "ATM",
+      "Tag": "atm",
+      "Tooltip": "Show ATM and iATM missiles"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/m/t/thunderbolt",
+        "a/m/t/arrowiv"
+       ]
+      },
+      "Icon": "thunderbolt",
+      "Tag": "etc",
+      "Tooltip": "Show Artillery and Thunderbolt rockets"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/e/l/chemical",
+        "a/e/p/plasma",
+        "a/e/p/aflamer"
+       ]
+      },
+      "Icon": "pyromaniac",
+      "Tag": "Nrg",
+      "Tooltip": "Show Chemical Lasers, Flamers and Plasma fuel/ammo"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "a/s/a/ams",
+        "a/s/t/narc",
+        "a/s/m/melee",
+        "a/s/m/ac",
+        "a/s/m/energy",
+        "a/s/m/pa"
+       ]
+      },
+      "Icon": "steelwing-emblem",
+      "Tag": "Sup",
+      "Tooltip": "Show Support weapons ammo"
+     },
+     {
+      "Debug": true,
+      "Filter": {
+       "NotCategories": [
+        "a/a/a/ac",
+        "a/a/a/hvac",
+        "a/a/a/rifle",
+        "a/a/g/gaussrifle",
+        "a/a/g/hag",
+        "a/a/g/railgun",
+        "a/a/g/raplbgr",
+        "a/a/g/taser",
+        "a/s/a/ams",
+        "a/s/t/narc",
+        "a/s/m/melee",
+        "a/s/m/ac",
+        "a/s/m/energy",
+        "a/s/m/pa",
+        "a/e/l/chemical",
+        "a/e/p/plasma",
+        "a/e/p/aflamer",
+        "a/m/t/thunderbolt",
+        "a/m/t/arrowiv",
+        "a/m/l/atm",
+        "a/m/l/iatm",
+        "a/m/s/mrm",
+        "a/m/s/hmrm",
+        "a/m/l/lrm",
+        "a/m/l/slrm",
+        "a/m/s/srm",
+        "a/m/s/ssrm",
+        "a/a/o/mg",
+        "a/a/o/artillery",
+        "a/a/o/mortar",
+        "a/a/a/lbx",
+        "a/a/a/rac",
+        "a/a/a/uac"
+       ]
+      },
+      "Text": "ERR",
+      "tag": "!!!"
+     },
+     {
+      "Debug": true,
+      "Filter": {
+       "Categories": [
+        "LRMAmmo",
+        "SRMAmmo",
+        "AC10Ammo",
+        "AC20Ammo",
+        "AC2Ammo",
+        "AC5Ammo"
+       ]
+      },
+      "Text": "OLD",
+      "tag": "!!!"
+     }
+    ],
+    "Caption": "AMMO",
+    "Filter": {
+     "ComponentTypes": [
+      "AmmunitionBox"
+     ]
+    }
+   },
+   {
+    "Buttons": [
+     {
+      "Text": "all",
+      "Tooltip": "Show all heatsinks/engine parts"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "EngineCore"
+       ]
+      },
+      "Icon": "enginecore",
+      "Tag": "",
+      "Tooltip": "Show engine cores"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "EngineShield"
+       ],
+       "NotCategories": []
+      },
+      "Icon": "power-generator",
+      "Tag": "",
+      "Tooltip": "Show engine shielding"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "Cooling"
+       ],
+       "NotCategories": [
+        "EngineShield"
+       ]
+      },
+      "Icon": "thermometer-cold",
+      "Tag": "",
+      "Tooltip": "Cooling Kits"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "EngineHeatBlock"
+       ],
+       "NotCategories": [
+        "EngineShield"
+       ]
+      },
+      "Icon": "EngineCooling",
+      "Tag": "",
+      "Tooltip": "Engine Cooling"
+     },
+     {
+      "Filter": {
+       "ComponentTypes": [
+        "HeatSink"
+       ],
+       "NotCategories": [
+        "EnginePart",
+        "Cooling",
+        "Special",
+        "CoolantPod",
+        "EngineHeatBlock"
+       ]
+      },
+      "Icon": "uixSvgIcon_equipment_Heatsink",
+      "Tag": "",
+      "Tooltip": "Show heatsinks and heat control equipment"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "CoolantPod"
+       ]
+      },
+      "Icon": "CoolantPod",
+      "Tag": "",
+      "Tooltip": "Show Coolant Pods"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "Armor",
+        "CASE",
+        "CASE2"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "shieldcomb",
+      "Tag": "",
+      "Tooltip": "Show Armor"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "Structure",
+        "Patchwork"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "Structure",
+      "Tag": "",
+      "Tooltip": "Show Structure"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "Gyro"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "uixSvgIcon_equipment_Gyro",
+      "Tag": "",
+      "Tooltip": "Show Gyro"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "LegHip",
+        "LegUpperActuator",
+        "LegLowerActuator",
+        "LegFootActuator"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "leg-armor",
+      "Tag": "",
+      "Tooltip": "Show Leg Upgrades"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "ArmShoulder",
+        "ArmUpperActuator",
+        "ArmLowerActuator",
+        "ArmHandActuator",
+        "OmniLowerActuator",
+        "OmniHandActuator",
+        "MeleeActuator",
+        "MeleeSTAB",
+        "MeleeACC"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "metal-hand",
+      "Tag": "",
+      "Tooltip": "Show Arm Upgrades"
+     }
+    ],
+    "Caption": "Internals",
+    "Filter": {
+     "ComponentTypes": [
+      "HeatSink",
+      "Upgrade"
+     ]
+    }
+   },
+   {
+    "Buttons": [
+     {
+      "Filter": {
+       "NotCategories": [
+        "Gyro",
+        "Structure",
+        "Patchwork",
+        "Armor",
+        "CASE",
+        "CASE2",
+        "EnginePart",
+        "Cooling",
+        "Special",
+        "CoolantPod",
+        "EngineHeatBlock"
+       ]
+      },
+      "Text": "all",
+      "Tooltip": "Show all equipment"
+     },
+     {
+      "Filter": {
+       "ComponentTypes": [
+        "JumpJet"
+       ],
+       "NotCategories": []
+      },
+      "Icon": "uixSvgIcon_action_jump",
+      "Tag": "",
+      "Tooltip": "Show JumpJets"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "TargetingComputer",
+        "BCEva",
+        "BCCluster",
+        "BCCrit",
+        "BCRange",
+        "BCEnergy",
+        "BCBallistic",
+        "BCMissile",
+        "BCHeat",
+        "BCArtemis",
+        "BCRecoil",
+        "BCIndirect",
+        "BCHeadshot",
+        "BCGuts",
+        "BCGunnery",
+        "BCPiloting",
+        "BCTactics",
+        "BCMinRange",
+        "BCShortRange",
+        "BCMediumRange",
+        "BCLongRange",
+        "BCMaxRange",
+        "CLANTTS",
+        "TTSComp",
+        "BCMultiTrac",
+        "BCOptics"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "AdvancedTC",
+      "Tag": "",
+      "Tooltip": "Show BattleComputers"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "ECM",
+        "Probe",
+        "AdvECM",
+        "UAV",
+        "C3Master",
+        "C3Slave",
+        "C3i",
+        "StealthSystemAdd",
+        "MimeticSystemAdd",
+        "StealthSystem",
+        "MimeticSystem",
+        "Chameleon",
+        "StealthX"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "StealthArmor",
+      "Tag": "",
+      "Tooltip": "Show Electronic Warfare"
+     },
+     {
+      "Filter": {
+       "ComponentTypes": [
+        "Upgrade"
+       ],
+       "NotCategories": [
+        "Armor",
+        "Structure",
+        "Gyro",
+        "LifeSupportA",
+        "LifeSupportB",
+        "Cockpit",
+        "CockpitFCS",
+        "CockpitSensors",
+        "LegHip",
+        "LegUpperActuator",
+        "LegLowerActuator",
+        "LegFootActuator",
+        "ArmShoulder",
+        "ArmUpperActuator",
+        "ArmLowerActuator",
+        "ArmHandActuator",
+        "OmniLowerActuator",
+        "OmniHandActuator",
+        "MeleeActuator",
+        "MeleeSTAB",
+        "MeleeACC",
+        "Special",
+        "SpecialShield",
+        "SpecialMelee",
+        "ECM",
+        "Probe",
+        "AdvECM",
+        "UAV",
+        "C3Master",
+        "C3Slave",
+        "C3i",
+        "StealthSystemAdd",
+        "MimeticSystemAdd",
+        "StealthSystem",
+        "MimeticSystem",
+        "Chameleon",
+        "TargetingComputer",
+        "BCEva",
+        "BCCluster",
+        "BCCrit",
+        "BCRange",
+        "BCEnergy",
+        "BCBallistic",
+        "BCMissile",
+        "BCHeat",
+        "BCArtemis",
+        "BCRecoil",
+        "BCIndirect",
+        "BCHeadshot",
+        "BCGuts",
+        "BCGunnery",
+        "BCPiloting",
+        "BCTactics",
+        "BCMinRange",
+        "BCShortRange",
+        "BCMediumRange",
+        "BCLongRange",
+        "BCMaxRange",
+        "CLANTTS",
+        "TTSComp"
+       ]
+      },
+      "Icon": "uixSvgIcon_equipment_Generic",
+      "Tooltip": "Show other equipment"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "LifeSupportA",
+        "LifeSupportB",
+        "Cockpit"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ],
+       "NotCategories": []
+      },
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Tag": "",
+      "Tooltip": "Cockpits"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "CockpitFCS"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ],
+       "NotCategories": [
+        "LifeSupportA",
+        "LifeSupportB",
+        "Cockpit",
+        "CockpitSensors"
+       ]
+      },
+      "Icon": "targeting",
+      "Tag": "",
+      "Tooltip": "FCS"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "CockpitSensors"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ],
+       "NotCategories": [
+        "LifeSupportA",
+        "LifeSupportB",
+        "Cockpit",
+        "CockpitFCS"
+       ]
+      },
+      "Icon": "uixSvgIcon_equipment_Comms",
+      "Tag": "",
+      "Tooltip": "Sensors"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "SpecialMelee"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "swordman",
+      "Tooltip": "Show Melee Gear"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "SpecialShield"
+       ],
+       "ComponentTypes": [
+        "Upgrade"
+       ]
+      },
+      "Icon": "swords-emblem",
+      "Tooltip": "Show Shields"
+     },
+     {
+      "Filter": {
+       "Categories": [
+        "Special"
+       ],
+       "ComponentTypes": [
+        "Upgrade",
+        "HeatSink",
+        "JumpJet"
+       ],
+       "NotCategories": [
+        "SpecialShield",
+        "SpecialMelee",
+        "w/s/h/HandHeld",
+        "w/s/h/BoltOn",
+        "Quirk"
+       ]
+      },
+      "Icon": "circuitry",
+      "Tag": "",
+      "Tooltip": "Show Specialist Gear"
+     }
+    ],
+    "Caption": "EQUIP",
+    "Filter": {
+     "ComponentTypes": [
+      "JumpJet",
+      "Upgrade",
+      "HeatSink"
+     ]
+    }
+   }
+  ]
+ },
+ "Website": "https://github.com/Denadan/CustomFilters"
+}

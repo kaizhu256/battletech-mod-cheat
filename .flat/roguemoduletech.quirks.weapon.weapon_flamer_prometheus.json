@@ -1,0 +1,179 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "+ 5 Dmg(H)|",
+ "BonusValueB": "X3 Bonus vs Overheat.",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Energy",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -5
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant3",
+   "range_close",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "OHDamage: 25%",
+    "Inferno: +5",
+    "AlwaysStartsFire",
+    "DmgFallOff: 20%",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +5",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/flamer"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02001"
+  }
+ },
+ "Damage": 9,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1200000,
+  "Details": "This is the most powerful Fusion Powered Flamer known, capable of producing a flame hot enough to melt even the toughest armour. It is capable to ignite a targets Armor, leaving it burning for 2 turns. Stacks 4 times and refreshes duration on hit.",
+  "Icon": "dragon-breath",
+  "Id": "Weapon_Flamer_Prometheus",
+  "Manufacturer": "Prometheus",
+  "Model": "Heavy Flamethrower",
+  "Name": "Flamer Prometheus",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Flamer Prometheus"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.2,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 1,
+ "HeatDamage": 11,
+ "HeatGenerated": 9,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.25,
+ "PrefabIdentifier": "Flamer",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  90,
+  120
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.96",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melted Armor generates ongoing heat",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Prometheus-Burn-Effect",
+    "Name": "Prometheus Flame"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 4,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "-5",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

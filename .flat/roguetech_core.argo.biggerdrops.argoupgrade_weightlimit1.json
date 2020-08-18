@@ -1,0 +1,45 @@
+{
+ "AdditionalCost": 6000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "After this she might look like there weren't a family of squatters throwing parties in her every night.",
+ "Description": {
+  "Cost": 0,
+  "Details": "The good news is that the 'Mechs probably won't fall out of their cradles when the Leopard launches, so now we can get started on making sure they won't fall through the floor. <b><color=#F79232>Increases Drop Weight Limit by 50 tons</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_WeightLimit1",
+  "Name": "Engine Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 220000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot1",
+   "argoUpgrade_PilotSlot1",
+   "argoUpgrade_drive1",
+   "argoUpgrade_WeightLimit"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_MaxTonnage",
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Weightlimit1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 7,
+ "shipUpgradeCategoryID": "BDDropTonnage"
+}

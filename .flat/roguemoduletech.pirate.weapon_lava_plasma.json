@@ -1,0 +1,113 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SPlasma",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AmmoCategoryID": "Plasma",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Bonus vs Overheat|",
+ "BonusValueB": "Damage Falloff.",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#ff0000",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "OmniRestriction.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DmgFallOff: 50%",
+    "WpnRecoil: 2",
+    "WeaponBoom: 35",
+    "IsPlasma"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/plasma"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 35,
+   "HeatDamagePerAmmo": 70,
+   "StabilityDamagePerAmmo": 10
+  },
+  "InventorySorter": {
+   "SortKey": "02016"
+  }
+ },
+ "Damage": 20,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 660000,
+  "Details": "This is 3 Plasma Cannons with a single rapid feeding mechanism that fails to properly create the plasma and mostly just lobs hot plastic at whatever is infront of it.... I know pirates are known to imbibe but you gotta stop brining me this Boss! \n\n<b><color=#ffcc00>Uses Plasma Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "plasma-bolt",
+  "Id": "Weapon_LAVA_PLASMA",
+  "Manufacturer": "Victory",
+  "Model": "Plasma Cannon",
+  "Name": "Plasma Cannon",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Lava Gun"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.5,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.3625,
+ "HeatDamage": 20,
+ "HeatGenerated": 60,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 25,
+ "InventorySize": 5,
+ "MaxRange": 460,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.5,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 1,
+  "y": 1,
+  "z": 0.7
+ },
+ "ProjectileSpeedMultiplier": 0.75,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  100,
+  200,
+  400
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 13,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

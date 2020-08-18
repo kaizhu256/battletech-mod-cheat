@@ -1,0 +1,78 @@
+{
+ "Author": "LadyAlekto, MPStark & Harkonnen",
+ "BattleTechVersion": null,
+ "BattleTechVersionMax": null,
+ "BattleTechVersionMin": null,
+ "ConflictsWith": [],
+ "Contact": "fakeemail@fakeemail.com",
+ "CustomResourceTypes": [],
+ "DLL": "SelectPilots.dll",
+ "DLLEntryPoint": null,
+ "DataAddendumEntries": [],
+ "DependsOn": [],
+ "Description": "Collection of Random Pilots and the campaign pilot select",
+ "EnableAssemblyVersionCheck": false,
+ "Enabled": true,
+ "Hidden": true,
+ "IgnoreLoadFailure": true,
+ "LoadImplicitManifest": true,
+ "Manifest": [
+  {
+   "Path": "pilot",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "VanillaPilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "Turrets",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "Tanker/TankerPilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "Tanker/ClanTankerPilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "Tanker/ManeiDomini",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "Tanker/TankerTraits",
+   "Type": "AbilityDef"
+  },
+  {
+   "Path": "AIPilots/AIPilotsBuff",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "AIPilots/AIPilotsMed",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "AIPilots/AIPilotsHigh",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "sprite",
+   "Type": "Sprite"
+  }
+ ],
+ "Name": "Rogue Pilots Module",
+ "OptionallyDependsOn": [],
+ "PackagedOn": null,
+ "Settings": {
+  "NumberProceduralPilots": 6,
+  "NumberRandomRonin": 0,
+  "NumberRoninFromList": 0,
+  "StartingRonin": [
+   "pilot_TankerPilot"
+  ]
+ },
+ "Version": "0.1.0",
+ "Website": ""
+}

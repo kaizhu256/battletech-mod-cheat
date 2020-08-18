@@ -1,0 +1,240 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 3 Acc. (Energy)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EnergyAcc: +1",
+    "EnergyCrit: 25%",
+    "EnergyRange: 10%",
+    "EnergyMinRange: -50%",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 700000,
+  "Details": "All 'Mechs come equipped with a stock targeting and tracking system—or TTS—which can be upgraded for improved performance. Upgrades increase accuracy when attacking with Ballistic, Energy, or Missile weaponry, depending on the type of TTS. Doesn't stack with same type but different tiers do.",
+  "Icon": "targeting",
+  "Id": "Gear_TargetingTrackingSystem_RCA_InstaTrac-X",
+  "Manufacturer": "RCA",
+  "Model": "InstaTrac X",
+  "Name": "RCA InstaTrac X TTS  ",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "FCS Energy + +"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit, +10 Range, -50%MinRange for Energy Weapons.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-TTSENRGACC3",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Missile weapon attacks have their hit improved by 3.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-TTSBALLCRIT",
+    "Name": "Missile WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "CriticalChanceMultipler",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit fires Extreme Range LRM's.",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "TTS3NRGMINRANGE",
+    "Name": "TTS3NRGMINRANGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "MinRange",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "DF Minrange by 50m",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TTS3NRGSHORTRANGE",
+    "Name": "TTS3NRGSHORTRANGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "ShortRange",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "DF Minrange by 50m",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TTS3NRGMEDRANGE",
+    "Name": "TTS3NRGMEDRANGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "MediumRange",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "DF Minrange by 50m",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TTS3NRGLONGRANGE",
+    "Name": "TTS3NRGLONGRANGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "LongRange",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "DF Minrange by 50m",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TTS3NRGMAXRANGE",
+    "Name": "TTS3NRGMAXRANGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "MaxRange",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Energy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

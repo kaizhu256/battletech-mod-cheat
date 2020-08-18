@@ -1,0 +1,143 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.075,
+ "APMaxArmorThickness": 39,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "1 Evasion Ignore",
+ "BonusValueB": "No Recoil",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 3",
+    "PPCDEBUFF: 1",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/lppc"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02013"
+  }
+ },
+ "Damage": 40,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 880000,
+  "Details": "Coming from the same project that experimented with Capacitators on PPC's was this an attempt increase the effective range of the Light PPC. Achieving nearly 50% Range increase does it suffer from a slow Charge Time and increased Minimum Range.",
+  "Icon": "PPC",
+  "Id": "Weapon_ER_PPC_LIGHT",
+  "Manufacturer": "Fusigon",
+  "Model": "Light Particle Projector Cannon",
+  "Name": "LPPC",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Light ER PPC"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0875,
+ "HeatDamage": 0,
+ "HeatGenerated": 26,
+ "IndirectFireCapable": false,
+ "Instability": 6,
+ "InventorySize": 3,
+ "MaxRange": 840,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "Id": "FION",
+   "UIName": "FION",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AccuracyModifier": 1,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "Id": "FIOFF",
+   "MinRange": -180,
+   "UIName": "FIOFF",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  420,
+  600
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 4,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "-20%Dmg.Taken|+20%Structure|",
+ "BonusValueB": "-12%Armor",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "ClanArmor",
+   "CasedArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.9,
+   "ArmorTPCost": 1.8
+  },
+  "ArmorStructureChanges": {
+   "ArmorFactor": 0.88,
+   "StructureFactor": 1.2
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DamageTaken: -20%",
+    "StructureProtection: +20%",
+    "ArmorProtection: -12%",
+    "Reserved: 6",
+    "ArmorTPCost: 80%",
+    "ArmorCBCost: 90%",
+    "CASE"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Ferro-Lamellor (C)",
+   "ReservedSlots": 6,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "ignore_damage",
+    "default",
+    "autorepair",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "emod_armorslots_clanferrosfibrous"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1500 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "1.25 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Created by the Scientist caste of Clan Snow Raven, Ferro-Lamellor armor is based on the Ferro-Carbide armor used in the Raven's WarShips. Scaled down for use on 'Mechs, AeroSpace Fighters, and tanks, the experimental Ferro-Lamellor armor offers improved protection, beyond even that of the Ferro-Fibrous armor. <b><color=#00ff00>CASE Enabled</color></b>",
+  "Icon": "shieldcomb",
+  "Id": "default_armorslots_clanferrolamellor",
+  "Manufacturer": "Clan",
+  "Model": "Armor Critical Slot",
+  "Name": "Ferro-Lamellor Armor (C)",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Ferro-Lamellor (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "All incoming damage reduced by 20%.",
+    "Icon": "uixSvgIcon_action_end",
+    "Id": "StatusEffect-CFL",
+    "Name": "REDUCED DAMAGE TAKEN"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

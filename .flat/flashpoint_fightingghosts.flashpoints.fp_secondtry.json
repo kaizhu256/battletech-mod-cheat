@@ -1,0 +1,65 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "The journey with Gray Death Legion",
+  "Icon": "secondTry_titlecard.png",
+  "Id": "fp_secondTry",
+  "Name": "Second Try"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "MEDIUM",
+ "FlashpointShortDescription": "Gray Death Legion is engaging Clan Jade Falcon on Pandora. It looks like Grayson is determined to repay for the defeat on Sudeten. We have received an offer to participate in the operation.",
+ "InProgressTimeout": 0,
+ "InternalName": "secondTry",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_name_pandora"
+   ],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_secondTry",
+ "PotentialEmployers": [
+  "GrayDeathLegion"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "fp_finished_secondTry"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "fp_finished_falconsFury"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_Mech_SLDF",
+ "Tags": {
+  "items": [],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "ClanJadeFalcon",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 50
+}

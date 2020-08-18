@@ -1,0 +1,136 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 LBX",
+ "BonusValueB": "Cluster",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EvasionIgnore: +2",
+    "Crits: +20%",
+    "Recoil: -1",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "Sometime during the Clan Invasions, out of use Anti Air platforms equipped 'Mechs armed with the Flak-1A had their systems rewritten with replacement framework. Disabling the Aerospace Asset tracking system allowed the unit's radar to focus more on ground assets.  This greatly improved the spread of the LBX systems commonly utilized on 'Mechs, at the cost of a long refit cycle to re-ready the mech for Anti Air use.",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_Flak",
+  "Manufacturer": "Kallon Industries",
+  "Model": "AntiAir Flak System-1A",
+  "Name": "Scattershot FCS ",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "FCS Flak"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Energy Weapons.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-FCS_Flak",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "EvasivePipsIgnored",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Energy Weapons.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-FCS_Flak2",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "CriticalChanceMultipler",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Energy Weapons.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-FCS_Flak3",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

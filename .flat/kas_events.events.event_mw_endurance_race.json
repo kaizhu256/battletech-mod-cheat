@@ -1,0 +1,254 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_pop_none"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "The crew is bubbling with enthusiasm about a local endurance competition.\r\n\r\nIn the morning briefing, Darius says, \"[[TGT_MW,{TGT_MW.Callsign}]] has requested permission to compete. Given the general interest, I'd like you to make the call.\"\r\n\r\nSumire says, \"Let {TGT_MW.Obj} go. It'll be entertaining.\"",
+  "Icon": "uixTxrSpot_Gym.png",
+  "Id": "event_mw_endurance_race",
+  "Name": "Endurance Race"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "non-participation choice",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Deny the shore leave requests."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius nods and the briefing continues to other topics.\r\n\r\nWhile some of the crew initially expresses discontent, the immediacy of the work at hand soon drowns out any thoughts of surface sports.\r\n\r\nExcept, that is, for [[TGT_MW,{TGT_MW.Callsign}]] who takes a few more days to shake off the thoughts of what might have been.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "lower morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 7,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "low cost option",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Grant shore leave to {TGT_MW.Callsign}."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] returns to the <i>Argo</i> later that week. You see {TGT_MW.Obj} in the mess hall, regaling listeners with tales of the race.\r\n\r\n\"Commander, thanks for letting me participate in the endurance competition!\" {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:say|Default:says} enthusiastically. \"I didn't win, but I feel like I did pretty well. Those locals, wow, they have endless stamina! I managed to keep up with them for a while, but along the way I got tired. Spending 24 hours baking in an overheating mech cockpit is probably less exhausting.\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "earns an athletic tag"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_athletic"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] returns to the <i>Argo</i> later that week. You find {TGT_MW.Obj} in the mess hall, one arm in a cast, regaling listeners with tales of daring-do.\r\n\r\n\"Commander, thanks for letting me participate in the endurance competition, but I, uh, may have over-reached a little bit,\" {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:say|Default:says}, holding up the broken limb.\r\n\r\n\"Those locals, wow, they have endless stamina!. I managed to keep up with them for a while, but along the way I got tired. Spending 24 hours baking in an overheating mech cockpit is probably less exhausting.\"",
+      "Icon": null,
+      "Id": "outcome_1_1",
+      "Name": "earns the athletic tag and injury"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_athletic"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "pilot_athletic"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 100
+}

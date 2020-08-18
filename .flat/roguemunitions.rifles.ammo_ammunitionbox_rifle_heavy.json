@@ -1,0 +1,63 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_RifleHeavy",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 6,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "HRifleAmmo.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeavyRifleAmmo: 6"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/a/rifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 60,
+   "StabilityDamagePerAmmo": 15
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000004"
+  },
+  "TRGBColor": {
+   "Color": "#584242",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "rifle",
+  "Id": "Ammo_AmmunitionBox_Rifle_Heavy",
+  "Manufacturer": "Generic",
+  "Model": "Heavy Rifle",
+  "Name": "Heavy Rifle Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Heavy Rifle"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

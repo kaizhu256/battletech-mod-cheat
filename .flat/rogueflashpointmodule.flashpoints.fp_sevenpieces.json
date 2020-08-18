@@ -1,0 +1,60 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Pirates have marked a soft local government to be hit. This flashpoint is <b><color=#f0ff00>Long</color></b> ",
+  "Icon": "sevenpieces",
+  "Id": "fp_SevenPieces",
+  "Name": "Seven Pieces"
+ },
+ "Difficulty": 5,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "We have a new contract posted to us. It says (Big Raid, Easy loot.) How they got this across the secure lines of MRBC I am not sure. This Flashpoint is <b><color=#f0ff00>Long</color></b>.",
+ "InProgressTimeout": 0,
+ "InternalName": "SevenPieces",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_SevenPieces",
+ "PotentialEmployers": [
+  "AuriganPirates"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_solarwinds_complete",
+     "flashpoint_SevenPieces_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_simplegreeting_b"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreePirateItems",
+ "TargetFaction": "Locals",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 100
+}

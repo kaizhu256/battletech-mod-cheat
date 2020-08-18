@@ -1,0 +1,102 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "Evasive Pips are Immune to Sensor Lock. +1 Melee Defense. -5% Melee Damage taken.",
+  "Icon": "awareness",
+  "Id": "AbilityDefP5",
+  "Name": "Awareness"
+ },
+ "DisplayParams": "ShowInMWTRay",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Guardian ECM making this unit harder to hit.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "Awareness",
+    "Name": "GECM Interference"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "ToHitThisActorMelee",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Takes less Kinetic Damage.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "AwarenessMeleeDmg",
+    "Name": "Reactive Plating"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierMelee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit can use its movement before or after shooting.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "SafeEvasive",
+    "Name": "SafeEvasion"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "EvasiveSafeFromSensorLock"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ReqSkill": "Piloting",
+ "ReqSkillLevel": 5
+}

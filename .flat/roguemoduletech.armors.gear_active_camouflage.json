@@ -1,0 +1,241 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "Bulwark",
+ "BonusValueB": "Requires ECM",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "StealthArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationIsBuff": true,
+   "ActivationMessage": "Camouflaged",
+   "ActiveByDefault": true,
+   "ButtonName": "Camouflage",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "Camouflage Off",
+   "Linkage": {
+    "OnActivate": {
+     "Activate": [],
+     "Deactivate": [
+      "ECCM"
+     ]
+    },
+    "OnDeactivate": {
+     "Activate": [],
+     "Deactivate": []
+    }
+   },
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Makes the carrier much harder to see with eyes",
+      "Icon": "uixSvgIcon_status_ECM-ghost",
+      "Id": "LV_MIMETIC",
+      "Name": "MIMETIC ARMOR"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.String",
+      "modValue": "0.65_4_3",
+      "operation": "Set",
+      "statName": "LV_MIMETIC"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Visibility Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Visibility_Decrease_Stealth",
+      "Name": "Stealth Visbility Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.6",
+      "operation": "Float_Multiply",
+      "statName": "SpottingVisibilityMultiplier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat generation",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Generation_Stealth",
+      "Name": "Increased Heat"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.10",
+      "operation": "Float_Multiply",
+      "statName": "HeatGenerated",
+      "targetCollection": "Weapon"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat Capacity Penalty",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Capacity_Stealth",
+      "Name": "Decreased Heat Capacity"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-5",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 1.2,
+   "ArmorTPCost": 1.15
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MimeticEnhance",
+    "MimeticStealth: 35%, 4, 3",
+    "StealthReserved: 1",
+    "Visibility: -40%",
+    "ActiveTEHeatgen: +10%",
+    "ActiveHeatPerTurn: +5",
+    "ReqECM",
+    "ArmorTPCost: 15%",
+    "ArmorCBCost: 20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MimeticSystemAdd"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Active Camouflage"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "Linked_ActiveCamouflage",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "Linked_ActiveCamouflage",
+     "Location": "RightTorso"
+    },
+    {
+     "ComponentDefId": "Linked_ActiveCamouflage",
+     "Location": "LeftArm"
+    },
+    {
+     "ComponentDefId": "Linked_ActiveCamouflage",
+     "Location": "RightArm"
+    },
+    {
+     "ComponentDefId": "Linked_ActiveCamouflage",
+     "Location": "LeftLeg"
+    },
+    {
+     "ComponentDefId": "Linked_ActiveCamouflage",
+     "Location": "RightLeg"
+    }
+   ]
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1100 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 20",
+    "TechCost": "1.6 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1000000,
+  "Details": "Active Camouflage Systems can be added to a existing Stealth Armour giving it Mimetic capabilities. Reserves 1 slot in every Location except the Head and requires a Stealth Armour.",
+  "Icon": "StealthArmor",
+  "Id": "Gear_Active_Camouflage",
+  "Manufacturer": "Prototype",
+  "Model": "Active Camouflage System",
+  "Name": "Active Camouflage System",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "Active Camouflage"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": []
+}

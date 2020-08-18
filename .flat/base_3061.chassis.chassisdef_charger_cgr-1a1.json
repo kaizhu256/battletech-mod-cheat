@@ -1,0 +1,231 @@
+{
+ "BattleValue": 7718000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 80,
+ "DFAInstability": 40,
+ "DFASelfDamage": 80,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2124057,
+  "Details": "The Charger is seen as an example of abject failure in BattleMech design. Wells Technologies originally wanted to produce an ultra-heavy scout 'Mech for the Star League Defense Force that was not only fast but could survive contact with the enemy. This was done by building the Charger on an 80-ton frame, making it the heaviest scout 'Mech in existence, and powering it with a massive LTV 400 fusion engine that took up almost sixty percent of the Charger's mass. With a top speed which allowed it to outrun most other 'Mechs the Charger was then given ten tons of Durallex Heavy armor, enough to survive repeated hits from a Class 20 Autocannon. However these features left very little room for offensive capability, an intentional deficiency on the part of the design team as they saw any task other than gathering data a distraction.",
+  "Icon": "uixTxrIcon_charger",
+  "Id": "chassisdef_charger_CGR-1A1",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Charger",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Charger"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Barrel_Fist",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_charger",
+ "Heatsinks": 0,
+ "InitialTonnage": 8,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 125,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 250,
+   "MaxRearArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 40,
+ "MeleeInstability": 20,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "charger",
+ "PrefabIdentifier": "chrprfmech_chargerhotd-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Heavy Scout & Harasser",
+ "Tonnage": 80,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "CGR-1A1",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Because the designers of the Charger wanted to discourage any activities that would put the 'Mech in danger, the engineers at Wells Technologies equipped the Charger with five Magna Mk I Small Lasers, mounted in its arms, torso and head. As these leave the 'Mech dangerously undergunned, arguably its most potent weapons are its fists; if the Charger is able to close the distance and get within hand-to-hand combat, it is more than capable of pounding to pieces other 'Mechs, especially lightweight ones.",
+ "weightClass": "ASSAULT"
+}

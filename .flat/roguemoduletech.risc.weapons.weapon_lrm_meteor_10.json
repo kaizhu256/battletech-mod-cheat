@@ -1,0 +1,113 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.1,
+ "APDamage": 2,
+ "APMaxArmorThickness": 150,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "STREAK_Generic_Internal",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_vtol": -3
+ },
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B27D37",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "1shot",
+    "MissileHP: 3",
+    "ThroughArmorDamage: 2",
+    "AccuracyUnit: VTOL",
+    "AccuracyUnit2: +3",
+    "Streak",
+    "IsRocket: 10",
+    "InternalAmmo: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/rl"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03002"
+  }
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 250000,
+  "Details": "A Prototype Missile System combining a Tandem Warhead with Streak Guidance in a disposable Rocket System.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-pod",
+  "Id": "Weapon_LRM_METEOR_10",
+  "Manufacturer": "Arisaka",
+  "Model": "Rocket Launcher",
+  "Name": "RL10",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Meteor 10"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "HitGenerator": "Streak",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "MissileHealth": 3,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 10,
+ "StartingAmmoCapacity": 10,
+ "Streak": true,
+ "Tonnage": 1,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM10",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

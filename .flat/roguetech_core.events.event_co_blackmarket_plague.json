@@ -1,0 +1,489 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_other_blackmarket"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Sumire calls a special briefing about a communique from a nearby transport. \"Their crew has contracted a virulent case of the Periphery Pox...\" She leans in. \"<i>But</i> the captain knows that we have access to the local [[DM.BaseDescriptionDefs[LoreBlackMarket],Black Market]], <i>and</i> that the Market has some experimental antivirals for sale. They'll cover the cost and an extra ¢50,000 for our trouble. We just need to do the footwork.\"\r\n\r\nDarius scowls. \"The Black Markets aren't risk-free for us. The authorities could intervene and cause problems. Or this could all be a set up.\"\r\n\r\nDr. Murad bristles. \"Spacers should stick together, Commander. We have access to the Market; we should use it.\"",
+  "Icon": "uixTxrSpot_IllicitDealings.png",
+  "Id": "event_co_blackMarket_Plague",
+  "Name": "Access Privileges"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "non-participation option",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Stay out of it."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Firmly, you say, \"We're not in the business of bailing out every wayward traveler.\"\r\n\r\nDarius and Dr. Murad share a pointed look, but they keep any further thoughts to themselves and the briefing moves on to other topics.",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "Firmly, you say, \"We're not in the business of bailing out every wayward traveler.\"\r\n\r\nDarius and Dr. Murad share a pointed look, but they keep any further thoughts to themselves and the briefing moves on to other topics.\r\n\r\nOver the next several days, word trickles through the ship about your decision, leading to heated arguments on both sides.",
+      "Icon": null,
+      "Id": "outcome_0_1",
+      "Name": "nothing happens, morale loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "the money option",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Acquire the antivirals for the transport"
+   },
+   "RequirementList": null,
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Over the next several days, word trickles through the ship about your decision and the contingent of lifelong spacers in the crew express their support.\r\n\r\nLater in the week, Sumire stops you in the corridor. \"We've heard back from the afflicted shuttle. The antivirals are really doing the trick.\"\r\n\r\nShe pauses, considering her next words. \"I just... I hope we don't run into the Pox ourselves. It's some nasty business.\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "get paid, morale up"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "50000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[¢100,000, no Pox Antivirals yet]",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Buy the antivirals for the Argo instead"
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [
+       "chain_plague_ShoreLeave1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 100000,
+       "valueConstant": "100000"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Firmly, you say, \"We're not in the business of bailing out every wayward traveler.\"\r\n\r\nThen you offer a new option. \"In fact, we should be protecting ourselves from a possible infection of this Pox.\"\r\n\r\nDr. Murad announces she has other work to do, as you, Darius and Sumire plan out the purchase of antivirals for the <i>Argo's</i> MedBay.\r\n\r\nOver the next several days words trickles through the ship about your decision, leading to heated arguments on both side.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "gain antivirals"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_plague_ShoreLeave1"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Firmly, you say, \"We're not in the business of bailing out every wayward traveler.\"\r\n\r\nThen you offer a new option. \"In fact, we should be protecting ourselves from a possible infection of this Pox.\"\r\n\r\nDr. Murad announces she has other work to do, as you, Darius and Sumire plan out the purchase of antivirals for the <i>Argo's</i> MedBay.\r\n\r\nOver the next several days words trickles through the ship about your decision, leading to heated arguments on both side.",
+      "Icon": null,
+      "Id": "outcome_2_1",
+      "Name": "gain antivirals, morale loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_plague_ShoreLeave1"
+        ],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-100000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Pox Antivirals]",
+    "Icon": null,
+    "Id": "outcome_3",
+    "Name": "Share the antivirals you've already acquired."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "chain_plague_ShoreLeave1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You nod at Dr. Murad. \"We've been here before, and we have a stash of antivirals in the MedBay to show for it. We have an obligation to pass on our good fortune. Make arrangements for a transfer of supplies.\"\r\n\r\nOver the next several days, word trickles through the ship about your decision. Between the contingent of lifelong spacers in the crew and those MechWarriors who survived their own personal brush with the Periphery Pox, there's a wave of support.",
+      "Icon": null,
+      "Id": "outcome_3_0",
+      "Name": "morale up"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "chain_plague_Vaccine",
+    "event_FluShip"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Travel",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "company_blackMarket_ON"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

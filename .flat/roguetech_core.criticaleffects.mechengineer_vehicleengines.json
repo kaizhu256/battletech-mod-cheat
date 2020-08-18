@@ -1,0 +1,54 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "Vehicle Speed reduced by 50%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "CriticalEffect-VehicleEngineCrit1",
+    "Name": "No Movement"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "CruiseSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Vehicle Speed reduced by 50%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "CriticalEffect-VehicleEngineCrit2",
+    "Name": "No Movement"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "FlankSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

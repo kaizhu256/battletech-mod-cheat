@@ -1,0 +1,319 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "Bulwark",
+ "BonusValueB": "Requires ECM",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "Chameleon"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationIsBuff": true,
+   "ActivationMessage": "CLPS On",
+   "ActiveByDefault": true,
+   "ButtonName": "CLPS",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "CLPS Off",
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Makes the carrier much harder to detect with stealth",
+      "Icon": "uixSvgIcon_status_ECM-ghost",
+      "Id": "LV_Stealth_Effect",
+      "Name": "STEALTH"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.String",
+      "modValue": "0.5_4_2_4_6",
+      "operation": "Set",
+      "statName": "LV_STEALTH"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Makes the carrier much harder to see with eyes",
+      "Icon": "uixSvgIcon_status_ECM-ghost",
+      "Id": "LV_MIMETIC",
+      "Name": "MIMETIC ARMOR"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.String",
+      "modValue": "0.5_4_5",
+      "operation": "Set",
+      "statName": "LV_MIMETIC"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Signature Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Signature_Decrease_Stealth",
+      "Name": "Stealth Signature Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.5",
+      "operation": "Float_Multiply",
+      "statName": "SensorSignatureModifier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Visibility Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Visibility_Decrease_Stealth",
+      "Name": "Stealth Visbility Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.5",
+      "operation": "Float_Multiply",
+      "statName": "SpottingVisibilityMultiplier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat generation",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Generation_Stealth",
+      "Name": "Increased Heat"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.15",
+      "operation": "Float_Multiply",
+      "statName": "HeatGenerated",
+      "targetCollection": "Weapon"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat Capacity Penalty",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Capacity_Stealth",
+      "Name": "Decreased Heat Capacity"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "15",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 2,
+   "ArmorTPCost": 2
+  },
+  "ArmorStructureChanges": {
+   "ArmorFactor": 2
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CLPS",
+    "StealthSensors: 50%, 4, 2, 4, 6",
+    "MimeticStealth: 50%, 4, 5",
+    "ActiveVisibility: -50%",
+    "ActiveSignature: -50%",
+    "TEHeatgen: +15%",
+    "HeatPerTurn: +15",
+    "ArmorProtection: x2",
+    "ArmorFactor: x2",
+    "TACImmune",
+    "WalkSpeed: -20%",
+    "ReqECM",
+    "ArmorTPCost: X2",
+    "ArmorCBCost: X2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   },
+   {
+    "CategoryID": "Chameleon"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "lootable_ChameleonLightPolarizationShield"
+  },
+  "Weights": {
+   "ArmorFactor": 2
+  }
+ },
+ "Description": {
+  "Cost": 100,
+  "Details": "The Chameleon Light Polarization Shield was designed to make a 'Mech invisible to the naked eye. By using a primitive mimetic system, the outline of the 'Mech carrying it was broken up, blending into the surrounding terrain. The Chameleon was very effective because unlike the Null Signature System it worked against sensor systems and visual observation.",
+  "Icon": "StealthArmor",
+  "Id": "Gear_quirk_Hardened_CLPS",
+  "Manufacturer": "Prototype",
+  "Model": "Chameleon CLPS",
+  "Name": "Chameleon Light Polarization Shield",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Hardened CLPS"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "HardenedPenaltyWalk",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "HardenedCritImmune",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CACAPProtection"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

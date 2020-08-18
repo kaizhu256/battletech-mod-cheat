@@ -1,0 +1,80 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 20
+  },
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Generic_Standard"
+  },
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00016"
+  },
+  "Lootable": {
+   "ItemID": "lootable_kit_shs"
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 15"
+   },
+   "Install": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Basic engine cooling system",
+  "Icon": "thermometer-cold",
+  "Id": "Tank_Coolant_System",
+  "Manufacturer": "Generic",
+  "Model": "Cooling System",
+  "Name": "Cooling",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Coolant"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

@@ -1,0 +1,54 @@
+{
+ "AdditionalCost": 13500,
+ "AssignedCastDefId": "castDef_DariusDefault",
+ "AssignedCastDescription": "Commander, the existing Med Bay is able to keep up, but just barely. Nobody's dying for lack of treatment, but our medics are overworked. Beta Pod has an entire additional medical bay, unused and waiting to be renovated and powered back up.",
+ "Category": "MED_BAY",
+ "Description": {
+  "Cost": 0,
+  "Details": "This expanded field hospital allows for two MedTechs to work side by side, meaning more capacity to treat patients. The cost includes the salary of an additional skilled MedTech to treat your injured MechWarriors.",
+  "Icon": "uixSvgIcon_shipUpgrade_medbay2",
+  "Id": "argoUpgrade_medBay2",
+  "Name": "Med Bay 2",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_MedBay",
+ "Location": "SHIP",
+ "PurchaseCost": 900000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_medBay1",
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MedTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  },
+  {
+   "name": "IncapacitatedDeathChance",
+   "typeString": "System.Single",
+   "value": -0.02,
+   "valueConstant": ""
+  },
+  {
+   "name": "LethalDeathChance",
+   "typeString": "System.Single",
+   "value": -0.02,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_medBay2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

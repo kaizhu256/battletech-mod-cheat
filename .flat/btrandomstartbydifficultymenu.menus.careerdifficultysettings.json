@@ -1,0 +1,3206 @@
+{
+ "difficultyList": [
+  {
+   "DefaultIndex": 0,
+   "Enabled": false,
+   "ID": "diff_ironMan",
+   "Name": "Ironman Mode",
+   "Options": [
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "IronManMode",
+       "ConstantType": "Story",
+       "ConstantValue": "False"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_IM_off",
+     "Name": "Off",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "IronmanMode",
+       "ConstantType": "Story",
+       "ConstantValue": "True"
+      }
+     ],
+     "DifficultyValue": 3,
+     "ID": "diff_IM_on",
+     "Name": "On",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": true,
+   "TelemetryEventName": "",
+   "Toggle": true,
+   "Tooltip": "Ironman Mode restricts you to only one save file. All consequences, including 'Mech loss, MechWarrior death, and failed missions are <i>permanent</i>. <color=#F79B26>Running out of funds <i>or</i> failing any Priority Mission will result in campaign loss. This setting is intended for veterans and those seeking a significant challenge.</color>",
+   "UIOrder": -1,
+   "Visible": false
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_FriendlyFire",
+   "Name": "Friendly Fire",
+   "Options": [
+    {
+     "CareerScoreModifier": -1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StrayShotValidTargets",
+       "ConstantType": "string",
+       "ConstantValue": "0"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_FF_Off",
+     "Name": "None",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StrayShotValidTargets",
+       "ConstantType": "string",
+       "ConstantValue": "1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_FF_Neutral",
+     "Name": "Neutrals",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.5,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StrayShotValidTargets",
+       "ConstantType": "string",
+       "ConstantValue": "2"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_FF_On",
+     "Name": "All",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Select what Stray Shot behavior you want - No Stray Shots, Neutrals Only, Friendly Fire",
+   "UIOrder": 0,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 1,
+   "Enabled": false,
+   "ID": "diff_equipNewMech",
+   "Name": "Unequipped 'Mechs",
+   "Options": [
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "EquipMechOnSalvage",
+       "ConstantType": "Salvage",
+       "ConstantValue": "True"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_EMS_off",
+     "Name": "Off",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "EquipMechOnSalvage",
+       "ConstantType": "Salvage",
+       "ConstantValue": "False"
+      }
+     ],
+     "DifficultyValue": 1,
+     "ID": "diff_EMS_on",
+     "Name": "On",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": true,
+   "TelemetryEventName": "",
+   "Toggle": true,
+   "Tooltip": "When this setting is enabled, new 'Mechs you acquire through salvage will not come with equipped weapons or components, and will need to be customized from scratch.",
+   "UIOrder": 1,
+   "Visible": false
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_mechConstruction",
+   "Name": "Parts for 'Mech Assembly",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultMechPartMax",
+       "ConstantType": "Story",
+       "ConstantValue": "3"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MC_easy",
+     "Name": "3",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultMechPartMax",
+       "ConstantType": "Story",
+       "ConstantValue": "4"
+      }
+     ],
+     "DifficultyValue": 1,
+     "ID": "diff_MC_easy2",
+     "Name": "4",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultMechPartMax",
+       "ConstantType": "Story",
+       "ConstantValue": "5"
+      }
+     ],
+     "DifficultyValue": 1,
+     "ID": "diff_MC_med",
+     "Name": "5",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultMechPartMax",
+       "ConstantType": "Story",
+       "ConstantValue": "6"
+      }
+     ],
+     "DifficultyValue": 1,
+     "ID": "diff_MC_med2",
+     "Name": "6",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultMechPartMax",
+       "ConstantType": "Story",
+       "ConstantValue": "7"
+      }
+     ],
+     "DifficultyValue": 2,
+     "ID": "diff_MC_med3",
+     "Name": "7",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.15,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultMechPartMax",
+       "ConstantType": "Story",
+       "ConstantValue": "8"
+      }
+     ],
+     "DifficultyValue": 3,
+     "ID": "diff_MC_hard",
+     "Name": "8",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": true,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the number of salvaged or purchased 'Mech parts you must acquire to assemble a new 'Mech. Increase this value to make new 'Mechs rarer and more difficult to obtain. <color=#00e600>Save and reload to change during Play</color>",
+   "UIOrder": 2,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 5,
+   "Enabled": true,
+   "ID": "diff_mechDestruction",
+   "Name": "'Mech Recovery Chance",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "1.5"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_100",
+     "Name": "100%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "1.4"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_90",
+     "Name": "90%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "1.3"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_80",
+     "Name": "80%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "1.2"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_70",
+     "Name": "70%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "1.1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_60",
+     "Name": "60%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_50",
+     "Name": "50%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "0.9"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_40",
+     "Name": "40%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "0.8"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_30",
+     "Name": "30%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "0.7"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_20",
+     "Name": "20%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "0.6"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MD_10",
+     "Name": "10%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DestroyedMechRecoveryChance",
+       "ConstantType": "Salvage",
+       "ConstantValue": "0.5"
+      }
+     ],
+     "DifficultyValue": 2,
+     "ID": "diff_MD_on",
+     "Name": "00%",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting defines the additional chance to recover a destroyed 'Mech. <color=#F79B26>defines the chance of getting your own mech back for free</color>",
+   "UIOrder": 3,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 3,
+   "Enabled": true,
+   "ID": "diff_DifficVariance",
+   "Name": "Contract Difficulty Variance",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyVariance",
+       "ConstantType": "Story",
+       "ConstantValue": "5"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_DV_5",
+     "Name": "5",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyVariance",
+       "ConstantType": "Story",
+       "ConstantValue": "4"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_DV_4",
+     "Name": "4",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyVariance",
+       "ConstantType": "Story",
+       "ConstantValue": "3"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_DV_3",
+     "Name": "3",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyVariance",
+       "ConstantType": "Story",
+       "ConstantValue": "2"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_DV_2",
+     "Name": "2",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyVariance",
+       "ConstantType": "Story",
+       "ConstantValue": "1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_DV_1",
+     "Name": "1",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyVariance",
+       "ConstantType": "Story",
+       "ConstantValue": "0"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_DV_0",
+     "Name": "0",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Set your Choice of Maximum difficulty difference between generated contracts<color=#F79B26>Each number is a half skull difference to your global difficulty.</color>",
+   "UIOrder": 6,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 1,
+   "Enabled": true,
+   "ID": "diff_contractPayment",
+   "Name": "Contract Payment",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractPricePerDifficulty",
+       "ConstantType": "Finances",
+       "ConstantValue": "300000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CP_easy",
+     "Name": "Generous",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractPricePerDifficulty",
+       "ConstantType": "Finances",
+       "ConstantValue": "200000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CP_med",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractPricePerDifficulty",
+       "ConstantType": "Finances",
+       "ConstantValue": "150000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CP_hard",
+     "Name": "Stingy",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.15,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractPricePerDifficulty",
+       "ConstantType": "Finances",
+       "ConstantValue": "100000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CP_superhard",
+     "Name": "Cheapskate",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the amount of C-Bills paid by contracts across the entire game. Adjust this setting to make the economic gameplay more or less forgiving.",
+   "UIOrder": 7,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 1,
+   "Enabled": true,
+   "ID": "diff_baseSalvage",
+   "Name": "Salvage",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.5,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractFloorSalvageBonus",
+       "ConstantType": "Finances",
+       "ConstantValue": "2"
+      }
+     ],
+     "DifficultyValue": -1,
+     "ID": "diff_BS_high",
+     "Name": "Generous",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractFloorSalvageBonus",
+       "ConstantType": "Finances",
+       "ConstantValue": "1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_BS_med",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.5,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractFloorSalvageBonus",
+       "ConstantType": "Finances",
+       "ConstantValue": "0"
+      }
+     ],
+     "DifficultyValue": 1,
+     "ID": "diff_BS_low",
+     "Name": "Stingy",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting changes the amount of salvage you may obtain from negotiation. Adjust this setting to make the economic gameplay more or less forgiving.",
+   "UIOrder": 8,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 1,
+   "Enabled": true,
+   "ID": "diff_CommanderEXP",
+   "Name": "Commander Experience Points",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "CommanderStartingExperience",
+       "ConstantType": "Story",
+       "ConstantValue": "10000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMDEXP_easy2",
+     "Name": "10000",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "CommanderStartingExperience",
+       "ConstantType": "Story",
+       "ConstantValue": "7000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMDEXP_easy",
+     "Name": "7000",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "CommanderStartingExperience",
+       "ConstantType": "Story",
+       "ConstantValue": "3500"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMDEXP_normal",
+     "Name": "3500",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "CommanderStartingExperience",
+       "ConstantType": "Story",
+       "ConstantValue": "1750"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMDEXP_hard",
+     "Name": "1750",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Use this to decide for the starting Experience of your Commander",
+   "UIOrder": 9,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 0,
+   "Enabled": true,
+   "ID": "diff_advancedPilots",
+   "Name": "Advanced MechWarriors",
+   "Options": [
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyMod",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.12"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMD_easy",
+     "Name": "Often",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyMod",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.08"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMD_med",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ContractDifficultyMod",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.04"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_CMD_hard",
+     "Name": "Rare",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "In the later parts of the game, new MechWarriors in the Hiring Hall will often have better stats and skills than in the early parts of the game. Modify this setting to change the frequency of new MechWarriors having these improvements.",
+   "UIOrder": 10,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 5,
+   "Enabled": true,
+   "ID": "diff_pilotRonin",
+   "Name": "Ronin Hire Chance",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "1.0"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_only",
+     "Name": "100%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.08,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.9"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_90",
+     "Name": "90%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.06,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.8"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_80",
+     "Name": "80%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.7"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_70",
+     "Name": "70%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.6"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_60",
+     "Name": "60%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.5"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_50",
+     "Name": "50%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.4"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_40",
+     "Name": "40%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.3"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_30",
+     "Name": "30%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.3,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.2"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_20",
+     "Name": "20%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.4,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_10",
+     "Name": "10%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.5,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultRoninHiringChance",
+       "ConstantType": "Story",
+       "ConstantValue": "0.0"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Ronin_never",
+     "Name": "Never",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the chance of hiring ronin",
+   "UIOrder": 11,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 5,
+   "Enabled": true,
+   "ID": "diff_pilotpersystem",
+   "Name": "Pilots per system",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "10"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_10",
+     "Name": "10",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "9"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_9",
+     "Name": "9",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "8"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_8",
+     "Name": "8",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "7"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_7",
+     "Name": "7",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "6"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_6",
+     "Name": "6",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "5"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_5",
+     "Name": "5",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "4"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_4",
+     "Name": "4",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "3"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_3",
+     "Name": "3",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "2"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_2",
+     "Name": "2",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "DefaultPilotsPerSystem",
+       "ConstantType": "Story",
+       "ConstantValue": "1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_pilotssys_1",
+     "Name": "1",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the Pilots available per System",
+   "UIOrder": 12,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 1,
+   "Enabled": true,
+   "ID": "diff_pilotProgression",
+   "Name": "MechWarrior Progression",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "BaseXPGainPerMission",
+       "ConstantType": "Pilot",
+       "ConstantValue": "400"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PP_fast",
+     "Name": "Fast",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "BaseXPGainPerMission",
+       "ConstantType": "Pilot",
+       "ConstantValue": "350"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PP_easy",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "BaseXPGainPerMission",
+       "ConstantType": "Pilot",
+       "ConstantValue": "300"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PP_med",
+     "Name": "Slow",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "BaseXPGainPerMission",
+       "ConstantType": "Pilot",
+       "ConstantValue": "250"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PP_hard",
+     "Name": "Very Slow",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the amount of experience MechWarriors gain after each mission. Change this setting to adjust the rate at which MechWarriors improve their stats and gain new skills.",
+   "UIOrder": 13,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_pilotExponent",
+   "Name": "MechWarrior Exponent",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostExponent",
+       "ConstantType": "Pilot",
+       "ConstantValue": "2"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PEXP_fast",
+     "Name": "Fast",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostExponent",
+       "ConstantType": "Pilot",
+       "ConstantValue": "2.25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PEXP_easy",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostExponent",
+       "ConstantType": "Pilot",
+       "ConstantValue": "2.5"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PEXP_med",
+     "Name": "Slow",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostExponent",
+       "ConstantType": "Pilot",
+       "ConstantValue": "3.0"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PEXP_hard",
+     "Name": "Very Slow",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the exponent of raising XP Cost per Level. <color=#F79B26>LevelCost=(Potential Level,Exponent)*Multiplier.</color>",
+   "UIOrder": 14,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_pilotcostmultiplier",
+   "Name": "MechWarrior Multiplier",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.2,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostMultiplier",
+       "ConstantType": "Pilot",
+       "ConstantValue": "80"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PCMP_fast",
+     "Name": "Fast",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostMultiplier",
+       "ConstantType": "Pilot",
+       "ConstantValue": "90"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PCMP_easy",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostMultiplier",
+       "ConstantType": "Pilot",
+       "ConstantValue": "100"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PCMP_med",
+     "Name": "Slow",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostMultiplier",
+       "ConstantType": "Pilot",
+       "ConstantValue": "110"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PCMP_hard",
+     "Name": "Very Slow",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "PilotLevelCostMultiplier",
+       "ConstantType": "Pilot",
+       "ConstantValue": "120"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_PCMP_superhard",
+     "Name": "UltraSlow",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This setting controls the multiplier of XP Cost per Level. <color=#F79B26>LevelCost=(Potential Level,Exponent)*Multiplier.</color>",
+   "UIOrder": 15,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_lethality",
+   "Name": "Lethality",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "IncapacitatedDeathChance",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.0"
+      },
+      {
+       "ConstantName": "GutsDeathReduction",
+       "ConstantType": "Pilot",
+       "ConstantValue": "1.00"
+      }
+     ],
+     "DifficultyValue": -2,
+     "ID": "diff_LTH_never",
+     "Name": "Never",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "IncapacitatedDeathChance",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.5"
+      },
+      {
+       "ConstantName": "GutsDeathReduction",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.05"
+      }
+     ],
+     "DifficultyValue": -1,
+     "ID": "diff_LTH_easy",
+     "Name": "Half",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "IncapacitatedDeathChance",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.9"
+      },
+      {
+       "ConstantName": "GutsDeathReduction",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0.05"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_LTH_Normal",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "IncapacitatedDeathChance",
+       "ConstantType": "Pilot",
+       "ConstantValue": "1.05"
+      },
+      {
+       "ConstantName": "GutsDeathReduction",
+       "ConstantType": "Pilot",
+       "ConstantValue": "0"
+      }
+     ],
+     "DifficultyValue": 1,
+     "ID": "diff_LTH_ULTRA",
+     "Name": "Lethal",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Choose the chance of being KILLED IN ACTION from never to always.",
+   "UIOrder": 16,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 3,
+   "Enabled": true,
+   "ID": "diff_money",
+   "Name": "Starting Money",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.15,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingCBills",
+       "ConstantType": "Story",
+       "ConstantValue": "6580000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SM_supereasy",
+     "Name": "6580000",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingCBills",
+       "ConstantType": "Story",
+       "ConstantValue": "4080000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SM_easy",
+     "Name": "4080000",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingCBills",
+       "ConstantType": "Story",
+       "ConstantValue": "3210000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SM_medium",
+     "Name": "3210000",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingCBills",
+       "ConstantType": "Story",
+       "ConstantValue": "2500000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SM_hard",
+     "Name": "2500000",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingCBills",
+       "ConstantType": "Story",
+       "ConstantValue": "1800000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SM_veryhard",
+     "Name": "1800000",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Select your starting capital. <color=#F79B26>1% Cost of your starting Lance will be deducted from this.</color>",
+   "UIOrder": 17,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_MechBayTechCost",
+   "Name": "Mech Bay Speed",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "0.35"
+      },
+      {
+       "ConstantName": "ComponentRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "5"
+      },
+      {
+       "ConstantName": "BallisticInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "8"
+      },
+      {
+       "ConstantName": "MissileInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "8"
+      },
+      {
+       "ConstantName": "EnergyInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "8"
+      },
+      {
+       "ConstantName": "APInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "8"
+      },
+      {
+       "ConstantName": "AmmoInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "4"
+      },
+      {
+       "ConstantName": "JumpJetInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "4"
+      },
+      {
+       "ConstantName": "HeatSinkInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "4"
+      },
+      {
+       "ConstantName": "OtherInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "4"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_quick",
+     "Name": "Faster",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "0.35"
+      },
+      {
+       "ConstantName": "ComponentRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "6"
+      },
+      {
+       "ConstantName": "BallisticInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "MissileInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "EnergyInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "APInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "AmmoInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "5"
+      },
+      {
+       "ConstantName": "JumpJetInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "5"
+      },
+      {
+       "ConstantName": "HeatSinkInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "5"
+      },
+      {
+       "ConstantName": "OtherInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "5"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_Normal",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "0.65"
+      },
+      {
+       "ConstantName": "ComponentRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "8"
+      },
+      {
+       "ConstantName": "BallisticInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "13"
+      },
+      {
+       "ConstantName": "MissileInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "13"
+      },
+      {
+       "ConstantName": "EnergyInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "13"
+      },
+      {
+       "ConstantName": "APInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "13"
+      },
+      {
+       "ConstantName": "AmmoInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "7"
+      },
+      {
+       "ConstantName": "JumpJetInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "7"
+      },
+      {
+       "ConstantName": "HeatSinkInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "7"
+      },
+      {
+       "ConstantName": "OtherInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "7"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_Hard",
+     "Name": "Hard",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "0.85"
+      },
+      {
+       "ConstantName": "ComponentRepairTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "11"
+      },
+      {
+       "ConstantName": "BallisticInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "16"
+      },
+      {
+       "ConstantName": "MissileInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "16"
+      },
+      {
+       "ConstantName": "EnergyInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "16"
+      },
+      {
+       "ConstantName": "APInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "16"
+      },
+      {
+       "ConstantName": "AmmoInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "JumpJetInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "HeatSinkInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      },
+      {
+       "ConstantName": "OtherInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "10"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_VeryHard",
+     "Name": "VeryHard",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Select Mech Bay construction Speeds",
+   "UIOrder": 18,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 2,
+   "Enabled": true,
+   "ID": "diff_ArmourTechCost",
+   "Name": "Mech Bay Armour Speed",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.1,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ArmorInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "30"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_quick",
+     "Name": "Easy",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ArmorInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "45"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_Normal",
+     "Name": "Quick"
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ArmorInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "70"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_Hard",
+     "Name": "Normal"
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ArmorInstallTechPoints",
+       "ConstantType": "MechLab",
+       "ConstantValue": "100"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAY_VeryHard",
+     "Name": "VeryHard",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Select the speed at which your armour is changed",
+   "UIOrder": 19,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 1,
+   "Enabled": true,
+   "ID": "diff_MechBayBillsCost",
+   "Name": "Mech Bay CBILLS",
+   "Options": [
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "200"
+      },
+      {
+       "ConstantName": "ComponentRepairCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "300"
+      },
+      {
+       "ConstantName": "BallisticInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "350"
+      },
+      {
+       "ConstantName": "MissileInstallTechCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "350"
+      },
+      {
+       "ConstantName": "EnergyInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "350"
+      },
+      {
+       "ConstantName": "APInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "350"
+      },
+      {
+       "ConstantName": "AmmoInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "175"
+      },
+      {
+       "ConstantName": "JumpJetInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "350"
+      },
+      {
+       "ConstantName": "HeatSinkInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "250"
+      },
+      {
+       "ConstantName": "ArmorInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "100"
+      },
+      {
+       "ConstantName": "OtherInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "250"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAYC_quick",
+     "Name": "Cheap",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "400"
+      },
+      {
+       "ConstantName": "ComponentRepairCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "600"
+      },
+      {
+       "ConstantName": "BallisticInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "700"
+      },
+      {
+       "ConstantName": "MissileInstallTechCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "700"
+      },
+      {
+       "ConstantName": "EnergyInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "700"
+      },
+      {
+       "ConstantName": "APInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "700"
+      },
+      {
+       "ConstantName": "AmmoInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "350"
+      },
+      {
+       "ConstantName": "JumpJetInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "700"
+      },
+      {
+       "ConstantName": "HeatSinkInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "500"
+      },
+      {
+       "ConstantName": "ArmorInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "150"
+      },
+      {
+       "ConstantName": "OtherInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "500"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAYC_Normal",
+     "Name": "Normal",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StructureRepairCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "800"
+      },
+      {
+       "ConstantName": "ComponentRepairCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1200"
+      },
+      {
+       "ConstantName": "BallisticInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1400"
+      },
+      {
+       "ConstantName": "MissileInstallTechCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1400"
+      },
+      {
+       "ConstantName": "EnergyInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1400"
+      },
+      {
+       "ConstantName": "APInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1400"
+      },
+      {
+       "ConstantName": "AmmoInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "700"
+      },
+      {
+       "ConstantName": "JumpJetInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1400"
+      },
+      {
+       "ConstantName": "HeatSinkInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1000"
+      },
+      {
+       "ConstantName": "ArmorInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "300"
+      },
+      {
+       "ConstantName": "OtherInstallCost",
+       "ConstantType": "MechLab",
+       "ConstantValue": "1000"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_MBAYC_Hard",
+     "Name": "Expensive",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Select Mech Bay Cbill Cost",
+   "UIOrder": 20,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 8,
+   "Enabled": true,
+   "ID": "diff_ShopSell",
+   "Name": "Shop Selling Prices",
+   "Options": [
+    {
+     "CareerScoreModifier": 0.08,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.05"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_5",
+     "Name": "5%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.07,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.06"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_6",
+     "Name": "6%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.06,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.07"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_10",
+     "Name": "7%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.08"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_8",
+     "Name": "8%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.09"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_9",
+     "Name": "9%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.1"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_10",
+     "Name": "10%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.11"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_11",
+     "Name": "11%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.12"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_12",
+     "Name": "12%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.13"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_13",
+     "Name": "13%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.14"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_14",
+     "Name": "14%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.15"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_15",
+     "Name": "15%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.16"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_16",
+     "Name": "16%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.17"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_17",
+     "Name": "17%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "ShopSellModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.18"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_SS_18",
+     "Name": "18%",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Set your desired Selling Values.",
+   "UIOrder": 23,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 8,
+   "Enabled": true,
+   "ID": "diff_ShopScrap",
+   "Name": "Scrap Return Values",
+   "Options": [
+    {
+     "CareerScoreModifier": 0.08,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.05"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_5",
+     "Name": "5%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.07,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.06"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_6",
+     "Name": "6%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.06,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.07"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_7",
+     "Name": "7%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.08"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_8",
+     "Name": "8%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.09"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_9",
+     "Name": "9%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.10"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_10",
+     "Name": "10%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.11"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_11",
+     "Name": "11%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.12"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_12",
+     "Name": "12%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.13"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_13",
+     "Name": "13%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.01,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.14"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_14",
+     "Name": "14%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.02,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.15"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_15",
+     "Name": "15%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.03,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.16"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_16",
+     "Name": "16%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.04,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.17"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_17",
+     "Name": "17%",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": -0.05,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "MechScrapModifier",
+       "ConstantType": "Finances",
+       "ConstantValue": "0.18"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Scrap_18",
+     "Name": "18%",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "Set your desired Scrapping Payouts.",
+   "UIOrder": 24,
+   "Visible": true
+  },
+  {
+   "DefaultIndex": 4,
+   "Enabled": true,
+   "ID": "diff_startingplanet",
+   "Name": "Starting Planet",
+   "Options": [
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "UrCruinne"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Primitive_Heavy,itemCollection_Mechs_Starting_Primitive_Light,itemCollection_Mechs_Starting_Primitive_Medium,itemCollection_Mechs_Starting_Primitive1_Light,itemCollection_Mechs_Starting_Primitive1_Medium"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "AuriganMercenaries:30,AuriganPirates:30,AuriganRestoration:30,AuriganDirectorate:30"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_UrCruinne",
+     "Name": "Primitive",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Roche"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Primitive_Heavy,itemCollection_Mechs_Starting_Primitive_Light,itemCollection_Mechs_Starting_Primitive_Medium,itemCollection_Mechs_Starting_Primitive1_Light,itemCollection_Mechs_Starting_Primitive1_Medium"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "AuriganMercenaries:30,AuriganPirates:30,AuriganRestoration:30,AuriganDirectorate:30"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_ClanPrimitive",
+     "Name": "Clan Primitive",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Solaris"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Solaris_Medium,itemCollection_Mechs_Starting_Solaris_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "MercenaryReviewBoard:100,AuriganPirates:30"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Solaris",
+     "Name": "Solaris",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Betelgeuse"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Urbanmech,itemCollection_Mechs_Starting_Urbanmech,itemCollection_Mechs_Starting_Urbanmech,itemCollection_Mechs_Starting_Urbanmech,itemCollection_Mechs_Starting_Urbanmech"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "MercenaryReviewBoard:100,AuriganPirates:30"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Urbie",
+     "Name": "Urbies",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Galatea"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Mercenary_Medium,itemCollection_Mechs_Starting_Mercenary_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "MercenaryReviewBoard:150,AuriganPirates:-20"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_galatea",
+     "Name": "Mercenary",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Tharkad"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Steiner_Medium,itemCollection_Mechs_Starting_Steiner_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Steiner:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Steiner",
+     "Name": "Steiner",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "NewAvalon"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Davion_Medium,itemCollection_Mechs_Starting_Davion_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Davion:50,Kurita:-25,Liao:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Davion",
+     "Name": "Davion",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Luthien"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Kurita_Medium,itemCollection_Mechs_Starting_Kurita_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Kurita:50,Davion:-25,Steiner:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Kurita",
+     "Name": "Kurita",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Atreus(FWL)"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Marik_Medium,itemCollection_Mechs_Starting_Marik_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Marik:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Marik",
+     "Name": "Marik",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Sian"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Liao_Medium,itemCollection_Mechs_Starting_Liao_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Liao:50,Davion:-25,Steiner:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Liao",
+     "Name": "Liao",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Rasalhague"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Rasalhague_Medium,itemCollection_Mechs_Starting_Rasalhague_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Rasalhague:50,Steiner:-25,Kurita:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Rasalhague",
+     "Name": "Rasalhague",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "StranaMechty"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Clans_0,itemCollection_Mechs_Clans_1,itemCollection_Mechs_Clans_2,itemCollection_Mechs_Clans_3,itemCollection_Mechs_Clans_4"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "ClanBurrock:20,ClanCloudCobra:20,ClanCoyote:20,ClanDiamondShark:20,ClanFireMandrill:20,ClanGhostBear:20,ClanGoliathScorpion:20,ClanHellsHorses:20,ClanIceHellion:20,ClanJadeFalcon:20,ClanNovaCat:20,ClansGeneric:20,ClanSmokeJaguar:20,ClanSnowRaven:20,ClanStarAdder:20,ClanSteelViper:20,ClanWolf:20"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Clans",
+     "Name": "Clans",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "St.Ives"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Ives_Medium,itemCollection_Mechs_Starting_Ives_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Ives:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_StIves",
+     "Name": "St. Ives",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Oberon"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Medium,itemCollection_Mechs_Starting_Pirate_Medium"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Oberon:50,AuriganPirates:30,Valkyrate:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Oberon",
+     "Name": "Oberon",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Taurus"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Taurian_Medium,itemCollection_Mechs_Starting_Taurian_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "TaurianConcordat:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Taurian",
+     "Name": "Taurian",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Canopus"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Magistracy_Medium,itemCollection_Mechs_Starting_Magistracy_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "MagistracyOfCanopus:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Magistracy",
+     "Name": "Magistracy",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Alpheratz"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Outworlds_Medium,itemCollection_Mechs_Starting_Outworlds_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Outworld:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Outworld",
+     "Name": "Outworld",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Circinus"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Circinus_Medium,itemCollection_Mechs_Starting_Circinus_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Circinus:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Circinus",
+     "Name": "Circinus",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Alphard(MH)"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Marian_Medium,itemCollection_Mechs_Starting_Marian_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Marian:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Marian",
+     "Name": "Marian",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Lothario"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Periphery_Medium,itemCollection_Mechs_Starting_Periphery_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Lothian:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Lothian",
+     "Name": "Lothian",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Coromodir"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Periphery_Medium,itemCollection_Mechs_Starting_Periphery_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "AuriganRestoration:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Aurigan",
+     "Name": "Aurigan",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Asturias"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Periphery_Medium,itemCollection_Mechs_Starting_Periphery_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Castile:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Castile",
+     "Name": "Castile",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "FarReach"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Comstar,itemCollection_Mechs_Starting_DeepPeriphery_Light,itemCollection_Mechs_Starting_DeepPeriphery_Light"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Chainelane:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Chainelane",
+     "Name": "Chainelane",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Blackbone(Nyserta3025+)"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Periphery_Medium,itemCollection_Mechs_Starting_Periphery_Light,itemCollection_Mechs_Starting_Generic_Medium,itemCollection_Mechs_Starting_Generic_Light,itemCollection_Mechs_Starting_Generic_ECM"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Elysia:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Elysia",
+     "Name": "Elysia",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Bremen(HL)"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Comstar,itemCollection_Mechs_Starting_DeepPeriphery_Light,itemCollection_Mechs_Starting_DeepPeriphery_Light"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Hanse:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Hanse",
+     "Name": "Hanse",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Trondheim(JF)"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Comstar,itemCollection_Mechs_Starting_DeepPeriphery_Light,itemCollection_Mechs_Starting_DeepPeriphery_Light"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "JarnFolk:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Jarnfolk",
+     "Name": "Jarnfolk",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "TortugaPrime"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Medium,itemCollection_Mechs_Starting_Pirate_Medium"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Tortuga:50,AuriganPirates:30,Davion:-25,Taurian:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Tortuga",
+     "Name": "Tortuga",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Gotterdammerung"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Light,itemCollection_Mechs_Starting_Pirate_Medium,itemCollection_Mechs_Starting_Pirate_Medium"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Valkyrate:50,AuriganPirates:30,Oberon:-25"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Valkyrate",
+     "Name": "Valkyrate",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Thala"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Comstar,itemCollection_Mechs_Starting_DeepPeriphery_Light,itemCollection_Mechs_Starting_DeepPeriphery_Light"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Axumite:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Axumite",
+     "Name": "Axumite",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Terra"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_Comstar_Medium,itemCollection_Mechs_Starting_Comstar_Light_A,itemCollection_Mechs_Starting_Comstar_Light_B,itemCollection_Mechs_Starting_Comstar_Light_C,itemCollection_Mechs_Starting_Comstar_Light_D"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "ComStar:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Comstar",
+     "Name": "ComGuard",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "EC3040-B42A"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_WoB_Medium,itemCollection_Mechs_Starting_WoB_Light_A,itemCollection_Mechs_Starting_WoB_Light_B,itemCollection_Mechs_Starting_WoB_Light_C,itemCollection_Mechs_Starting_WoB_Light_D"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "WordOfBlake:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Wobbles",
+     "Name": "Word Of Blake",
+     "TelemetryEventDesc": ""
+    },
+    {
+     "CareerScoreModifier": 0,
+     "DifficultyConstants": [
+      {
+       "ConstantName": "StartingSystems",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "NewDelphi"
+      },
+      {
+       "ConstantName": "StartingRandomMechLists",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Medium,itemCollection_Mechs_Starting_DeepPeriphery_Comstar,itemCollection_Mechs_Starting_DeepPeriphery_Light,itemCollection_Mechs_Starting_DeepPeriphery_Light"
+      },
+      {
+       "ConstantName": "FactionReputation",
+       "ConstantType": "CareerMode",
+       "ConstantValue": "Delphi:50"
+      }
+     ],
+     "DifficultyValue": 0,
+     "ID": "diff_Delphi",
+     "Name": "New Delphi Compact",
+     "TelemetryEventDesc": ""
+    }
+   ],
+   "StartOnly": false,
+   "TelemetryEventName": "",
+   "Toggle": false,
+   "Tooltip": "This Setting decides at which Planet and what 'Mech you start defined by Faction.",
+   "UIOrder": 0,
+   "Visible": true
+  }
+ ]
+}

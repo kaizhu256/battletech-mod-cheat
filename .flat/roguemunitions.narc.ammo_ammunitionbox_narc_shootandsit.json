@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Narc_ShootAndSit",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 10,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DelayedImpact: 1",
+    "AreaOfEffect: 30",
+    "AreaOfEffectDmg: 40",
+    "AreaOfEffectSTABDmg: 40",
+    "NARCAmmo: 10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/s/t/narc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 40,
+   "StabilityDamagePerAmmo": 40
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000035"
+  },
+  "TRGBColor": {
+   "Color": "#00FFFF",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 22000,
+  "Details": "This highly specialized variant of the NARC pod strips out the homing components in exchange for a sizable high explosive charge. Upon impact the pod sticks to the target. In order to maximize instability delivered to the target a small gyroscopic sensor detonates when the target shifts it's weight, or, as a failsafe, after a few seconds delay. Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type.Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "NARC",
+  "Id": "Ammo_AmmunitionBox_Narc_ShootAndSit",
+  "Manufacturer": "Doering",
+  "Model": "Narc Beacon",
+  "Name": "Narc Beacon Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Narc Stickybomb"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

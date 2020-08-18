@@ -1,0 +1,66 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Pod"
+   ],
+   "value": "1"
+  }
+ ],
+ "AdditionalCost": 2000,
+ "AssignedCastDefId": "castDef_DariusDefault",
+ "AssignedCastDescription": "The crew has seen the Beta Pod rec facilities on the ship's floor plans, Commander, and it's all they can talk about. More practically, we'd be able to bring the Beta Pod medical facilities back online.",
+ "Category": "HABITAT_POD",
+ "Description": {
+  "Cost": 0,
+  "Details": "Beta Pod, once repaired, includes what was clearly once a hydroponics facility near the spine of the <i>Argo</i>, and a low-g gymnasium just above that. Neither survived exposure to hard vacuum and stellar radiation, but they're tantalizing indications of the luxuries the <i>Argo</i> once included.",
+  "Icon": "uixSvgIcon_shipUpgrade_podBeta",
+  "Id": "argoUpgrade_pod2",
+  "Name": "Beta Pod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_ArgoPod",
+ "Location": "SHIP",
+ "PurchaseCost": 900000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_pod1",
+   "argoUpgrade_power1",
+   "argoUpgrade_structure1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BarracksPods",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "BarracksPods_Display",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 16,
+   "valueConstant": ""
+  },
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

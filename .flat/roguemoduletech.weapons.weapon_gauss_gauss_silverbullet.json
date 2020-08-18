@@ -1,0 +1,109 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.75,
+ "APCriticalChanceMultiplier": 0.24,
+ "APMaxArmorThickness": 148,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "GAUSS",
+ "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 198,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ClusteringModifier": 3,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DoesCluster",
+    "WpnCrits: +50%",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "VariableDmg: 5",
+    "WpnRecoil: 1",
+    "DmgFallOff: 65%",
+    "WeaponBoom: 96",
+    "SBGR: 6"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/sb"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 96,
+   "HeatDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 24
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  }
+ },
+ "Damage": 16,
+ "DamageNotDivided": true,
+ "DamageVariance": 5,
+ "Description": {
+  "Cost": 560000,
+  "Details": "The NAIS developed the Silver Bullet Gauss Rifle (or SB Gauss) in an attempt to bring the functionality of an LB-X Autocannon to the Gauss Rifle. Though the cluster-like ammunition made it easier to hit a target and was particularly effective in the anti-aircraft role, gave them a unreliable damage profile. \n\n <b><color=#ffcc00>Uses Gauss Ammo.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "SBGR",
+  "Id": "Weapon_Gauss_Gauss_Silverbullet",
+  "Manufacturer": "StarCorps",
+  "Model": "Sub Munitions Cannon",
+  "Name": "Silver Bullet Gauss",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Silver Bullet Gauss"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.65,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 3,
+ "HitGenerator": "Cluster",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 4,
+ "InventorySize": 6,
+ "MaxRange": 900,
+ "MinRange": 60,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 0.6,
+  "y": 0.6,
+  "z": 0.7
+ },
+ "ProjectilesPerShot": 6,
+ "RangeSplit": [
+  210,
+  450,
+  660
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 14,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

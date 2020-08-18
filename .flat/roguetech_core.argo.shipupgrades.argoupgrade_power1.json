@@ -1,0 +1,48 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Power"
+   ],
+   "value": "0"
+  }
+ ],
+ "AdditionalCost": 350,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "I'm terrified of the current state of the power system, Commander. Repairing it should be a top priority. We cannot bring most of the <i>Argo</i>'s other systems online until the power is stable. Also… I'd avoid touching any exposed deck plating. Just in case.",
+ "Category": "POWER_SYSTEM",
+ "Description": {
+  "Cost": 0,
+  "Details": "The <i>Argo</i>'s power system is a wreck, and getting a minimal level of power to the ship's systems without constant tripped breakers and brownouts is a minor miracle.",
+  "Icon": "uixSvgIcon_shipUpgrade_power0",
+  "Id": "argoUpgrade_power1",
+  "Name": "Repaired Power Conduits",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_EngineeringInnards",
+ "Location": "ENGINEERING",
+ "PurchaseCost": 90000,
+ "RequiredModules": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_power1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

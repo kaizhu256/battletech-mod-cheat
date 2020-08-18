@@ -1,0 +1,415 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 9642000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech",
+   "mr-resize-1.4-1.0-1.4",
+   "OmniMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": [
+   {
+    "CategoryID": "CockpitSensors",
+    "DefID": "Gear_Sensors_Totem",
+    "Location": "Head",
+    "Type": "Upgrade"
+   }
+  ]
+ },
+ "DFADamage": 95,
+ "DFAInstability": 48,
+ "DFASelfDamage": 95,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 12884717,
+  "Details": "The Turkina D is armed with 4 ATM 12s. Ten tons of ammunition allow it to make use of the flexibility of Advanced Tactical Missile technology. A pair of ER Medium Lasers provide backup.",
+  "Icon": "uixTxrIcon_turkina",
+  "Id": "chassisdef_turkina_TKR-D",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Turkina",
+  "Purchasable": false,
+  "Rarity": 10,
+  "UIName": "Turkina"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Omnimech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engine_285",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_cxl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Special_JumpAttack",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Assault",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Assault",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_JumpJet_Generic_Assault",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "RightTorso",
+   "SimGameUID": "",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_maddog",
+ "Heatsinks": 0,
+ "InitialTonnage": 9.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 150,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 300,
+   "MaxRearArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": true,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 48,
+ "MeleeInstability": 24,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "maddog",
+ "PrefabIdentifier": "chrprfmech_maddogbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Juggernaut",
+ "Tonnage": 95,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "TKR-D",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Turkina D is armed with 4 ATM 12s. Ten tons of ammunition allow it to make use of the flexibility of Advanced Tactical Missile technology. A pair of ER Medium Lasers provide backup.",
+ "weightClass": "ASSAULT"
+}

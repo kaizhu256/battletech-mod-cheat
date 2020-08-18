@@ -1,0 +1,322 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Breaching Shot",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "lv-shares-sensors"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LanceResolve: 2",
+    "Initiative: 1",
+    "Tacticon: +1",
+    "LanceSight2: 75",
+    "Health: 3",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "C3"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00019"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1150000,
+  "Details": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. Command Consoles are components that can only be mounted on Heavy or Assault Class 'Mechs. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination by upgrading initiative.\n\nStar League-vintage Command Consoles are very rare by 3025 because 'Mechs equipped in this way were favoured targets in battle. Most still existing have been relegated to training duties.",
+  "Icon": "uixSvgIcon_equipment_Cockpit",
+  "Id": "Gear_Cockpit_Zeus_C",
+  "Manufacturer": "Society",
+  "Model": "ADV TC",
+  "Name": "Max Tech Weapons Computer",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Command Cockpit (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Initiative_Lance",
+    "Name": "Command Consoles"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "-2",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CockpitInitativeEffect",
+    "Name": "CockpitTechBonus"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by 25m.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Spotting_Gain-T1",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "75.0",
+    "operation": "Float_Add",
+    "statName": "SpotterDistanceAbsolute",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Prevents [AMT] Injuries against a MechWarrior.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Pilot_HealthAdd-Maxtech",
+    "Name": "MAX INJURIES INCREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "3",
+    "operation": "Int_Add",
+    "statName": "BonusHealth",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Pilot",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Scrambles enemy systems and grants morale to the lance",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "MaxTechResolve",
+    "Name": "ROCK AND ROLL"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "MoraleBonusGain"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

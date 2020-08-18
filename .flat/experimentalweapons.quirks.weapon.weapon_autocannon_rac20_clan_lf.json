@@ -1,0 +1,166 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.33,
+ "APMaxArmorThickness": 130,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RAC20",
+ "AttackRecoil": 8,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-5",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 4",
+    "WeaponJAM: 5",
+    "Rotary"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rac"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01204"
+  }
+ },
+ "Damage": 65,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1720000,
+  "Details": "This massive Rotary Autocannon has reduced tonnage and space, a devastating weapon specifically modified to be able to be mounted on the ''Little Friend'' by a group of clanner Urbanmech worshipers, the downside is not being able to use it on any other mechs due to the extreme integration with mech's systems. Can fire in multiple modes, with higher amount of shots increasing jamming chance. \n\n<b><color=#ffcc00>Uses RAC20 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "RotaryAC",
+  "Id": "Weapon_Autocannon_RAC20_CLAN_LF",
+  "Manufacturer": "MekTek",
+  "Model": "LF's Minigun",
+  "Name": "RAC20 (LF)",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Rotary AC/20 (LF)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.06,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "IndirectFireCapable": false,
+ "Instability": 27.5,
+ "InventorySize": 6,
+ "MaxRange": 420,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": -20,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": -10,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 10,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 20,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "AccuracyModifier": -1,
+   "FlatJammingChance": 0.45,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 30,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "RAC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  130,
+  260,
+  420
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 13,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

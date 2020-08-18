@@ -1,0 +1,57 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "FP for the fans",
+  "Icon": "Heretek",
+  "Id": "fp_Heretek",
+  "Name": "Heretek"
+ },
+ "Difficulty": 9,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "The Locals on this planet have a special request for us. They insist that they can only give us details in person.",
+ "InProgressTimeout": 0,
+ "InternalName": "Heretek",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_Heretek",
+ "PotentialEmployers": [
+  "Kurita"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_Heretek_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_FP_generic_SLDF_double",
+ "TargetFaction": "Locals",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 50
+}

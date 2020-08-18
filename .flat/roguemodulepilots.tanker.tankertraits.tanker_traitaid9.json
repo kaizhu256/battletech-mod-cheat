@@ -1,0 +1,37 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Heat generation by 10%.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "Tanker_TraitAID9",
+  "Name": "AI d9 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "Tankeraid9",
+    "Name": "Decreases Heat Generation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

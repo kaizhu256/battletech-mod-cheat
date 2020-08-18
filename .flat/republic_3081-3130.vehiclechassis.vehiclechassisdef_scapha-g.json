@@ -1,0 +1,122 @@
+{
+ "BattleValue": 993,
+ "CustomParts": {
+  "MoveClamp": 0.5,
+  "MoveCost": "Hover"
+ },
+ "Description": {
+  "Cost": 9307500,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_SCAPHA-G",
+  "Name": "Scapha Hover Tank",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_sldfdrone",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.6,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_11-17cv",
+ "PathingCapDefID": "pathingdef_medium_hover",
+ "PrefabBase": "sldfdrone",
+ "PrefabIdentifier": "chrPrfVhcl_sldfdrone",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 40,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "MEDIUM"
+}

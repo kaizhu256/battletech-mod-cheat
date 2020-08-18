@@ -1,0 +1,58 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_MG",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 200,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MGAmmo: 200"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/o/mg"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 0.5
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000032"
+  }
+ },
+ "Description": {
+  "Cost": 10000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "MachineGun",
+  "Id": "Ammo_AmmunitionBox_Generic_MG",
+  "Manufacturer": "Generic",
+  "Model": "MG",
+  "Name": "MG Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo MG"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

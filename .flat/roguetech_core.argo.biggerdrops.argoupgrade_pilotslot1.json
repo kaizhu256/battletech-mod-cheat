@@ -1,0 +1,43 @@
+{
+ "AdditionalCost": 6500,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "The next step will be to standardize the communication hardware between our 'Mechs and the Argo's systems so I can remove an abstraction layer from our ship-side software.",
+ "Description": {
+  "Cost": 0,
+  "Details": "<b><color=#F79232>Allows you to Command an Additional Mechwarrior Directly</color></b> \n\n The upgrades continue commander. Interfacing this Star League technology with our own C&C systems is proving challenging, but there's no problem more money and time can't fix, right?",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_PilotSlot1",
+  "Name": "Command Console",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 350000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot1",
+   "argoUpgrade_PilotSlot"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_AdditionalPlayerMechSlots",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Pilotslot1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 7,
+ "shipUpgradeCategoryID": "BDMechControl"
+}

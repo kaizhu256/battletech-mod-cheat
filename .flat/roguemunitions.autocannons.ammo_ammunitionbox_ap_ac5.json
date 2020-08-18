@@ -1,0 +1,68 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_AC5_AP",
+ "BattleValue": 0,
+ "BonusValueA": "+100% Crit.",
+ "BonusValueB": "",
+ "Capacity": 10,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "TAC: +50%",
+    "Crits: +50%",
+    "ThroughArmorDamage: 7",
+    "ACDamage: -50%",
+    "WpnAccuracy: -1",
+    "AC5Ammo: 10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/a/ac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 22,
+   "StabilityDamagePerAmmo": 5
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000006"
+  },
+  "TRGBColor": {
+   "Color": "#EE82EE",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 40000,
+  "Details": "Armour Piercing AC Ammo grants an increased chance for critical hits. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "uixSvgIcon_ammoBox_Ballistic",
+  "Id": "Ammo_AmmunitionBox_AP_AC5",
+  "Manufacturer": "Generic",
+  "Model": "AC5 AP",
+  "Name": "AC/5 AP Ammo",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Ammo AC/5 [AP]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

@@ -1,0 +1,171 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.4,
+ "APCriticalChanceMultiplier": 0.06,
+ "APDamage": 2,
+ "APMaxArmorThickness": 100,
+ "AccuracyModifier": 2,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B27D37",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.75,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 2",
+    "WpnAccuracy: -2",
+    "1shot",
+    "MissileHP: 2",
+    "ThroughArmorDamage: 2",
+    "IsRocket: 20",
+    "InternalAmmo: 4",
+    "Visibility: +4%",
+    "Signature: +4%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "03004"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 29000,
+  "Details": "Tandem Charge Rocket Launcher are a Periphery Favourite to gamble on taking a target out fast, allowing the Rocket to pierce the target and explode internally.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-pod",
+  "Id": "BoltOn_LRM_ROCKETTANDEM20",
+  "Manufacturer": "Death Blossom",
+  "Model": "Tandem Rocket Launcher",
+  "Name": "Tandem RL20",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Bolt On Tandem Rocket 20"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 460,
+ "MinRange": 0,
+ "MissileHealth": 2,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  100,
+  200,
+  400
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 20,
+ "StartingAmmoCapacity": 20,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.04",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.04",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

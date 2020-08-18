@@ -1,0 +1,130 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.2,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 596,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorsTable": [
+  {
+   "C": "#DAA520",
+   "I": 5
+  },
+  {
+   "C": "#FF8C00",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HyperLaser: 90",
+    "ExplodiumFlat: 15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/heavy"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 90,
+   "HeatDamage": 50,
+   "StabilityDamage": 30
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02009"
+  }
+ },
+ "Damage": 100,
+ "DamageOnJamming": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1693440,
+  "Details": "The RISC Hyper Laser is a experimental heavy laser derived from the Clan's Improved Heavy Laser family. Hyper Lasers are the ultimate development in the heavy lasers technology, but it was constructed by the RISC engineers, instead of the Clans. Thanks to the pushing the limits in laser shielding and plasma lasing chemistry, the Hyper Laser is a very destructive and extreme range weapon, but the thermal and physical stress of immense scale make this weapon very prone to explosive malfunction. <b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_Laser_HyperLargeLaser",
+  "Manufacturer": "RISC",
+  "Model": "Large Laser",
+  "Name": "Hyper Laser",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Hyper Laser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.425,
+ "HeatDamage": 0,
+ "HeatGenerated": 72,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 4,
+ "MaxRange": 840,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "ColorChangeRule": "t0",
+   "ColorSpeedChange": 0,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "Id": "Std",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "ColorChangeRule": "t1",
+   "ColorSpeedChange": 0,
+   "DamagePerShot": 40,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 30,
+   "Id": "Overcharge",
+   "UIName": "OC",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  450,
+  750
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 9,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": []
+}

@@ -1,0 +1,154 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.11,
+ "APMaxArmorThickness": 66,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 137,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorChangeRule": "Linear",
+ "ColorSpeedChange": 2,
+ "ColorsTable": [
+  {
+   "C": "#FF69B4",
+   "I": 5
+  },
+  {
+   "C": "#FF0000",
+   "I": 5
+  },
+  {
+   "C": "#FFA500",
+   "I": 5
+  },
+  {
+   "C": "#FFFF00",
+   "I": 5
+  },
+  {
+   "C": "#008000",
+   "I": 5
+  },
+  {
+   "C": "#40E0D0",
+   "I": 5
+  },
+  {
+   "C": "#4B0082",
+   "I": 5
+  },
+  {
+   "C": "#9400D3",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Bombast"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/bombast"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02008"
+  }
+ },
+ "Damage": 55,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 370000,
+  "Details": "Developed by the Lyran Alliance, the Bombast Laser was designed to be the ultimate word in laser weapons. During the design process, its engineers had to reduce the weight of the weapon. This sacrifice came from the power supply, which made the weapon slow at charging. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_Laser_LargeLaser_Bombast",
+  "Manufacturer": "Defiance",
+  "Model": "Bombast Laser",
+  "Name": "Bombast Laser",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Bombast Laser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1375,
+ "HeatDamage": 0,
+ "HeatGenerated": 21,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 9.1,
+ "InventorySize": 3,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "Id": "Std",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "DamagePerShot": -10,
+   "FireTerrainChance": -0.025,
+   "HeatGenerated": 5,
+   "Id": "Rng",
+   "Instability": -1.6,
+   "LongRange": 150,
+   "MaxRange": 200,
+   "MiddleRange": 100,
+   "ShortRange": 50,
+   "UIName": "RNG",
+   "isBaseMode": false
+  },
+  {
+   "AccuracyModifier": 1,
+   "DamagePerShot": 25,
+   "FireTerrainChance": 0.0625,
+   "HeatGenerated": 10,
+   "Id": "Dmg",
+   "Instability": 4.3,
+   "LongRange": -150,
+   "MaxRange": -200,
+   "MiddleRange": -100,
+   "RefireModifier": 1,
+   "ShortRange": -50,
+   "UIName": "DMG",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 7,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": []
+}

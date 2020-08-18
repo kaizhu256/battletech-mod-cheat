@@ -1,0 +1,243 @@
+{
+ "BattleValue": 7718000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 80,
+ "DFAInstability": 40,
+ "DFASelfDamage": 80,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2104439,
+  "Details": "A basic upgrade to the original 8Q introduced in 3057, the heat sinks are upgraded to double heat sinks and are reduced to nineteen. The saved weight is used to add a fourth PPC to the 'Mech as well as a Guardian ECM Suite. Although there was some criticism for using basic PPCs and not upgrading to ER models, the 9Q proved itself during Operation Guerrero to be quite devastating.",
+  "Icon": "uixTxrIcon_awesome",
+  "Id": "chassisdef_awesome_AWS-9Q",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Awesome",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Awesome"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_awesome",
+ "Heatsinks": 0,
+ "InitialTonnage": 8,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 125,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 250,
+   "MaxRearArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 40,
+ "MeleeInstability": 20,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "awesome",
+ "PrefabIdentifier": "chrPrfMech_awesomeBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Heavy Sniper & Defender",
+ "Tonnage": 80,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "AWS-9Q",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "This variant of the Awesome is designed for units that cannot afford the newer, and more costly, variants or for older machines that, due to past damage, cannot be upgraded with the newer weapon systems and construction materials. The 9Q has a higher damage curve than previous models due to the inclusion of a fourth particle projectile cannon. Included into the design is also a Guardian ECM suite, making the design difficult to target with many of the newer weapon systems available to date. While the Awesome of past days were feared, this newest refit of the Awesome will strike fear into any warrior that crosses its path.",
+ "weightClass": "ASSAULT"
+}

@@ -1,0 +1,205 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Breaching Shot",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "TargetingComputer",
+   "Blacklisted"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Breaching",
+    "Accuracy: +1",
+    "EvasionIgnore: +1",
+    "Recoil: +1",
+    "TEHeatgen: +10%",
+    "TCFCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "TargetingComputer"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Pirate_AdvancedTC"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.1",
+    "TechCost": "[[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Produced by Vengeance Inc and build from parts liberated from all over the Inner Sphere has the Brigand's FCS exceptional Tracking and Targeting capabilities",
+  "Icon": "AdvancedTC",
+  "Id": "Gear_Pirate_BrigandTC",
+  "Manufacturer": "Vengeance Inc",
+  "Model": "Freedom Tracker",
+  "Name": "Contraband Weapons Computer",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Contraband FCS"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: Attacking with a single weapon ignores COVER and GUARDED on the target.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "TC-Breaching",
+    "Name": "BREACHING SHOT"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "PrecisionStrike"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Improved Accuracy and increased Heat and Recoil",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "TC-TO-HIT",
+    "Name": "Gunsight!"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Energy Weapons.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-FCS_PTCEva",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "EvasivePipsIgnored",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TCRecoil",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_GenPirateTC",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

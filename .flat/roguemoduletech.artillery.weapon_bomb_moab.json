@@ -1,0 +1,121 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 500,
+ "AOEHeatDamage": 0,
+ "AOEInstability": 250,
+ "AOERange": 135,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 500,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_Nuke",
+ "AdditionalImpactVFXScaleX": 5,
+ "AdditionalImpactVFXScaleY": 5,
+ "AdditionalImpactVFXScaleZ": 5,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": false,
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 0,
+ "BattleValue": 130,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ClearMineFieldRadius": 32,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "BLACKLISTED",
+   "Bomb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 10",
+    "1shot",
+    "AreaOfEffect: 135",
+    "AreaOfEffectDmg: 500",
+    "MineClearanceBoom: 4",
+    "NoAA",
+    "Bomb"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/explode"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 500,
+   "HeatDamagePerAmmo": 40,
+   "StabilityDamagePerAmmo": 100
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 250,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 58000,
+  "Details": "Massive Ordnance Air Blast Bombs carry exceptionally large payload of conventional Explosives to obliterate their Target.",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "Weapon_Bomb_MOAB",
+  "Manufacturer": "Generic",
+  "Model": "Bomb MOAB",
+  "Name": "Bomb MOAB",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Bomb MOAB"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 70,
+ "InventorySize": 6,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectileScale": {
+  "x": 4,
+  "y": 4,
+  "z": 4
+ },
+ "ProjectileSpeedMultiplier": 0.5,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  180,
+  180
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

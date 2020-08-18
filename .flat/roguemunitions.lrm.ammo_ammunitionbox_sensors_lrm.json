@@ -1,0 +1,70 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Sensors",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LRMDamage: -90%",
+    "SensorMines: 2",
+    "SensorRadius: 6",
+    "SensorChance: 75%",
+    "RemoteSensorPower: 1",
+    "RemoteSensorLRM",
+    "NoAA",
+    "MissileHP: 2",
+    "LRMAmmo: 120"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  },
+  "TRGBColor": {
+   "Color": "#BA55D3",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 50000,
+  "Details": "These Missile replace the Explosive Payload with a sensor package that will activate and alert of any Threat within its area of impact. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Sensors_LRM",
+  "Manufacturer": "Generic",
+  "Model": "LRM",
+  "Name": "LRM Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM Sensors"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

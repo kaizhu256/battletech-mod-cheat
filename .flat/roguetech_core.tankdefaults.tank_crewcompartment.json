@@ -1,0 +1,123 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": true,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Resolve: +1",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CrewCompartment"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "VehicleCriticalEffects": {
+   "DeathMethod": "VitalComponentDestroyed",
+   "LinkedStatisticName": "VehicleCrewCompartmentCrits",
+   "PenalizedEffectIDs": [
+    [
+     "CriticalEffect-CrewCompartmentCrit1",
+     "CriticalEffect-CrewTankCritPenalty3"
+    ],
+    [
+     "CriticalEffect-CrewCompartmentCrit2",
+     "CriticalEffect-CrewTankCritPenalty2"
+    ],
+    [
+     "CriticalEffect-CrewCompartmentCrit3",
+     "CriticalEffect-CrewTankCritPenalty3"
+    ]
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "The section of the vehicle the crew occupies.",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Tank_CrewCompartment",
+  "Manufacturer": "Generic",
+  "Model": "Crew Compartment",
+  "Name": "Crew Compartment",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Crew Compartment"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "TankCritPenalizedCrew",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a [AMT] bonus to actions that generate Resolve.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Morale_Gain-T1",
+    "Name": "RESOLVE GENERATION INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MoraleBonusGain"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

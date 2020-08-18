@@ -1,0 +1,46 @@
+{
+ "AdditionalCost": 11000,
+ "AssignedCastDefId": "castDef_SumireDefault",
+ "AssignedCastDescription": "Almost at the home stretch, Commander. We've turned this ship from a home for rats into something I'd feel safe flying myself. Almost.",
+ "Description": {
+  "Cost": 0,
+  "Details": "Now that the engines and structure are back up to snuff, the next step is to recalibrate the control systems to correctly handle the balance and performance changes that our repairs have caused. We'll need to do a series of orbital drops to accurately gauge the handling characteristics and then punch them into the onboard flight systems. <b><color=#F79232>Increases Drop Weight Limit by 50 tons</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_WeightLimit6",
+  "Name": "Engine Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 320000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot3",
+   "argoUpgrade_PilotSlot3",
+   "argoUpgrade_drive2",
+   "argoUpgrade_WeightLimit5",
+   "argoUpgrade_storage2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_MaxTonnage",
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Weightlimit6"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 12,
+ "shipUpgradeCategoryID": "BDDropTonnage"
+}

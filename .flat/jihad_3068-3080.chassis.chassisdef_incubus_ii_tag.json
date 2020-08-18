@@ -1,0 +1,246 @@
+{
+ "BattleValue": 2780466,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PartsMin": 0.1,
+   "PrefabID": "IncubusII"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 30,
+ "DFAInstability": 15,
+ "DFASelfDamage": 30,
+ "DFAToHitModifier": 2,
+ "Description": {
+  "Cost": 501250,
+  "Details": "The Incubus II only has two torso-mounted ER Medium Pulse Lasers for offensive armament. A Laser AMS system was installed in the head to protect the pilot from missile attacks. The installation of more jump jets and the Partial Wing has reduced the available space for weaponry, but the Hell's Horses found an answer for that problem: They created several hand-held weapons systems that add additional firepower and provide commanders and pilots with some of the tactical flexibility of an OmniMech.",
+  "Icon": "incubus",
+  "Id": "chassisdef_incubus_II_TAG",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Incubus",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Incubus"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Accurate_Weapon_HandHeld",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Hand_Weapon_SuperTAG_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_incubus",
+ "Heatsinks": 0,
+ "InitialTonnage": 3,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 11.5,
+   "z": -0.5
+  },
+  {
+   "x": -2,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 70,
+   "MaxRearArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 70,
+   "MaxRearArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 15,
+ "MeleeInstability": 8,
+ "MeleeToHitModifier": 2,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "incubus",
+ "PrefabIdentifier": "chrprfmech_incubusbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1.25,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1.25,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Rifle Trooper",
+ "Tonnage": 30,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "INC-II",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Incubus II only has two torso-mounted ER Medium Pulse Lasers for offensive armament. A Laser AMS system was installed in the head to protect the pilot from missile attacks. The installation of more jump jets and the Partial Wing has reduced the available space for weaponry, but the Hell's Horses found an answer for that problem: They created several hand-held weapons systems that add additional firepower and provide commanders and pilots with some of the tactical flexibility of an OmniMech.",
+ "weightClass": "LIGHT"
+}

@@ -1,0 +1,47 @@
+{
+ "AdditionalCost": 2000,
+ "AssignedCastDefId": "castDef_SumireDefault",
+ "AssignedCastDescription": "Commander. Come on. LOW-GRAVITY SWIMMING POOL. I don't know what there even is to discuss here.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "When you have a large space with nothing critical in it, where the gravity is too low for living quarters, the obvious choice is to fill it with chlorinated water.",
+  "Icon": "uixSvgIcon_shipUpgrade_pool",
+  "Id": "argoUpgrade_rec_pool",
+  "Name": "Low-G Pool",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_LowGPool",
+ "Location": "SHIP",
+ "PurchaseCost": 450000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 3,
+   "valueConstant": ""
+  },
+  {
+   "name": "MedTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_pool"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

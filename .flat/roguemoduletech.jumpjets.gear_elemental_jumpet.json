@@ -1,0 +1,202 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "350% Jump Jet Dist.",
+ "BonusValueB": "Bulwark/Stealth",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "PartialWing"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 125000,
+  "Details": "Jump jet and electronics suite for the Elemental Power Armour.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_Elemental_Jumpet",
+  "Manufacturer": "Generic",
+  "Model": "S",
+  "Name": "PA jump jets",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "PA Jump Jets"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "JumpCapacity": 1,
+ "MaxTonnage": 5,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Small size and prototype stealth systems make this unit harder to hit.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "EXPAStealth",
+    "Name": "Armoured Infantry"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "ToHitThisActor",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "PASSIVE: This unit is GUARDED (50% damage reduction against ranged attacks to the front and side) from remaining stationary.Increases Melee Damage by 10%.",
+    "Icon": "uixSvgIcon_ability_bulwark",
+    "Id": "NSSBulwark",
+    "Name": "BULWARK"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "GuardedFromBeingStationary"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases PA Jump Distance",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-EXPA-Jump",
+    "Name": "JUMP DISTANCE INCREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "4.5",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "PASSIVE: This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "AbilityDefEXPAEV",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "4",
+    "operation": "Int_Add",
+    "statName": "EvasivePipsGainedAdditional"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

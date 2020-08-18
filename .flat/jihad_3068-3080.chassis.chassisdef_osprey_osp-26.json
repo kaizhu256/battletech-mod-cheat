@@ -1,0 +1,238 @@
+{
+ "BattleValue": 5897000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 55,
+ "DFAInstability": 28,
+ "DFASelfDamage": 55,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1227830,
+  "Details": "Designed as a medium weight fire support unit, the Osprey OSP-15 was a casualty of the Succession Wars. Revived by the Word of Blake in 3074, the design would evolve to become the OSP-26, debuting in 3076. Armed with an M7 Gauss Rifle and an MML-7 for long range combat, the OSP-26 carries a pair of ER Medium Lasers and an ER Small for close range combat. The Gauss Rifle and MML-7 are each supplied by 2 tons of ammunition, stored in CASE protected magazines. A Beagle Probe allows the mech to function in a scout role, sniffing out hidden opponents . Built around a 220 rated XL Engine and an Endo Steel chassis, the OSP-26 mounts 11 tons of armour and 4 Jump Jets; and 10 double heat sinks.",
+  "Icon": "Osprey",
+  "Id": "chassisdef_osprey_OSP-26",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Osprey",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Osprey"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Stable_Weapons",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_osprey",
+ "Heatsinks": 0,
+ "InitialTonnage": 5.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -2.5,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 28,
+ "MeleeInstability": 14,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "osprey",
+ "PrefabIdentifier": "chrprfmech_ospreybase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 55,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "OSP-26",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Designed as a medium weight fire support unit, the Osprey OSP-15 was a casualty of the Succession Wars. Revived by the Word of Blake in 3074, the design would evolve to become the OSP-26, debuting in 3076. Armed with an M7 Gauss Rifle and an MML-7 for long range combat, the OSP-26 carries a pair of ER Medium Lasers and an ER Small for close range combat. The Gauss Rifle and MML-7 are each supplied by 2 tons of ammunition, stored in CASE protected magazines. A Beagle Probe allows the mech to function in a scout role, sniffing out hidden opponents . Built around a 220 rated XL Engine and an Endo Steel chassis, the OSP-26 mounts 11 tons of armour and 4 Jump Jets; and 10 double heat sinks.",
+ "weightClass": "MEDIUM"
+}

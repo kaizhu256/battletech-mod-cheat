@@ -1,0 +1,103 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.056,
+ "APMaxArmorThickness": 22,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RifleMedium",
+ "AttackRecoil": 3,
+ "BattleValue": 60,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "Damage Falloff",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "MRifle.{location}",
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 3",
+    "WpnAccuracy: -1",
+    "VariableDmg: 4",
+    "DmgFallOff: 40%",
+    "IsPepperbox: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 25
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01302"
+  }
+ },
+ "Damage": 12,
+ "DamageVariance": 4,
+ "Description": {
+  "Cost": 100000,
+  "Details": "I'm not sure who thought this was a good idea but someone welded together a bunch rifle barrels and crude breach blocks together. Thank the gods they marked them because there are two different calibers. \n\n <b><color=#ffcc00>Uses Medium Rifle Ammo.</color></b>",
+  "Icon": "rifle",
+  "Id": "Weapon_Autocannon_AC10_PEPPERBOX",
+  "Manufacturer": "Cheapskate",
+  "Model": "Blunderbuster",
+  "Name": "Pepperbox Rifle",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Pepperbox Rifle"
+ },
+ "DisableClustering": false,
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.4,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 2,
+ "MaxRange": 600,
+ "MinRange": 30,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 4,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 4,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

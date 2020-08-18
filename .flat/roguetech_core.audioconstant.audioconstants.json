@@ -1,0 +1,1307 @@
+{
+ "AttackAfterCompletionDuration": 0.05,
+ "AttackAfterFireDelay": 0,
+ "AttackAfterFireDuration": 0,
+ "AttackPreFireDuration": 0,
+ "ComputerVOEventData": [
+  {
+   "k": "Access_Denied",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Access_Denied",
+    "priority": 0,
+    "switchValue": "access_denied",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Access_Granted",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Access_Granted",
+    "priority": 0,
+    "switchValue": "access_granted",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Airstrike_Confirmed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Airstrike_Confirmed",
+    "priority": 0,
+    "switchValue": "airstrike_confirmed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Airstrike_Pressed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Airstrike_Pressed",
+    "priority": 0,
+    "switchValue": "airstrike_pressed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Artillery_Confirmed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Artillery_Confirmed",
+    "priority": 0,
+    "switchValue": "artillery_confirmed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Artillery_Pressed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Artillery_Pressed",
+    "priority": 0,
+    "switchValue": "artillery_pressed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Authenticate_Command_ID",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Authenticate_Command_ID",
+    "priority": 0,
+    "switchValue": "authenticate_command_id",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Authenticate_Generic",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Authenticate_Generic",
+    "priority": 0,
+    "switchValue": "authenticate_generic",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Base_Confirmed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Base_Confirmed",
+    "priority": 0,
+    "switchValue": "base_confirmed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Commander_Rockhouse",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Commander_Rockhouse",
+    "priority": 0,
+    "switchValue": "commander_rockhouse",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mech_Powerup_Enemy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Powerup_Enemy",
+    "priority": 0,
+    "switchValue": "mech_powerup_enemy",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mech_Powerup_Player",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 2,
+    "key": "Mech_Powerup_Player",
+    "priority": 0,
+    "switchValue": "mech_powerup_player",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Mission_Fail",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mission_Fail",
+    "priority": 0,
+    "switchValue": "mission_fail",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mission_Load",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mission_Load",
+    "priority": 0,
+    "switchValue": "mission_load",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mission_Start",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mission_Start",
+    "priority": 0,
+    "switchValue": "mission_start",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mission_Success",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mission_Success",
+    "priority": 0,
+    "switchValue": "mission_success",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Objective_All_Units_Destroyed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_All_Units_Destroyed",
+    "priority": 10,
+    "switchValue": "objective_all_units_destroyed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Objective_Complete_No",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_Complete_No",
+    "priority": 10,
+    "switchValue": "objective_complete_no",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Objective_Complete_Yes",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_Complete_Yes",
+    "priority": 10,
+    "switchValue": "objective_complete_yes",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Objective_Secondary_Complete_No",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_Secondary_Complete_No",
+    "priority": 10,
+    "switchValue": "objective_secondary_complete_no",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Objective_Timer",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_Timer",
+    "priority": 10,
+    "switchValue": "objective_timer",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Retreat_Confirmed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Retreat_Confirmed",
+    "priority": 10,
+    "switchValue": "retreat_confirmed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Satellite_Pressed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Satellite_Pressed",
+    "priority": 0,
+    "switchValue": "satellite_pressed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Sorry_Dave",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Sorry_Dave",
+    "priority": 0,
+    "switchValue": "sorry_dave",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Support_Confirmed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Support_Confirmed",
+    "priority": 0,
+    "switchValue": "support_confirmed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Support_Pressed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Support_Pressed",
+    "priority": 0,
+    "switchValue": "support_pressed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Transmission_Incoming",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Transmission_Incoming",
+    "priority": 0,
+    "switchValue": "transmission_incoming",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Vehicle_Confirmed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Vehicle_Confirmed",
+    "priority": 0,
+    "switchValue": "vehicle_confirmed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Vehicle_Powerup_Enemy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Vehicle_Powerup_Enemy",
+    "priority": 0,
+    "switchValue": "vehicle_powerup_enemy",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Warning_Airstrike_Inbound",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Warning_Airstrike_Inbound",
+    "priority": 0,
+    "switchValue": "warning_airstrike_inbound",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Warning_Airstrike_Possible",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Warning_Airstrike_Possible",
+    "priority": 0,
+    "switchValue": "warning_airstrike_poosible",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Warning_Artillery_Inbound",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Warning_Artillery_Inbound",
+    "priority": 0,
+    "switchValue": "warning_artillery_inbound",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Warning_Artillery_Possible",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Warning_Artillery_Possible",
+    "priority": 0,
+    "switchValue": "warning_artillery_possible",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Warning_Generic",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Warning_Generic",
+    "priority": 0,
+    "switchValue": "warning_generic",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Warning_Reinforcements_Enemy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Warning_Reinforcements_Enemy",
+    "priority": 0,
+    "switchValue": "warning_reinforcements_enemy",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Welcome_Commander",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Welcome_Commander",
+    "priority": 0,
+    "switchValue": "welcome_commander",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Welcome_Generic",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Welcome_Generic",
+    "priority": 0,
+    "switchValue": "welcome_generic",
+    "voChance": "Always"
+   }
+  }
+ ],
+ "DEBUG_Always_Play_VO": false,
+ "QueuedAudioDelay": 0.1,
+ "VOEventData": [
+  {
+   "k": "AttackTarget_Alpha",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Alpha",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_alpha",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Objective_Acquired_Object",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_Acquired_Object",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "acquired_object",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Objective_Acquired_VIP",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Objective_Acquired_VIP",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "acquired_vip",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AirstrikeLaunched_Enemy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AirstrikeLaunched_Enemy",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "airstrike_them",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AirstrikeLaunched_Ally",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AirstrikeLaunched_Ally",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "airstrike_us",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "SensorLock_Ally",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "SensorLock_Ally",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "sensor_lock_onthem",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "SensorLock_Enemy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "SensorLock_Enemy",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "sensor_lock_onus",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "AmmoDepleted_AC10",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_AC10",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_ac10",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_AC2",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_AC2",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_ac2",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_AC20",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_AC20",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_ac20",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_AC5",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_AC5",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_ac5",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_Gauss",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_Gauss",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_guass",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_LRM",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_LRM",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_lrm",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_MG",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_MG",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_mg",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_Multiple",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_Multiple",
+    "localCooldown": 0,
+    "priority": 6,
+    "switchValue": "ammo_gone_multiple",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_Flamer",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_Flamer",
+    "localCooldown": 0,
+    "priority": 6,
+    "switchValue": "ammo_gone_flamer",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AmmoDepleted_SRM",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AmmoDepleted_SRM",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "ammo_gone_srm",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "ArtilleryLaunched_Enemy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "ArtilleryLaunched_Enemy",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "artillery_them",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "ArtilleryLaunched_Ally",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "ArtilleryLaunched_Ally",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "artillery_us",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Kill_Building",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Kill_Building",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "building_destroyed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Chatter_Generic",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Generic",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Chatter_Arid",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Arid",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter_arid",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Chatter_Frozen",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Frozen",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter_frozen",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Chatter_Jungle",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Jungle",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter_jungle",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Chatter_Martian",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Martian",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter_martian",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Chatter_Urban",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Urban",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter_urban",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Chatter_Verdant",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_Verdant",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chatter_verdant",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Mech_Chosen",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Chosen",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "chosen",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mech_Done",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Done",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "done",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Ability_Drone_Deployed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Ability_Drone_Deployed",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "drone_deployed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Critical",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Critical",
+    "localCooldown": 0,
+    "priority": 2,
+    "switchValue": "enemy_critical",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Kill",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Kill",
+    "localCooldown": 0,
+    "priority": 4,
+    "switchValue": "enemy_kill",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "EnemySpotted_Blip",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 5,
+    "key": "EnemySpotted_Blip",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "enemy_presence_first",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "EnemySpotted_Blip_Additional",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 5,
+    "key": "EnemySpotted_Blip_Additional",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "enemy_presence_more",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "AttackTarget_Kill_Vehicle",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Kill_Vehicle",
+    "localCooldown": 0,
+    "priority": 4,
+    "switchValue": "enemy_vehicle_kill",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Kill_Turret",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Kill_Turret",
+    "localCooldown": 0,
+    "priority": 4,
+    "switchValue": "turret_destroyed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "TakeDamage_AllyDestroyed",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_AllyDestroyed",
+    "localCooldown": 0,
+    "priority": 7,
+    "switchValue": "friendly_destroyed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "TakeDamage_PilotKilled",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_PilotKilled",
+    "localCooldown": 0,
+    "priority": 7,
+    "switchValue": "friendly_killed",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Generic",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Generic",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "generic",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "TakeDamage_Light",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_Light",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "hit_barely",
+    "voChance": "Uncommon"
+   }
+  },
+  {
+   "k": "TakeDamage_Critical",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_Critical",
+    "localCooldown": 0,
+    "priority": 5,
+    "switchValue": "hit_critical",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "TakeDamage_Heavy",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_Heavy",
+    "localCooldown": 0,
+    "priority": 3,
+    "switchValue": "hit_hard",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "TakeDamage_Internal",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_Internal",
+    "localCooldown": 0,
+    "priority": 4,
+    "switchValue": "hit_internal",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "MechMove_Jump",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "MechMove_Jump",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "jump",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Mech_Instability_Fall",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Instability_Fall",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "mech_down",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "TakeDamage_Limping",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_Limping",
+    "localCooldown": 0,
+    "priority": 7,
+    "switchValue": "mech_limping",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mech_Stand_Restart",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Stand_Restart",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "mech_up",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Mech_Power_Restart",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Power_Restart",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "mech_powerup",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "MechMove_Move",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "MechMove_Move",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "move",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Mech_Overheat_Shutdown",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Overheat_Shutdown",
+    "localCooldown": 0,
+    "priority": 5,
+    "switchValue": "overheat_shutdown",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Mech_Overheat_Warning",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Overheat_Warning",
+    "localCooldown": 0,
+    "priority": 5,
+    "switchValue": "overheat_warning",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_Death",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_Death",
+    "localCooldown": 0,
+    "priority": 7,
+    "switchValue": "pilot_death",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_Demoralized",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_Demoralized",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "pilot_demoralized",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_TakeDamage",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_TakeDamage",
+    "localCooldown": 0,
+    "priority": 6,
+    "switchValue": "pilot_hit",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_Hurt",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_Hurt",
+    "localCooldown": 0,
+    "priority": 6,
+    "switchValue": "pilot_hurt",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_Inspired",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_Inspired",
+    "localCooldown": 0,
+    "priority": 6,
+    "switchValue": "pilot_inspired",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_Wakeup",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_Wakeup",
+    "localCooldown": 0,
+    "priority": 6,
+    "switchValue": "pilot_wakes",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Pilot_Ejecting",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Pilot_Ejecting",
+    "localCooldown": 0,
+    "priority": 8,
+    "switchValue": "pilot_ejecting",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "Chatter_PVP",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Chatter_PVP",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "pvp_start",
+    "voChance": "Special"
+   }
+  },
+  {
+   "k": "Mech_Reserve",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Mech_Reserve",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "reserve",
+    "voChance": "Uncommon"
+   }
+  },
+  {
+   "k": "Commander_Retreat",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Commander_Retreat",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "retreat",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "MechMove_Sprint",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "MechMove_Sprint",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "sprint",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "Resupply_Support_Used",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "Resupply_Support_Used",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "support_used",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_DFA",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_DFA",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_dfa",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Fire",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Fire",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_fire",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "AttackTarget_Melee",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Melee",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_melee",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Miss",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Miss",
+    "localCooldown": 0,
+    "priority": 1,
+    "switchValue": "target_missed",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "AttackTarget_MultiTarget",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_MultiTarget",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_multi",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Rear",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Rear",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_rear",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "AttackTarget_Structure",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "AttackTarget_Structure",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "target_structure",
+    "voChance": "Always"
+   }
+  },
+  {
+   "k": "EnemySpotted_Flank",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "EnemySpotted_Flank",
+    "localCooldown": 0,
+    "priority": 0,
+    "switchValue": "warning_flank",
+    "voChance": "Uncommon"
+   }
+  },
+  {
+   "k": "TakeDamage_WeaponLost",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_WeaponLost",
+    "localCooldown": 0,
+    "priority": 7,
+    "switchValue": "weapon_lost",
+    "voChance": "Common"
+   }
+  },
+  {
+   "k": "TakeDamage_WeaponLost_All",
+   "v": {
+    "blocksSequence": false,
+    "globalCooldown": 0,
+    "key": "TakeDamage_WeaponLost_All",
+    "localCooldown": 0,
+    "priority": 8,
+    "switchValue": "weapon_lost_all",
+    "voChance": "Always"
+   }
+  }
+ ],
+ "VOPlayChance_Always": 1,
+ "VOPlayChance_Common": 0.75,
+ "VOPlayChance_Rare": 0.1,
+ "VOPlayChance_Uncommon": 0.33,
+ "ambientVOChance": 0.25,
+ "ambientVODelay": 45,
+ "audioEmitterPrefab": "sfxPrfObj_audioEmitter",
+ "audioFadeDuration": 0.5,
+ "distanceToTargetRTPCThreshold": 750,
+ "maxLongAudioEmitters": 20,
+ "maxShortAudioEmitters": 15,
+ "rallyHealthPercentageThreshold": 0.5
+}

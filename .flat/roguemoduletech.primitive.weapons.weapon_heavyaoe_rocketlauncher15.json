@@ -1,0 +1,140 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 6,
+ "AOEInstability": 1,
+ "AOERange": 40,
+ "APArmorShardsMod": 0.3,
+ "APCriticalChanceMultiplier": 0.006,
+ "APMaxArmorThickness": 14,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 36,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ColorChangeRule": "Random",
+ "ColorSpeedChange": 3,
+ "ColorsTable": [
+  {
+   "C": "#FF69B4",
+   "I": 5
+  },
+  {
+   "C": "#FF0000",
+   "I": 5
+  },
+  {
+   "C": "#FFA500",
+   "I": 5
+  },
+  {
+   "C": "#FFFF00",
+   "I": 5
+  },
+  {
+   "C": "#008000",
+   "I": 5
+  },
+  {
+   "C": "#40E0D0",
+   "I": 5
+  },
+  {
+   "C": "#4B0082",
+   "I": 5
+  },
+  {
+   "C": "#9400D3",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "1shot",
+    "WpnAccuracy: -1",
+    "MissileHP: 4",
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 6",
+    "IsRocket: 15",
+    "InternalAmmo: 12"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/rl"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 12,
+   "StabilityDamagePerAmmo": 4
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03003"
+  }
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 22000,
+  "Details": "Heavy Rocket Launcher operate on the same Principle as the normal widespread Rocket Launcher, being unguided bolted on One Shot Throwaway Launchers do they carrier a heavier payload..<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-pod",
+  "Id": "Weapon_HEAVYAOE_ROCKETLAUNCHER15",
+  "Manufacturer": "Death Blossom",
+  "Model": "Rocket Launcher",
+  "Name": "RL15",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "AOE Rocket 15"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 21,
+ "HitGenerator": "Individual",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 3,
+ "MaxRange": 440,
+ "MinRange": 0,
+ "MissileHealth": 4,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm15",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 15,
+ "StartingAmmoCapacity": 15,
+ "Tonnage": 1.5,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM15",
+ "WeaponSubType": "LRM15",
+ "statusEffects": []
+}

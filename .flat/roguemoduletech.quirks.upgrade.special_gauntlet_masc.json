@@ -1,0 +1,120 @@
+{
+ "AllowedLocations": "Torso",
+ "BattleValue": 0,
+ "BonusValueA": "+15%Walk|+40%Sprint|",
+ "BonusValueB": "+20% Heat Generated",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "cae_ai_explode",
+   "cae_ai_heat",
+   "cae_ai_speed"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "MASC",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.12,
+   "FailCrit": true,
+   "FailDamageLocations": [
+    "LeftLeg",
+    "RightLeg"
+   ],
+   "FailFlatChance": 0.13,
+   "FailISDamage": 3,
+   "FailPilotingBase": 4,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Myomer Accelerator Signal Circuitry",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "MASCWalk",
+      "Name": "MASC"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.5",
+      "operation": "Float_Add",
+      "statName": "CBTBE_RunMultiMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": true,
+      "forceVisRebuild": false,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Activatable",
+    "ActiveRunMod: +50%",
+    "FailChance: 13%",
+    "FailChanceTurn: 12%",
+    "FailLocation: Legs",
+    "FailCritLoc",
+    "FailReducPilot",
+    "FailStruct: 3",
+    "Quirk"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AdvMASC"
+   },
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair",
+    "default"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00023"
+  },
+  "Lootable": {
+   "ItemID": "Gear_MASC"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 99000,
+  "Details": "Introduced in 2740 by the Terran Hegemony, the Myomer Accelerator Signal Circuitry (MASC) is a piece of equipment that allows a BattleMech to move at twice its walking speed. This Advanced version is Compatible TSM but gives a reduced Max Movement Burst. <b><color=#099ff2>Activatable: DEALS DAMAGE AND CRIT TO LEGS ON FAILURE</color></b>",
+  "Icon": "wingfoot",
+  "Id": "Special_Gauntlet_MASC",
+  "Manufacturer": "Deadly Sins",
+  "Model": "Advanced M.A.S.C.",
+  "Name": "M.A.S.C.",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Adv. M.A.S.C."
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

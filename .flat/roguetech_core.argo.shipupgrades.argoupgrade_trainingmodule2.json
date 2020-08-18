@@ -1,0 +1,56 @@
+{
+ "AdditionalCost": 1000,
+ "AssignedCastDefId": "castDef_SumireDefault",
+ "AssignedCastDescription": "Farah just told me that the simulators in Beta Pod can network with the others. You know what that means? It means ship-wide tournaments. It means MechWarriors getting stomped in simulated battle by yours truly. We <i>need</i> these simulators, Commander.",
+ "Category": "TRAINING",
+ "Description": {
+  "Cost": 0,
+  "Details": "Adding more Battle Pods allows for full-lance training simulations, as well as raucous ship-wide tournaments. This increases the amount of experience gained by MechWarriors aboard the ship. Each MechWarrior with less than 500,000 total experience will gain 50 experience points per day.",
+  "Icon": "uixSvgIcon_shipUpgrade_training2",
+  "Id": "argoUpgrade_trainingModule2",
+  "Name": "Training Module 2",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_TrainingModules",
+ "Location": "SHIP",
+ "PurchaseCost": 270000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_trainingModule1",
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "ExperiencePerDay",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  },
+  {
+   "name": "ExperiencePerDayCap",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 500000,
+   "valueConstant": ""
+  },
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_trainingModule2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

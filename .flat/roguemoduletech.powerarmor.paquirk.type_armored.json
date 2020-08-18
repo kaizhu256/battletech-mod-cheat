@@ -1,0 +1,106 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 0.9,
+   "ArmorTPCost": 0.95
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BattleArmor",
+    "DamageTaken: -20%",
+    "TACImmune",
+    "ArmorFactor: -70%",
+    "ArmorTPCost: -5%",
+    "ArmorCBCost: -10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {},
+  "Weights": {
+   "ArmorFactor": 0.3
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "An Armored Battle Armor trades Special Equipment payloads for vastly Superior Protection",
+  "Icon": "space-suit",
+  "Id": "Type_Armored",
+  "Manufacturer": "General",
+  "Model": "Standard",
+  "Name": "Armored",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Armored"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "All incoming damage reduced by 20%.",
+    "Icon": "uixSvgIcon_action_end",
+    "Id": "StatusEffect-CFL",
+    "Name": "REDUCED DAMAGE TAKEN"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

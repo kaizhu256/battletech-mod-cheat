@@ -1,0 +1,322 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_other_blackmarket"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Darius calls from the planet's surface, where he has been directing a resupply trip. \"Commander, while loading the shuttle, I found that several suspiciously heavy cases of machine tools also contained secret compartments with AC/5 ammunition. There are probably some very unhappy smugglers somewhere in the city. What do you want to do?\"",
+  "Icon": "uixTxrSpot_Crates.png",
+  "Id": "event_co_smugglingOnAccident",
+  "Name": "The Accidental Smugglers"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Safe option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Return the ammo to the vendor."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Later in the day, Darius arrives back at the <i>Argo</i>. While his crew begins unloading all of the new supplies, he takes you aside.\r\n\r\n\"Commander, the vendor who sold us the machine tools was… well, <i>relieved</i> is an understatement.\" He describes how she buried her face in her hands when he departed.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "A heartfelt thank-you"
+     },
+     "Results": [],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "Later in the day, Darius arrives back at the <i>Argo</i>. While his crew begins unloading all of the new supplies, he takes you aside.\r\n\r\n\"Commander, the vendor who sold us the machine tools was… well, <i>relieved</i> is an understatement.\" He describes how she offered him ¢1,000 in a sweaty hand for his 'honesty', and how she buried her face in her hands when he departed.",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "A thank-you and a 'finders fee'"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Risky option",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Keep the bonus supplies."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Later in the day, Darius arrives back at the <i>Argo</i>. While his crew begins unloading all of the new supplies, he takes you aside.\r\n\r\n\"Commander, things went as smoothly as I could have hoped. The customs officials waved us through after only a token inspection of a few random crates. I didn't see anyone else looking at us funny.\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Successfully get through customs"
+     },
+     "Results": [
+      {
+       "Actions": [],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": [],
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": {
+        "ExclusionTags": {
+         "items": [],
+         "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": [],
+        "RequirementTags": {
+         "items": [],
+         "tagSetSourceFile": ""
+        },
+        "Scope": "Company"
+       },
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC5",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "3",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "Later in the day, Darius arrives back at the <i>Argo</i>. While his crew begins unloading all of the new supplies, he takes you aside. \"Commander, things didn't go quite as smoothly as I would have liked. The customs officials waved us through after only a token inspection of a few random crates…\"\r\n\r\n\"But…\" you prompt him.\r\n\r\nWith chagrin he continues, \"Yeah, I spotted someone loitering near the edge of the loading area. I'm pretty sure that she recognized the crates.\"",
+      "Icon": null,
+      "Id": "outcome_1_1",
+      "Name": "Get through customs but smugglers are suspicious"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC5",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "3",
+         "valueConstant": null
+        },
+        {
+         "name": "Reputation.AuriganPirates",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": "[rep_loss_small]"
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Liked by Aurigan Pirates]",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Pass the ammo back to the smugglers."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": "Tags/PilotTags"
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Reputation.AuriganPirates",
+       "op": "GreaterThanOrEqual",
+       "val": 20,
+       "valueConstant": "[rep_liked_min]"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "A less than reputable old contact of yours connects Darius with the smugglers who mislaid the ammunition.\r\n\r\n\"Well this isn't something you see every day,\" says the pirate with a smirk, reholstering the weapon he had been hiding below the table. \"A pleasure working with you. Next time, let's plan it in advance.\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Smugglers take back the ammo"
+     },
+     "Results": [],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "A less reputable old contact of yours connects Darius with the smugglers who mislaid the ammunition.\r\n\r\n\"Well, this is a ray of sunshine,\" says the pirate with a smirk, reholstering the weapon he had been hiding below the table. \"Next time, let's plan it in advance. Meanwhile, take some AC/2 ammo for your trouble.\"",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "Smugglers trade you some AC2 ammo"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC2",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "3",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Travel",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

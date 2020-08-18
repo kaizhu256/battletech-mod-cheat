@@ -1,0 +1,104 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 1.95,
+ "APMaxArmorThickness": 390,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "Torso",
+ "AmmoCategory": "HGAUSS",
+ "AttackRecoil": 18,
+ "BattleValue": 385,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 2",
+    "RecoilExponent: 0.35",
+    "AccuracyExponent: -0.2",
+    "TACExponent: -0.15",
+    "CRITExponent: -0.15",
+    "IsHeavyGauss",
+    "WeaponBoom: 130"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/gaussrifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 130,
+   "HeatDamagePerAmmo": 15,
+   "StabilityDamagePerAmmo": 30
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  }
+ },
+ "Damage": 130,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1225000,
+  "Details": "Though the Heavy Gauss Rifle was mostly effective, engineers thought they could improve the ballistic performance of the projectile. This would lead to a more consistent damage profile, making the Improved Heavy Gauss Rifle effective at all ranges. After four years of work, the engineers had created a weapon that occupied the same amount of space as the Heavy Gauss Rifle but was able to inflict consistent damage at all ranges. \n\n <b><color=#ffcc00>Uses Heavy Gauss Ammo.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "HeavyGauss",
+  "Id": "Weapon_Gauss_Improved_HEAVY",
+  "Manufacturer": "Defiance",
+  "Model": "Improved Heavy Gauss Rifle",
+  "Name": "Heavy Gauss Rifle",
+  "Purchasable": true,
+  "Rarity": 12,
+  "UIName": "Improved HGR"
+ },
+ "DisallowedLocations": "Arms",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 6,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 30,
+ "InventorySize": 8,
+ "MaxRange": 530,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 1.3,
+  "y": 1.3,
+  "z": 0.8
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 20,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "evasivePipsMods": {
+  "APCriticalChanceMultiplier": -0.15,
+  "AccuracyModifier": -0.2,
+  "CriticalChanceMultiplier": -0.15,
+  "RefireModifier": 0.35
+ },
+ "statusEffects": []
+}

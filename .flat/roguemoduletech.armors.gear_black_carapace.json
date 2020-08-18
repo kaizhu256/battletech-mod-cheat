@@ -1,0 +1,516 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "Auras": [
+  {
+   "AllyStealthAffection": "PositiveOne",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "Id": "Gear_ZECM_ECM",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": true,
+   "Name": "ECM",
+   "Range": 190,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#00f2ff",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "IPSUM SUCKUM",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_SHIELD",
+      "Name": "ECM_Shield_BC"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "2",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_SHIELD_EMITTER_COUNT",
+      "Name": "ECM Shield Emitter Count"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD_EMITTER_COUNT"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "NegativeOne",
+   "HideOnNotSelected": false,
+   "Id": "Gear_ZECM_ECM_JAMMER",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "JAMMER",
+   "Range": 280,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#0066ff",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Jamming ECM, reduces sensor checks for enemies in field",
+      "Icon": "uixSvgIcon_action_sensorlock",
+      "Id": "LV_ECM_JAM",
+      "Name": "ECM Jammer"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1,
+      "uniqueEffectIdStackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAMMED"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Counter for the number of ECM emitters currently affecting an actor with jamming.",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_JAM_EMITTER_COUNT",
+      "Name": "ECM Jamming Emitter Count"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAM_EMITTER_COUNT"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "Bulwark",
+ "BonusValueB": "Requires ECM",
+ "ComponentSubType": "Prototype_ElectronicWarfare",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "StealthArmor",
+   "ElectronicCounterMeasures"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Healing",
+   "ButtonName": "Black Carapace",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Healthy",
+   "NoUniqueCheck": true,
+   "Repair": {
+    "AffectInstalledLocation": true,
+    "Armor": 12,
+    "BuildingLocations": [],
+    "InnerStructure": 4,
+    "MechArmorLocations": [],
+    "MechStructureLocations": [],
+    "TurnsSinceDamage": 4,
+    "VehicleLocations": [],
+    "repairTrigger": {
+     "AtEndOfTurn": true,
+     "OnActivation": false,
+     "OnDamage": "None"
+    }
+   },
+   "presistantVFX": {
+    "VFXPrefab": "vfxprfprtl_heatventsm_loop",
+    "VFXScaleX": 1,
+    "VFXScaleY": 1,
+    "VFXScaleZ": 1
+   }
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 1.75,
+   "ArmorTPCost": 1.75
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Carapace",
+    "HaarJel",
+    "HaarJelTurn",
+    "HaarJelArmor: 12",
+    "HaarJelStructure: 4",
+    "HaarJelDuration: 4",
+    "BreachImmunity",
+    "FluidBoom: 30",
+    "IsECM: 2, 190",
+    "Jammer: 1, 280",
+    "ArmorFactor: +15%",
+    "StealthSensors: 30%, 3, 2, 3, 4",
+    "MimeticStealth: 30%, 3, 4",
+    "StealthReserved: 6",
+    "Visibility: -30%",
+    "Signature: -30%",
+    "TEHeatgen: +15%",
+    "HeatPerTurn: +10",
+    "ArmorTPCost: 75%",
+    "ArmorCBCost: 75%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   },
+   {
+    "CategoryID": "ECM"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 30
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Black Carapace"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "Linked_Black_Carapace",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "Linked_Black_Carapace",
+     "Location": "RightTorso"
+    },
+    {
+     "ComponentDefId": "Linked_Black_Carapace",
+     "Location": "LeftArm"
+    },
+    {
+     "ComponentDefId": "Linked_Black_Carapace",
+     "Location": "RightArm"
+    },
+    {
+     "ComponentDefId": "Linked_Black_Carapace",
+     "Location": "LeftLeg"
+    },
+    {
+     "ComponentDefId": "Linked_Black_Carapace",
+     "Location": "RightLeg"
+    }
+   ]
+  },
+  "Weights": {
+   "ArmorFactor": 1.15
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "2000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "2.5 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 2500000,
+  "Details": "Based on the unique HarJel Compound found on LV-426, which has the capacity to break up and absorb EM and light Waves, does the Black Carapace have self repair functionality with a basic Stealth Functionality",
+  "Icon": "carapace",
+  "Id": "Gear_Black_Carapace",
+  "Manufacturer": "Prototype",
+  "Model": "Black Carapace",
+  "Name": "Black Carapace",
+  "Purchasable": true,
+  "Rarity": 18,
+  "UIName": "Black Carapace"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to detect with stealth",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Stealth_Effect",
+    "Name": "STEALTH"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.7_3_2_3_4",
+    "operation": "Set",
+    "statName": "LV_STEALTH"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to see with eyes",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_MIMETIC",
+    "Name": "MIMETIC ARMOR"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.7_3_4",
+    "operation": "Set",
+    "statName": "LV_MIMETIC"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Signature_Decrease_Stealth",
+    "Name": "Stealth Signature Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Visibility_Decrease_Stealth",
+    "Name": "Stealth Visbility Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "Stealth_Heat_Generation_Stealth",
+    "Name": "Increased Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat Capacity Penalty",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "Stealth_Heat_Capacity_Stealth",
+    "Name": "Decreased Heat Capacity"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-10",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Immune to Hull Breach",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "BreachImmunity",
+    "Name": "BreachImmunity"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CBTBE_HullBreachImmunity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "BattleValue": 3610000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 715476,
+  "Details": "The 3F Cicada is one of the most advanced versions of this 'Mech, its upgrades based on combat reports from the front lines of the Clan Invasion, and was introduced in 3052. The chassis has been constructed using Endo Steel construction techniques and the 'Mech is protected with six and a half tons of Ferro-Fibrous armor. The 3F is powered by an extralight engine and carries a weapons loadout that appears to be a cross between the 2A and 3C models. The primary weapon is an ER PPC, which is backed up by two medium lasers. What's more the Cicada can now jump up to two hundred and forty meters thanks to the inclusion of eight jump jets.",
+  "Icon": "uixTxrIcon_cicada",
+  "Id": "chassisdef_cicada_CDA-3F",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Cicada",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Cicada"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Sensors",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_cicada",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "cicada",
+ "PrefabIdentifier": "chrPrfMech_cicadaBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Scout & Sniper",
+ "Tonnage": 40,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "CDA-3F",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The 3F Cicada is one of the most advanced versions of this 'Mech, its upgrades based on combat reports from the front lines of the Clan Invasion, and was introduced in 3052. The chassis has been constructed using Endo Steel construction techniques and the 'Mech is protected with six and a half tons of Ferro-Fibrous armor. The 3F is powered by an extralight engine and carries a weapons loadout that appears to be a cross between the 2A and 3C models. The primary weapon is an ER PPC, which is backed up by two medium lasers. What's more the Cicada can now jump up to two hundred and forty meters thanks to the inclusion of eight jump jets.",
+ "weightClass": "MEDIUM"
+}

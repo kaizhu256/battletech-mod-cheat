@@ -1,0 +1,69 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRAC2_AP",
+ "BattleValue": 0,
+ "BonusValueA": "+100% Crit.",
+ "BonusValueB": "",
+ "Capacity": 30,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "TAC: +50%",
+    "Crits: -50%",
+    "ThroughArmorDamage: 2",
+    "ACDamage: -40%",
+    "WpnAccuracy: -1",
+    "AmmoJAMFlat: 4%",
+    "LRAC2Ammo: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/a/rac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 10,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000022"
+  },
+  "TRGBColor": {
+   "Color": "#EE82EE",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "Armour Piercing AC Ammo grants an increased chance for critical hits. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "RotaryAC",
+  "Id": "Ammo_Light_Rotary_AP_AC2",
+  "Manufacturer": "Generic",
+  "Model": "AC2 AP",
+  "Name": "RAC/2 AP Ammo",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Ammo RAC/2 [AP]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

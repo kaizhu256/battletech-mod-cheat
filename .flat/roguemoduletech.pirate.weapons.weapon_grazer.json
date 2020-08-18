@@ -1,0 +1,152 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 80,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 207,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorChangeRule": "Linear",
+ "ColorSpeedChange": 2,
+ "ColorsTable": [
+  {
+   "C": "#FF69B4",
+   "I": 5
+  },
+  {
+   "C": "#FF0000",
+   "I": 5
+  },
+  {
+   "C": "#FFA500",
+   "I": 5
+  },
+  {
+   "C": "#FFFF00",
+   "I": 5
+  },
+  {
+   "C": "#008000",
+   "I": 5
+  },
+  {
+   "C": "#40E0D0",
+   "I": 5
+  },
+  {
+   "C": "#4B0082",
+   "I": 5
+  },
+  {
+   "C": "#9400D3",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Grazer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/bombast"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02008"
+  }
+ },
+ "Damage": 40,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 800000,
+  "Details": "The Grazer is one of many dead end attempts at producing a next generation directed energy weapon. Particles in the Gamma Ray range are not as easily stopped by solid matter as conventional light resulting in improved armor penetration, but only on par with an equivalent autocannon. Mounted on the, also experimental, Urbanlord, it proved effective in fighting to Free Tiaw...St. Ives. However the system was ultimately judged too difficult to manufacture on a large scale, and some mechwarriors reported finding it's multiple firing modes distracting and difficult to manage in the heat of battle. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_Grazer",
+  "Manufacturer": "Defiance",
+  "Model": "Grazer Large",
+  "Name": "Grazer Large",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Grazer Large"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1125,
+ "HeatDamage": 0,
+ "HeatGenerated": 24,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 6.6,
+ "InventorySize": 2,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "Id": "Std",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "HeatGenerated": 12,
+   "Id": "ER",
+   "LongRange": 300,
+   "MaxRange": 300,
+   "MiddleRange": 150,
+   "ShortRange": 90,
+   "UIName": "ER",
+   "isBaseMode": false
+  },
+  {
+   "AccuracyModifier": -1,
+   "DamagePerShot": 10,
+   "EvasivePipsIgnored": 1,
+   "FireDelayMultiplier": 0.1,
+   "HeatGenerated": 6,
+   "Id": "Pulse",
+   "Instability": 4.3,
+   "LongRange": 150,
+   "MaxRange": 240,
+   "MiddleRange": 120,
+   "RefireModifier": 2,
+   "ShortRange": 30,
+   "UIName": "Pulse",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 7,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": []
+}

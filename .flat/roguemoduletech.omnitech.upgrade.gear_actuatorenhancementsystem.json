@@ -1,0 +1,139 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+3 Arm Mounted Accuracy|",
+ "BonusValueB": "-2 Recoil|-2 Melee Accuracy.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant3",
+   "ActuatorEnhancementSystem.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmAccuracy: +2",
+    "TEHeatgen: -3%",
+    "Recoil: -1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ActuatorEnhancementSystem"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00020"
+  }
+ },
+ "Description": {
+  "Cost": 250000,
+  "Details": "An Actuator Enhancement System that can be fit on OmniMechs inplace of Lower Arm and Hand Actuators enabling a superior control and targetting system for that Arm",
+  "Icon": "bracer",
+  "Id": "Gear_ActuatorEnhancementSystem",
+  "Manufacturer": "CLAN",
+  "Model": "AES",
+  "Name": "Actuator Enhancement System ",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Actuator Enhancement"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "WeaponMountHeat",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.97",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1 Arm mounted accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-LowerAccuracy-{location}",
+    "Name": "Lower Arm Accuracy"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "ARMRecoil",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

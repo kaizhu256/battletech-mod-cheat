@@ -1,0 +1,266 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [
+   "HeroMech",
+   "PrototypeMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 75,
+ "DFAInstability": 38,
+ "DFASelfDamage": 75,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2461806,
+  "Details": "Based on a BL-9-KNT chassis, this personal ride of Reginald VanJaster was created during the Word of Blake's occupation of Solaris. The standard weaponry was removed and replaced with a Large Shield and Large Vibroblade for hand to hand combat, while five Medium X-Pulse Lasers inflict huge amounts of damage in close quarter combat. For long range firepower, a single Heavy PPC paired with a PPC Capacitor are used. The whole 'Mech is protected by thirteen tons of Light Ferro-Fibrous armor. Fifteen double heat sinks are available to dissipate heat.",
+  "Icon": "uixTxrIcon_redreaper",
+  "Id": "chassisdef_red_reaper_BL-X2-KNT",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Black Knight",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Black Knight"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Distracting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Shield_3",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_VibroSword_3tons",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_redreaper",
+ "Heatsinks": 0,
+ "InitialTonnage": 7.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 38,
+ "MeleeInstability": 19,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "redreaper",
+ "PrefabIdentifier": "chrprfmech_redreaperbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Brawler & Ranged Assault",
+ "Tonnage": 75,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "BL-X2-KNT",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Based on a BL-9-KNT chassis, this personal ride of Reginald VanJaster was created during the Word of Blake's occupation of Solaris. The standard weaponry was removed and replaced with a Large Shield and Large Vibroblade for hand to hand combat, while five Medium X-Pulse Lasers inflict huge amounts of damage in close quarter combat. For long range firepower, a single Heavy PPC paired with a PPC Capacitor are used. The whole 'Mech is protected by thirteen tons of Light Ferro-Fibrous armor. Fifteen double heat sinks are available to dissipate heat.",
+ "weightClass": "HEAVY"
+}

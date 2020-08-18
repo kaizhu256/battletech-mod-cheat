@@ -1,0 +1,38 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Heat generation by 10%.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitSaraRyan",
+  "Name": "AI d11 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitSaraRyanEffect",
+    "Name": "Decreases Heat Generation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

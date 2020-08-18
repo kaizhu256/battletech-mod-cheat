@@ -1,0 +1,202 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.002,
+ "APMaxArmorThickness": 1.2,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 50,
+ "BonusValueA": "Target Painter",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "component_type_lostech",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "TAG: 7",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "Painter: +1",
+    "PainterSensors: 25%",
+    "PainterVisibility: 25%",
+    "LosTech"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/t/tag"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 210000,
+  "Details": "Another recreation of Star League tech, this Target Acquisition Gear combines several active scanning systems to act like a Mech-sized laser pointer and share targeting information with the Lance. Two turn duration, does not stack.",
+  "Icon": "TAG",
+  "Id": "Weapon_Laser_TAG",
+  "Manufacturer": "NAIS",
+  "Model": "Target Acquisition Gear",
+  "Name": "TAG",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "TAG"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_TAG",
+ "WeaponSubType": "SmallLaserER",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This target was TAG'ed. +1 to hit.",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect",
+    "Name": "Target Acquired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 7,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.25_2_-1",
+    "operation": "Set",
+    "statName": "LV_TAG"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect2",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "duration": 7,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visual indicator of the TAG effect",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "StatusEffect-TAG-IndicatorVFX",
+    "Name": "TAG MARKED"
+   },
+   "durationData": {
+    "duration": 7,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "VFXEffect",
+   "nature": "Debuff",
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "hideApplicationFloatie": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": {
+    "attachToImpactPoint": true,
+    "duration": -1,
+    "facesAttacker": false,
+    "isAttached": true,
+    "isOneShot": false,
+    "location": -1,
+    "vfxName": "vfxPrfPrtl_TAGmarker_loop"
+   }
+  }
+ ]
+}

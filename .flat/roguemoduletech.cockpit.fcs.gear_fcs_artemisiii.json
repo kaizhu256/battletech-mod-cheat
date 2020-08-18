@@ -1,0 +1,81 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Direct-Fire Missile Acc.",
+ "BonusValueB": "+1 DMG (LRM)",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MissileClustering: +6",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 300000,
+  "Details": "An advanced version of the Artemis II System, this FCS provides more advanced guidance control for Missiles of all Types",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_ArtemisIII",
+  "Manufacturer": "Hartford",
+  "Model": "FCS Artemis III",
+  "Name": "Hartford AIII FCS",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "FCS Artemis III"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Substantially increases the clustering of this unit's LRM weapons and boosts the stability damage of SRMs by 50%.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-EnhMS-ClusterBonusLRM",
+    "Name": "MISSILERY SUITE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "6",
+    "operation": "Float_Add",
+    "statName": "ClusteringModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

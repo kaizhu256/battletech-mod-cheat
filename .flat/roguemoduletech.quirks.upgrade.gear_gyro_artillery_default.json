@@ -1,0 +1,193 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 500,
+ "BonusValueA": "50 Stability|",
+ "BonusValueB": "-5% Stability Damage Taken",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "SureFoot",
+    "Recoil: -3",
+    "StabDamageTaken: -5%",
+    "GyroStab: 50",
+    "GyroWeight: 20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "ignore_damage",
+    "autorepair",
+    "no_salvage",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "Weights": {
+   "StructureFactor": 1.2
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 800000,
+  "Details": "The Artillery Heavy Gyro was specifically designed to offset the tremendous recoil and instability generated from large ballistic weaponry in Mechs.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "Gear_Gyro_Artillery_Default",
+  "Manufacturer": "Mitchell Vehicles",
+  "Model": "Model III",
+  "Name": "Artillery Heavy Gyro",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Artillery Heavy Gyro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: This unit is GUARDED (50% damage reduction against ranged attacks to the front and side) from remaining stationary. Increases Melee Damage by 10%.",
+    "Icon": "uixSvgIcon_ability_bulwark",
+    "Id": "GyroSureFoot",
+    "Name": "BULWARK"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "GainEntrenchedOnNormalMove"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Incoming stability damage reduced by [AMT].",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "SamuraiStabDamageBuff",
+    "Name": "INCOMING STABILITY DAMAGE DECREASED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "ReceivedInstabilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides 70 stability and -5% stability damage taken.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "Art. Gyro",
+    "Name": "Model III"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "50.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Ballistic weapon attacks have their recoil reduced by [AMT].",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect_BCBallistic",
+    "Name": "Ballistic Recoil Reduced."
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-3",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

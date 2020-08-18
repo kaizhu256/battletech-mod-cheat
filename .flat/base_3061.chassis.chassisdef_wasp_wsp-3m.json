@@ -1,0 +1,234 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "CustomParts": {
+  "CustomParts": [],
+  "FiringArc": 150
+ },
+ "DFADamage": 30,
+ "DFAInstability": 10,
+ "DFASelfDamage": 20,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 289423,
+  "Details": "The post-Helm Memory Core House Marik variant introduced in 3051, the 3M Wasp upgrades the chassis to Irian Chassis Second Generation Class 20 Endo Steel and the armor to Ferro-Fibrous. This variant carries an Intek medium pulse laser in its right arm and a single Irian Weapons Works SRM-2 launcher in the right torso. The variant is also equipped with the potent Irian E.A.R. communications system and the Wasat Aggressor targeting-tracking system.[",
+  "Icon": "wasp",
+  "Id": "chassisdef_wasp_WSP-3M",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Wasp",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Wasp"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Extended_Torso_Twist",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_wasp",
+ "Heatsinks": 0,
+ "InitialTonnage": 2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 10,
+ "MeleeInstability": 5,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "wasp",
+ "PrefabIdentifier": "chrPrfMech_waspHotD-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Light Scout and Support",
+ "Tonnage": 20,
+ "TopSpeed": 95,
+ "TurnRadius": 90,
+ "VariantName": "WSP-3M",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The post-Helm Memory Core House Marik variant introduced in 3051, the 3M Wasp upgrades the chassis to Irian Chassis Second Generation Class 20 Endo Steel and the armor to Ferro-Fibrous. This variant carries an Intek medium pulse laser in its right arm and a single Irian Weapons Works SRM-2 launcher in the right torso. The variant is also equipped with the potent Irian E.A.R. communications system and the Wasat Aggressor targeting-tracking system.[",
+ "weightClass": "LIGHT"
+}

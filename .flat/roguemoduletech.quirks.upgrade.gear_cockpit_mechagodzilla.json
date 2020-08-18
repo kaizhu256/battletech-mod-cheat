@@ -1,0 +1,366 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "Headshot Immunity",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AcePilot",
+    "TorsoMount",
+    "HSImmune",
+    "SkillGunnery: 1",
+    "SkillPiloting: 1",
+    "SkillGuts: 1",
+    "SkillTactics: 1",
+    "EvaMax: +1",
+    "EvaPips: +1",
+    "AdvancedSensors: 3",
+    "Sharer",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "LifeSupportA"
+   },
+   {
+    "CategoryID": "LifeSupportB"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   },
+   {
+    "CategoryID": "CockpitSensors"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00019"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "Gear_Cockpit_LifeSupportA_Torso",
+     "ComponentDefType": "Upgrade",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "Gear_Cockpit_LifeSupportB_Torso",
+     "ComponentDefType": "Upgrade",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Sorter": {
+   "Order": 6
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.3",
+    "TechCost": "[[Chassis.Tonnage]] / 8"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 620000,
+  "Details": "A Torso Mounted version of the DNI Cockpit, designed and created by the Deadly Sins Stable on Solaris based on research from recovered ClanTech EI Systems",
+  "Icon": "interface",
+  "Id": "Gear_Cockpit_Mechagodzilla",
+  "Manufacturer": "Dark Mirage",
+  "Model": "Torso Cockpit",
+  "Name": "Torso Cockpit",
+  "Purchasable": false,
+  "Rarity": 4,
+  "UIName": "Torso Mount DNI Cockpit"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 4,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit can use its movement before or after shooting.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "InterFaceMoveAfterShoot",
+    "Name": "ACE PILOT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CanMoveAfterShooting"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shows their vision when lancemates move",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Shares_Vision",
+    "Name": "Vision Sharing"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides detailed information on enemy units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ADVANCED_SENSORS",
+    "Name": "Advanced Sensors"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "3",
+    "operation": "Int_Add",
+    "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "MaxEvasion",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "GainEvasion",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "EvasivePipsGainedAdditional"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Buffs Gunnery Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Gunnery",
+    "Name": "Gunnery Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "Gunnery",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Buffs Piloting Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Piloting",
+    "Name": "Piloting Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "Piloting",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Buffs Guts Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Guts",
+    "Name": "Guts Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "Guts",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Buffs Tactics Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Tactics",
+    "Name": "Tactics Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "Tactics",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Take no Headshot pilot Damage",
+    "Icon": "uixSvgIcon_ability_bulwark",
+    "Id": "HeadShotDamageImmunity",
+    "Name": "HSIMMUNITY"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "NoHeadDamage"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

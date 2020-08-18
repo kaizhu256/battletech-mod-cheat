@@ -1,0 +1,374 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [
+   "OmniMech",
+   "mr-resize-1.15-0.85-0.8"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "CustomDescription": "Omni Mech",
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  }
+ },
+ "DFADamage": 95,
+ "DFAInstability": 48,
+ "DFASelfDamage": 95,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 8695041,
+  "Details": "The Tenshi, (\"Angel\" in japanese), is an Assault Class OmniMech, which was manufactured during the early thirty-second century for the Draconis Combine's armed forces. A product of House Kurita's hidden efforts to rebuild its decimated 'Mech regiments, the Tenshi was designed to use resources found within the Combine. The Tenshi was first deployed among the ranks of the Ghost Regiments in the early 3100s, its deployment with a less-renowned brigade was part of the DCMS' two-fold effort of testing the 'Mech while also providing a fire-wall to save face should the design prove to be a failure in combat. One of its first deployments was in 3103, when the 1st Ghost conducted a raid on the Ghost Bear Dominionworld of Grumium. The eight Tenshis among the Ghosts' ranks performed well, with most of their numbers returning to the Combine with stolen Clan technology. Among the Tenshi's design features is its durability and having a heavy equipment payload. The designers saw fit to equip the 'Mech with a Compact Gyro and 18.5 tons of Standard Armor. The Tenshi also uses a number of new technologies that had finally entered production in the decades preceding the Jihad. The use of an Endo-Composite internal structure and a Light Fusion Engine granted the design a huge pod capacity of 48 tons. However, this large capacity had come at a price; that price being a slightly lower maximum speed than other comparable designs of the era.\"",
+  "Icon": "Tenshi",
+  "Id": "chassisdef_tenshi_TN-10-O",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Tenshi",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Tenshi"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_structureslots_endocomposite",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Special_Searchlight",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_Gyro_Compact_Omni",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engine_285",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_light_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size2",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_marauder",
+ "Heatsinks": 0,
+ "InitialTonnage": 9.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 150,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 300,
+   "MaxRearArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 48,
+ "MeleeInstability": 24,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "marauder",
+ "PrefabIdentifier": "chrPrfMech_marauderBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper",
+ "Tonnage": 95,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "TN-10-O",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Tenshi's Primary configuration is equipped mainly with standard technologies that allow the 'Mech to engage an enemy unit at long-range. Its main weapon is an arm-mounted Gauss Rifle which is fed with 3 tons of ammunition. Its other set of long range weaponry consists five Light Particle Projection Cannons, all of which are fitted into the 'Mech's right arm. For a last resort, the 'Mech sports a pair of 10-tubed Rocket Launchers, with one placed in each of its legs. All of the energy weapons are tied to a Targeting Computer for greater accuracy. Among other equipment found in this configuration is a Guardian ECM, providing an electronic screen against enemy attacks, while a Supercharger is fitted into the center torso to help temporarily increase ground speed.",
+ "weightClass": "ASSAULT"
+}

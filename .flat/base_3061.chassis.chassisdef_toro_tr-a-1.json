@@ -1,0 +1,230 @@
+{
+ "BattleValue": 3087000,
+ "ChassisTags": {
+  "items": [
+   "Primitive"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Hand"
+  }
+ },
+ "DFADamage": 35,
+ "DFAInstability": 18,
+ "DFASelfDamage": 35,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 617500,
+  "Details": "The original prototype of the Toro, the A-1 was based of the primitive Firebee developed by the Cappellan Condederation. It had two SRM-2s which shared a ton of ammunition and a Large Laser. Though it could only manage 64 km/h, the A-1 had more armor protection than the Firebee, with ten and a half tons of Primitive Armor protecting the mech.",
+  "Icon": "Toro",
+  "Id": "chassisdef_toro_TR-A-1",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Toro",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Toro"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_toro",
+ "Heatsinks": 0,
+ "InitialTonnage": 3.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 4,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 4,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 1
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 18,
+ "MeleeInstability": 9,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "toro",
+ "PrefabIdentifier": "chrprfmech_torobase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Brawler",
+ "Tonnage": 35,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "TR-A-1",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The original prototype of the Toro, the A-1 was based of the primitive Firebee developed by the Cappellan Condederation. It had two SRM-2s which shared a ton of ammunition and a Large Laser. Though it could only manage 64 km/h, the A-1 had more armor protection than the Firebee, with ten and a half tons of Primitive Armor protecting the mech.",
+ "weightClass": "LIGHT"
+}

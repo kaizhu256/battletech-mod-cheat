@@ -1,0 +1,54 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "Engine was hit, additional 15 Heat / Turn",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "CriticalEffect-EngineCrit1",
+    "Name": "Engine Crit (1)"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "15",
+    "operation": "Int_Subtract",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine was hit, additional 30 Heat / Turn",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "CriticalEffect-EngineCrit2",
+    "Name": "Engine Crit (2)"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "30",
+    "operation": "Int_Subtract",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

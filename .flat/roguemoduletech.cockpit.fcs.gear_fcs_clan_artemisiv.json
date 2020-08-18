@@ -1,0 +1,85 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Direct-Fire Missile Acc|",
+ "BonusValueB": "+ 1 Indirect Missile Acc.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanFCS"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArtemisIV",
+    "MissileClustering: +10",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArtemisTTS"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 1000000,
+  "Details": "The XXXII Fire Control System is just one of many in a long line of Fire Control Systems developed by the Clans during their Exodus from the Inner Sphere. The XXXII was the first true home grown Clan Fire Control System that was fielded in high number on Long Range Missile equipped BattleMechs. <b><color=#F79232>Cannot be used with other Missile TTS and enables using Artemis IV Ammo.</color></b>",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_Clan_ARTEMISIV",
+  "Manufacturer": "Clan Widowmaker",
+  "Model": "Series XXXII Multitrack With Artemis IV",
+  "Name": "Clan Artemis IV FCS",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "FCS Artemis IV (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Substantially increases the clustering of this unit's LRM weapons and boosts the stability damage of SRMs by 50%.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-EnhMS-ClusterBonusLRM",
+    "Name": "MISSILERY SUITE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "10",
+    "operation": "Float_Add",
+    "statName": "ClusteringModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

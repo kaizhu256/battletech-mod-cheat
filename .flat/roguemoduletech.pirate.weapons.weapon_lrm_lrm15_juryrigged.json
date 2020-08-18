@@ -1,0 +1,111 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.031,
+ "APMaxArmorThickness": 30,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 150,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "Damage Falloff",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: -1",
+    "DmgFallOff: 35%",
+    "AMSChance: -10%",
+    "WpnRecoil: 1",
+    "Explodium: 10",
+    "DakkaBoom: 20",
+    "WeaponJAM: 10%",
+    "Indirect",
+    "DoesCluster"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 20,
+   "StabilityDamage": 15
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03013"
+  }
+ },
+ "Damage": 6,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 432000,
+  "Details": "The radar transmitter and guidance computer should be right here, but of course, they're not. I don't have any idea where the missiles are going to go when you fire it.",
+  "Icon": "lrm",
+  "Id": "Weapon_LRM_LRM15_JuryRigged",
+  "Manufacturer": "Idjet",
+  "Model": "Long-Range Missile Launcher",
+  "Name": "Pirate LRM17",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "LRM17 (PRT)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.35,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 1,
+ "GunneryJammingMult": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 17,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1.2,
+ "InventorySize": 2,
+ "MaxRange": 580,
+ "MinRange": 90,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm15",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  390,
+  510
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 17,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 6,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM15",
+ "WeaponSubType": "LRM15",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

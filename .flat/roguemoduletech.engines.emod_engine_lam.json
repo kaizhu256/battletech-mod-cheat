@@ -1,0 +1,160 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LAM-Part",
+   "LAM-Engine"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.04,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "JumpDistance: 10%",
+    "EvaMax: +1",
+    "EngineReserved: 4",
+    "ReqWings"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size2",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size2",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Weights": {
+   "ReservedSlots": 4
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "12000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 33",
+    "TechCost": "1.35 * [[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "Originally conceived during the Star League era, the Land-Air 'Mech (or LAM) is a hybrid military unit capable of transforming between BattleMech and Aerospace Fighter forms. <b><color=#0066ff>Reserves 4 Slots and requires Partial Wings System</color></b>",
+  "Icon": "power-generator",
+  "Id": "emod_Engine_LAM",
+  "Manufacturer": "Allied Aerospace",
+  "Model": "Valkyrie",
+  "Name": "Land Air Mech Engine",
+  "Purchasable": false,
+  "Rarity": 10,
+  "UIName": "Engine (LAM)"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "MaxEvasion",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Conversion Gear increase Jump Distance by 10%",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-Jump_Distance-T3",
+    "Name": "JUMP DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

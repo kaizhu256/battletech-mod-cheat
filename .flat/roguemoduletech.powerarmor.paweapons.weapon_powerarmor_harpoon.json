@@ -1,0 +1,144 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.75,
+ "APCriticalChanceMultiplier": 0.45,
+ "APMaxArmorThickness": 190,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "paweapon"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HAMMERFIST: 10%",
+    "WpnCrits: X2",
+    "IsGauss",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/ac"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 375000,
+  "Details": "A Battle Armor 'Harpoon'. For pirates that ain't be half as stupid as what else they jury rig, this allows the squad to topple and capture pretty much any mech. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_PowerArmor_Harpoon",
+  "Manufacturer": "Ahab",
+  "Model": "Harpoon Rifle",
+  "Name": "Harpoon Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "BA Harpoon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 1,
+ "MaxRange": 280,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  150,
+  210
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0.3,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Harpooned ye Landlubber! 15% reduced Unsteady threshhold.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Harpoon-Effect",
+    "Name": "Reel 'Er In"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "UnsteadyThreshold",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ],
+ "weaponCategoryID": "BattleArmor"
+}

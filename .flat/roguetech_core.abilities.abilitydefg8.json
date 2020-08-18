@@ -1,0 +1,155 @@
+{
+ "ActivationCooldown": 4,
+ "ActivationTime": "ConsumedByFiring",
+ "Description": {
+  "Details": "ACTION: Overcharge your Mech's system to gain +1 Accuracy, +10% Damage, -10% Heat Generated and cool 40 Heat. Generate 10 Extra Heat per turn during the 4 Turn Cooldown.",
+  "Icon": "uixSvgIcon_skullAtlas",
+  "Id": "AbilityDefG8",
+  "Name": "Warlord"
+ },
+ "DisplayParams": "ShowInMWTRay",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Increased Weapon Damage Damage.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "StatusEffect-WarlordDamage",
+    "Name": "Overcharge"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1 Accuracy",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-TO-HIT",
+    "Name": "Targeting"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "modType": "System.Single",
+    "modValue": "-1",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "-40 Heat",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-Heat",
+    "Name": "Flush Coolant"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "40",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "+10 Heat Generated",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-Heatpenalty",
+    "Name": "Taxed Coolant"
+   },
+   "durationData": {
+    "duration": 4,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-10",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "OnActivation",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "-50 Heat",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-Heat2",
+    "Name": "Flush Coolant2"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ReqSkill": "Gunnery",
+ "ReqSkillLevel": 8,
+ "Targeting": "ActorSelf"
+}

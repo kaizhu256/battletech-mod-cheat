@@ -1,0 +1,407 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "Head",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "Target Painter",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long",
+   "lv-shares-sensors"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "C3: 3, 240",
+    "C3M: 2, 240",
+    "Sharer",
+    "TAG: 10",
+    "PipsIgnored: 2",
+    "WpnAccuracy: +1",
+    "Painter: +1",
+    "PainterSensors: 25%",
+    "PainterVisibility: 25%",
+    "Initiative: +1",
+    "Tacticon: +1",
+    "Health: 2",
+    "IsCockpit",
+    "FCS",
+    "ArtemisIV"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitSensors"
+   },
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   },
+   {
+    "CategoryID": "w/s/t/tag"
+   },
+   {
+    "CategoryID": "C3Master"
+   },
+   {
+    "CategoryID": "ArtemisTTS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 2710000,
+  "Details": "An incredibly rare prototype C3 Master unit, the C3 Overlord Command Unit is the pinnacle of Kuritan design and research into the C3 Network. The bulky Overlord Command Unit features a variety of targeting and command technologies but, ultimately, was retired in favor of individual components that are easier and faster to manufacture.",
+  "Icon": "C3Systems",
+  "Id": "Weapon_FCS_Command_C3",
+  "Manufacturer": "Tanadi",
+  "Model": "C3 Overlord Command Unit",
+  "Name": "C3 Network Overlord Command Unit",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "C3 Overlord Command"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 2,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 4,
+ "MaxRange": 590,
+ "MinRange": 0,
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "flag",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  200,
+  350,
+  500
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserER_Small",
+ "WeaponSubType": "SmallLaserER",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This target was TAG'ed. +1 to hit.",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect",
+    "Name": "Target Acquired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 10,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.25_4_-1",
+    "operation": "Set",
+    "statName": "LV_TAG"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect2",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "duration": 7,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides detailed information on enemy units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ADVANCED_SENSORS",
+    "Name": "Advanced Sensors"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "5",
+    "operation": "Int_Add",
+    "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Initiative_Lance",
+    "Name": "Command Consoles"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Prevents Injuries against a MechWarrior.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Pilot_HealthAdd-T3",
+    "Name": "MAX INJURIES INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "BonusHealth",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CockpitInitativeEffect",
+    "Name": "Command Consoles"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Prevents Injuries against a MechWarrior.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Pilot_HealthAdd-T3",
+    "Name": "MAX INJURIES INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "BonusHealth",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a bonus to actions that generate Morale.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Morale_Gain-T3",
+    "Name": "MORALE GENERATION INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "MoraleBonusGain"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shows their vision when lancemates move",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Shares_Vision",
+    "Name": "Vision Sharing"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  }
+ ]
+}

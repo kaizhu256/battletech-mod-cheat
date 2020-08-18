@@ -1,0 +1,318 @@
+{
+ "AllowedLocations": "LeftTorso,RightTorso",
+ "BonusValueA": "+ 1 Acc. (All)",
+ "BonusValueB": "- 10% Dmg. (Lance)",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BUILT-IN",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "UAV",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "",
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Tacticon: +1",
+    "LanceSight3: 50",
+    "LanceIndirectAcc: +2",
+    "LanceResolve2: 2",
+    "UAV: 500, 6, 20",
+    "Sensors: 10%",
+    "Sight: 10%",
+    "Sharer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AdvUAV"
+   },
+   {
+    "CategoryID": "UAV"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00024"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "The Cyclops HQ comes equipped with a sophisticated and powerful Advanced Command Module. Granting the entire Command Improved Communication and Coordination.",
+  "Icon": "uixSvgIcon_special_Equipment",
+  "Id": "Gear_General_Advanced_Command_Module",
+  "Manufacturer": "Stormvanger",
+  "Model": "",
+  "Name": "Advanced Command Module",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Adv. Command Mod"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 12,
+ "PrefabIdentifier": "",
+ "Tonnage": 16,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Activated ability (uses Firing action). Performs a Sensor Lock against all enemies within its radius, as indicated by the spinning gold ring. Will go into cooldown state after use.",
+    "Icon": "uixSvgIcon_action_sensorlock",
+    "Id": "SpySat_Ping",
+    "Name": "SPY SAT PING"
+   },
+   "activeAbilityEffectData": {
+    "abilityName": "AbilityDef_SPYSAT_Ping"
+   },
+   "effectType": "ActiveAbility",
+   "targetingData": {
+    "alsoTargetsCreator": true,
+    "effectTargetType": "EnemiesWithinRange",
+    "effectTriggerType": "OnActivation",
+    "forceVisRebuild": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Initiative_Lance",
+    "Name": "Command Consoles"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides a bonus to actions that generate Morale.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Morale_Gain-T3",
+    "Name": "MORALE GENERATION INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "MoraleBonusGain"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Indirect fire penalties reduced by 1.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-IndirectAccuracy_Add-T1",
+    "Name": "MISSILE WEAPON INDIRECT HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "ToHitIndirectModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by 25m.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-Spotting_Gain-T1",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "50.0",
+    "operation": "Float_Add",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "AllLanceMates",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shows their vision when lancemates move",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Shares_Vision",
+    "Name": "Vision Sharing"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "AdvZoom-Spotting_Gain",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.10",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "AdvZoom-Spotting_Gain",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

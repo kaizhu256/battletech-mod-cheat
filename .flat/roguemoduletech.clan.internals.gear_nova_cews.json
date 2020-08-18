@@ -1,0 +1,664 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "Auras": [
+  {
+   "AllyStealthAffection": "PositiveOne",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "Id": "Gear_ECM_ECM",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": true,
+   "Name": "ECM",
+   "Range": 190,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#00f2ff",
+   "State": "Online",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "IPSUM SUCKUM",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_SHIELD",
+      "Name": "ECM_Shield_NECM"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_SHIELD_EMITTER_COUNT",
+      "Name": "ECM Shield Emitter Count"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD_EMITTER_COUNT"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "NegativeThree",
+   "HideOnNotSelected": false,
+   "Id": "Gear_ECM_ECM_JAMMER",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "JAMMER",
+   "Range": 300,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#0066ff",
+   "State": "Online",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Jamming ECM, reduces sensor checks for enemies in field",
+      "Icon": "uixSvgIcon_action_sensorlock",
+      "Id": "LV_ECM_JAM",
+      "Name": "ECM Jammer"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1,
+      "uniqueEffectIdStackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "2",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAMMED"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Counter for the number of ECM emitters currently affecting an actor with jamming.",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECM_JAM_EMITTER_COUNT",
+      "Name": "ECM Jamming Emitter Count"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAM_EMITTER_COUNT"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Increases spotting distance by 50m.",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "NCEWS-ECM",
+      "Name": "SPOTTING DISTANCE INCREASED"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.0",
+      "operation": "Float_Add",
+      "statName": "AccuracyModifier",
+      "targetCollection": "Weapon"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "Nullify",
+   "HideOnNotSelected": false,
+   "Id": "Gear_ECM_ECCM",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "ECCM",
+   "Range": 190,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#a31aff",
+   "State": "Offline",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "IPSUM SUCKUM",
+      "Icon": "uixSvgIcon_status_ECM-missileDef",
+      "Id": "LV_ECCM_SHIELD",
+      "Name": "ECM_Shield_NECCM"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-1",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_SHIELD"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "PositiveTwo",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": false,
+   "Id": "Gear_EWS_ECCM_JAMMER",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": true,
+   "Name": "ECCM Protect",
+   "Range": 300,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#a31aff",
+   "State": "Offline",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Jamming ECM, reduces sensor checks for enemies in field",
+      "Icon": "uixSvgIcon_action_sensorlock",
+      "Id": "LV_ECM_JAM",
+      "Name": "ECM Jammer"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1,
+      "uniqueEffectIdStackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-2",
+      "operation": "Int_Add",
+      "statName": "LV_ECM_JAMMED"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "NegativeOne",
+   "Id": "Gear_C3m",
+   "IsNegativeToEnemy": true,
+   "IsPositiveToAlly": false,
+   "Name": "C3m",
+   "Range": 300,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#00e600",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Shares Sensor Information on nearby Targets",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "C3M-SensorInfo",
+      "Name": "C3 Sensor Information"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_PROBE_PING"
+     },
+     "targetingData": {
+      "effectTargetType": "EnemiesWithinRange",
+      "effectTriggerType": "Passive",
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "Id": "Gear_C3MS",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": true,
+   "Name": "C3mS",
+   "Range": 300,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#ff9900",
+   "State": "Persistent",
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Provides detailed information on enemy units",
+      "Icon": "uixSvgIcon_status_ECM-ghost",
+      "Id": "C3m_LV_ADVANCED_SENSORS",
+      "Name": "Advanced Sensors"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "1",
+      "operation": "Int_Add",
+      "statName": "LV_ADVANCED_SENSORS"
+     },
+     "targetingData": {
+      "effectTargetType": "AlliesWithinRange",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     }
+    }
+   ],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
+ "BattleValue": 60,
+ "BonusValueA": "+1 Accuracy and 20% Sensors|",
+ "BonusValueB": "+2 Defense|-50%Signature",
+ "ComponentSubType": "Prototype_ElectronicWarfare",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ElectronicCounterMeasures"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "ECM",
+   "ActiveByDefault": true,
+   "ButtonName": "ECM Mode",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "ECCM",
+   "Linkage": {
+    "OnActivate": {
+     "Activate": [],
+     "Deactivate": []
+    },
+    "OnDeactivate": {
+     "Activate": [],
+     "Deactivate": [
+      "Stealth",
+      "Damper",
+      "Camouflage"
+     ]
+    }
+   },
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Sensors: +5%",
+    "Sight: +5%",
+    "Resolve: +1",
+    "C3: 1, 300",
+    "C3M: 1, 300",
+    "ECMAccuracyDebuff: -1, 300",
+    "IsECM: 1, 190",
+    "Jammer: 2, 300",
+    "IsProbe: 1",
+    "HeatPerTurn: 6",
+    "NovaCEWS",
+    "ECCMMode",
+    "ECCMStrength: 1, 190",
+    "ECCMFriendly: 2, 300",
+    "Sharer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ECM"
+   },
+   {
+    "CategoryID": "Probe"
+   },
+   {
+    "CategoryID": "AdvECM"
+   },
+   {
+    "CategoryID": "C3i"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00024"
+  }
+ },
+ "Description": {
+  "Cost": 1458000,
+  "Details": "The rogue scientists of the Society developed the Nova CEWS after hearing about the C3 Systems used by the Inner Sphere. By combining elements of the Watchdog CEWS with a C3 system, they created a tool that could find enemy forces, hide the unit using it in an ECM bubble, and automatically provide targeting data to other friendly units. In addition, the Nova CEWS didn't require pre-configuration for the C3 capability; It could be programmed on the fly to respond to availability of friendly forces. ",
+  "Icon": "EWS",
+  "Id": "Gear_Nova_CEWS",
+  "Manufacturer": "Clan",
+  "Model": "Nova CEWS (C)",
+  "Name": "Nova CEWS (C)",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Nova CEWS (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Active Nova Combined Electronic Warfare System.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect-NCEWS",
+    "Name": "Nova CEWS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MoraleBonusGain"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by [AMT]m.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "NCEWS-sensor_Gain",
+    "Name": "Sensor DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases spotting distance by 50m.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "NCEWS-Spotting_Gain-T1",
+    "Name": "SPOTTING DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shows their vision when lancemates move",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Shares_Vision",
+    "Name": "Vision Sharing"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Novahot",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "Novahot",
+    "Name": "Novahot"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-6",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Arm Mounted Accuracy|",
+ "BonusValueB": "- 4 Melee Accuracy",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartUpper, PartShoulder"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Recoil: -1",
+    "TEHeatgen: -15%",
+    "ChangerBoom: 45"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 15,
+   "HeatDamage": 45,
+   "StabilityDamage": 15
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  }
+ },
+ "Description": {
+  "Cost": 800000,
+  "Details": "This 'Cooling Jacket' is barely more than a Heat Exchanger wired around arm actuators, i must say, im actually impressed at this  ...if doesnt blow up that is.",
+  "Icon": "dorsal-scales",
+  "Id": "Lootable_Actuator_CoolingJacket",
+  "Manufacturer": "Genius",
+  "Model": "Cold Shoulder",
+  "Name": "Cold Shoulder Mod",
+  "Purchasable": true,
+  "Rarity": 15,
+  "UIName": "Cooling Jacket"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Ballistic weapon attacks have their hit improved by 1.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-Recoil-ColdShoulder",
+    "Name": "BALLISTIC WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 20%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_Shoulder",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

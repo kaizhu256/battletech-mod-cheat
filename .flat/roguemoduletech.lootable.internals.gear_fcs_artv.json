@@ -1,0 +1,147 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MissileCrit: 25%",
+    "MissileClustering: +18",
+    "Breaching",
+    "ArtemisIV"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArtemisTTS"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00027"
+  }
+ },
+ "Description": {
+  "Cost": 1250000,
+  "Details": "The Artemis V Fire Control System is an improved, next generation version of the ubiquitous Artemis IV FCS, capable to guide missiles with even greater accuracy.<b><color=#F79232>Cannot be used with other Missile TTS and enables using Artemis IV Ammo.</color></b>",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_ARTV",
+  "Manufacturer": "Cyclops Painter",
+  "Model": "Artemis V",
+  "Name": "Artemis V FCS",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Artemis V"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: Attacking with a single weapon ignores COVER and GUARDED on the target.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "TC-Breaching",
+    "Name": "BREACHING SHOT"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "PrecisionStrike"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Missile weapon attacks have their hit improved by 3.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-TTSMISSCRIT",
+    "Name": "Missile WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "CriticalChanceMultipler",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Substantially increases the clustering of this unit's LRM weapons and boosts the stability damage of SRMs by 50%.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-EnhMS-ClusterBonusLRM",
+    "Name": "MISSILERY SUITE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "18",
+    "operation": "Float_Add",
+    "statName": "ClusteringModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "LRM"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

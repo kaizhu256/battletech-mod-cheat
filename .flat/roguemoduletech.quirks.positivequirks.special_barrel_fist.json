@@ -1,0 +1,90 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Acc. (Melee)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MeleeAcc: +1",
+    "Quirk"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 130000,
+  "Details": "This BattleMech has been designed to be able to use an arm in melee combat despite the lack of a hand actuator.",
+  "Icon": "SpecialistSlot",
+  "Id": "Special_Barrel_Fist",
+  "Manufacturer": "M. Ma Enterprises",
+  "Model": "Mighty Slugger",
+  "Name": "Barrel Fist",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Barrel Fist"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1Acc for Melee.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-FCS_Energy",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

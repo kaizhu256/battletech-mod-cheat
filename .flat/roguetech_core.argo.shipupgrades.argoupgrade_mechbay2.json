@@ -1,0 +1,56 @@
+{
+ "AdditionalCost": 2000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "We've got a lot of extra space in here, Commander. It's just full of junk and pirate garbage, and half of the walls are missing. I could pull my engineers off 'Mech duties and we could probably get another six 'Mech cubicles online. Just say the word.",
+ "Category": "MECH_BAY",
+ "Description": {
+  "Cost": 0,
+  "Details": "The repaired power conduits allow six more 'Mech cubicles to be powered up and made available. This also brings more of the Mech Bay's automated systems online, making Yang's job easier. \n\n <b><color=#F79232>Enables second Repair bay, allows work on a second 'Mech's at 50% efficiency.</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_mechbay2",
+  "Id": "argoUpgrade_mechBay2",
+  "Name": "Mech Bay 2",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_MechBay",
+ "Location": "MECH_BAY",
+ "PurchaseCost": 700000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_mechBay1",
+   "argoUpgrade_power1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechBayPods",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechBayPods_Display",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 12,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_mechBay2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

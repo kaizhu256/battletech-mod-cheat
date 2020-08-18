@@ -1,0 +1,85 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Legs",
+ "BattleValue": 0,
+ "BonusValueA": "- 10% DFA Self Dmg.",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DFASelfDamage: -10%",
+    "ActuatorWeight: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LegLowerActuator"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00021"
+  },
+  "Weights": {
+   "StructureFactor": 1.1
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "Actuators control a 'Mech’s limbs and are used to perform Melee attacks at close quarters. All 'Mechs come equipped with stock Actuators, which can be upgraded for improved performance.",
+  "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+  "Id": "Gear_Actuator_Pitban_Jackrabbit",
+  "Manufacturer": "Pitban",
+  "Model": "Jackrabbit",
+  "Name": "Pitban Jackrabbit Leg Mod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Leg DFA SelfDmg"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_SelfDamageDFA-T1",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "DFASelfDamage",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

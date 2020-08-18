@@ -1,0 +1,89 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "Arms",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "10 Var.Dmg|",
+ "BonusValueB": "X2 Damage vs Overheat.",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "paweapon",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsMelee",
+    "WpnAccuracy: -1",
+    "OHDamage: X2",
+    "VariableDmg: 10",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/energy"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 10,
+ "Description": {
+  "Cost": 120000,
+  "Details": "Construction and engineering 'Mechs use Laser Cutter to take junk apart. In an emergency these pinpoint beams can be used against 'Mechs in melee combat. Like all Industrial weapons, Laser Cutters suffer a small inherent penalty to hit.",
+  "Icon": "uixSvgIcon_weapon_Support",
+  "Id": "Weapon_PowerArmor_Cutter",
+  "Manufacturer": "Wayland",
+  "Model": "Cutter",
+  "Name": "Laser Cutter",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Laser Cutter"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 15,
+ "HeatGenerated": 10,
+ "IndirectFireCapable": false,
+ "Instability": 4,
+ "InventorySize": 3,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 2,
+ "PrefabIdentifier": "Flamer",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 2,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Medium",
+ "WeaponSubType": "Flamer",
+ "statusEffects": [],
+ "weaponCategoryID": "BattleArmor"
+}

@@ -1,0 +1,119 @@
+{
+ "BattleValue": 993,
+ "Description": {
+  "Cost": 8294000,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_MARKSMAN",
+  "Name": "Self Propelled Artillery",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_marksman",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "z": 3
+  },
+  {
+   "x": -3,
+   "y": 1.5,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 1.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 3,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 245,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 35,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 95,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_4-6cv",
+ "PathingCapDefID": "pathingdef_heavy_tracked",
+ "PrefabBase": "thumper",
+ "PrefabIdentifier": "chrprfvhcl_marksmanbase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 65,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Tracked",
+ "weightClass": "HEAVY"
+}

@@ -1,0 +1,141 @@
+{
+ "Description": {
+  "Cost": 0,
+  "Details": "",
+  "Icon": "",
+  "Id": "lancedef_mixed_d4_dynamic_lightBattle2",
+  "Name": "Dynamic Dif 4 Light Mixed Battle",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Difficulty": 4,
+ "LanceTags": {
+  "items": [
+   "lance_bracket_low",
+   "lance_type_battle",
+   "lance_type_light",
+   "lance_type_mixed",
+   "lance_type_dynamic",
+   "lance_type_notallvehicles",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": "Tags/LanceTags"
+ },
+ "LanceUnits": [
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d4"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_medium",
+     "unit_vehicle",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Vehicle"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d4"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_mech",
+     "unit_medium",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d4"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_medium",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  },
+  {
+   "excludedPilotTagSet": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "excludedUnitTagSet": {
+    "items": [
+     "unit_noncombatant"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "pilotId": "Tagged",
+   "pilotTagSet": {
+    "items": [
+     "pilot_npc_d4"
+    ],
+    "tagSetSourceFile": "Tags/PilotTags"
+   },
+   "unitId": "Tagged",
+   "unitTagSet": {
+    "items": [
+     "unit_light",
+     "unit_mech",
+     "{CUR_TEAM.faction}"
+    ],
+    "tagSetSourceFile": "Tags/UnitTags"
+   },
+   "unitType": "Mech"
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 500,
+ "BonusValueA": "+20% Stability Damage taken|",
+ "BonusValueB": "30 Stability",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Omni",
+    "ArmorTPCost: -50%",
+    "StructureTPCost: -50%",
+    "ArmorCBCost: +20%",
+    "StructureCBCost: +25%",
+    "GyroStab: 35",
+    "StabDamageTaken: +10%",
+    "GyroWeight: -35%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "CriticalHitStates": {
+   "HitEffects": [
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "Triple Stability Damage taken",
+       "Icon": "uixSvgIcon_equipment_Gyro",
+       "Id": "UL_Gyro_Critical",
+       "Name": "Gyro Critical"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "3.0",
+       "operation": "Float_Multiply",
+       "statName": "ReceivedInstabilityMultiplier"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-15 Threshhold",
+       "Icon": "uixSvgIcon_equipment_Gyro",
+       "Id": "UL_Gyro_Critical2",
+       "Name": "Gyro Critical"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "-15.0",
+       "operation": "Float_Add",
+       "statName": "UnsteadyThreshold"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-15 Threshhold",
+       "Icon": "uixSvgIcon_equipment_Gyro",
+       "Id": "UL_Gyro_Critical3",
+       "Name": "Gyro Critical"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "-0.1",
+       "operation": "Float_Add",
+       "statName": "CAEStoodUpRollMod"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    }
+   ],
+   "MaxStates": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "Weights": {
+   "StructureFactor": 0.65
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.05",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "A Ultra Light Gyro specificially for OmniMech's developed by Skobel Mechworks for Republic Forces.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "Gear_Gyro_Omni_Ultralight",
+  "Manufacturer": "Skobel",
+  "Model": "Dragon",
+  "Name": "Dragon Ultralight Gyro",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Omni UL Gyro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Suffers a Stability penalty.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "Ultralightpenalty",
+    "Name": "Less Stability"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "ReceivedInstabilityMultiplier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "UNSTEADY threshold increased to 60",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "ULPenalty2",
+    "Name": "Steadier 'Mech"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "35.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

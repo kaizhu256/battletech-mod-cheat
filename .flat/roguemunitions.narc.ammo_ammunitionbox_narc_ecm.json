@@ -1,0 +1,65 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Narc_ECM",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 10,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "NarcECM: 10",
+    "ImpSight: -15%",
+    "ImpSensors: -15%",
+    "NARCAmmo: 10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/s/t/narc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000035"
+  },
+  "TRGBColor": {
+   "Color": "#1E90FF",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "The ECM Pod strips out the homing beacon of the Homing Pod and replaces it with a powerful but short-ranged ECM Suite. Once attached, the target is effectively trapped inside the effective radius of the ECM suite, with any advanced electronics rendered useless.Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type.Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "NARC",
+  "Id": "Ammo_AmmunitionBox_Narc_ECM",
+  "Manufacturer": "Doering",
+  "Model": "Narc ECM",
+  "Name": "Narc ECM Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Narc ECM"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

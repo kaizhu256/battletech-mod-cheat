@@ -1,0 +1,326 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Neural",
+ "BonusValueB": "Interface",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "DirectNeuralInterface",
+   "cae_ai_offence",
+   "cae_ai_defence"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "DNI",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.05,
+   "FailCrit": true,
+   "FailDamageLocations": [
+    "Head"
+   ],
+   "FailFlatChance": 0.01,
+   "FailPilotingBase": 3,
+   "FailPilotingMult": 0.15,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Take Damage on Overheat",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "DNI-Penalty",
+      "Name": "OverheatPilotDamage"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Boolean",
+      "modValue": "true",
+      "operation": "Set",
+      "statName": "ReceiveHeatDamageInjury"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTargetsCreator": true,
+      "effectTriggerType": "Passive"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Provides + 1 Initiative and several buffs.",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "CockpitInitativeEffect",
+      "Name": "CockpitTechBonus"
+     },
+     "actorBurningData": null,
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "floatieData": null,
+     "instantModData": null,
+     "nature": "Buff",
+     "poorlyMaintainedEffectData": null,
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-2",
+      "operation": "Int_Add",
+      "statName": "BaseInitiative"
+     },
+     "tagData": null,
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive"
+     },
+     "vfxData": null
+    },
+    {
+     "Description": {
+      "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "MaxEvasion",
+      "Name": "EVASIVE MOVE"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "2",
+      "operation": "Int_Add",
+      "statName": "MaxEvasivePips"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Melee attacks deal 50% Extra damage.",
+      "Icon": "uixSvgIcon_equipment_ActuatorArm",
+      "Id": "StatusEffect-HandMelee",
+      "Name": "Hand Melee Damage"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.1",
+      "operation": "Float_Multiply",
+      "statName": "DamagePerShot",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "Melee"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "DFA attacks deal 5% more damage.",
+      "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+      "Id": "StatusEffect-Attack_DamageDFA-T1",
+      "Name": "DFA DAMAGE INCREASED"
+     },
+     "actorBurningData": null,
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": -1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "floatieData": null,
+     "instantModData": null,
+     "nature": "Buff",
+     "poorlyMaintainedEffectData": null,
+     "statisticData": {
+      "additionalRules": "NotSet",
+      "appliesEachTick": false,
+      "effectsPersistAfterDestruction": false,
+      "modType": "System.Single",
+      "modValue": "1.1",
+      "operation": "Float_Multiply",
+      "statName": "DamagePerShot",
+      "targetAmmoCategory": "NotSet",
+      "targetCollection": "Weapon",
+      "targetWeaponCategory": "NotSet",
+      "targetWeaponSubType": "DFA",
+      "targetWeaponType": "NotSet"
+     },
+     "tagData": null,
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": true,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     },
+     "vfxData": null
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AcePilot",
+    "SkillGunnery: 1",
+    "SkillPiloting: 1",
+    "Activatable",
+    "ActivePilotOverheat",
+    "ActiveInitiative: +2",
+    "ActiveEvaMax: +2",
+    "ActiveMelee: +10%",
+    "ActiveDFA: +10%",
+    "FailChance: 0%",
+    "FailChanceTurn: 5%",
+    "FailLocation: Head",
+    "FailCritLoc",
+    "FailReducPilot",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cockpit"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00202"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 830000,
+  "Details": "This cockpit mod allows for the use of a Direct Neural Interface, granting improved control of a ‘Mech at the risk of injury.",
+  "Icon": "interface",
+  "Id": "Gear_Cockpit_DNI",
+  "Manufacturer": "NAIS",
+  "Model": "DarkMirage",
+  "Name": "Dark Mirage DNI Cockpit",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "DNI Cockpit"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit can use its movement before or after shooting.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "InterFaceMoveAfterShoot",
+    "Name": "ACE PILOT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CanMoveAfterShooting"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Buffs Gunnery Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Gunnery",
+    "Name": "Gunnery Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "Gunnery",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Buffs Piloting Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Piloting",
+    "Name": "Piloting Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "Piloting",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

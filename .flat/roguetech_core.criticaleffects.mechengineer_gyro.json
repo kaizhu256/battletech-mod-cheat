@@ -1,0 +1,106 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The gyro was critically hit, reducing unsteady threshold by 50%.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "CriticalEffect-GyroCrit",
+    "Name": "Gyro Crit"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The gyro was critically hit, reducing unsteady threshold by 50%.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "CriticalEffect-GyroStandupFail",
+    "Name": "Gyro StandUpFail"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-0.05",
+    "operation": "Float_Add",
+    "statName": "CAEStoodUpRollMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "The gyro was destroyed, setting unsteady threshold to 0.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "CriticalEffect-GyroDestroyed",
+    "Name": "Gyro Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.0",
+    "operation": "Float_Multiply",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The gyro was critically hit, reducing unsteady threshold by 50%.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "CriticalEffect-GyroStandupFailDestroyed",
+    "Name": "Gyro StandUpFail"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "-0.15",
+    "operation": "Float_Add",
+    "statName": "CAEStoodUpRollMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

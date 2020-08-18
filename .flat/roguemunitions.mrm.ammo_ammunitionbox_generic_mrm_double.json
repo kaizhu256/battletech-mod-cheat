@@ -1,0 +1,64 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_MRM",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 480,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Doubled",
+    "MissileHP: 2",
+    "MRMAmmo: 480"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/s/mrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 5,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000042"
+  },
+  "TRGBColor": {
+   "Color": "#565B5B",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "Doubled Ammo Bins replace one ammo bins feeding and storing mechanism to fit 25% more shots into one location.Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "MRM",
+  "Id": "Ammo_AmmunitionBox_Generic_MRM_double",
+  "Manufacturer": "Generic",
+  "Model": "MRM",
+  "Name": "MRM Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo MRM [DBL]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 2,
+ "statusEffects": []
+}

@@ -1,0 +1,244 @@
+{
+ "BattleValue": 5087000,
+ "ChassisTags": {
+  "items": [
+   "PrototypeMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 35,
+ "DFAInstability": 18,
+ "DFASelfDamage": 35,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 740655,
+  "Details": "The Panther 9L carries an experimental Plasma Cannon on a improved Weapons mount and is supported by a Haywire Launcher and Flamer.",
+  "Icon": "uixTxrIcon_panther",
+  "Id": "chassisdef_panther_PNT-9L",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Panther",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Panther"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_JumpAttack",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Weapon_Prototype_PLASMA",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_panther",
+ "Heatsinks": 0,
+ "InitialTonnage": 3.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 4,
+   "z": 0.5
+  },
+  {
+   "x": 2,
+   "y": 4,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 1
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 18,
+ "MeleeInstability": 9,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "panther",
+ "PrefabIdentifier": "chrPrfMech_pantherBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper & Light Brawler",
+ "Tonnage": 35,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VariantName": "PNT-9L",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Panther 9L carries an experimental Plasma Cannon on a improved Weapons mount and is supported by a Haywire Launcher and Flamer.",
+ "weightClass": "LIGHT"
+}

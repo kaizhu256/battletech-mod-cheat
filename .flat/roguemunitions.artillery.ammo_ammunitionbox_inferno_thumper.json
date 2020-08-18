@@ -1,0 +1,74 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Thumper_Inferno",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 20,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeatDamage: +25",
+    "AreaOfEffectConversion: 80%",
+    "AreaOfEffect: 45",
+    "AreaOfEffectDmg: 25",
+    "AreaOfEffectSTABDmg: 12",
+    "AreaOfEffectHeatDmg: 25",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 6",
+    "FireTerrainDuration: 4",
+    "FireTerrainStrength: 15",
+    "ScatterRadius: 30, 100",
+    "ThumperAmmo: 20",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/o/artillery"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 35,
+   "HeatDamagePerAmmo": 35,
+   "StabilityDamagePerAmmo": 20
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000053"
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 1
+  }
+ },
+ "Description": {
+  "Cost": 40000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "Artillery",
+  "Id": "Ammo_AmmunitionBox_Inferno_Thumper",
+  "Manufacturer": "Generic",
+  "Model": "Thumper",
+  "Name": "Thumper Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo Thumper Inferno"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

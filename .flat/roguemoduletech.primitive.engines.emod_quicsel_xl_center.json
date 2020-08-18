@@ -1,0 +1,104 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 50% Engine Weight",
+ "BonusValueB": "+ 6 Slots Required",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.06,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: -45%",
+    "EngineReserved: 8"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "vital",
+    "engine_part",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size4",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size4",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Weights": {
+   "EngineFactor": 0.55,
+   "ReservedSlots": 8
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "11000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "1.1 * [[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1500000,
+  "Details": "Need to contain the Power of a Star? Look no Further, we at Quicsell have unlocked the secrets of Star League Extra Light Engine Shielding! Reducing the Weight you Engine Core will need at unbeatable prices!",
+  "Icon": "power-generator",
+  "Id": "emod_quicsel_xl_center",
+  "Manufacturer": "Quicsell",
+  "Model": "Extra-light",
+  "Name": "XL Engine",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Engine XL!!"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

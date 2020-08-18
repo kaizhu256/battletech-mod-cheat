@@ -1,0 +1,246 @@
+{
+ "BattleValue": 4362000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 35,
+ "DFAInstability": 18,
+ "DFASelfDamage": 35,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 822220,
+  "Details": "Clan Nova Cat, the primary users of the Jenner IIC, created this variant after they moved to the Inner Sphere. Though it changes the appearance of the 'Mech, the actual specifications of the design changed little. It retains the Streak SRM-4, but replaced the standard missile launchers with a pair of ATM 3s, each of which is accompanied by a ton of ammunition.",
+  "Icon": "uixTxrIcon_jenneriic",
+  "Id": "chassisdef_jenner_iic_JR7-IIC-4",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Jenner IIC",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Jenner IIC"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Lifesupport",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_jenneriic",
+ "Heatsinks": 0,
+ "InitialTonnage": 3.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 10,
+   "z": 0.5
+  },
+  {
+   "x": -3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": 3,
+   "y": 9,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 10,
+   "z": 0.5
+  },
+  {
+   "x": -3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": 3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": -2.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 80,
+   "MaxRearArmor": 40,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 18,
+ "MeleeInstability": 9,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "jenneriic",
+ "PrefabIdentifier": "chrprfmech_jenneriicbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Striker",
+ "Tonnage": 35,
+ "TopSpeed": 65,
+ "TurnRadius": 90,
+ "VariantName": "JR7-IIC-4",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Clan Nova Cat, the primary users of the Jenner IIC, created this variant after they moved to the Inner Sphere. Though it changes the appearance of the 'Mech, the actual specifications of the design changed little. It retains the Streak SRM-4, but replaced the standard missile launchers with a pair of ATM 3s, each of which is accompanied by a ton of ammunition.",
+ "weightClass": "LIGHT"
+}

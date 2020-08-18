@@ -1,0 +1,174 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.35,
+ "APCriticalChanceMultiplier": 0.038,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "MRM",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartShoulder, PartUpper"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PirateATM",
+    "DakkaBoom: 40",
+    "WeaponJAM: 10%",
+    "IndirectMML",
+    "ShoulderMount"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   },
+   {
+    "CategoryID": "w/m/s/mml"
+   },
+   {
+    "CategoryID": "w/m/s/srm"
+   },
+   {
+    "CategoryID": "w/m/l/lrm"
+   },
+   {
+    "CategoryID": "w/m/l/mrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 8,
+   "HeatDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 2
+  },
+  "InventorySorter": {
+   "SortKey": "03014"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 2,
+ "Description": {
+  "Cost": 760000,
+  "Details": "This was an Advanced Tactical Missile system, before someone turned it into this wreckage. This is the famous case of getting a weapon into some nutcases hand but no ammo for it. The whole system has been turned upside down, the Artemis got completly yanked out and they put a jury rigged RAC-feeder in its place, allowing the speed at which it launches Missiles to be adjusted, but i'd be carefull setting it to high speed, though slower speeds improve its lock on speed.  \n\n <b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#ffcc00>Uses LRM/MRM/SRM Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to Hit during battle to switch firing mode, LRM, MRM, SRM</color> </b>",
+  "Icon": "MRM",
+  "Id": "Weapon_ATM9_JuryRigged_Corsair",
+  "Manufacturer": "Ze Khan",
+  "Model": "Advanced Tactical Missile",
+  "Name": "ATM 9 (PRT)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "ATM 9 (P) SM"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 14,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 6,
+ "MaxRange": 510,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.15,
+   "AmmoCategory": "LRM",
+   "FireDelayMultiplier": 0.1,
+   "FireTerrainChance": 0.005,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.01,
+   "Id": "LRM",
+   "ImprovedBallistic": true,
+   "LongRange": 210,
+   "MaxRange": 240,
+   "MiddleRange": 210,
+   "MinRange": 240,
+   "MissileVolleyIntervalMultiplier": 3.1,
+   "MissileVolleySize": 9,
+   "ProjectileSpeedMultiplier": 1.2,
+   "ShortRange": 90,
+   "UIName": "LRM",
+   "WeaponEffectID": "WeaponEffect-Weapon_LRM10",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FireDelayMultiplier": 0.1,
+   "FireTerrainChance": 0.005,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.01,
+   "Id": "MRM",
+   "ImprovedBallistic": true,
+   "IndirectFireCapable": false,
+   "MissileVolleyIntervalMultiplier": 3.1,
+   "MissileVolleySize": 9,
+   "ProjectileSpeedMultiplier": 1.1,
+   "UIName": "MRM",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "AmmoCategory": "SRM",
+   "DamagePerShot": 5,
+   "FireDelayMultiplier": 0.1,
+   "FireTerrainChance": 0.01,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.01,
+   "Id": "SRM",
+   "ImprovedBallistic": true,
+   "IndirectFireCapable": false,
+   "Instability": 1,
+   "LongRange": -200,
+   "MaxRange": -210,
+   "MiddleRange": -140,
+   "MissileVolleyIntervalMultiplier": 3.1,
+   "MissileVolleySize": 9,
+   "ProjectileSpeedMultiplier": 1.1,
+   "RefireModifier": 1,
+   "ShortRange": -120,
+   "UIName": "SRM",
+   "WeaponEffectID": "WeaponEffect-Weapon_SRM6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm15",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  270,
+  420
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 9,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 5,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM15",
+ "WeaponSubType": "LRM15",
+ "statusEffects": []
+}

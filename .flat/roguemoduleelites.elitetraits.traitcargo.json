@@ -1,0 +1,65 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Heat generation by 10%.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitCargo",
+  "Name": "AI d11 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Provides reduced Visibility.",
+    "Icon": "uixSvgIcon_action_end",
+    "Id": "TraitCargo",
+    "Name": "Slippery Customer"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ],
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

@@ -1,0 +1,77 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "Bulwark",
+ "BonusValueB": "Requires ECM",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MimeticEnhance",
+    "MimeticStealth: 35%, 4, 3",
+    "StealthReserved: 1",
+    "Visibility: -40%",
+    "ActiveTEHeatgen: +10%",
+    "ActiveHeatPerTurn: +5",
+    "ReqECM",
+    "ArmorTPCost: 15%",
+    "ArmorCBCost: 20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Linked_ActiveCamouflage"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Void Signature System"
+  },
+  "ErrorMessage": "Stealth Armor requires a ECM!",
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "TRGBColor": {
+   "Color": "#5F24AC"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Active Camouflage Systems can be added to a existing Stealth Armour giving it Mimetic capabilities. Reserves 1 slot in every Location except the Head and requires a Stealth Armour.",
+  "Icon": "StealthArmor",
+  "Id": "Linked_ActiveCamouflage",
+  "Manufacturer": "Prototype",
+  "Model": "Active Camouflage System",
+  "Name": "Active Camouflage System",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Active Camouflage"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": []
+}

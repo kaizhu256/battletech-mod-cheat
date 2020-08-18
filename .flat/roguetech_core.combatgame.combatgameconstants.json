@@ -1,0 +1,2005 @@
+{
+ "CameraConstants": {
+  "CamDelayBuildingDeath": 0.75,
+  "CamDelayComponentDestroyed": 0.75,
+  "CamDelayCriticalHit": 0.75,
+  "CamDelayDeath": 0.5,
+  "CamDelayFall": 1,
+  "CamDelayLocationDestroyed": 0.75,
+  "CamDelayMiscInfo": 0.75,
+  "CamDelayPilotInjured": 1,
+  "CamDelayPilotInspired": 1.5,
+  "CamMultiplierSlowMove": 5,
+  "CutAngleTolerance": 45,
+  "DefaultAngle": 50,
+  "DefaultBuildingHeight": 48,
+  "DefaultFOV": 40,
+  "EdgeAutoZoomSize": 0.25,
+  "EdgePushSize": 0.025,
+  "FollowCamDelayTime": 0.75,
+  "FollowCamGroundMin": 1.2,
+  "FollowCamIdealHeight": 1.5,
+  "FollowCamMaxDistMult": 5,
+  "FollowCamMinDistMult": 2,
+  "FollowCamTime": 0.6,
+  "FrameRightMultiplier": 2,
+  "FrameUpMultiplier": 4,
+  "FramingSafeMultiplier": 1.5,
+  "FramingZoomMultiplier": 0.015,
+  "GroundCamFallbackHeight": 20,
+  "MaxAngle": 90,
+  "MaxHeightAboveTerrain": 600,
+  "MaxSpeed": 430,
+  "MeleeAttackCamMinHeight": 85,
+  "MinAngle": 5,
+  "MinDistToFocalPoint": 65,
+  "MinHeightAboveTerrain": 20,
+  "MoveFalloff": 0.5,
+  "MoveSpeed": 560,
+  "MovementCamTime": 0.25,
+  "RestorePlayerCamTime": 0.4,
+  "RotationSpeed": 19,
+  "RotationSpeedKeyboard": 21,
+  "ShakyCamOffset": 0.5,
+  "ShakyCamTime": 0.75,
+  "ShakyMoveCamHeightMultiplier": 2.6,
+  "ShowAttackCamTime": 0.5,
+  "TargetCamPosMultiplierBack": 3.5,
+  "TargetCamPosMultiplierHeight": 1.1,
+  "TargetCamPosMultiplierSide": 1.3,
+  "TargetCamTime": 0.2,
+  "TargetRotLerpFactor": 1.55,
+  "TimeBetweenTutorials": 0.5,
+  "TimeToShowNewBlips": 0.6,
+  "TutorialMoveTime": 1,
+  "TutorialRotateTime": 0.5,
+  "UrbanGroundCamFallbackHeight": 80,
+  "ZoomSpeed": 2000
+ },
+ "CaptureEscortProximityDialogID": "e066d510-3c33-4caf-8c40-39f15c92936a",
+ "CombatUIConstants": {
+  "AlliedTurnText": "ALLIED TURN",
+  "AttackSpeedUpFactor": 2.5,
+  "AutoSelectDuringInterleaved": false,
+  "AutoSelectDuringNonInterleaved": false,
+  "BackwardDescription": {
+   "Details": "Reverse-move at a slower speed to a nearby location, and set a new facing for this 'Mech.",
+   "Name": "REVERSE"
+  },
+  "BadFaithRetreatDesc": {
+   "Details": "You are withdrawing in bad faith. Think of your reputation. Are you sure?",
+   "Name": "WITHDRAW (BAD FAITH)"
+  },
+  "COIL_Footstep_Charge_Max": 4,
+  "COIL_Footstep_Charge_Med": 2,
+  "COIL_Projectile_Charge_Max": 140,
+  "COIL_Projectile_Charge_Med": 70,
+  "CameraStageOneTutorialDesc": {
+   "Details": "Move the mouse to the edge of the screen (or use W, A, S, and D) to move the camera.",
+   "Name": "Camera Movement"
+  },
+  "CameraStageTwoTutorialDesc": {
+   "Details": "Use the right mouse button (or Q and E) to rotate the camera.",
+   "Name": "Camera Rotation"
+  },
+  "DangerousLocationDesc": {
+   "Details": "Units in this location are at risk of destruction.",
+   "Name": "DANGEROUS"
+  },
+  "DoneDescription": {
+   "Details": "Remove UNSTEADY and end this 'Mech's turn. Gain GUARDED (20% damage reduction against ranged attacks to the front and side) and ENTRENCHED (50% stability damage reduction).",
+   "Name": "BRACE (END TURN)"
+  },
+  "DoneDescriptionBulwark": {
+   "Details": "Remove UNSTEADY and end this 'Mech's turn. Gain BULWARK (40% damage reduction against ranged attacks to the front and side) and ENTRENCHED (50% stability damage reduction).",
+   "Name": "BRACE (END TURN)"
+  },
+  "DoneDescriptionNoBrace": {
+   "Details": "End this 'Mech's turn.",
+   "Name": "END TURN"
+  },
+  "DropPodLocationDesc": {
+   "Details": "A DropPod is inbound to this location. Units here are at risk of destruction.",
+   "Name": "DANGEROUS"
+  },
+  "DrophipLocationDesc": {
+   "Details": "A DropShip is inbound to this location. Units here are at risk of destruction.",
+   "Name": "DANGEROUS"
+  },
+  "EjectDescription": {
+   "Details": "Eject your pilot. They will be saved from further injuries, but their 'Mech will be unusable for the rest of this mission, and its Head location will be destroyed.",
+   "Name": "EJECT"
+  },
+  "EnemyTurnText": "ENEMY TURN",
+  "EvasiveTutorialDesc": {
+   "Details": "The farther you move, the more EVASIVE charges you will gain. Each EVASIVE charge makes you harder to hit.",
+   "Name": "Evasion"
+  },
+  "FireDescription": {
+   "Details": "Fire selected weapons at any target within this 'Mech's current firing arc.",
+   "Name": "FIRE"
+  },
+  "FireMultiDescription": {
+   "Details": "Fire weapons at up to three separate targets within this 'Mech's current firing arc.",
+   "Name": "MULTI-TARGET"
+  },
+  "FiringTutorialDesc": {
+   "Details": "Select a target with your mouse, or press TAB to cycle between targets. Click FIRE when ready.",
+   "Name": "Firing"
+  },
+  "FuryBarDescription": {
+   "Details": "Your lance gains Fury as bad things happen to it.\nWhen the bar fills, you can use it to perform a Precision Strike with one MechWarrior.",
+   "Name": "Fury"
+  },
+  "GoodFaithRetreatDesc": {
+   "Details": "You gave it your best. Are you sure you want to withdraw?",
+   "Name": "WITHDRAW (GOOD FAITH)"
+  },
+  "InjuryStringAmmoExplosion": "killed by an explosion",
+  "InjuryStringArtillery": "caught in a massive explosion",
+  "InjuryStringDFAEnemy": "jumped on by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringDFAEnemyGeneric": "jumped on by an enemy 'Mech",
+  "InjuryStringDFASelf": "killed while trying to jump on an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringDFASelfGeneric": "killed while trying to jump on an enemy",
+  "InjuryStringDropShip": "crushed by a DropShip",
+  "InjuryStringHeadHit": "hit in the head by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringHeadHitGeneric": "killed by cockpit damage",
+  "InjuryStringHeadHitMelee": "struck in the head by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringKilledByEnemy": "hit by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringKilledByEnemyGeneric": "lost in combat",
+  "InjuryStringKnockdownGeneric": "killed in a fall",
+  "InjuryStringKnockedDownBy": "knocked down by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringMelee": "struck by an enemy {KILLEDBY_UNIT.DisplayName}",
+  "InjuryStringMeleeGeneric": "struck by a melee attack",
+  "InjuryStringOverheatedEnemy": "overheated by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringOverheatedEnemyUnknown": "overheated by an enemy",
+  "InjuryStringOverheatedSelf": "killed by overheating",
+  "InjuryStringOverheatedSelfGeneric": "killed by overheating",
+  "InjuryStringSideTorso": "killed by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InjuryStringSideTorsoGeneric": "lost in combat",
+  "InjuryStringUnknown": "lost in a misadventure",
+  "InjuryStringWeapon": "killed by an enemy {KILLEDBY_UNIT.Description.Name}",
+  "InterleaveIntroTutorialDesc": {
+   "Details": "Once combat has begun, different 'Mechs move in different Phases. Lighter units generally move earlier than heavier ones.\nTo Reserve all units' actions to a later Phase, use the Reserve button, or press the End key.",
+   "Name": "Combat Phases"
+  },
+  "JumpDescription": {
+   "Details": "Execute a jump move, gaining EVASIVE charges based on distance. -3 Accuracy .You may also use Jump to initiate a 'Death from Above' attack on nearby enemies.",
+   "Name": "JUMP"
+  },
+  "MeleeTutorialDesc": {
+   "Details": "Click the Melee targeting reticle on the enemy, or press V to cycle through Melee targets. Then, click the Attack button.",
+   "Name": "Melee Attack"
+  },
+  "MoraleAttackDescription": {
+   "Details": "Take a Called Shot against a single target with an Accuracy Penalty. Tactics and Piloting improve this.\n The target's next Initiative is reduced by your Gunnery and Tactics skills / 2.",
+   "Name": "Offensive Push"
+  },
+  "MoraleAttackTutorialDesc": {
+   "Details": "Select the {0} skill and fire at the enemy target. You may call a shot at any location on the target.",
+   "Name": "unused-filled in by morale constants"
+  },
+  "MoraleBarDescription": {
+   "Details": "Your lance gains <color=#F79B26>{0}</color> Resolve each round of combat.\n When your MechWarriors become Inspired, gain a +1 to ECM Status and Probe Rolls",
+   "Name": "Resolve"
+  },
+  "MoraleCostAttackDescription": {
+   "Details": "Cost: 10 Resolve",
+   "Name": "PRECISION STRIKE COST"
+  },
+  "MoraleCostAttackDescriptionFury": {
+   "Details": "Cost: 100 Fury",
+   "Name": "PRECISION STRIKE COST FURY"
+  },
+  "MoraleCostAttackDescriptionHigh": {
+   "Details": "Cost: <color=#85DBF6FF>5 Resolve (this MechWarrior has High Spirits)</color>",
+   "Name": "PRECISION STRIKE COST HIGH"
+  },
+  "MoraleCostAttackDescriptionLow": {
+   "Details": "Cost: <color=#F04228FF>20 Resolve (this MechWarrior has Low Spirits)</color>",
+   "Name": "PRECISION STRIKE COST LOW"
+  },
+  "MoraleCostDefendDescription": {
+   "Details": "Cost: 35 Resolve",
+   "Name": "VIGILANCE COST"
+  },
+  "MoraleCostDefendDescriptionHigh": {
+   "Details": "Cost: <color=#85DBF6FF>25 Resolve (this MechWarrior has High Spirits)</color>",
+   "Name": "VIGILANCE COST HIGH"
+  },
+  "MoraleCostDefendDescriptionLow": {
+   "Details": "Cost: <color=#F04228FF>50 Resolve (this MechWarrior has Low Spirits)</color>",
+   "Name": "VIGILANCE COST LOW"
+  },
+  "MoraleDefendDescription": {
+   "Details": "Gain GUARDED and ENTRENCHED and remove all stability damage.\n Your next Initiative is increased by Guts and Tactics / 2.\n",
+   "Name": "VIGILANCE"
+  },
+  "MoraleDefendTutorialDesc": {
+   "Details": "Select the {0} skill and move to the target location.",
+   "Name": "unused-filled in by morale constants"
+  },
+  "MoraleGeneralStageTwoTutorialDesc": {
+   "Details": "You can spend Resolve to use either of the Resolve abilities, {0} and {1}, located with the rest of the action buttons.",
+   "Name": "Resolve"
+  },
+  "MoraleGeneralTutorialDesc": {
+   "Details": "Your lance's Resolve (the blue bar next to your pilots) increases in each round of combat. When it is half full, your pilots will be Inspired (+2 Accuracy to all attacks).",
+   "Name": "Resolve"
+  },
+  "MoveDescription": {
+   "Details": "Execute a normal move, gaining EVASIVE charges based on distance. -1 Accuracy. May also use to initiate a Melee attack on nearby enemies.",
+   "Name": "MOVE"
+  },
+  "MoveSpeedUpFactor": 17.5,
+  "MovementStageTwoTutorialDesc": {
+   "Details": "Move your mouse to the indicated point. Click once to select where you wish to move. Click again to choose which direction to face.",
+   "Name": "Movement"
+  },
+  "MovementTutorialDesc": {
+   "Details": "Click on a MechWarrior's portrait, or press TAB to cycle between available units.",
+   "Name": "Unit Select"
+  },
+  "NeutralTurnText": "NEUTRAL TURN",
+  "NonInterleaveIntroTutorialDesc": {
+   "Details": "Outside of combat, your entire lance moves in any order. You can even have multiple units moving at the same time.",
+   "Name": "Team Movement"
+  },
+  "PathingDeadZoneMaxDist": 15,
+  "PathingDeadZoneMinDist": 8,
+  "PoorlyMaintained25Desc": {
+   "Details": "This unit has been maintained in a substandard way and carries only 75% of its normal armor.",
+   "Icon": "uixSvgIcon_maint_Level0",
+   "Name": "MAKESHIFT"
+  },
+  "PoorlyMaintained50Desc": {
+   "Details": "This unit has received little upkeep and resupply and carries only 50% of its normal armor.",
+   "Icon": "uixSvgIcon_maint_Level1",
+   "Name": "SHODDY"
+  },
+  "PoorlyMaintained75Desc": {
+   "Details": "This unit has been kept in such poor condition that it barely holds together. It carries only 25% of its normal armor.",
+   "Icon": "uixSvgIcon_maint_Level2",
+   "Name": "RAMSHACKLE"
+  },
+  "RangeStrings": [
+   {
+    "k": "range_extreme",
+    "v": "Extreme"
+   },
+   {
+    "k": "range_very-long",
+    "v": "Very Long"
+   },
+   {
+    "k": "range_long",
+    "v": "Long"
+   },
+   {
+    "k": "range_standard",
+    "v": "Standard"
+   },
+   {
+    "k": "range_close",
+    "v": "Close"
+   },
+   {
+    "k": "default",
+    "v": "Unknown"
+   }
+  ],
+  "ScreenShakeBuildingDestruction": [
+   600,
+   250,
+   500,
+   750,
+   1000
+  ],
+  "ScreenShakeBuildingDestructionLength": 8,
+  "ScreenShakeDFAAbsoluteMod": 0,
+  "ScreenShakeDFARelativeMod": 10,
+  "ScreenShakeFootfallAbsoluteMod": 0,
+  "ScreenShakeFootfallRelativeMod": 1,
+  "ScreenShakeGroundImpactAbsoluteMod": 0,
+  "ScreenShakeGroundImpactRelativeMod": 3,
+  "ScreenShakeMax": 1000,
+  "ScreenShakeMeleeDamageAbsoluteMod": 0,
+  "ScreenShakeMeleeDamageRelativeMod": 2,
+  "ScreenShakeRangedDamageAbsoluteMod": 0,
+  "ScreenShakeRangedDamageRelativeMod": 2,
+  "ShowDoneWithAllButton": true,
+  "SprintDescription": {
+   "Details": "Use this 'Mech's entire turn to move farther, gaining EVASIVE charges based on distance. -2 Accuracy. Cannot Sprint if UNSTEADY, or if a leg is destroyed.",
+   "Name": "SPRINT"
+  },
+  "StabilityDangerRatio": 0.75,
+  "StabilityWarningRatio": 0.5,
+  "YourTurnText": "YOUR TURN",
+  "collapseWeaponTypesInTickMarks": true,
+  "floatieLifetime": 2.5,
+  "floatieSizeLarge": 16,
+  "floatieSizeMedium": 14,
+  "floatieSizeSmall": 12,
+  "showFLoatiesForMisses": false,
+  "showFloatiesForDodges": true,
+  "showStateRemovals": false,
+  "sortWeaponsByAttackOrder": true
+ },
+ "CombatValueMultipliers": {
+  "ArmorMultiplierAssault": 1,
+  "ArmorMultiplierHeavy": 1,
+  "ArmorMultiplierLight": 1,
+  "ArmorMultiplierMedium": 1,
+  "ArmorMultiplierVehicle": 0.8,
+  "GlobalDamageMultiplier": 1,
+  "MortarBuildingDamageMultiplier": 3,
+  "StructureMultiplierAssault": 1,
+  "StructureMultiplierHeavy": 1,
+  "StructureMultiplierLight": 1,
+  "StructureMultiplierMedium": 1,
+  "StructureMultiplierVehicle": 2,
+  "TEST_MechScaleMultiplier": 1
+ },
+ "DynamicAIRoleConstants": {
+  "brawlerMaxFrac": 1,
+  "brawlerMinAbs": 0,
+  "brawlerTagMultiplier": 1.5,
+  "hysteresis": 0.1,
+  "sniperMaxFrac": 0.5,
+  "sniperMinAbs": 0,
+  "sniperTagMultiplier": 2
+ },
+ "FuryConstants": {
+  "AutoInspire": false,
+  "CameraHighlight": true,
+  "CanAIBeInspired": true,
+  "CanUseInspireLevel": 100,
+  "ChangeAllyAmmoExplodes": 5,
+  "ChangeAllyCrit": 5,
+  "ChangeAllyDestroyedAssault": 40,
+  "ChangeAllyDestroyedHeavy": 30,
+  "ChangeAllyDestroyedLight": 10,
+  "ChangeAllyDestroyedMedium": 20,
+  "ChangeAllyDestroyedMeleeAdditional": 10,
+  "ChangeAllyKnockedDown": 5,
+  "ChangeAllyLocationDestroyed": 5,
+  "ChangeAllyMajorArmorDamage": 0,
+  "ChangeAllyMinorArmorDamage": 0,
+  "ChangeAllyWeaponDestroyed": 5,
+  "ChangeDFADealt": 0,
+  "ChangeDFAReceived": 10,
+  "ChangeEnemyAmmoExplodes": 0,
+  "ChangeEnemyCrit": 0,
+  "ChangeEnemyDestroyedAssault": 0,
+  "ChangeEnemyDestroyedHeavy": 0,
+  "ChangeEnemyDestroyedLight": 0,
+  "ChangeEnemyDestroyedMedium": 0,
+  "ChangeEnemyDestroyedMeleeAdditional": 0,
+  "ChangeEnemyKnockedDown": 0,
+  "ChangeEnemyLocationDestroyed": 0,
+  "ChangeEnemyMajorArmorDamage": 0,
+  "ChangeEnemyMinorArmorDamage": 0,
+  "ChangeEnemyWeaponDestroyed": 0,
+  "ChangeMajorityAttackingShotsHit": 0,
+  "ChangeObjectiveCompleted": 5,
+  "ChangeObjectiveFailed": 0,
+  "FreeStandUpAction": true,
+  "InitiativeDelayEffect": {
+   "Description": {
+    "Details": "-1 INITIATIVE",
+    "Icon": "uixSvgIcon_mwInspired",
+    "Id": "AbilityDefInitiativeDelay",
+    "Name": "INITIATIVE REDUCED"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit"
+   }
+  },
+  "InspirationAccelerationMultiplier": 0.5,
+  "InspireCost": 100,
+  "InspiredEffect": {
+   "Description": {
+    "Details": "IGNORE GUARDED AND EVASIVE",
+    "Icon": "uixSvgIcon_mwInspired",
+    "Id": "AbilityDefFocused",
+    "Name": "FOCUSED"
+   },
+   "durationData": {
+    "duration": 1,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "TagEffect",
+   "nature": "Buff",
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  "MoraleBaselineGainPerRound": 10,
+  "MoraleBaselineMultiplyByActive": false,
+  "MoraleInitialDefault": 5,
+  "MoraleMax": 100,
+  "MoraleMin": 0,
+  "OffensivePushCost": 100,
+  "OffensivePushHighMoraleCost": 100,
+  "OffensivePushLowMoraleCost": 100,
+  "ThresholdMajorArmor": 0.1,
+  "ThresholdMajorityHit": 0.75,
+  "ThresholdMajorityMiss": 0.25,
+  "ThresholdMinorArmor": 0.05,
+  "UseBaselineMoraleGainEachRound": true,
+  "UseDefensivePush": false,
+  "UseOffensivePush": true
+ },
+ "Heat": {
+  "CriticalHeatPerLocationAssault": 0,
+  "CriticalHeatPerLocationHeavy": 0,
+  "CriticalHeatPerLocationLight": 0,
+  "CriticalHeatPerLocationMedium": 0,
+  "DefaultHeatSinkDissipationCapacity": 3,
+  "EngineDamageHeat": 5,
+  "GlobalHeatIncreaseMultiplier": 1,
+  "GlobalHeatSinkMultiplier": 1,
+  "InternalHeatSinkCount": 0,
+  "JumpHeatMin": 3,
+  "JumpHeatPerUnit": 0.9,
+  "JumpHeatUnitSize": 6.5,
+  "MaxHeat": 150,
+  "OverheatLevel": 0.28,
+  "ShowPeakHeat": false,
+  "ShutdownCausesInjury": false,
+  "SprintHeat": 8,
+  "StartupSinkRatio": 0.4,
+  "WalkHeat": 3
+ },
+ "HitTables": {
+  "CalledShotBonusDegradeLerpFactor": 0.8,
+  "CalledShotBonusMultiplier": 1.8,
+  "HitMechLocationFromArtillery": [
+   {
+    "k": "CenterTorso",
+    "v": 32
+   },
+   {
+    "k": "LeftTorso",
+    "v": 16
+   },
+   {
+    "k": "RightTorso",
+    "v": 16
+   },
+   {
+    "k": "LeftArm",
+    "v": 8
+   },
+   {
+    "k": "RightArm",
+    "v": 8
+   },
+   {
+    "k": "LeftLeg",
+    "v": 8
+   },
+   {
+    "k": "RightLeg",
+    "v": 8
+   },
+   {
+    "k": "CenterTorsoRear",
+    "v": 8
+   },
+   {
+    "k": "LeftTorsoRear",
+    "v": 4
+   },
+   {
+    "k": "RightTorsoRear",
+    "v": 4
+   }
+  ],
+  "HitMechLocationFromBack": [
+   {
+    "k": "LeftArm",
+    "v": 4
+   },
+   {
+    "k": "RightArm",
+    "v": 4
+   },
+   {
+    "k": "LeftLeg",
+    "v": 5
+   },
+   {
+    "k": "RightLeg",
+    "v": 5
+   },
+   {
+    "k": "CenterTorsoRear",
+    "v": 16
+   },
+   {
+    "k": "LeftTorsoRear",
+    "v": 14
+   },
+   {
+    "k": "RightTorsoRear",
+    "v": 14
+   }
+  ],
+  "HitMechLocationFromFront": [
+   {
+    "k": "Head",
+    "v": 1
+   },
+   {
+    "k": "CenterTorso",
+    "v": 16
+   },
+   {
+    "k": "LeftTorso",
+    "v": 14
+   },
+   {
+    "k": "RightTorso",
+    "v": 14
+   },
+   {
+    "k": "LeftArm",
+    "v": 10
+   },
+   {
+    "k": "RightArm",
+    "v": 10
+   },
+   {
+    "k": "LeftLeg",
+    "v": 8
+   },
+   {
+    "k": "RightLeg",
+    "v": 8
+   }
+  ],
+  "HitMechLocationFromLeft": [
+   {
+    "k": "Head",
+    "v": 1
+   },
+   {
+    "k": "CenterTorso",
+    "v": 4
+   },
+   {
+    "k": "LeftTorso",
+    "v": 28
+   },
+   {
+    "k": "RightTorso",
+    "v": 0
+   },
+   {
+    "k": "LeftArm",
+    "v": 28
+   },
+   {
+    "k": "RightArm",
+    "v": 0
+   },
+   {
+    "k": "LeftLeg",
+    "v": 28
+   },
+   {
+    "k": "RightLeg",
+    "v": 0
+   }
+  ],
+  "HitMechLocationFromRight": [
+   {
+    "k": "Head",
+    "v": 1
+   },
+   {
+    "k": "CenterTorso",
+    "v": 4
+   },
+   {
+    "k": "LeftTorso",
+    "v": 0
+   },
+   {
+    "k": "RightTorso",
+    "v": 28
+   },
+   {
+    "k": "LeftArm",
+    "v": 0
+   },
+   {
+    "k": "RightArm",
+    "v": 28
+   },
+   {
+    "k": "LeftLeg",
+    "v": 0
+   },
+   {
+    "k": "RightLeg",
+    "v": 28
+   }
+  ],
+  "HitMechLocationFromTop": [
+   {
+    "k": "Head",
+    "v": 16
+   },
+   {
+    "k": "CenterTorso",
+    "v": 32
+   },
+   {
+    "k": "LeftTorso",
+    "v": 16
+   },
+   {
+    "k": "RightTorso",
+    "v": 16
+   },
+   {
+    "k": "LeftArm",
+    "v": 8
+   },
+   {
+    "k": "RightArm",
+    "v": 8
+   },
+   {
+    "k": "CenterTorsoRear",
+    "v": 8
+   },
+   {
+    "k": "LeftTorsoRear",
+    "v": 4
+   },
+   {
+    "k": "RightTorsoRear",
+    "v": 4
+   }
+  ],
+  "HitMechLocationProne": [
+   {
+    "k": "Head",
+    "v": 1
+   },
+   {
+    "k": "CenterTorso",
+    "v": 32
+   },
+   {
+    "k": "LeftTorso",
+    "v": 16
+   },
+   {
+    "k": "RightTorso",
+    "v": 16
+   },
+   {
+    "k": "LeftArm",
+    "v": 8
+   },
+   {
+    "k": "RightArm",
+    "v": 8
+   },
+   {
+    "k": "LeftLeg",
+    "v": 8
+   },
+   {
+    "k": "RightLeg",
+    "v": 8
+   }
+  ],
+  "HitVehicleLocationFromArtillery": [
+   {
+    "k": "Turret",
+    "v": 5
+   },
+   {
+    "k": "Front",
+    "v": 20
+   },
+   {
+    "k": "Left",
+    "v": 16
+   },
+   {
+    "k": "Right",
+    "v": 16
+   },
+   {
+    "k": "Rear",
+    "v": 8
+   }
+  ],
+  "HitVehicleLocationFromBack": [
+   {
+    "k": "Turret",
+    "v": 5
+   },
+   {
+    "k": "Rear",
+    "v": 20
+   },
+   {
+    "k": "Left",
+    "v": 16
+   },
+   {
+    "k": "Right",
+    "v": 16
+   }
+  ],
+  "HitVehicleLocationFromFront": [
+   {
+    "k": "Turret",
+    "v": 5
+   },
+   {
+    "k": "Front",
+    "v": 20
+   },
+   {
+    "k": "Left",
+    "v": 16
+   },
+   {
+    "k": "Right",
+    "v": 16
+   }
+  ],
+  "HitVehicleLocationFromLeft": [
+   {
+    "k": "Turret",
+    "v": 5
+   },
+   {
+    "k": "Front",
+    "v": 20
+   },
+   {
+    "k": "Left",
+    "v": 32
+   }
+  ],
+  "HitVehicleLocationFromRight": [
+   {
+    "k": "Turret",
+    "v": 5
+   },
+   {
+    "k": "Front",
+    "v": 20
+   },
+   {
+    "k": "Right",
+    "v": 32
+   }
+  ],
+  "HitVehicleLocationFromTop": [
+   {
+    "k": "Turret",
+    "v": 5
+   },
+   {
+    "k": "Front",
+    "v": 20
+   },
+   {
+    "k": "Left",
+    "v": 16
+   },
+   {
+    "k": "Right",
+    "v": 16
+   },
+   {
+    "k": "Rear",
+    "v": 16
+   }
+  ]
+ },
+ "MoraleConstants": {
+  "AutoInspire": true,
+  "BaselineAddFromSimGame": true,
+  "BaselineAddFromSimGameThresholds": [
+   0,
+   10,
+   16,
+   24,
+   32
+  ],
+  "BaselineAddFromSimGameValues": [
+   1,
+   2,
+   4,
+   6,
+   8
+  ],
+  "BaselineAddMoraleMods": true,
+  "BaselineModsOnlyBiggest": true,
+  "BaselineMultiplyByActiveElites": true,
+  "CameraHighlight": false,
+  "CanAIBeInspired": true,
+  "CanUseInspireLevel": 75,
+  "ChangeAllyAmmoExplodes": -2,
+  "ChangeAllyCrit": -2,
+  "ChangeAllyDestroyedAssault": -12.5,
+  "ChangeAllyDestroyedHeavy": -9,
+  "ChangeAllyDestroyedLight": -4,
+  "ChangeAllyDestroyedMedium": -7.5,
+  "ChangeAllyDestroyedMeleeAdditional": -2,
+  "ChangeAllyKnockedDown": -2,
+  "ChangeAllyLocationDestroyed": -2,
+  "ChangeAllyMajorArmorDamage": -2,
+  "ChangeAllyMinorArmorDamage": -1,
+  "ChangeAllyWeaponDestroyed": -2,
+  "ChangeDFADealt": 5,
+  "ChangeDFAReceived": -1,
+  "ChangeEnemyAmmoExplodes": 1,
+  "ChangeEnemyCrit": 1,
+  "ChangeEnemyDestroyedAssault": 6,
+  "ChangeEnemyDestroyedHeavy": 5,
+  "ChangeEnemyDestroyedLight": 3,
+  "ChangeEnemyDestroyedMedium": 4,
+  "ChangeEnemyDestroyedMeleeAdditional": 2,
+  "ChangeEnemyKnockedDown": 4,
+  "ChangeEnemyLocationDestroyed": 1,
+  "ChangeEnemyMajorArmorDamage": 1,
+  "ChangeEnemyMinorArmorDamage": 0.5,
+  "ChangeEnemyWeaponDestroyed": 1,
+  "ChangeMajorityAttackingShotsHit": 1,
+  "ChangeObjectiveCompleted": 2,
+  "ChangeObjectiveFailed": -1,
+  "DefensivePushCost": 35,
+  "DefensivePushHighMoraleCost": 25,
+  "DefensivePushLowMoraleCost": 50,
+  "FreeStandUpAction": false,
+  "InitiativeDelayEffect": {
+   "Description": {
+    "Details": "-1 INITIATIVE",
+    "Icon": "uixSvgIcon_mwInspired",
+    "Id": "AbilityDefInitiativeDelay",
+    "Name": "INITIATIVE REDUCED"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_CARRIER"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit"
+   }
+  },
+  "InspirationAccelerationMultiplier": 0,
+  "InspireCost": 0,
+  "InspiredEffect": {
+   "Description": {
+    "Details": "+1 TO ECM State",
+    "Icon": "uixSvgIcon_mwInspired",
+    "Id": "AbilityDefInspired",
+    "Name": "INSPIRED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  "MoraleBaselineGainPerRound": 1,
+  "MoraleBaselineMultiplyByActive": true,
+  "MoraleInitialDefault": 5,
+  "MoraleMax": 150,
+  "MoraleMin": 0,
+  "OffensivePushCost": 10,
+  "OffensivePushHighMoraleCost": 5,
+  "OffensivePushLowMoraleCost": 20,
+  "ThresholdMajorArmor": 0.5,
+  "ThresholdMajorityHit": 0.75,
+  "ThresholdMajorityMiss": 0.25,
+  "ThresholdMinorArmor": 0.05,
+  "UseBaselineMoraleGainEachRound": true,
+  "UseDefensivePush": true,
+  "UseOffensivePush": true
+ },
+ "MoveConstants": {
+  "DEBUG_JumpjetDuration": 3.5,
+  "DEBUG_UseJumpjetDuration": true,
+  "DFAExecutionHeight": 25,
+  "DFAMinHeight": 70,
+  "DefaultFallRate": -9.8,
+  "DefaultMeleeEngageRange": 100,
+  "ExperimentalDotDistantColorB": 0.25,
+  "ExperimentalDotDistantColorG": 0.25,
+  "ExperimentalDotDistantColorR": 0.25,
+  "ExperimentalDotForestColorB": 0.424,
+  "ExperimentalDotForestColorG": 0.875,
+  "ExperimentalDotForestColorR": 0.424,
+  "ExperimentalDotWaterColorB": 1,
+  "ExperimentalDotWaterColorG": 0.878,
+  "ExperimentalDotWaterColorR": 0.447,
+  "ExperimentalFlag": true,
+  "ExperimentalGridDistance": 24,
+  "ExperimentalHexRadius": 4,
+  "JumpjetMinHeight": 40,
+  "JumpjetVelocityMultiplier": 1.25,
+  "LegDamageRedPenalty": 0.2,
+  "LegDamageYellowPenalty": 0.1,
+  "LegDestroyedPenalty": 0.4,
+  "MaxMeleeVerticalOffset": 8,
+  "MeleeDistance": 5,
+  "MinMoveSpeed": 0.25,
+  "MoveTable": [
+   30,
+   60,
+   90,
+   120,
+   150,
+   180,
+   210,
+   240,
+   255,
+   270,
+   280,
+   290,
+   295,
+   300
+  ],
+  "NumDFADestinationChoices": 6,
+  "NumMeleeDestinationChoices": 6,
+  "OverheatedMovePenalty": 0,
+  "PathBlockerGradeMultiplier": 1.25,
+  "RotateInPlaceThreshold": 22,
+  "SortMeleeHexesByPathingCost": false
+ },
+ "Phase": {
+  "PhaseAssault": 5,
+  "PhaseAssaultTurret": 5,
+  "PhaseAssaultVehicle": 5,
+  "PhaseHeavy": 4,
+  "PhaseHeavyTurret": 5,
+  "PhaseHeavyVehicle": 4,
+  "PhaseLight": 2,
+  "PhaseLightTurret": 3,
+  "PhaseLightVehicle": 2,
+  "PhaseMedium": 3,
+  "PhaseMediumTurret": 4,
+  "PhaseMediumVehicle": 3,
+  "PhaseSpecial": 1
+ },
+ "PilotingConstants": {
+  "ArmBlackRelativeInstability": 0.01,
+  "CenterTorsoYellowRelativeInstability": 0.02,
+  "DefaultMaxInjuries": 3,
+  "FixedInjuryPenalty": 1,
+  "GutsBaseFloor": 0.7,
+  "GutsDivisor": 35,
+  "GutsModifierDivisor": 10,
+  "GutsPenaltyFromHeadDamageMajor": 0,
+  "GutsPenaltyFromHeadDamageMinor": 0,
+  "InjuryFromAmmoExplosion": true,
+  "InjuryFromSideTorsoDestruction": true,
+  "InjuryPenaltyOnlyPastGuts": true,
+  "InstabilityModifierDivisor": 5,
+  "InstabilityModifierFloor": 0.75,
+  "InstabilityReductionAssault": -1.8,
+  "InstabilityReductionHeavy": -1.6,
+  "InstabilityReductionLight": -1.2,
+  "InstabilityReductionMedium": -1.4,
+  "LegDamageRelativeInstability": 0.01,
+  "LocationDestroyedPermanentStabilityLoss": 0.15,
+  "OnlyPermanentLossFromLegs": false,
+  "PilotingBaseFloor": 0.7,
+  "PilotingDFAModifier": 8,
+  "PilotingDamageCTPenalizedModifier": 0.1,
+  "PilotingDamageLegNonfunctionalModifier": 0.3,
+  "PilotingDamageLegPenalizedModifier": 0.2,
+  "PilotingDivisor": 50,
+  "PilotingModifierDivisor": 8,
+  "SideTorsoBlackRelativeInstability": 0.02,
+  "TurretAbilities": [
+   "AbilityDefT8A",
+   "AbilityDefTurretMulti"
+  ],
+  "UseFixedInjuryPenalty": true
+ },
+ "RavenTutorialDialogID": "32cf9b93-a87d-4244-a9fe-ddaa9198f3d7",
+ "ResolutionConstants": {
+  "AICritChanceBaseMultiplier": 1,
+  "AllowTotalNegativeModifier": true,
+  "BuildingDestructionForceMultiplier": 40,
+  "COILMultipliesShots": false,
+  "COILUsesJumping": true,
+  "ChargeDistanceThreshold": 0.5,
+  "ComponentDestructionForceMultiplier": 25,
+  "CoolantVentCooldownEffect": {
+   "Description": {
+    "Details": "Gain 4 extra heat for the next 3 rounds.",
+    "Icon": "uixSvgIcon_ability_coolantVent",
+    "Id": "AbilityDefG8",
+    "Name": "COOLANT VENT"
+   },
+   "durationData": {
+    "duration": 3,
+    "ticksOnActivations": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-4",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  "CoolantVentEffect": {
+   "Description": {
+    "Details": "Remove 20 extra heat.",
+    "Icon": "uixSvgIcon_ability_coolantVent",
+    "Id": "AbilityDefG8",
+    "Name": "COOLANT VENT"
+   },
+   "durationData": {
+    "duration": 1,
+    "ticksOnActivations": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "20",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  "DFAMissedPilotingModifier": 5,
+  "DFASelfDamageMultiplier": 0.4,
+  "DFASelfDamagePilotingDivisor": 99999,
+  "DefaultUnsteadyThreshold": 1,
+  "EntrenchedMultiplier": 0.5,
+  "EvasiveDodgeChance": 0.75,
+  "FlimsyDestructionForceMultiplier": 25,
+  "GlancingBlowDamageMultiplier": 0.6,
+  "HeavyDamageThreshold": 100,
+  "HeavyHitReactDamageThreshold": 100,
+  "IneffectiveBlowDamageMultiplier": 0.4,
+  "LowArmorThreshold": 0.25,
+  "MeleeCountersEvasive": false,
+  "MeleeCountersGuarded": false,
+  "MeleeDamageDFAMultiplier": 1,
+  "MeleeDamageMultiplierTurret": 2,
+  "MeleeDamageMultiplierVehicle": 1.5,
+  "MeleeDamageTonnageMultiplier": 1,
+  "MeleeInstabilityChargeMultiplier": 1,
+  "MeleeInstabilityDFAMultiplier": 1,
+  "MeleeInstabilityNormalMultiplier": 1,
+  "MeleeKickWeighting": 0.15,
+  "MeleePunchWeighting": 0.85,
+  "MeleeTackleWeighting": 0.05,
+  "MinCritChance": 0.5,
+  "MissOffsetHorizontalMax": 4,
+  "MissOffsetHorizontalMin": 1.5,
+  "MissOffsetVerticalMax": 8,
+  "MissOffsetVerticalMin": 5,
+  "NormalBlowDamageMultiplier": 0.8,
+  "SearchForValidCritSlot": true,
+  "SensorLockCountersEvasive": false,
+  "SensorLockCountersGuarded": false,
+  "SolidBlowDamageMultiplier": 1,
+  "SolidDamageCountersEvasive": false,
+  "SolidDamageCountersGuarded": false,
+  "StabilityDumpAbilityDefer": 1,
+  "StabilityDumpBracing": 5,
+  "StabilityDumpDFA": -0.5,
+  "StabilityDumpJumping": -0.75,
+  "StabilityDumpMoving": 2,
+  "StabilityDumpStationary": 3,
+  "StabilityDumpStoodUp": 4,
+  "StabilityLevels": 5,
+  "UnsteadyCountersEvasive": true,
+  "UnsteadyCountersGuarded": true,
+  "VehicleEvasiveResultMultiplier": 1,
+  "VehiclesGetEvasive": true,
+  "VehiclesGetGuarded": true
+ },
+ "ScaledBuildingStructurePointsList": [
+  {
+   "Difficulty": 1,
+   "LargeStructurePoints": 275,
+   "MediumStructurePoints": 175,
+   "SecondLargeStructurePoints": 150,
+   "SecondMediumStructurePoints": 100,
+   "SecondSmallStructurePoints": 50,
+   "SmallStructurePoints": 100
+  },
+  {
+   "Difficulty": 2,
+   "LargeStructurePoints": 275,
+   "MediumStructurePoints": 175,
+   "SecondLargeStructurePoints": 150,
+   "SecondMediumStructurePoints": 100,
+   "SecondSmallStructurePoints": 50,
+   "SmallStructurePoints": 100
+  },
+  {
+   "Difficulty": 3,
+   "LargeStructurePoints": 275,
+   "MediumStructurePoints": 175,
+   "SecondLargeStructurePoints": 150,
+   "SecondMediumStructurePoints": 100,
+   "SecondSmallStructurePoints": 50,
+   "SmallStructurePoints": 100
+  },
+  {
+   "Difficulty": 4,
+   "LargeStructurePoints": 325,
+   "MediumStructurePoints": 200,
+   "SecondLargeStructurePoints": 200,
+   "SecondMediumStructurePoints": 150,
+   "SecondSmallStructurePoints": 100,
+   "SmallStructurePoints": 125
+  },
+  {
+   "Difficulty": 5,
+   "LargeStructurePoints": 325,
+   "MediumStructurePoints": 200,
+   "SecondLargeStructurePoints": 200,
+   "SecondMediumStructurePoints": 150,
+   "SecondSmallStructurePoints": 100,
+   "SmallStructurePoints": 125
+  },
+  {
+   "Difficulty": 6,
+   "LargeStructurePoints": 325,
+   "MediumStructurePoints": 200,
+   "SecondLargeStructurePoints": 200,
+   "SecondMediumStructurePoints": 150,
+   "SecondSmallStructurePoints": 100,
+   "SmallStructurePoints": 125
+  },
+  {
+   "Difficulty": 7,
+   "LargeStructurePoints": 325,
+   "MediumStructurePoints": 200,
+   "SecondLargeStructurePoints": 200,
+   "SecondMediumStructurePoints": 150,
+   "SecondSmallStructurePoints": 100,
+   "SmallStructurePoints": 125
+  },
+  {
+   "Difficulty": 8,
+   "LargeStructurePoints": 400,
+   "MediumStructurePoints": 325,
+   "SecondLargeStructurePoints": 250,
+   "SecondMediumStructurePoints": 200,
+   "SecondSmallStructurePoints": 150,
+   "SmallStructurePoints": 150
+  },
+  {
+   "Difficulty": 9,
+   "LargeStructurePoints": 400,
+   "MediumStructurePoints": 325,
+   "SecondLargeStructurePoints": 250,
+   "SecondMediumStructurePoints": 200,
+   "SecondSmallStructurePoints": 150,
+   "SmallStructurePoints": 150
+  },
+  {
+   "Difficulty": 10,
+   "LargeStructurePoints": 400,
+   "MediumStructurePoints": 325,
+   "SecondLargeStructurePoints": 250,
+   "SecondMediumStructurePoints": 200,
+   "SecondSmallStructurePoints": 150,
+   "SmallStructurePoints": 150
+  }
+ ],
+ "Skills": {
+  "MechDefaultGunnery": 8,
+  "MechDefaultGuts": 8,
+  "MechDefaultPiloting": 8,
+  "MechDefaultTactics": 8,
+  "TurretDefaultGunnery": 5,
+  "TurretDefaultGuts": 5,
+  "TurretDefaultPiloting": 5,
+  "TurretDefaultTactics": 5,
+  "VehicleDefaultGunnery": 6,
+  "VehicleDefaultGuts": 6,
+  "VehicleDefaultPiloting": 6,
+  "VehicleDefaultTactics": 6
+ },
+ "Story2TutorialSlides1ID": "e37a6b6d-6a50-4e05-9ecc-ca9407489911",
+ "Story2TutorialSlides2ID": "52a4d426-f166-484d-9c53-d56ca9095d7a",
+ "Story2TutorialSlides3ID": "e2a4cd2e-638f-47d7-bdd5-1506637c1ae2",
+ "Story2TutorialSlides4ID": "1f20029b-bcce-481c-ba50-fff26950b6a9",
+ "ToHit": {
+  "ClusterChanceAdjacentMultiplier": 4,
+  "ClusterChanceNeverClusterHead": true,
+  "ClusterChanceNeverMultiplyHead": true,
+  "ClusterChanceNonadjacentMultiplier": 2,
+  "ClusterChanceOriginalLocationMultiplier": 8,
+  "DamageResistanceIndirectFire": 1,
+  "DamageResistanceObstructed": 0.9,
+  "EvasivePipsMovingTarget": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "FiringArcDegrees": 60,
+  "SensorLockPipsStripped": 1,
+  "SensorLockStripsEvasivePips": true,
+  "StrayShotValidTargets": 2,
+  "StrayShotsEnabled": true,
+  "StrayShotsHitUnits": true,
+  "TacticsBaseFloor": 0.65,
+  "TacticsDivisor": 20,
+  "TacticsModifierDivisor": 10,
+  "ToHitAssault": 0,
+  "ToHitBaseFloor": 0.8,
+  "ToHitCoverObstructed": 2,
+  "ToHitElevationApplyPenalties": true,
+  "ToHitElevationLevelHeight": 50,
+  "ToHitElevationModifierPerLevel": 1,
+  "ToHitElevationUseMultipleLevels": true,
+  "ToHitGunneryDivisor": 100,
+  "ToHitHeavy": 0,
+  "ToHitIndirect": 3,
+  "ToHitLight": 0,
+  "ToHitLongRange": 4,
+  "ToHitMaximumRange": 8,
+  "ToHitMedium": 0,
+  "ToHitMediumRange": 2,
+  "ToHitMinimumRange": 8,
+  "ToHitModifierDivisor": 10,
+  "ToHitMovingPipUMs": [
+   2,
+   4,
+   6,
+   8,
+   10,
+   12,
+   14,
+   16,
+   18,
+   20,
+   22,
+   24,
+   26,
+   28,
+   30
+  ],
+  "ToHitMovingTargetDistances": [
+   30,
+   80,
+   140,
+   210,
+   280,
+   330,
+   390,
+   450,
+   510,
+   570,
+   630,
+   690,
+   900,
+   960,
+   990
+  ],
+  "ToHitMovingTargetStrings": [
+   "1 EVASIVE charge: +2 Difficulty to hit this unit.",
+   "2 EVASIVE charges: +4 Difficulty to hit this unit.",
+   "3 EVASIVE charges: +6 Difficulty to hit this unit.",
+   "4 EVASIVE charges: +8 Difficulty to hit this unit.",
+   "5 EVASIVE charges: +10 Difficulty to hit this unit.",
+   "6 EVASIVE charges: +12 Difficulty to hit this unit.",
+   "7 EVASIVE charges: +14 Difficulty to hit this unit.",
+   "8 EVASIVE charges: +16 Difficulty to hit this unit.",
+   "9 EVASIVE charges: +18 Difficulty to hit this unit.",
+   "10 EVASIVE charges: +20 Difficulty to hit this unit.",
+   "11 EVASIVE charges: +22 Difficulty to hit this unit.",
+   "12 EVASIVE charges: +24 Difficulty to hit this unit.",
+   "13 EVASIVE charges: +26 Difficulty to hit this unit.",
+   "14 EVASIVE charges: +28 Difficulty to hit this unit.",
+   "15 EVASIVE charges: +30 Difficulty to hit this unit."
+  ],
+  "ToHitOffensivePush": 20,
+  "ToHitProneTargetBonus": -2,
+  "ToHitProneTargetBonusMelee": -10,
+  "ToHitSelfArmMountedWeapon": -1,
+  "ToHitSelfOverheated": 0,
+  "ToHitSelfSprinted": 1,
+  "ToHitSelfStoodUp": 5,
+  "ToHitSelfWalkAssault": 1,
+  "ToHitSelfWalkHeavy": 1,
+  "ToHitSelfWalkLight": 1,
+  "ToHitSelfWalkMedium": 1,
+  "ToHitSelfWalkVehicle": 1,
+  "ToHitSelfWeaponDamaged": 2,
+  "ToHitSelfWeaponLocationDamagedMajor": 2,
+  "ToHitSelfWeaponLocationDamagedMinor": 1,
+  "ToHitShortRange": 0,
+  "ToHitShutdownTargetBonus": -4,
+  "ToHitShutdownTargetBonusMelee": -10,
+  "ToHitStepThresholds": [
+   0,
+   10
+  ],
+  "ToHitStepValues": [
+   0.05,
+   0.025
+  ],
+  "ToHitTurretAssault": -3,
+  "ToHitTurretHeavy": -2,
+  "ToHitTurretLight": 0,
+  "ToHitTurretMedium": -1,
+  "ToHitUseSteppedAlgorithm": false,
+  "ToHitVehicleAssault": 0,
+  "ToHitVehicleHeavy": 0,
+  "ToHitVehicleLight": 0,
+  "ToHitVehicleMedium": 0,
+  "UseMultipleGuardLevels": true,
+  "WeaponTypesGuaranteedEvasiveStrip": [],
+  "WeaponsAffectedByEvasive": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ },
+ "VFXNames": {
+  "UrbanBuildingPropDestructionDelay": 0.1,
+  "UrbanBuildingPropDestructionRadiusScale": 1.5,
+  "UrbanBuildingPropDestructionShockwaveSpeed": 50,
+  "UrbanDestructionVFXPrecacheAmount": 10,
+  "UrbanUtilityPropDestructionStartingRadius": 10,
+  "UrbanUtilityPropDestructionTotalRadius": 60,
+  "active_probe_Effect": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_activeProbe_loop"
+  },
+  "artillery_coolant_explosion": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_coolantExplosion"
+  },
+  "artillery_electric_transformer_explosion": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_electricTransformerExplosion"
+  },
+  "artillery_explosion": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_propaneTankExplosion"
+  },
+  "artillery_impact_barrage": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_artilleryImpact_barrage"
+  },
+  "artillery_impact_single": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_artilleryImpact_single"
+  },
+  "artillery_incoming": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_artilleryProjectiles"
+  },
+  "artillery_orbital_ppc": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_orbitalPPC_oneshot"
+  },
+  "artillery_projectile_barrage": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_artilleryProjectile_barrage"
+  },
+  "artillery_projectile_single": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_artilleryProjectile_single"
+  },
+  "componentDestruction_A": {
+   "cacheCount": 3,
+   "name": "vfxPrfPrtl_mechDmgParkBreak_A"
+  },
+  "componentDestruction_AmmoExplosion": {
+   "cacheCount": 2,
+   "name": "vfxPrfPrtl_mechDmgCritAmmo"
+  },
+  "componentDestruction_B": {
+   "cacheCount": 3,
+   "name": "vfxPrfPrtl_mechDmgParkBreak_B"
+  },
+  "componentDestruction_C": {
+   "cacheCount": 3,
+   "name": "vfxPrfPrtl_mechDmgParkBreak_C"
+  },
+  "componentDestruction_D": {
+   "cacheCount": 3,
+   "name": "vfxPrfPrtl_mechDmgParkBreak_shrapnel"
+  },
+  "deadMechLoop": {
+   "cacheCount": 6,
+   "name": "vfxPrfPrtl_mechDmgDead_loop"
+  },
+  "deadMechLoop_A": {
+   "cacheCount": 6,
+   "name": "vfxPrfPrtl_mechDmgDead_A_loop"
+  },
+  "deadMechLoop_B": {
+   "cacheCount": 6,
+   "name": "vfxPrfPrtl_mechDmgDead_B_loop"
+  },
+  "deadMechLoop_C": {
+   "cacheCount": 6,
+   "name": "vfxPrfPrtl_mechDmgDead_C_loop"
+  },
+  "deadMechLoop_D": {
+   "cacheCount": 6,
+   "name": "vfxPrfPrtl_mechDmgDead_loop"
+  },
+  "directionalExplosion_electrical": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_explosionDirectedLrg_electric"
+  },
+  "directionalExplosion_energy": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_explosionDirectedLrg_scifi"
+  },
+  "directionalExplosion_large": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_explosionDirectedLrg_debris"
+  },
+  "directionalExplosion_medium": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_explosionDirectedMed_debris"
+  },
+  "directionalExplosion_small": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_explosionDirectedSm_debris"
+  },
+  "flamer_impact": {
+   "cacheCount": 4,
+   "name": "vfxPrfPrtl_weaponFlamerImpact"
+  },
+  "flamer_persistent": {
+   "cacheCount": 4,
+   "name": "vfxPrfPrtl_weaponFlamerBurningLrg"
+  },
+  "flames_loop_large": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTerrain_lrgLoop"
+  },
+  "flames_loop_medium": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTerrain_medLoop"
+  },
+  "flames_loop_small": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTerrain_smLoop"
+  },
+  "flames_single_large": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTerrain_lrgOneShot"
+  },
+  "flames_single_small": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTerrain_smOneShot"
+  },
+  "flames_trees_large": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTree_lrg"
+  },
+  "flames_trees_small": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_fireTree_sm"
+  },
+  "footfallBase": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechFootfall_"
+  },
+  "groundImpactBase": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechFall_"
+  },
+  "heat_coolantVent": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_coolantVent"
+  },
+  "heat_heatShutdown": {
+   "cacheCount": 2,
+   "name": "vfxPrfPrtl_overheatStatusLrg_loop"
+  },
+  "heat_heatVent_large": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_heatDumpLrg_burst"
+  },
+  "heat_heatVent_shutdown": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_heatDumpLrg_burst"
+  },
+  "heat_heatVent_small": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_heatDumpSm_burst"
+  },
+  "heat_highHeat_persistent": {
+   "cacheCount": 3,
+   "name": "vfxPrfPrtl_heatVentLrg_loop"
+  },
+  "heat_midHeat_persistent": {
+   "cacheCount": 3,
+   "name": "vfxPrfPrtl_heatVentSm_loop"
+  },
+  "jumpjetLandBase": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_jumpJetLanding_"
+  },
+  "jumpjet_launch": {
+   "cacheCount": 5,
+   "name": "vfxPrfSys_jumpJetLaunch"
+  },
+  "mechDeath_ammoExplosion_A": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathTotal_A"
+  },
+  "mechDeath_ammoExplosion_B": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathTotal_B"
+  },
+  "mechDeath_ammoExplosion_C": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathTotal_C"
+  },
+  "mechDeath_centerTorso_A": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathTotal_A"
+  },
+  "mechDeath_centerTorso_B": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathTotal_B"
+  },
+  "mechDeath_centerTorso_C": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathTotal_C"
+  },
+  "mechDeath_cockpit": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathCockpit"
+  },
+  "mechDeath_engine": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathHeatShutdown"
+  },
+  "mechDeath_gyro": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathElectricalShutdown"
+  },
+  "mechDeath_legs": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathLegs"
+  },
+  "mechDeath_pilotKilled": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathCockpit"
+  },
+  "mechDeath_vitalComponent": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechDeathElectricalShutdown"
+  },
+  "persistentCrit": [
+   {
+    "cacheCount": 2,
+    "name": "vfxPrfPrtl_mechDmgFireLrg_loop"
+   },
+   {
+    "cacheCount": 2,
+    "name": "vfxPrfPrtl_mechDmgFireSm_loop"
+   },
+   {
+    "cacheCount": 2,
+    "name": "vfxPrfPrtl_mechDmgSmokeSpark_loop"
+   }
+  ],
+  "persistentDamage": [
+   {
+    "cacheCount": 8,
+    "name": "vfxPrfPrtl_mechDmgSmokeLrg_loop"
+   },
+   {
+    "cacheCount": 8,
+    "name": "vfxPrfPrtl_mechDmgSmokeSm_loop"
+   },
+   {
+    "cacheCount": 8,
+    "name": "vfxPrfPrtl_mechDmgElectricalSm_loop"
+   },
+   {
+    "cacheCount": 4,
+    "name": "vfxPrfPrtl_mechDmgElectricalLrg_loop"
+   },
+   {
+    "cacheCount": 8,
+    "name": "vfxPrfPrtl_mechDmgSparks"
+   },
+   {
+    "cacheCount": 2,
+    "name": "vfxPrfPrtl_mechDmgElectricalFailure_loop"
+   }
+  ],
+  "pilotEject": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_mechWarriorEject"
+  },
+  "urbanRubbleCivilianNames": [
+   "UrbPrfBldn_Rubble_01_conc",
+   "UrbPrfBldn_Rubble_02_conc",
+   "UrbPrfBldn_Rubble_03_conc",
+   "UrbPrfBldn_Rubble_04_conc",
+   "UrbPrfBldn_Rubble_05_conc",
+   "UrbPrfBldn_Rubble_06_conc",
+   "UrbPrfBldn_Rubble_07_conc",
+   "UrbPrfBldn_Rubble_08_conc",
+   "UrbPrfBldn_Rubble_09_conc",
+   "UrbPrfBldn_Rubble_10_conc",
+   "UrbPrfBldn_Rubble_11_conc",
+   "UrbPrfBldn_Rubble_12_conc",
+   "UrbPrfBldn_Rubble_13_conc",
+   "UrbPrfBldn_Rubble_14_conc",
+   "UrbPrfBldn_Rubble_15_conc",
+   "UrbPrfBldn_Rubble_16_conc",
+   "UrbPrfBldn_Rubble_A_01",
+   "UrbPrfBldn_Rubble_A_02",
+   "UrbPrfBldn_Rubble_B_01",
+   "UrbPrfBldn_Rubble_B_02",
+   "UrbPrfBldn_Rubble_C_01",
+   "UrbPrfBldn_Rubble_C_02",
+   "UrbPrfBldn_Rubble_D_01",
+   "UrbPrfBldn_Rubble_D_02",
+   "UrbPrfBldn_Rubble_E_01",
+   "UrbPrfBldn_Rubble_E_02",
+   "UrbPrfBldn_Rubble_F_01",
+   "UrbPrfBldn_Rubble_F_02",
+   "UrbPrfBldn_Rubble_G_01",
+   "UrbPrfBldn_Rubble_Corp_01"
+  ],
+  "urbanRubbleConstructionNames": [
+   "UrbPrfBldn_Rubble_01_conc",
+   "UrbPrfBldn_Rubble_02_conc",
+   "UrbPrfBldn_Rubble_03_conc",
+   "UrbPrfBldn_Rubble_04_conc",
+   "UrbPrfBldn_Rubble_05_conc",
+   "UrbPrfBldn_Rubble_06_conc",
+   "UrbPrfBldn_Rubble_07_conc",
+   "UrbPrfBldn_Rubble_08_conc",
+   "UrbPrfBldn_Rubble_09_conc",
+   "UrbPrfBldn_Rubble_10_conc",
+   "UrbPrfBldn_Rubble_11_conc",
+   "UrbPrfBldn_Rubble_12_conc",
+   "UrbPrfBldn_Rubble_13_conc",
+   "UrbPrfBldn_Rubble_14_conc",
+   "UrbPrfBldn_Rubble_15_conc",
+   "UrbPrfBldn_Rubble_16_conc",
+   "UrbPrfBldn_Rubble_A_01",
+   "UrbPrfBldn_Rubble_A_02",
+   "UrbPrfBldn_Rubble_B_01",
+   "UrbPrfBldn_Rubble_B_02",
+   "UrbPrfBldn_Rubble_C_01",
+   "UrbPrfBldn_Rubble_C_02",
+   "UrbPrfBldn_Rubble_D_01",
+   "UrbPrfBldn_Rubble_D_02",
+   "UrbPrfBldn_Rubble_E_01",
+   "UrbPrfBldn_Rubble_E_02",
+   "UrbPrfBldn_Rubble_F_01",
+   "UrbPrfBldn_Rubble_F_02",
+   "UrbPrfBldn_Rubble_G_01",
+   "UrbPrfBldn_Rubble_Corp_01"
+  ],
+  "urbanRubbleCorporateNames": [
+   "UrbPrfBldn_Rubble_01_conc",
+   "UrbPrfBldn_Rubble_02_conc",
+   "UrbPrfBldn_Rubble_03_conc",
+   "UrbPrfBldn_Rubble_04_conc",
+   "UrbPrfBldn_Rubble_05_conc",
+   "UrbPrfBldn_Rubble_06_conc",
+   "UrbPrfBldn_Rubble_07_conc",
+   "UrbPrfBldn_Rubble_08_conc",
+   "UrbPrfBldn_Rubble_09_conc",
+   "UrbPrfBldn_Rubble_10_conc",
+   "UrbPrfBldn_Rubble_11_conc",
+   "UrbPrfBldn_Rubble_12_conc",
+   "UrbPrfBldn_Rubble_13_conc",
+   "UrbPrfBldn_Rubble_14_conc",
+   "UrbPrfBldn_Rubble_15_conc",
+   "UrbPrfBldn_Rubble_16_conc",
+   "UrbPrfBldn_Rubble_A_01",
+   "UrbPrfBldn_Rubble_A_02",
+   "UrbPrfBldn_Rubble_B_01",
+   "UrbPrfBldn_Rubble_B_02",
+   "UrbPrfBldn_Rubble_C_01",
+   "UrbPrfBldn_Rubble_C_02",
+   "UrbPrfBldn_Rubble_D_01",
+   "UrbPrfBldn_Rubble_D_02",
+   "UrbPrfBldn_Rubble_E_01",
+   "UrbPrfBldn_Rubble_E_02",
+   "UrbPrfBldn_Rubble_F_01",
+   "UrbPrfBldn_Rubble_F_02",
+   "UrbPrfBldn_Rubble_G_01",
+   "UrbPrfBldn_Rubble_Corp_01"
+  ],
+  "urbanRubbleGenericByBuildingSize": [
+   "urbMdlBldn_Rubble_Medium",
+   "urbMdlBldn_Rubble_Small",
+   "urbMdlBldn_Rubble_Medium",
+   "urbMdlBldn_Rubble_Large",
+   "urbMdlBldn_Rubble_Mega"
+  ],
+  "urbanRubbleMilitaryNames": [
+   "UrbPrfBldn_Rubble_01_conc",
+   "UrbPrfBldn_Rubble_02_conc",
+   "UrbPrfBldn_Rubble_03_conc",
+   "UrbPrfBldn_Rubble_04_conc",
+   "UrbPrfBldn_Rubble_05_conc",
+   "UrbPrfBldn_Rubble_06_conc",
+   "UrbPrfBldn_Rubble_07_conc",
+   "UrbPrfBldn_Rubble_08_conc",
+   "UrbPrfBldn_Rubble_09_conc",
+   "UrbPrfBldn_Rubble_10_conc",
+   "UrbPrfBldn_Rubble_11_conc",
+   "UrbPrfBldn_Rubble_12_conc",
+   "UrbPrfBldn_Rubble_13_conc",
+   "UrbPrfBldn_Rubble_14_conc",
+   "UrbPrfBldn_Rubble_15_conc",
+   "UrbPrfBldn_Rubble_16_conc",
+   "UrbPrfBldn_Rubble_A_01",
+   "UrbPrfBldn_Rubble_A_02",
+   "UrbPrfBldn_Rubble_B_01",
+   "UrbPrfBldn_Rubble_B_02",
+   "UrbPrfBldn_Rubble_C_01",
+   "UrbPrfBldn_Rubble_C_02",
+   "UrbPrfBldn_Rubble_D_01",
+   "UrbPrfBldn_Rubble_D_02",
+   "UrbPrfBldn_Rubble_E_01",
+   "UrbPrfBldn_Rubble_E_02",
+   "UrbPrfBldn_Rubble_F_01",
+   "UrbPrfBldn_Rubble_F_02",
+   "UrbPrfBldn_Rubble_G_01",
+   "UrbPrfBldn_Rubble_Corp_01"
+  ],
+  "vehicleDeath_A": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_vehicleDeath_A"
+  },
+  "vehicleDeath_B": {
+   "cacheCount": 1,
+   "name": "vfxPrfPrtl_vehicleDeath_B"
+  }
+ },
+ "Visibility": {
+  "AllowRearArcSpotting": true,
+  "BaseSensorDistance": 1,
+  "BaseSpotterDistance": 1,
+  "ExtendedSensorDistanceMultiplier": 1,
+  "FiredWeaponsAntiStealthEffect": {
+   "Description": {
+    "Details": "Firing weapons suppresses Stealth on this unit for 1 Round.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "FiredWeaponsAntiStealthEffect",
+    "Name": "FIRED WEAPONS: STEALTH SUPPRESSED"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1,
+    "ticksOnEndOfRound": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnActivation",
+    "forceVisRebuild": true,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  "FiredWeaponsEffect": {
+   "Description": {
+    "Details": "+100% SIGNATURE",
+    "Icon": "uixSvgIcon_genericDiamond",
+    "Id": "FiredWeaponsSignatureEffect",
+    "Name": "FIRED WEAPONS"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 1,
+    "ticksOnEndOfRound": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  "GhostStateHidesBlips": true,
+  "GhostStatePipThreshold": 2,
+  "MaxShadowingDistance": 80,
+  "MinRatioFromActors": 0.2,
+  "NumSensorLockImpairedEffects": 1,
+  "NumSensorLockSteps": 1,
+  "NumShadowingSteps": -1,
+  "ProneSpottingDistanceMultiplier": 0.25,
+  "RatioFullVis": 0.79,
+  "RatioObstructedVis": 0.41,
+  "SensorHysteresisAdditive": 50,
+  "SensorLockAntiStealthEffect": {
+   "Description": {
+    "Details": "Sensor Lock suppresses Stealth on this unit for 1 Round.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "SensorLockAntiStealthEffect",
+    "Name": "SENSOR LOCK: STEALTH SUPPRESSED"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 1,
+    "ticksOnEndOfRound": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "6",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_PING"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "forceVisRebuild": true,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  "SensorLockSingleStepEffect": {
+   "Description": {
+    "Details": "SENSOR LOCK",
+    "Icon": "uixSvgIcon_action_sensorlock",
+    "Id": "AbilityDefT8A",
+    "Name": "SENSOR LOCK"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 1,
+    "ticksOnEndOfRound": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "forceVisRebuild": true
+   }
+  },
+  "SensorsImpairedEffect": {
+   "Description": {
+    "Details": "SENSOR LOCK",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefT8A2",
+    "Name": "SENSOR LOCK"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "forceVisRebuild": true,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  "ShowExtendedBlipsBeforeContact": false,
+  "ShutDownSignatureModifier": -0.5,
+  "ShutDownVisibilityModifier": 0,
+  "ShutdownSpottingDistanceMultiplier": 0.1,
+  "SpotterTacticsMultiplier": 0,
+  "UseAsymmetricalSensors": true
+ }
+}

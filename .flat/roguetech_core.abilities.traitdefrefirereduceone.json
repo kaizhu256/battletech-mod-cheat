@@ -1,0 +1,37 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: 'Mechs piloted by this MechWarrior have their Recoil penalties reduced by 1.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitDefRefireReduceOne",
+  "Name": "Reduced Recoil"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Ballistic recoil penalties reduced by 1",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitDefIndirectReduceOne",
+    "Name": "Reduced Recoil"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "-1 Recoil Penalty",
+ "Type": "RefireReduction"
+}

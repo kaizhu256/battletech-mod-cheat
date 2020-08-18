@@ -1,0 +1,584 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "company_blackMarket_ON"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Travel",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": "0"
+    },
+    {
+     "obj": "Reputation.AuriganPirates",
+     "op": "GreaterThan",
+     "val": -20,
+     "valueConstant": "[rep_disliked_max]"
+    }
+   ],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  },
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_other_blackmarket"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Darius checks in from the planet's surface. \"Commander, while [[TGT_MW,{TGT_MW.Callsign}]] has been helping me gather supplies, {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they've} developed a connection within the local black market. For what it's worth, this contact is about as sketchy as you'd expect.\"\r\n\r\n\"Now {TGT_MW.Callsign}'s new friend is offering to sell us a [[DM.WeaponDefs[Weapon_Autocannon_AC2_1-Mydron],{DM.WeaponDefs[Weapon_Autocannon_AC2_1-Mydron].Description.Name}]]. At a discount, no questions asked. You know how it goes. What do you say?\"",
+  "Icon": "uixTxrSpot_IllicitDealings.png",
+  "Id": "event_mw_fence_Pirate1_ac2",
+  "Name": "Black Market fence selling an AC/2"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Refuse the offer."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius nods. \"Understood. We'll give them the brushoff.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "No effect"
+     },
+     "Results": [],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[¢72,000]",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Accept the offer."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 72000,
+       "valueConstant": "72000"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius arranges for the sale, and soon enough the weapon is loaded onto the shuttle. He reports that [[TGT_MW,{TGT_MW.Callsign}]]'s new friend would be happy to do more business in the future.",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "Gain the weapon"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_Autocannon_AC2_1-Mydron",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        },
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-72000",
+         "valueConstant": null
+        },
+        {
+         "name": "Reputation.AuriganPirates",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": "[rep_gain_small]"
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] arrives at the arranged meeting place, but before {TGT_MW.Subj} can finalize the exchange, security forces appear. \r\n\r\n{TGT_MW.Callsign}'s friend is nowhere to be seen. Darius has to pay a fine before {TGT_MW.Callsign} is allowed to return to the transport, tail tucked between {TGT_MW.Det} legs.",
+      "Icon": null,
+      "Id": "outcome_1_1",
+      "Name": "Lose money"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-18000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[{TGT_MW.Callsign}: Dishonest]",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Just steal the AC/2."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": "Tags/PilotTags"
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "pilot_dishonest"
+      ],
+      "tagSetSourceFile": "Tags/PilotTags"
+     },
+     "Scope": "MechWarrior"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You send [[TGT_MW,{TGT_MW.Callsign}]] to the exchange with a couple other big, tough crew members. The criminals don't expect a double-cross and barely put up a fight. Later the crew tease {TGT_MW.Callsign} about the particularly forlorn look {TGT_MW.Det} 'friend' gave them as they carried off the loot.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "Gain the weapon"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_Autocannon_AC2_1-Mydron",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        },
+        {
+         "name": "Reputation.AuriganPirates",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": "[rep_loss_small]"
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "You send [[TGT_MW,{TGT_MW.Callsign}]] to the exchange with a couple other big, tough crew members. Unfortunately, the fence was prepared for betrayal. {TGT_MW.Callsign} is injured in the ensuing crossfire. You don't get the weapon, either.",
+      "Icon": null,
+      "Id": "outcome_2_1",
+      "Name": "Injured MechWarrior"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.AuriganPirates",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": "[rep_loss_small]"
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[¢54,000, {TGT_MW.Callsign}: Criminal]",
+    "Icon": null,
+    "Id": "outcome_3",
+    "Name": "Let {TGT_MW.Callsign}, the expert, handle it."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 54000,
+       "valueConstant": "54000"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    },
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "pilot_criminal"
+      ],
+      "tagSetSourceFile": "Tags/PilotTags"
+     },
+     "Scope": "MechWarrior"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] meets with {TGT_MW.Det} friend's organization, and after swapping stories of past exploits, they reach an agreement.\r\n\r\nLater, Darius says, \"It sounded as if {TGT_MW.Callsign} impressed them quite a bit. They gave us a special deal and invited us to look them up again later.\"",
+      "Icon": null,
+      "Id": "outcome_3_0",
+      "Name": "Gain the weapon"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_Autocannon_AC2_1-Mydron",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        },
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-54000",
+         "valueConstant": null
+        },
+        {
+         "name": "Reputation.AuriganPirates",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": "[rep_gain_medium]"
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": null
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

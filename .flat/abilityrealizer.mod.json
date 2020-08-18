@@ -1,0 +1,135 @@
+{
+ "Author": "mpstark",
+ "DLL": "AbilityRealizer.dll",
+ "DependsOn": [
+  "IRBTModUtils",
+  "BTRandomStartByDifficultyMenu"
+ ],
+ "Description": "Allows for ability mods to more easily exist.",
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [
+  {
+   "Path": "traits",
+   "Type": "AbilityDef"
+  }
+ ],
+ "Name": "AbilityRealizer",
+ "Settings": {
+  "AddTreeAbilities": true,
+  "FactionAbilities": {
+   "AuriganPirates": [
+    "TraitPirates"
+   ],
+   "ClanBurrock": [
+    "TraitClanner"
+   ],
+   "ClanCloudCobra": [
+    "TraitClanner"
+   ],
+   "ClanCoyote": [
+    "TraitClanner"
+   ],
+   "ClanDiamondShark": [
+    "TraitClanner"
+   ],
+   "ClanFireMandrill": [
+    "TraitClanner"
+   ],
+   "ClanGhostBear": [
+    "TraitClanner"
+   ],
+   "ClanGoliathScorpion": [
+    "TraitClanner"
+   ],
+   "ClanHellsHorses": [
+    "TraitClanner_HH"
+   ],
+   "ClanIceHellion": [
+    "TraitClanner"
+   ],
+   "ClanJadeFalcon": [
+    "TraitClanner"
+   ],
+   "ClanNovaCat": [
+    "TraitClanner"
+   ],
+   "ClanSmokeJaguar": [
+    "TraitClanner"
+   ],
+   "ClanSnowRaven": [
+    "TraitClanner"
+   ],
+   "ClanStarAdder": [
+    "TraitClanner"
+   ],
+   "ClanSteelViper": [
+    "TraitClanner"
+   ],
+   "ClanWolf": [
+    "TraitClanner"
+   ],
+   "ClansGeneric": [
+    "TraitClanner"
+   ],
+   "ComStar": [
+    "TraitComstar"
+   ],
+   "Davion": [
+    "TraitDavion"
+   ],
+   "Ives": [
+    "TraitIves"
+   ],
+   "Kurita": [
+    "TraitKurita"
+   ],
+   "Liao": [
+    "TraitLiao"
+   ],
+   "Lothian": [
+    "TraitTaurians"
+   ],
+   "MagistracyOfCanopus": [
+    "TraitMagistracy"
+   ],
+   "Marik": [
+    "TraitMarik"
+   ],
+   "Steiner": [
+    "TraitSteiner"
+   ],
+   "TaurianConcordat": [
+    "TraitTaurians"
+   ],
+   "Tortuga": [
+    "TraitTortuga"
+   ],
+   "Valkyrate": [
+    "TraitValkyrate"
+   ],
+   "WordOfBlake": [
+    "TraitWobbie"
+   ]
+  },
+  "IgnoreAbilities": [
+   "AbilityMultiTracker",
+   "TraitDefWeaponHit",
+   "TraitDefMeleeHit",
+   "TraitDefGuts",
+   "TraitDefTactics"
+  ],
+  "IgnorePilotsWithTags": [
+   "pilot_npc_tanker"
+  ],
+  "RemoveNonTreeAbilities": false,
+  "SwapAIAbilities": {
+   "AbilityDefG8": "AbilityDefG8AI",
+   "AbilityDefGu8": "AbilityDefGu8AI",
+   "AbilityDefP8": "AbilityDefP8AI"
+  },
+  "TagAbilities": {}
+ },
+ "Version": "1.0.0",
+ "Website": "www.github.com/mpstark/AbilityRealizer"
+}

@@ -1,0 +1,406 @@
+{
+ "Settings": [
+  {
+   "Bonus": "AdvancedUAV",
+   "Full": "Advanced UAV: Makes Enemies Easier to Spot by {0} within {1} meters. Yellow Circle.",
+   "Long": "AdvUAV",
+   "Short": "AdvUAV"
+  },
+  {
+   "Bonus": "Carapace",
+   "Full": "Provides Stealth Charges. Making unit harder to hit. Is Self Repairing.",
+   "Long": "Black Carapace",
+   "Short": "Black Carapace"
+  },
+  {
+   "Bonus": "StealthEnhance",
+   "Full": "Provides Sensor Stealth when Activated. Can be Added to a Mimetic Armor System.",
+   "Long": "Stealth Enhancement System",
+   "Short": "Stealth Enhancement"
+  },
+  {
+   "Bonus": "MimeticEnhance",
+   "Full": "Provides Mimetic Stealth when Activated. Can be Added to a Stealth Armor System.",
+   "Long": "Mimetic Enhancement System",
+   "Short": "Mimetic Enhancement"
+  },
+  {
+   "Bonus": "ActiveStealth",
+   "Full": "Provides Sensor Stealth when Activated. Making unit harder to hit and detect. Use Components Menu to Toggle. Countered by Probes",
+   "Long": "Stealth Systems",
+   "Short": "Stealthed"
+  },
+  {
+   "Bonus": "CLPS",
+   "Full": "Provides Sensor and Mimetic Stealth when Activated. Making unit harder to hit and detect. Use Components Menu to Toggle. Countered by Probes",
+   "Long": "Chameleon",
+   "Short": "CLPS"
+  },
+  {
+   "Bonus": "Stealth",
+   "Full": "Provides Sensor Stealth when Activated. Making unit harder to hit and detect. Use Components Menu to Toggle. Countered by Probes",
+   "Long": "Stealth Systems",
+   "Short": "Stealthed"
+  },
+  {
+   "Bonus": "Mimetic",
+   "Full": "Provides Mimetic Stealth when Activated. Making units harder to hit and detect. Use Components Menu to Toggle. Countered by Probes",
+   "Long": "Mimetic Systems",
+   "Short": "Mimetic"
+  },
+  {
+   "Bonus": "ECCMAlways",
+   "Full": "Item Provides Always Active ECCM, Reduces Enemy ECM effects.",
+   "Long": "ECCM Always",
+   "Short": "ECCM Alwas"
+  },
+  {
+   "Bonus": "ECCMMode",
+   "Full": "Item can toggle to ECCM, Reduces Enemy ECM effects, Disables Stealth, Use Components Menu to Toggle.",
+   "Long": "ECCM Mode",
+   "Short": "ECCM Mode"
+  },
+  {
+   "Bonus": "ECCMStrength",
+   "Full": "ECCM reduces Enemy ECM Shield by {0} within {1} meters. Purple Circle.",
+   "Long": "{0} ECCM",
+   "Short": "{0} ECCM"
+  },
+  {
+   "Bonus": "ECCMFriendly",
+   "Full": "ECCM reduces Enemy ECM Jamming on Allies by {0} within {1} meters. Purple Circle.",
+   "Long": "{0} ECCM",
+   "Short": "{0} ECCM"
+  },
+  {
+   "Bonus": "ECMTier",
+   "Full": "Tier {0} ECM",
+   "Long": "Tier {0} ECM",
+   "Short": "T{0} ECM"
+  },
+  {
+   "Bonus": "LocalEcm",
+   "Full": "Electronic Countermeasures Suite: Grants a {0} ECM Field to Carrier.",
+   "Long": "Strength {0} Electronic Countermeasures Suite",
+   "Short": "S{0} ECM"
+  },
+  {
+   "Bonus": "IsECM",
+   "Full": "Electronic Countermeasures Suite: Grants a {0} ECM Shield within {1} meters. Light Blue Circle.",
+   "Long": "Strength {0} Electronic Countermeasures Suite",
+   "Short": "S{0} ECM"
+  },
+  {
+   "Bonus": "Jammer",
+   "Full": "ECM Jammer reduces enemy Sensor Checks by {0} within {1} meters. Blue Circle.",
+   "Long": "Jammer",
+   "Short": "Jammer"
+  },
+  {
+   "Bonus": "ECMDefense",
+   "Full": "{0} Defense against being hit with active ECM.",
+   "Long": "{0} Defense",
+   "Short": "{0} Defense"
+  },
+  {
+   "Bonus": "ECMAccuracyDebuff",
+   "Full": "{0} Accuracy debuff to Enemies within {1} meters in ECM Mode. Blue Circle.",
+   "Long": "{0} Accuracy",
+   "Short": "{0} Acc"
+  },
+  {
+   "Bonus": "ECMVisibility",
+   "Full": "{0} reduced visibility with active ECM.",
+   "Long": "{0} Visibility",
+   "Short": "{0} Vis"
+  },
+  {
+   "Bonus": "ECMSignature",
+   "Full": "{0} sensor signature with active ECM.",
+   "Long": "{0} Signature",
+   "Short": "{0} Sig"
+  },
+  {
+   "Bonus": "ECMPower",
+   "Full": "{0} strength to ECM jamming",
+   "Long": "{0} ECM Strength",
+   "Short": "{0} Strength"
+  },
+  {
+   "Bonus": "UnFriendlyAura",
+   "Full": "Aura debuffs Enemy's within {0} meters. Red Circle",
+   "Long": "Debuff Aura",
+   "Short": "DBuff Aura"
+  },
+  {
+   "Bonus": "AccuracyDebuff",
+   "Full": "{0} Accuracy debuff to Enemies in Aura Range",
+   "Long": "{0} Accuracy",
+   "Short": "{0} Acc"
+  },
+  {
+   "Bonus": "DefenseDebuff",
+   "Full": "{0} Defense debuff to Enemies in Aura Range",
+   "Long": "{0} Defense",
+   "Short": "{0} Def"
+  },
+  {
+   "Bonus": "AuraCrits",
+   "Full": "{0} chance to deal a critical hit for Lance Mates within {1} meters. Orange Circle.",
+   "Long": "{0} Criticals",
+   "Short": "{0} Crit"
+  },
+  {
+   "Bonus": "IFFJammer",
+   "Full": "Identify Friend/Foe Jammer: Low-tier ECM granting a penalty of {0} to enemy Sensor Checks; cannot enable Stealth Systems",
+   "Long": "I.F.F. Jammer",
+   "Short": "IffJammer"
+  },
+  {
+   "Bonus": "PirateJammer",
+   "Full": "Low-tier ECM granting a penalty of {0} to enemy Initiative and Resolve within {1} meters; cannot enable Stealth Systems",
+   "Long": "Pirate Jammer",
+   "Short": "PirateJammer"
+  },
+  {
+   "Bonus": "UAV",
+   "Full": "Active Probe AoE Sensor Lock: Establishes a Sensor Lock on all enemies within a {0} Radius, {1} Turn Cooldown and generates {2} Heat: May reveal stealthed and undetected enemies. Golden Circle.",
+   "Long": "{0}{1}{2} SL",
+   "Short": "SL"
+  },
+  {
+   "Bonus": "CockpitEWS",
+   "Full": "Advanced, Compact Electronic Warfare Suite: replaces basic Cockpit Sensor Systems",
+   "Long": "Cockpit EWS",
+   "Short": "Cockpit EWS"
+  },
+  {
+   "Bonus": "SearchLight",
+   "Full": "Bonus of {0} to sensor detection within {1} meters. Orange Circle.: provides additional sensor information",
+   "Long": "SearchLight",
+   "Short": "SearchLight"
+  },
+  {
+   "Bonus": "ProbeTier",
+   "Full": "Tier {0} Active Probe",
+   "Long": "Tier {0} Prove",
+   "Short": "T{0} Probe"
+  },
+  {
+   "Bonus": "CQBVisor",
+   "Full": "CQBVisor: Ranged Accuracy Bonus of {0} decays by 1 every {1} meters.",
+   "Long": "A{0}R{1} CQBVisor",
+   "Short": "A{0}R{1} CQB"
+  },
+  {
+   "Bonus": "Tacticon",
+   "Full": "Battle Computer: {0} Initiative for all lancemates",
+   "Long": "{0} Initiative",
+   "Short": "{0} Initiative"
+  },
+  {
+   "Bonus": "Sharer",
+   "Full": "Fog of War stays revealed around this unit.",
+   "Long": "FoW Reveal",
+   "Short": "FoW Reveal"
+  },
+  {
+   "Bonus": "C3LanceSight",
+   "Full": "{0} increased lance sight range within {1} meters. Green Circle",
+   "Long": "{0} Lance Sight",
+   "Short": "{0} Lance Sight"
+  },
+  {
+   "Bonus": "C3LanceSensors",
+   "Full": "{0} increased lance sensor range within {1} meters. Green Circle",
+   "Long": "{0} Inc.Sensor Range",
+   "Short": "{0} Sensors"
+  },
+  {
+   "Bonus": "C3LanceResolve",
+   "Full": "{0} increased Lance Resolve gain within {1} meters. Green Circle",
+   "Long": "{0} Increased Lance Resolve",
+   "Short": "{0} Lance Resolve"
+  },
+  {
+   "Bonus": "C3",
+   "Full": "C3 Network Unit: Makes Enemies Easier to Spot by {0} within {1} meters. Green Circle.",
+   "Long": "C3 Unit",
+   "Short": "C3 Unit"
+  },
+  {
+   "Bonus": "C3M",
+   "Full": "C3M Network Unit: Increases Allies Sensors by {0} within {1} meters. Green Circle.",
+   "Long": "C3M Unit",
+   "Short": "C3M Unit"
+  },
+  {
+   "Bonus": "C3S",
+   "Full": "C3 Network Unit: Makes Enemies Easier to hit in Range",
+   "Long": "C3 Unit",
+   "Short": "C3 Unit"
+  },
+  {
+   "Bonus": "C3Master",
+   "Full": "C3 Network Master Unit: Makes Enemies Easier to hit in Range",
+   "Long": "C3 Master",
+   "Short": "C3 Master"
+  },
+  {
+   "Bonus": "C3i",
+   "Full": "C3 Improved Network Unit: Makes Enemies Easier to hit in Range",
+   "Long": "C3i",
+   "Short": "C3i"
+  },
+  {
+   "Bonus": "NovaCEWS",
+   "Full": "Nova Combined Electronic Warfare System: C3 Network unit, Advanced ECM, and Sensor Suite -  Makes Enemies Easier to hit in Range",
+   "Long": "Nova Combined Electronic Warfare System",
+   "Short": "Nova CEWS"
+  },
+  {
+   "Bonus": "ReqECM",
+   "Full": "Requires an ECM system to be installed",
+   "Long": "ECM Required",
+   "Short": "ECM Required"
+  },
+  {
+   "Bonus": "Resolve",
+   "Full": "{0} increased Resolve gain per Action",
+   "Long": "{0} Increased Resolve",
+   "Short": "{0} Resolve"
+  },
+  {
+   "Bonus": "LanceResolve",
+   "Full": "{0} increased Resolve gain for lancemates in Aura range",
+   "Long": "{0} Increased Lance Resolve",
+   "Short": "{0} Lance Resolve"
+  },
+  {
+   "Bonus": "LanceResolve2",
+   "Full": "{0} increased Resolve gain for all lancemates",
+   "Long": "{0} Increased Lance Resolve",
+   "Short": "{0} Lance Resolve"
+  },
+  {
+   "Bonus": "LanceAcc",
+   "Full": "{0} accuracy for lancemates in Aura range",
+   "Long": "{0} Increased Lance Accuracy",
+   "Short": "{0} Lance Accuracy"
+  },
+  {
+   "Bonus": "LanceSensors",
+   "Full": "{0} increased lance sensor range within {1} meters. Orange Circle.",
+   "Long": "{0} Inc.Sensor Range",
+   "Short": "{0} Sensors"
+  },
+  {
+   "Bonus": "LanceSight",
+   "Full": "{0} increased lance sight range within {1} meters. Orange Circle.",
+   "Long": "{0} Inc.Sight Range",
+   "Short": "{0} Sight"
+  },
+  {
+   "Bonus": "AllLanceSensors",
+   "Full": "{0} increased sensor range for the Lance.",
+   "Long": "{0} Inc.Sensor Range",
+   "Short": "{0} Sensors"
+  },
+  {
+   "Bonus": "AllLanceSight",
+   "Full": "{0} increased sight range for the Lance.",
+   "Long": "{0} Inc.Sight Range",
+   "Short": "{0} Sight"
+  },
+  {
+   "Bonus": "Sensors",
+   "Full": "{0} increased sensor range",
+   "Long": "{0} Inc.Sensor Range",
+   "Short": "{0} Sensors"
+  },
+  {
+   "Bonus": "Sensors2",
+   "Full": "{0} base sensor range",
+   "Long": "{0} Sensors",
+   "Short": "{0} Sensors"
+  },
+  {
+   "Bonus": "Sight",
+   "Full": "{0} increased sight range",
+   "Long": "{0} Inc.Sight Range",
+   "Short": "{0} Sight"
+  },
+  {
+   "Bonus": "Sight2",
+   "Full": "{0} base sight distance",
+   "Long": "{0} Sight",
+   "Short": "{0} Sight"
+  },
+  {
+   "Bonus": "LanceSight2",
+   "Full": "{0} lance base sight distance in Aura range",
+   "Long": "{0} Lance Sight",
+   "Short": "{0} Lance Sight"
+  },
+  {
+   "Bonus": "LanceSight3",
+   "Full": "{0} lance base sight distance to all Allies",
+   "Long": "{0} Lance Sight",
+   "Short": "{0} Lance Sight"
+  },
+  {
+   "Bonus": "Visibility",
+   "Full": "{0} Visibility",
+   "Long": "{0} Visibility",
+   "Short": "{0} Vis"
+  },
+  {
+   "Bonus": "Signature",
+   "Full": "{0} sensor signature",
+   "Long": "{0} Signature",
+   "Short": "{0} Sig"
+  },
+  {
+   "Bonus": "StealthSensors",
+   "Full": "{0} Sensor Stealth Signature Reduction with {1} Charges Multiplier. Harder to Hit by {2} at Medium, {3} at Long and {4} at Extreme Ranges.",
+   "Long": "{0} Sensor Stealth",
+   "Short": "S{0} Stealth"
+  },
+  {
+   "Bonus": "StealthReserved",
+   "Full": "Reserves {0} per Location except Head and CenterTorso",
+   "Long": "{0} Slots Reserved",
+   "Short": "{0} Slots"
+  },
+  {
+   "Bonus": "ActiveVisibility",
+   "Full": "{0} reduced visibility when Active",
+   "Long": "{0} Visibility",
+   "Short": "{0} Vis"
+  },
+  {
+   "Bonus": "ActiveSignature",
+   "Full": "{0} sensor signature when Active",
+   "Long": "{0} Signature",
+   "Short": "{0} Sig"
+  },
+  {
+   "Bonus": "MimeticStealth",
+   "Full": "{0} Mimetic Stealth Visibility Reduction with {1} Charges Multiplier. Charges Decay by 1 for every {2} Hex moved.",
+   "Long": "{0} Mimetic Stealth",
+   "Short": "M{0} Stealth"
+  },
+  {
+   "Bonus": "IsProbe",
+   "Full": "Passive Sensor Probes: Counters ECM/Stealth by {0}",
+   "Long": "Strength {0} Active Probe",
+   "Short": "S{0} Probe"
+  },
+  {
+   "Bonus": "AdvancedSensors",
+   "Full": "Bonus of {0} to sensor detection: provides additional target information",
+   "Long": "{0} Adv.Sensors",
+   "Short": "{0} Adv.S."
+  }
+ ]
+}

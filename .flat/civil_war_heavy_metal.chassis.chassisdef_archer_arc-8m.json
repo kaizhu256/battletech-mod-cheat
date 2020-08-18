@@ -1,0 +1,238 @@
+{
+ "BattleValue": 7124000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 70,
+ "DFAInstability": 35,
+ "DFASelfDamage": 70,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1483333,
+  "Details": "The 8M variant of the Archer was built on an Endo Steel chassis and mixed elements of several past variants. Introduced in 3067 by Earthwerks for the Word of Blake Militia, this variant was armed with two Delta Dart LRM-15 launchers linked to Artemis IV fire control systems in either side torso and an Diverse Optics Sunbeam ER Large Laser in the center torso for long-range combat. It also mounted three Diverse Optics Sunfire ER Medium Lasers for short ranged support, one in each arm and the third in its head. This made the 8M effective at all ranges and gave it both long-range direct and indirect capabilities. The 8M was protected by thirteen and a half tons of Maximilian 100 standard armor which was better slopped in order to deflect weapons fire more easily. It carried twelve double heat sinks, and had a similar speed profile to the original Archer. Its upper body traversing assembly was improved over the original to better protect its hip actuators and its feet were redesigned to make it a more stable firing platform, whether standing or on the move. Four tons of LRM reloads were split between the side torsos and were protected by CASE.",
+  "Icon": "archerorig",
+  "Id": "chassisdef_archer_ARC-8M",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Archer",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Archer"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_archer",
+ "Heatsinks": 0,
+ "InitialTonnage": 7,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 17,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 110,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 220,
+   "MaxRearArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 35,
+ "MeleeInstability": 18,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "archer",
+ "PrefabIdentifier": "chrPrfMech_archerBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Heavy Support",
+ "Tonnage": 70,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "ARC-8M",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The 8M variant of the Archer was built on an Endo Steel chassis and mixed elements of several past variants. Introduced in 3067 by Earthwerks for the Word of Blake Militia, this variant was armed with two Delta Dart LRM-15 launchers linked to Artemis IV fire control systems in either side torso and an Diverse Optics Sunbeam ER Large Laser in the center torso for long-range combat. It also mounted three Diverse Optics Sunfire ER Medium Lasers for short ranged support, one in each arm and the third in its head. This made the 8M effective at all ranges and gave it both long-range direct and indirect capabilities. The 8M was protected by thirteen and a half tons of Maximilian 100 standard armor which was better slopped in order to deflect weapons fire more easily. It carried twelve double heat sinks, and had a similar speed profile to the original Archer. Its upper body traversing assembly was improved over the original to better protect its hip actuators and its feet were redesigned to make it a more stable firing platform, whether standing or on the move. Four tons of LRM reloads were split between the side torsos and were protected by CASE.",
+ "weightClass": "HEAVY"
+}

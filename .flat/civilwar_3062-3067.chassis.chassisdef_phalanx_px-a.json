@@ -1,0 +1,350 @@
+{
+ "BattleValue": 2061000,
+ "ChassisTags": {
+  "items": [
+   "mech_no_stability",
+   "heat_damage_to_normal",
+   "PowerArmor",
+   "ProtoMech",
+   "MR-Resize-0.5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Phalanx"
+  }
+ },
+ "DFADamage": 150,
+ "DFAInstability": 90,
+ "DFASelfDamage": 0,
+ "DFAToHitModifier": -5,
+ "Description": {
+  "Cost": 96250,
+  "Details": "The Phalanx is a battle armor design created and produced by Irian Technologies in the Free Worlds League. This design is the FWLM's answer to larger, harder-hitting battle armor such as the Kanazuchi and Gnome.",
+  "Icon": "uixTxrIcon_phalanx",
+  "Id": "chassisdef_phalanx_PX-A",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Phalanx",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Phalanx"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "PA_Controls",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "PA_ECM",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "PA_Systems_Heavy",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "PA_BoardingClaw",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftArm",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_BoardingClaw",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightArm",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_Legs",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftLeg",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_Legs",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "RightLeg",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "PA_JumpJets",
+   "ComponentDefType": "JumpJet",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Type_Stealthed",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_kanazuchisquad",
+ "Heatsinks": 0,
+ "InitialTonnage": 1,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 10,
+   "InventorySlots": 1,
+   "Location": "Head",
+   "MaxArmor": 50,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 5,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 4,
+   "Location": "LeftTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 8,
+   "Location": "CenterTorso",
+   "MaxArmor": 250,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 4,
+   "Location": "RightTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "BattleArmor"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 5,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 1,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 1,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 75,
+ "MeleeInstability": 45,
+ "MeleeToHitModifier": -4,
+ "MovementCapDefID": "movedef_battlearmor",
+ "PathingCapDefID": "pathingdef_ultralight",
+ "PrefabBase": "kanazuchis",
+ "PrefabIdentifier": "chrprfmech_kanazuchisbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": -0.8,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 500,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Powered Infantry",
+ "Tonnage": 10,
+ "TopSpeed": 65,
+ "TurnRadius": 360,
+ "VariantName": "PX-A",
+ "VisibilityMultiplier": 0.5,
+ "YangsThoughts": "The Phalanx is a battle armor design created and produced by Irian Technologies in the Free Worlds League. This design is the FWLM's answer to larger, harder-hitting battle armor such as the Kanazuchi and Gnome.",
+ "weightClass": "LIGHT"
+}

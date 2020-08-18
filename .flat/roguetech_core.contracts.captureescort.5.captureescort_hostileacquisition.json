@@ -1,0 +1,1590 @@
+{
+ "ID": "CaptureEscort_HostileAcquisition",
+ "OnContractFailureResults": [],
+ "OnContractSuccessResults": [],
+ "artilleryObjectiveList": [],
+ "badFaithStatementOverride": null,
+ "buildingList": [],
+ "cameraFocusHelperList": [
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "1a670982-15d5-44cf-b76b-32433c27749e"
+   },
+   "name": "Spawner_PlayerLance"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "9df10d9c-bf14-43ad-aa64-9202f93d3d49"
+   },
+   "name": "Lance_Enemy_BlockingForce"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "b6f407f2-2cfc-4c3a-8545-2dbf2c50f61a"
+   },
+   "name": "Lance_Enemy_Reinforcement"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
+   },
+   "name": "Lance_Friendly_Escort"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "8a365fc5-d25b-4d64-afbb-4ebf423721a9"
+   },
+   "name": "Lance_Enemy_Hunter"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "8020f476-1f81-4da9-956f-a797df693984"
+   },
+   "name": "Region_Occupy"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "3560382a-c082-4a0b-8cab-8e6327b74cce"
+   },
+   "name": "Region_EscortDestination"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "366eef69-baab-4027-b158-37e72020832e"
+   },
+   "name": "Region_Escape"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "47096b2f-ec88-49f2-b0df-0a44aa55364e"
+   },
+   "name": "Region_Extraction"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "10ce2941-bcee-458e-87f0-ee8ad3564fad"
+   },
+   "name": "chrPrfVhcl_leopard-MANAGED"
+  },
+  {
+   "encounterObject": {
+    "EncounterObjectGuid": "feff37f8-b596-4f5a-b099-4a15ef8f11b4"
+   },
+   "name": "chrPrfVhcl_union-MANAGED"
+  }
+ ],
+ "chunkList": [
+  {
+   "controlledByContractChunkGroupList": [],
+   "enableChunkFromContract": false,
+   "encounterChunk": {
+    "EncounterObjectGuid": "68ac8364-8ea0-408a-949e-3e395ed8655b"
+   },
+   "name": "Chunk_BlockingLance (Bonus)",
+   "requirementList": []
+  },
+  {
+   "controlledByContractChunkGroupList": [],
+   "enableChunkFromContract": true,
+   "encounterChunk": {
+    "EncounterObjectGuid": "66728491-3cff-4ba8-b173-a6a386ce2c73"
+   },
+   "name": "Chunk_ReinforcementLance (Bonus)",
+   "requirementList": []
+  }
+ ],
+ "contractDisplayStyle": "BaseCampaignNormal",
+ "contractName": "Hostile Acquisition",
+ "contractObjectiveList": [
+  {
+   "contractObjective": {
+    "EncounterObjectGuid": "7db60871-d4ae-423d-9c82-fb40ca083372"
+   },
+   "description": "Capture Convoy Rally Point and Escort Convoy to Safety",
+   "forPlayer": "Player1",
+   "isPrimary": true,
+   "objectiveGuids": [
+    "5f01500a-5087-4a6f-86d8-9e0450bc93eb",
+    "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5",
+    "3a4192be-2a53-4383-94ac-19c08883ea5f",
+    "acf88d1b-d09f-4db7-b7ea-9f48a426075c",
+    "371c6027-0869-4e03-8d70-192a8f441d70",
+    "7da17c55-5d39-4a36-836c-69219a8ddeab",
+    "bf3f63b5-cba7-4628-bb62-c2d43c4e7360",
+    "9820d0c3-79e7-4456-b55c-ca820e82fae2",
+    "fa7458f8-c940-480c-91ce-4605fa8965d4"
+   ],
+   "title": "Escort Convoy to Safety and Escape"
+  }
+ ],
+ "contractRewardOverride": -1,
+ "contractType": "CaptureEscort",
+ "contractTypeID": "CaptureEscort",
+ "dialogueList": [
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "73df8d9c-a274-48fd-98c9-2bd0d7860e83"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "The research base is just up ahead, Commander.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "8020f476-1f81-4da9-956f-a797df693984",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "I'm getting a report from Sumire of hostiles moving in the area. We need to punch through and secure the base.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "1a670982-15d5-44cf-b76b-32433c27749e",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "Once we've got the, uh, 'employees' underway, we need to keep up with them and protect them. Good luck, Commander.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_MissionStart",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "The scientists are in custody, Commander. Well done.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_MissionSuccess",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "That was a slaughterhouse. Let's head home, Commander.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_MissionFailure",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "6c8a5135-f5b5-4c1f-b142-d3c20f51be67"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "Commander. The enemy has deployed reinforcements and they are inbound. Expect increased resistance.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_ReinforcementWarning",
+   "overrideDialogueBucketId": "DialogBucketDef_Universal_HostilesInbound"
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "127d5294-4e08-474a-962d-2b92ee7a32fb"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "More contacts on the sensors, Commander. I guess {TEAM_TAR.FactionDef.Name} isn't happy with their people changing jobs?",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_Interrupt_HunterWarning",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "59fd62f4-62f0-4e14-b203-d796e231c3a8"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "You've reached the extraction point for the objective vehicles. Hold there are keep them safe until we can get them out.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_HoldOutOrders",
+   "overrideDialogueBucketId": "DialogBucketDef_CaptureEscort_InPositionHoldOut"
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "a2f9776a-a901-4a49-8952-92d1ef9a70fd"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "I've got the convoy leader on comms, Commander. They're underway. Keep up with them and keep them safe.",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    },
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "Keep in mind that the convoy will try to stay near you for protection. Continue advancing to get them to the extract point!",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_Interrupt_ConvoyMoving",
+   "overrideDialogueBucketId": ""
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "e8895550-a34c-4545-aa0b-27d4dfd21eeb"
+   },
+   "dialogueContent": [
+    {
+     "audioName": "NONE",
+     "cameraDistance": "Far",
+     "cameraFocusGuid": "",
+     "cameraHeight": "Default",
+     "emote": "Default",
+     "revealRadius": -1,
+     "selectedCastDefId": "castDef_DariusDefault",
+     "words": "And they are away! The convoy is safely out of the AO. Good work, Commander. Now get your remaining forces to the second evac zone for extraction there. ",
+     "wordsColor": {
+      "a": 1,
+      "b": 1,
+      "g": 1,
+      "r": 1
+     }
+    }
+   ],
+   "name": "Dialogue_ConvoyExtractSuccessEscapeInstruction",
+   "overrideDialogueBucketId": "DialogBucketDef_CaptureEscort_ObjSecured"
+  },
+  {
+   "dialogue": {
+    "EncounterObjectGuid": "e066d510-3c33-4caf-8c40-39f15c92936a"
+   },
+   "dialogueContent": [],
+   "name": "Dialogue_EscortProximity",
+   "overrideDialogueBucketId": "DialogBucketDef_CaptureEscort_EscortProximity"
+  }
+ ],
+ "difficulty": 5,
+ "difficultyUIModifier": 1,
+ "disableAfterAction": false,
+ "disableCancelButton": false,
+ "disableLanceConfiguration": false,
+ "disableNegotations": false,
+ "employerTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Tagged",
+    "lanceDifficultyAdjustment": 1,
+    "lanceExcludedTagSet": {
+     "items": [
+      "no_extended_lance"
+     ],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
+    },
+    "lanceTagSet": {
+     "items": [
+      "lance_type_convoy"
+     ],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "name": "Lance_Friendly_Escort",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "bdb37cd1-dff5-4740-b361-d5d1aebfd452"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "5a7f08f5-3ceb-467e-b857-b3fc1874d016"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "938ab06b-304b-4f45-ba86-abcaa0fe01c5"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "EmployerTeam"
+ },
+ "employersAllyTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [],
+  "teamGuid": "70af7e7f-39a8-4e81-87c2-bd01dcb01b5e",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "EmployersAllyTeam"
+ },
+ "encounterPlayStyle": "SinglePlayer",
+ "excludedFromProceduralGeneration": false,
+ "expirationTimeOverride": -1,
+ "extractionOverrideList": [
+  {
+   "extractViaDropship": true,
+   "extractionGameLogic": {
+    "EncounterObjectGuid": "be73d7b7-ba12-4917-afb9-6d4066010617"
+   },
+   "name": "Chunk_Dropship_Extraction"
+  },
+  {
+   "extractViaDropship": true,
+   "extractionGameLogic": {
+    "EncounterObjectGuid": "3a4192be-2a53-4383-94ac-19c08883ea5f"
+   },
+   "name": "EscapeRegionObjective"
+  }
+ ],
+ "finalDifficulty": 0,
+ "goodFaithStatementOverride": null,
+ "hostileToAllTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [],
+  "teamGuid": "3c9f3a20-ab03-4bcb-8ab6-b1ef0442bbf0",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "HostileToAllTeam"
+ },
+ "lanceMaxTonnage": -1,
+ "lanceMinTonnage": -1,
+ "longDescription": "I'm sure that the {TEAM_EMP.FactionDef.Demonym} rep thinks they're very clever, but this kind of headhunting is serious. We should expect the enemy to shoot to kill.",
+ "mapMood": null,
+ "maxNumberOfPlayerUnits": 4,
+ "mechMaxTonnages": [
+  -1,
+  -1,
+  -1,
+  -1
+ ],
+ "mechMinTonnages": [
+  -1,
+  -1,
+  -1,
+  -1
+ ],
+ "missionSuccessStatementOverride": null,
+ "negotiatedSalary": 1,
+ "negotiatedSalvage": 0,
+ "neutralToAllTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [],
+  "teamGuid": "61612bb3-abf9-4586-952a-0559fa9dcd75",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "NeutralToAllTeam"
+ },
+ "objectiveList": [
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "ContractBonusRewardPct",
+       "set": false,
+       "typeString": "System.Single",
+       "value": "0.15",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "description": "The objective to destroy the force of enemies which will try and stop the player from reaching the rally point.",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
+   },
+   "title": "Destroy {TEAM_TAR.FactionDef.Demonym} Blocking Force"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [],
+   "description": "Secure the Convoy Rally Point",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "5f01500a-5087-4a6f-86d8-9e0450bc93eb"
+   },
+   "title": "Escort {TEAM_EMP.FactionDef.Demonym} Convoy To Evac Point"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "ContractBonusRewardPct",
+       "set": false,
+       "typeString": "System.Single",
+       "value": "0.15",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "description": "The objective to destroy enemy units which will attempt to block the convoy from reaching its destination.",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "371c6027-0869-4e03-8d70-192a8f441d70"
+   },
+   "title": "Destroy {TEAM_TAR.FactionDef.Demonym} Reinforcements"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [],
+   "description": "Escort Friendly units to their Destination",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5"
+   },
+   "title": "Escort {TEAM_EMP.FactionDef.Demonym} Convoy To Evac Point"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "ContractBonusRewardPct",
+       "set": false,
+       "typeString": "System.Single",
+       "value": "-0.25",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "ContractBonusRewardPct",
+       "set": false,
+       "typeString": "System.Single",
+       "value": "0.50",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "description": "Protect the all units in Convoy during Extraction, suffering no losses.",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "7da17c55-5d39-4a36-836c-69219a8ddeab"
+   },
+   "title": "Ensure All Convoy Units Survive"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [
+    {
+     "Actions": [],
+     "AddedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "ForceEvents": [],
+     "RemovedTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Requirements": null,
+     "ResultDuration": 0,
+     "Scope": "Company",
+     "Stats": [
+      {
+       "name": "ContractBonusRewardPct",
+       "set": false,
+       "typeString": "System.Single",
+       "value": "0.1",
+       "valueConstant": null
+      }
+     ],
+     "TemporaryResult": false
+    }
+   ],
+   "description": "Hidden Objective: Destroy hunter lance for mission complete.",
+   "isPrimary": false,
+   "objective": {
+    "EncounterObjectGuid": "bf3f63b5-cba7-4628-bb62-c2d43c4e7360"
+   },
+   "title": "Hidden Objective: Destroy hunter lance for mission complete."
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [],
+   "description": "The objective to escape with all the player units.",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "3a4192be-2a53-4383-94ac-19c08883ea5f"
+   },
+   "title": "Get to the Evac Zone"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [],
+   "description": "USELESS OBJECTIVE",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "9820d0c3-79e7-4456-b55c-ca820e82fae2"
+   },
+   "title": "Protect Convoy while Dropship Arrives"
+  },
+  {
+   "OnFailureDialogueGUID": "",
+   "OnFailureResults": [],
+   "OnSuccessDialogueGUID": "",
+   "OnSuccessResults": [],
+   "description": "USELESS OBJECTIVE",
+   "isPrimary": true,
+   "objective": {
+    "EncounterObjectGuid": "fa7458f8-c940-480c-91ce-4605fa8965d4"
+   },
+   "title": "Protect Convoy as they Embark on the Dropship"
+  }
+ ],
+ "overrideAutoCompleteDialogueId": "",
+ "overwriteMissionCompleteWhenAutoComplete": true,
+ "player1Team": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "Player1sMercUnit",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Manual",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "1a670982-15d5-44cf-b76b-32433c27749e"
+    },
+    "lanceTagSet": {
+     "items": [],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "name": "Spawner_PlayerLance",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechDef_None",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "0b3955ca-f9bb-4248-b042-344210df6d67"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechDef_None",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "29ac85b0-2d90-4b75-8842-6dc335ad4097"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechDef_None",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "b5a4f55e-c235-4ac0-a13c-e5f067910690"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "mechDef_None",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "b7c6ecec-c420-4b9d-ada4-4a63140429e9"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "bf40fd39-ccf9-47c4-94a6-061809681140",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Player 1"
+ },
+ "player2Team": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "Player2sMercUnit",
+  "lanceOverrideList": [],
+  "teamGuid": "757173dd-b4e1-4bb5-9bee-d78e623cc867",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "Player 2"
+ },
+ "representativeCastDefIDOverride": null,
+ "requirementList": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Target.AuriganPirates",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": null
+    },
+    {
+     "obj": "Employer.AuriganRestoration",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": null
+    },
+    {
+     "obj": "Employer.AuriganPirates",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": null
+    }
+   ],
+   "RequirementTags": {
+    "items": [
+     "planet_other_empty"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "salvagePotential": 20,
+ "scope": "STANDARD",
+ "shortDescription": "Our intelligence analysts located a well-hidden {TEAM_TAR.FactionDef.Demonym} research base on {TGT_SYSTEM.Name}. We've already pacified the base, and {TEAM_EMP.FactionDef.Name} made very firm job offers to the scientists at the facility. Almost all of them have accepted. We need to evacuate those scientists before their previous employers hear about their new positions.",
+ "startingFogOfWarVisibility": "Surveyed",
+ "targetTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [
+   {
+    "lanceDefId": "Tagged",
+    "lanceDifficultyAdjustment": -1,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "9df10d9c-bf14-43ad-aa64-9202f93d3d49"
+    },
+    "lanceTagSet": {
+     "items": [
+      "lance_type_recon",
+      "lance_type_notallvehicles"
+     ],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "name": "Lance_Enemy_BlockingForce",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "fd5f61a5-e486-4fc3-9ee2-a67dc92fd4cc"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "d06e441e-ff0e-4501-91e5-d1ec62626de4"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "0ebae4a1-02d0-4b1d-b38b-1f4b10ad9d9d"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "8420632e-4e7a-48f8-a03f-3495e5df31da"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     }
+    ]
+   },
+   {
+    "lanceDefId": "Tagged",
+    "lanceDifficultyAdjustment": -1,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "b6f407f2-2cfc-4c3a-8545-2dbf2c50f61a"
+    },
+    "lanceTagSet": {
+     "items": [
+      "lance_type_battle",
+      "lance_type_notallvehicles"
+     ],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "name": "Lance_Enemy_Reinforcement",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "c70a6142-0f12-43d4-944f-8c28d28bcfa0"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "08e55906-bfe4-4f55-b52c-95203e7ce021"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "0a013d23-76f2-41cd-b705-797c69be9190"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "a2300a0e-7465-4c75-9a78-e8b0a8d33417"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     }
+    ]
+   },
+   {
+    "lanceDefId": "Tagged",
+    "lanceDifficultyAdjustment": 0,
+    "lanceExcludedTagSet": {
+     "items": [],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "lanceSpawner": {
+     "EncounterObjectGuid": "8a365fc5-d25b-4d64-afbb-4ebf423721a9"
+    },
+    "lanceTagSet": {
+     "items": [
+      "lance_type_fire",
+      "lance_type_notallvehicles"
+     ],
+     "tagSetSourceFile": "tags/LanceTags"
+    },
+    "name": "Lance_Enemy_Hunter",
+    "selectedLanceDefId": null,
+    "selectedLanceDifficulty": 0,
+    "spawnEffectTags": {
+     "items": [],
+     "tagSetSourceFile": "tags/SpawnEffectTags"
+    },
+    "unitSpawnPointOverrideList": [
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "3f8a51bd-2db0-4473-86bc-435ea1125391"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "d1a04f94-29bc-4221-a4bf-793443c06165"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "de2c80f9-e0dc-4592-85de-b75d5c0cff28"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     },
+     {
+      "customHeraldryDefId": "",
+      "customUnitName": "",
+      "pilotDefId": "pilotDef_InheritLance",
+      "pilotExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "pilotTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/PilotTags"
+      },
+      "selectedPilotDefId": null,
+      "selectedUnitDefId": null,
+      "selectedUnitType": "UNDEFINED",
+      "spawnEffectTags": {
+       "items": [],
+       "tagSetSourceFile": "tags/SpawnEffectTags"
+      },
+      "unitDefId": "UseLance",
+      "unitExcludedTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitSpawnPoint": {
+       "EncounterObjectGuid": "82af386a-9635-4d01-a120-4a7b9bee8f3f"
+      },
+      "unitTagSet": {
+       "items": [],
+       "tagSetSourceFile": "tags/UnitTags"
+      },
+      "unitType": "Mech"
+     }
+    ]
+   }
+  ],
+  "teamGuid": "be77cadd-e245-4240-a93e-b99cc98902a5",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "TargetTeam"
+ },
+ "targetsAllyTeam": {
+  "encounterLayerData": {
+   "EncounterObjectGuid": "09a421f4-c536-428b-9c33-711cb45425c6"
+  },
+  "faction": "INVALID_UNSET",
+  "lanceOverrideList": [],
+  "teamGuid": "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
+  "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+  "teamName": "TargetsAllyTeam"
+ },
+ "travelOnly": false,
+ "useTravelCostPenalty": false,
+ "usesExpiration": false,
+ "weight": 1
+}

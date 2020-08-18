@@ -1,0 +1,151 @@
+{
+ "AOECapable": false,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "+ 75% Dmg. Mark",
+ "BonusValueB": "* Missile",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2",
+   "range_standard",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 700000,
+  "Details": "The Narc Missile Beacon launcher is designed to fire a single, highly specialized missile that deploys a homing beacon upon impact. The attached beacon transmits data to allied units, causing the linked target to receive increased damage from subsequent Missile weaponry attacks.",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_Narc_Standard_2-Kali_Yama",
+  "Manufacturer": "Irian",
+  "Model": "Missile Tracking Launcher",
+  "Name": "Narc Missile Beacon + +",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Narc Beacon + +"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 2,
+ "MaxRange": 270,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "narc",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  180,
+  270
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 3,
+ "Type": "SRM",
+ "VolleyDivisor": 1,
+ "WeaponEffectID": "WeaponEffect-Weapon_Narc",
+ "WeaponSubType": "Narc",
+ "ammoCategoryID": "Narc",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit will take [AMT] more damage from Missile attacks.",
+    "Icon": "uixSvgIcon_statusMarked",
+    "Id": "StatusEffect-NARC-MissileDmgBonus75",
+    "Name": "NARC ATTACHED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 0,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "appliesEachTick": false,
+    "modType": "System.Single",
+    "modValue": "1.75",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierMissile"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Visual indicator of the NARC effect",
+    "Icon": "uixSvgIcon_statusMarked",
+    "Id": "StatusEffect-NARC-IndicatorVFX",
+    "Name": "NARC ATTACHED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 0,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "VFXEffect",
+   "nature": "Debuff",
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "hideApplicationFloatie": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": {
+    "attachToImpactPoint": true,
+    "duration": -1,
+    "facesAttacker": false,
+    "isAttached": true,
+    "isOneShot": false,
+    "location": -1,
+    "vfxName": "vfxPrfPrtl_narcMarker_loop"
+   }
+  }
+ ]
+}

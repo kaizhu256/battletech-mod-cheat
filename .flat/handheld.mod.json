@@ -1,0 +1,48 @@
+{
+ "Author": "Denadan",
+ "DLL": "HandHeld.dll",
+ "DLLEntryPoint": "HandHeld.Control.Init",
+ "DependsOn": [
+  "CustomComponents",
+  "MechEngineer"
+ ],
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [],
+ "Name": "HandHeld",
+ "Settings": {
+  "CarryWeightFactor": "0.1",
+  "Debug_IgnoreWeightFIlter": true,
+  "HandHeldSlotItemID": "Gear_HandHeld_Slot",
+  "HandsItemTag": "Hand",
+  "LocationLabel": "Specialist Slots {0:0.00}/{1:0.00}t",
+  "LogLevel": "Debug",
+  "MultiplicativeTonnageFactor": false,
+  "OneHandMissed": "Mech need one free hand actuators to use {0}",
+  "TSMTags": [
+   {
+    "Mul": 2,
+    "Tag": "TSM"
+   },
+   {
+    "Mul": 2,
+    "Tag": "EndoTSM"
+   },
+   {
+    "Mul": 3,
+    "Tag": "IndustrialTSM"
+   },
+   {
+    "Mul": 2.4,
+    "Tag": "MoozillaTSM"
+   }
+  ],
+  "TwoHandMissed": "Mech need two free hands actuators to use {0}",
+  "UseHandTag": true,
+  "ValidateHands": "Mech need {0} free hand actuators to use installed hand helds",
+  "ValidateTonnage": "Mech need {0:0.00}t more carry weight to installed use hand helds",
+  "WrongWeightMessage": "{0} weight {1:0.00}t, mech can carry up to {2:0.00}t items",
+  "WrongWeightMessage1H": "{0} weight {1:0.00}t, mech can carry up to {2:0.00}t items in one hand"
+ },
+ "Website": ""
+}

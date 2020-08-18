@@ -1,0 +1,38 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Heat generation by 10%.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitWobbie",
+  "Name": "AI d8 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "PASSIVE: Attacking with a single weapon ignores COVER and GUARDED on the target.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "FanaticsCockpitEject",
+    "Name": "No Ejection"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "false",
+    "operation": "Set",
+    "statName": "CanEject",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ],
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

@@ -1,0 +1,36 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Called Shots taken by this MechWarrior are almost guaranteed to hit their location .",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitDefCalledShotMaster",
+  "Name": "Called Shot Mastery"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Called Shots nearly guaranteed",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitDefCalledShotMaster",
+    "Name": "Called Shot Mastery"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.2",
+    "operation": "Float_Multiply",
+    "statName": "CalledShotBonusMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "Called Shot Mastery",
+ "Type": "CalledShotBonus"
+}

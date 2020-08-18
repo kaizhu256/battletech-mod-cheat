@@ -1,0 +1,142 @@
+{
+ "AMSShootsEveryAttack": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": false,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#cc9900",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LAMS",
+    "AdvAMS",
+    "AMSMULTI",
+    "AMSDmg: 2",
+    "AMSAcc: 30%",
+    "AMSShots: 25",
+    "AMSHeat: 16",
+    "OLAMSDmg: 3",
+    "OLAMSAcc: 50%",
+    "OLAMSShots: 50",
+    "OLAMSHeat: 32",
+    "OLAMSJam: 40%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "w/s/a/lams"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00025"
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 2350000,
+  "Details": "With the advancements of AMS laser-based technology, this advanced version of the Clan Laser AMS is capable of protecting multiple units within range from missile salvos.  \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_Laser_AMS_CLAN_Advanced",
+  "Manufacturer": "Clan Diamond Shark",
+  "Model": "Laser Fortress",
+  "Name": "Laser Anti Missile System",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Advanced Laser AMS (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 16,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 3,
+ "IsAAMS": true,
+ "IsAMS": true,
+ "MaxRange": 330,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 2,
+   "AMSHitChance": 0.3,
+   "Id": "On",
+   "ShotsWhenFired": 25,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 3,
+   "AMSHitChance": 0.5,
+   "FlatJammingChance": 0.4,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.06,
+   "HeatGenerated": 32,
+   "Id": "Overload",
+   "ShotsWhenFired": 50,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Small",
+ "WeaponSubType": "SmallLaser",
+ "statusEffects": []
+}

@@ -1,0 +1,126 @@
+{
+ "Author": "Life",
+ "ConflictsWith": [],
+ "DLL": "ArmorRepair.dll",
+ "DependsOn": [
+  "CustomComponents"
+ ],
+ "Description": "Prevents mech armor lost in combat from being automatically replaced for free at the end of battle. Instead generate a work order to replace it, optionally costed by mech tonnage, and optionally creating work orders to repair structure damage as well.",
+ "Enabled": true,
+ "Hidden": true,
+ "Name": "Armor",
+ "PackagedOn": "2018-07-08T22:00:00.0000001-01:00",
+ "Settings": {
+  "ArmorCategory": "Armor",
+  "RepairCostByTag": [
+   {
+    "ArmorCBCost": 1.3,
+    "ArmorTPCost": 0.5,
+    "InstallCBCost": 1.3,
+    "InstallTPCost": 0.5,
+    "RepairCBCost": 1.3,
+    "RepairTPCost": 0.5,
+    "StructureCBCost": 1.3,
+    "StructureTPCost": 0.5,
+    "Tag": "OmniMech"
+   },
+   {
+    "ArmorCBCost": 0.75,
+    "ArmorTPCost": 0.75,
+    "InstallCBCost": 0.75,
+    "InstallTPCost": 0.75,
+    "RepairCBCost": 0.75,
+    "RepairTPCost": 0.75,
+    "StructureCBCost": 0.75,
+    "StructureTPCost": 0.75,
+    "Tag": "Primitive"
+   },
+   {
+    "ArmorCBCost": 1.25,
+    "ArmorTPCost": 1.25,
+    "InstallCBCost": 1.25,
+    "InstallTPCost": 1.25,
+    "RepairCBCost": 1.25,
+    "RepairTPCost": 1.25,
+    "StructureCBCost": 1.25,
+    "StructureTPCost": 1.25,
+    "Tag": "EliteMech"
+   },
+   {
+    "ArmorCBCost": 1.1,
+    "ArmorTPCost": 1.1,
+    "InstallCBCost": 1.2,
+    "InstallTPCost": 1.1,
+    "RepairCBCost": 1.1,
+    "RepairTPCost": 1.1,
+    "StructureCBCost": 1.1,
+    "StructureTPCost": 1.1,
+    "Tag": "PrototypeMech"
+   },
+   {
+    "ArmorCBCost": 1.1,
+    "ArmorTPCost": 1.1,
+    "InstallCBCost": 1.2,
+    "InstallTPCost": 1.1,
+    "RepairCBCost": 1.1,
+    "RepairTPCost": 1.1,
+    "StructureCBCost": 1.1,
+    "StructureTPCost": 1.1,
+    "Tag": "ClanMech"
+   },
+   {
+    "ArmorCBCost": 1.2,
+    "ArmorTPCost": 1.15,
+    "InstallCBCost": 1.2,
+    "InstallTPCost": 1.15,
+    "RepairCBCost": 1.2,
+    "RepairTPCost": 1.15,
+    "StructureCBCost": 1.2,
+    "StructureTPCost": 1.15,
+    "Tag": "SocietyMech"
+   },
+   {
+    "ArmorCBCost": 1.2,
+    "ArmorTPCost": 1.2,
+    "InstallCBCost": 1.2,
+    "InstallTPCost": 1.2,
+    "RepairCBCost": 1.2,
+    "RepairTPCost": 1.2,
+    "StructureCBCost": 1.2,
+    "StructureTPCost": 1.2,
+    "Tag": "SLDFMech"
+   },
+   {
+    "ArmorCBCost": 1.15,
+    "ArmorTPCost": 1.2,
+    "InstallCBCost": 1.15,
+    "InstallTPCost": 1.2,
+    "RepairCBCost": 1.2,
+    "RepairTPCost": 1.15,
+    "StructureCBCost": 1.15,
+    "StructureTPCost": 1.2,
+    "Tag": "RISCBattleMech"
+   },
+   {
+    "ArmorCBCost": 1.15,
+    "ArmorTPCost": 1.15,
+    "InstallCBCost": 1.15,
+    "InstallTPCost": 1.15,
+    "RepairCBCost": 1.15,
+    "RepairTPCost": 1.15,
+    "StructureCBCost": 1.15,
+    "StructureTPCost": 1.15,
+    "Tag": "HeroMech"
+   }
+  ],
+  "StructureCategory": "Structure",
+  "autoRepairMechsWithDestroyedComponents": true,
+  "debug": false,
+  "enableAutoRepairPrompt": true,
+  "enableStructureRepair": true,
+  "scaleArmorCostByTonnage": true,
+  "scaleStructureCostByTonnage": true
+ },
+ "Version": "1.1",
+ "Website": "github.com/citizenSnippy/ArmorRepair"
+}

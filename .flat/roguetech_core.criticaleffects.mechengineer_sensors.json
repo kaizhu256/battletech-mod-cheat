@@ -1,0 +1,54 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "Sensors were critically hit, reducing sensor range by 50%.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CriticalEffect-Sensors1",
+    "Name": "Sensors Crit"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Sensors were destroyed, only visual target aquisition possible.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CriticalEffect-Sensors2",
+    "Name": "Sensors Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

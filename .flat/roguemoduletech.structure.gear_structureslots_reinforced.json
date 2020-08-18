@@ -1,0 +1,104 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+25% Structure Weight|",
+ "BonusValueB": "+50% Structure.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorStructureChanges": {
+   "StructureFactor": 1.5
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "StructureFactor: +25%",
+    "StructureProtection: +50%",
+    "CritRes: 50%",
+    "StructureTPCost: 55%",
+    "StructureCBCost: 25%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Structure"
+   }
+  ],
+  "Color": {
+   "UIColor": "Orange"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00010"
+  },
+  "StructureRepair": {
+   "StructureCBCost": 1.25,
+   "StructureTPCost": 1.55
+  },
+  "Weights": {
+   "StructureFactor": 1.25
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1650 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "2.1 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "Reinforced structure is an attempt to improve a BattleMech's survivability by increasing the durability of the internal structure. Reduces incoming Critical Hits.",
+  "Icon": "Structure",
+  "Id": "Gear_structureslots_Reinforced",
+  "Manufacturer": "LIC",
+  "Model": "Reinforced",
+  "Name": "Reinforced Structure",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Reinforced"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reinforced Structure provides crit reduction.",
+    "Icon": "uixSvgIcon_action_end",
+    "Id": "ReinforcedCritImmune",
+    "Name": "Reinforced Structure"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true
+   }
+  }
+ ]
+}

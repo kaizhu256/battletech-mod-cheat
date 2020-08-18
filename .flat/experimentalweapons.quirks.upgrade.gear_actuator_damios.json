@@ -1,0 +1,206 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Acc. (Ballistic)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Repairs Initiated",
+   "ButtonName": "HarJel",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Repairs Complete",
+   "NoUniqueCheck": true,
+   "Repair": {
+    "AffectInstalledLocation": true,
+    "Armor": 5,
+    "BuildingLocations": [],
+    "InnerStructure": 1,
+    "MechArmorLocations": [],
+    "MechStructureLocations": [],
+    "VehicleLocations": [],
+    "repairTrigger": {
+     "AtEndOfTurn": true,
+     "OnActivation": false,
+     "OnDamage": "InstalledLocation"
+    }
+   }
+  },
+  "ArmActuator": {
+   "Type": "PartUpper, PartShoulder"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ActuatorWeight: 30%",
+    "Reinforced: +10%",
+    "ModularArmor: 25",
+    "Visibility: +10%",
+    "Signature: +10%",
+    "DamageTaken: -10%",
+    "HaarJelLocation",
+    "HaarJelArmor: 5",
+    "HaarJelStructure: 1",
+    "CASED: 10",
+    "FluidBoom: 20"
+   ]
+  },
+  "CASE": {
+   "MaximumDamage": 10
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "Weights": {
+   "StructureFactor": 1.3
+  }
+ },
+ "Description": {
+  "Cost": 5000000,
+  "Details": "Special version of Reinforced Upper Arm Actuator made for Damios. Heavier and more bulky, however provides extra protection thanks to shield. <b><color=#800080>Shoulder/Upper Arm Actuator.</color></b>.",
+  "Icon": "spiked-shoulder-armor",
+  "Id": "Gear_Actuator_Damios",
+  "Manufacturer": "Damios",
+  "Model": "Damios",
+  "Name": "Damios Arm Mod ",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Upper Shielded"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reinforced Leg Armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-ReinforcedArmor-{location}",
+    "Name": "Reinforced Leg Structure"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "{location}.Structure"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "All incoming damage reduced by 10%.",
+    "Icon": "uixSvgIcon_ability_angelofdeath",
+    "Id": "StatusEffect-CombatShield",
+    "Name": "REDUCED DAMAGE TAKEN"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Reinforced Leg Armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-ReinforcedArmor-{location}",
+    "Name": "Reinforced Leg Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "{location}.Armor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Reinforced Armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-ModularArmor-{location}",
+    "Name": "Reinforced Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "25",
+    "operation": "Float_Add",
+    "statName": "{location}.Armor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

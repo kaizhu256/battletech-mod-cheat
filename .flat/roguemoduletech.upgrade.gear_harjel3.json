@@ -1,0 +1,106 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "+ 15% PPC Damage",
+ "BonusValueB": "+ 20% PPC Heat",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Repairing",
+   "ButtonName": "HarJelII",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "System OK",
+   "NoUniqueCheck": true,
+   "Repair": {
+    "AffectInstalledLocation": true,
+    "Armor": 15,
+    "BuildingLocations": [],
+    "InnerStructure": 5,
+    "MechArmorLocations": [],
+    "MechStructureLocations": [],
+    "TurnsSinceDamage": 3,
+    "VehicleLocations": [],
+    "repairTrigger": {
+     "AtEndOfTurn": true,
+     "OnActivation": false,
+     "OnDamage": "None"
+    }
+   }
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HaarJel",
+    "HaarJelTurn",
+    "HaarJelArmor: 15",
+    "HaarJelStructure: 5",
+    "HaarJelDuration: 3",
+    "BreachImmunity",
+    "FluidBoom: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HarJel3"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 60
+  },
+  "InventorySorter": {
+   "SortKey": "00027"
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "HarJel is a black gel developed by Clan Diamond Shark. It is created from a naturally occurring substance, of which The Sharks vigilantly guard their virtual monopoly over. This material can be found in the Twycross system and in the Clan Homeworlds.  When Destroyed Explodes. Incompatible to Stealth, Reflective, Reactive and Lamellor Armours",
+  "Icon": "healing",
+  "Id": "Gear_HarJel3",
+  "Manufacturer": "CLANS",
+  "Model": "Self Repair System",
+  "Name": "HarJel III Self Repair System",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "HarJel III"
+ },
+ "DisallowedLocations": "Head",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Immune to Hull Breach",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "BreachImmunity",
+    "Name": "BreachImmunity"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CBTBE_HullBreachImmunity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

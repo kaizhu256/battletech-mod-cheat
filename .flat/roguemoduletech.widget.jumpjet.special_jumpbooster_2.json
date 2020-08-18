@@ -1,0 +1,96 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Special: 20%",
+    "JumpCapacity: 2",
+    "JumpHeat: 5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Special"
+   },
+   {
+    "CategoryID": "JumpBooster"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  },
+  "MechConfiguration": {},
+  "TSMInfo": {
+   "HandHeldFactor": 0.8
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "A Jump Booster can be added externally to Any Mech weight and jump capacity Permitting.",
+  "Icon": "jetpack",
+  "Id": "Special_JumpBooster_2",
+  "Manufacturer": "Generic",
+  "Model": "Jump Booster",
+  "Name": "Jump Booster",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Jump Booster Pack 2"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 1,
+ "JumpCapacity": 2,
+ "MaxTonnage": 100,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "5",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

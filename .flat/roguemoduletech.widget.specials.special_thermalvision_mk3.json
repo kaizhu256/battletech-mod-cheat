@@ -1,0 +1,92 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "Thermal",
+ "BonusValueB": "Vision",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Special: 0.3",
+    "ThermalVision: 1, 30, 360"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Special"
+   },
+   {
+    "CategoryID": "ThermalVision"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0.3
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "Perfected Thermal Vision on a BattleMech took much time and dedication by Doering, the Optical 320 Suite managed to produce some amazing results for its time. First released in 2950, this model allowed Mech's limited vision of heat sources, while removing backwash and interference from 'Mech weapon systems and operation by adding very heavy shielding to the Thermal Imaging Unit.",
+  "Icon": "circuitry",
+  "Id": "Special_ThermalVision_MK3",
+  "Manufacturer": "Doering Electronics",
+  "Model": "O-P Optical 320",
+  "Name": "Thermal Vision",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Thermal Vision MK3"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "heat bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "Heat Vision Effect",
+    "Name": "Bonus Accuracy against heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "-1_30_360",
+    "operation": "Set",
+    "statName": "LV_HEAT_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

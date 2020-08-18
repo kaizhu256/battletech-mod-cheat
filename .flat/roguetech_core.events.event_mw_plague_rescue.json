@@ -1,0 +1,788 @@
+{
+ "AdditionalObjects": [
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [
+      "pilot_lucky"
+     ],
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": "0"
+     }
+    ],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "Scope": "SecondaryMechWarrior"
+   },
+   "Scope": "SecondaryMechWarrior"
+  },
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [
+      "pilot_lucky"
+     ],
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": "0"
+     }
+    ],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "TertiaryMechWarrior"
+   },
+   "Scope": "TertiaryMechWarrior"
+  }
+ ],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "chain_plague_Vaccine",
+     "MODIFIED_STAT_MedTechSkill"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "MedTechSkill",
+     "op": "GreaterThanOrEqual",
+     "val": 4,
+     "valueConstant": "4"
+    }
+   ],
+   "RequirementTags": {
+    "items": [
+     "argo_medBay2",
+     "chain_plague_Rescue1"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  },
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_civ_primitive",
+     "planet_pop_none"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Darius has called a rare emergency meeting. \"Recently, we rescued a ship that was damaged as it departed a planet under quarantine. We hoped we'd avoided infection. We did not. Now [[TGT_MW,{TGT_MW.Callsign}]] has developed a highly contagious, potentially fatal disease.\"\r\n\r\nGrimly, he lays out the path ahead. \"We need to isolate an entire MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}. I've also contacted the local authorities, and they've offered to sell us medication for ¢120,000. An extortionate price, but without it, we may find ourselves in the same position as the ship we rescued.\"\r\n\r\nSumire adds, \"I spoke to a friend at a pharmaceutical research lab, but this bug is beyond the scope of any of his experimental antivirals.\"",
+  "Icon": "uixTxrSpot_MedBay.png",
+  "Id": "event_mw_plague_Rescue",
+  "Name": "Quarantine"
+ },
+ "EventType": "UNSELECTABLE",
+ "Options": [
+  {
+   "Description": {
+    "Details": "cheap, risky option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Refuse the expensive medicine."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] is quarantined in one of the MedBays and provided local symptomatic treatment. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} soon joined by [[SCN_MW,{SCN_MW.Callsign}]], and not long after that, [[TRT_MW,{TRT_MW.Callsign}]] falls ill as well.\r\n\r\nRumors and fear spread faster than the virus, with stories of paralyzed limbs, agonizing cramps, and hallucinations. Everyone finds themselves praying to whatever gods they worship.\r\n\r\nEventually, it is clear the quarantine has successfully limited the spread of the disease. For these three MechWarriors, however, it's going to be a long and extremely unpleasant road to recovery.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "longest time out"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "90",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "60",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-3",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-20",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": {
+        "ExclusionTags": {
+         "items": [
+          "pilot_lucky"
+         ],
+         "tagSetSourceFile": "Tags/PilotTags"
+        },
+        "RequirementComparisons": [],
+        "RequirementTags": {
+         "items": null,
+         "tagSetSourceFile": ""
+        },
+        "Scope": "TertiaryMechWarrior"
+       },
+       "ResultDuration": 0,
+       "Scope": "TertiaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] is quarantined in one of the MedBays and provided local symptomatic treatment. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} soon joined by [[SCN_MW,{SCN_MW.Callsign}]], and not long after that, [[TRT_MW,{TRT_MW.Callsign}]] falls ill as well.\r\n\r\nRumors and fear spread faster than the virus, with stories of paralyzed limbs, agonizing cramps, and hallucinations. Everyone finds themselves praying to whatever gods they worship.\r\n\r\nEventually, it is clear the quarantine has successfully limited the spread of the disease. For these three MechWarriors, however, it's going to be a slow road to recovery.",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "long time out"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "60",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "45",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-3",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-20",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "21",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": {
+        "ExclusionTags": {
+         "items": [
+          "pilot_lucky"
+         ],
+         "tagSetSourceFile": "Tags/PilotTags"
+        },
+        "RequirementComparisons": [],
+        "RequirementTags": {
+         "items": null,
+         "tagSetSourceFile": ""
+        },
+        "Scope": "TertiaryMechWarrior"
+       },
+       "ResultDuration": 0,
+       "Scope": "TertiaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[¢120,000]",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Pay for the medicine."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 120000,
+       "valueConstant": "120000"
+      }
+     ],
+     "RequirementTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] is quarantined in one of the MedBays and medication administered. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} soon joined by [[SCN_MW,{SCN_MW.Callsign}]], and not long after that, [[TRT_MW,{TRT_MW.Callsign}]] falls ill as well.\r\n\r\nRumors and fear spread faster than the virus, with stories of paralyzed limbs, agonizing cramps, and hallucinations. Everyone finds themselves praying to whatever gods they worship.\r\n\r\nThankfully, the drugs provided by the planet at such great cost do their job, stopping the contagion in its tracks. Nobody else gets sick, but the three MechWarriors who contracted the disease have a long, slow road to recovery ahead.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "long time out"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "45",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "21",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 45,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-3",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        },
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-120000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "7",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": {
+        "ExclusionTags": {
+         "items": [
+          "pilot_lucky"
+         ],
+         "tagSetSourceFile": "Tags/PilotTags"
+        },
+        "RequirementComparisons": [],
+        "RequirementTags": {
+         "items": null,
+         "tagSetSourceFile": ""
+        },
+        "Scope": "TertiaryMechWarrior"
+       },
+       "ResultDuration": 0,
+       "Scope": "TertiaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] is quarantined in one of the MedBays and medication administered. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} soon joined by [[SCN_MW,{SCN_MW.Callsign}]].\r\n\r\nRumors and fear spread faster than the virus, with stories of paralyzed limbs, agonizing cramps, and hallucinations. Everyone finds themselves praying to whatever gods they worship.\r\n\r\nThankfully, the drugs provided by the planet at such great cost do their job, stopping the contagion in its tracks. Nobody else gets sick, but the two MechWarriors who contracted the disease have a long, slow road to recovery ahead.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "medium time out"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "14",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "chain_shoreLeave",
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-3",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        },
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-120000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "pilot_lucky"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

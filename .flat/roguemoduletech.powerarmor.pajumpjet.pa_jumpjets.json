@@ -1,0 +1,96 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": ".",
+ "BonusValueB": "",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "PAGear",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BAEquipment",
+    "BAJumpSystems: 3"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PAJumpJet"
+   },
+   {
+    "CategoryID": "Special"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 125000,
+  "Details": "Battle Armor Jump Jets allow for vast leaps across the battlefield, often straight on the hide of unsuspecting BattleMech's.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "PA_JumpJets",
+  "Manufacturer": "Generic",
+  "Model": "S",
+  "Name": "PA jump jets",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "PA Jump Jets"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "JumpCapacity": 3,
+ "MaxTonnage": 10,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 20%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-QuirkWings",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Short Split Template",
+  "Icon": "uixTxrSpot_BigCity",
+  "Id": "fp_StoryTime2",
+  "Name": "Arano Restoration - Three Years Later"
+ },
+ "Difficulty": 2,
+ "FlashpointDescriberCastDefId": "castDef_FP_Dfisher",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Talk About Down On your luck, I haven't had a drink in 10 minutes. You buy me one and I will continue my tale of high daring on the high seas. What?, oh yes about the Restoration, I don't even know what you were thinking. ",
+ "InProgressTimeout": 0,
+ "InternalName": "limited gladiator 1",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_StoryTime2",
+ "PotentialEmployers": [
+  "MercenaryReviewBoard"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_StoryTime2_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_StoryTime1_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreeRogueItemsG",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 9090909
+}

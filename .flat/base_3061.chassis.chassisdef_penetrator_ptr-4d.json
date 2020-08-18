@@ -1,0 +1,265 @@
+{
+ "BattleValue": 3762000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-1.15"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Penetrator"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 35,
+ "DFAInstability": 18,
+ "DFASelfDamage": 35,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2006132,
+  "Details": "The Penetrator PTR-4D has an all energy weapons arsenal and uses twelve double heat sinks to handle the massive heat load from its weapons. The 'Mech uses a Vlar 300 fusion engine for its combat durability, giving the 'Mech a top speed of 64.8 kph. To help offset the 'Mech's lack of mobility, the Penetrator has four Anderson 398 jump jets giving it added mobility with a jumping distance of one hundred and twenty meters. The Penetrator also carries a respectable thirteen tons of armor. The 'Mech's heavy armor protection, combined with its standard engine and limited amounts of ammunition, make for a 'Mech that is very rugged and hard to kill. The primary weapons are a pair of arm mounted Diverse Optics Sunbeam ER Large Lasers for long range firepower. For close range combat, the 'Mech carries six Sutel Precision Line Medium Pulse Lasers which are mounted in its right and left torsos. Finally, the 'Mech carries its only ammunition based weapon, a Yori Flyswatter Anti-Missile System, for added defense against missile attacks.",
+  "Icon": "cougar",
+  "Id": "chassisdef_penetrator_PTR-4D",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Penetrator",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Penetrator"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Stable",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_cougar",
+ "Heatsinks": 0,
+ "InitialTonnage": 7.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 10,
+   "z": 0.5
+  },
+  {
+   "x": -3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": 3,
+   "y": 9,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 10,
+   "z": 0.5
+  },
+  {
+   "x": -3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": 3,
+   "y": 9,
+   "z": -0.5
+  },
+  {
+   "x": -2.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 2.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 18,
+ "MeleeInstability": 9,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "cougar",
+ "PrefabIdentifier": "chrPrfMech_cougarbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher & Heavy Flanker",
+ "Tonnage": 75,
+ "TopSpeed": 65,
+ "TurnRadius": 90,
+ "VariantName": "PTR-4D",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "This is the base model of the Penetrator, Boss. It is not a bad mech for its purpose and when it was designed, but it lacks anything special to make it stand out over newer designs. The all Laser load out can be both a strength and a weakness depending on the opposing forces composition and the biome the battle is in. Over all, not a 'Mech I'd keep around in the long run but might have its uses short-term.",
+ "weightClass": "HEAVY"
+}

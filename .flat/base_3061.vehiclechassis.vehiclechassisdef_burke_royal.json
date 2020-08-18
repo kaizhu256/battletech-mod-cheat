@@ -1,0 +1,131 @@
+{
+ "BattleValue": 993,
+ "Description": {
+  "Cost": 11457250,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_BURKE_ROYAL",
+  "Name": "Burke Defence Tank",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_burke",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "z": 3
+  },
+  {
+   "x": -3,
+   "y": 1.5,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 1.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 3,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 210,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_3-5cv",
+ "PathingCapDefID": "pathingdef_heavy_tracked",
+ "PrefabBase": "burke",
+ "PrefabIdentifier": "chrprfvhcl_burke",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 75,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Tracked",
+ "weightClass": "HEAVY"
+}

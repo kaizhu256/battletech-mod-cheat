@@ -1,0 +1,185 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+20% Kinetic Protection|",
+ "BonusValueB": "-10% Energy Protection.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "ClanArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.15,
+   "ArmorTPCost": 1.1
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "KineticProtection: 25%",
+    "EnergyProtection: -10%",
+    "HeatPerTurn: -5",
+    "ArmorTPCost: 10%",
+    "ArmorCBCost: 15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Reactive_Plating"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] *5",
+    "TechCost": "[[Chassis.Tonnage]] / 20"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "This experimental Reactive Armor is solely deployed on this Elite OmniChassis, capable to withstand a higher degree of incoming Kinetic damage while allowing to route exhess Heat though the plating.",
+  "Icon": "uixSvgIcon_mwFury",
+  "Id": "Gear_Reactive_Plating_mirax",
+  "Manufacturer": "L.A.W.",
+  "Model": "Reactive Plating",
+  "Name": "Reactive Plating",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Heat Resistant"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Takes less Kinetic Damage.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "StatusEffect-ReactivePenalty",
+    "Name": "Reactive Plating"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierEnergy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Takes less Energy Damage.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "StatusEffect-ReactiveBonus1",
+    "Name": "Reflective Coating"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierBallistic"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Takes less Energy Damage.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "StatusEffect-ReactiveBonus2",
+    "Name": "Reflective Coating"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierMissile"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Has a Flame Breath.",
+    "Icon": "uixSvgIcon_equipment_HeatBank",
+    "Id": "StatusEffect-Heat_Max-FB",
+    "Name": "MAX HEAT INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "5",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

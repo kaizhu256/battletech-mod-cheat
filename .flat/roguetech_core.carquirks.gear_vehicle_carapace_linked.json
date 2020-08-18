@@ -1,0 +1,101 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Repairs Initiated",
+   "ButtonName": "Black Carapace",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Repairs Complete",
+   "NoUniqueCheck": true,
+   "Repair": {
+    "AffectInstalledLocation": true,
+    "Armor": 12,
+    "BuildingLocations": [],
+    "InnerStructure": 4,
+    "MechArmorLocations": [],
+    "MechStructureLocations": [],
+    "TurnsSinceDamage": 3,
+    "VehicleLocations": [],
+    "repairTrigger": {
+     "AtEndOfTurn": true,
+     "OnActivation": false,
+     "OnDamage": "None"
+    }
+   },
+   "presistantVFX": {
+    "VFXPrefab": "vfxprfprtl_heatventsm_loop",
+    "VFXScaleX": 1,
+    "VFXScaleY": 1,
+    "VFXScaleZ": 1
+   }
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 30
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Black-Carapace"
+  },
+  "Flags": {
+   "flags": [
+    "no_salvage"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 1,
+  "Details": "Stealth Armor quirk for the BOLLA tank.",
+  "Icon": "uixSvgIcon_equipment_TTS",
+  "Id": "Gear_Vehicle_Carapace_Linked",
+  "Manufacturer": "None",
+  "Model": "None",
+  "Name": "Vehicle Stealth",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Vehicle Stealth"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Immune to Hull Breach",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "BreachImmunity",
+    "Name": "BreachImmunity"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CBTBE_HullBreachImmunity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "PAGear",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": []
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitSensors"
+   },
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "CockpitFCS"
+   },
+   {
+    "CategoryID": "LifeSupportA"
+   },
+   {
+    "CategoryID": "LifeSupportB"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "TonnageLimit": {
+   "Max": 10,
+   "Min": 5
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "Every Battle Armor is Piloted by a single specially trained Infantrist.",
+  "Icon": "interface",
+  "Id": "PA_Controls",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "PowerArmour Controls",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "PA Controls"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Take no Headshot pilot Damage",
+    "Icon": "uixSvgIcon_ability_bulwark",
+    "Id": "HeadShotDamageImmunity",
+    "Name": "HSIMMUNITY"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "NoHeadDamage"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

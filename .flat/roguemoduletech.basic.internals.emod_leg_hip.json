@@ -1,0 +1,77 @@
+{
+ "AllowedLocations": "Legs",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "StandUP: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LegHip"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "An Actuator is a component within a BattleMech's limbs, composed of the joint, myomer bundles, and motor control units.",
+  "Icon": "metal-skirt",
+  "Id": "emod_leg_hip",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Hip",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Hip"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Chance to stand up improved by actuator",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "ActuatorStandUp",
+    "Name": "Intact Actuator"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Add",
+    "statName": "CAEStoodUpRollMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

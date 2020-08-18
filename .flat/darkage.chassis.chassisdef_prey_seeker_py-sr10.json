@@ -1,0 +1,283 @@
+{
+ "BattleValue": 1642000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Preyseeker"
+  }
+ },
+ "CustomParts": {
+  "CustomParts": [],
+  "FiringArc": 150
+ },
+ "DFADamage": 15,
+ "DFAInstability": 8,
+ "DFASelfDamage": 15,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 60377,
+  "Details": "The Prey Seeker, manufactured by Achernar BattleMechs on Cahokia, was designed to be a high-speed scout and raider; while the Prey Seeker's mission profile speaks to MechWarriors who feel marginalized by the growth of combined-arms warfare, the unusual construction of the arms and the phenomenal speeds the 'Mech can reach echo the Dasher OmniMech first seen in the Inner Sphere during the Clan Invasion.",
+  "Icon": "PreySeeker",
+  "Id": "chassisdef_prey_seeker_PY-SR10",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Prey Seeker",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Prey Seeker"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "emod_engine_180",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_xxl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size6",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size6",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Special_Extended_Torso_Twist",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_locust",
+ "Heatsinks": 0,
+ "InitialTonnage": 1.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 8,
+ "MeleeInstability": 4,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "flea",
+ "PrefabIdentifier": "chrPrfMech_locustBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Ultralight Recon",
+ "Tonnage": 15,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "PY-SR10",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Prey Seeker, manufactured by Achernar BattleMechs on Cahokia, was designed to be a high-speed scout and raider; while the Prey Seeker's mission profile speaks to MechWarriors who feel marginalized by the growth of combined-arms warfare, the unusual construction of the arms and the phenomenal speeds the 'Mech can reach echo the Dasher OmniMech first seen in the Inner Sphere during the Clan Invasion.",
+ "weightClass": "LIGHT"
+}

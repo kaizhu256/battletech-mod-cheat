@@ -1,0 +1,273 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.013,
+ "APMaxArmorThickness": 6.5,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SPlasma",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "1 Evasion Ignore",
+ "BonusValueB": "No Recoil",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B0E0E6",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Haywire",
+    "ImpMove: 60%",
+    "ImpAccuracy: -3",
+    "ImpHeatSink: -80%",
+    "WpnRecoil: 2",
+    "RecoilExponent: 0.5",
+    "AccuracyExponent: -0.3",
+    "Explodium: 5",
+    "WeaponBoom: 35",
+    "NoAA",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/tsemp"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 35,
+   "HeatDamage": 35,
+   "StabilityDamage": 35
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02013"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1580000,
+  "Details": "The Tight Stream Electro Magnetic Pulse Cannon is a directed energy weapon based on the Taser system, but doesn't require the cabling and capacitors. The unit mounting the TSEMP Cannon suffers from sensor and electronic system interference every time it fires the TSEMP. The capacitors used to charge the Cannon also require time to recharge between shots, so an operator will have to wait ten seconds between shots.",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_TSEMP",
+  "Manufacturer": "Fusigon",
+  "Model": "TSEMP Cannon",
+  "Name": "TSEMP",
+  "Purchasable": true,
+  "Rarity": 12,
+  "UIName": "TSEMP Cannon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 30,
+ "HeatGenerated": 30,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 20,
+ "InventorySize": 5,
+ "MaxRange": 430,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 0.7,
+  "y": 0.7,
+  "z": 1.2
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  123,
+  246,
+  370
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPCER",
+ "evasivePipsMods": {
+  "AccuracyModifier": -0.35,
+  "RefireModifier": 0.5
+ },
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Systems have been scrambled.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "TSEMP-Effect",
+    "Name": "TSEMP"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "3.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Movement is reduced.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "TSEMP-Effect1",
+    "Name": "Walk Impaired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.4",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's cooling is impaired.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "TSEMP-Effect3",
+    "Name": "Cooling Impaired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.8",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

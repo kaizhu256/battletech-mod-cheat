@@ -1,0 +1,219 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+25 Melee Dmg.",
+ "BonusValueB": "+3 Melee Acc.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "Blade.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Blade",
+    "Melee: +10%",
+    "Melee2: +5",
+    "MeleeStab: +10%",
+    "MeleeCrit: +25%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Blade"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  }
+ },
+ "Description": {
+  "Cost": 1150000,
+  "Details": "A Retractable Blade, giving a 'Edge' in any Melee Encounter. \n\n <b><color=#00ffff>Requires a Hand Actuator to be installed in same Location.</color> </b>",
+  "Icon": "bowie-knife",
+  "Id": "Gear_Arm_Blade",
+  "Manufacturer": "Solaris",
+  "Model": "Switchblade",
+  "Name": "Retractable Blade Actuators",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Retractable Blade"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Melee attacks deal 50% Extra damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMeleeCrit",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.25",
+    "operation": "Float_Add",
+    "statName": "CriticalChanceMultipler",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 50% Extra damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMelee",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 20% Extra stab damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMeleeStab",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 10 more damage and have +1 Accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ClawsMelee",
+    "Name": "Retractable Blade"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "5.0",
+    "operation": "Float_Add",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks attempted have their hit decreased by 2.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-ClawsMeleeACC",
+    "Name": "MELEE HIT CHANCE DECREASED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

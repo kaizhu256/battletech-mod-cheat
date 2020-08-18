@@ -1,0 +1,394 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.002,
+ "APMaxArmorThickness": 1.2,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "Target Painter",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 3",
+    "TAG: 12",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "Painter: +2",
+    "PainterSensors: 200%",
+    "PainterVisibility: 200%",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/t/tag"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 3
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 363000,
+  "Details": "This Handheld Clan grade TAG system has received additional sensor and systems, allowing it to paint a target more efficiently at Extreme Ranges. Its Unique Effect grants a massive but decaying Stacked Detection Bonus.",
+  "Icon": "TAG",
+  "Id": "Hand_Weapon_SuperTAG_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Target Aquisition Gear (C)",
+  "Name": "Super TAG (C)",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "HandHeld TAG (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 1200,
+ "MinRange": 0,
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  300,
+  600,
+  900
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_TAG",
+ "WeaponSubType": "SmallLaserER",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This target was TAG'ed. +1 to hit.",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect",
+    "Name": "Target Acquired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 12,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "2_6_-2",
+    "operation": "Set",
+    "statName": "LV_TAG"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "SUPERTAG",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "duration": 12,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shares Sensor Information on nearby Targets",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "C3-SensorInfo",
+    "Name": "C3 Sensor Information"
+   },
+   "durationData": {
+    "duration": 12,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_PING"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect2",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "duration": 8,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shares Sensor Information on nearby Targets",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "C3-SensorInfo",
+    "Name": "C3 Sensor Information"
+   },
+   "durationData": {
+    "duration": 4,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_PING"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect2",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "duration": 4,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Shares Sensor Information on nearby Targets",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "C3-SensorInfo",
+    "Name": "C3 Sensor Information"
+   },
+   "durationData": {
+    "duration": 4,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_PING"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visual indicator of the TAG effect",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "StatusEffect-TAG-IndicatorVFX",
+    "Name": "TAG MARKED"
+   },
+   "durationData": {
+    "duration": 12,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "VFXEffect",
+   "nature": "Debuff",
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "hideApplicationFloatie": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": {
+    "attachToImpactPoint": true,
+    "duration": -1,
+    "facesAttacker": false,
+    "isAttached": true,
+    "isOneShot": false,
+    "location": -1,
+    "vfxName": "vfxPrfPrtl_TAGmarker_loop"
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

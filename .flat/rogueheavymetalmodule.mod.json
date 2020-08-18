@@ -1,0 +1,122 @@
+{
+ "ConflictsWith": [],
+ "Contact": "fakeemail@fakeemail.com",
+ "DLL": "DisableHMLootbox.dll",
+ "DependsOn": [
+  "RogueTech Core"
+ ],
+ "Description": "Module containing Heavy Metal stuff",
+ "Enabled": true,
+ "Manifest": [
+  {
+   "Path": "contracts",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "cast",
+   "Type": "CastDef"
+  },
+  {
+   "Path": "chassis",
+   "Type": "ChassisDef"
+  },
+  {
+   "Path": "/contracts/flashpoint",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "contracts/flashpoint/HM3_huntingSeason",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "contracts/flashpoint/HM1_ofUnknownOrigin",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "contracts/flashpoint/HM5_hourglass",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "contracts/flashpoint/HM7_showdown",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "flashpoints",
+   "Type": "FlashpointDef"
+  },
+  {
+   "Path": "itemCollections",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "Path": "mech",
+   "Type": "MechDef"
+  },
+  {
+   "Path": "events",
+   "Type": "SimGameEventDef"
+  },
+  {
+   "Path": "milestoneSets",
+   "Type": "SimGameMilestoneSet"
+  },
+  {
+   "Path": "simGameConversations",
+   "Type": "SimGameConversations"
+  },
+  {
+   "Path": "sprites",
+   "Type": "Sprite"
+  },
+  {
+   "AddToAddendum": "ConversationTexture",
+   "Path": "textures",
+   "Type": "Texture2D"
+  },
+  {
+   "Path": "vehicleChassis",
+   "Type": "VehicleChassisDef"
+  },
+  {
+   "Path": "vehicle",
+   "Type": "VehicleDef"
+  },
+  {
+   "Path": "pilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "cast",
+   "Type": "CastDef"
+  },
+  {
+   "Path": "upgrades/general",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "upgrades/mortars",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "jumpjets",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "weapon",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "abilities",
+   "Type": "AbilityDef"
+  },
+  {
+   "Path": "hardpoints",
+   "Type": "HardpointDataDef"
+  },
+  {
+   "Path": "movement",
+   "Type": "MovementCapabilitiesDef"
+  }
+ ],
+ "Name": "Rogue Heavy Metal Module"
+}

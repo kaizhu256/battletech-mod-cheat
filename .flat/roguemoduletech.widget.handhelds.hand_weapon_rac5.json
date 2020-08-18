@@ -1,0 +1,177 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.225,
+ "APMaxArmorThickness": 90,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AC5Internal",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "HandHeld",
+   "component_type_stock",
+   "range_long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 20",
+    "WpnRecoil: 2",
+    "WeaponJAM: 4",
+    "HandHeldAmmo: 120",
+    "HandHeldArmored",
+    "Rotary"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 20
+  },
+  "InventorySorter": {
+   "SortKey": "01202"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 45,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 970000,
+  "Details": "Made to order by Vining Engineering and Salvage Team is the 'Avenger' anything but shoddy. Built around a Mydron Rotary AC5 with specialised Shock Absorbers and a 3 ton Caseless Ammo Storage will this Howl Victory and Vengeance through the Arena. \n\n <b><color=#ffcc00>Has 120 Shots.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "HandHeldRifle",
+  "Id": "Hand_Weapon_RAC5",
+  "Manufacturer": "VEST",
+  "Model": "RAC5",
+  "Name": "Avenger RAC5",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Avenger Rifle"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.0375,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 11.25,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 120,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.06,
+   "HeatGenerated": -8,
+   "Id": "x1",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -4,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.04,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 4,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 8,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.4,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 12,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 120,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC5",
+ "WeaponSubType": "AC5",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

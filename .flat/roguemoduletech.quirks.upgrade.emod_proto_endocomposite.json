@@ -1,0 +1,85 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "StructureFactor: -35%",
+    "StructureTPCost: 50%",
+    "StructureCBCost: 40%",
+    "Reserved: 9"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Structure"
+   }
+  ],
+  "Color": {
+   "UIColor": "Orange"
+  },
+  "DynamicSlots": {
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Endo-Composite",
+   "ReservedSlotColor": "OrangeHalf",
+   "ReservedSlots": 9,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00010"
+  },
+  "Lootable": {
+   "ItemID": "emod_structureslots_endocomposite"
+  },
+  "StructureRepair": {
+   "StructureCBCost": 1.4,
+   "StructureTPCost": 1.5
+  },
+  "Weights": {
+   "StructureFactor": 0.65
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1600 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 45",
+    "TechCost": "2 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "A Early prototype attempt to combine Clan Grade Endo Steel techniques with the Endo-Composite Materials that provided a greater weight saving but is highly complicated to repair.",
+  "Icon": "Structure",
+  "Id": "emod_proto_endocomposite",
+  "Manufacturer": "Coventry",
+  "Model": "Structure",
+  "Name": "Endo-Steel Structure",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Prototype Endo-Composite"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

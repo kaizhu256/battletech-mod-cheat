@@ -1,0 +1,107 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Legs",
+ "BattleValue": 0,
+ "BonusValueA": "+ 10% DFA Dmg.",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DFA: +10%",
+    "ActuatorWeight: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LegUpperActuator"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00021"
+  },
+  "Weights": {
+   "StructureFactor": 1.1
+  }
+ },
+ "Description": {
+  "Cost": 60000,
+  "Details": "Actuators control a 'Mech’s limbs and are used to perform Melee attacks at close quarters. All 'Mechs come equipped with stock Actuators, which can be upgraded for improved performance.",
+  "Icon": "greaves",
+  "Id": "Gear_Actuator_Rawlings_Omicron",
+  "Manufacturer": "Rawlings",
+  "Model": "Omicron",
+  "Name": "Rawlings Omicron Leg Mod ",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Leg DFA Dmg +"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_DamageDFA-T2",
+    "Name": "DFA DAMAGE INCREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "DFA",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

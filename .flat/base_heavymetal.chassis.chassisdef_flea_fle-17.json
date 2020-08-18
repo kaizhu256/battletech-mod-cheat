@@ -1,0 +1,244 @@
+{
+ "BattleValue": 1642000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 20,
+ "DFAInstability": 10,
+ "DFASelfDamage": 20,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 282009,
+  "Details": "Originally produced exclusively for the Dragoons until the Capellan Confederation acquired the design's blueprints via a Maskirovka raid during the 3040s, the post-Helm Memory Core FLE-17 variant is based on the older FLE-15 model. Since the Dragoons used the Flea in a recon role more than an antipersonnel 'Mech, Earthwerks conceived a new design by incorporating recovered technology. Retaining the design's maximum speed of 97.2 km/h, the addition of an Endo Steelchassis frees up weight for a MASC system that allows the 'Mech's speed to be pushed up to 129.6 km/h in short bursts. The increase of speed is required to ensure survival on the modern battlefield, as the FLE-17 is only clad in a pitiful three tons of Livingston Ceramics armor plating.",
+  "Icon": "flea",
+  "Id": "chassisdef_flea_FLE-17",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Flea",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Flea"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Lifesupport",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_flea",
+ "Heatsinks": 0,
+ "InitialTonnage": 2,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 60,
+   "MaxRearArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 50,
+   "MaxRearArmor": 25,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 30,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 40,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 10,
+ "MeleeInstability": 5,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "flea",
+ "PrefabIdentifier": "chrPrfMech_fleaBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Light Sniper",
+ "Tonnage": 20,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "FLE-17",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Originally produced exclusively for the Dragoons until the Capellan Confederation acquired the design's blueprints via a Maskirovka raid during the 3040s, the post-Helm Memory Core FLE-17 variant is based on the older FLE-15 model. Since the Dragoons used the Flea in a recon role more than an antipersonnel 'Mech, Earthwerks conceived a new design by incorporating recovered technology. Retaining the design's maximum speed of 97.2 km/h, the addition of an Endo Steelchassis frees up weight for a MASC system that allows the 'Mech's speed to be pushed up to 129.6 km/h in short bursts. The increase of speed is required to ensure survival on the modern battlefield, as the FLE-17 is only clad in a pitiful three tons of Livingston Ceramics armor plating.",
+ "weightClass": "LIGHT"
+}

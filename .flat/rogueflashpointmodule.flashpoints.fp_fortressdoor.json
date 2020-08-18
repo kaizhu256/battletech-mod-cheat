@@ -1,0 +1,61 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 600,
+ "Description": {
+  "Details": "Part III of the Pirate Trilogy",
+  "Icon": "fortressdoor",
+  "Id": "fp_fortressdoor",
+  "Name": "Fortress Door"
+ },
+ "Difficulty": 9,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "The 'Queen' has requested our presence again. Claims we won't want to miss this. This Flashpoint is <b><color=#f0ff00>Long</color></b>",
+ "InProgressTimeout": 600,
+ "InternalName": "fortressdoor",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [
+    "flashpoint_fortressdoor_complete"
+   ],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_fortressdoor",
+ "PotentialEmployers": [
+  "AuriganPirates"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_fortressdoor_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_solarwinds_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_fortressdoor",
+ "TargetFaction": "ComStar",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 100
+}

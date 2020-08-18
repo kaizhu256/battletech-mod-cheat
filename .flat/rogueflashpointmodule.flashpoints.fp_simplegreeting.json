@@ -1,0 +1,57 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "A Ominous Greeting from Comstar.",
+  "Icon": "simplegreeting",
+  "Id": "fp_simplegreeting",
+  "Name": "Simple Greeting"
+ },
+ "Difficulty": 5,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Comstar Has sent out a Contract looking for help.",
+ "InProgressTimeout": 0,
+ "InternalName": "simplegreeting",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_simplegreeting",
+ "PotentialEmployers": [
+  "ComStar"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_simplegreeting_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreeComStarItems",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 100
+}

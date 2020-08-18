@@ -1,0 +1,117 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 25% Engine Weight",
+ "BonusValueB": "+ 4 Slots Required",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.1,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: -40%",
+    "HeatPerTurn: +6",
+    "EngineReserved: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size2",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size2",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Lootable": {
+   "ItemID": "emod_engineslots_light_center"
+  },
+  "Weights": {
+   "EngineFactor": 0.6,
+   "ReservedSlots": 4
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "12000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "1.25 * [[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1437500,
+  "Details": "This Prototype Light Fusion Engine sacrificed the capacity to carry additional internal Heatsinks and some Shielding but reduced the Engine Weight down to 60% of its Standard Mass.",
+  "Icon": "power-generator",
+  "Id": "prototype_light_fusion_center",
+  "Manufacturer": "Generic",
+  "Model": "Defiance Light",
+  "Name": "Light Engine",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Prototype Light Fusion"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": -6,
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

@@ -1,0 +1,152 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+3 Arm Mounted Accuracy|",
+ "BonusValueB": "-2 Recoil|-2 Melee Accuracy.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartUpper, PartShoulder, PartLower"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmAccuracy: +3",
+    "Recoil: -3",
+    "MeleeAcc: -2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   },
+   {
+    "CategoryID": "ArmLowerActuator"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Actuator_Coventry_X75-Standard"
+  }
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "Weapon Actuators are a collection of specialized Servos and Compensators allowing a BattleMech's Arm mounted Weapons to Fire with greater Accuracy. <b><color=#800080>WEAPON LOWER ARM ACTUATOR.</color></b> Reduces Melee, Improves Arm Mounted Weapons.",
+  "Icon": "spiked-shoulder-armor",
+  "Id": "Gear_Actuator_Coventry_X100",
+  "Manufacturer": "Coventry",
+  "Model": "X100 Armature",
+  "Name": "Coventry X75 Standard Arm Mod  ",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Weapon Armature"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1 Arm mounted accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-LowerAccuracy-{location}",
+    "Name": "Lower Arm Accuracy"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-3",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks attempted have their hit decreased by 2.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-WeaponShoulderACC",
+    "Name": "MELEE HIT CHANCE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "ARMRecoil",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-3",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

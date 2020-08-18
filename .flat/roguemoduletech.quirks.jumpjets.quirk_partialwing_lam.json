@@ -1,0 +1,159 @@
+{
+ "AllowedLocations": "RightTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 30% Jump Jet Dist.",
+ "BonusValueB": "- 9 Heat / Turn",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED",
+   "LAMWings"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PartialWingLAM: 3, 0, 50%, 2",
+    "UpgradeWeight: 50%",
+    "MinWeightJJ: 5",
+    "MaxWeightJJ: 55"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LAMWing"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "autorepair",
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "Quirk_PartialWing_LAM_LTslot",
+     "ComponentDefType": "JumpJet",
+     "Location": "LeftTorso"
+    }
+   ]
+  },
+  "Lootable": {
+   "ItemID": "PartialWing_LAM"
+  },
+  "Weights": {
+   "StructureFactor": 1.5
+  }
+ },
+ "Description": {
+  "Cost": 1850000,
+  "Details": "A LAM Wing system, allowing for extreme aerial agility but drastically reduces ground movement",
+  "Icon": "angel-wings",
+  "Id": "Quirk_PartialWing_LAM",
+  "Manufacturer": "Generic",
+  "Model": "A",
+  "Name": "Lam Jet System",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "LAM Jet System"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "JumpCapacity": 3,
+ "MaxTonnage": 55,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Max Jump Jet Amount per Walk MP",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpAmount",
+    "Name": "Jump Jet Amount"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Set",
+    "statName": "JumpJetCountMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "LAM's walk slow",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "LAMGroundPenalty",
+    "Name": "LAMPenalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed "
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": true,
+    "forceVisRebuild": false,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 20%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-QuirkWings",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

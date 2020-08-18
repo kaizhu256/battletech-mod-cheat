@@ -1,0 +1,202 @@
+{
+ "ChassisID": "vehiclechassisdef_ROTUNDA_RL",
+ "Description": {
+  "Cost": 235584,
+  "Details": "",
+  "Icon": "",
+  "Id": "vehicledef_ROTUNDA_RL",
+  "Name": "Rotunda Recon Vehicle",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 45,
+   "CurrentArmor": 45,
+   "CurrentInternalStructure": 10,
+   "DamageLevel": "Functional",
+   "Location": "Front"
+  },
+  {
+   "AssignedArmor": 35,
+   "CurrentArmor": 35,
+   "CurrentInternalStructure": 10,
+   "DamageLevel": "Functional",
+   "Location": "Left"
+  },
+  {
+   "AssignedArmor": 35,
+   "CurrentArmor": 35,
+   "CurrentInternalStructure": 10,
+   "DamageLevel": "Functional",
+   "Location": "Right"
+  },
+  {
+   "AssignedArmor": 25,
+   "CurrentArmor": 25,
+   "CurrentInternalStructure": 10,
+   "DamageLevel": "Functional",
+   "Location": "Rear"
+  },
+  {
+   "AssignedArmor": 35,
+   "CurrentArmor": 35,
+   "CurrentInternalStructure": 10,
+   "DamageLevel": "Functional",
+   "Location": "Turret"
+  }
+ ],
+ "VehicleTags": {
+  "items": [
+   "unit_vehicle",
+   "unit_light",
+   "unit_wheels",
+   "unit_release",
+   "unit_lance_support",
+   "unit_bracket_low",
+   "unit_generic",
+   "unit_noconvoy",
+   "NoBiome_lunarVacuum",
+   "NoBiome_martianVacuum",
+   "aurigandirectorate",
+   "auriganpirates",
+   "auriganrestoration",
+   "castile",
+   "circinus",
+   "elysia",
+   "hanse",
+   "illyrian",
+   "locals",
+   "LocalsBrockwayRefugees",
+   "lothian",
+   "marian",
+   "magistracyofcanopus",
+   "magistracycentrella",
+   "oberon",
+   "outworld",
+   "SelfEmployed",
+   "taurianconcordat",
+   "tortuga",
+   "valkyrate",
+   "nautilus",
+   "auriganmercenaries",
+   "mercenaryreviewboard",
+   "MajestyMetals",
+   "Marauders",
+   "MasonsMarauders",
+   "RazorbackMercs",
+   "HostileMercenaries",
+   "KellHounds",
+   "SteelBeast",
+   "FlakJackals"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "Weapon_LRM_ROCKETLAUNCHER15",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_ROCKETLAUNCHER15",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_ROCKETTANDEM15",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 3,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_INFERNOLAUNCHER15",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 2,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_LRM_ROCKETTANDEM15",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 4,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Tank_CrewCompartment",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_FCS_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_Sensors_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Wheeled_Left",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_Wheeled_Right",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_armorslots_standard",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Turret",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "emod_engine_140",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_ICE_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Coolant_System",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  }
+ ]
+}

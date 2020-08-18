@@ -1,0 +1,95 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.45,
+ "APMaxArmorThickness": 90,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "MagShot",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "paweapon",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DmgFallOff: 70%",
+    "BAWEAPON",
+    "PipsIgnored: +1",
+    "WpnAccuracy: +1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01414"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 375000,
+  "Details": "A Battle Armor Gauss rifle, carrying 10 shots. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_PowerArmor_Magshot_CLAN",
+  "Manufacturer": "Johnston",
+  "Model": "Mag Shot AP Rifle",
+  "Name": "MagShot Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "BA Gauss (C)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.7,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 5,
+ "InventorySize": 1,
+ "MaxRange": 330,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectileScale": {
+  "x": 0.35,
+  "y": 0.35,
+  "z": 0.25
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 0.2,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [],
+ "weaponCategoryID": "BattleArmor"
+}

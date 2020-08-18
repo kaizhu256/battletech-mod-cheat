@@ -1,0 +1,260 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 8821000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 85,
+ "DFAInstability": 43,
+ "DFASelfDamage": 85,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 10845960,
+  "Details": "A Star League era fire support platform, the Longbow is an 85 ton Assault Mech and one of the most used fire support mechs in existence. The LGB-13C is armed with a sextet of MML-9’s, supported by a trio of ER Medium Lasers. A 255 rated Engine, DHS and 14 tons of Armor round out the design. ",
+  "Icon": "uixTxrIcon_longbow",
+  "Id": "chassisdef_longbow_LGB-14C",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Longbow",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Longbow"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Anti_Air_Targeting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_longbow",
+ "Heatsinks": 0,
+ "InitialTonnage": 8.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Missile"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Missile"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 135,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 270,
+   "MaxRearArmor": 135,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Missile"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Missile"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 43,
+ "MeleeInstability": 22,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "longbow",
+ "PrefabIdentifier": "chrprfmech_longbowbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Missile Boat",
+ "Tonnage": 85,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "LGB-14C",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A Star League era fire support platform, the Longbow is an 85 ton Assault Mech and one of the most used fire support mechs in existence. The LGB-13C is armed with a sextet of MML-9’s, supported by a trio of ER Medium Lasers. A 255 rated Engine, DHS and 14 tons of Armor round out the design. ",
+ "weightClass": "ASSAULT"
+}

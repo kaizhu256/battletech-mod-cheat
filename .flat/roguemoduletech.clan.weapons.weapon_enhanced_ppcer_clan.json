@@ -1,0 +1,122 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 78,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 412,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 1",
+    "WpnRecoil: 1",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/erppc"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02015"
+  }
+ },
+ "Damage": 66,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1393000,
+  "Details": "Developed by Clan Wolverine during the early years of the Clans, the Enhanced Extended-Range Particle Projector Cannon or Enhanced ER PPC was something of a midway point between the original ER PPC and the eventual Clan model. It had a damage threshold 20% higher than that of the original ER PPC, but the two were otherwise identical.",
+  "Icon": "PPC",
+  "Id": "Weapon_Enhanced_PPCER_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Extended-Range PPC",
+  "Name": "ER PPC (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Enh. ER PPC (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 75,
+ "IndirectFireCapable": false,
+ "Instability": 12,
+ "InventorySize": 3,
+ "MaxRange": 840,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  690
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 7,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

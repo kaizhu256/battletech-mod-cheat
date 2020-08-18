@@ -1,0 +1,245 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "-20%Dmg.Taken|+20%Structure|",
+ "BonusValueB": "+20%Armor",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 2,
+   "ArmorTPCost": 1.9
+  },
+  "ArmorStructureChanges": {
+   "ArmorFactor": 1.1
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorFactor: -12%",
+    "CritRes: 10%",
+    "DamageTaken: -15%",
+    "MeleeDamageTaken: -10%",
+    "ArmorProtection: x1.1",
+    "FixedSlots: 8",
+    "ArmorTPCost: 190%",
+    "ArmorCBCost: 200%",
+    "CASE"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "cFC_Head",
+     "ComponentDefType": "Upgrade",
+     "Location": "Head"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "CenterTorso"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "RightTorso"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "LeftArm"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "RightArm"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "LeftLeg"
+    },
+    {
+     "ComponentDefId": "cFC_slot",
+     "ComponentDefType": "Upgrade",
+     "Location": "RightLeg"
+    }
+   ]
+  },
+  "Weights": {
+   "ArmorFactor": 0.89286
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "5000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "1.2 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 3500000,
+  "Details": "One of Clan Diamond Shark's latest projects, this mech armour variant of the Ferro-Carbide is capable of protecting a mech's internal with the best technology possible available until now on WarShips. While its huge advantages make it very desirable, the cost of this armor is quite extreme, being 100 times more expensive then regular Warship armor. <b>This armor uses fixes slots, requires 1 slot on ALL Locations</b> <b><color=#00ff00>CASE Enabled</color></b>",
+  "Icon": "shieldcomb",
+  "Id": "emod_armorslots_clanferrocarbide",
+  "Manufacturer": "Clan Diamond Shark",
+  "Model": "Armor Critical Slot",
+  "Name": "Ferro-Carbide Armor (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Ferro-Carbide (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Critical Components protection increased by 10%.",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "clanFCL_Spall_Liner_Effect",
+    "Name": "Spall Liner"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "All incoming Melee damage reduced by 10%.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "StatusEffect-FCLamellorDefMelee",
+    "Name": "Ferro-Carbide Lamellor Armour"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 10,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "-0.1",
+    "operation": "Float_Add",
+    "statName": "DamageReductionMultiplierMelee"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "All incoming damage reduced by 15%.",
+    "Icon": "uixSvgIcon_action_end",
+    "Id": "StatusEffect-CFL",
+    "Name": "REDUCED DAMAGE TAKEN"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

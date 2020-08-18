@@ -1,0 +1,227 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "You bump into [[TGT_MW,{TGT_MW.Callsign}]] in the corridor, and notice that {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is} in unusually high spirits. \"What's new?\" you ask {TGT_MW.OBJ}.\r\n\r\n{TGT_MW.Callsign} grins. \"I don't want to make too big a deal out of this, but… today's my birthday.\"",
+  "Icon": "uixTxrSpot_Lounge.png",
+  "Id": "event_mw_happyBirthday",
+  "Name": "Happy Birthday"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Wish {TGT_MW.Callsign} a happy birthday",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Wish {TGT_MW.Callsign} a happy birthday."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"Happy Birthday, [[TGT_MW,{TGT_MW.FirstName}]],\" you say. \"Are you doing anything to celebrate?\"\r\n\r\n\"No, Commander. But that's fine. It's just a normal day for everybody else.\" {TGT_MW.Callsign} beams at you before walking off.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Happy Birthday"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_birthday"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Argo: Lounge]",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Throw a party in the Lounge."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_rec_lounge1"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "That evening you invite [[TGT_MW,{TGT_MW.Callsign}]] to a small party in the Lounge, with senior staff and a few MechWarriors in attendance.\r\n\r\nYou say some flattering things about {TGT_MW.OBJ}. Then general acclaim summons {TGT_MW.Callsign} to rise and give a speech. After a couple of hours of food, music, and light drinking, the party starts breaking up and everyone wanders off in a pleasant mood.\r\n\r\nLater that evening, you find a thank-you note from {TGT_MW.Callsign} on the door of your personal quarters. Apparently, your gesture meant the world to {TGT_MW.OBJ}.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Happy Birthday"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_birthday"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_mw_birthday",
+    "pilot_morale_high"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "LessThanOrEqual",
+    "val": 1,
+    "valueConstant": "1"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

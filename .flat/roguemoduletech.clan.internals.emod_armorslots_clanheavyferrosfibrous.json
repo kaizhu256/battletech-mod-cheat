@@ -1,0 +1,85 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "-12% Armor Weight|",
+ "BonusValueB": "7 Slots Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanArmor",
+   "CasedArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.95,
+   "ArmorTPCost": 1.5
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorFactor: -20%",
+    "Reserved: 12",
+    "ArmorTPCost: 50%",
+    "ArmorCBCost: 95%",
+    "CASE"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Heavy Ferro-Fibrous (C)",
+   "ReservedSlots": 12,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Weights": {
+   "ArmorFactor": 0.8
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1500 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "1.5 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 700000,
+  "Details": "Clan Heavy Ferro-Fibrous armor (cFF) is a special type of armor used by vehicles and BattleMechs. A derivative of the Ferro Fibrous Research, initially discarded for its increased bulk does it offer superior protection for the same tons. <b><color=#00ff00>CASE Enabled</color></b>",
+  "Icon": "shieldcomb",
+  "Id": "emod_armorslots_clanheavyferrosfibrous",
+  "Manufacturer": "Clan",
+  "Model": "Armor Critical Slot",
+  "Name": "Heavy Ferro-Fibrous Armor (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Heavy Ferro-Fibrous (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

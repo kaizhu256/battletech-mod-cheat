@@ -1,0 +1,103 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.3,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "UAC10",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_variant",
+   "component_type_variant1",
+   "range_long",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: +1",
+    "WpnRecoil: 2",
+    "WeaponJAMFlat: 10%",
+    "MydronAC:4",
+    "DoesCluster",
+    "IsAC"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/ac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01003"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 168000,
+  "Details": "This does Look like a pretty basic AC10 Class Weapon, but it fires a steady stream of Ultra Munitions.\n\n <b><color=#ffcc00>Uses UAC10 Ammo.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_Autocannon_BB",
+  "Manufacturer": "Mydron",
+  "Model": "Heavy Autocannon",
+  "Name": "AutoCannon",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "AutoCannon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.05,
+ "FlatJammingChance": 0.1,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "HitGenerator": "Cluster",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 4,
+ "InventorySize": 3,
+ "MaxRange": 480,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "APDamageMultiplier": 0.25,
+   "HeatMultiplier": 0.25,
+   "Id": "x4",
+   "UIName": "Burst(x4)",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 2,
+ "ShotsPerAmmo": 4,
+ "ShotsWhenFired": 4,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 7,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

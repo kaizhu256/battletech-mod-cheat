@@ -1,0 +1,379 @@
+{
+ "Author": "LadyAlekto",
+ "ConflictsWith": [],
+ "Contact": "fakeemail@fakeemail.com",
+ "DependsOn": [
+  "CustomComponents",
+  "SkillBasedInit",
+  "Custom Ammo Categories",
+  "BTRandomStartByDifficultyMenu",
+  "IttyBittyLivingSpace",
+  "MechEngineer",
+  "CustomFilters",
+  "CustomActivatableEquipment",
+  "CustomSalvage",
+  "Mission Control",
+  "GlobalDifficulty",
+  "BiggerDrops",
+  "LowVisibility",
+  "CustomLocalization",
+  "BattletechPerformanceFix",
+  "CustomUnits",
+  "AbilityRealizer",
+  "Rogue Munitions",
+  "DropCostPerMech",
+  "DisorderlyWithdrawal",
+  "MonthlyMoraleReset",
+  "PilotHealthPopup",
+  "CleverGirl",
+  "Monthly Tech Adjustment",
+  "PanicSystem",
+  "LootMagnet",
+  "CBTBehaviorsEnhanced",
+  "Repair Bays",
+  "EvasivePipsGainedAdditionalRestorer",
+  "VehicleEvasivePipsGainiedAdditionalFix",
+  "HighDifficultyLanceSpawnFixer",
+  "InnerSphereMap"
+ ],
+ "Description": "The Tech of RogueTech - Core Module",
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [
+  {
+   "Path": "HereTek/Upgrades",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "HereTek/Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Lootable/Internals",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Lootable/Actuators",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Lootable/Engines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "RISC/Engines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "RISC/Upgrades",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "RISC/Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Upgrade",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Artillery",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "AMS",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Jumpjets",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "MechJump",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "VanillaWeapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Engines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Armors",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/Other",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/Cockpit",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/FCS",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/FCS_Vanilla",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/Sensors",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/LifeSupport",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Cockpit/CockpitWeapon",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Gyro",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Structure",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Actuators",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "TargetTrackingSystem",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Heatsink",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Quirks/JumpJets",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "Quirks/Ammo/",
+   "Type": "AmmunitionBoxDef"
+  },
+  {
+   "Path": "Quirks/Upgrade/",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Quirks/VanillaNoLoot/",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Quirks/VanillaNoLootWeapons/",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Quirks/Weapon/",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Quirks/Heatsink",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Basic/Internals",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Basic/ChassisDefaults",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Basic/EngineCores",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Basic/Engines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Primitive/Upgrade",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Primitive/Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Primitive/Engines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Pirate/Upgrades",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Pirate/Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Pirate/Engine",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Clan/Internals",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Clan/Engines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Clan/Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "PowerArmor/PAQuirk",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "PowerArmor/PAEquipment",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "PowerArmor/PAWeapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "PowerArmor/PAWeaponsClan",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "PowerArmor/PASystems",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "PowerArmor/PAJumpJet",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "ProtoMech/Weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "ProtoMech/PMEngine",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "ProtoMech/PMInternals",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "ProtoMech/Heatsink",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "ProtoMech/PMjumpjet",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "ProtoMech/Ammo",
+   "Type": "AmmunitionBoxDef"
+  },
+  {
+   "Path": "Widget/HandHelds",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Widget/ClanHandHelds",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Widget/Lance",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Widget/BoltOn",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Widget/Pods",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Widget/HandHeldMelee",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "Widget/Cooling",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Widget/JumpJet",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "Widget/Specials",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Widget/Hatchet",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Widget/Sword",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Widget/VibroSword",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Widget/Mace",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Widget/Shield",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "OmniTech/Upgrade/",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Quirks/PositiveQuirks",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Tanks/carquirks",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Tanks/TankEngines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Tanks/TankDefaults",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Turrets/TurretDefaults",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "Turrets/TurretEngineParts",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "Turrets/TurretWeapons",
+   "Type": "WeaponDef"
+  }
+ ],
+ "Name": "RogueModuleTech",
+ "Version": "0.1.0",
+ "Website": ""
+}

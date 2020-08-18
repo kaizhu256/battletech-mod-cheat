@@ -1,0 +1,94 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "ACTION: Overcharge your Mech's system to gain +2 Accuracy, 10% Damage, -10% Heat Generated and cool 50 heat. Has a 4 Turn Cooldown.",
+  "Icon": "uixSvgIcon_skullAtlas",
+  "Id": "AbilityDefG5AISH",
+  "Name": "Warlord"
+ },
+ "DisplayParams": "ShowInMWTRay",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "+2 Accuracy",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-TO-HIT",
+    "Name": "Targetting"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "modType": "System.Single",
+    "modValue": "-1",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "-50 Heat",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-Heat",
+    "Name": "Flush Coolant"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "10",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "-50 Heat",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "Warlord-Heat2",
+    "Name": "Flush Coolant2"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ReqSkill": "Gunnery",
+ "ReqSkillLevel": 8
+}

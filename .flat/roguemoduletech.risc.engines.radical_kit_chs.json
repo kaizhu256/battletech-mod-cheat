@@ -1,0 +1,136 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "ACTIVE",
+   "AutoActivateOnOverheatLevel": 0.9,
+   "AutoDeactivateOverheatLevel": 0.5,
+   "ButtonName": "Radical Heatsink",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Nominal",
+   "FailChancePerTurn": 0.1,
+   "FailFlatChance": 0.05,
+   "FailPilotingBase": 2,
+   "FailPilotingMult": 0.05,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Radical Heatsink System drastically improves the mechs cooling",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "RadicalCooling",
+      "Name": "Radical Heatsink System"
+     },
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": -1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "20",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CoolingSystemCHS",
+    "ActivateHeatLevel: 90%",
+    "DeActivateHeatLevel: 50%",
+    "ActiveHeatPerTurn: -20",
+    "FailChance: 5%",
+    "FailChanceTurn: 10%",
+    "FailCritSelf",
+    "CPBoom: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 10,
+   "HeatDamage": 20,
+   "StabilityDamage": 10
+  },
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Compact_Standard"
+  },
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "InventorySorter": {
+   "SortKey": "00016"
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   },
+   "Install": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 2500000,
+  "Details": "Converts an SHS engine to Radical CHS. A Mech' <b>Cooling System</b> provides heat dissipation for components inside the mech and compatible extension points for additional heat sinks throughout the mech. It differs from the closed cooling system of the engine.",
+  "Icon": "thermometer-cold",
+  "Id": "radical_kit_chs",
+  "Manufacturer": "Lostech",
+  "Model": "Engine Kit",
+  "Name": "CHS Engine Kit",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "Radical Compact HS Kit"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

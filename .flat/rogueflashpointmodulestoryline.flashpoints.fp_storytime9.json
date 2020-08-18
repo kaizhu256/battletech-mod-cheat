@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Short Split Template",
+  "Icon": "event_mechwarriors_TEMP",
+  "Id": "fp_StoryTime9",
+  "Name": "Arano Restoration - Showdown"
+ },
+ "Difficulty": 9,
+ "FlashpointDescriberCastDefId": "castDef_FP_Dfisher",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Finally, The match we were all promised. Victoria and Kamea locked in an arena, With only one survivor. The way all conflict should be decided. Duncan Fisher knows something about arena fights, and this one, well it was a fight to remember!",
+ "InProgressTimeout": 0,
+ "InternalName": "limited gladiator 1",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_StoryTime9",
+ "PotentialEmployers": [
+  "MercenaryReviewBoard"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_StoryTime9_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_StoryTime8_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreeRogueItemsG",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 9090909
+}

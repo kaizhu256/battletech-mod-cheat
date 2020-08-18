@@ -1,0 +1,248 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.10313,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 2,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 158,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "Damage Falloff.",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ColorChangeRule": "Random",
+ "ColorSpeedChange": 3,
+ "ColorsTable": [
+  {
+   "C": "#FF69B4",
+   "I": 5
+  },
+  {
+   "C": "#FF0000",
+   "I": 5
+  },
+  {
+   "C": "#FFA500",
+   "I": 5
+  },
+  {
+   "C": "#FFFF00",
+   "I": 5
+  },
+  {
+   "C": "#008000",
+   "I": 5
+  },
+  {
+   "C": "#40E0D0",
+   "I": 5
+  },
+  {
+   "C": "#4B0082",
+   "I": 5
+  },
+  {
+   "C": "#9400D3",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 4",
+    "WpnCrits: +50%",
+    "VariableDmg: 10",
+    "DmgFallOff: 33%",
+    "WpnAccuracy: -2",
+    "WpnRecoil: 2",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/ppc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 75
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02011"
+  }
+ },
+ "Damage": 60,
+ "DamageVariance": 10,
+ "Description": {
+  "Cost": 428000,
+  "Details": "Someone modified the flux capacitor to generate a more debilitating EM field. Problem is, it looks like it affects the user more than it does the target. Additionally, all the designations and serial numbers have had the C's scratched out and replaced with what I can only guess is a Z. Z's, scratched all over this thing. The Tech's nicknamed it the Pride Blaster and will turn any sensor output into Fabolous readouts.<b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#00ffff>Left Click on Chance to Hit during battle to toggle the Field Inhibitor.  (FIOFF) Has no minimum range penalty but can Misfire.</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPZ_JuryRigged",
+  "Manufacturer": "Magna",
+  "Model": "Particle Projector Cannon",
+  "Name": "Pirate PPZ",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "PPZ (PRT)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.33,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1875,
+ "HeatDamage": 0,
+ "HeatGenerated": 45,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 11,
+ "InventorySize": 3,
+ "MaxRange": 710,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "Id": "FION",
+   "UIName": "FION",
+   "isBaseMode": true
+  },
+  {
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.05,
+   "Id": "FIOFF",
+   "MinRange": -90,
+   "RefireModifier": 1,
+   "UIName": "FIOFF",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectileSpeedMultiplier": 0.8,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  170,
+  350,
+  530
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 7,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "[AMT] Difficulty to all of this unit's attacks until its next activation.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "Fabolous!"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "4",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

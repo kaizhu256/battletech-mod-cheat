@@ -1,0 +1,276 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.045,
+ "APMaxArmorThickness": 9,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Taser",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-10"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Haywire",
+    "ImpMove: 40%",
+    "ImpAccuracy: -2",
+    "ImpHeatSink: -50%",
+    "WpnRecoil: 3",
+    "Explodium: 10",
+    "IsGauss",
+    "WeaponBoom: 10",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/taser"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 10,
+   "HeatDamage": 10,
+   "StabilityDamage": 10
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 3,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1175000,
+  "Details": "The BattleMech Taser uses a specially modified metal harpoon that sends a massive electrical pulse down a wire connected to the firing unit. This electrical pulse is designed to overload the target's electrical system and hopefully cause the target unit to shut down. This allows the Taser carrying unit to capture the target rather than destroying it. \n\n<b><color=#ffcc00>Uses Taser Ammo.</color></b> \n\n<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_Taser",
+  "Manufacturer": "Johnston",
+  "Model": "Taser Rifle",
+  "Name": "Taser Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Taser"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.3,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 10,
+ "HeatGenerated": 6,
+ "IndirectFireCapable": false,
+ "Instability": 5,
+ "InventorySize": 3,
+ "MaxRange": 330,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 0.6,
+  "y": 0.6,
+  "z": 1.2
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 4,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.96",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Systems have been scrambled.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Taser-Effect",
+    "Name": "Tasered"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Movement is reduced.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "Taser-Effect1",
+    "Name": "Walk Impaired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.6",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's cooling is impaired.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "Taser-Effect3",
+    "Name": "Cooling Impaired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 500,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Omni",
+    "ArmorTPCost: -50%",
+    "StructureTPCost: -50%",
+    "ArmorCBCost: +20%",
+    "StructureCBCost: +25%",
+    "GyroStab: 40",
+    "GyroWeight: -30%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "Weights": {
+   "StructureFactor": 0.7
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.2",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "An OmniMech is a highly configurable type of BattleMech. OmniMechs mount some of their loadout in modular OmniPods. This gives Omnis the ability to replace damaged components and change battlefield role to fulfill mission requirements. Though not solely created for modular weapon loadouts, the OmniMech design greatly aids repair and construction. Once their modular weaponry and equipment is removed, the empty bays provide better access to repair the chassis. Damaged components such as arms and legs can be easily repaired in half the time it takes for common BattleMechs.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "Gear_Gyro_XL_Omni",
+  "Manufacturer": "ComStar",
+  "Model": "XL Gyro",
+  "Name": "XL Gyro",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Omni XL Gyro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 4,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "UNSTEADY threshold increased to 60",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "XLsteady",
+    "Name": "Steadier 'Mech"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "40.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

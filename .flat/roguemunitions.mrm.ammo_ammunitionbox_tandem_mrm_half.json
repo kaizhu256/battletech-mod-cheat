@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_MRM_Tandem",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 100,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ThroughArmorDamage: 2",
+    "MRMDamage: -90%",
+    "AmmoJAMFlat: 20%",
+    "MissileHP: 2",
+    "MRMAmmo: 100"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/s/mrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000042"
+  },
+  "TRGBColor": {
+   "Color": "#EE82EE",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 100000,
+  "Details": "Yeah Boss, i dont know what to tell you, these Junkers managed to put a Tandem Charge into these MRM, it doesnt have much of a payload, but its gonna hurt.Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "MRM",
+  "Id": "Ammo_AmmunitionBox_Tandem_MRM_half",
+  "Manufacturer": "Generic",
+  "Model": "MRM",
+  "Name": "MRM Ammo",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Ammo MRM Tandem [Half]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

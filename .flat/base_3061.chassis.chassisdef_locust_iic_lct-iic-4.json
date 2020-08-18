@@ -1,0 +1,259 @@
+{
+ "BattleValue": 1642000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "LocustIIC"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 25,
+ "DFAInstability": 13,
+ "DFASelfDamage": 25,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 420115,
+  "Details": "This version was redesigned so that it could be produced in the Inner Sphere by Clan Jade Falcon on their Occupation Zone headquarters world of Sudeten. It replaces the small lasers of the standard variant with three General Systems Heavy Small Lasers in each arm. The medium pulse laser has been downgraded to a Series 7Ja ER Medium Laser, while a pair of additional double heat sinks are added to help deal with the increased heat.",
+  "Icon": "Locustiic",
+  "Id": "chassisdef_locust_iic_LCT-IIC-4",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Locust IIC",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Locust IIC"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Narrow_Low_Profile",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_locustiic",
+ "Heatsinks": 0,
+ "InitialTonnage": 2.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 8,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": -2,
+   "y": 8,
+   "z": -1
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 30,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 13,
+ "MeleeInstability": 7,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_lightmech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "locustiic",
+ "PrefabIdentifier": "chrprfmech_locustiicbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": -0.3,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Clan BattleMech",
+ "Tonnage": 25,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "LCT-IIC-4",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "This version was redesigned so that it could be produced in the Inner Sphere by Clan Jade Falcon on their Occupation Zone headquarters world of Sudeten. It replaces the small lasers of the standard variant with three General Systems Heavy Small Lasers in each arm. The medium pulse laser has been downgraded to a Series 7Ja ER Medium Laser, while a pair of additional double heat sinks are added to help deal with the increased heat.",
+ "weightClass": "LIGHT"
+}

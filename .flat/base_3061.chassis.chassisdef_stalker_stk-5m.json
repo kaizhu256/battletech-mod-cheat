@@ -1,0 +1,264 @@
+{
+ "BattleValue": 8821000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 85,
+ "DFAInstability": 43,
+ "DFASelfDamage": 85,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2123214,
+  "Details": "An upgrade originating from the Free Worlds League, the 5M variant of the Stalker was introduced in 3050 using moderate amounts of Star League technology. Most of the weaponry was retained but both large lasers were removed for a single Diverse Optics Sunbeam ER Large Laser placed in the 'Mech's centerline and a Narc Missile Beacon in the left torso accompanied by two tons of reloads, allowing the Stalker to tag enemy units with homing beacon and direct friendly missile fire onto them. The seventeen double heat sinks of the 5M afford it far greater heat efficiency than the twenty single heat sinks of previous models, although it still could not handle firing all of its weaponry simultaneously, and an additional ton of armor was added for survivability. Other changes included the use of proprietary components such as an Irian E.A.R. communications system, Riese-456 armor and a Irian Chassis Class 30. Unfortunately the designers of the new 5M dismissed the inclusion of CASE, a factor which led directly to the deaths of several Stalkers during the Clan Invasion due to ammunition cook-offs caused by overheating and weapon penetrations.",
+  "Icon": "uixTxrIcon_stalker",
+  "Id": "chassisdef_stalker_STK-5M",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Stalker",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Stalker"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Combat_Computer",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_stalker",
+ "Heatsinks": 0,
+ "InitialTonnage": 8.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 135,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 270,
+   "MaxRearArmor": 135,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 43,
+ "MeleeInstability": 22,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "stalker",
+ "PrefabIdentifier": "chrPrfMech_stalkerBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Juggernaut & Ranged Assault",
+ "Tonnage": 85,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "STK-5M",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "An upgrade originating from the Free Worlds League, the 5M variant of the Stalker uses moderate amounts of Star League technology. The seventeen double heat sinks of the 5M afford it far greater heat efficiency than the twenty single heat sinks of previous models. The Large Lasers were removed, replaced with a single Diverse Optics Sunbeam ER Large Laser placed in the 'Mech's centerline and a Narc Missile Beacon. The beacon allows the Stalker to tag enemy units with homing beacons, allowing friendly 'Mechs to easily send missile salvos its way. Finally, the 'Mech bears an additional ton of armor for added survivability.",
+ "weightClass": "ASSAULT"
+}

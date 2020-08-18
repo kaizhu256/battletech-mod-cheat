@@ -1,0 +1,130 @@
+{
+ "BattleValue": 564,
+ "CustomParts": {
+  "MoveClamp": 0.5,
+  "MoveCost": "Hover"
+ },
+ "Description": {
+  "Cost": 2110600,
+  "Details": "",
+  "Icon": "Shamash",
+  "Id": "vehiclechassisdef_SHAMASH_CLAN",
+  "Name": "Shamash Reconnaissance Vehicle",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_savannah",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "z": 3.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "z": 3.5
+  },
+  {
+   "x": -1.5,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 1.5,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 2.25,
+   "z": -2.75
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 10,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 45,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 10,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 10,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 10,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 10,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 40,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_13-20cv",
+ "PathingCapDefID": "pathingdef_ultralight",
+ "PrefabBase": "savannah",
+ "PrefabIdentifier": "chrprfvhcl_savannahbase",
+ "Radius": 3,
+ "SensorRangeMultiplier": 1.25,
+ "Signature": -0.25,
+ "SpotterDistanceMultiplier": 1.25,
+ "Tonnage": 11,
+ "TopSpeed": 125,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 0.85,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "LIGHT"
+}

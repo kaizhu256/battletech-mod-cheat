@@ -1,0 +1,169 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.3,
+ "APCriticalChanceMultiplier": 0.018,
+ "APMaxArmorThickness": 42,
+ "AccuracyModifier": 2,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B27D37",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 1.5",
+    "WpnAccuracy: -2",
+    "1shot",
+    "MissileHP: 2",
+    "IsRocket: 15",
+    "InternalAmmo: 4",
+    "Visibility: +3%",
+    "Signature: +3%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 1.5
+  },
+  "InventorySorter": {
+   "SortKey": "03003"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 6,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 22000,
+  "Details": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Developed by the Marian Hegemony, they often replace more sophisticated equipment that the Periphery nation cannot afford or is unable to repair.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-pod",
+  "Id": "BoltOn_LRM_ROCKETLAUNCHER15",
+  "Manufacturer": "Death Blossom",
+  "Model": "Rocket Launcher",
+  "Name": "RL15",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Bolt On Rocket 15"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 460,
+ "MinRange": 0,
+ "MissileHealth": 2,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm15",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  100,
+  200,
+  400
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 15,
+ "StartingAmmoCapacity": 15,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM15",
+ "WeaponSubType": "LRM15",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.03",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.03",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

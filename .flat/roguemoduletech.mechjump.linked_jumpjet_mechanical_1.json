@@ -1,0 +1,256 @@
+{
+ "AllowedLocations": "LeftLeg",
+ "BattleValue": 0,
+ "BonusValueA": null,
+ "BonusValueB": null,
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MechanicalJJ",
+    "JumpCapacity: 1",
+    "JumpHeat: 0",
+    "UpgradeWeight: 20%",
+    "JumpAttacker: -20%",
+    "DFAAcc: -4",
+    "DFA: -20%",
+    "DFASelfDamage: +20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MechanicalJJ"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 570000,
+  "Details": "BattleMech Mechanical Jump Boosters are intended to provide a simple, heat free jumping ability. Unlike Jump Jets, these Mechanical Jump Boosters are essentially giant hydraulic rams and myomer bundles that act as giant springs.",
+  "Icon": "mechanicaljump",
+  "Id": "Linked_JumpJet_Mechanical_1",
+  "Manufacturer": "NAIS",
+  "Model": "Spring Heels",
+  "Name": "Mechanical Jump System",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Mechanical Jump System (1)"
+ },
+ "DisallowedLocations": "Torso, Head, Arms",
+ "InventorySize": 2,
+ "JumpCapacity": 0.5,
+ "MaxTonnage": 100,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Increases damage dealt after jumping by 20% and boosts the distance this unit can travel when jumping by 20%.",
+    "Icon": "uixSvgIcon_action_jump",
+    "Id": "MechJJJumpPenalty",
+    "Name": "VECTORED THRUST KIT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-0.1",
+    "operation": "Float_Add",
+    "statName": "JumpingWeaponDamageModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases damage dealt after jumping by 20% and boosts the distance this unit can travel when jumping by 20%.",
+    "Icon": "uixSvgIcon_action_jump",
+    "Id": "MechJJJumpPenalty",
+    "Name": "VECTORED THRUST KIT"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-0.1",
+    "operation": "Float_Add",
+    "statName": "JumpingWeaponDamageModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "MechJJDFAPenaltyDamage",
+    "Name": "DFA DAMAGE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "MechJJDFAPenaltySelfDamage",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "DFASelfDamage",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "MechJJDFAPenaltyAcc",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Max Jump Jet Amount per Walk MP",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpAmount",
+    "Name": "Jump Jet Amount"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Set",
+    "statName": "JumpJetCountMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

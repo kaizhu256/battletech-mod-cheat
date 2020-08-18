@@ -1,0 +1,37 @@
+{
+ "Author": "Akodoreign",
+ "ConflictsWith": [],
+ "Contact": "fakeemail@fakeemail.com",
+ "DependsOn": [
+  "RogueTech Core",
+  "Rogue Flashpoint Module"
+ ],
+ "Description": "Module containing HBS Storline in Flashpoint format",
+ "Enabled": true,
+ "IgnoreLoadFailure": true,
+ "Manifest": [
+  {
+   "Path": "contract/storytime",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "data",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "Path": "flashpoints",
+   "Type": "FlashpointDef"
+  },
+  {
+   "Path": "milestoneSets",
+   "Type": "SimGameMilestoneSet"
+  },
+  {
+   "Path": "lance",
+   "Type": "LanceDef"
+  }
+ ],
+ "Name": "Rogue Flashpoint Storyline Module",
+ "Version": "0.1.0",
+ "Website": "none"
+}

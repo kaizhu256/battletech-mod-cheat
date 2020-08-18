@@ -1,0 +1,110 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 3 Acc. (Ballistic)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BallisticAcc: +2",
+    "BallisticRecoil: -2",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 1400000,
+  "Details": "The Most Advanced Ballistic TTS actively helps to counter imbalances in the BattleMech's Combat computers, fine tuning it for Ballistic Weapons. Takes the Tier3 Slot. Doesn't stack with same type but different tiers do.",
+  "Icon": "targeting",
+  "Id": "Gear_TargetingTrackingSystem_Kallon_Lock-On",
+  "Manufacturer": "Kallon",
+  "Model": "Lock-On",
+  "Name": "Kallon Lock-On TTS",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "FCS Ballistic + + +"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Ballistic weapon attacks have their hit improved by [AMT].",
+    "Icon": "targeting",
+    "Id": "StatusEffect-Attack_ToHitBallistic-T3",
+    "Name": "BALLISTIC WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Ballistic"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Ballistic weapon attacks have their hit improved by [AMT].",
+    "Icon": "targeting",
+    "Id": "StatusEffect-Attack_ToHitBallistic-T3",
+    "Name": "BALLISTIC WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-2",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Ballistic"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 180,
+ "Description": {
+  "Details": "",
+  "Icon": "uixTxrSpot_SmoothCriminal.png",
+  "Id": "fp_SmoothCriminal_B",
+  "Name": "Smooth Criminal"
+ },
+ "Difficulty": 6,
+ "FlashpointDescriberCastDefId": "castDef_UW_bigScore_WalloDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Commander, I've found something I just must have. Please meet me to discuss this in depth.",
+ "InProgressTimeout": 180,
+ "InternalName": "SmoothCriminal",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_SmoothCriminal",
+ "PotentialEmployers": [
+  "SecuritySolutionsInc"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "fp_MackAttack_Betrayed"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "FP_holdfor_later"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "ItemCollection_loot_FP_smoothcriminal_rare",
+ "TargetFaction": "Steiner",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1
+}

@@ -1,0 +1,96 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 27 Heat / Turn",
+ "BonusValueB": " ",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "ChanceActorStat": "EngineExplodeChance",
+    "Damage": 235,
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForest": 1,
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadius": 12,
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChance": 1,
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrength": 24,
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "Heat": 47,
+    "HeatActorStat": "EngineExplodeHeat",
+    "Range": 118,
+    "RangeActorStat": "EngineExplodeRange",
+    "Stability": 39.1,
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadius": 15,
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurns": 2,
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineHSFreeExt: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineCore"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "EngineCore": {
+   "Rating": "235"
+  },
+  "Flags": {
+   "flags": [
+    "vital"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "0014"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "235 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "235 * [[Chassis.Tonnage]] / 2000"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1566667,
+  "Details": "Fusion engines function by harnessing the power of a fusion reaction, running on light hydrogen and protium.\r\nFusion engines are defined by their <b>engine rating</b>. For 'Mechs, the engine rating is the mathematical product of the mass of the vehicle and its desired maximum walking or cruising velocity.",
+  "Icon": "enginecore",
+  "Id": "emod_engine_235",
+  "Manufacturer": "GM",
+  "Model": "Engine Core",
+  "Name": "Engine Core 235",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Engine Core 235"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 14,
+ "statusEffects": null
+}

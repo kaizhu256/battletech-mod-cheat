@@ -1,0 +1,126 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Legs",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Injury Resist",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Reinforced: +20%",
+    "ActuatorWeight: 20%",
+    "CASED: 100"
+   ]
+  },
+  "CASE": {
+   "MaximumDamage": 100
+  },
+  "Category": [
+   {
+    "CategoryID": "LegHip"
+   },
+   {
+    "CategoryID": "LegUpperActuator"
+   },
+   {
+    "CategoryID": "LegLowerActuator"
+   },
+   {
+    "CategoryID": "LegFootActuator"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00021"
+  },
+  "Weights": {
+   "StructureFactor": 1.2
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]]",
+    "TechCost": "1"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 510000,
+  "Details": "Reinforced Leg Assemblys provide increases Structure and Armor to the Leg they are installed it.",
+  "Icon": "leg-armor",
+  "Id": "Gear_Reinforced_Leg_MK2",
+  "Manufacturer": "Ceres Metals",
+  "Model": "Braced",
+  "Name": "Reinforced Leg Mod",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Reinforced Leg MK2"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 4,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reinforced Leg Armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-ArmorCowlStructure-{location}",
+    "Name": "Reinforced Leg Structure"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "{location}.Structure"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Reinforced Leg Armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-ArmorCowlArmor-{location}",
+    "Name": "Reinforced Leg Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "{location}.Armor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

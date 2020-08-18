@@ -1,0 +1,268 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 1,
+ "AOERange": 60,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.005,
+ "APMaxArmorThickness": 5,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SmokeRedS",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#11FF00",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 0.5",
+    "Dueppel",
+    "ImpAccuracy: 1",
+    "ImpSight: -30%",
+    "ImpSensors: -60%",
+    "InternalAmmo: 1",
+    "MissileHP: 3",
+    "AreaOfEffect: 90",
+    "AreaOfEffectDmg: 1",
+    "IsRocket: 3",
+    "Visibility: +1%",
+    "Signature: +1%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   },
+   {
+    "CategoryID": "Flare"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0.5
+  },
+  "InventorySorter": {
+   "SortKey": "03001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 8000,
+  "Details": "Based on one of the most Ancient Electronic Countermeasures, these rockets carry a payload of Chaff and release a strobing, blinding Light on detonation to fool any and all kinds of Sensors.<b><color=#F79232>3 SALVOS</color> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_LRM_FLARELAUNCHER5",
+  "Manufacturer": "QuicSell",
+  "Model": "Chaff CounterMeasure",
+  "Name": "ChaffFlare RL5",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Chaff CounterMeasures"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 9,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 460,
+ "MinRange": 0,
+ "MissileHealth": 3,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  100,
+  200,
+  400
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 9,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM5",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.01",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.01",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Mech's Accuracy and Sensors are Impaired.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Chaff-Effect",
+    "Name": "CHAFF CLOUD"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Mech's visual sensors are overloaded.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Chaff-Effect2",
+    "Name": "BLINDING FLARE"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Mech's sensors are clouded.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Chaff-Effect3",
+    "Name": "SENSOR SCRAMBLE"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.4",
+    "operation": "Float_Multiply",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

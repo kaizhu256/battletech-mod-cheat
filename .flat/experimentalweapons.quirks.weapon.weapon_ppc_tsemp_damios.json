@@ -1,0 +1,277 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.013,
+ "APMaxArmorThickness": 6.5,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SPlasma",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "1 Evasion Ignore",
+ "BonusValueB": "No Recoil",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B0E0E6",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-5",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Haywire",
+    "ImpMove: 60%",
+    "ImpAccuracy: -3",
+    "ImpHeatSink: -80%",
+    "WpnRecoil: 5",
+    "Explodium: 5",
+    "WeaponBoom: 50",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/energy"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 50,
+   "HeatDamage": 50,
+   "StabilityDamage": 50
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02013"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 5000000,
+  "Details": "The Tight Stream Electro Magnetic Pulse Cannon is a directed energy weapon based on the Taser system, but doesn't require the cabling and capacitors. This version was specifically tailored for close quarters combat. \n<b><color=#ffcc00>Fires in melee.</color></b> ",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_TSEMP_Damios",
+  "Manufacturer": "Damios",
+  "Model": "TSEMP Cannon",
+  "Name": "TSEMP Damios",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "TSEMP Cannon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 25,
+ "HeatGenerated": 30,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 5,
+ "MaxRange": 280,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 0.7,
+  "y": 0.7,
+  "z": 1.2
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  120,
+  240
+ ],
+ "RefireModifier": 5,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPCER",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "The Mech's Systems have been scrambled.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "TSEMP-Effect",
+    "Name": "TSEMP"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "3.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Movement is reduced.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "TSEMP-Effect1",
+    "Name": "Walk Impaired"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.4",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "The Mech's cooling is impaired.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "TSEMP-Effect3",
+    "Name": "Cooling Impaired"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.8",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ],
+ "weaponCategoryID": "BattleArmor"
+}

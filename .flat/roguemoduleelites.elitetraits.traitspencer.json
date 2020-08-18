@@ -1,0 +1,60 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Heat generation by 10%.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitSpencer",
+  "Name": "AI d11 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitSpencerEffect",
+    "Name": "Decreases Heat Generation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitSpencerEffect1",
+    "Name": "Decreases Heat Generation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "RunSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

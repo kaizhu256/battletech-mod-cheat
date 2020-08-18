@@ -1,0 +1,226 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Heat generation by 10%.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitPayloadClanner",
+  "Name": "AI d8 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "+50m View Distance",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitClannerSight",
+    "Name": "Increased view Distance"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Add",
+    "statName": "SpotterDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "+50m View Distance",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitClannerSensors",
+    "Name": "Increased view Distance"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Add",
+    "statName": "SensorDistanceAbsolute"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 50% Extra damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ClannerDebuffDFA",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 20% Extra stab damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ClannerDebuffDFAStab",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 50% Extra damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ClannerDebuffMelee",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal 20% Extra stab damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ClannerDebuffMeleeStab",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.75",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "ClannerBuffAcc",
+    "Name": "Decreases Heat Generation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "modType": "System.Single",
+    "modValue": "-1",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks have +1 Accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-ClannerDeBuffAcc",
+    "Name": "Articulate Actuators"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Melee",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   },
+   "vfxData": null
+  }
+ ],
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

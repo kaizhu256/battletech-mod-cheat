@@ -1,0 +1,173 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.6,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 67.5,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RifleMedium",
+ "ArmorDamageModifier": 0.75,
+ "AttackRecoil": 3,
+ "BattleValue": 102,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "MRifle.{location}",
+   "component_type_stock",
+   "range_long",
+   "wr-jam_chance_multiplier-3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorDmgMod: -25%",
+    "WpnRecoil: 4",
+    "WeaponJAM: 3",
+    "DakkaBoom: 45",
+    "IsRotaryRifle"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 45,
+   "HeatDamagePerAmmo": 7,
+   "StabilityDamagePerAmmo": 12
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01302"
+  }
+ },
+ "Damage": 45,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 200000,
+  "Details": "Get a taste of true rotary firepower without the burdensome weight and bulk of traditional Rotary Autocannons. Try Quicsell's line of slim and sleek Rotary Rifles. Perfect for your budget firepower needs. \n\n <b><color=#ffcc00>Uses Medium Rifle Ammo.</color></b>",
+  "Icon": "rifle",
+  "Id": "Weapon_Rotary_Rifle_Medium",
+  "Manufacturer": "QuicSell",
+  "Model": "Standard Bore Cannon",
+  "Name": "Medium Rifle",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Medium Rotary Rifle"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.05,
+ "HeatDamage": 0,
+ "HeatGenerated": 18,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 11.25,
+ "InventorySize": 3,
+ "MaxRange": 600,
+ "MinRange": 30,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -12,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -6,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 6,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 12,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.45,
+   "GunneryJammingBase": 7,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 18,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 6,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

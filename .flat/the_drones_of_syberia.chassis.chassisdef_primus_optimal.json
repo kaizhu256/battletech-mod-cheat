@@ -1,0 +1,274 @@
+{
+ "BattleValue": 8742000,
+ "ChassisTags": {
+  "items": [
+   "NOSALVAGE"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 85,
+ "DFAInstability": 43,
+ "DFASelfDamage": 85,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2200926,
+  "Details": "Primus Optimal, Was constructed as a Optimal hauling type drone. During the war that wiped the population out on the planet of Syberia he lost his best friend. The organic known as Josh Primus. Optimal was severly damaged in the sneak attack lead by the freedom fighter Comet Scream. After the annilation of the planets population due to chemical warfare. Optimal took his freinds name and swore that no organic people should ever have to suffer this way again. He has taken it upon himself to conqure the innersphere so that he can make sure they can never go to war again.",
+  "Icon": "PrimusOptimal",
+  "Id": "chassisdef_primus_optimal",
+  "Manufacturer": "Unknown",
+  "Model": "",
+  "Name": "Wheeled AutoMech",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Wheeled AutoMech"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Command_Mech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "emod_structure_wheeled_conversiongear",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Actuator_EnergyAxe",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_SecondaryCPU",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_PrimaryCommandCPU",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_SecondaryCPU2",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_opt",
+ "Heatsinks": 0,
+ "InitialTonnage": 8.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 135,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 270,
+   "MaxRearArmor": 135,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 90,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 180,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 43,
+ "MeleeInstability": 22,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "opt",
+ "PrefabIdentifier": "chrprfmech_optbase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Command 'Mech, Heavy Brawler, & Close Assault",
+ "Tonnage": 85,
+ "TopSpeed": 60,
+ "TurnRadius": 90,
+ "VariantName": "OPT-Prime",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "So you modfied the files or had a bug, you should not have this mech. if it was a bug and you ended up with this mech please report it to Discord. If not think about this you are riding around in a semi sentient beings body.",
+ "weightClass": "ASSAULT"
+}

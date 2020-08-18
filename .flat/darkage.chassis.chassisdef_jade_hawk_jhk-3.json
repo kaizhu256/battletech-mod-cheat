@@ -1,0 +1,273 @@
+{
+ "BattleValue": 10795200,
+ "ChassisTags": {
+  "items": [
+   "ClanMech",
+   "mr-resize-1.73"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 85,
+ "DFAInstability": 28,
+ "DFASelfDamage": 35,
+ "DFAToHitModifier": -1,
+ "Description": {
+  "Cost": 2491959,
+  "Details": "The final Clan version is based off the Jade Hawk 2, dropping the Ferro-Fibrous plating and shaving the armor levels to restore the standard Jade Hawks jump-jets and upgrade two of the arm-mounted lasers to Medium Pulse versions instead of the ER Large models.",
+  "Icon": "uixTxrIcon_jadehawk",
+  "Id": "chassisdef_jade_hawk_JHK-3",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Jade Hawk",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Jade Hawk"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Gear_Actuator_Prototype_JadeTalons",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Gear_Actuator_Prototype_JadeTalons",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  },
+  {
+   "ComponentDefID": "Special_Distracting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_spider",
+ "Heatsinks": 0,
+ "InitialTonnage": 0.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 18,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 16,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 115,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 230,
+   "MaxRearArmor": 115,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 80,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 43,
+ "MeleeInstability": 19,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "spider",
+ "PrefabIdentifier": "chrPrfMech_spiderBase-001",
+ "PunchesWithLeftArm": true,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1.25,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1.25,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Clan BattleMech",
+ "Tonnage": 75,
+ "TopSpeed": 64,
+ "TurnRadius": 260,
+ "VariantName": "JHK-3",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The final Clan version is based off the Jade Hawk 2, dropping the Ferro-Fibrous plating and shaving the armor levels to restore the standard Jade Hawks jump-jets and upgrade two of the arm-mounted lasers to Medium Pulse versions instead of the ER Large models.",
+ "weightClass": "HEAVY"
+}

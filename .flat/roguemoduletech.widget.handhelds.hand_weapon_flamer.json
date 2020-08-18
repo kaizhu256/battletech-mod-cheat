@@ -1,0 +1,145 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "+Dmg|+Range|",
+ "BonusValueB": "X2 Bonus vs Overheat.",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 2",
+    "AlwaysStartsFire",
+    "DmgFallOff: 30%",
+    "OHDamage: 35%",
+    "NoAA",
+    "HandHeldAmmo: 15",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "02001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 15,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 350000,
+  "Details": "A Heavy Flamer with a ton of Ammo in a 'Handy' package for all 'Mechs.",
+  "Icon": "flamethrower-soldier",
+  "Id": "Hand_Weapon_Flamer",
+  "Manufacturer": "GM Flashpoint",
+  "Model": "Heavy  Flamer",
+  "Name": "Hand Held Flamer",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Hand Held Flamer"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.3,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 1,
+ "HeatDamage": 20,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 120,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.35,
+ "PrefabIdentifier": "Flamer",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  30,
+  60,
+  90
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 8,
+ "Tonnage": 0,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.96",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ],
+ "weaponCategoryID": "SpecialMelee"
+}

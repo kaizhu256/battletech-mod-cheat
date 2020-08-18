@@ -1,0 +1,183 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "Darius calls you to the bridge. \"My contacts came through, {COMMANDER.FirstName}. I've got a lead on the [[DM.BaseDescriptionDefs[LoreDobrev],<i>Dobrev</i>]].\" A grainy image fills the viewscreen. \"What you're looking at is a [[DM.BaseDescriptionDefs[LoreBaumannGroup],Baumann Group]] distribution center on [[DM.BaseDescriptionDefs[LoreIndependence],Independence]]. Every scrap of exotic contraband that's been turning up on the black market has gone through this site.\"\r\n\r\nSumire nods thoughtfully. \"Sounds good, XO. I'll mark it on the star map. When we're ready to check it out, just let me know.\"\r\n\r\n\"One other thing, Commander.\" Darius pulls up a dossier on the viewscreen. \"For 50,000 C-Bills, I can arrange for a portion of Baumann's security team to call in sick on the day of our arrival. Could save us some trouble when we follow up on this.\"",
+  "Icon": "uixTxrSpot_HeavyMetal.png",
+  "Id": "forcedevent_co_HM2_supplyDemand",
+  "Name": "Supply & Demand"
+ },
+ "EventType": "UNSELECTABLE",
+ "OneTimeEvent": false,
+ "Options": [
+  {
+   "Description": {
+    "Details": "[¢50,000]",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Authorize Darius to arrange the bribe."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThanOrEqual",
+       "val": 50000,
+       "valueConstant": "50000"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius dips his head in agreement. \"You got it, {COMMANDER.FirstName}. I'll make the arrangements.\"\r\n\r\nYang gives you a sidelong glance as your XO turns to go. \"And I'll go prepare our salvage team. If this goes the way I hope it will, we stand to gain some pretty impressive hardware. Exotic weapons, strange new 'Mechs. Things I haven't even <i>imagined</i> yet.\"\r\n\r\n\"And knowledge, Yang,\" Farah adds, her eyes glittering with excitement. \"Knowledge and adventure, with the promise of more to come.\"",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "(100)-Darius arranges the bribe."
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "System_AddFlashpoint",
+         "additionalValues": [
+          "Independence"
+         ],
+         "value": "fp_HM3_huntingSeason",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [
+         "event_HM2_supplyDemand_a",
+         "event_HM2_supplyDemand_complete"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Everything turned on.",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Decline the offer."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius dips his head in agreement. \"Understood, Commander. I'll thank my contacts for the offer but politely decline.\"\r\n\r\nYang gives you a sidelong glance as your XO turns to go. \"And I'll go prepare our salvage team. If this goes the way I hope it will, we stand to gain some pretty impressive hardware. Exotic weapons, strange new 'Mechs. Things I haven't even <i>imagined</i> yet.\"\r\n\r\n\"And knowledge, Yang,\" Farah adds, her eyes glittering with excitement. \"Knowledge and adventure, with the promise of more to come.\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "high spirits, defend your decision, one-on-one"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "System_AddFlashpoint",
+         "additionalValues": [
+          "Independence"
+         ],
+         "value": "fp_HM3_huntingSeason",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [
+         "event_HM2_supplyDemand_b",
+         "event_HM2_supplyDemand_complete"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "Tags": {
+  "items": [
+   "HeavyMetal_Campaign",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": "tags/EventTags"
+ },
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

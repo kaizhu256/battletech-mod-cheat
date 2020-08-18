@@ -1,0 +1,118 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CoolingSystemProtoDHS",
+    "HeatPerTurn: -12",
+    "TEHeatgen: -30%",
+    "BankBoom: 40"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 40,
+   "HeatDamage": 40,
+   "StabilityDamage": 40
+  },
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Prototype_Double"
+  },
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "InventorySorter": {
+   "SortKey": "00016"
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   },
+   "Install": {
+    "CBillCost": "10 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "[[Chassis.Tonnage]] / 5"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 4600000,
+  "Details": "Being unable to efficiently extend the PDHS effects to the entire Engine Block have Luthien Engineers mananged to combine a Compact with PDHS Cooling, creating a less Bulky Cooling at cost of some weight. Treating the Engines <b>Cooling System</b> with this experimental system improves the general performance at risk of a Fatal Explosion. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "thermometer-cold",
+  "Id": "compact_kit_dhs_proto",
+  "Manufacturer": "Prototype",
+  "Model": "Engine Kit",
+  "Name": "Proto DHS Engine Kit",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Heat Sink Kit (Prototype) +"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 12,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 10%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_GenReduction-PDHSKIT",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.70",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

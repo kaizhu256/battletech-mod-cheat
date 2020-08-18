@@ -1,0 +1,171 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.12,
+ "APMaxArmorThickness": 24,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "MagShot",
+ "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "Category": "Ballistic",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: +50%",
+    "DmgFallOff: 30%",
+    "WpnRecoil: 1",
+    "IsAPGauss: 5",
+    "WeaponBoom: 20",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/hag"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 40,
+   "HeatDamagePerAmmo": 7,
+   "StabilityDamagePerAmmo": 15
+  },
+  "InventorySorter": {
+   "SortKey": "01414"
+  }
+ },
+ "Damage": 8,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1585000,
+  "Details": "The Anti-Personnel Gauss Rifle is a scaled-down Gauss Rifle meant for work against conventional infantry and battle armor. The AP Gauss Rifle Battery is a total of eight AP Gauss Rifles slaved together to unleash a tidal wave of flachettes into an opponent while removing the redundant bulk and fire control burden of eight individual weapons. This weapons has a fixed capacity of <b><color=#F79232>64 rounds.</color></b>. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b><b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_Magshot_Battery_Clan",
+  "Manufacturer": "Solaris Arms",
+  "Model": "AP Gauss Battery",
+  "Name": "AP Gauss Rifle Battery",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "AP Gauss Rifle Battery"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.3,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 20,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3,
+ "InventorySize": 7,
+ "MaxRange": 390,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "HeatGenerated": -15,
+   "Id": "x1",
+   "ShotsWhenFired": -3,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "HeatGenerated": -10,
+   "Id": "x2",
+   "ShotsWhenFired": -2,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "HeatGenerated": -5,
+   "Id": "x3",
+   "ShotsWhenFired": -1,
+   "UIName": "x3",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "Id": "x4",
+   "UIName": "x4",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "HeatGenerated": 5,
+   "Id": "x5",
+   "ShotsWhenFired": 1,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "HeatGenerated": 10,
+   "Id": "x6",
+   "ShotsWhenFired": 2,
+   "UIName": "x6",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "HeatGenerated": 15,
+   "Id": "x7",
+   "ShotsWhenFired": 3,
+   "UIName": "x7",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "HeatGenerated": 20,
+   "Id": "x8",
+   "ShotsWhenFired": 4,
+   "UIName": "x8",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 0.3,
+  "y": 0.3,
+  "z": 0.2
+ },
+ "ProjectilesPerShot": 5,
+ "RangeSplit": [
+  120,
+  240,
+  330
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 4,
+ "StartingAmmoCapacity": 64,
+ "Tonnage": 8,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

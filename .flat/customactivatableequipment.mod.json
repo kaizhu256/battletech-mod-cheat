@@ -1,0 +1,41 @@
+{
+ "Author": "KMiSSioN",
+ "ConflictsWith": [],
+ "DLL": "CustomActivatableEquipment.dll",
+ "DLLEntryPoint": "CustomActivatableEquipment.Core.Init",
+ "DependsOn": [
+  "CustomComponents",
+  "Custom Ammo Categories"
+ ],
+ "Description": "Activatable equipment",
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [],
+ "Name": "CustomActivatableEquipment",
+ "PackagedOn": "2019-01-31T00:00:00Z",
+ "Settings": {
+  "AIComponentExtreamlyUsefulModifyer": 0.6,
+  "AIComponentUsefullModifyer": 0.3,
+  "AIDefenceUsefullCoeff": 0.2,
+  "AIHeatCoeffCoeff": 0.8,
+  "AIOffenceUsefullCoeff": 0.1,
+  "AIOverheatCoeffCoeff": 0.6,
+  "DefaultArmsAbsenceStoodUpMod": -0.1,
+  "LegAbsenceStoodUpMod": -0.1,
+  "StartupByHeatControl": false,
+  "StartupMinHeatRatio": 0.4,
+  "StoodUpPilotingRoll": true,
+  "StoodUpPilotingRollCoeff": 0.1,
+  "ToolTipAlertFailChance": 0.4,
+  "ToolTipWarningFailChance": 0.2,
+  "auraUpdateFix": "Never",
+  "auraUpdateMinPosDelta": 20,
+  "auraUpdateMinTimeDelta": 2,
+  "debug": false,
+  "equipmentFlashFailChance": 0.25,
+  "sensorsAura": {},
+  "unaffectedByHeadHitStatName": "NoHeadDamage"
+ },
+ "Version": "0.0.44",
+ "Website": "https://www.nexusmods.com/battletech/mods/381"
+}

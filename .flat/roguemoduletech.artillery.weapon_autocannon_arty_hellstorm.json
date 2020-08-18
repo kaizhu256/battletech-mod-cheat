@@ -1,0 +1,215 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 30,
+ "AOEInstability": 15,
+ "AOERange": 60,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 60,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RifleHeavy",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Ballistic",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#E9967A",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "HRifle.{location}",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 3",
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 30",
+    "Hellstorm",
+    "NoAA",
+    "IsRifle",
+    "Indirect"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01303"
+  }
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 300000,
+  "Details": "Yeah Boss, this is a Howitzer with a RAC Feeder, what do you want me to say? This is typical Pirates and i dont even want to know what they thought to even try making this! \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b> \n\n <b><color=#ffcc00>Uses Heavy Rifle Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Autocannon_Arty_Hellstorm",
+  "Manufacturer": "Project",
+  "Model": "Budget Delivery",
+  "Name": "Howitzer Cannon",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Hellstorm Artillery"
+ },
+ "DirectFireModifier": 1,
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.05,
+ "HeatDamage": 5,
+ "HeatGenerated": 15,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 3,
+ "InventorySize": 7,
+ "MaxRange": 2000,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -10,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -5,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 5,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 10,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.45,
+   "GunneryJammingBase": 7,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 15,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  500,
+  1000,
+  1500
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 18,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.97",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

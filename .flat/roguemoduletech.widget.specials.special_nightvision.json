@@ -1,0 +1,89 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Special:  0",
+    "NightVision"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Special"
+   },
+   {
+    "CategoryID": "NightVision"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 60000,
+  "Details": "A Night Vision Module, allowing a mech to fight during bad Light conditions as if it were Daylight.",
+  "Icon": "circuitry",
+  "Id": "Special_NightVision",
+  "Manufacturer": "Doering Electronics",
+  "Model": "O-P Optical 320",
+  "Name": "Night Vision",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Night Vision"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: Enables Night Vision.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "NightVision",
+    "Name": "Night Vision Mode"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_NIGHT_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

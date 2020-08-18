@@ -1,0 +1,160 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.075,
+ "APMaxArmorThickness": 39,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "1 Evasion Ignore",
+ "BonusValueB": "No Recoil",
+ "ClearMineFieldRadius": 8,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 6.5",
+    "WpnRecoil: 1",
+    "PPCDEBUFF: 1",
+    "HandHeldArmored",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 6.5
+  },
+  "InventorySorter": {
+   "SortKey": "02013"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 580000,
+  "Details": "The Light PPC is a lighter version of the Particle Projector Cannon. Researched by the Draconis Combine, it does less damage and has shorter range than a PPC, but comes in at less than half the weight.",
+  "Icon": "PPC",
+  "Id": "Hand_Weapon_PPC_LIGHT",
+  "Manufacturer": "Fusigon",
+  "Model": "Light Particle Projector Cannon",
+  "Name": "LPPC",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "HandHeld Light PPC"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireTerrainChance": 0.0875,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 6,
+ "InventorySize": 1,
+ "MaxRange": 430,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "Id": "FION",
+   "UIName": "FION",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AccuracyModifier": 1,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "Id": "FIOFF",
+   "MinRange": -90,
+   "UIName": "FIOFF",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  123,
+  246,
+  370
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

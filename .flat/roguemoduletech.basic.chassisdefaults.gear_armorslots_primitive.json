@@ -1,0 +1,80 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "X0.67 Armor Protection|",
+ "BonusValueB": "X0.5 Armor Costs",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 0.5,
+   "ArmorTPCost": 0.5
+  },
+  "ArmorStructureChanges": {
+   "ArmorFactor": 0.67
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorTPCost: -50%",
+    "ArmorCBCost: -50%",
+    "ArmorProtection: x0.67"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "ignore_damage",
+    "autorepair",
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "lootable_armorslots_Primitive"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] / 100",
+    "TechCost": "1"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Developed during the Age of War, Primitive Armor was introduced on the Mackie, the original BattleMech. This armor was less capable than the armor used in Star League and Succession War designs.",
+  "Icon": "shieldcomb",
+  "Id": "Gear_armorslots_Primitive",
+  "Manufacturer": "Earthwerks",
+  "Model": "Primitive",
+  "Name": "Primitive Armor",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Armor Primitive"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": []
+}

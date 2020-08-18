@@ -1,0 +1,91 @@
+{
+ "AMSImmune": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 40,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AlternateDamageCalc": false,
+ "AmmoCategory": "MORTAR",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsMortar",
+    "Indirect",
+    "DoesCluster",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/mortar"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03014"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1290000,
+  "Details": "The Broadside is Barrymore Munitions very own take on the Mech Mortar, able to fire 10 Shells per trigger pull does it deliver a barrage of all types of Barrymore Munitions finest choices. \n\n <b><color=#ffcc00>Uses Mortar Ammo.</color></b>",
+  "Icon": "mortar",
+  "Id": "Weapon_MECHMORTAR_10",
+  "Manufacturer": "Barrymore Munitions",
+  "Model": "Mortar",
+  "Name": "Mortar/10",
+  "Purchasable": true,
+  "Rarity": 15,
+  "UIName": "Broadside"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.00666,
+ "HeatDamage": 0,
+ "HeatGenerated": 18,
+ "HitGenerator": "Cluster",
+ "IndirectFireCapable": true,
+ "Instability": 2,
+ "InventorySize": 4,
+ "MaxRange": 690,
+ "MinRange": 180,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 10,
+ "SpreadRange": 80,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 10,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

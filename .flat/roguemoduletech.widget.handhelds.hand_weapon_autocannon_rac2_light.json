@@ -1,0 +1,199 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.125,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "AC2Internal",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "HandHeld",
+   "component_type_stock",
+   "range_long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 10",
+    "WpnRecoil: 2",
+    "WeaponJAM: 3",
+    "Rotary",
+    "HandHeldAmmo: 120",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 10
+  },
+  "InventorySorter": {
+   "SortKey": "01201"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 9,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 970000,
+  "Details": "A Hand Held Rotary AC2. Theres a inscription on it 'This is my rifle. There are many like it, but this one is mine. My rifle is my best friend. It is my life. I must master it as I must master my life. My rifle, without me, is useless. Without my rifle, I am useless.'",
+  "Icon": "HandHeldRifle",
+  "Id": "Hand_Weapon_Autocannon_RAC2_light",
+  "Manufacturer": "Mydron",
+  "Model": "Battle Rifle",
+  "Name": "RAC2",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Handheld RAC/2"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.02,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 2.5,
+ "InventorySize": 1,
+ "MaxRange": 780,
+ "MinRange": 120,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.05,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.05,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.05,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 2,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.45,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.02,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "RAC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  480,
+  720
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 120,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC2",
+ "WeaponSubType": "AC2",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Hand held weapons armor",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-HandHeldArmor-{location}",
+    "Name": "HandHeld Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "80",
+    "operation": "Float_Add",
+    "statName": "{location}.Armor"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

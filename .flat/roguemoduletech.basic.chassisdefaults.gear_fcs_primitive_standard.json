@@ -1,0 +1,110 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AccuracyER: -1",
+    "AccuracyLR: -1",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "Lootable": {
+   "ItemID": "lootable_FCS_Primitive_Standard"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "FCS system of a Primitive BattleMech.",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_Primitive_Standard",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Primitive FCS",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "FCS Primitive"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccER",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "CACExtraLongRangeAccuracyMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccLR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "CACLongRangeAccuracyMod"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

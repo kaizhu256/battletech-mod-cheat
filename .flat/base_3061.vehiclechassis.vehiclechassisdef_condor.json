@@ -1,0 +1,131 @@
+{
+ "BattleValue": 993,
+ "CustomParts": {
+  "MoveClamp": 0.5,
+  "MoveCost": "Hover"
+ },
+ "Description": {
+  "Cost": 1311000,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_CONDOR",
+  "Name": "Condor Cavalry Tank",
+  "Purchasable": false,
+  "Rarity": 3
+ },
+ "HardpointDataDefID": "hardpointdatadef_condor",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3.5
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.6,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 110,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_8-12cv",
+ "PathingCapDefID": "pathingdef_medium_hover",
+ "PrefabBase": "condor",
+ "PrefabIdentifier": "chrprfvhcl_condorbase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 50,
+ "TopSpeed": 500,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "MEDIUM"
+}

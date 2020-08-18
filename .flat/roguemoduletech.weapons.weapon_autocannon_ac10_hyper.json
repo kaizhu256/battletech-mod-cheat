@@ -1,0 +1,93 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.75,
+ "APMaxArmorThickness": 180,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "HVAC10",
+ "AttackRecoil": 3,
+ "BattleValue": 158,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 2",
+    "WpnCrits: x2",
+    "IsHVAC: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/hvac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 60,
+   "StabilityDamage": 15
+  },
+  "InventorySorter": {
+   "SortKey": "01003"
+  }
+ },
+ "Damage": 60,
+ "DamageOnJamming": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 140000,
+  "Details": "The Hypervelocity Autocannon (HVAC) family of weapons is based on the Autocannon. While they have the same damage classes, they're capable of firing much further. However, in order to obtain the increased ballistic range, the hypervelocity ammo is larger and uses a unique type of propellant, reducing the number of shots per ton of ammo along with a couple other drawbacks, such as a chance of the weapon exploding, and a thick smoke trail every time the weapon is fired. \n\n <b><color=#ffcc00>Uses HVAC10 Ammo.</color></b>",
+  "Icon": "HVAC",
+  "Id": "Weapon_Autocannon_AC10_HYPER",
+  "Manufacturer": "Western",
+  "Model": "Heavy Autocannon",
+  "Name": "HVAC/10",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "HVAC/10"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.05,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 5,
+ "GunneryJammingMult": 0.015,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 18,
+ "InventorySize": 3,
+ "MaxRange": 900,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  450,
+  750
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 12,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

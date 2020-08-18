@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "LeftTorso, RightTorso",
+ "BonusValueA": "+ 1 Hit Defense",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Description": {
+  "Cost": 0,
+  "Details": "The Flea comes equipped with uniquely formed torso sections known as Targeting Baffles. These specialized sections scramble weapons targeting and make the Flea extremely difficult to hit, even compared to other lighter 'Mechs.",
+  "Icon": "UixSvgIcon_specialEquip_System",
+  "Id": "Gear_General_Targeting_Baffle",
+  "Manufacturer": "Livingston Ceramics",
+  "Model": "",
+  "Name": "Targeting Baffle",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Targeting Baffle"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+[AMT] Difficulty to hit this unit with ranged attacks.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-TargBaff-HitDefense1",
+    "Name": "TARGETING BAFFLES"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "ToHitThisActor",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

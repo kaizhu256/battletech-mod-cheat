@@ -1,0 +1,127 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 30 Heat / Turn",
+ "BonusValueB": "+ 2 Slots",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.2,
+    "ChanceActorStat": "EngineExplodeChance",
+    "Damage": 300,
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForest": 1,
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadius": 15,
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChance": 1,
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrength": 30,
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "Heat": 60,
+    "HeatActorStat": "EngineExplodeHeat",
+    "Range": 150,
+    "RangeActorStat": "EngineExplodeRange",
+    "Stability": 50,
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadius": 20,
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurns": 2,
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineHSCap: 2",
+    "EngineReserved: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineCore"
+   },
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   },
+   {
+    "CategoryID": "Special"
+   }
+  ],
+  "EngineCore": {
+   "Rating": "300"
+  },
+  "Flags": {
+   "flags": [
+    "vital",
+    "not_broken",
+    "not_destroyed",
+    "no_salvage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0
+  },
+  "InventorySorter": {
+   "SortKey": "0014"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size3",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size3",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "MechConfiguration": {},
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "300 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10",
+    "TechCost": "300 * [[Chassis.Tonnage]] / 2000"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 3000000,
+  "Details": "A experimental Engine stemming from research into XL and Compact Engines, while it failed to ultimately save weight, it does allow to move the engine assembly into the Side Torso.",
+  "Icon": "enginecore",
+  "Id": "Quirk_300_Compact_Engine",
+  "Manufacturer": "Vlar",
+  "Model": "Engine Core",
+  "Name": "Engine Core 300",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Compact XL Engine 300"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 20,
+ "statusEffects": null
+}

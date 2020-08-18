@@ -1,0 +1,240 @@
+{
+ "BattleValue": 9642000,
+ "ChassisTags": {
+  "items": [
+   "Primitive"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 90,
+ "DFAInstability": 45,
+ "DFASelfDamage": 90,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2241910,
+  "Details": "The Emperor is one of the earliest assault BattleMechs, dating back to 2502. The Emperor also bears the distinction of being the first 90+ ton BattleMech to mount jump jets (the famed Highlander began production in 2592).",
+  "Icon": "uixTxrIcon_emperor",
+  "Id": "chassisdef_emperor_EMP-1A",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Emperor",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Emperor"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Cooling_Jacket_Laser",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_emperor",
+ "Heatsinks": 0,
+ "InitialTonnage": 9,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 145,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 290,
+   "MaxRearArmor": 145,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 45,
+ "MeleeInstability": 23,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "emperor",
+ "PrefabIdentifier": "chrprfmech_emperorbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Juggernaut & Heavy Cavalry",
+ "Tonnage": 90,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "EMP-1A",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Emperor is one of the earliest assault BattleMechs, dating back to 2502. The Emperor also bears the distinction of being the first 90+ ton BattleMech to mount jump jets (the famed Highlander began production in 2592).",
+ "weightClass": "ASSAULT"
+}

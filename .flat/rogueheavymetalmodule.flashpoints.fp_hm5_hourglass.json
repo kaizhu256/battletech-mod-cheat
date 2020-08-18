@@ -1,0 +1,62 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 600,
+ "Description": {
+  "Details": "",
+  "Icon": "uixTxrSpot_HeavyMetal.png",
+  "Id": "fp_HM5_hourglass",
+  "Name": "Hourglass"
+ },
+ "Difficulty": 7,
+ "FlashpointDescriberCastDefId": "castDef_SumireDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Our intel was right, Commander. Surface scans show that the <i>Dobrev</i> is moored at a makeshift spaceport near Appian's southern pole. We can take it, but we'll need to move fast.",
+ "InProgressTimeout": 600,
+ "InternalName": "HM5_hourglass",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_HM5_hourglass",
+ "PotentialEmployers": [
+  "SelfEmployed"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_HM5_bullShark",
+ "Tags": {
+  "items": [
+   "HeavyMetal_Campaign",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "BaumannGroup",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": true,
+ "UseInProgressTimeoutOverride": true,
+ "Weight": 10
+}

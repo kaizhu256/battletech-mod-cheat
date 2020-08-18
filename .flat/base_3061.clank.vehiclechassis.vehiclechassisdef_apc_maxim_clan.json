@@ -1,0 +1,145 @@
+{
+ "BattleValue": 993,
+ "Custom": {
+  "CustomWeights": [
+   {
+    "ComponentDefID": "Tank_InfantryCompartment",
+    "Tonnage": 6
+   }
+  ]
+ },
+ "Description": {
+  "Cost": 4216000,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_APC_MAXIM_CLAN",
+  "Name": "Maxim Hover Transport",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_maxim",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 4
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 4
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": -4.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 120,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_8-12cv",
+ "PathingCapDefID": "pathingdef_medium_wheeled",
+ "PrefabBase": "maxim",
+ "PrefabIdentifier": "chrprfvhcl_maxim",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 50,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 0.85,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "MEDIUM"
+}

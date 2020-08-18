@@ -1,0 +1,108 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.13,
+ "APMaxArmorThickness": 78,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 222,
+ "BonusValueA": "+ 10% Crit.",
+ "BonusValueB": "- 3 Heat Generated",
+ "Category": "Energy",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.6,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: 60%",
+    "VariableDmg: 15",
+    "DmgFallOff: 50%",
+    "IsLaser"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/binary"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02008"
+  }
+ },
+ "Damage": 75,
+ "DamageVariance": 15,
+ "Description": {
+  "Cost": 220000,
+  "Details": "Binary Laser (nicknamed 'Blazers') fused two Large Laser cores together, allowing them to be fired together.  While this increased penetration, the damage was still lower than firing two Large Lasers separately. This variant adds a cooling jacket to reduce heat and can fire the cores separately. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_BinaryLaserCannon_Defiance",
+  "Manufacturer": "Defiance",
+  "Model": "Binary Laser Cannon +",
+  "Name": "B Laser +",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Binary Laser +"
+ },
+ "DisableClustering": false,
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.5,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1525,
+ "HeatDamage": 0,
+ "HeatGenerated": 52,
+ "IndirectFireCapable": false,
+ "Instability": 11,
+ "InventorySize": 2,
+ "MaxRange": 720,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "CriticalChanceMultiplier": -0.6,
+   "DamagePerShot": -25,
+   "HeatGenerated": 10,
+   "Id": "x2",
+   "Instability": -7.5,
+   "ProjectilesPerShot": 1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "Id": "Std",
+   "UIName": "Std",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  270,
+  420,
+  570
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 9,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Large",
+ "WeaponSubType": "LargeLaser",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

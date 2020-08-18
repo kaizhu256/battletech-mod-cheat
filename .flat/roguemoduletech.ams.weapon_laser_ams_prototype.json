@@ -1,0 +1,152 @@
+{
+ "AMSShootsEveryAttack": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": true,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#800000",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LAMS",
+    "AdvAMS",
+    "AMSMULTI",
+    "AMSDmg: 2",
+    "AMSAcc: 30%",
+    "AMSShots: 10",
+    "AMSHeat: 10",
+    "OLAMSDmg: 3",
+    "OLAMSAcc: 40%",
+    "OLAMSShots: 20",
+    "OLAMSHeat: 20",
+    "OLAMSJam: 60%",
+    "OLAMSRange: 180"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "w/s/a/lams"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00025"
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 530000,
+  "Details": "The Laser Anti-Missile System (LAMS) is an advanced variation of the standard Anti-Missile Systems. While the standard system utilizes a machine gun linked to specialized tracking systems, the LAMS uses a Small Pulse Laser, ensuring that the system never runs out of ammunition.  \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_Laser_AMS_Prototype",
+  "Manufacturer": "Mc Arthur",
+  "Model": "Laser-X",
+  "Name": "Laser AMS",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Proto Laser AMS"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 3,
+ "IsAAMS": true,
+ "IsAMS": true,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 2,
+   "AMSHitChance": 0.3,
+   "Id": "On",
+   "ShotsWhenFired": 10,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 3,
+   "AMSHitChance": 0.4,
+   "FlatJammingChance": 0.6,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.09,
+   "HeatGenerated": 10,
+   "Id": "Overload",
+   "MaxRange": 180,
+   "ShotsWhenFired": 20,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  140,
+  160
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 2.5,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
+ "WeaponSubType": "SmallLaser",
+ "statusEffects": []
+}

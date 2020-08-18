@@ -1,0 +1,85 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-50% Structure Weight|",
+ "BonusValueB": "Reserves 14 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "StructureFactor: -50%",
+    "Reserved: 10",
+    "StructureTPCost: 50%",
+    "StructureCBCost: 75%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Structure"
+   }
+  ],
+  "Color": {
+   "UIColor": "Orange"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "OrangeHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Endo-Steel",
+   "ReservedSlots": 10,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00010"
+  },
+  "Lootable": {
+   "ItemID": "emod_structureslots_endosteel"
+  },
+  "StructureRepair": {
+   "StructureCBCost": 1.75,
+   "StructureTPCost": 1.5
+  },
+  "Weights": {
+   "StructureFactor": 0.5
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1500 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "3 * [[Chassis.Tonnage]] / 8"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Developed by the Terran Hegemony in 2487, Endo Steel was designed especially for use in BattleMech skeletons. The Corean OM-77 Endo-Steel was an attempt to incorporate Clan Manufacturing Techniques in Inner Sphere Processes, slightly reducing its size at increased costs.",
+  "Icon": "Structure",
+  "Id": "emod_OM77_endosteel",
+  "Manufacturer": "Corean",
+  "Model": "Structure",
+  "Name": "Endo-Steel Structure",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Endo-Steel"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

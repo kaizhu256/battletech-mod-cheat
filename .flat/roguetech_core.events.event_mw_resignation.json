@@ -1,0 +1,358 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Morale",
+     "op": "LessThan",
+     "val": 5,
+     "valueConstant": "5"
+    }
+   ],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "Darius hands you a form. \"It's [[TGT_MW,{TGT_MW.Callsign}]]'s resignation. I tried to talk {TGT_MW.OBJ} out of it, but {TGT_MW.Gender?Male:he's|Female:she's|Default:they're} holding firm. {TGT_MW.SUBJ_C} said things around here have gotten really bad, and honestly {TGT_MW.Gender?Male:he's|Female:she's|Default:they're} right. Morale is in the crapper and I've had to break up too many fights recently. We've got to turn this around, Commander, or we'll keep losing people.\"",
+  "Icon": "uixTxrSpot_MechWarriorRoom.png",
+  "Id": "event_mw_resignation",
+  "Name": "Resignation"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Wish {TGT_MW.Callsign} well in {TGT_MW.DET} next job."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Later in the day, you shake [[TGT_MW,{TGT_MW.Callsign}]]'s hand. \"We all appreciate your service, {TGT_MW.FirstName}. Good luck on your next assignment.\"\r\n\r\n{TGT_MW.Callsign} says, \"Thanks, Commander. That means a lot. Good luck to you, too.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "A: friendly parting"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "Later in the day, you shake [[TGT_MW,{TGT_MW.Callsign}]]'s hand. \"We all appreciate your service, {TGT_MW.FirstName}. Good luck on your next assignment.\"\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:give|Default:gives} you a wary look. \"Sure. Whatever you say, <i>Commander</i>. Anyway, I'll be leaving the <i>Argo</i> at the next opportunity. Until then, I'll stay out of your way.\"",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "B: less friendly parting"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Get {TGT_MW.Callsign} off the ship ASAP."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"I want [[TGT_MW,{TGT_MW.Callsign}]] off my ship as soon as possible,\" you tell Darius. \"If the others keep seeing {TGT_MW.OBJ} in the barracks and on the mess deck, it's just going to make things worse.\"\r\n\r\nDarius slowly nods. \"I see your point. I'll make arrangements, but it could be a bit before we can get rid of {TGT_MW.OBJ}.\"\r\n\r\n\"I'm sure you'll make it work.\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "A: off the ship"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Argo: Lounge]",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Throw a farewell party to improve Morale."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_rec_lounge1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You bring the crew and the MechWarriors together in the <i>Argo</i>'s lounge to give [[TGT_MW,{TGT_MW.Callsign}]] a proper send-off. Darius makes a speech, and Yang presents {TGT_MW.Callsign} with a framed 'Mech repair bill.\r\n\r\nThen the drinking begins in earnest.\r\n\r\nBy the end of the night, the mood is bittersweet.\r\n\r\n\"Thanks for everything, Commander,\" {TGT_MW.Callsign} finally says to you.",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "A: thanks, commander"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "You bring the crew and the MechWarriors together in the <i>Argo</i>'s lounge to give [[TGT_MW,{TGT_MW.Callsign}]] a proper send-off. Darius makes a speech, and Yang presents {TGT_MW.Callsign} with a framed 'Mech repair bill.\r\n\r\nThen the drinking begins in earnest.\r\n\r\nBy the end of the night, the mood is bittersweet.\r\n\r\nYou shake {TGT_MW.Callsign}'s hand. \"Take care of yourself, {TGT_MW.FirstName}. We might need you again.\"\r\n\r\nThis provokes a genuine smile. \"Sure thing, Commander.\"",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "B: take care of yourself"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

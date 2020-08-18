@@ -1,0 +1,324 @@
+{
+ "AdditionalObjects": [
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [
+      "pilot_morale_low"
+     ],
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": "0"
+     }
+    ],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": "Tags/PilotTags"
+    },
+    "Scope": "SecondaryMechWarrior"
+   },
+   "Scope": "SecondaryMechWarrior"
+  }
+ ],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "Even before you arrive at the morning briefing, you can hear Dr. Murad praising [[TGT_MW,{TGT_MW.Callsign}]], saying how valuable their support has been to the engineering team.\r\n\r\nYang chimes in. \"Yeah, and then {TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:'re|Default:} showed up in the Mech Bay. It only took a few minutes for {TGT_MW.Callsign} to figure out what was wrong with one of my winches.\"\r\n\r\nSumire smiles. \"Well, send {TGT_MW.Callsign} to the bridge, Chief. I could use the help!\"\r\n\r\nFinally, Darius notices you standing in the doorway and explains. \"Commander, we have to do something special for {TGT_MW.Callsign}. {TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:'re|Default:'s} the most helpful member on the ship!\"",
+  "Icon": "uixTxrSpot_DailyBriefing.png",
+  "Id": "event_mw_goodDeeds_disgraced",
+  "Name": "Good Deeds"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Privacy for a mechwarrior outside the cockpit is rare.",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Assign [[TGT_MW,{TGT_MW.Callsign}]] private VIP quarters in the <i>Argo<i>."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Later in the week, Darius delivers an update on the situation.\r\n\r\nRelocating [[TGT_MW,{TGT_MW.Callsign}]] near the officers area has not only kept {TGT_MW.OBJ} more involved with the crew, it's also given the lucky MechWarrior the solitude {TGT_MW.SUBJ} craved.\r\n\r\n\"Commander, I don't know if you've went to visit, but it's kind of impressive what {TGT_MW.CALLSIGN} has managed to do with the space. It's almost… homey.\"",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "Pilot High morale for 30 days"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_disgraced"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Disgraced or not?",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Throw {TGT_MW.Callsign} a party in the Barracks!"
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "High Morale for 14 days (no longer Disgraced)!",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "High morale for 14 days"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_disgraced"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "The next morning, Darius delivers an update on the situation.\r\n\r\n\"While the party for {TGT_MW.Callsign} was a success there was a small problem.\"\r\n\r\nAt the party there was an… incident. Fortunately, I was nearby to intervene before things got out of hand. I had to assign [[SCN_MW,{SCN_MW.Callsign}]] to kitchen duty for a few days. I think that diffused the situation. But {TGT_MW.Callsign} may still be having issues considering what happened.",
+      "Icon": null,
+      "Id": "outcome_1_1",
+      "Name": "Low Company morale, SCN-MW on kitchen duty"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "3",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 7,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "pilot_disgraced"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 90
+}

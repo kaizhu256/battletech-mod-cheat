@@ -1,0 +1,44 @@
+{
+ "AdditionalCost": 5000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "There's a lot of work to do on this baby, but we can manage it.",
+ "Description": {
+  "Cost": 0,
+  "Details": "The shuttle was allowed to go to rust sitting in the junkyard, Commander. Most parts of the Leopard’s basic structure consist of little more than rust and hope. My ‘techs can get to work repairing the worst of the damage, but I warn you now, to complete all of the work will be a long process. <b><color=#F79232>Increases Drop Weight Limit by 50 tons</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_WeightLimit",
+  "Name": "Engine Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 200000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot",
+   "argoUpgrade_PilotSlot",
+   "argoUpgrade_drive1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_MaxTonnage",
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Weightlimit"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 6,
+ "shipUpgradeCategoryID": "BDDropTonnage"
+}

@@ -1,0 +1,101 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.05,
+ "APMaxArmorThickness": 30,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "ChemMediumInternal",
+ "AttackRecoil": 1,
+ "BattleValue": 42,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#800080",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ChemicalLaser",
+    "InternalAmmo: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/chemical"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 20,
+   "HeatDamagePerAmmo": 20
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02005"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 90000,
+  "Details": "Gotta leave it to a pirate to fix a broken Chem Laser Autoloader by just wiring the ammo into the assembly with a old terran tubular magazine feed like a pump action shotgun. \n\n <b><color=#F79232>10 rounds.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "ChemLaser",
+  "Id": "Weapon_Laser_MediumLaser_Chemical_Internal",
+  "Manufacturer": "Hellion",
+  "Model": "Medium Chem Laser",
+  "Name": "M Chem Laser",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Medium Chem Laser (PRT)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0425,
+ "HeatDamage": 0,
+ "HeatGenerated": 6,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3.3,
+ "InventorySize": 2,
+ "MaxRange": 360,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 1,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
+ "WeaponSubType": "MediumLaser",
+ "statusEffects": []
+}

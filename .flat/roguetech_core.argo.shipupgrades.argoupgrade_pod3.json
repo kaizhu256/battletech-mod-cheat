@@ -1,0 +1,66 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Pod"
+   ],
+   "value": "2"
+  }
+ ],
+ "AdditionalCost": 3000,
+ "AssignedCastDefId": "castDef_DariusDefault",
+ "AssignedCastDescription": "Commander, there are already a half dozen requests for new facilities for Gamma Pod, ranging from a swimming pool to a DropShip-sized bouncy castle. On a more practical note, we could also begin using the Gamma Pod medical facilities.",
+ "Category": "HABITAT_POD",
+ "Description": {
+  "Cost": 0,
+  "Details": "Gamma Pod is very much a blank slate, as only its internal support structures survived intact. Rebuilding the habitation decks of the pod still leaves plenty of space for other facilities.",
+  "Icon": "uixSvgIcon_shipUpgrade_podGamma",
+  "Id": "argoUpgrade_pod3",
+  "Name": "Gamma Pod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_ArgoPod",
+ "Location": "SHIP",
+ "PurchaseCost": 2250000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_pod2",
+   "argoUpgrade_power2",
+   "argoUpgrade_structure2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BarracksPods",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 3,
+   "valueConstant": ""
+  },
+  {
+   "name": "BarracksPods_Display",
+   "set": true,
+   "typeString": "System.Int32",
+   "value": 24,
+   "valueConstant": ""
+  },
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_pod3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 20
+}

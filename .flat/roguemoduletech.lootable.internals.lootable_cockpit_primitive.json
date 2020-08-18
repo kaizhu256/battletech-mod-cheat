@@ -1,0 +1,113 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Bad Sensors|",
+ "BonusValueB": "Cannot Eject.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 0.8,
+   "ArmorTPCost": 0.9
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "SkillPiloting: -1",
+    "NoEject",
+    "ArmorTPCost: -10%",
+    "ArmorCBCost: -20%",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cockpit"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00019"
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "The Primitive Cockpit is functionally similar to the modern BattleMech cockpit, but due to the bulkier components, it weighs five tons instead of three.  It lacks an ejection seat and the sensors are even worse than that of a standard IndustrialMech's",
+  "Icon": "uixSvgIcon_equipment_Cockpit",
+  "Id": "lootable_Cockpit_Primitive",
+  "Manufacturer": "Generic",
+  "Model": "Primitive",
+  "Name": "Primitive Cockpit",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Primitive Cockpit"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Buffs Piloting Skill",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "StatusEffect_Cockpit_Skill_Piloting",
+    "Name": "Piloting Buff"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "Piloting",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "PASSIVE: Attacking with a single weapon ignores COVER and GUARDED on the target.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "PrimitiveCockpitEject",
+    "Name": "No Ejection"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "false",
+    "operation": "Set",
+    "statName": "CanEject",
+    "targetCollection": "Pilot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

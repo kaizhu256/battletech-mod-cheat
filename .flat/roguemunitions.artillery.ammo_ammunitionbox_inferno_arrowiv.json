@@ -1,0 +1,75 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_ArrowIV_Inferno",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 5,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeatDamage: 30",
+    "AreaOfEffectConversion: 80%",
+    "AreaOfEffect: 75",
+    "AreaOfEffectDmg: 35",
+    "AreaOfEffectSTABDmg: 15",
+    "AreaOfEffectHeatDmg: 35",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 60",
+    "FireTerrainDuration: 4",
+    "FireTerrainStrength: 15",
+    "ScatterRadius: 35, 120",
+    "ArrowIVAmmo: 5",
+    "MissileHP: 20",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/t/arrowiv"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 50,
+   "HeatDamagePerAmmo": 50,
+   "StabilityDamagePerAmmo": 30
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00051"
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 1
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "ArrowIV",
+  "Id": "Ammo_AmmunitionBox_Inferno_ArrowIV",
+  "Manufacturer": "Generic",
+  "Model": "ArrowIV Inferno",
+  "Name": "ArrowIV Inferno Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo ArrowIV Inferno"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

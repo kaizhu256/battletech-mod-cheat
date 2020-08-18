@@ -1,0 +1,129 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 78,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 165,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 1",
+    "WpnRecoil: 2",
+    "DmgFallOff: 50%",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/snppc"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02012"
+  }
+ },
+ "Damage": 60,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 580000,
+  "Details": "The Snub-Nose PPC is to a Particle Projector Cannon as a sawed-off shotgun is to a shotgun. This version of the PPC is slightly lighter than a standard PPC, but its energy discharge trails off considerably faster, leading to shorter range and reduced damage capacity over range. An interesting side benefit is the dramatically increased short range, longer than almost any other weapon.",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PPC_SNUBNOSE",
+  "Manufacturer": "Lord's Light",
+  "Model": "SN Particle Projector Cannon",
+  "Name": "Snub-Nose-PPC",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "SnubNose PPC"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.5,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.175,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "IndirectFireCapable": false,
+ "Instability": 7,
+ "InventorySize": 2,
+ "MaxRange": 780,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  270,
+  390,
+  450
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

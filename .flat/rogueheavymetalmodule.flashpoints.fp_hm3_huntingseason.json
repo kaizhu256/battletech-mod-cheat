@@ -1,0 +1,62 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 600,
+ "Description": {
+  "Details": "One Contract template",
+  "Icon": "uixTxrSpot_HeavyMetal.png",
+  "Id": "fp_HM3_huntingSeason",
+  "Name": "Hunting Season"
+ },
+ "Difficulty": 5,
+ "FlashpointDescriberCastDefId": "castDef_FarahDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "This is exciting, Commander—our first real lead in the hunt for the <i>Dobrev</i>! If we find that derelict, we may find the answer to the single greatest mystery of our age!",
+ "InProgressTimeout": 600,
+ "InternalName": "HM3_huntingSeason",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_HM3_huntingSeason",
+ "PotentialEmployers": [
+  "SelfEmployed"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_ItemDouble_rare",
+ "Tags": {
+  "items": [
+   "HeavyMetal_Campaign",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "BaumannGroup",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": true,
+ "UseInProgressTimeoutOverride": true,
+ "Weight": 10
+}

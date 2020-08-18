@@ -1,0 +1,67 @@
+{
+ "Settings": [
+  {
+   "IncompatibleTags": [
+    "MeleeWeapon.LeftArm",
+    "MeleeWeapon.RightArm"
+   ],
+   "RequiredAnyTags": [
+    "Hand.RightArm",
+    "Hand.LeftArm"
+   ],
+   "Tag": "HandHeld"
+  },
+  {
+   "IncompatibleTags": [
+    "MeleeWeapon.LeftArm",
+    "MeleeWeapon.RightArm"
+   ],
+   "RequiredTags": [
+    "Hand.RightArm",
+    "Hand.LeftArm"
+   ],
+   "Tag": "2HandHeld"
+  },
+  {
+   "IncompatibleTags": [
+    "2HandHeld",
+    "HandHeld"
+   ],
+   "RequiredAnyTags": [
+    "Hand.RightArm"
+   ],
+   "Tag": "MeleeWeapon.RightArm"
+  },
+  {
+   "IncompatibleTags": [
+    "2HandHeld",
+    "HandHeld"
+   ],
+   "RequiredTags": [
+    "Hand.LeftArm"
+   ],
+   "Tag": "MeleeWeapon.LeftArm"
+  },
+  {
+   "IncompatibleTags": [],
+   "RequiredAnyTags": [
+    "Hand.RightArm"
+   ],
+   "Tag": "Blade.RightArm"
+  },
+  {
+   "IncompatibleTags": [],
+   "RequiredTags": [
+    "Hand.LeftArm"
+   ],
+   "Tag": "Blade.LeftArm"
+  },
+  {
+   "IncompatibleTags": [
+    "SpecialMelee"
+   ],
+   "RequiredTags": [],
+   "Tag": "Gear_Actuator_Prototype_Cutlass"
+  }
+ ]
+}

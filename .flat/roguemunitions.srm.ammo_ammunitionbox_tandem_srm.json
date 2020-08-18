@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_SRM_Tandem",
+ "BattleValue": 0,
+ "BonusValueA": "+200% Crit|",
+ "BonusValueB": "-50% Damage.",
+ "Capacity": 100,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ThroughArmorDamage: 4",
+    "SRMDamage: -50%",
+    "MissileHP: 3",
+    "SRMAmmo: 100"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/s/srm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 8,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000037"
+  },
+  "TRGBColor": {
+   "Color": "#EE82EE",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 25000,
+  "Details": "Designed to replace standard SRMs with special warheads that penetrate armor and inflict damage to the internal structure of the target, the Tandem-Charge Missile uses a pair of explosives to inflict damage. The first explosive is a shaped charge that penetrates the unit's outer armor, while the second charge is propelled through the newly created breach to damage internal components. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "SRM",
+  "Id": "Ammo_AmmunitionBox_Tandem_SRM",
+  "Manufacturer": "Generic",
+  "Model": "SRM Tandem",
+  "Name": "SRM TandemCharge Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo SRM Tandem"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

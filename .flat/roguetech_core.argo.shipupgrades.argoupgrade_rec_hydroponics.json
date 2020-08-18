@@ -1,0 +1,41 @@
+{
+ "AdditionalCost": -3000,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "I've looked over Gamma Pod, Commander, and most of the original plumbing is intact. With a small amount of effort, we could repair the hydroponics and have fresh herbs and vegetables instead of reconstituted paste in the galley. Just a thought.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "Near the spine, the spin of the pods isn't sufficient to generate any real apparent gravity. This makes those areas bad for living in, but excellent for growing hydroponic crops. They freshen the air and add variety to mealtimes.",
+  "Icon": "uixSvgIcon_shipUpgrade_hydroponics",
+  "Id": "argoUpgrade_rec_hydroponics",
+  "Name": "Hydroponic Garden",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_Hydroponics",
+ "Location": "SHIP",
+ "PurchaseCost": 450000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_hydroponics"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 20
+}

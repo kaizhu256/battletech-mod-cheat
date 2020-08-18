@@ -1,0 +1,116 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 6,
+ "AOEInstability": 1,
+ "AOERange": 60,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 30,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": true,
+ "AmmoCategory": "MARS",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#8a8a5c",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 6",
+    "MissileHP: 6",
+    "IsRocket: 10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/rl"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 8,
+   "HeatDamagePerAmmo": 8,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03002"
+  },
+  "Lootable": {
+   "ItemID": "Weapon_MARS"
+  }
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 150000,
+  "Details": "Based on an ancient Ballistic Multiple Launch Rocket System does this fire Long Range Area of Effect Missiles. This version got heavily modified with a modern ammo feed system compatible to most Battle Mech's. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-launcher",
+  "Id": "Weapon_MARS_Quirk",
+  "Manufacturer": "Sterope Defense Industries",
+  "Model": "M270 MLRS",
+  "Name": "MARS",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "MARS"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 10,
+ "MaxRange": 1200,
+ "MinRange": 200,
+ "MissileHealth": 6,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  300,
+  600,
+  900
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 10,
+ "SpreadRange": 80,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 8,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM10",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

@@ -1,0 +1,258 @@
+{
+ "BattleValue": 7150000,
+ "ChassisTags": {
+  "items": [
+   "HeroMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Catapult"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 65,
+ "DFAInstability": 33,
+ "DFASelfDamage": 65,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1516032,
+  "Details": "A field refit given popularity after repeated sightings in combat piloted by MechWarrior Leigh Voss, the CLPT-Jester typically begins life as a refit kit for a CPLT-K2 or similar variant. Stripping out the PPCs, the Jester manages to run enough power couplings to cram a laser into each arm, each side torso, and two in the center torso, with additional fittings for support weapons if available. It also mounts an AMS system and advanced TTS systems, allowing for lethally accurate fire even beyond traditional weapon ranges. The only major advanced piece of kit is its Endo-Steel structure; the engine and armor are both standard, making the Jester quite tough. With a plethora of double heat sinks keeping it's weapons cool and the ability to lay down volley after pinpoint volley of fire, the Jester is simple, but not to be underestimated.",
+  "Icon": "uixTxrIcon_catapultk2",
+  "Id": "chassisdef_jester_CPLT-J",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Catapult",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Catapult"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Accurate_Category_Energy",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_k2pult",
+ "Heatsinks": 0,
+ "InitialTonnage": 6.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 33,
+ "MeleeInstability": 17,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "k2pult",
+ "PrefabIdentifier": "chrprfmech_k2pultbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Hero Mech",
+ "Tonnage": 65,
+ "TopSpeed": 64,
+ "TurnRadius": 90,
+ "VariantName": "CPLT-J",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A field refit given popularity after repeated sightings in combat piloted by MechWarrior Leigh Voss, the CLPT-Jester typically begins life as a refit kit for a CPLT-K2 or similar variant. Stripping out the PPCs, the Jester manages to run enough power couplings to cram a laser into each arm, each side torso, and two in the center torso, with additional fittings for support weapons if available. It also mounts an AMS system and advanced TTS systems, allowing for lethally accurate fire even beyond traditional weapon ranges. The only major advanced piece of kit is its Endo-Steel structure; the engine and armor are both standard, making the Jester quite tough. With a plethora of double heat sinks keeping it's weapons cool and the ability to lay down volley after pinpoint volley of fire, the Jester is simple, but not to be underestimated.",
+ "weightClass": "HEAVY"
+}

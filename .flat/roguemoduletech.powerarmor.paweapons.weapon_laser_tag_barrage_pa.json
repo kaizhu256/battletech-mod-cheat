@@ -1,0 +1,128 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.002,
+ "APMaxArmorThickness": 1.2,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "Target Painter",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long",
+   "paweapon"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "Cooldown": 3,
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AreaOfEffect: 50",
+    "AreaOfEffectDmg: 20",
+    "AreaOfEffectHeatDmg: 10",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainDuration: 2",
+    "FireTerrainStrength: 5",
+    "NoAA",
+    "WpnCooldown: 3",
+    "DelayedImpact: 2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/t/tag"
+   },
+   {
+    "CategoryID": "OffBoardTAGPA"
+   },
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1210000,
+  "Details": "Target Acquisition Gear for Powered Infantry used to mark targets for close support Artillery",
+  "Icon": "LightTAG",
+  "Id": "Weapon_Laser_TAG_Barrage_PA",
+  "Manufacturer": "NAIS",
+  "Model": "Target Acquisition Gear",
+  "Name": "TAG",
+  "Purchasable": false,
+  "Rarity": 15,
+  "UIName": "BA TAG Barrage"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 510,
+ "MinRange": 0,
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0.3,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_TAG",
+ "WeaponSubType": "SmallLaserER",
+ "deferredEffect": {
+  "AOEDamage": 20,
+  "AOEHeatDamage": 10,
+  "AOEInstability": 5,
+  "AOERange": 50,
+  "FireDurationWithoutForest": 2,
+  "FireTerrainCellRadius": 1,
+  "FireTerrainChance": 1,
+  "FireTerrainStrength": 5,
+  "RangeColor": {
+   "C": "#00FF00",
+   "I": 1.5
+  },
+  "SFX": "explosion_small",
+  "VFX": "WFX_ExplosiveSmokeS",
+  "VFXtime": 5,
+  "damageApplyTime": 3,
+  "id": "PAMORTARS",
+  "rounds": 1,
+  "statusEffects": [],
+  "statusEffectsRangeFalloff": true,
+  "sticky": true,
+  "text": "Mortars Incoming",
+  "waitVFX": "vfxPrfPrtl_artillerySmokeSignal_loop"
+ },
+ "statusEffects": [],
+ "weaponCategoryID": "BattleArmor"
+}

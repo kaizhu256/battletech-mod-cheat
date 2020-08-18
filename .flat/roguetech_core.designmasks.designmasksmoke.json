@@ -1,0 +1,75 @@
+{
+ "Custom": {
+  "CustomMoveCost": {
+   "Hover": {
+    "SprintMultiplier": 1,
+    "moveCost": 1.1
+   }
+  }
+ },
+ "Description": {
+  "Details": "Smoke Drastically reduces Sight and Visibility.",
+  "Icon": "uixSvgIcon_designMask_spores_debuff",
+  "Id": "DesignMaskSmoke",
+  "Name": "SMOKE SCREEN"
+ },
+ "allDamageDealtMultiplier": 1,
+ "allDamageTakenMultiplier": 1,
+ "audioSwitchRainingSurfaceType": "dirt",
+ "audioSwitchSurfaceType": "dirt",
+ "canBurn": false,
+ "canExplode": false,
+ "energyDamageDealtMultiplier": 1,
+ "energyDamageTakenMultiplier": 1,
+ "grantsEvasive": false,
+ "grantsGuarded": false,
+ "heatPerTurn": 0,
+ "heatSinkMultiplier": 1,
+ "legStructureDamageMax": 0,
+ "legStructureDamageMin": 0,
+ "moveCostMechAssault": 1.25,
+ "moveCostMechHeavy": 1.2,
+ "moveCostMechLight": 1.1,
+ "moveCostMechMedium": 1.15,
+ "moveCostSprintMultiplier": 1,
+ "moveCostTrackedAssault": 1.1,
+ "moveCostTrackedHeavy": 1.1,
+ "moveCostTrackedLight": 1.1,
+ "moveCostTrackedMedium": 1.1,
+ "moveCostWheeledAssault": 1.1,
+ "moveCostWheeledHeavy": 1.1,
+ "moveCostWheeledLight": 1.1,
+ "moveCostWheeledMedium": 1.1,
+ "signatureMultiplier": 1,
+ "stabilityDamageMultiplier": 1,
+ "stickyEffect": {
+  "Description": {
+   "Details": "This unit stood in a Smoke Cloud and has 25% Vision until the end of it's next activation.",
+   "Icon": "uixSvgIcon_designMask_spores",
+   "Id": "DesignMaskSmoke",
+   "Name": "SMOKE SCREEN"
+  },
+  "durationData": {
+   "duration": 2,
+   "stackLimit": 1,
+   "ticksOnMovements": true
+  },
+  "effectType": "StatisticEffect",
+  "nature": "Buff",
+  "statisticData": {
+   "modType": "System.Single",
+   "modValue": "0.75",
+   "operation": "Float_Multiply",
+   "statName": "SpotterDistanceMultiplier"
+  },
+  "targetingData": {
+   "effectTargetType": "SingleTarget",
+   "showInStatusPanel": true,
+   "showInTargetPreview": true
+  }
+ },
+ "targetabilityModifier": 1,
+ "toHitFromModifier": 2,
+ "visibilityHeight": 50,
+ "visibilityMultiplier": 0.5
+}

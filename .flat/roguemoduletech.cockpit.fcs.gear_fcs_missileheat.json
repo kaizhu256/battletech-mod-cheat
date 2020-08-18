@@ -1,0 +1,102 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+- 15% Heat (Missiles)",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MissilesHeatGenerated: -15%",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 250000,
+  "Details": "The IMB 433 Fire Control System was designed to stagger the fire of missiles onboard a BattleMech. While a rather simple Control Suite, the multiple profiles needed for each aspect of tube management are precalculated. Upon being fed manufacturer information on Missile Tubes, as well as Ammunition Loads, the IMB is capable of releasing one rocket after another in a staggered volley. Limiting the total radiant heat buildup within the weapon system; regardless of factors. ",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_MissileHeat",
+  "Manufacturer": "IMB",
+  "Model": "IMB 433",
+  "Name": "Rainmaker FCS",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "FCS Rainmaker"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Missile weapon attacks have their hit improved by +2.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-ARTEMIS-BONUS",
+    "Name": "Artemis IV System"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

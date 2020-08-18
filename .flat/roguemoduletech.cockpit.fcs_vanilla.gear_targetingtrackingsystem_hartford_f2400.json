@@ -1,0 +1,132 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Direct-Fire Missile Acc.",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DFMissileAcc: +1",
+    "MissileCrit: 25%",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00201"
+  }
+ },
+ "Description": {
+  "Cost": 500000,
+  "Details": "All 'Mechs come equipped with a stock targeting and tracking system—or TTS—which can be upgraded for improved performance. Upgrades increase accuracy when attacking with Ballistic, Energy, or Missile weaponry, depending on the type of TTS. Doesn't stack with same type but different tiers do. Does not improve indirect fire.",
+  "Icon": "targeting",
+  "Id": "Gear_TargetingTrackingSystem_Hartford_F2400",
+  "Manufacturer": "Hartford",
+  "Model": "F2400",
+  "Name": "Hartford F2400 TTS ",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "FCS Missile +"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Missile Weapons.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-TTSMISSACC2",
+    "Name": "MISSILE WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Indirect Missiles Attacks lose 2 accuracy so only direct ones get the +2 bonus from Artemis.",
+    "Icon": "targeting",
+    "Id": "TTS2Correction",
+    "Name": "Indirect Fire Malus"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "ToHitIndirectModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Missile weapon attacks have their hit improved by 3.",
+    "Icon": "targeting",
+    "Id": "StatusEffect-TTSMISSCRIT",
+    "Name": "Missile WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "CriticalChanceMultipler",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

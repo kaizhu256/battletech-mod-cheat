@@ -1,0 +1,301 @@
+{
+ "AAMSAICoeff": 0.2,
+ "AIMStandalone": "AttackImprovementMod.dll",
+ "AIPeerToPeerFirewallPierceThrough": false,
+ "AIPeerToPeerNodeEnabled": false,
+ "APMinCritChance": 0.1,
+ "AdditinalAssets": [
+  "vfx2",
+  "impact",
+  "nuka",
+  "glow",
+  "burnedtrees",
+  "helicopter_sound",
+  "floatiemessage",
+  "firevfx",
+  "firevfx2"
+ ],
+ "AdvancedCirtProcessing": true,
+ "AmmoCanBeExhausted": true,
+ "AmmoCookoff": {
+  "Enabled": false,
+  "OverheatChance": 10,
+  "ShutdownHeatChance": 25,
+  "UseHBSMercySetting": false
+ },
+ "AttackLogWrite": false,
+ "BurnedFX": "bullethole-prefab",
+ "BurnedForestDesignMask": "DesignMaskBurnedForest",
+ "BurnedOffsetX": 0,
+ "BurnedOffsetY": 0,
+ "BurnedOffsetZ": 0,
+ "BurnedScaleX": 2,
+ "BurnedScaleY": 2,
+ "BurnedScaleZ": 2,
+ "BurnedTrees": {
+  "BumpMap": "envTxrTree_treesVaried_polar_frozen_nrm",
+  "BurnedTreeScale": 2,
+  "DecalScale": 40,
+  "DecalTexture": "envTxrDecl_terrainDmgSmallBlack_alb",
+  "MainTex": "envTxrTree_treesVaried_polar_frozen_alb",
+  "Mesh": "envMdlTree_deadWood_polar_frozen_shapeA_LOD0",
+  "MetallicGlossMap": "envTxrTree_treesVaried_polar_frozen_mtl",
+  "OcculusionMap": "envTxrTree_treesVaried_polar_frozen_amb",
+  "Transmission": "envTxrTree_treesVaried_polar_frozen_trs"
+ },
+ "BurningFX": "vfxPrfPrtl_fireTerrain_lrgLoop",
+ "BurningForestBaseExpandChance": 0.25,
+ "BurningForestCellRadius": 3,
+ "BurningForestDesignMask": "DesignMaskBurningForest",
+ "BurningForestStrength": 15,
+ "BurningForestTurns": 2,
+ "BurningOffsetX": 0,
+ "BurningOffsetY": 0,
+ "BurningOffsetZ": 0,
+ "BurningScaleX": 1,
+ "BurningScaleY": 1,
+ "BurningScaleZ": 1,
+ "BurningTerrainDesignMask": "DesignMaskBurningTerrain",
+ "ClusterAIMult": 0.2,
+ "CritLocationTransfer": true,
+ "DamageJamAIAvoid": 2,
+ "DefaultAoEDamageMult": {
+  "Building": {
+   "Damage": 0.7,
+   "Range": 1.2
+  },
+  "Mech": {
+   "Damage": 1,
+   "Range": 1
+  },
+  "Turret": {
+   "Damage": 0.8,
+   "Range": 0.9
+  },
+  "Vehicle": {
+   "Damage": 0.9,
+   "Range": 0.8
+  }
+ },
+ "DestoryedLocationCriticalAllow": false,
+ "DestoryedLocationDamageTransferStructure": false,
+ "DestroyedComponentsCritTrap": false,
+ "DontShowBurnedTrees": false,
+ "DontShowNotDangerouceJammMessages": true,
+ "DontShowScorchTerrain": false,
+ "DynamicDesignMasksDefs": [
+  "DesignMaskFallout",
+  "DesignMaskSmoke",
+  "DesignMaskCrystals",
+  "DesignMaskForest",
+  "DesignMaskGeothermal",
+  "DesignMaskGeothermalLava",
+  "DesignMaskIce",
+  "DesignMaskRadiation",
+  "DesignMaskSpores",
+  "DesignMaskBurningForest",
+  "DesignMaskBurnedForest",
+  "DesignMaskBurningTerrain"
+ ],
+ "FiringPreviewRecalcTrottle": 0,
+ "ForestBurningDurationBiomeMult": {
+  "DesignMaskBiomeBadlandsParched": 0.7,
+  "DesignMaskBiomeDesertParched": 0.7,
+  "DesignMaskBiomeHighlandsFall": 1,
+  "DesignMaskBiomeHighlandsSpring": 1,
+  "DesignMaskBiomeJungleTropical": 1.5,
+  "DesignMaskBiomeLowlandsCoastal": 1,
+  "DesignMaskBiomeLowlandsFall": 1,
+  "DesignMaskBiomeLowlandsSpring": 1,
+  "DesignMaskBiomeLunarVacuum": 0,
+  "DesignMaskBiomeMartianVacuum": 0,
+  "DesignMaskBiomePolarFrozen": 0.7,
+  "DesignMaskBiomeTundraFrozen": 0.7
+ },
+ "ForestBurningStrengthBiomeMult": {
+  "DesignMaskBiomeBadlandsParched": 1.5,
+  "DesignMaskBiomeDesertParched": 1.5,
+  "DesignMaskBiomeHighlandsFall": 1,
+  "DesignMaskBiomeHighlandsSpring": 1,
+  "DesignMaskBiomeJungleTropical": 0.5,
+  "DesignMaskBiomeLowlandsCoastal": 1,
+  "DesignMaskBiomeLowlandsFall": 1,
+  "DesignMaskBiomeLowlandsSpring": 1,
+  "DesignMaskBiomeLunarVacuum": 0,
+  "DesignMaskBiomeMartianVacuum": 0,
+  "DesignMaskBiomePolarFrozen": 0.3,
+  "DesignMaskBiomeTundraFrozen": 0.3
+ },
+ "InfoPanelDefaultState": true,
+ "JamAIAvoid": 1,
+ "JumpLandingMineAttractRadius": 2,
+ "LitFireChanceBiomeMult": {
+  "DesignMaskBiomeBadlandsParched": 2,
+  "DesignMaskBiomeDesertParched": 2,
+  "DesignMaskBiomeHighlandsFall": 1,
+  "DesignMaskBiomeHighlandsSpring": 1,
+  "DesignMaskBiomeJungleTropical": 0.7,
+  "DesignMaskBiomeLowlandsCoastal": 1,
+  "DesignMaskBiomeLowlandsFall": 1,
+  "DesignMaskBiomeLowlandsSpring": 1,
+  "DesignMaskBiomeLunarVacuum": 1,
+  "DesignMaskBiomeMartianVacuum": 1,
+  "DesignMaskBiomePolarFrozen": 0.5,
+  "DesignMaskBiomeTundraFrozen": 0.5
+ },
+ "MechHasNoStabilityTag": [
+  "mech_no_stability"
+ ],
+ "MineFieldPathingMods": {
+  "pathingdef_assault": 1,
+  "pathingdef_assault_hover": 0.6,
+  "pathingdef_assault_tracked": 1.15,
+  "pathingdef_assault_wheeled": 1,
+  "pathingdef_heavy": 0.95,
+  "pathingdef_heavy_hover": 0.5,
+  "pathingdef_heavy_tracked": 1.05,
+  "pathingdef_heavy_wheeled": 0.9,
+  "pathingdef_light": 0.85,
+  "pathingdef_light_hover": 0.3,
+  "pathingdef_light_tracked": 0.85,
+  "pathingdef_light_wheeled": 0.7,
+  "pathingdef_medium": 0.9,
+  "pathingdef_medium_hover": 0.4,
+  "pathingdef_medium_tracked": 0.95,
+  "pathingdef_medium_wheeled": 0.8,
+  "pathingdef_ultralight": 0.1
+ },
+ "NoCritFloatieMessage": true,
+ "NoForestBiomes": [
+  "DesignMaskBiomeMartianVacuum",
+  "DesignMaskBiomeLunarVacuum"
+ ],
+ "NullifyDestoryedLocationDamage": false,
+ "OrderButtonPaddingScale": 0.3,
+ "OrderButtonWidthScale": 0.5,
+ "PatchWeaponSlotsOverflowCultures": [
+  "CULTURE_RU_RU"
+ ],
+ "PenetrateAIMult": 0.4,
+ "RemoveFromCritRollStatName": "ignore_damage",
+ "SelectionStateMoveBaseProcessMousePosTrottle": 4,
+ "ShowAttackGroundButton": true,
+ "ShowWeaponOrderButtons": true,
+ "SidePanelInfoSelfExternal": false,
+ "SidePanelInfoTargetExternal": true,
+ "TagAoEDamageMult": {
+  "aoe_increased_major": {
+   "Damage": 2,
+   "Range": 2
+  },
+  "aoe_increased_minor": {
+   "Damage": 1.2,
+   "Range": 1.2
+  },
+  "aoe_reduced_huge": {
+   "Damage": 0.1,
+   "Range": 0.1
+  },
+  "aoe_reduced_major": {
+   "Damage": 0.5,
+   "Range": 0.5
+  },
+  "aoe_reduced_minor": {
+   "Damage": 0.8,
+   "Range": 0.8
+  },
+  "unit_powerarmor": {
+   "Damage": 1.5,
+   "Range": 0.5
+  },
+  "unit_superheavy": {
+   "Damage": 1.5,
+   "Range": 1.5
+  }
+ },
+ "TerrainFiendlyFireRadius": 10,
+ "TransferHeatDamageToNormalTag": [
+  "heat_damage_to_normal"
+ ],
+ "UpdateReticleTrottle": 8,
+ "WeaponBurningDurationBiomeMult": {
+  "DesignMaskBiomeBadlandsParched": 1,
+  "DesignMaskBiomeDesertParched": 1,
+  "DesignMaskBiomeHighlandsFall": 1,
+  "DesignMaskBiomeHighlandsSpring": 1,
+  "DesignMaskBiomeJungleTropical": 0.7,
+  "DesignMaskBiomeLowlandsCoastal": 1,
+  "DesignMaskBiomeLowlandsFall": 1,
+  "DesignMaskBiomeLowlandsSpring": 1,
+  "DesignMaskBiomeLunarVacuum": 0.2,
+  "DesignMaskBiomeMartianVacuum": 0.3,
+  "DesignMaskBiomePolarFrozen": 0.7,
+  "DesignMaskBiomeTundraFrozen": 0.7
+ },
+ "WeaponBurningStrengthBiomeMult": {
+  "DesignMaskBiomeBadlandsParched": 1,
+  "DesignMaskBiomeDesertParched": 1,
+  "DesignMaskBiomeHighlandsFall": 1,
+  "DesignMaskBiomeHighlandsSpring": 1,
+  "DesignMaskBiomeJungleTropical": 0.7,
+  "DesignMaskBiomeLowlandsCoastal": 1,
+  "DesignMaskBiomeLowlandsFall": 1,
+  "DesignMaskBiomeLowlandsSpring": 1,
+  "DesignMaskBiomeLunarVacuum": 1,
+  "DesignMaskBiomeMartianVacuum": 1,
+  "DesignMaskBiomePolarFrozen": 0.5,
+  "DesignMaskBiomeTundraFrozen": 0.5
+ },
+ "WeaponPanelWidthScale": 1.1,
+ "WeaponRealizerSettings": "WeaponRealizerSettings.json",
+ "WeaponRealizerStandalone": "WeaponRealizer.dll",
+ "bloodSettings": {
+  "DecalScales": {
+   "largeVehicle": 30,
+   "mediumVehicle": 20,
+   "smallVehicle": 10,
+   "vehicleFiery": 15
+  },
+  "DecalTexture": "envTxrDecl_terrainDmgSmallBlood_alb",
+  "DrawBloodChance": 0.3
+ },
+ "debugLog": true,
+ "extendedBraceBehavior": true,
+ "forbiddenRangeEnable": true,
+ "modHTTPListen": "http://localhost:65080/",
+ "modHTTPServer": false,
+ "screamsIds": [
+  "scream01",
+  "Play_Panic5",
+  "Play_Panic4",
+  "Play_Panic7",
+  "Play_Panic6",
+  "Play_Panic1",
+  "Play_Panic3",
+  "Play_Panic2",
+  "Play_Panic9",
+  "Play_Panic8",
+  "Play_Panic18",
+  "Play_Panic19",
+  "Play_Panic14",
+  "Play_Panic15",
+  "Play_Panic16",
+  "Play_Panic17",
+  "Play_Panic10",
+  "Play_Panic11",
+  "Play_Panic12",
+  "Play_Panic13",
+  "Play_Panic25",
+  "Play_Panic24",
+  "Play_Panic26",
+  "Play_Panic21",
+  "Play_Panic20",
+  "Play_Panic23",
+  "Play_Panic22"
+ ],
+ "showMissBehavior": "None",
+ "uiIcons": [
+  "weapon_up",
+  "weapon_down"
+ ]
+}

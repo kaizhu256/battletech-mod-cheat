@@ -1,0 +1,75 @@
+{
+ "Custom": {
+  "CustomMoveCost": {
+   "Hover": {
+    "SprintMultiplier": 1.2,
+    "moveCost": 1.1
+   }
+  }
+ },
+ "Description": {
+  "Details": "Spore Fields slow all units moving through them. Units standing in Spore Fields suffer an additional 20% damage when hit due to the spores' corrosive effects. +4 Difficulty to hit units passing through Spore Clouds.",
+  "Icon": "uixSvgIcon_designMask_spores_debuff",
+  "Id": "DesignMaskSpores",
+  "Name": "SPORE FIELD"
+ },
+ "allDamageDealtMultiplier": 1,
+ "allDamageTakenMultiplier": 1.2,
+ "audioSwitchRainingSurfaceType": "dirt",
+ "audioSwitchSurfaceType": "dirt",
+ "canBurn": false,
+ "canExplode": false,
+ "energyDamageDealtMultiplier": 1,
+ "energyDamageTakenMultiplier": 1,
+ "grantsEvasive": false,
+ "grantsGuarded": false,
+ "heatPerTurn": 0,
+ "heatSinkMultiplier": 1,
+ "legStructureDamageMax": 0,
+ "legStructureDamageMin": 0,
+ "moveCostMechAssault": 1.5,
+ "moveCostMechHeavy": 1.5,
+ "moveCostMechLight": 1.5,
+ "moveCostMechMedium": 1.5,
+ "moveCostSprintMultiplier": 1,
+ "moveCostTrackedAssault": 1.1,
+ "moveCostTrackedHeavy": 1.1,
+ "moveCostTrackedLight": 1.1,
+ "moveCostTrackedMedium": 1.1,
+ "moveCostWheeledAssault": 1.2,
+ "moveCostWheeledHeavy": 1.2,
+ "moveCostWheeledLight": 1.1,
+ "moveCostWheeledMedium": 1.2,
+ "signatureMultiplier": 1,
+ "stabilityDamageMultiplier": 1,
+ "stickyEffect": {
+  "Description": {
+   "Details": "This unit moved through a Spore Cloud. Spores stick to units and interfere with targeting systems. +4 Difficulty to hit this unit.",
+   "Icon": "uixSvgIcon_designMask_spores",
+   "Id": "DesignMaskSpores",
+   "Name": "SPORE CLOUD"
+  },
+  "durationData": {
+   "duration": 2,
+   "stackLimit": 1,
+   "ticksOnMovements": true
+  },
+  "effectType": "StatisticEffect",
+  "nature": "Buff",
+  "statisticData": {
+   "modType": "System.Single",
+   "modValue": "4.0",
+   "operation": "Float_Add",
+   "statName": "ToHitThisActor"
+  },
+  "targetingData": {
+   "effectTargetType": "SingleTarget",
+   "showInStatusPanel": true,
+   "showInTargetPreview": true
+  }
+ },
+ "targetabilityModifier": 1,
+ "toHitFromModifier": 1,
+ "visibilityHeight": 10,
+ "visibilityMultiplier": 1
+}

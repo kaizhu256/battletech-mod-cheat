@@ -1,0 +1,155 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.75,
+ "APCriticalChanceMultiplier": 0.45,
+ "APMaxArmorThickness": 190,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Harpoon",
+ "AttackRecoil": 4,
+ "BattleValue": 40,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-10"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HAMMERFIST: 15%",
+    "WpnCrits: X2",
+    "WpnRecoil: 3",
+    "Explodium: 10",
+    "WeaponJAM: 10%",
+    "IsGauss",
+    "NoAA",
+    "WeaponBoom: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/taser"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 30,
+   "HeatDamagePerAmmo": 5,
+   "StabilityDamagePerAmmo": 5
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 375000,
+  "Details": "Soo someone got their Hands on pieces of a couple Taser, couldn't figure out the EM Feed and instead of leaving all is well, just made it fire a modified Harpoon with a SRM's Tandem Charge.... If i hear one more Whaling joke someone gets airlocked! \n\n<b><color=#ffcc00>Uses Harpoon Ammo.</color></b> \n\n<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "harpoon",
+  "Id": "Weapon_Gauss_Harpoon",
+  "Manufacturer": "Ahab",
+  "Model": "Harpoon Rifle",
+  "Name": "Harpoon Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Harpoon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 6,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 25,
+ "InventorySize": 2,
+ "MaxRange": 330,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 4,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Harpooned ye Landlubber! 15% reduced Unsteady threshhold.",
+    "Icon": "uixSvgIcon_shipUpgrade_power2",
+    "Id": "Harpoon-Effect",
+    "Name": "Reel 'Er In"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 6,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "UnsteadyThreshold",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

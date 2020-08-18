@@ -1,0 +1,162 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "lv-stealth_t2",
+   "lv-stealth-range-mod_s1_m2_l3_e4",
+   "lv-stealth-move-mod_m3_s4"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Flags": {
+   "flags": [
+    "no_salvage"
+   ]
+  },
+  "Lootable": {
+   "ItemID": "Gear_armorslots_NullSignatureSystem"
+  }
+ },
+ "Description": {
+  "Cost": 1,
+  "Details": "Stealth Armor quirk for the Red October.",
+  "Icon": "uixSvgIcon_equipment_TTS",
+  "Id": "Gear_Vehicle_STEALTH_RO",
+  "Manufacturer": "None",
+  "Model": "None",
+  "Name": "Vehicle Stealth",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Vehicle Stealth"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to detect with stealth",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Stealth_Effect",
+    "Name": "STEALTH"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.6_4_2_4_6",
+    "operation": "Set",
+    "statName": "LV_STEALTH"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to see with eyes",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_MIMETIC",
+    "Name": "MIMETIC ARMOR"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.75_4_4",
+    "operation": "Set",
+    "statName": "LV_MIMETIC"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Signature_Decrease_Stealth",
+    "Name": "Stealth Signature Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.3",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Visibility_Decrease_Stealth",
+    "Name": "Stealth Visbility Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

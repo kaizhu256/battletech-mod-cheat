@@ -1,0 +1,84 @@
+{
+ "Author": "the RT Team",
+ "ConflictsWith": [],
+ "DependsOn": [
+  "Rogue Flashpoint Module"
+ ],
+ "Enabled": true,
+ "IgnoreLoadFailure": true,
+ "Manifest": [
+  {
+   "AddToAddendum": "PlayerEmblems",
+   "Path": "emblem",
+   "Type": "Sprite"
+  },
+  {
+   "AddToAddendum": "PlayerEmblems",
+   "Path": "emblem",
+   "Type": "Texture2D"
+  },
+  {
+   "Path": "lance",
+   "Type": "LanceDef"
+  },
+  {
+   "Path": "vehicle",
+   "Type": "VehicleDef"
+  },
+  {
+   "Path": "vehiclechassis",
+   "Type": "VehicleChassisDef"
+  },
+  {
+   "Path": "mech",
+   "Type": "MechDef"
+  },
+  {
+   "Path": "chassis",
+   "Type": "ChassisDef"
+  },
+  {
+   "Path": "portraits",
+   "Type": "Sprite"
+  },
+  {
+   "Path": "flashpoints",
+   "Type": "FlashpointDef"
+  },
+  {
+   "Path": "pilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "milestoneSets",
+   "Type": "SimGameMilestoneSet"
+  },
+  {
+   "Path": "simGameConversations",
+   "Type": "SimGameConversations"
+  },
+  {
+   "Path": "cast",
+   "Type": "CastDef"
+  },
+  {
+   "Path": "data",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "AddToAddendum": "ConversationTexture",
+   "Path": "textures",
+   "Type": "Texture2D"
+  },
+  {
+   "Path": "contract/",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "Starter",
+   "ShouldAppendText": true,
+   "Type": "ItemCollectionDef"
+  }
+ ],
+ "Name": "LV426"
+}

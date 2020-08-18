@@ -1,0 +1,134 @@
+{
+ "ActivationCooldown": 5,
+ "ActivationTime": "ConsumedByFiring",
+ "Description": {
+  "Details": "ACTION: Gain enhanced ability to avoid damage for 2 turns, with a flat +2 increase in evasion with any movement. This can exceed your maximum allowed. Visibility and Signature reduced by 50% for the duration. Has a 5 turn cooldown.",
+  "Icon": "uixSvgIcon_action_evasivemove",
+  "Id": "AbilityDefP8",
+  "Name": "Phantom Mech"
+ },
+ "DisplayParams": "ShowInMWTRay",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "AbilityDefP82",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 2,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "AbilityDefP81",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 2,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "EvasivePipsGainedAdditional"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation",
+    "showInStatusPanel": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "AbilityDefP83",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 2,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "AbilityDefP83",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 2,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ReqSkill": "Piloting",
+ "ReqSkillLevel": 8,
+ "Targeting": "ActorSelf"
+}

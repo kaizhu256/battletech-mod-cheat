@@ -1,0 +1,92 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-6% Armor Weight",
+ "BonusValueB": "Reserves 7 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED",
+   "CasedArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.25,
+   "ArmorTPCost": 1.15
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorFactor: -5%",
+    "CASE",
+    "Reserved: 5",
+    "ArmorTPCost: 15%",
+    "ArmorCBCost: 25%"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Light Ferro",
+   "ReservedSlots": 5,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "ignore_damage",
+    "autorepair",
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "emod_armorslots_lightferrosfibrous"
+  },
+  "Weights": {
+   "ArmorFactor": 0.95
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1100 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 35",
+    "TechCost": "1.25 * [[Chassis.Tonnage]] / 14"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Based on recovered Clan Technologies have Comstar Technicians managed to reverse Engineer the integrated CASE common among Clan 'Mech's, not being able to fully integrate it is this Light ferro Plating Slightly Heavier but is able to be upgraded with Clan CASEII.",
+  "Icon": "shieldcomb",
+  "Id": "quirk_cased_ferro",
+  "Manufacturer": "Kallon",
+  "Model": "Armor Critical Slot",
+  "Name": "Light Ferro-Fibrous Armor",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Cased Light Ferro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

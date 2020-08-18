@@ -1,0 +1,123 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 4 Heat / Turn",
+ "BonusValueB": "- 3% heat generated",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "cae_ai_explode",
+   "cae_ai_cool"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "ACTIVE",
+   "AutoActivateOnOverheatLevel": 1.2,
+   "AutoDeactivateOverheatLevel": 0.4,
+   "ButtonName": "Emergency Coolant",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Nominal",
+   "FailChancePerTurn": 0.15,
+   "FailFlatChance": 0.05,
+   "FailPilotingBase": 3,
+   "FailPilotingMult": 0.05,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Emergency Coolant System drastically improves the mechs cooling",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "EmergencyCooling",
+      "Name": "Emergency Coolant System"
+     },
+     "durationData": {
+      "clearedWhenAttacked": false,
+      "duration": -1,
+      "stackLimit": -1,
+      "ticksOnActivations": false,
+      "ticksOnEndOfRound": false,
+      "ticksOnMovements": false,
+      "useActivationsOfTarget": false
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "25",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "extendDurationOnTrigger": 0,
+      "forcePathRebuild": false,
+      "forceVisRebuild": false,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet",
+      "triggerLimit": 0
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EmergencyCoolant: 1",
+    "ActivateHeatLevel: 120%",
+    "DeActivateHeatLevel: 40%",
+    "ActiveHeatPerTurn: -25",
+    "FailChance: 5%",
+    "FailChanceTurn: 15%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "CPBoom: 15"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 7,
+   "HeatDamage": 15,
+   "StabilityDamage": 7
+  },
+  "EngineHeatBlock": {
+   "HeatSinkCount": 1
+  },
+  "InventorySorter": {
+   "SortKey": "00015"
+  }
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "The Emergency Coolant System developed by the Republic Institute of Strategic Combat is a further advancement of the Radical Heat Sink System. It is intended to last longer by automatically activating whenever the BattleMech exceeds a certain heat level. The system overall worked, but it had a tendency to fail catastrophically, and potentially destroy the engine in the process. Fortunately, it was configured in such a way that it couldn't be activated manually, which helped reduce the negative consequences of overusing the system. <b><color=#099ff2>VOLATILE!</color></b>.",
+  "Icon": "EngineCooling",
+  "Id": "Gear_EmergencyCoolant_1",
+  "Manufacturer": "RISC",
+  "Model": "Emergency Coolant",
+  "Name": "Emergency Coolant System",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Emergency Coolant System +1"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

@@ -1,0 +1,149 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "HMG",
+ "AttackRecoil": 0,
+ "BattleValue": 30,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "+50% Crit",
+ "Category": "Ballistic",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: 50%",
+    "IsMG",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/mg"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01503"
+  }
+ },
+ "Damage": 3,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 240000,
+  "Details": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 3 Heavy Machine Guns. \n\n <b><color=#ffcc00>Uses HMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
+  "Icon": "MachineGun",
+  "Id": "Weapon_MachineGun_ARRAY_HEAVY",
+  "Manufacturer": "Sperry Browning",
+  "Model": "Heavy Machine Gun Array",
+  "Name": "HMG Array",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "MG Array Heavy"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 9,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 0.3,
+ "InventorySize": 3,
+ "MaxRange": 240,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "HeatGenerated": -6,
+   "Id": "x1",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -6,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "HeatGenerated": -3,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -3,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "HeatGenerated": 3,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 3,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 2,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 6,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "HeatGenerated": 6,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 9,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  120,
+  150
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 9,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 3,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": []
+}

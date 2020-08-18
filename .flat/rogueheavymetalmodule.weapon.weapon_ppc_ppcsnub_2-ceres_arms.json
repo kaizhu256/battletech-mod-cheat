@@ -1,0 +1,116 @@
+{
+ "AOECapable": false,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AttackRecoil": 1,
+ "BonusValueA": "+ 10 Stb.Dmg.",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2",
+   "range_standard",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Damage": 15,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 340000,
+  "Details": "A unique modification of a standard Particle Projector Cannon, the Snub PPC utilizes the same energy acceleration, but with a shortened range and a cluster of smaller projectiles. Like the standard model, Snub PPC shots impart a debilitating EM effect that degrades the firing capability of their target.",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_PPC_PPCSnub_2-Ceres_Arms",
+  "Manufacturer": "Ceres Arms",
+  "Model": "Particle Cluster Cannon",
+  "Name": "Snub PPC + +",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Snub PPC + +"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 35,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 2,
+ "MaxRange": 360,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  270,
+  270,
+  360
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 5,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "PPC",
+ "VolleyDivisor": 1,
+ "WeaponEffectID": "WeaponEffect-Weapon_PPCSnub",
+ "WeaponSubType": "PPCSnub",
+ "ammoCategoryID": "NotSet",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+[AMT] Difficulty to all of this unit's attacks until its next activation.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 1,
+    "stackLimit": 0,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

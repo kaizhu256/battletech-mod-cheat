@@ -1,0 +1,108 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 12,
+ "AOEInstability": 8,
+ "AOERange": 120,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 100,
+ "AccuracyModifier": -2,
+ "AllowedLocations": "CenterTorso",
+ "AlwaysIndirectVisuals": true,
+ "AmmoCategory": "POD",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsMelee",
+    "BoltOn: 1",
+    "1shot",
+    "NoSelfHarm",
+    "AreaOfEffectDmg: 25",
+    "AreaOfEffect: 120",
+    "PipsIgnored: 10",
+    "AccuracyUnit: PowerArmor",
+    "AccuracyUnit2: +20",
+    "AccuracyUnit: Mech/Vehicle",
+    "AccuracyUnit2: -100",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 1
+  },
+  "InventorySorter": {
+   "SortKey": "04002"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 10000,
+  "Details": "An Anti-Personnel Pod (A-Pod) is a piece of equipment designed specifically for 'Mechs. When detonated, effectively fill an area 15 meters in diameter with deadly shrapnel. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_POD_A",
+  "Manufacturer": "Solaris Arms",
+  "Model": "Explosive Canister",
+  "Name": "Anti-Personnel Pod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "A POD"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 10,
+ "HeatDamage": 0,
+ "HeatGenerated": 1,
+ "HitGenerator": "Cluster",
+ "IFFDef": "notblanksowontdamageselfbutcandamagefriendlies",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 1,
+ "MaxRange": 60,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectilesPerShot": 2,
+ "RangeSplit": [
+  60,
+  60,
+  60
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "SRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+ "WeaponSubType": "SRM2",
+ "statusEffects": [],
+ "weaponCategoryID": "SpecialMelee"
+}

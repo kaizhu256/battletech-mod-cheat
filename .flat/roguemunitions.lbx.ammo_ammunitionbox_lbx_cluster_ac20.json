@@ -1,0 +1,67 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LBX20_CLUSTER",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 5,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: +50%",
+    "WpnAccuracy: +1",
+    "PipsIgnored: +1",
+    "LBXCluster: 10",
+    "LBXClusterPenalty: 20%",
+    "LBXClusterRange: 60",
+    "DoesCluster",
+    "AccuracyUnit: VTOL",
+    "AccuracyUnit2: +3",
+    "LBX20ClusterAmmo: 5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/a/lbx"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 100,
+   "StabilityDamagePerAmmo": 25
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000016"
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "LBX",
+  "Id": "Ammo_AmmunitionBox_LBX_CLUSTER_AC20",
+  "Manufacturer": "Generic",
+  "Model": "LBX20CLUSTER",
+  "Name": "LBX20 Cluster Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo LBX/20 CLUSTER"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

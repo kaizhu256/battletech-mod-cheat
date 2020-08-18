@@ -1,0 +1,46 @@
+{
+ "AdditionalCost": 7000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "The interior is now fit to sleep in. Not that I have been... Anyways, now we can start work on all the problems we can't see.",
+ "Description": {
+  "Cost": 0,
+  "Details": "The interior of the ship is now more or less serviceable, but the underlying structure still needs a lot of work. <b><color=#F79232>Increases Drop Weight Limit by 50 tons</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_WeightLimit2",
+  "Name": "Engine Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 240000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot1",
+   "argoUpgrade_PilotSlot1",
+   "argoUpgrade_drive1",
+   "argoUpgrade_WeightLimit1",
+   "argoUpgrade_mechBay_refitHarness"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_MaxTonnage",
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Weightlimit2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 8,
+ "shipUpgradeCategoryID": "BDDropTonnage"
+}

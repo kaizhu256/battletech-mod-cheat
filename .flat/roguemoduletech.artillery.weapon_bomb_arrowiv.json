@@ -1,0 +1,148 @@
+{
+ "AMSHitChance": -0.1,
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 500,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "ArrowIVOS",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 1",
+    "1shot",
+    "IsArtillery",
+    "FLAKmode",
+    "DIRECTmode",
+    "WpnRecoil: 3",
+    "ForbiddenRange: 180",
+    "AMSChance: -10%",
+    "MissileHP: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/t/arrowiv"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 100,
+   "StabilityDamagePerAmmo": 40
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03023"
+  },
+  "Lootable": {
+   "ItemID": "Weapon_Artillery_ArrowIV_Oneshot"
+  }
+ },
+ "Damage": 100,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 50000,
+  "Details": "The Arrow IV is a stand-alone, missile based, artillery system, designed to augment conventional systems such as the Long Tom and the Sniper. It was first introduced by the Terran Hegemony in 2600 and became a staple of the Star League Defense Force. Although the technology to create Arrow IVs was lost during the Star League's collapse, it was recovered by Capellan Confederation engineers in 3044 working off of surviving examples and the Helm Memory Core.",
+  "Icon": "ArrowIV",
+  "Id": "Weapon_Bomb_ArrowIV",
+  "Manufacturer": "WOB",
+  "Model": "Missile Artillery",
+  "Name": "Arrow IV",
+  "Purchasable": true,
+  "Rarity": 14,
+  "UIName": "Arrow IV Missile"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.075,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "Instability": 25,
+ "InventorySize": 4,
+ "MaxRange": 3000,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AccuracyModifier": 4,
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 0,
+   "EvasivePipsIgnored": 15,
+   "ForbiddenRange": 180,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "LongRange": -2400,
+   "MaxRange": -2400,
+   "MiddleRange": -2400,
+   "ShortRange": -2400,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "DirectFireModifier": 53,
+   "EvasivePipsIgnored": 15,
+   "Id": "flak",
+   "IndirectFireCapable": false,
+   "MinRange": -180,
+   "UIName": "FLAK",
+   "isBaseMode": false
+  },
+  {
+   "AccuracyModifier": 5,
+   "AlwaysIndirectVisuals": true,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 2,
+   "EvasivePipsIgnored": 15,
+   "ForbiddenRange": 180,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "MaxMissRadius": 45,
+   "MinMissRadius": 10,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "arrow",
+ "ProjectileSpeedMultiplier": 1,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  3000,
+  3000,
+  3000
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": []
+}

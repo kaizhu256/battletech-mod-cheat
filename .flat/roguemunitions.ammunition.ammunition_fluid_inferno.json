@@ -1,0 +1,65 @@
+{
+ "AIBattleValue": 70,
+ "ArmorDamageModifier": 1,
+ "Category": "Fluid",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "CriticalDamageModifier": 1,
+ "Description": {
+  "Cost": 0,
+  "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
+  "Icon": null,
+  "Id": "Ammunition_Fluid_Inferno",
+  "Name": "Fluid Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Inferno"
+ },
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 1,
+ "HeatDamagePerShot": 8,
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit is coated with burning chemicals. It will gain 15 heat on its next activation.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_InfernoHeat",
+    "Name": "INFERNO"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-15",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

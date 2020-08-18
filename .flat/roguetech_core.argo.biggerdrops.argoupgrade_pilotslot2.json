@@ -1,0 +1,44 @@
+{
+ "AdditionalCost": 7000,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "Processors that can handle this kind of raw data-bandwidth are LosTech these days, Commander. I'm sorry, but this won't be cheap.",
+ "Description": {
+  "Cost": 0,
+  "Details": "<b><color=#F79232>Allows you to Command an Additional Mechwarrior Directly</color></b> \n\n Ok, I think we've identified a bottleneck in the system. We're gonna need a complete overhaul of our existing processors to deal with the latency issues we've been experiencing.",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_PilotSlot2",
+  "Name": "Command Console",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 400000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot2",
+   "argoUpgrade_PilotSlot1",
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_AdditionalPlayerMechSlots",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Pilotslot2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 8,
+ "shipUpgradeCategoryID": "BDMechControl"
+}

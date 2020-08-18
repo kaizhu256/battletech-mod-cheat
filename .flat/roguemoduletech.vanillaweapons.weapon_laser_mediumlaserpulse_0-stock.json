@@ -1,0 +1,90 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.02,
+ "APMaxArmorThickness": 12,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 48,
+ "BonusValueA": "10 Var.Dmg.",
+ "BonusValueB": "Pulse Accuracy",
+ "Category": "Energy",
+ "ClusteringModifier": 5,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "component_type_lostech",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Pulse",
+    "MultiLaser",
+    "DoesCluster",
+    "LosTech"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/pulse"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02007"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 360000,
+  "Details": "An improvement upon standard Medium Lasers, Medium Pulse Lasers use pulses of light instead of a single beam. This results in better accuracy and damage output but with increased heat and weight.",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_Laser_MediumLaserPulse_0-STOCK",
+  "Manufacturer": "Raker-IV",
+  "Model": "Medium Pulse Laser",
+  "Name": "M Pulse Laser",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Medium Pulse Laser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDelayMultiplier": 0.12,
+ "FireTerrainChance": 0.0375,
+ "HeatDamage": 0,
+ "HeatGenerated": 12,
+ "HitGenerator": "Cluster",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1.8,
+ "InventorySize": 1,
+ "MaxRange": 300,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  150,
+  210
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 2,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
+ "WeaponSubType": "MediumLaser",
+ "statusEffects": []
+}

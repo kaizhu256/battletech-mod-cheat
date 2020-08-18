@@ -1,0 +1,62 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": " ",
+ "BonusValueB": " ",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Whitespace",
+    "EngineHSAdd: 7"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineHeatBlock"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "EngineHeatBlock": {
+   "HeatSinkCount": 7
+  },
+  "WorkOrderCosts": {
+   "Default": {
+    "CBillCost": "17 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]]",
+    "TechCost": "[[Chassis.Tonnage]] / 30"
+   },
+   "Install": {
+    "CBillCost": "17 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]]",
+    "TechCost": "[[Chassis.Tonnage]] / 30"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1750000,
+  "Details": "The regenerative cooling system of an engine uses waste heat to generate power and is part of the Mech' cooling system. The engines integral heat sinks (a.k.a free heat sinks) are not common Mech' heat sinks and use up less volume.",
+  "Icon": "EngineCooling",
+  "Id": "Gear_Engine_Heatsinks_7",
+  "Manufacturer": "Vlar",
+  "Model": "Engine Cooling System",
+  "Name": "Engine Cooling + 7",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Engine HS + 7"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 7,
+ "statusEffects": null
+}

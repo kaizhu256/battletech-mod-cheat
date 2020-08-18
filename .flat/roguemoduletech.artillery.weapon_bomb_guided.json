@@ -1,0 +1,123 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 50,
+ "AOEHeatDamage": 0,
+ "AOEInstability": 25,
+ "AOERange": 45,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.125,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": -2,
+ "AdditionalImpactVFX": "vfxPrfPrtl_artilleryExplosion",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": false,
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 0,
+ "BattleValue": 20,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ClearMineFieldRadius": 15,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "BLACKLISTED",
+   "Bomb"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 1",
+    "1shot",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +2",
+    "AreaOfEffect: 45",
+    "AreaOfEffectDmg: 50",
+    "MineClearanceBoom: 2",
+    "NoAA",
+    "Bomb"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "MeleeWeapon"
+   },
+   {
+    "CategoryID": "w/s/m/explode"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 25,
+   "HeatDamagePerAmmo": 5,
+   "StabilityDamagePerAmmo": 10
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 25000,
+  "Details": "High-Explosive Bombs are one of several common bomb types that can be carried by aerospace and conventional fighters. They are typically carried on external hardpoints common to military aircraft.",
+  "Icon": "uixSvgIcon_run_n_gun",
+  "Id": "Weapon_Bomb_Guided",
+  "Manufacturer": "Generic",
+  "Model": "Bomb Guided",
+  "Name": "Bomb Guided",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Bomb Guided"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 1,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectileScale": {
+  "x": 2,
+  "y": 2,
+  "z": 2
+ },
+ "ProjectileSpeedMultiplier": 0.5,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  180,
+  180
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

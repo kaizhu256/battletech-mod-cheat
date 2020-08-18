@@ -1,0 +1,92 @@
+{
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.25,
+ "APMaxArmorThickness": 250,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "LeftTorso,RightTorso",
+ "AmmoCategory": "ThunderboltOS",
+ "AttackRecoil": 1,
+ "BattleValue": 24,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "1shot",
+    "InternalAmmo: 55",
+    "IsThunderbolt",
+    "MissileHP: 6",
+    "Indirect"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/t/thunderbolt"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 55,
+   "HeatDamagePerAmmo": 15,
+   "StabilityDamagePerAmmo": 15
+  },
+  "InventorySorter": {
+   "SortKey": "03023"
+  }
+ },
+ "Damage": 55,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "The Thunderbolt Missile was developed for the arenas of Solaris. Unlike most missile systems, the Thunderbolt was a single missile that smashed into its target. Though it was effective in the arenas, it didn't see widespread use in the field because the single missile was very vulnerable to Anti-Missile Systems. The missile launcher, though small, was awkward to mount and would only fit on the left or right torso of a 'Mech.",
+  "Icon": "thunderbolt",
+  "Id": "Weapon_LRM_Thunderbolt_10_OS",
+  "Manufacturer": "Solaris Munitions Inc",
+  "Model": "Thunderbolt Missile",
+  "Name": "Thunderbolt Missile",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Thunderbolt Missile"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0625,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 15,
+ "InventorySize": 1,
+ "MaxRange": 720,
+ "MinRange": 150,
+ "MissileHealth": 6,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "srm2",
+ "ProjectileSpeedMultiplier": 1.4,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 1,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

@@ -1,0 +1,147 @@
+{
+ "AIBattleValue": 70,
+ "ArmorDamageModifier": 1,
+ "Category": "LRM",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#00FFFF",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.25,
+ "Description": {
+  "Cost": 0,
+  "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
+  "Icon": null,
+  "Id": "Ammunition_LRM_Narc",
+  "Name": "LRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "NARC"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "MissileHealth": 1,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This target was TAG'ed. +1 to hit.",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect",
+    "Name": "Target Acquired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 10,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.05_1_-1",
+    "operation": "Set",
+    "statName": "LV_NARC"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect2",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 10,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visual indicator of the NARC effect",
+    "Icon": "uixSvgIcon_statusMarked",
+    "Id": "StatusEffect-NARC-IndicatorVFX",
+    "Name": "NARC ATTACHED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": 0,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "VFXEffect",
+   "nature": "Debuff",
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "hideApplicationFloatie": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": {
+    "attachToImpactPoint": true,
+    "duration": -1,
+    "facesAttacker": false,
+    "isAttached": true,
+    "isOneShot": false,
+    "location": -1,
+    "vfxName": "vfxPrfPrtl_narcMarker_loop"
+   }
+  }
+ ]
+}

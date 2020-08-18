@@ -1,0 +1,43 @@
+{
+ "AdditionalCost": 10000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "There's machines hidden in the walls, under the floor panels—I don't even know what half of it does. But I turned one on and it built a 'Mech leg before I was able to shut it off. We make these work, we'll be moving 'Mechs out of repair in record time.",
+ "Category": "REPAIR_REFIT",
+ "Description": {
+  "Cost": 0,
+  "Details": "Repairs to the Mech Bay have unearthed a much more extensive system of 'Mech maintenance automation than Yang previously suspected. Once it's back online, many common tasks will become trivial. <b><color=#F79232>Enables third Repair bay to work at 100% efficiency.</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automationUpgrade",
+  "Id": "argoUpgrade_mechBay_automation2",
+  "Name": "Improved Automation",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "MECH_BAY",
+ "PurchaseCost": 100000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_mechBay_automation1",
+   "argoUpgrade_mechBay3",
+   "argoUpgrade_structure2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_mechBay_automation2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

@@ -1,0 +1,112 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "blacklisted",
+   "cae_ai_explode",
+   "cae_ai_speed",
+   "cae_ai_offence",
+   "cae_ai_defence"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "SuperCharger",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.1,
+   "FailFlatChance": 0,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Supercharged Engines",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "JetBoosterSpeed",
+      "Name": "Jet Boosted"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.6",
+      "operation": "Float_Multiply",
+      "statName": "CruiseSpeed"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: +10%",
+    "Activatable",
+    "ActiveWalkSpeed: +60%",
+    "FailChance: 0%",
+    "FailChanceTurn: 10%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "WeaponBoom: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Supercharger"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 20
+  },
+  "Flags": {
+   "flags": [
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00023"
+  },
+  "Lootable": {
+   "ItemID": "Gear_Supercharger"
+  },
+  "Weights": {
+   "EngineFactor": 1.1
+  }
+ },
+ "Description": {
+  "Cost": 420000,
+  "Details": "The VTOL Jet Booster is a piece of equipment used to increase the speed of any VTOL. The Booster itself has existed in different forms since the time of Early Spaceflight. Its modern versions were separately created by Clan Hell's Horses in 2839, while Cal-Boeing of Dorwinion developed its own in 3009 in the Inner Sphere. <b><color=#099ff2>Activatable: EXPLODES ON FAILURE!</color></b>",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Gear_Vehicle_VTOL_JetBooster",
+  "Manufacturer": "Cal-Boeing",
+  "Model": "Jet Booster",
+  "Name": "Jet Booster",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Jet Booster"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

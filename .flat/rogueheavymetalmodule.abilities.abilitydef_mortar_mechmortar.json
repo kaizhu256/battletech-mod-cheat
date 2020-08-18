@@ -1,0 +1,21 @@
+{
+ "ActivationCooldown": 1,
+ "ActivationETA": 0,
+ "ActivationTime": "ConsumedByFiring",
+ "Description": {
+  "Details": "ACTION: Fire an artillery attack at the target area for 10–50 damage per location on units within the blast radius. Has [NumberOfUses] uses per mission.",
+  "Icon": "uixSvgIcon_artillery",
+  "Id": "AbilityDef_Mortar_MechMortar",
+  "Name": "MORTAR"
+ },
+ "FloatParam1": 60,
+ "IntParam1": 0,
+ "IntParam2": 300,
+ "NumberOfUses": 1,
+ "Resource": "ConsumesFiring",
+ "ShowIntParam1": false,
+ "ShowIntParam2": false,
+ "Targeting": "CommandTargetSinglePoint",
+ "WeaponResource": "Weapon_Mortar_MechMortar",
+ "specialRules": "Artillery"
+}

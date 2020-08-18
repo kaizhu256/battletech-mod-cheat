@@ -1,0 +1,72 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Hydra",
+ "BattleValue": 0,
+ "BonusValueA": "-25%Dmg&Stab|",
+ "BonusValueB": "+1 Heat Dmg.",
+ "Capacity": 200,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_variant"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: -2",
+    "LRMDamage: -75%",
+    "HeatDamage: 1",
+    "AreaOfEffect: 45",
+    "AreaOfEffectDmg: 1",
+    "AreaOfEffectHeatDmg: 1",
+    "AlwaysStartsFireAnywhere",
+    "Range: -33%",
+    "ScatterRadius: 15, 120",
+    "MissileHP: 1",
+    "enCASEd",
+    "VolatileAmmo",
+    "LRMAmmo: 200"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00008"
+  },
+  "Lootable": {
+   "ItemID": "Ammo_AmmunitionBox_Hydra_LRM"
+  }
+ },
+ "Description": {
+  "Cost": 460000,
+  "Details": "This Ammo bin contains the infamous 'Hydra' Missiles from the deep periphery, carrying a volatile payload of a High Explosive and Incendiary Materials. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Quirk_AmmunitionBox_Hydra_LRM",
+  "Manufacturer": "Typhon",
+  "Model": "LRM-H",
+  "Name": "LRM Hydra Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "LRM Hydra Cased"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 2,
+ "statusEffects": []
+}

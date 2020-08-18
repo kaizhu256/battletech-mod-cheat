@@ -1,0 +1,62 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 600,
+ "Description": {
+  "Details": "",
+  "Icon": "uixTxrSpot_HeavyMetal.png",
+  "Id": "fp_HM7_showdown",
+  "Name": "Standoff"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "This is a point of no return, Commander. When you pull the trigger on this drop, you may well be committing us to a confrontation with the Black Widow. We’d better be ready.",
+ "InProgressTimeout": 600,
+ "InternalName": "HM7_showdown",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_HM7_showdown",
+ "PotentialEmployers": [
+  "SelfEmployed"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_ItemDouble_rare",
+ "Tags": {
+  "items": [
+   "HeavyMetal_Campaign",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "BlackWidowCompany",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": true,
+ "UseInProgressTimeoutOverride": true,
+ "Weight": 10
+}

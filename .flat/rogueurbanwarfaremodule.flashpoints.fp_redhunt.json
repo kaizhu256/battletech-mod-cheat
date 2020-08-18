@@ -1,0 +1,62 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Betrayed by their own organization",
+  "Icon": "",
+  "Id": "fp_redHunt",
+  "Name": "Red Hunt"
+ },
+ "Difficulty": 7,
+ "FlashpointDescriberCastDefId": "castDef_KuritaRepDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Commander! I'm glad I was able to reach you. I have an opportunity for your company that pays extremely well. The only drawback is that it's located as far from civilization as it's possible to get without a JumpShip accident.",
+ "InProgressTimeout": 0,
+ "InternalName": "redHunt",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_redHunt",
+ "PotentialEmployers": [
+  "Kurita"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Reputation.Kurita",
+     "op": "GreaterThan",
+     "val": 40,
+     "valueConstant": "40"
+    }
+   ],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_loot_FP_generic_SLDF_double",
+ "TargetFaction": "Unknown",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 10
+}

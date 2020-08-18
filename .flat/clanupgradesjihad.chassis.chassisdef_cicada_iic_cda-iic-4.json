@@ -1,0 +1,243 @@
+{
+ "BattleValue": 3610000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "CicadaIIC"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 930119,
+  "Details": "Intended to support protomech and light armour formations with accurate LRM fire, this Cicada is a favourite of the Raven Alliance and Hell’s Horses. Using a Cicada 3E as the base, Clan designers stripped out the LRM’s for a pair of Streak 15’s. The IS XL Engine and heat sinks are swapped for clan alternatives, improving survivability and somewhat ironically; addressing many of the key criticisms of the 3E’s design. The only flaw in the design, is the lack of alternative munitions, though the 4’s intended purpose and the Clan rules of engagement render this criticism invalid. The Raven Alliance have begun a conversion of the sizeable stock of 3E’s they inherited from the Outworld’s Alliance, whilst the Horses regularly face the E variant whilst raiding neighbouring space; making this an easily produced conversion.",
+  "Icon": "uixTxrIcon_cicada",
+  "Id": "chassisdef_cicada_iic_CDA-IIC-4",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Cicada IIC",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Cicada IIC"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Sensors",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_cicada",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 12,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 0
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 100,
+   "MaxRearArmor": 50,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 30,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 60,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 50,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "cicada",
+ "PrefabIdentifier": "chrPrfMech_cicadaBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Scout & Harasser",
+ "Tonnage": 40,
+ "TopSpeed": 210,
+ "TurnRadius": 90,
+ "VariantName": "CDA-IIC-4",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Intended to support protomech and light armour formations with accurate LRM fire, this Cicada is a favourite of the Raven Alliance and Hell’s Horses. Using a Cicada 3E as the base, Clan designers stripped out the LRM’s for a pair of Streak 15’s. The IS XL Engine and heat sinks are swapped for clan alternatives, improving survivability and somewhat ironically; addressing many of the key criticisms of the 3E’s design. The only flaw in the design, is the lack of alternative munitions, though the 4’s intended purpose and the Clan rules of engagement render this criticism invalid. The Raven Alliance have begun a conversion of the sizeable stock of 3E’s they inherited from the Outworld’s Alliance, whilst the Horses regularly face the E variant whilst raiding neighbouring space; making this an easily produced conversion.",
+ "weightClass": "MEDIUM"
+}

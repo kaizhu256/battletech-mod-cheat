@@ -1,0 +1,189 @@
+{
+ "ChassisID": "vehiclechassisdef_HARASSER_MML_Stealth",
+ "Description": {
+  "Cost": 585000,
+  "Details": "",
+  "Icon": "Harasser",
+  "Id": "vehicledef_HARASSER_MML_Stealth",
+  "Name": "Harasser Missile Platform (MML)",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 50,
+   "CurrentArmor": 50,
+   "CurrentInternalStructure": 15,
+   "DamageLevel": "Functional",
+   "Location": "Front"
+  },
+  {
+   "AssignedArmor": 40,
+   "CurrentArmor": 40,
+   "CurrentInternalStructure": 15,
+   "DamageLevel": "Functional",
+   "Location": "Left"
+  },
+  {
+   "AssignedArmor": 40,
+   "CurrentArmor": 40,
+   "CurrentInternalStructure": 15,
+   "DamageLevel": "Functional",
+   "Location": "Right"
+  },
+  {
+   "AssignedArmor": 30,
+   "CurrentArmor": 30,
+   "CurrentInternalStructure": 15,
+   "DamageLevel": "Functional",
+   "Location": "Rear"
+  },
+  {
+   "AssignedArmor": 40,
+   "CurrentArmor": 40,
+   "CurrentInternalStructure": 15,
+   "DamageLevel": "Functional",
+   "Location": "Turret"
+  }
+ ],
+ "VehicleTags": {
+  "items": [
+   "mr-resize-1.27",
+   "unit_vehicle",
+   "unit_light",
+   "unit_release",
+   "unit_lance_support",
+   "unit_indirectFire",
+   "unit_hover",
+   "unit_harasser",
+   "unit_generic",
+   "unit_advanced",
+   "unit_stealth",
+   "unit_bracket_med",
+   "auriganmercenaries",
+   "auriganpirates",
+   "locals"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "Weapon_MML_5",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_MML_5",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_SRM",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Tank_CrewCompartment",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_FCS_ARTIV",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Sensors_MissileRange",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Hover_Left",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_Hover_Right",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "Gear_Vehicle_STEALTH",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Gear_Angel_ECM",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Turret",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "emod_engine_170",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size3",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_size3",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_xl_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Coolant_System",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  }
+ ]
+}

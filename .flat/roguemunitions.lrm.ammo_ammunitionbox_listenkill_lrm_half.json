@@ -1,0 +1,68 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_LK",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 60,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: +1",
+    "ListenKill: 35%",
+    "MissileHP: 2",
+    "LRMAmmo: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   },
+   {
+    "CategoryID": "LKMissile"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  },
+  "TRGBColor": {
+   "Color": "#00BFFF",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 40000,
+  "Details": "Listen-Kill (aka L-K) missile technology is an upgrade to missiles to improve their accuracy. This is achieved through a small computer and homing device in the missile's head that allows it to home in on the electronic noise of a BattleMech or tank. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_ListenKill_LRM_half",
+  "Manufacturer": "Generic",
+  "Model": "LRM",
+  "Name": "LRM Ammo",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Ammo LRM L-K [Half]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

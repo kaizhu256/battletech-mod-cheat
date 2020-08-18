@@ -1,0 +1,238 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "+ ECM Field",
+ "BonusValueB": "+ Area Sensor Lock",
+ "ComponentSubType": "Prototype_ElectronicWarfare",
+ "ComponentTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": []
+  },
+  "Category": [
+   {
+    "CategoryID": "ECM"
+   },
+   {
+    "CategoryID": "Probe"
+   },
+   {
+    "CategoryID": "AdvECM"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "ignore_damage",
+    "autorepair",
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "Lootable": {
+   "ItemID": "Gear_EWS"
+  }
+ },
+ "Description": {
+  "Cost": 2000000,
+  "Details": "Prototype Electronic Warfare component. Adds an ECM field that provides a passive defense against missiles and immunity to indirect fire. Friendly units in the ECM field also gain Stealth Charges and cannot be targeted by direct fire unless spotted by enemy units within the ECM field or sensor locked. The ECM carrier gains an additional Stealth Charge.\n\nThe EW Suite also adds the Active Probe ability to unit's weapons panel. Active Probe is a triggered ability that uses the firing action and performs a Sensor Lock against all enemies within range. Note: you can only equip one Prototype component on most 'Mechs.",
+  "Icon": "EWS",
+  "Id": "Gear_Sensor_Prototype_EWE",
+  "Manufacturer": "Ceres Arms",
+  "Model": "Gen 1 EWE",
+  "Name": "EW SUITE (Prototype)",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "X-1 EW Equipment"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 4,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 7.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Friendly units within an ECM field gain +[AMT] Difficulty to missile attacks against them and immunity to Indirect Fire. Being Sensor Locked removes this effect.",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "ECMEffect_IndirectImmunity",
+    "Name": "ECM MISSILE DEFENSE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "IsIndirectImmune"
+   },
+   "targetingData": {
+    "auraEffectType": "ECM_GENERAL",
+    "effectTargetType": "AlliesWithinRange",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 100,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "Aura"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Friendly units within an ECM field gain +[AMT] Difficulty to missile attacks against them and immunity to Indirect Fire. Being Sensor Locked removes this effect.",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "ECMEffect_MissileDefense",
+    "Name": "ECM MISSILE DEFENSE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "4.0",
+    "operation": "Float_Add",
+    "statName": "ToHitThisActorMissile"
+   },
+   "targetingData": {
+    "auraEffectType": "ECM_GENERAL",
+    "effectTargetType": "AlliesWithinRange",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 100,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "Aura"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Units within an ECM field gain a Stealth Charge and cannot be targeted.\n\nFiring a weapon, using an activated ability, or an enemy penetrating the ECM field removes a Stealth Charge. Being Sensor Locked removes all Stealth Charges.",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "ECMStealth_GhostEffect_Allies",
+    "Name": "STEALTH CHARGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "GhostEffectStacks"
+   },
+   "targetingData": {
+    "auraEffectType": "ECM_GHOST",
+    "effectTargetType": "AlliesWithinRange",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 100,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "Aura"
+   }
+  },
+  {
+   "Description": {
+    "Details": "PASSIVE: The ECM carrier projects an ECM field, building Stealth Charges for itself and allies if it starts or ends its turn with no active enemy units within the field.\n\nECM carriers also receive a bonus Stealth Charge.",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "ECMStealth_GhostEffect",
+    "Name": "ECM CARRIER"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "GhostEffectStacks"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit is spotting against an enemy ECM field, reducing Stealth Charges by 1 each round for all visible enemies within the field.",
+    "Icon": "uixSvgIcon_action_sensorlock",
+    "Id": "ECMCounter_GhostSpotterEffect",
+    "Name": "STEALTH SPOTTER"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1,
+    "uniqueEffectIdStackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "HasGhostSpotter"
+   },
+   "targetingData": {
+    "auraEffectType": "ECM_COUNTER",
+    "effectTargetType": "EnemiesWithinRange",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 100,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "Aura"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Activated ability (uses Firing action). Performs a Sensor Lock against all enemies within its radius, as indicated by the spinning gold ring. Will go into cooldown state after use.",
+    "Icon": "uixSvgIcon_action_sensorlock",
+    "Id": "ActiveProbe_Ping",
+    "Name": "ACTIVE PROBE PING"
+   },
+   "activeAbilityEffectData": {
+    "abilityName": "AbilityDef_ActiveProbe_Ping"
+   },
+   "effectType": "ActiveAbility",
+   "targetingData": {
+    "alsoTargetsCreator": true,
+    "effectTargetType": "EnemiesWithinRange",
+    "effectTriggerType": "OnActivation",
+    "forceVisRebuild": true
+   }
+  }
+ ]
+}

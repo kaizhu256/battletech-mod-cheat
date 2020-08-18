@@ -1,0 +1,179 @@
+{
+ "AMSDamage": 4,
+ "AMSHitChance": 0.8,
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SmokeRedS",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": true,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#800000",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 1",
+    "MissileAMS",
+    "AMSDmg: 4",
+    "AMSAcc: 80%",
+    "AMSShots: 10",
+    "InternalAmmo: 1",
+    "Visibility: +2%",
+    "Signature: +2%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   },
+   {
+    "CategoryID": "Flare"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 1
+  },
+  "InventorySorter": {
+   "SortKey": "03001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 8000,
+  "Details": "These Flare Launchers are an Automatic Anti-Missile-System firing a cloud of small explosive warheads with chaff at any incoming missile trying to destroy it or disorient is guidance.<b><color=#F79232>5 SALVOS</color> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "steelwing-emblem",
+  "Id": "Weapon_LRM_FLARELAUNCHER_AMS",
+  "Manufacturer": "QuicSell",
+  "Model": "Chaff CounterMeasure",
+  "Name": "Counter Flare",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "AMS Flare"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 1,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "IsAAMS": false,
+ "IsAMS": true,
+ "MaxRange": 120,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  30,
+  60,
+  90
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 10,
+ "StartingAmmoCapacity": 50,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM5",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.02",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.02",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

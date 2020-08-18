@@ -1,0 +1,122 @@
+{
+ "BattleValue": 564,
+ "Description": {
+  "Cost": 7688700,
+  "Details": "",
+  "Icon": "MANTICORE",
+  "Id": "vehiclechassisdef_MORRIGU_LASER_CLAN",
+  "Name": "Morrigu Fire Support Vehicle",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_morrigu",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 4,
+   "z": -2
+  },
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": 4
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 4,
+   "z": -2
+  },
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": 4
+  },
+  {
+   "x": -1.5,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 1.5,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -4
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 215,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 175,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 175,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 140,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 175,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_3-5cv",
+ "PathingCapDefID": "pathingdef_assault_tracked",
+ "PrefabBase": "morrigu",
+ "PrefabIdentifier": "chrprfvhcl_morrigubase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 80,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Tracked",
+ "weightClass": "ASSAULT"
+}

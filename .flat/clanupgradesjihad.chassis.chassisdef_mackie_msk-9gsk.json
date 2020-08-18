@@ -1,0 +1,253 @@
+{
+ "BattleValue": 1892000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": true
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 100,
+ "DFAInstability": 50,
+ "DFASelfDamage": 100,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 3312593,
+  "Details": "A unique redesign of the Mackie, this model was designed by Goliath Scorpion following their flight from the Homeworlds in 3080. Lacking advanced manufacturing capabilities in their new home and with severe losses among their Touman, the clan was forced to adapt much of the material they had recovered from Brian Caches during their evacuation efforts. A rearmed Mackie MSK-9H, this venerable mech is reskinned in clan spec armour and uses the more modern clan double heat sinks over it's SLDF vintage originals. The weapons loadout is an eclectic mix, built with the limited supplies that survived the flight from the homeworlds. Dual medium pulse lasers replace the original medium lasers, the PPC's are swapped for the Scorpions own improved heavy lasers and the large bore AC is removed in favour of a gargantuan HAG/40 of Hell’s Horses origin. The end result is a cheap conversion, perfect for garrison work and more than a match for the ragtag opponents found in the deep periphery. Unfortunately the limited number of 9H's and the loss of much of the Scorpion manufacturing capabilities, preclude full production of this model.",
+  "Icon": "mackie",
+  "Id": "chassisdef_mackie_MSK-9GSK",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Mackie",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Mackie"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Easy_To_Maintain",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_mackie",
+ "Heatsinks": 0,
+ "InitialTonnage": 10,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 160,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 320,
+   "MaxRearArmor": 160,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": -1,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "mackie",
+ "PrefabIdentifier": "chrprfmech_mackiebase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 80,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Garrison Mech",
+ "Tonnage": 100,
+ "TopSpeed": 65,
+ "TurnRadius": 220,
+ "VariantName": "MSK-9GSK",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A unique redesign of the Mackie, this model was designed by Goliath Scorpion following their flight from the Homeworlds in 3080. Lacking advanced manufacturing capabilities in their new home and with severe losses among their Touman, the clan was forced to adapt much of the material they had recovered from Brian Caches during their evacuation efforts. A rearmed Mackie MSK-9H, this venerable mech is reskinned in clan spec armour and uses the more modern clan double heat sinks over it's SLDF vintage originals. The weapons loadout is an eclectic mix, built with the limited supplies that survived the flight from the homeworlds. Dual medium pulse lasers replace the original medium lasers, the PPC's are swapped for the Scorpions own improved heavy lasers and the large bore AC is removed in favour of a gargantuan HAG/40 of Hell’s Horses origin. The end result is a cheap conversion, perfect for garrison work and more than a match for the ragtag opponents found in the deep periphery. Unfortunately the limited number of 9H's and the loss of much of the Scorpion manufacturing capabilities, preclude full production of this model.",
+ "weightClass": "ASSAULT"
+}

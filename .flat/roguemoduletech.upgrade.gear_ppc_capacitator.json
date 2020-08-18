@@ -1,0 +1,160 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 77,
+ "BonusValueA": "+ 15% PPC Damage",
+ "BonusValueB": "+ 20% PPC Heat",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2",
+   "cae_ai_offence",
+   "cae_ai_explode",
+   "cae_ai_heat"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "Capacitator",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.15,
+   "FailFlatChance": 0.1,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Increased PPC Damage.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "StatusEffect-Attack_PPCCAP",
+      "Name": "PPC Capacitator"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.2",
+      "operation": "Float_Multiply",
+      "statName": "DamagePerShot",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "PPC"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": true,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat generation increased by 20%.",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "StatusEffect-Heat_PPCCAP",
+      "Name": "Increased Heat"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.1",
+      "operation": "Float_Multiply",
+      "statName": "HeatGenerated",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "PPC"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Maintains a constant heat generation of 10.",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "StatusEffect-Heat2_PPCCAP",
+      "Name": "Increased Heat"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-9",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Activatable",
+    "ActivePPCCAPDMG: +20%",
+    "ActivePPCCAPHEAT: +10%",
+    "ActiveHeatPerTurn: +9",
+    "FailChance: 10%",
+    "FailChanceTurn: 15%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "WeaponBoom: 50"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PPCCAP"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 50
+  },
+  "InventorySorter": {
+   "SortKey": "00027"
+  }
+ },
+ "Description": {
+  "Cost": 840000,
+  "Details": "The PPC Capacitor is an extra component that can be added to any type of Projector Cannon. It enhances a PPC’s damage capabilities at the cost of higher heat generation. When Destroyed Explodes.",
+  "Icon": "energise",
+  "Id": "Gear_PPC_Capacitator",
+  "Manufacturer": "Gibson",
+  "Model": "PPC CAP",
+  "Name": "PPC CAP",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "PPC Capacitator"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": []
+}

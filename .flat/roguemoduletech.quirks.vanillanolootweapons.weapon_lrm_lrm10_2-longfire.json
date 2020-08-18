@@ -1,0 +1,114 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.025,
+ "APMaxArmorThickness": 25,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AlwaysIndirectVisuals": true,
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "+1 Accuracy.",
+ "BonusValueB": "+1 Evasion Ignore.",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant2",
+   "range_extreme",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Range: +80",
+    "LongFireLRM",
+    "IsLRM",
+    "Indirect",
+    "DoesCluster"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/l/lrm"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03012"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 170000,
+  "Details": "The LRM10 rack of Long-Range Missiles occupies a supporting fire role when mounted on most units, with fairly low damage balanced by low heat and ammunition consumption. Like all LRMs, LRM10s are capable of indirect fire over obstacles and terrain with the benefit of a spotter unit. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle Hot-Loading. (HL) missiles have no minimum range but can Misfire, damaging the launcher.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Weapon_LRM_LRM10_2-LongFire",
+  "Manufacturer": "LongFire",
+  "Model": "Long-Range Missile Launcher",
+  "Name": "LRM10 LongFire (Deprecated)",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "LRM10 LongFire (Deprecated)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 9,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 2,
+ "MaxRange": 1000,
+ "MinRange": 180,
+ "MissileVolleyIntervalMultiplier": 3.1,
+ "MissileVolleySize": 10,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "Id": "STD",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AccuracyModifier": 1,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.5,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "Id": "Hotload",
+   "MinRange": -180,
+   "UIName": "HL",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm10",
+ "ProjectileSpeedMultiplier": 1.1,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  290,
+  500,
+  710
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 10,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 5,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM10",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

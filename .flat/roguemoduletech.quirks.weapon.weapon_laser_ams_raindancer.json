@@ -1,0 +1,137 @@
+{
+ "AMSShootsEveryAttack": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0,
+ "APMaxArmorThickness": 0,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LAMS",
+    "AdvAMS",
+    "AMSMULTI",
+    "AMSDmg: 2",
+    "AMSAcc: 30%",
+    "AMSShots: 20",
+    "AMSHeat: 25",
+    "OLAMSDmg: 3",
+    "OLAMSAcc: 40%",
+    "OLAMSShots: 40",
+    "OLAMSHeat: 50",
+    "OLAMSJam: 60%",
+    "OLAMSRange: 180"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "w/s/a/lams"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00025"
+  }
+ },
+ "Damage": 0,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 530000,
+  "Details": "The Rain Dancer Laser Anti-Missile System (LAMS) utilizes a series of micro pulse lasers to rapidly take down incoming missiles; unfortunately, this system runs incredibly hot and it heavily integrated into the chassis.  \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_Laser_AMS_RAINDANCER",
+  "Manufacturer": "Solaris Reliquary",
+  "Model": "Lightshow",
+  "Name": "Laser Anti Missile System",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Proto Laser AMS"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 2,
+ "IsAAMS": true,
+ "IsAMS": true,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 2,
+   "AMSHitChance": 0.3,
+   "Id": "On",
+   "ShotsWhenFired": 10,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 3,
+   "AMSHitChance": 0.4,
+   "FlatJammingChance": 0.6,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.09,
+   "HeatGenerated": 10,
+   "Id": "Overload",
+   "MaxRange": 180,
+   "ShotsWhenFired": 20,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "hatchet",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  140,
+  160
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 3,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
+ "WeaponSubType": "SmallLaser",
+ "statusEffects": []
+}

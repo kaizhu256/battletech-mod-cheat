@@ -1,0 +1,115 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "-12% Armor Weight|",
+ "BonusValueB": "Reserves 14 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.15,
+   "ArmorTPCost": 1.1
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "TEHeatgen: -20%",
+    "ArmorFactor: -12%",
+    "Reserved: 8",
+    "ArmorTPCost: 10%",
+    "ArmorCBCost: 15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Basilisk FF",
+   "ReservedSlots": 8,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "ignore_damage",
+    "autorepair",
+    "no_salvage",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Lootable": {
+   "ItemID": "emod_armorslots_HeatDissipating"
+  },
+  "Weights": {
+   "ArmorFactor": 0.89286
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "1.4 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 800000,
+  "Details": "Heat-Dissipating Armor is a derivative of the Fire-Resistant Armor used by Clan battlesuits. The Basilisk employs a Experimental version that is build with advances discovered for the Ferro Fibrous, eliminating the extra Weight.",
+  "Icon": "shieldcomb",
+  "Id": "emod_armorslots_Basilisk",
+  "Manufacturer": "VENS",
+  "Model": "Armor",
+  "Name": "Heat Dissipating Armor",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Basilisk FF"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 20%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_Armor3",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

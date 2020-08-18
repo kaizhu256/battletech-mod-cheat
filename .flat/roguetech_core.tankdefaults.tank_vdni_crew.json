@@ -1,0 +1,329 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Neural",
+ "BonusValueB": "Interface",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "DirectNeuralInterface",
+   "cae_ai_offence",
+   "cae_ai_defence"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AccuracyER: +2",
+    "AccuracyLR: +2",
+    "AccuracyMR: +1",
+    "AccuracyMin: +2",
+    "Recoil: -1",
+    "EvasionIgnore: +1",
+    "CalledShot: 20%",
+    "Initiative: +1",
+    "EvaMax: +1",
+    "FCS",
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CrewCompartment"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00202"
+  },
+  "Lootable": {
+   "ItemID": "Gear_FCS_VDNI"
+  },
+  "VehicleCriticalEffects": {
+   "DeathMethod": "PilotKilled",
+   "LinkedStatisticName": "VehicleCrewCompartmentCrits",
+   "PenalizedEffectIDs": [
+    [
+     "CriticalEffect-CrewCompartmentCrit1",
+     "CriticalEffect-CrewTankCritPenalty3"
+    ],
+    [
+     "CriticalEffect-CrewCompartmentCrit2",
+     "CriticalEffect-CrewTankCritPenalty2"
+    ],
+    [
+     "CriticalEffect-CrewCompartmentCrit3",
+     "CriticalEffect-CrewTankCritPenalty3"
+    ]
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 830000,
+  "Details": "The Vehicular Direct Neural Interface was a special type of cybernetic implant developed for the Manei Domini. The system worked in principle similar to the Clans' Enhanced Imaging system, allowing MechWarriors, aerospace fighter pilots, battle armor troopers and even combat vehicle and Small Craft crews to become one with their machines. Unlike the EI system, however, VDNI was able to ward off the short-term negative effects of the technology by employing improved circuit breakers and forcing users to regularly ingest a special chemical agent.",
+  "Icon": "uixSvgIcon_equipment_Cockpit",
+  "Id": "Tank_VDNI_Crew",
+  "Manufacturer": "Word of Blake",
+  "Model": "VDNI Cockpit",
+  "Name": "VDNI Cockpit",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Vehicular DNI"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "MaxEvasion",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CockpitInitativeEffect",
+    "Name": "CockpitTechBonus"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TCRecoil",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TCCALLSHOT",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "CalledShotBonusMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1Acc, +25% Crit for Energy Weapons.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-FCS_Flak",
+    "Name": "ENERGY WEAPON TTS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.0",
+    "operation": "Float_Add",
+    "statName": "EvasivePipsIgnored",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccER",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "CACExtraLongRangeAccuracyMod",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccLR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "CACLongRangeAccuracyMod",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccMR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "CACMediumRangeAccuracyMod",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "RangeBracketBonusAccSR",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "CACMinRangeAccuracyMod",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

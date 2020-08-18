@@ -1,0 +1,48 @@
+{
+ "AdditionalCost": 2800,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "The, uh, the engineers were wondering if they could schedule a regular tri-vid event. There's this show, about mercenaries during the civil war, and their 'Mechs are supposed to be historically accurate. I'd— uh, they'd like a space to watch stuff like that.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "A few couches and a table don't make for much of a social space. Drinks, 2-D video screens, and a sound system, on the other hand…",
+  "Icon": "uixSvgIcon_shipUpgrade_loungeUpgrade",
+  "Id": "argoUpgrade_rec_lounge2",
+  "Name": "Upgraded Lounge",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_Lounge",
+ "Location": "SHIP",
+ "PurchaseCost": 450000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_rec_lounge1",
+   "argoUpgrade_power1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_lounge2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 20
+}

@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Comstar has requested assistance to fight off pirates. Again. This flashpoint is <b><color=#f0ff00>Long</color></b> ",
+  "Icon": "chapter1verse76",
+  "Id": "fp_Chapter1Verse76",
+  "Name": "Chapter 1 Verse 76"
+ },
+ "Difficulty": 5,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Pirates have set down on a Comstar controlled area, Comstar is asking for our help to remove them. This flashpoint is <b><color=#f0ff00>Long</color></b> ",
+ "InProgressTimeout": 0,
+ "InternalName": "Chapter1Verse76",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_Chapter1Verse76",
+ "PotentialEmployers": [
+  "ComStar"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_Chapter1Verse76_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_simplegreeting_a"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreePirateItems",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 100
+}

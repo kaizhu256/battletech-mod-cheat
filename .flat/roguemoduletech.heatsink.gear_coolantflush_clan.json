@@ -1,0 +1,107 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "- 4 Heat / Turn",
+ "BonusValueB": "- 3% heat generated",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "cae_ai_cool"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "COOLANT FLUSH",
+   "AutoActivateOnIncomingHeat": 60,
+   "ButtonName": "COOLPOD-X1",
+   "CanNotBeActivatedManualy": true,
+   "ChargesCount": 1,
+   "DeactivationMessage": "",
+   "EngineTonnageSlotsMult": 0,
+   "EngineTonnageWeightMult": 0,
+   "FailChancePerTurn": 0,
+   "FailCrit": false,
+   "FailDamageLocations": [],
+   "FailFlatChance": 0,
+   "FailISDamage": 0,
+   "FailPilotingBase": 0,
+   "FailPilotingMult": 0,
+   "FailRoundsStart": 1,
+   "MechTonnageSlotsMult": 0,
+   "MechTonnageWeightMult": 0,
+   "NoUniqueCheck": true,
+   "incomingHeatActivationType": "Threshhold",
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Remove 20 extra heat.",
+      "Icon": "uixSvgIcon_ability_coolantVent",
+      "Id": "CoolantFLUSH",
+      "Name": "COOLANT FLUSH"
+     },
+     "durationData": {
+      "duration": 1,
+      "ticksOnActivations": true
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "25",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": true,
+      "showInTargetPreview": true
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ActivateHeatDamage: 60",
+    "ActivatableUses: 1",
+    "ActiveHeatPerTurn: -25",
+    "CPBoom: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CoolantPod"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 10,
+   "HeatDamage": 20,
+   "StabilityDamage": 10
+  },
+  "InventorySorter": {
+   "SortKey": "00015"
+  }
+ },
+ "Description": {
+  "Cost": 450000,
+  "Details": "Based on the same Technology as a Coolant has this received a inbuild sensor to automatically flush coolant in extreme situations. <b><color=#099ff2>VOLATILE!</color></b>. Does Stack.",
+  "Icon": "CoolantPod",
+  "Id": "Gear_Coolantflush_Clan",
+  "Manufacturer": "Achernar",
+  "Model": "Prototype Coolant",
+  "Name": "Coolant Pod",
+  "Purchasable": true,
+  "Rarity": 9,
+  "UIName": "Coolant Flush X1 (C)"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

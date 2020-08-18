@@ -1,0 +1,100 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.125,
+ "APMaxArmorThickness": 26,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AC2",
+ "AttackRecoil": 1,
+ "BattleValue": 37,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_variant",
+   "component_type_variant1",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: +1",
+    "PipsIgnored: 1",
+    "WeaponJAMFlat: 2%",
+    "MydronAC:2",
+    "IsAC"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/ac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01001"
+  }
+ },
+ "Damage": 13,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 60000,
+  "Details": "Intended for use as supporting fire at very long range, AC/2s deal moderate damage with low heat and a large ammunition count per ton. \n\n <b><color=#ffcc00>Uses AC2 Ammo.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_Autocannon_AC2_1-Mydron",
+  "Manufacturer": "Mydron",
+  "Model": "Sniper Autocannon",
+  "Name": "AC/2 Mydron",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "AC/2 Mydron"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.02,
+ "FlatJammingChance": 0.025,
+ "HeatDamage": 0,
+ "HeatGenerated": 3,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3.12,
+ "InventorySize": 1,
+ "MaxRange": 960,
+ "MinRange": 120,
+ "Modes": [
+  {
+   "APDamageMultiplier": 0.5,
+   "HeatMultiplier": 0.5,
+   "Id": "x2",
+   "UIName": "Burst(x2)",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC2",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  480,
+  720
+ ],
+ "RefireModifier": 1,
+ "ShotsPerAmmo": 2,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC2",
+ "WeaponSubType": "AC2",
+ "statusEffects": []
+}

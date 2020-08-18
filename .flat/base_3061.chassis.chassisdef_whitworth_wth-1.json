@@ -1,0 +1,248 @@
+{
+ "BattleValue": 3610000,
+ "ChassisTags": {
+  "items": [
+   "mr-resize-1.26"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Whitworth"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 40,
+ "DFAInstability": 20,
+ "DFASelfDamage": 40,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 708962,
+  "Details": "The Whitworth is something of an ugly duckling, known among both critics and fans as the Tin Woodsman. It was originally produced in 2610 as a BattleMech that was meant to fill the weight gap between the lighter Wasp and the heavier Phoenix Hawk 'Mechs. The Whitworth, though, is slower than either of these designs by over 30 km/h and plagued with a faulty actuator system in its hips and legs which could cause the legs to tear loose during strenuous maneuvers. Replacing the actuators would require a complete reworking of the lower half of the torso and leg assembly. However, the Whitworth carried eight tons of armor, utilized four reliable Whitworth Jetlift jump jets split between both legs for improved mobility, and featured excellent long-range firepower. The result was a 'Mech which could stand up in combat to another 'Mech of its equivalent mass and less. The original WTH-1S Whitworth model saw combat in the Age of War, however since it was armed with SRMs, many were lost when their pilots rushed into close-range combat to effectively use them. The Whitworth's lack of hand actuators, low speed curve, poor armor distribution and less-than-effective weapon loadout doomed them to the scrap pile. At the insistence of the Star League, the Whitworth Company replaced these weapons with LRMs in 2689 and the WTH-1 would serve in the Star League Defense Force as an able if mediocre scout and light strike platform. Whitworths often took part in reconnaissance-in-force missions and raids against well-defended areas, often alongside Wolverines and Phoenix Hawks, or provided fire support for heavy attack forces with Riflemans and Warhammers.",
+  "Icon": "Whitworth",
+  "Id": "chassisdef_whitworth_WTH-1",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Whitworth",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Whitworth"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Rugged",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_commando",
+ "Heatsinks": 0,
+ "InitialTonnage": 4,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 9.5,
+   "z": 0.5
+  },
+  {
+   "x": -2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": 2.5,
+   "y": 8.5,
+   "z": -0.5
+  },
+  {
+   "x": -1.5,
+   "y": 3,
+   "z": 0.5
+  },
+  {
+   "x": 1.5,
+   "y": 3,
+   "z": 0.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 110,
+   "MaxRearArmor": 55,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 35,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 70,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 55,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 20,
+ "MeleeInstability": 10,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_light",
+ "PrefabBase": "commando",
+ "PrefabIdentifier": "chrPrfMech_commandoBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Missile Boat",
+ "Tonnage": 40,
+ "TopSpeed": 86,
+ "TurnRadius": 90,
+ "VariantName": "WTH-1",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "The Whitworth carries as its primary weapons two Longbow LRM-10 launchers with one ton of ammo each in both right and left torsos. These missile launchers allow the Whitworth to strike an enemy at long ranges with a moderate amount of missiles. While against heavier units it is somewhat effective, when used to provide LRM support to a recon lance, the Whitworth's LRMs can deter pursuit by other light units. For secondary weapons, the Whitworth has three Intek Medium Lasers, one mounted in the head and in either arm, that allow it to effectively defend itself from units of the same weight class and lighter at short ranges.",
+ "weightClass": "MEDIUM"
+}

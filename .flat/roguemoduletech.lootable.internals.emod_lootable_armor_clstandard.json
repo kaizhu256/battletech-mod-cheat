@@ -1,0 +1,73 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "CASE ENABLED!",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanArmor",
+   "BLACKLISTED",
+   "CasedArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.15,
+   "ArmorTPCost": 1.1
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CASE",
+    "ArmorTPCost: 10%",
+    "ArmorCBCost: 15%"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50",
+    "TechCost": "1.1 * [[Chassis.Tonnage]] / 20"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 600000,
+  "Details": "While otherwise identical to standard BattleMech Armor, Clan Armor incorporates C.A.S.E. technology. <b><color=#00ff00>CASE Enabled</color></b>",
+  "Icon": "uixSvgIcon_action_end",
+  "Id": "emod_lootable_armor_clstandard",
+  "Manufacturer": "Clan",
+  "Model": "Clan Standard",
+  "Name": "Standard Armor (C)",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Armor (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

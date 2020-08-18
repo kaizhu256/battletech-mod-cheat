@@ -1,0 +1,163 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "SmallCockpit"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsCockpit"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "LifeSupportA"
+   }
+  ],
+  "CriticalHitStates": {
+   "DeathMethod": "PilotKilled",
+   "HitEffects": [
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-50% Sight and Sensor",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCSensorsDestroyed",
+       "Name": "Sensors Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "0.5",
+       "operation": "Float_Multiply",
+       "statName": "SensorDistanceAbsolute"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-50% Sight and Sensor",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCSensorsDestroyed2",
+       "Name": "Sensors Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "0.5",
+       "operation": "Float_Multiply",
+       "statName": "SpotterDistanceAbsolute"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "Take Damage on Overheat",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCLifeSupportDestroyed",
+       "Name": "Life Support Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Boolean",
+       "modValue": "true",
+       "operation": "Set",
+       "statName": "ReceiveHeatDamageInjury"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "Take Damage on Overheat",
+       "Icon": "uixSvgIcon_equipment_Cockpit",
+       "Id": "SCLifeSupportDestroyed",
+       "Name": "Life Support Destroyed"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Boolean",
+       "modValue": "true",
+       "operation": "Set",
+       "statName": "ReceiveShutdownInjury"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    }
+   ],
+   "MaxStates": 1
+  },
+  "InventorySorter": {
+   "SortKey": "00202"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 0.9",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 680000,
+  "Details": "The Advanced Small Cockpit comes with upgraded controls and haptic systems, eliminating the classic issues of the 'cramped' cockpits",
+  "Icon": "uixSvgIcon_equipment_Cockpit",
+  "Id": "Gear_Cockpit_Advanced_Small",
+  "Manufacturer": "Prototype",
+  "Model": "Kite",
+  "Name": "Small Cockpit",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Cockpit Small Advanced"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

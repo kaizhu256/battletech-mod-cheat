@@ -1,0 +1,65 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_AMS_HE",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 100,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AmmoJAMFlat: 20%",
+    "AMSDmg: 1",
+    "AMSShots: -10",
+    "AMSAmmo: 100",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/s/a/ams"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000032"
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 1
+  }
+ },
+ "Description": {
+  "Cost": 100000,
+  "Details": "HE AMS Shells are an adaption of old time flak shells, firing time delayed explosive into the path of incoming Missiles. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "AMS",
+  "Id": "Ammo_AmmunitionBox_AntiMissile_HE",
+  "Manufacturer": "Generic",
+  "Model": "AMS",
+  "Name": "AMS Ammo",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Ammo AMS HE"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

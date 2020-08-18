@@ -1,0 +1,269 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 10,
+ "AOEEffectsFalloff": true,
+ "AOEHeatDamage": 10,
+ "AOEInstability": 10,
+ "AOERange": 120,
+ "APArmorShardsMod": 0.3,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 260,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 2",
+    "AreaOfEffect: 120",
+    "AreaOfEffectDmg: 10",
+    "AreaOfEffectHeatDmg: 10",
+    "VariableDmg: 20",
+    "WeaponBoom: 100"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/hppc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 100,
+   "StabilityDamage": 50
+  },
+  "InventorySorter": {
+   "SortKey": "02014"
+  }
+ },
+ "Damage": 200,
+ "DamageVariance": 20,
+ "Description": {
+  "Cost": 2000000,
+  "Details": "It's a gigantic PPC. The EMP Field is generates is massive affecting units near the target, disrupting myomer and sensor systems. It's hard to focus it on nearby targets due to the large minimum range in safe mode. \n\n <b><color=#00ffff>Left Click on Chance to Hit during battle to toggle the Field Inhibitor.  (FIOFF) Has no minimum range penalty and does full damage at close range, but is very likely to fry the weapon. \n\n Boosted Mode greatly increases range and damage at the cost of heat and requiring a cooldown period.</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PPC_SILLY",
+  "Manufacturer": "Parti-Kill",
+  "Model": "M1",
+  "Name": "ULN PPC",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Ultra-Light Naval PPC"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 100,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 40,
+ "InventorySize": 12,
+ "MaxRange": 1111,
+ "MinRange": 270,
+ "Modes": [
+  {
+   "DamageOnJamming": false,
+   "Id": "FION",
+   "UIName": "FION",
+   "isBaseMode": true
+  },
+  {
+   "AOEDamage": 5,
+   "AOEHeatDamage": 5,
+   "AOEInstability": 5,
+   "AccuracyModifier": 4,
+   "DamageOnJamming": true,
+   "DamageVariance": 20,
+   "DistantVariance": 0.25,
+   "DistantVarianceReversed": false,
+   "EvasivePipsIgnored": 2,
+   "FlatJammingChance": 0.75,
+   "GunneryJammingBase": 4,
+   "GunneryJammingMult": 0.075,
+   "HeatGenerated": 10,
+   "Id": "FIOFF",
+   "Instability": 10,
+   "MinRange": -270,
+   "ProjectileScale": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": 1.5
+   },
+   "RefireModifier": 4,
+   "UIName": "FIOFF",
+   "isBaseMode": false
+  },
+  {
+   "APMaxArmorThickness": 130,
+   "Cooldown": 2,
+   "DamagePerShot": 100,
+   "DamageVariance": 10,
+   "DistantVariance": 0.6,
+   "HeatGenerated": 50,
+   "Id": "Boosted",
+   "Instability": 20,
+   "MinRange": 120,
+   "ShortRange": 120,
+   "UIName": "Boosted",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 1.25,
+  "y": 1.25,
+  "z": 1.25
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  360,
+  510,
+  750
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 20,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Mech's Movement is reduced.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "HAYWIRE-Effect1",
+    "Name": "HAYWIRED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Debuff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "All weapons +6 Recoil.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-Attack_PPCSILLY_Recoil",
+    "Name": "TWITCHING MYOMER"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "5",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true
+   }
+  }
+ ]
+}

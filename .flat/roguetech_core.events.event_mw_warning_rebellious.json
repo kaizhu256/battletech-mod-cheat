@@ -1,0 +1,283 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "event_HIDDEN"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\"",
+  "Icon": "uixTxrSpot_IncomingTransimission.png",
+  "Id": "event_mw_warning_rebellious",
+  "Name": "The Warning"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Delete the message."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You delete the message and think no more about it. You'll judge [[TGT_MW,{TGT_MW.Callsign}]]'s value for yourself.",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "ignore it"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_warning"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Talk to {TGT_MW.Callsign} about the warning."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] shakes {TGT_MW.DET} head. \"None of that's true, but if my old commander is gonna rake me through the mud like this, I don't know how I'd prove it to you.\"\r\n\r\n\"You prove things by your actions, {TGT_MW.Callsign},\" you say.\r\n\r\n\"Right, Commander.\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "no effect"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_warning"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] sits on the edge of {TGT_MW.DET} seat, looking serious. \"I've never hidden my history, boss. I don't blame you for being worried. But I like it here and I don't want to screw it up.\"",
+      "Icon": null,
+      "Id": "outcome_1_1",
+      "Name": "honest"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_warning",
+         "pilot_honest"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "[[TGT_MW,{TGT_MW.Callsign}]] clenches {TGT_MW.DET} fists. \"I thought I'd finally found a place where I was trusted but I see even here an ex-con can't get a break. Whatever. I get it. You're watching me. Is that all?\"",
+      "Icon": null,
+      "Id": "outcome_1_2",
+      "Name": "rebellious"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_warning",
+         "pilot_rebellious"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "na",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Fire {TGT_MW.Callsign}."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "There's no room on your ship for troublemakers, not when so many talented pilots are filling the Hiring Halls.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "fired"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "pilot_dishonest",
+    "pilot_dependable",
+    "event_mw_warning"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "pilot_rebellious"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

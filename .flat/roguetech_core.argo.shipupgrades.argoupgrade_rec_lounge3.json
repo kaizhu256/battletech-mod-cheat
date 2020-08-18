@@ -1,0 +1,48 @@
+{
+ "AdditionalCost": 2000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "Yeah, Boss, with all the Rustgut some of the Boys keep trying to make i thought we should maybe add some less toxic choices for everyone.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "A nice Bar and choice selection of drinks for the Lounge.",
+  "Icon": "uixSvgIcon_shipUpgrade_loungeUpgrade",
+  "Id": "argoUpgrade_rec_lounge3",
+  "Name": "Bar",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_Lounge",
+ "Location": "SHIP",
+ "PurchaseCost": 250000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_rec_lounge2",
+   "argoUpgrade_power2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_lounge3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

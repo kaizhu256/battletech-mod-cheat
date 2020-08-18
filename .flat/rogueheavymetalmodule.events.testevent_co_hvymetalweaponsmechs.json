@@ -1,0 +1,92 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "--",
+  "Icon": "uixTxrSpot_priorityContract.png",
+  "Id": "testevent_co_HvyMetalWeaponsMechs",
+  "Name": "Test Event: Heavy Metal Weapons / Mechs"
+ },
+ "EventType": "UNSELECTABLE",
+ "OneTimeEvent": false,
+ "Options": [
+  {
+   "Description": {
+    "Details": "Do Not Translate",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Grant all HeavyMetal weapons & Mechs"
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "--",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "Do Not Translate"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "System_ShowRewards",
+         "additionalValues": null,
+         "value": "itemCollection_loot_testevent_HM",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "UNPUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "Tags": {
+  "items": [],
+  "tagSetSourceFile": "tags/EventTags"
+ },
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

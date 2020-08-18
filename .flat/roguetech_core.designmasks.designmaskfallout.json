@@ -1,0 +1,73 @@
+{
+ "Custom": {
+  "CustomMoveCost": {
+   "Hover": {
+    "SprintMultiplier": 1,
+    "moveCost": 1.1
+   }
+  }
+ },
+ "Description": {
+  "Details": "Localized radioactivity interferes with targeting systems, but adds Heat to units passing through. +4 Difficulty to hit units standing in a Radiation Field. +10 Heat for two activations to units passing through a Radiation Field. Makes units harder to detect.",
+  "Icon": "nuclear",
+  "Id": "DesignMaskFallout",
+  "Name": "RADIATION FIELD"
+ },
+ "audioSwitchRainingSurfaceType": "dirt",
+ "audioSwitchSurfaceType": "dirt",
+ "canBurn": false,
+ "canExplode": false,
+ "energyDamageDealtMultiplier": 1,
+ "energyDamageTakenMultiplier": 1,
+ "grantsEvasive": false,
+ "grantsGuarded": false,
+ "heatPerTurn": 0,
+ "heatSinkMultiplier": 1,
+ "legStructureDamageMax": 0,
+ "legStructureDamageMin": 0,
+ "moveCostMechAssault": 1.25,
+ "moveCostMechHeavy": 1.2,
+ "moveCostMechLight": 1.1,
+ "moveCostMechMedium": 1.15,
+ "moveCostSprintMultiplier": 1,
+ "moveCostTrackedAssault": 1.1,
+ "moveCostTrackedHeavy": 1.1,
+ "moveCostTrackedLight": 1.1,
+ "moveCostTrackedMedium": 1.1,
+ "moveCostWheeledAssault": 1.1,
+ "moveCostWheeledHeavy": 1.1,
+ "moveCostWheeledLight": 1.1,
+ "moveCostWheeledMedium": 1.1,
+ "signatureMultiplier": 0.5,
+ "stabilityDamageMultiplier": 1,
+ "stickyEffect": {
+  "Description": {
+   "Details": "This unit moved through intense radiation. It will sink 10 less heat on its next activation.",
+   "Icon": "uixSvgIcon_designMask_mineral",
+   "Id": "DesignMaskRadiation",
+   "Name": "RADIATION"
+  },
+  "durationData": {
+   "duration": 2,
+   "stackLimit": 1,
+   "ticksOnMovements": true
+  },
+  "effectType": "StatisticEffect",
+  "nature": "Debuff",
+  "statisticData": {
+   "modType": "System.Int32",
+   "modValue": "-10",
+   "operation": "Int_Add",
+   "statName": "HeatSinkCapacity"
+  },
+  "targetingData": {
+   "effectTargetType": "SingleTarget",
+   "showInStatusPanel": true,
+   "showInTargetPreview": true
+  }
+ },
+ "targetabilityModifier": 4,
+ "toHitFromModifier": 1,
+ "visibilityHeight": 15,
+ "visibilityMultiplier": 0.8
+}

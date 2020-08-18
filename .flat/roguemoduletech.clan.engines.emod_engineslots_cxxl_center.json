@@ -1,0 +1,103 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "33% Engine Weight",
+ "BonusValueB": "Reserves 8 Slots",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.01,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: -66%",
+    "EngineReserved: 8"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "vital",
+    "engine_part",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size4",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size4",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Weights": {
+   "EngineFactor": 0.333,
+   "ReservedSlots": 8
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "12000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "1.5 * [[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 12300000,
+  "Details": "The Clan Extra-Extralight Fusion Engine is mechanically similar to a Fusion Engine but uses much lighter radiation shielding. The cXXL fusion engine is one third the mass for the same performance, but extrudes into the side torsos of a Battlemech and produces additional waste heat.",
+  "Icon": "power-generator",
+  "Id": "emod_engineslots_cxxl_center",
+  "Manufacturer": "Generic",
+  "Model": "Dagda XXL",
+  "Name": "XXL Engine (C)",
+  "Purchasable": true,
+  "Rarity": 20,
+  "UIName": "Engine XXL (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0
+}

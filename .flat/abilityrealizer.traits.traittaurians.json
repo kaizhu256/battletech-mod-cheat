@@ -1,0 +1,38 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: 'Mechs piloted by this MechWarrior gain +1 Initiative, and remove one bar of stability damage when Reserving.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitTaurians",
+  "Name": "MASTER TACTICIAN"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "+1 to base Initiative",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitTaurians",
+    "Name": "MASTER TACTICIAN"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "IsPrimaryAbility": true,
+ "ShortDesc": "-10% Heat Generation",
+ "Type": "HeatReduction"
+}

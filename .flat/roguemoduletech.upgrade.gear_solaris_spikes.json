@@ -1,0 +1,109 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 10,
+ "BonusValueA": "-3% Melee Damage Taken|",
+ "BonusValueB": "+5% Melee Dmg.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MeleeDamageTaken: -5%",
+    "Melee: +3%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Spikes"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00026"
+  }
+ },
+ "Description": {
+  "Cost": 50000,
+  "Details": "Spikes have been used as decoration on BattleMechs for centuries, but had no effect in combat. The Federated Commonwealth changed that when it introduced reinforced and strengthened Spikes capable of inflicting damage on enemy units in close combat. Based on the same engineering reports that gave birth to the Lyran Commonwealth's Hatchet, these experimental melee weapons have demonstrated their effectiveness in the Solaris arenas. Effect wont stack beyond 10 pieces.",
+  "Icon": "uixSvgIcon_mwFury",
+  "Id": "Gear_Solaris_Spikes",
+  "Manufacturer": "Deadly Sins",
+  "Model": "Spiked Plates",
+  "Name": "Spiked Plates",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Solaris Spikes"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "All incoming Melee damage reduced extra Melee Damage.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "StatusEffect-SpikedPlates",
+    "Name": "Spiked Armour Plates"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 10
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierMelee",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Jump distance decreased by 20%",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "SpikedPlatesMelee",
+    "Name": "Jump Distance"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 10
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.03",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

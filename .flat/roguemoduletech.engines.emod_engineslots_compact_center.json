@@ -1,0 +1,89 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 50% Engine Weight",
+ "BonusValueB": "- 3 Slots Required",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.04,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskRadiation",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "WFX_Nuke",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: +50%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "vital",
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Weights": {
+   "EngineFactor": 1.5
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "12000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 45",
+    "TechCost": "1.2 * [[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 625000,
+  "Details": "The Compact Fusion Engine is mechanically similar to a Fusion Engine but uses much denser radiation shielding. The Compact fusion engine is 50% heavier for the same performance, but occupies less space in the center torso and is less likely to receive a critical hit.",
+  "Icon": "power-generator",
+  "Id": "emod_engineslots_compact_center",
+  "Manufacturer": "Generic",
+  "Model": "Vlar Compact",
+  "Name": "Compact Engine",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Engine Compact"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

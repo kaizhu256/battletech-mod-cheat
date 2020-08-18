@@ -1,0 +1,64 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Mortar_Acid",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 20,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AcidSRM: 1%",
+    "ArmorDmgMod: +50%",
+    "StructureDmgMod: -50%",
+    "AreaOfEffect: 45",
+    "AreaOfEffectDmg: 2",
+    "MortarAmmo: 20"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/o/mortar"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 12,
+   "HeatDamagePerAmmo": 3,
+   "StabilityDamagePerAmmo": 3
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000060"
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "Acid Mortar Shells carry an airburst charge that spreads small Acid Bomblets within an Area. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "mortar",
+  "Id": "Ammo_AmmunitionBox_Acid_Mortar_half",
+  "Manufacturer": "Generic",
+  "Model": "Mortar",
+  "Name": "Mortar Ammo",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Ammo Mortar Acid [Half]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

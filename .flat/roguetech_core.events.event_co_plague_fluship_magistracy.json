@@ -1,0 +1,646 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "planet_pop_none",
+     "planet_other_plague"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_faction_magistracy"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "In the daily briefing, Sumire brings up an open hail from a nearby ship. \"They say their crew has contracted a virulent case of the Periphery Pox, but the local government is preventing them from landing to receive medical care.\"\r\n\r\nDarius shrugs. \"We could sell them some of our medical supplies. It would limit us in the MedBay for a bit, but given their situation, I expect they'd pay up.\"\r\n\r\nDr. Murad bristles at this suggestion. \"Spacers should stick together, Commander. Besides, the local authorities might appreciate our generosity.\"",
+  "Icon": "uixTxrSpot_DailyBriefing.png",
+  "Id": "event_co_plague_FluShip_Magistracy",
+  "Name": "Travelers in Need"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Stay out of it."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "With a tone that brooks no discussion, you say, \"We're not in the business of bailing out every wayward traveler. We need our medical supplies to get our MechWarriors back into the fight.\"\r\n\r\nDarius and Dr. Murad share a pointed look, but they keep any further thoughts to themselves and the daily briefing moves onto other topics.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "With a tone that brooks no discussion, you say, \"We're not in the business of bailing out every wayward traveler. We need medical supplies to get MechWarriors back into the fight.\"\r\n\r\nDarius and Dr. Murad share a pointed look, but they keep any further thoughts to themselves and the daily briefing moves onto other topics.\r\n\r\nOver the next several days, word trickles through the ship about your decision, leading to heated arguments on both sides.",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "Lose morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Money option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Sell them medical supplies for ¢30,000."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You nod at Darius. \"We're not a charity, but we can spare some of our medical supplies. Reach out and see if they're willing to pay.\"\r\n\r\nDarius gives Dr. Murad a pointed look, but they keep any further thoughts to themselves, and the daily briefing moves onto other topics.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "lose MedTech, gain Cbills"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "30000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "You nod at Darius. \"We're not a charity, but we can spare some of our medical supplies. Reach out and see if they're willing to pay.\"\r\n\r\nDarius gives Dr. Murad a pointed look, but they both keep any further thoughts to themselves.\r\n\r\nOver the next several days, word trickles through the ship about your decision, leading to heated arguments on both side.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "lose MedTech, gain Cbills, lose Morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "30000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Reputation option",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Give them some medical supplies."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You nod at Dr. Murad. \"We're only one bad bug away from the same situation ourselves. Make arrangements for a transfer of supplies.\"\r\n\r\nSeveral days later, Sumire passes along a message of thanks from the planet's surface for resolving the situation favorably.",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "lose MedTech, gain Reputation"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.MagistracyOfCanopus",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": "[rep_gain_small]"
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "You nod at Dr. Murad. \"We're only one bad bug away from the same situation ourselves. Make arrangements for a transfer of supplies.\"\r\n\r\nOver the next several days, word trickles through the ship about your decision and the large contingent of lifelong spacers in the crew express their support.\r\n\r\nSumire also passes along a message of thanks from the planet's surface for resolving the situation favorably.",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "lose MedTech, gain Rep, gain Morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.MagistracyOfCanopus",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": "[rep_gain_small]"
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Pox Antivirals]",
+    "Icon": "",
+    "Id": "outcome_3",
+    "Name": "Share the antivirals you've acquired."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "chain_plague_ShoreLeave1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You nod at Dr. Murad. \"We've been here before, and we have a stash of antivirals in the MedBay to show for it. We have an obligation to pass on our good fortune. Make arrangements for a transfer of supplies.\"\r\n\r\nOver the next several days, word trickles through the ship about your decision. Between the large contingent of lifelong spacers in the crew and those MechWarriors who survived their own personal brush with the Periphery Pox, there's a wave of support.\r\n\r\nSumire also passes along a message of thanks from the planet's surface for resolving the situation favorably.",
+      "Icon": "",
+      "Id": "outcome_3_0",
+      "Name": "gain Morale, gain Rep"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Reputation.MagistracyOfCanopus",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": "[rep_gain_small]"
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_FluShip"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "chain_plague_Vaccine",
+    "event_FluShip",
+    "MODIFIED_STAT_MedTechSkill"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "MedTechSkill",
+    "op": "GreaterThanOrEqual",
+    "val": 2,
+    "valueConstant": "2"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

@@ -1,0 +1,833 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "event_mw_moonlighting"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+     "op": "GreaterThanOrEqual",
+     "val": 1,
+     "valueConstant": "1"
+    }
+   ],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} fiddling with a [[DM.WeaponDefs[Weapon_LRM_LRM15_0-STOCK],stock LRM]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\"",
+  "Icon": "uixTxrSpot_MechBay.png",
+  "Id": "event_mw_moonlighting_LRM15",
+  "Name": "Moonlighting with a LRM"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Remind {TGT_MW.Obj} that's not a MechWarrior's job."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. Let the specialists do their jobs.\"\r\n\r\nAs [[TGT_MW,{TGT_MW.Callsign}]] starts to get up, you gesture at the pile of scrap on the ground. \"And clean up this mess. I don't want the Chief stumbling across your experiment in the morning.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Risky option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Let {TGT_MW.Obj} keep working at it."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. Just be careful. These weapons are meant to destroy 'Mechs, after all.\"\r\n\r\nLater that week, [[TGT_MW,{TGT_MW.Callsign}]] catches you in the hall, glowing with excitement.\r\n\r\n\"I did it, Commander! That LRM launcher is purring like a kitten now. Well, a kitten that wants to kill 'Mechs. I even managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_LRM_LRM15_1-LongFire],{DM.WeaponDefs[Weapon_LRM_LRM15_1-LongFire].Description.Manufacturer} {DM.WeaponDefs[Weapon_LRM_LRM15_1-LongFire].Description.Model}]].\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Success"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_1-LongFire",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. Just be careful. These weapons are meant to destroy 'Mechs, after all.\"\r\n\r\nLater that week, you get word that [[TGT_MW,{TGT_MW.Callsign}]] is in the MedBay. When you visit {TGT_MW.Obj}, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} grinning from ear to ear, despite the bandages.\r\n\r\n\"I did it, Commander! That LRM launcher is purring like a kitten now. Well, a kitten that wants to kill 'Mechs. I even managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_LRM_LRM15_1-Telos],{DM.WeaponDefs[Weapon_LRM_LRM15_1-Telos].Description.Manufacturer} {DM.WeaponDefs[Weapon_LRM_LRM15_1-Telos].Description.Model}]].\"",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Success, Gets hurt"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_1-Telos",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. Just be careful. These weapons are meant to destroy 'Mechs, after all.\"\r\n\r\nLater that week, [[TGT_MW,{TGT_MW.Callsign}]] catches you in the hall, but doesn't look you in the eyes.\r\n\r\n\"Commander, I'm sorry to report that I wasn't able to modify that weapon like I wanted to. And…\" {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:struggle|Default:struggles} to continue. \"I wasn't able to put it back together again. I already told the Chief and he raked me over the coals. No more than I deserve, though.\"",
+      "Icon": "",
+      "Id": "outcome_1_2",
+      "Name": "Weapon damaged"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. Just be careful. These weapons are meant to destroy 'Mechs, after all.\"\r\n\r\nLater that week, [[TGT_MW,{TGT_MW.Callsign}]] catches you in the hall with an update.\r\n\r\n\"Commander, I'm sorry to report that I wasn't able to modify that weapon like I wanted to. But I was able to put it back together again just the way it was before. Double and triple-checked it, just to be sure.\"",
+      "Icon": "",
+      "Id": "outcome_1_3",
+      "Name": "Nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[{TGT_MW.Callsign}: Bookish]",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Tell {TGT_MW.Obj} to share {TGT_MW.Det} ideas with Yang."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "pilot_bookish"
+      ],
+      "tagSetSourceFile": "Tags/PilotTags"
+     },
+     "Scope": "MechWarrior"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the good news. He investigated your suggestions and managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_LRM_LRM15_1-LongFire],{DM.WeaponDefs[Weapon_LRM_LRM15_1-LongFire].Description.Manufacturer} {DM.WeaponDefs[Weapon_LRM_LRM15_1-LongFire].Description.Model}]].\"\r\n\r\n{TGT_MW.Callsign} basks in the glow of victory. \"I knew it would work! So… does that mean I'm riding out on the next contract? I feel like I should be the first to get to fire it!\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Success, wpn 1"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_1-LongFire",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the good news. He investigated your suggestions and managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_LRM_LRM15_EXTENTED],{DM.WeaponDefs[Weapon_LRM_LRM15_EXTENTED].Description.Manufacturer} {DM.WeaponDefs[Weapon_LRM_LRM15_EXTENTED].Description.Model}]].\"\r\n\r\n{TGT_MW.Callsign} basks in the glow of victory. \"I knew it would work! So… does that mean I'm riding out on the next contract? I feel like I should be the first to get to fire it!\"",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "Success, wpn 2"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "Weapon_LRM_LRM15_EXTENTED",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the news. He investigated your suggestions, but they didn't lead anywhere productive.\"\r\n\r\n{TGT_MW.Callsign} stares at the floor, crestfallen. \"Damn, I thought for sure that would work. Thanks for asking the Chief to give it a try, though. I guess I'd better stick to what I do best: shooting the weapons instead of trying to modify them.\"",
+      "Icon": "",
+      "Id": "outcome_2_2",
+      "Name": "Nothing happens"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[{TGT_MW.Callsign}: Technician]",
+    "Icon": "",
+    "Id": "outcome_3",
+    "Name": "Make {TGT_MW.Obj} spend a week in the Mech Bay."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "pilot_tech"
+      ],
+      "tagSetSourceFile": "Tags/PilotTags"
+     },
+     "Scope": "MechWarrior"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. But really, with your skills, I don't see why you can't work on it during the day, with supervision. So, you'll be working in the Mech Bay this week. I'll talk to the Chief about it.\"\r\n\r\nLater that week, [[TGT_MW,{TGT_MW.Callsign}]] catches you in the hall, glowing with excitement.\r\n\r\n\"I did it, Commander! That LRM is purring like a kitten now. Well, a kitten that wants to kill 'Mechs. I even managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_LRM_LRM15_ENHANCED],{DM.WeaponDefs[Weapon_LRM_LRM15_ENHANCED].Description.Manufacturer} {DM.WeaponDefs[Weapon_LRM_LRM15_ENHANCED].Description.Model}]].\"",
+      "Icon": "",
+      "Id": "outcome_3_0",
+      "Name": "Success"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "Weapon_LRM_LRM15_ENHANCED",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "7",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. But really, with your skills, I don't see why you can't work on it during the day, with supervision. So, you'll be working in the Mech Bay this week. I'll talk to the Chief about it.\"\r\n\r\nLater that week, {TGT_MW.Callsign} catches you in the hall, glowing with excitement.\r\n\r\n\"I did it, Commander! That LRM is purring like a kitten now. Well, a kitten that wants to kill 'Mechs. I even managed to replicate the performance specs of the [[Weapon_LRM_LRM15_CLAN],{DM.WeaponDefs[Weapon_LRM_LRM15_CLAN].Description.Manufacturer} {DM.WeaponDefs[Weapon_LRM_LRM15_CLAN].Description.Model}]].\"",
+      "Icon": "",
+      "Id": "outcome_3_1",
+      "Name": "BIG Success"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_0-STOCK",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        },
+        {
+         "name": "Weapon_LRM_LRM15_CLAN",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "7",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_moonlighting"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

@@ -1,0 +1,60 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "ComStar is requesting aid defending bases all over the sphere",
+  "Icon": "wordsfound",
+  "Id": "fp_wordsfound",
+  "Name": "Words Found"
+ },
+ "Difficulty": 5,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "One of Agent X's lancemates, Code named Duchess, has requested aid at a base she is defending.",
+ "InProgressTimeout": 0,
+ "InternalName": "wordsfound",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_wordsfound",
+ "PotentialEmployers": [
+  "ComStar"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_revelations_complete",
+     "flashpoint_wordsfound_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_Chapter1Verse76_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreePirateItems2",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 100
+}

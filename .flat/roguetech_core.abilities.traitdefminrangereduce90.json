@@ -1,0 +1,37 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: Reduces Minimum Range Accuracy Penalty by 2",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitDefMinRangeReduce90",
+  "Name": "Reduced Min. Range"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Minimum weapon ranges reduced by 45m",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitDefIndirectReduceOne",
+    "Name": "Reduced Min. Range"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2",
+    "operation": "Float_Add",
+    "statName": "CACMinRangeAccuracyMod",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "-3 Min Range Penalty",
+ "Type": "MinimumRange"
+}

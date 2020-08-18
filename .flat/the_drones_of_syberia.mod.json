@@ -1,0 +1,69 @@
+{
+ "ConflictsWith": [],
+ "DependsOn": [
+  "RogueTech Core",
+  "Rogue Flashpoint Module"
+ ],
+ "Enabled": true,
+ "IgnoreLoadFailure": true,
+ "Manifest": [
+  {
+   "Path": "chassis",
+   "Type": "ChassisDef"
+  },
+  {
+   "Path": "mech",
+   "Type": "MechDef"
+  },
+  {
+   "Path": "portraits",
+   "Type": "Sprite"
+  },
+  {
+   "Path": "quirks",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "quirkjumpjet",
+   "Type": "JumpJetDef"
+  },
+  {
+   "Path": "flashpoints",
+   "Type": "FlashpointDef"
+  },
+  {
+   "Path": "pilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "milestoneSets",
+   "Type": "SimGameMilestoneSet"
+  },
+  {
+   "Path": "simGameConversations",
+   "Type": "SimGameConversations"
+  },
+  {
+   "Path": "cast",
+   "Type": "CastDef"
+  },
+  {
+   "Path": "data",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "AddToAddendum": "ConversationTexture",
+   "Path": "textures",
+   "Type": "Texture2D"
+  },
+  {
+   "Path": "movement",
+   "Type": "MovementCapabilitiesDef"
+  },
+  {
+   "Path": "contract/",
+   "Type": "ContractOverride"
+  }
+ ],
+ "Name": "Drones Of Syberia"
+}

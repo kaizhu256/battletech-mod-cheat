@@ -1,0 +1,89 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "CommandBunker"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "TurretCriticalEffects": {
+   "DeathMethod": "VitalComponentDestroyed",
+   "LinkedStatisticName": "CommandBunkerCrits",
+   "PenalizedEffectIDs": [
+    [
+     "CriticalEffect-TurretBunkerIni2",
+     "CriticalEffect-TurretBunkerCritPenalty2",
+     "CriticalEffect-TurretBunkerAccuracyPenalty2"
+    ],
+    [
+     "CriticalEffect-TurretBunkerIni3",
+     "CriticalEffect-TurretBunkerCritPenalty3",
+     "CriticalEffect-TurretBunkerAccuracyPenalty3"
+    ]
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Command Bunker",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Tank_CrewBunker_Heavy",
+  "Manufacturer": "Generic",
+  "Model": "Command Bunker",
+  "Name": "Command Bunker",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Command Bunker"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "TurretGeneralCritPenalty",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

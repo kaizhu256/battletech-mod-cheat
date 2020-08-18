@@ -1,0 +1,76 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "Requires",
+ "BonusValueB": "ECM",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Stealth",
+    "StealthSensors: 40%, 3, 2, 2, 3",
+    "ActiveVisibility: -20%",
+    "ActiveSignature: -25%",
+    "ActiveTEHeatgen: +5%",
+    "ActiveHeatPerTurn: +3",
+    "ReqECM",
+    "ArmorFactor: -12%",
+    "StealthReserved: 2",
+    "ArmorTPCost: 35%",
+    "ArmorCBCost: 50%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Linked_Stealth"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Stealth System"
+  },
+  "ErrorMessage": "Stealth Armor requires a ECM!",
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "TRGBColor": {
+   "Color": "#5F24AC"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "The Hellespont Lite Stealth Armor integrates Stealth Technology with Ferro Fibrous and a dedicated Guardian Suite, Granting Superior Recon and Stealth Abilities. Reserves 2 slot in every Location except the Head, and 1 in CT for the Guardian ECM.",
+  "Icon": "StealthArmor",
+  "Id": "linked_ff_stealth",
+  "Manufacturer": "Shengli Arms",
+  "Model": "Armor",
+  "Name": "Stealth Armor",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "FF Stealth"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

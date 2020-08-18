@@ -1,0 +1,169 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.75,
+ "APCriticalChanceMultiplier": 0.034,
+ "APMaxArmorThickness": 60,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "HYPERGAUSS",
+ "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "25 Dmg Variance",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoilShot: 1",
+    "DmgFallOff: 75%",
+    "WeaponJAMFlatShot: 5%",
+    "DakkaBoom: 70",
+    "HAGR"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/hag"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 70,
+   "HeatDamagePerAmmo": 20,
+   "StabilityDamagePerAmmo": 35
+  },
+  "InventorySorter": {
+   "SortKey": "01420"
+  }
+ },
+ "Damage": 6,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 2629600,
+  "Details": "By employing advances from the Heavy and Light Gauss projects have RISC Scientists managed to retro engineer the Clan developed Hyper Assault Gauss Rifle. While being able to stabilize its Damage output, did they lack many Clan Advances for the energy regulation. \n\n<b><color=#ffcc00>Uses Hyper Gauss Ammo.</color></b> \n\n<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "HAGR",
+  "Id": "Weapon_Gauss_HAG_RISC",
+  "Manufacturer": "RISC",
+  "Model": "Magnetic Cannon",
+  "Name": "Gauss Rifle HA40 (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Hyper Assault Gauss (RSC)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.75,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 21,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 9,
+ "MaxRange": 780,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "FlatJammingChance": 0.05,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -14,
+   "Id": "x10",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x10",
+   "isBaseMode": false
+  },
+  {
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -7,
+   "Id": "x20",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x20",
+   "isBaseMode": false
+  },
+  {
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "Id": "x30",
+   "UIName": "x30",
+   "isBaseMode": true
+  },
+  {
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 7,
+   "Id": "x40",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x40",
+   "isBaseMode": false
+  },
+  {
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 8,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 14,
+   "Id": "x50",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x50",
+   "isBaseMode": false
+  },
+  {
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 10,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 21,
+   "Id": "x60",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x60",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 0.33,
+  "y": 0.33,
+  "z": 0.5
+ },
+ "ProjectilesPerShot": 10,
+ "RangeSplit": [
+  180,
+  360,
+  720
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 19,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

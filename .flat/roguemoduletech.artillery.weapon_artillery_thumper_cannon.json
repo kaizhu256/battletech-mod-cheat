@@ -1,0 +1,118 @@
+{
+ "AMSImmune": true,
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 150,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Thumper",
+ "AttackRecoil": 4,
+ "BattleValue": 41,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Indirect",
+    "FLAKmode",
+    "WpnRecoil: 2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01330"
+  }
+ },
+ "Damage": 75,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1700000,
+  "Details": "The Thumper Artillery Cannon is a scaled down version of the Thumper Artillery Piece capable of direct fire. When mounted on BattleMechs, combat vehicles, and AeroSpace Fighters, it provides artillery support at much closer ranges than its cousin. Essentially a snub-nosed version of the Thumper Artillery Piece, the Thumper Artillery Cannon fires a shell at an enemy location like an autocannon.\n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b> \n\n <b><color=#ffcc00>Uses Thumper Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Artillery_THUMPER_Cannon",
+  "Manufacturer": "GM",
+  "Model": "Thumper Artillery",
+  "Name": "Thumper Artillery",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Thumper Cannon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.042,
+ "HeatDamage": 0,
+ "HeatGenerated": 18,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 20,
+ "InventorySize": 6,
+ "MaxRange": 540,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "DirectFireModifier": 56,
+   "EvasivePipsIgnored": 15,
+   "Id": "flak",
+   "IndirectFireCapable": false,
+   "MaxMissRadius": 15,
+   "MinMissRadius": 10,
+   "MinRange": -90,
+   "UIName": "FLAK",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": true,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 1,
+   "ForbiddenRange": 120,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  270,
+  450
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

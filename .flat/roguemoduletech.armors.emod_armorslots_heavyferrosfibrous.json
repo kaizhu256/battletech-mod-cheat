@@ -1,0 +1,79 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-20% Armor Weight|",
+ "BonusValueB": "Reserves 21 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.2,
+   "ArmorTPCost": 1.15
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorFactor: -20%",
+    "Reserved: 15",
+    "ArmorTPCost: 15%",
+    "ArmorCBCost: 20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Heavy Ferro",
+   "ReservedSlots": 15,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Weights": {
+   "ArmorFactor": 0.8
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 35",
+    "TechCost": "1.2 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 400000,
+  "Details": "Heavy Ferro-Fibrous armor was developed by Durallex for the Lyran Alliance based on the Inner Sphere's attempts at Light Ferro-Fibrous. Utilizing a weave of ferro-steel, ferro-titanium, and diamond weave fibers which boosts the tensile strength of the plating, it provides more protection per ton than standard armor, but takes up more space on the 'Mech or vehicle.",
+  "Icon": "shieldcomb",
+  "Id": "emod_armorslots_heavyferrosfibrous",
+  "Manufacturer": "Durallex",
+  "Model": "Armor Critical Slot",
+  "Name": "Heavy Ferro-Fibrous Armor",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Heavy Ferro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": null
+}

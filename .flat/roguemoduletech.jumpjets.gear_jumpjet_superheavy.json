@@ -1,0 +1,82 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BattleValue": 0,
+ "BonusValueA": null,
+ "BonusValueB": null,
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "JumpDistance: +10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "SHJJ"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00028"
+  },
+  "RequiredCategories": {
+   "Categories": [
+    "BoosterPack"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 570000,
+  "Details": "This 'Jump Jet' was straight ripped out of a Dropship and fitted for a SuperHeavy Chassis. It surely will lift everything and maybe you even land upright after if whatever God you pray to is listening. Requires Booster Jet to be installed.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Superheavy",
+  "Manufacturer": "Experimental",
+  "Model": "Superheavy",
+  "Name": "Superheavy Jump Jet (SH)",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Jump Jet (SH)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 2,
+ "JumpCapacity": 2,
+ "MaxTonnage": 200,
+ "MinTonnage": 100,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 3,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "The Partial Wing System increases Jump Jet jump distance by 30%",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-Jump_Distance-T3",
+    "Name": "JUMP DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

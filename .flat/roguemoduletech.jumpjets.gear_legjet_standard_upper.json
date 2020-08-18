@@ -1,0 +1,99 @@
+{
+ "AllowedLocations": "Legs",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LegJetsUpper",
+    "JumpCapacity: 1.5",
+    "JumpHeat: 6",
+    "MinWeightJJ: 10",
+    "MaxWeightJJ: 55",
+    "MaxCountJJExtra"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LegHip"
+   },
+   {
+    "CategoryID": "LegUpperActuator"
+   },
+   {
+    "CategoryID": "LegJJ"
+   }
+  ],
+  "CriticalEffects": {
+   "OnDestroyedEffectIDs": [
+    "CriticalEffect-LegJet2-{location}",
+    "CriticalEffect-LegUpperActuatorDestroyed-{location}",
+    "CriticalEffect-HipDestroyed-{location}"
+   ],
+   "PenalizedEffectIDs": [
+    "CriticalEffect-LegJet1-{location}",
+    "CriticalEffect-LegUpperActuatorDestroyed-{location}"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 120000,
+  "Details": "Jump Jets funnel superheated air to propel 'Mechs over obstacles in a controlled manner. Additionally, they may also be used to perform the dreaded 'Death from Above' attack. Standard Jump Jets are specially designed for use on 'Mechs up to 55 tons.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_LegJet_Standard_Upper",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Standard Jump Jet (S)",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Leg Jump Jet (S)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 2,
+ "JumpCapacity": 1.5,
+ "MaxTonnage": 55,
+ "MinTonnage": 10,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0.75,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "6",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,415 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_SPlasma",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Plasma",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Bonus vs Overheat|",
+ "BonusValueB": "Damage Falloff.",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#a60000",
+   "I": 1
+  },
+  {
+   "C": "#a60000",
+   "I": 2
+  },
+  {
+   "C": "#a60000",
+   "I": 3
+  },
+  {
+   "C": "#a60000",
+   "I": 4
+  },
+  {
+   "C": "#a60000",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "OmniRestriction.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ModesCanMisfire",
+    "OHDamage: 50%",
+    "PLASMADEBUFF: 15%",
+    "DmgFallOff: 70%",
+    "WeaponBoom: 35",
+    "IsPalasma: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/plasma"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 40,
+   "HeatDamagePerAmmo": 100,
+   "StabilityDamagePerAmmo": 25
+  },
+  "InventorySorter": {
+   "SortKey": "02016"
+  }
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 960000,
+  "Details": "Based on recovered Schematics from a Pirate outpost have RISC Technicians taken an interest in this Variable State Plasma 'Carbine', applying principles of Fusion Powered Flamers and Advanced Gauss&PPC Technology have they managed to create a plasma that increases in Power based on the Mech's Heat Levels. \n\n<b><color=#ffcc00>Uses Plasma Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "plasma-bolt",
+  "Id": "Weapon_PALASMA_RISC",
+  "Manufacturer": "RISC",
+  "Model": "Plasma Carbine",
+  "Name": "Plasma Carbine",
+  "Purchasable": true,
+  "Rarity": 15,
+  "UIName": "Plasma Carbine"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.7,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.3625,
+ "HeatDamage": 30,
+ "HeatGenerated": 16,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 3,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "ColorChangeRule": "t0",
+   "Id": "1X",
+   "Lock": {
+    "HeatLevel": {
+     "High": 10,
+     "Low": 0
+    }
+   },
+   "UIName": "Cold",
+   "isBaseMode": true
+  },
+  {
+   "ColorChangeRule": "t1",
+   "DamagePerShot": 3,
+   "FireTerrainChance": 0.1,
+   "HeatDamagePerShot": 3,
+   "HeatGenerated": 2,
+   "Id": "2X",
+   "Instability": 0.1,
+   "Lock": {
+    "HeatLevel": {
+     "High": 19,
+     "Low": 10
+    }
+   },
+   "LongRange": 18,
+   "MaxRange": 24,
+   "MiddleRange": 12,
+   "ShortRange": 6,
+   "UIName": "Cold+",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t1",
+   "DamagePerShot": 6,
+   "FireTerrainChance": 0.2,
+   "HeatDamagePerShot": 6,
+   "HeatGenerated": 4,
+   "Id": "3X",
+   "Instability": 0.2,
+   "Lock": {
+    "HeatLevel": {
+     "High": 29,
+     "Low": 20
+    }
+   },
+   "LongRange": 36,
+   "MaxRange": 48,
+   "MiddleRange": 24,
+   "ShortRange": 12,
+   "UIName": "Cool",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t1",
+   "DamagePerShot": 9,
+   "FireTerrainChance": 0.3,
+   "HeatDamagePerShot": 9,
+   "HeatGenerated": 6,
+   "Id": "4X",
+   "Instability": 0.3,
+   "Lock": {
+    "HeatLevel": {
+     "High": 39,
+     "Low": 30
+    }
+   },
+   "LongRange": 54,
+   "MaxRange": 72,
+   "MiddleRange": 36,
+   "ShortRange": 18,
+   "UIName": "Cool+",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t2",
+   "DamagePerShot": 12,
+   "FireTerrainChance": 0.4,
+   "HeatDamagePerShot": 12,
+   "HeatGenerated": 8,
+   "Id": "5X",
+   "Instability": 0.4,
+   "Lock": {
+    "HeatLevel": {
+     "High": 49,
+     "Low": 40
+    }
+   },
+   "LongRange": 72,
+   "MaxRange": 96,
+   "MiddleRange": 48,
+   "ShortRange": 24,
+   "UIName": "Warm",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t2",
+   "DamagePerShot": 15,
+   "FireTerrainChance": 0.5,
+   "HeatDamagePerShot": 15,
+   "HeatGenerated": 10,
+   "Id": "6X",
+   "Instability": 0.5,
+   "Lock": {
+    "HeatLevel": {
+     "High": 59,
+     "Low": 50
+    }
+   },
+   "LongRange": 90,
+   "MaxRange": 120,
+   "MiddleRange": 60,
+   "ShortRange": 30,
+   "UIName": "Warm+",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t2",
+   "DamagePerShot": 18,
+   "FireTerrainChance": 0.6,
+   "HeatDamagePerShot": 18,
+   "HeatGenerated": 12,
+   "Id": "7X",
+   "Instability": 0.6,
+   "Lock": {
+    "HeatLevel": {
+     "High": 69,
+     "Low": 60
+    }
+   },
+   "LongRange": 108,
+   "MaxRange": 144,
+   "MiddleRange": 72,
+   "ShortRange": 36,
+   "UIName": "Hot",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t3",
+   "DamagePerShot": 21,
+   "FireTerrainChance": 0.7,
+   "HeatDamagePerShot": 21,
+   "HeatGenerated": 14,
+   "Id": "8X",
+   "Instability": 0.7,
+   "Lock": {
+    "HeatLevel": {
+     "High": 79,
+     "Low": 70
+    }
+   },
+   "LongRange": 126,
+   "MaxRange": 168,
+   "MiddleRange": 84,
+   "ShortRange": 42,
+   "UIName": "Hot+",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t3",
+   "DamagePerShot": 24,
+   "FireTerrainChance": 0.8,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.01,
+   "HeatDamagePerShot": 24,
+   "HeatGenerated": 16,
+   "Id": "9X",
+   "Instability": 0.8,
+   "Lock": {
+    "HeatLevel": {
+     "High": 89,
+     "Low": 80
+    }
+   },
+   "LongRange": 144,
+   "MaxRange": 192,
+   "MiddleRange": 96,
+   "ShortRange": 48,
+   "UIName": "Boiling",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t3",
+   "DamagePerShot": 27,
+   "FireTerrainChance": 0.9,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 4,
+   "GunneryJammingMult": 0.01,
+   "HeatDamagePerShot": 27,
+   "HeatGenerated": 18,
+   "Id": "10X",
+   "Instability": 0.9,
+   "Lock": {
+    "HeatLevel": {
+     "High": 99,
+     "Low": 90
+    }
+   },
+   "LongRange": 162,
+   "MaxRange": 216,
+   "MiddleRange": 108,
+   "ShortRange": 54,
+   "UIName": "Boiling+",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t4",
+   "DamageOnJamming": true,
+   "DamagePerShot": 30,
+   "FireTerrainChance": 0.9,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.01,
+   "HeatDamagePerShot": 30,
+   "HeatGenerated": 20,
+   "Id": "11X",
+   "Instability": 1,
+   "Lock": {
+    "HeatLevel": {
+     "High": 109,
+     "Low": 100
+    }
+   },
+   "LongRange": 180,
+   "MaxRange": 240,
+   "MiddleRange": 120,
+   "ShortRange": 60,
+   "UIName": "Warning",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t4",
+   "DamageOnJamming": true,
+   "DamagePerShot": 33,
+   "FireTerrainChance": 0.9,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 8,
+   "GunneryJammingMult": 0.02,
+   "HeatDamagePerShot": 33,
+   "HeatGenerated": 22,
+   "Id": "12X",
+   "Instability": 1.1,
+   "Lock": {
+    "HeatLevel": {
+     "High": 119,
+     "Low": 110
+    }
+   },
+   "LongRange": 198,
+   "MaxRange": 264,
+   "MiddleRange": 132,
+   "ShortRange": 66,
+   "UIName": "WARNING!!!",
+   "isBaseMode": false
+  },
+  {
+   "ColorChangeRule": "t4",
+   "DamageOnJamming": true,
+   "DamagePerShot": 36,
+   "FireTerrainChance": 0.9,
+   "FlatJammingChance": 0.4,
+   "GunneryJammingBase": 10,
+   "GunneryJammingMult": 0.02,
+   "HeatDamagePerShot": 36,
+   "HeatGenerated": 24,
+   "Id": "13X",
+   "Instability": 1.2,
+   "Lock": {
+    "HeatLevel": {
+     "High": 600,
+     "Low": 120
+    }
+   },
+   "LongRange": 216,
+   "MaxRange": 288,
+   "MiddleRange": 150,
+   "ShortRange": 72,
+   "UIName": "DANGER!!!",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 1.5,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 1,
+  "y": 1,
+  "z": 0.7
+ },
+ "ProjectileSpeedMultiplier": 0.75,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 4,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

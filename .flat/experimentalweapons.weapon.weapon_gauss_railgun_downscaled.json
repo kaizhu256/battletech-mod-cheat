@@ -1,0 +1,110 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 3,
+ "APMaxArmorThickness": 750,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Railgun",
+ "AttackRecoil": 24,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "50 Dmg Variance",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "VariableDmg: 50",
+    "WpnCrits: +50%",
+    "WpnRecoil: 8",
+    "IsGauss",
+    "IsArtillery"
+   ]
+  },
+  "Category": {
+   "CategoryID": "w/a/g/railgun"
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 80,
+   "HeatDamage": 60,
+   "StabilityDamage": 10
+  },
+  "InventorySorter": {
+   "SortKey": "01418"
+  }
+ },
+ "Damage": 250,
+ "DamageVariance": 50,
+ "Description": {
+  "Cost": 4460000,
+  "Details": "The Railgun is a massive weapon adapted from WarShips to be used on BattleMechs. Clan technology has allowed such a massive weapon to fit a relative small space. The powerful weapon decimates enemy 'Mechs with a single, well-placed shot, but only a few 'Mechs are able to mount. This one was specially downscaled for Assault mechs on the CT. Experimental close range firemode unlocked. \n\n<b><color=#ffcc00>Uses Railgun Ammo.</color></b> \n\n<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Gauss_Railgun_DOWNSCALED",
+  "Manufacturer": "CLAN",
+  "Model": "DOWNSCALED",
+  "Name": "Down-Scaled Railgun",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Railgun (DS)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "IndirectFireCapable": false,
+ "Instability": 40,
+ "InventorySize": 5,
+ "MaxRange": 980,
+ "MinRange": 380,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.4,
+   "Id": "x1",
+   "UIName": "Long-Range",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "DistantVariance": 2,
+   "DistantVarianceReversed": true,
+   "HeatGenerated": -30,
+   "Id": "x2",
+   "LongRange": -600,
+   "MaxRange": -600,
+   "MiddleRange": -350,
+   "MinRange": -200,
+   "RefireModifier": 1,
+   "ShortRange": -200,
+   "UIName": "Close-Range",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  380,
+  680,
+  980
+ ],
+ "RefireModifier": 8,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 22,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": []
+}

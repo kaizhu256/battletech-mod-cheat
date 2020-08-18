@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 600,
+ "Description": {
+  "Details": "Part two of the Pirate Trilogy",
+  "Icon": "solarwinds",
+  "Id": "fp_solarwinds",
+  "Name": "Solar Winds. This Flashpoint is <b><color=#f0ff00>Long</color></b>"
+ },
+ "Difficulty": 9,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "It seems our Pirate allies have come across something they want our help with. This Flashpoint is <b><color=#f0ff00>Long</color></b>.",
+ "InProgressTimeout": 600,
+ "InternalName": "solarwinds",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_solarwinds",
+ "PotentialEmployers": [
+  "AuriganPirates"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": true,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_solarwinds_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_SevenPieces_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreePirateItems2",
+ "TargetFaction": "Locals",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": true,
+ "UseInProgressTimeoutOverride": true,
+ "Weight": 100
+}

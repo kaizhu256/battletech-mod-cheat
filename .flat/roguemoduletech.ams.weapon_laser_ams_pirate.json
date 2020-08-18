@@ -1,0 +1,164 @@
+{
+ "AMSShootsEveryAttack": true,
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": false,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "AMS",
+   "IsPositiveToAlly": true,
+   "Name": "AMS",
+   "Range": 10,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "#800000",
+   "State": "Persistent"
+  }
+ ],
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LAMS",
+    "AdvAMS",
+    "AMSMULTI",
+    "AMSDmg: 2",
+    "AMSAcc: 20%",
+    "AMSShots: 20",
+    "AMSHeat: 13",
+    "OLAMSDmg: 4",
+    "OLAMSAcc: 40%",
+    "OLAMSShots: 40",
+    "OLAMSHeat: 26",
+    "AMSDirectPLAS",
+    "ExplodiumFlat: 15%",
+    "WeaponBoom: 50"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "AMS"
+   },
+   {
+    "CategoryID": "w/s/a/lams"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 50
+  },
+  "InventorySorter": {
+   "SortKey": "00025"
+  }
+ },
+ "Damage": 0,
+ "DamageOnJamming": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1110000,
+  "Details": "Where do you get this Crap, Boss? This was a LAMS from a WLF-1X, but they slapped a APDS tracking system in it, hotwired a capacitor into it and jury rigged the lensing system of what looks to be Large Pulse Laser into this.....  \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "AMS",
+  "Id": "Weapon_Laser_AMS_Pirate",
+  "Manufacturer": "DS Aero",
+  "Model": "LIGHTSHOW!",
+  "Name": "Jury Rigged LAMS",
+  "Purchasable": true,
+  "Rarity": 15,
+  "UIName": "Laser AMS (PRT)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 13,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 4,
+ "MaxRange": 350,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AMSDamage": 2,
+   "AMSHitChance": 0.2,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 4,
+   "GunneryJammingMult": 0.02,
+   "Id": "On",
+   "IsAAMS": true,
+   "IsAMS": true,
+   "ShotsWhenFired": 20,
+   "UIName": "On",
+   "isBaseMode": true
+  },
+  {
+   "AMSDamage": 4,
+   "AMSHitChance": 0.4,
+   "FlatJammingChance": 0.4,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 13,
+   "Id": "Overload",
+   "IsAAMS": true,
+   "IsAMS": true,
+   "ShotsWhenFired": 40,
+   "UIName": "Overload",
+   "isBaseMode": false
+  },
+  {
+   "AMSHitChance": 0,
+   "Id": "Off",
+   "ShotsWhenFired": 0,
+   "UIName": "Off",
+   "isBaseMode": false
+  },
+  {
+   "DamagePerShot": 50,
+   "FlatJammingChance": 0.12,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.018,
+   "HeatGenerated": 45,
+   "Id": "Laser",
+   "ShotsWhenFired": 1,
+   "UIName": "Laser",
+   "isBaseMode": false
+  }
+ ],
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AMS",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  110,
+  200,
+  290
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 0,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 5,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+ "WeaponSubType": "SmallLaser",
+ "statusEffects": []
+}

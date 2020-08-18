@@ -1,0 +1,142 @@
+{
+ "AllowedLocations": "Torso",
+ "BattleValue": 0,
+ "BonusValueA": null,
+ "BonusValueB": null,
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WalkSpeed: +20%",
+    "JumpCapacity: 3",
+    "JumpHeat: 10",
+    "MinWeightJJ: 101",
+    "MaxWeightJJ: 200",
+    "MaxCountJJ: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "BoosterPack"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 174000,
+  "Details": "This is less like a jump Jet and more of a straight up Rocket Booster strapped to its own Fusion Core, it surely will lift anything its attached to. It can be mounted in a way to propel a mech forward as easily as upward.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Booster_clan",
+  "Manufacturer": "Generic",
+  "Model": "Assault",
+  "Name": "Booster Jet (SH-Clan)",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Booster Jet (SH-Clan)"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 4,
+ "JumpCapacity": 3,
+ "MaxTonnage": 200,
+ "MinTonnage": 101,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 8,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeat",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "10",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Max Jump Jet Amount per Walk MP",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpAmount",
+    "Name": "Jump Jet Amount"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Set",
+    "statName": "JumpJetCountMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Supercharged Engines",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "SuperchargerWalk",
+    "Name": "Supercharged"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

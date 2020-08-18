@@ -1,0 +1,192 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 20,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "cae_ai_sensors"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Deployed",
+   "ButtonName": "Remote Sensors",
+   "CanNotBeActivatedManualy": false,
+   "ChargesCount": 3,
+   "DeactivationMessage": "",
+   "EngineTonnageSlotsMult": 0,
+   "EngineTonnageWeightMult": 0,
+   "FailChancePerTurn": 0,
+   "FailCrit": false,
+   "FailDamageLocations": [],
+   "FailFlatChance": 0,
+   "FailISDamage": 0,
+   "FailPilotingBase": 0,
+   "FailPilotingMult": 0,
+   "FailRoundsStart": 1,
+   "MechTonnageSlotsMult": 0,
+   "MechTonnageWeightMult": 0,
+   "NoUniqueCheck": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Increases spotting distance.",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "AdvZoom-Spotting_Gain",
+      "Name": "SPOTTING DISTANCE INCREASED"
+     },
+     "durationData": {
+      "duration": 2,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.2",
+      "operation": "Float_Multiply",
+      "statName": "SensorDistanceAbsolute"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Increases spotting distance.",
+      "Icon": "uixSvgIcon_equipment_Cockpit",
+      "Id": "AdvZoom-Spotting_Gain",
+      "Name": "SPOTTING DISTANCE INCREASED"
+     },
+     "durationData": {
+      "duration": 2,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.2",
+      "operation": "Float_Multiply",
+      "statName": "SpotterDistanceAbsolute"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsProbe: 1",
+    "AdvancedSensors: 1",
+    "Activatable",
+    "ActivatableUses: 3",
+    "ActivatableDuration: 2",
+    "ActiveSensors: 20%",
+    "ActiveSight: 20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "UAV"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00024"
+  }
+ },
+ "Description": {
+  "Cost": 230000,
+  "Details": "Remote Sensor Dispensers are small cargo bays with an attached dispenser used to place Remote Sensors. These dispensers are normally mounted on support vehicles, used to secure newly-established landing zones or defensive perimeters. Each RSD can carry up to thirty short-range sensors, typically a mix of thermal, electromagnetic and seismic sensors.",
+  "Icon": "uav",
+  "Id": "Gear_RemoteSensors",
+  "Manufacturer": "ScolTek",
+  "Model": "Remote Sensors",
+  "Name": "Scanner",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Remote Sensor Dispenser"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduces effectiveness of stealthed and ECM shielded units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_PROBE_CARRIER",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_CARRIER"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides detailed information on enemy units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ADVANCED_SENSORS",
+    "Name": "Advanced Sensors"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  }
+ ]
+}

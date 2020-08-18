@@ -1,0 +1,67 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_ATM_ER",
+ "BattleValue": 0,
+ "BonusValueA": "-25% Damage|",
+ "BonusValueB": "+30% Range.",
+ "Capacity": 30,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ATMDamage: -4",
+    "StabDamage: -1",
+    "Range: +90%",
+    "MissileHP: 2",
+    "ATMAmmo: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/atm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000044"
+  },
+  "TRGBColor": {
+   "Color": "#63A655",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "Extreme Range ATM Ammo utilizes more advanced flight computers and stabilizer to drastically increase their range. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "ATM",
+  "Id": "Ammo_AmmunitionBox_ER_ATM_half",
+  "Manufacturer": "CLAN",
+  "Model": "ATM ER",
+  "Name": "ATM ER Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo ATM ER [Half]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

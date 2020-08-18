@@ -1,0 +1,69 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_HMG_Incendiary",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 100,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeatDamage: +1",
+    "MGDamage: -1",
+    "HMGAmmo: 100",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/o/mg"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 2,
+   "HeatDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 0.75
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000033"
+  },
+  "TRGBColor": {
+   "Color": "#DC143C",
+   "SkipText": true
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 0.5
+  }
+ },
+ "Description": {
+  "Cost": 50000,
+  "Details": "Incendiary HMG Ammo contain a primitive mixture commonly knows as 'White Peter', coating the target in a film of intense burning chemicals akin to a Inferno round. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "MachineGun",
+  "Id": "Ammo_AmmunitionBox_Phosphor_HMG",
+  "Manufacturer": "Generic",
+  "Model": "HMG [INC]",
+  "Name": "HMG Ammo [INC]",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo HMG [INC]"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

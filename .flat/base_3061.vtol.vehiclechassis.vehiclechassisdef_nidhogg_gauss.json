@@ -1,0 +1,245 @@
+{
+ "BattleValue": 564,
+ "CustomParts": {
+  "AOEHeight": 75,
+  "BodyAttach": {
+   "offset": {
+    "x": 0,
+    "y": 54,
+    "z": 0
+   }
+  },
+  "CustomParts": [],
+  "FiringArc": 120,
+  "HighestLOSPosition": {
+   "x": 0,
+   "y": 60,
+   "z": 0
+  },
+  "LeftSideLOS": {
+   "offset": {
+    "x": -2,
+    "y": 54,
+    "z": 0
+   }
+  },
+  "MoveCostModPerBiome": {
+   "DesignMaskBiomeLunarVacuum": 4,
+   "DesignMaskBiomeMartianVacuum": 2.5
+  },
+  "RightSideLOS": {
+   "offset": {
+    "x": 2,
+    "y": 54,
+    "z": 0
+   }
+  },
+  "TieToGroundOnDeath": "true",
+  "TurretAttach": {
+   "offset": {
+    "x": 0,
+    "y": 52.3,
+    "z": 8.5
+   },
+   "rotate": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   }
+  },
+  "TurretLOS": {
+   "offset": {
+    "x": 0,
+    "y": 52.3,
+    "z": 8.5
+   }
+  },
+  "Unaffected": {
+   "DesignMasks": "true",
+   "Fire": "true",
+   "Landmines": "true",
+   "MoveClamp": 0.25,
+   "MoveCostBiome": "false",
+   "Pathing": "true"
+  },
+  "leftVFXTransform": {
+   "offset": {
+    "x": -2,
+    "y": 54,
+    "z": 0
+   }
+  },
+  "lightsTransforms": [
+   {
+    "offset": {
+     "x": -1.1,
+     "y": 103.8,
+     "z": 4.7
+    },
+    "rotate": {
+     "x": 60,
+     "y": 0,
+     "z": 0
+    }
+   },
+   {
+    "offset": {
+     "x": 1.2,
+     "y": 103.8,
+     "z": 4.7
+    },
+    "rotate": {
+     "x": 60,
+     "y": 0,
+     "z": 0
+    }
+   }
+  ],
+  "rearVFXTransform": {
+   "offset": {
+    "x": 0,
+    "y": 54,
+    "z": -7
+   }
+  },
+  "rightVFXTransform": {
+   "offset": {
+    "x": 2,
+    "y": 54,
+    "z": 0
+   }
+  },
+  "thisTransform": {
+   "offset": {
+    "x": 0,
+    "y": 52,
+    "z": 0
+   }
+  }
+ },
+ "Description": {
+  "Cost": 13062500,
+  "Details": "",
+  "Icon": "NidhoggVTOL",
+  "Id": "vehiclechassisdef_Nidhogg_Gauss",
+  "Name": "Nidhogg Gunship",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_strixvtol",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 54,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 52,
+   "z": 3.5
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 54,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 52,
+   "z": 3.5
+  },
+  {
+   "x": -2,
+   "y": 52,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 52,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 52,
+   "z": -4.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 240,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 200,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 200,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 20,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 25,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_9-14cv",
+ "PathingCapDefID": "pathingdef_vtol",
+ "PrefabBase": "strixvtol",
+ "PrefabIdentifier": "chrprfvhcl_strixvtol",
+ "Radius": 3,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 45,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "MEDIUM"
+}

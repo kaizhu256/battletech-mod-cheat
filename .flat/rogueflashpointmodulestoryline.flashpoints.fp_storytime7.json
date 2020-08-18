@@ -1,0 +1,59 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Short Split Template",
+  "Icon": "uixTxrSpot_DariusTalking",
+  "Id": "fp_StoryTime7",
+  "Name": "Arano Restoration - Extraction"
+ },
+ "Difficulty": 6,
+ "FlashpointDescriberCastDefId": "castDef_FP_Dfisher",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "Information is highly overrated, At least in Duncan Fishers opinion, I mean half the time you get a mission briefing and what? It's wrong thats what. And sometimes that information carries a steep cost, ***BEEP*** this get me another drink and ill tell you what really happened.",
+ "InProgressTimeout": 0,
+ "InternalName": "limited gladiator 1",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_StoryTime7",
+ "PotentialEmployers": [
+  "MercenaryReviewBoard"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_StoryTime7_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_StoryTime6_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_ThreeRogueItemsG",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 9090909
+}

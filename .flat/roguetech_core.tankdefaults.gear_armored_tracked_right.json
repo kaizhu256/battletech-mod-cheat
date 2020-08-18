@@ -1,0 +1,102 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "MotiveSystemRight"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "VehicleCriticalEffects": {
+   "LinkedStatisticName": "VehicleMotiveTrackedCrits",
+   "OnDestroyedEffectIDs": [
+    "CriticalEffect-VehicleMotiveCruiseTrackCrit3",
+    "CriticalEffect-VehicleMotiveFlankTrackCrit3",
+    "CriticalEffect-MotiveTankCritPenalty3"
+   ],
+   "PenalizedEffectIDs": [
+    [
+     "CriticalEffect-VehicleMotiveArmored"
+    ],
+    [
+     "CriticalEffect-VehicleMotiveArmored2"
+    ],
+    [
+     "CriticalEffect-VehicleMotiveArmored3"
+    ],
+    [
+     "CriticalEffect-VehicleMotiveCruiseTrackCrit1",
+     "CriticalEffect-VehicleMotiveFlankTrackCrit1",
+     "CriticalEffect-MotiveTankCritPenalty1"
+    ],
+    [
+     "CriticalEffect-VehicleMotiveCruiseTrackCrit2",
+     "CriticalEffect-VehicleMotiveFlankTrackCrit2",
+     "CriticalEffect-MotiveTankCritPenalty2"
+    ]
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Tracked Propulsion",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Gear_Armored_Tracked_Right",
+  "Manufacturer": "Generic",
+  "Model": "Tracked Propulsion",
+  "Name": "Tracked Propulsion",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Tracked Propulsion"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "TankCritPenalizedMotiveR",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.9",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

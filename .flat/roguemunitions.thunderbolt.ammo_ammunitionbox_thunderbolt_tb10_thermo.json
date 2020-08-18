@@ -1,0 +1,71 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_TBOLT10_Thermo",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 6,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: +2",
+    "TboltDamage: -80%",
+    "HeatDamage: +10",
+    "AreaOfEffect: 40",
+    "AreaOfEffectDmg: +10",
+    "AreaOfEffectHeatDmg: +20",
+    "ThermoBurn: 10",
+    "ThermoBOLT10Ammo: 6",
+    "MissileHP: 4",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/t/thunderbolt"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 30,
+   "HeatDamagePerAmmo": 25,
+   "StabilityDamagePerAmmo": 12
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000047"
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 1.2
+  }
+ },
+ "Description": {
+  "Cost": 20000,
+  "Details": "This Thunderbolt Missile was retooled to fire a specialized Thermobaric Warhead igniting everything around the impact and dealing massive amounts of heat.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "thunderbolt",
+  "Id": "Ammo_AmmunitionBox_Thunderbolt_TB10_Thermo",
+  "Manufacturer": "Generic",
+  "Model": "Thermobolt",
+  "Name": "Thermobolt 10 Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo Thermobolt10"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

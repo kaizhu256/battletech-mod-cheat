@@ -1,0 +1,128 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.35,
+ "APCriticalChanceMultiplier": 0.038,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 294,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MML",
+    "WeaponJAM: 10%",
+    "IndirectMML",
+    "DoesCluster"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/mml"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03026"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1725000,
+  "Details": "Yeah Boss, This definitely is a MML firing 20 Missiles, for being hacked together from 3 different Launcher's im actually impressed that it wont blow up in your face. \n\n <b><color=#ffcc00>Uses SRM/LRM Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between SRM/LRM.</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_MML_20_Pirate",
+  "Manufacturer": "Jackson",
+  "Model": "Multi Missile Launcher",
+  "Name": "MML20",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "MML20 (PRT)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 8,
+ "MaxRange": 690,
+ "MinRange": 180,
+ "MissileVolleyIntervalMultiplier": 3.1,
+ "MissileVolleySize": 20,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "LRM",
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.01,
+   "Id": "LRM",
+   "UIName": "LRM",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "SRM",
+   "DamagePerShot": 5,
+   "FireTerrainChance": 0.005,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.01,
+   "Id": "SRM",
+   "IndirectFireCapable": false,
+   "Instability": 1,
+   "LongRange": -360,
+   "MaxRange": -360,
+   "MiddleRange": -240,
+   "MinRange": -180,
+   "ShortRange": -120,
+   "UIName": "SRM",
+   "WeaponEffectID": "WeaponEffect-Weapon_SRM6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectileSpeedMultiplier": 1.1,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 20,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 14,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": []
+}

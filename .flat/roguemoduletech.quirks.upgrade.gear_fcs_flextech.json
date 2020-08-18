@@ -1,0 +1,177 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "Breaching Shot",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CalledShot: 10%",
+    "Accuracy: +1",
+    "CQBVisor: 4, 150",
+    "ThermalVision: 1, 50, 200",
+    "ArtemisIV",
+    "NightVision",
+    "FCS"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitFCS"
+   },
+   {
+    "CategoryID": "AdvZoom"
+   },
+   {
+    "CategoryID": "ThermalVision"
+   },
+   {
+    "CategoryID": "ArtemisTTS"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 450000,
+  "Details": "The Corean FlexTech FCS was specifically designed for the Centurion CN11-O OmniMech, drastically increasing Accuracy While closing to the Target.",
+  "Icon": "targeting",
+  "Id": "Gear_FCS_FlexTech",
+  "Manufacturer": "Corean",
+  "Model": "FlexTech",
+  "Name": "Corean Flextech",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "FCS FlexTech"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 2,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: Enables Night Vision.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "NightVision",
+    "Name": "Night Vision Mode"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_NIGHT_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TCCALLSHOT",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "CalledShotBonusMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "heat bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "Heat Vision Effect",
+    "Name": "Bonus Accuracy against heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "-1_50_200",
+    "operation": "Set",
+    "statName": "LV_HEAT_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "Zoom Vision Effect",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "-4_0_5",
+    "operation": "Set",
+    "statName": "LV_ZOOM_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

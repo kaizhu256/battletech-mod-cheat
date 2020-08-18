@@ -1,0 +1,134 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 3,
+ "APMaxArmorThickness": 600,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AlternateDamageCalc": true,
+ "AmmoCategory": "Railgun",
+ "AttackRecoil": 18,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-10",
+   "wr-damage_when_jam",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DmgFallOff: 40%",
+    "WpnRecoil: 2",
+    "HeatPerCharge: -0.3",
+    "EvasiveExponentMinus: -0.5",
+    "Explodium: 10",
+    "WeaponBoom: 100",
+    "BFG",
+    "WeaponBoom: 200",
+    "WeaponReserved: 6"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/railgun"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 200,
+   "HeatDamagePerAmmo": 15,
+   "StabilityDamagePerAmmo": 50
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "BFG_Side_Left",
+     "ComponentDefType": "Upgrade",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "BFG_Side_Right",
+     "ComponentDefType": "Upgrade",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Weights": {
+   "ReservedSlots": 6
+  }
+ },
+ "Damage": 350,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 3900000,
+  "Details": "This poor mangled and tortured Weapon was a Star League era relic, a Masterpiece of lost Technology, a 'Rail Gun'. Then some Pirates found it and made it 'working' again, the chambering system is a complete mess that only accepts 'Canisters' with 'Magnetic Materials'. \n\n <b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#ffcc00>Uses Railgun Ammo.</color></b> \n\n <b><color=#00ffff>Reduced Damage from Movement</color> </b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_RAILGUN_BFG",
+  "Manufacturer": "SLDF",
+  "Model": "SLDF Railgun",
+  "Name": "Railgun",
+  "Purchasable": false,
+  "Rarity": 10,
+  "UIName": "BFG 9000"
+ },
+ "DisallowedLocations": "Arms, LeftTorso, RightTorso",
+ "DistantVariance": 0.4,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 20,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 50,
+ "InventorySize": 2,
+ "MaxRange": 1440,
+ "MinRange": 240,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "BFG",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  360,
+  720,
+  1080
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 20,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_COILS",
+ "WeaponSubType": "Gauss",
+ "evasivePipsMods": {
+  "Damage": -0.5,
+  "GeneratedHeat": -0.3,
+  "Instablility": -0.45
+ },
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

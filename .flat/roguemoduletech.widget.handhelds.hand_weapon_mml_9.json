@@ -1,0 +1,130 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.35,
+ "APCriticalChanceMultiplier": 0.038,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 8",
+    "MML",
+    "MissileHPHHLRM: 2",
+    "MissileHPHHSRM: 3",
+    "IndirectMML",
+    "HandHeldAmmoPerMode: 90",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 8
+  },
+  "InventorySorter": {
+   "SortKey": "03023"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 200000,
+  "Details": "A HandHeld MML9 Launcher System. \n\n <b><color=#ffcc00>Internal Ammo: LRM:90. SRM:90.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
+  "Icon": "panzerfaust",
+  "Id": "Hand_Weapon_MML_9",
+  "Manufacturer": "Irian",
+  "Model": "Multi Missile Launcher",
+  "Name": "HH MML9",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "HandHeld MML9"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InternalAmmo": {
+  "Ammunition_LRMInternal": 90,
+  "Ammunition_SRMInternal": 90
+ },
+ "InventorySize": 1,
+ "MaxRange": 690,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "LRMInternal",
+   "Id": "LRM",
+   "MissileHealth": 2,
+   "UIName": "LRM",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "SRMInternal",
+   "DamagePerShot": 5,
+   "FireTerrainChance": 0.005,
+   "HeatGenerated": 2,
+   "Id": "SRM",
+   "IndirectFireCapable": false,
+   "Instability": 1,
+   "LongRange": -360,
+   "MaxRange": -360,
+   "MiddleRange": -240,
+   "MinRange": -180,
+   "MissileHealth": 3,
+   "ShortRange": -120,
+   "UIName": "SRM",
+   "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 9,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM5",
+ "ammoCategoryID": "LRMInternal",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

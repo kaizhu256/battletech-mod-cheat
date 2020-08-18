@@ -1,0 +1,129 @@
+{
+ "AMSImmune": true,
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 150,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Thumper",
+ "AttackRecoil": 4,
+ "BattleValue": 43,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsArtillery",
+    "FLAKmode",
+    "DIRECTmode",
+    "WpnRecoil: 2",
+    "ForbiddenRange: 180"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01330"
+  }
+ },
+ "Damage": 75,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 2500000,
+  "Details": "The Thumper Artillery Piece is the smallest conventional artillery piece with an effective range of 10.5 kilometers. While an effective Field Artillery weapon, the Thumper is perhaps best known for its use as the main gun on the SLDF's Thor Artillery Vehicle, as well as the Thor's knock-off the Thumper.\n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b> \n\n <b><color=#ffcc00>Uses Thumper Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Artillery_THUMPER",
+  "Manufacturer": "GM",
+  "Model": "Thumper Artillery",
+  "Name": "Thumper Artillery",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Thumper Artillery"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.042,
+ "HeatDamage": 0,
+ "HeatGenerated": 18,
+ "ImprovedBallistic": true,
+ "Instability": 20,
+ "InventorySize": 8,
+ "MaxRange": 3000,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AccuracyModifier": 4,
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 0,
+   "EvasivePipsIgnored": 15,
+   "ForbiddenRange": 180,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "LongRange": -2400,
+   "MaxRange": -2400,
+   "MiddleRange": -2400,
+   "ShortRange": -2400,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "DirectFireModifier": 53,
+   "EvasivePipsIgnored": 15,
+   "Id": "flak",
+   "IndirectFireCapable": false,
+   "MinRange": -180,
+   "UIName": "FLAK",
+   "isBaseMode": false
+  },
+  {
+   "AccuracyModifier": 5,
+   "AlwaysIndirectVisuals": true,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 2,
+   "EvasivePipsIgnored": 15,
+   "ForbiddenRange": 180,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "MaxMissRadius": 45,
+   "MinMissRadius": 10,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  3000,
+  3000,
+  3000
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 15,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

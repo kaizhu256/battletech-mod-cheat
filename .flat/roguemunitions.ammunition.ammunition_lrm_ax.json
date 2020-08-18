@@ -1,0 +1,86 @@
+{
+ "AIBattleValue": 90,
+ "AOECapable": true,
+ "AOEDamage": 2,
+ "AOEInstability": 0,
+ "AOERange": 45,
+ "AccuracyModifier": 2,
+ "AlwaysIndirectVisuals": true,
+ "ArmorDamageModifier": 1.5,
+ "CantHitUnaffecedByPathing": true,
+ "Category": "LRM",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#1D7F23",
+   "I": 5
+  }
+ ],
+ "CriticalChanceMultiplier": -0.8,
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.4,
+ "Description": {
+  "Cost": 0,
+  "Details": "Long range missiles, inferno.",
+  "Icon": null,
+  "Id": "Ammunition_LRM_AX",
+  "Name": "Incendiary LRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Typhon"
+ },
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 0.1,
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 0.5,
+ "Instability": -0.5,
+ "LongRange": -180,
+ "MaxMissRadius": 30,
+ "MaxRange": -240,
+ "MiddleRange": -120,
+ "MinMissRadius": 10,
+ "MissileHealth": 1,
+ "ShortRange": -60,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_AcidLRM",
+    "Name": "Acid"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.01",
+    "operation": "Float_Add",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

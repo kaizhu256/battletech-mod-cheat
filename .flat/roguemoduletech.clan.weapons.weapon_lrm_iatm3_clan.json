@@ -1,0 +1,108 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.04,
+ "APMaxArmorThickness": 40,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "iATM",
+ "AttackRecoil": 1,
+ "BattleValue": 83,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PipsIgnored: 2",
+    "WpnAccuracy: +1",
+    "Streak",
+    "DoesCluster",
+    "iATM"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/l/iatm"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03015"
+  }
+ },
+ "Damage": 8,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 211200,
+  "Details": "The Improved Advanced Tactical Missile system (iATM) was developed by The Society. Like the Advanced Tactical Missile that it's based on, the iATM system uses a variety of ammunition types and includes an advanced targeting option. \n\n<b><color=#ffcc00>Uses iATM Ammo.</color></b>",
+  "Icon": "ATM",
+  "Id": "Weapon_LRM_iATM3_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Improved ATM",
+  "Name": "ATM 3 (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "iATM 3 (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 2,
+ "FireDelayMultiplier": 2,
+ "FireTerrainChance": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 6,
+ "HitGenerator": "Streak",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 2,
+ "InventorySize": 2,
+ "MaxRange": 600,
+ "MinRange": 120,
+ "MissileVolleyIntervalMultiplier": 2,
+ "MissileVolleySize": 3,
+ "Modes": [
+  {
+   "Id": "Streak",
+   "UIName": "Streak",
+   "isBaseMode": true
+  },
+  {
+   "HitGenerator": "Cluster",
+   "Id": "Indirect",
+   "IndirectFireCapable": true,
+   "Streak": false,
+   "UIName": "Indirect",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm5",
+ "ProjectileSpeedMultiplier": 1.4,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Streak": true,
+ "Tonnage": 1.5,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM5",
+ "statusEffects": []
+}

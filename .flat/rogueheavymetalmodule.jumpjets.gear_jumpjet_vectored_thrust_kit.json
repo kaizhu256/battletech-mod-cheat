@@ -1,0 +1,117 @@
+{
+ "AllowedLocations": "Torso, Legs",
+ "BonusValueA": "+ 10% Jump Dist.",
+ "BonusValueB": "+ 10% Dmg. After Jump",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Description": {
+  "Cost": 0,
+  "Details": "The Phoenix Hawk mounts a pair of unique Vectored Thrust Kits. They act as normal Jump Jets, but in addition, their specialized thrust system optimizes propulsion and control during flight. This provides superior poise for subsequent attacks, increasing the damage dealt by any shots fired.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_JumpJet_Vectored_Thrust_Kit",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Vectored Thrust Kit",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Vectored Thrust Kit"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 2,
+ "JumpCapacity": 1,
+ "MaxTonnage": 55,
+ "MinTonnage": 10,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Increases damage dealt after jumping by 20% and boosts the distance this unit can travel when jumping by 20%.",
+    "Icon": "uixSvgIcon_action_jump",
+    "Id": "StatusEffect-Jump-DamageBoost",
+    "Name": "VECTORED THRUST KIT"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Add",
+    "statName": "JumpingWeaponDamageModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases the distance this unit can travel when jumping by [AMT].",
+    "Icon": "uixSvgIcon_action_jump",
+    "Id": "StatusEffect-Jump-DistanceBoost",
+    "Name": "JUMP BOOSTER"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Add",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

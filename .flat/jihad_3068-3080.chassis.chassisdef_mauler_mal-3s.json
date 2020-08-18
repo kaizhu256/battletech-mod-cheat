@@ -1,0 +1,249 @@
+{
+ "BattleValue": 9642000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 90,
+ "DFAInstability": 45,
+ "DFASelfDamage": 90,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2316667,
+  "Details": "Designed by the Lyran Alliance to serve as a mobile artillery piece in places where conventional vehicles could not reach, the Mauler-3L carries as its main weaponry a pair of massive Snipers. For close-range defense, the mech carries four Medium Pulse Lasers. The -3S's biggest downside is that the designers were forced to skimp on ammo, with the Snipers only 2 tons each.",
+  "Icon": "uixTxrIcon_mauler",
+  "Id": "chassisdef_mauler_MAL-3S",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Mauler",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Mauler"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Distracting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_mauler",
+ "Heatsinks": 0,
+ "InitialTonnage": 9,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 145,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 290,
+   "MaxRearArmor": 145,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 45,
+ "MeleeInstability": 23,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "mauler",
+ "PrefabIdentifier": "chrprfmech_maulerbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Siege Artillery",
+ "Tonnage": 90,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "MAL-3S",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Designed by the Lyran Alliance to serve as a mobile artillery piece in places where conventional vehicles could not reach, the Mauler-3L carries as its main weaponry a pair of massive Snipers. For close-range defense, the mech carries four Medium Pulse Lasers. The -3S's biggest downside is that the designers were forced to skimp on ammo, with the Snipers only 2 tons each.",
+ "weightClass": "ASSAULT"
+}

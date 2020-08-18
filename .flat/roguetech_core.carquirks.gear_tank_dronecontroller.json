@@ -1,0 +1,83 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+1 Defense.",
+ "BonusValueB": "+1 Missile Defense.",
+ "ComponentSubType": "Prototype_ElectronicWarfare",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Drone Controller",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "",
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "UAV: 900, 3, 0"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "UAV"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00024"
+  }
+ },
+ "Description": {
+  "Cost": 130000,
+  "Details": "A drone Remote Control System set up to deploy a swarm of Sensor Drones.",
+  "Icon": "uav",
+  "Id": "Gear_Tank_DroneController",
+  "Manufacturer": "ScolTek",
+  "Model": "Advanced Zoom",
+  "Name": "Scanner",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "DroneController"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 4.5,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Activated ability (uses Firing action). Performs a Sensor Lock against all enemies within its radius, as indicated by the spinning gold ring. Will go into cooldown state after use.",
+    "Icon": "uixSvgIcon_action_sensorlock",
+    "Id": "DoneControl_Ping",
+    "Name": "Drone Controller"
+   },
+   "activeAbilityEffectData": {
+    "abilityName": "AbilityDef_UAV_Ping"
+   },
+   "effectType": "ActiveAbility",
+   "targetingData": {
+    "alsoTargetsCreator": true,
+    "effectTargetType": "EnemiesWithinRange",
+    "effectTriggerType": "OnActivation",
+    "forceVisRebuild": true
+   }
+  }
+ ]
+}

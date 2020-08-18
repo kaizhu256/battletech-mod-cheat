@@ -1,0 +1,291 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 55,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Sword On",
+   "ActiveByDefault": true,
+   "ButtonName": "VibroSword",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "Sword Off",
+   "Linkage": {
+    "OnActivate": {
+     "Activate": [],
+     "Deactivate": []
+    },
+    "OnDeactivate": {
+     "Activate": [],
+     "Deactivate": []
+    }
+   },
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Melee attacks deal 20% Extra stab damage.",
+      "Icon": "uixSvgIcon_equipment_ActuatorArm",
+      "Id": "VibroSwordInstability",
+      "Name": "Hand Melee Damage"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.14",
+      "operation": "Float_Multiply",
+      "statName": "Instability",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "Melee"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Melee attacks deal [AMT] more damage.",
+      "Icon": "uixSvgIcon_equipment_ActuatorArm",
+      "Id": "VibroSwordDamage",
+      "Name": "MELEE DAMAGE INCREASED"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "7.0",
+      "operation": "Float_Add",
+      "statName": "DamagePerShot",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "Melee"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Melee attacks deal 50% Extra damage.",
+      "Icon": "uixSvgIcon_equipment_ActuatorArm",
+      "Id": "VibroSwordInstabilityDamageMulti",
+      "Name": "Hand Melee Damage"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.14",
+      "operation": "Float_Multiply",
+      "statName": "DamagePerShot",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "Melee"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "A small BattleMech VibroBlade inflicting alot of damage but generates heat.",
+      "Icon": "uixSvgIcon_designMask_mineral",
+      "Id": "VibroSwordHeat",
+      "Name": "Small Vibro Blade"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-14",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "SpecialMelee: 7",
+    "MeleeAcc: +2",
+    "Melee: +28",
+    "MeleeStab: +14%",
+    "Activatable",
+    "ActiveMelee: +7",
+    "ActiveMelee: +14%",
+    "ActiveMeleeStab: +14%",
+    "ActiveHeatPerTurn: 14",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "SpecialMelee"
+   },
+   {
+    "CategoryID": "Special"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 7
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 900000,
+  "Details": "The Sword is a melee attack weapon developed in 3058 by the Draconis Combine as an 'honorable' alternative to the 'crude' Lyran Hatchet, the Sword inflicts almost as much damage as a Hatchet and offers a better hit probability due to its exceptional balance.",
+  "Icon": "VibroSword",
+  "Id": "Special_VibroSword_7tons",
+  "Manufacturer": "Silver Wyrm, Ltd.",
+  "Model": "Mithril Wyrm",
+  "Name": "Vibro Sword 7T",
+  "Purchasable": false,
+  "Rarity": 30,
+  "UIName": "Vibro Sword 7T"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Melee attacks deal 20% Extra stab damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-HandMeleeStab",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.14",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks deal [AMT] more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-Attack_DamageMelee-T6",
+    "Name": "MELEE DAMAGE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "28.0",
+    "operation": "Float_Add",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks have +2 Accuracy.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "StatusEffect-EliteSword",
+    "Name": "Solaris ChainSword"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

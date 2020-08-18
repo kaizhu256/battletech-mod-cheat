@@ -1,0 +1,116 @@
+{
+ "AIBattleValue": 90,
+ "AOECapable": true,
+ "AOEDamage": 5,
+ "AOEHeatDamage": 10,
+ "AOEInstability": 3,
+ "AOERange": 30,
+ "AccuracyModifier": -2,
+ "AdditionalImpactVFX": "WFX_ExplosiveSmokeL",
+ "AdditionalImpactVFXScaleX": 2,
+ "AdditionalImpactVFXScaleY": 2,
+ "AdditionalImpactVFXScaleZ": 2,
+ "ArmorDamageModifier": 1,
+ "Category": "TBOLT5",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#DE6437",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.2,
+ "Description": {
+  "Cost": 0,
+  "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
+  "Icon": null,
+  "Id": "Ammunition_TBOLT5_Thermo",
+  "Name": "Thunderbolt 5 Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Thermo"
+ },
+ "FireTerrainChance": 0.15,
+ "HeatDamagePerShot": 5,
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "MissileHealth": 3,
+ "ProjectileSpeedMultiplier": 0.9,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit is coated with burning chemicals. Heatsink efficiency reduced by 5.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_Thermobolt",
+    "Name": "Thermobaric Explosion"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "5",
+    "operation": "Int_Subtract",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 2,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.97",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

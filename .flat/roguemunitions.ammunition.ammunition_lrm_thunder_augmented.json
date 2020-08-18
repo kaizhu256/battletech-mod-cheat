@@ -1,0 +1,53 @@
+{
+ "AccuracyModifier": 5,
+ "AlwaysIndirectVisuals": true,
+ "ArmorDamageModifier": 1,
+ "Category": "LRM",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#8A2BE2",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.8,
+ "Description": {
+  "Cost": 0,
+  "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
+  "Icon": null,
+  "Id": "Ammunition_LRM_Thunder_Augmented",
+  "Name": "LRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Thunder-A"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "MaxMissRadius": 40,
+ "MinMissRadius": 5,
+ "MineField": {
+  "AOEDamage": 2,
+  "AOEHeat": 0,
+  "AOEInstability": 2,
+  "AOERange": 30,
+  "CantHitUnaffecedByPathing": true,
+  "Chance": 0.5,
+  "Count": 2,
+  "Damage": 2,
+  "FireDurationWithoutForest": 0,
+  "FireOnSuccessHit": true,
+  "FireTerrainChance": 0.01,
+  "FireTerrainStrength": 0,
+  "Heat": 0,
+  "InstallCellRange": 6,
+  "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "VFXMinDistance": 30,
+  "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
+  "statusEffects": []
+ },
+ "MissileHealth": 2,
+ "Type": "Normal"
+}

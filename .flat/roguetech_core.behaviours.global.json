@@ -1,0 +1,1250 @@
+{
+ "behaviorVariables": [
+  {
+   "k": "Float_SureFootingAbilityWalkBoost",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_AccuracyNeededForOverheatAttack",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ExistingTargetDamageForOverheatAttack",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ExistingTargetDamageForDFAAttack",
+   "v": {
+    "floatVal": 0.3,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OwnMaxLegDamageForDFAAttack",
+   "v": {
+    "floatVal": 0.7,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_LancePatrolRadius",
+   "v": {
+    "floatVal": 70,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_LanceMoveRadius",
+   "v": {
+    "floatVal": 8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_PatrolShouldLoop",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Int_RecentTargetThresholdPhases",
+   "v": {
+    "intVal": 2,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Float_PreferredTargetToHitThreshold",
+   "v": {
+    "floatVal": 0.35,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_RouteWaypointRadius",
+   "v": {
+    "floatVal": 40,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PersonalSpaceRadius",
+   "v": {
+    "floatVal": 6,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_ProhibitTargetingPriorityTargetsAfterBeingTargeted",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_PriorityAttackPercentage",
+   "v": {
+    "floatVal": 95,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PriorityMovePercentage",
+   "v": {
+    "floatVal": 95,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferLowerMovementFactorWeight",
+   "v": {
+    "floatVal": -1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferLowerMovementFactorWeight",
+   "v": {
+    "floatVal": -1.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHigherPositionFactorWeight",
+   "v": {
+    "floatVal": 0.65,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHigherPositionFactorWeight",
+   "v": {
+    "floatVal": 0.85,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHigherExpectedDamageToHostileFactorWeight",
+   "v": {
+    "floatVal": 1.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHigherExpectedDamageToHostileFactorWeight",
+   "v": {
+    "floatVal": 0.7,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferLowerExpectedDamageFromHostileFactorWeight",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferLowerExpectedDamageFromHostileFactorWeight",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferFacingHostileFactorWeight",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferFacingHostileFactorWeight",
+   "v": {
+    "floatVal": 0.25,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OptimalAllyDistance",
+   "v": {
+    "floatVal": 122,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferOptimalDistanceToAllyFactorWeight",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferOptimalDistanceToAllyFactorWeight",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_AcceptableHeatLevel",
+   "v": {
+    "floatVal": 1.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ThreatBattleValueRoot",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ShootingDamageMultiplier",
+   "v": {
+    "floatVal": 1.7,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MeleeDamageMultiplier",
+   "v": {
+    "floatVal": 0.3,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MeleeVsUnsteadyTargetDamageMultiplier",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_DFADamageMultiplier",
+   "v": {
+    "floatVal": 1.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CoolDownRange",
+   "v": {
+    "floatVal": 300,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferLessTargetableLocationFactorWeight",
+   "v": {
+    "floatVal": 1.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferLessTargetableLocationFactorWeight",
+   "v": {
+    "floatVal": 1.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHigherHeatSinkLocationsFactorWeight",
+   "v": {
+    "floatVal": 0.7,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHigherHeatSinkLocationsFactorWeight",
+   "v": {
+    "floatVal": 0.9,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHigherHeatPerTurnLocationsFactorWeight",
+   "v": {
+    "floatVal": -1.6,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHigherHeatPerTurnLocationsFactorWeight",
+   "v": {
+    "floatVal": -1.9,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHigherMovementBonusLocationsFactorWeight",
+   "v": {
+    "floatVal": 0.45,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHigherMovementBonusLocationsFactorWeight",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferAttackingLowerArmorHostileFactorWeight",
+   "v": {
+    "floatVal": 1.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferAttackingLowerArmorHostileFactorWeight",
+   "v": {
+    "floatVal": 0.3,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_VulnerableDamageRatioThreshold",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CalledShotVulnerabilityMultiplier",
+   "v": {
+    "floatVal": 4.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ThreatDamageRatioThreshold",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Int_MeleeRevengeWindowPhaseCount",
+   "v": {
+    "intVal": 21,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Float_MeleeRevengeBonus",
+   "v": {
+    "floatVal": 0.25,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MeleeDamageRatioCap",
+   "v": {
+    "floatVal": 1.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MajorDamageRatio",
+   "v": {
+    "floatVal": 5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_HeatToDamageRatio",
+   "v": {
+    "floatVal": 2.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferInsideMeleeRangeFactorWeight",
+   "v": {
+    "floatVal": -0.6,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferInsideMeleeRangeFactorWeight",
+   "v": {
+    "floatVal": -0.9,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Int_HostileInfluenceCount",
+   "v": {
+    "intVal": 6,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Int_AllyInfluenceCount",
+   "v": {
+    "intVal": 3,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Float_UnsteadyCausesDefensiveMovePercentage",
+   "v": {
+    "floatVal": 10,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_RewriteNonAttackMoves",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "String_PreferProximityToTaggedTargetFactorTag",
+   "v": {
+    "stringVal": "",
+    "type": "String"
+   }
+  },
+  {
+   "k": "Float_AngularSelectionResolution",
+   "v": {
+    "floatVal": 60,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_UseDynamicLanceRoles",
+   "v": {
+    "boolVal": false,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_MeleeBonusMultiplierWhenAttackingEvasiveTargets",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MeleeBonusMultiplierWhenAttackingBracedTargets",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_UnsteadinessToVirtualDamageConversionRatio",
+   "v": {
+    "floatVal": 1.7,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferLocationsThatGrantGuardFactorWeight",
+   "v": {
+    "floatVal": 0.45,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferLocationsThatGrantGuardFactorWeight",
+   "v": {
+    "floatVal": 0.6,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_BulwarkThresholdPercentage",
+   "v": {
+    "floatVal": 5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "String_InfluenceMapCalculationLogDirectory",
+   "v": {
+    "stringVal": "AI_Logs",
+    "type": "String"
+   }
+  },
+  {
+   "k": "Bool_ReserveEnabled",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_ReserveBasePercentage",
+   "v": {
+    "floatVal": 10,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ReserveHostilePercentageIncrementX",
+   "v": {
+    "floatVal": 65,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ReserveHostilePercentageIncrementY",
+   "v": {
+    "floatVal": 22.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ReserveHostileOffset",
+   "v": {
+    "floatVal": 0.7,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MultiTargetOverkillThreshold",
+   "v": {
+    "floatVal": 90,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferNotLethalPositionFactorWeight",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferNotLethalPositionFactorWeight",
+   "v": {
+    "floatVal": 1.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OverkillThresholdLowForLethalPositionFactor",
+   "v": {
+    "floatVal": 150,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OverkillThresholdHighForLethalPositionFactor",
+   "v": {
+    "floatVal": 350,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OverkillThresholdLowForRearArcPositionFactor",
+   "v": {
+    "floatVal": 40,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OverkillThresholdHighForRearArcPositionFactor",
+   "v": {
+    "floatVal": 60,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OverkillFactorForReserve",
+   "v": {
+    "floatVal": 70,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CalledShotHeadBaseChance",
+   "v": {
+    "floatVal": 10,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CalledShotCenterTorsoBaseChance",
+   "v": {
+    "floatVal": 15,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CalledShotOtherBaseChance",
+   "v": {
+    "floatVal": 5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CalledShotWeaponDamageChance",
+   "v": {
+    "floatVal": 0.35,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CalledShotDamagedChanceMultiplier",
+   "v": {
+    "floatVal": 2.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MaxThinkSeconds",
+   "v": {
+    "floatVal": 60,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferLethalDamageToRearArcFromHostileFactorWeight",
+   "v": {
+    "floatVal": -3,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferLethalDamageToRearArcFromHostileFactorWeight",
+   "v": {
+    "floatVal": -1.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_NonInterleavedLanceSpreadDistance",
+   "v": {
+    "floatVal": 220,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_InterleavedLanceSpreadDistance",
+   "v": {
+    "floatVal": 168,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_AppetitivePreferApproachingRearArcOfHostileFactorWeight",
+   "v": {
+    "floatVal": 1.2,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintAppetitivePreferApproachingRearArcOfHostileFactorWeight",
+   "v": {
+    "floatVal": 1.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintExclusionRadius",
+   "v": {
+    "floatVal": 240,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferInsideSprintExclusionRadiusHostileFactorWeight",
+   "v": {
+    "floatVal": 0.05,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferInsideSprintExclusionRadiusHostileFactorWeight",
+   "v": {
+    "floatVal": -10,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_AppetitiveBehindMaximumRadius",
+   "v": {
+    "floatVal": 390,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_AppetitivePreferIdealWeaponRangeToHostileFactorWeight",
+   "v": {
+    "floatVal": 1.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintAppetitivePreferIdealWeaponRangeToHostileFactorWeight",
+   "v": {
+    "floatVal": 0.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_UseNewThreatDEPRECATED",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_PreferSurroundingHostileUnitsFactorWeight",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferSurroundingHostileUnitsFactorWeight",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferNotSurroundedByHostileUnitsFactorWeight",
+   "v": {
+    "floatVal": 0.15,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferNotSurroundedByHostileUnitsFactorWeight",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintHysteresisMultiplier",
+   "v": {
+    "floatVal": 1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintHysteresisRecoveryTurns",
+   "v": {
+    "floatVal": 1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_InspirationBaseDamageWindow",
+   "v": {
+    "floatVal": 0.35,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_InspirationIncrementalDamageWindow",
+   "v": {
+    "floatVal": 0.3,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MinimumInspirationDamage",
+   "v": {
+    "floatVal": 10,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferStayInsideFenceNegativeLogicFactorWeight",
+   "v": {
+    "floatVal": -6,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferStayInsideFenceNegativeLogicFactorWeight",
+   "v": {
+    "floatVal": -1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_FenceRadius",
+   "v": {
+    "floatVal": 120,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_EvasiveToHitFloor",
+   "v": {
+    "floatVal": 10,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_MinimumSensorLockQuality",
+   "v": {
+    "floatVal": 25,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_HeadArmorMultiplier",
+   "v": {
+    "floatVal": 100,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CenterTorsoArmorMultiplier",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CenterTorsoRearArmorMultiplier",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_CenterTorsoRearArmorMultiplierForRearArc",
+   "v": {
+    "floatVal": 0.9,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_RemainingLegArmorMultiplier",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OpportunityFireExceedsDesignatedTargetByPercentage",
+   "v": {
+    "floatVal": 20,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_OpportunityFireExceedsDesignatedTargetFirepowerTakeawayByPercentage",
+   "v": {
+    "floatVal": 20,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_TargetDesignationUsesFirepowerTakeaway",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_PipStripAttackProbabilityThreshold",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHigherRangedDefenseBonusLocationsFactorWeight",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHigherRangedDefenseBonusLocationsFactorWeight",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_DownedMechFenceContributionMultiplier",
+   "v": {
+    "floatVal": 1.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_UnsteadyOverkillThreshold",
+   "v": {
+    "floatVal": 65,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_HeatFracForHeatFilter",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_DamageFracForHeatFilter",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_UseBulwarkActions",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_ExcludedRegionWeight",
+   "v": {
+    "floatVal": -20,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintExcludedRegionWeight",
+   "v": {
+    "floatVal": -20,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_UseRecklessSkillPercentageChance",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_AlonePreferenceWeight",
+   "v": {
+    "floatVal": -0.1,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintAlonePreferenceWeight",
+   "v": {
+    "floatVal": -1.2,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Int_AloneToleranceTurnCount",
+   "v": {
+    "floatVal": 5,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Int_AloneCoolDownTurnCount",
+   "v": {
+    "floatVal": 2,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Float_BuddyAloneFiringSolutionPreferenceWeight",
+   "v": {
+    "floatVal": -0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintBuddyAloneFiringSolutionPreferenceWeight",
+   "v": {
+    "floatVal": -1.2,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_BuddyAloneMoveNearbyPreferenceWeight",
+   "v": {
+    "floatVal": -1.2,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintBuddyAloneMoveNearbyPreferenceWeight",
+   "v": {
+    "floatVal": -0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_AllowLongRangePathfindingWhenPatrolling",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_UseDynamicLongRangePathfinding",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_PatrolRouteThrottlePercentage",
+   "v": {
+    "floatVal": 90,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_FilterHostileInfluenceMapsToPriorityTargets",
+   "v": {
+    "boolVal": false,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_SimpleShortRangeLOF",
+   "v": {
+    "boolVal": false,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_RuthlessPriorityTargeting",
+   "v": {
+    "boolVal": false,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_AllowAttack",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_Alerted",
+   "v": {
+    "boolVal": false,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Int_ReserveCalculationsLastDoneForRoundNumber",
+   "v": {
+    "intVal": 0,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Int_ReserveCalculationsLastDoneForPhaseNumber",
+   "v": {
+    "intVal": 0,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Int_ReserveToPhaseNumber",
+   "v": {
+    "intVal": 0,
+    "type": "Int"
+   }
+  },
+  {
+   "k": "String_GuardLanceGUID",
+   "v": {
+    "stringVal": "",
+    "type": "String"
+   }
+  },
+  {
+   "k": "Float_GuardLanceSpeedPercent",
+   "v": {
+    "floatVal": 100,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_GuardLanceTetherDistance",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "String_StayInsideRegionGUID",
+   "v": {
+    "stringVal": "",
+    "type": "String"
+   }
+  },
+  {
+   "k": "String_SensorLockedTargetGUID",
+   "v": {
+    "stringVal": "",
+    "type": "String"
+   }
+  },
+  {
+   "k": "Int_LastAloneRoundNumber",
+   "v": {
+    "intVal": "-1",
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Int_LastNotAloneRoundNumber",
+   "v": {
+    "intVal": "-1",
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Float_PreferFriendlyECMFields",
+   "v": {
+    "floatVal": 0.75,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferFriendlyECMFields",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferHostileECMFields",
+   "v": {
+    "floatVal": 0.3,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferHostileECMFields",
+   "v": {
+    "floatVal": 0.2,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_PreferActiveProbePositions",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_SprintPreferActiveProbePositions",
+   "v": {
+    "floatVal": 0,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Int_MinimumActiveProbeCount",
+   "v": {
+    "IntVal": "999",
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Int_MinimumECMGhostedPipsToFire",
+   "v": {
+    "IntVal": "1",
+    "type": "Int"
+   }
+  },
+  {
+   "k": "Bool_EnableUrbanBiomeNavigation",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_EnableUrbanBiomeNavigationEverywhere",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_ConfidenceInSignificantDamageWhileGhostedLevel",
+   "v": {
+    "floatVal": 0.8,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_WeaponDamageSpreadLerpValue",
+   "v": {
+    "floatVal": 0.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_StructuralDamagePercentageMultiplier",
+   "v": {
+    "floatVal": 1.5,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_ExpectedAndMaxDamageShootingInGhostStateLerp",
+   "v": {
+    "floatVal": 0.6,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Float_GhostStateHysteresisMultiplierTurnIncrease",
+   "v": {
+    "floatVal": 0.4,
+    "type": "Float"
+   }
+  },
+  {
+   "k": "Bool_ExpectedDamageAccuracyIncrease",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Bool_EnableLongRangePathfindingBeActorAware",
+   "v": {
+    "boolVal": true,
+    "type": "Bool"
+   }
+  },
+  {
+   "k": "Float_LongRangeToShortRangeDistanceThreshold",
+   "v": {
+    "floatVal": 200,
+    "type": "Float"
+   }
+  }
+ ]
+}

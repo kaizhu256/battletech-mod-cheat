@@ -1,0 +1,116 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "IFF",
+ "BonusValueB": "JAMMER",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Special: 0.1",
+    "IFFJammer: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Special"
+   },
+   {
+    "CategoryID": "SpecialJammer"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0.1
+  },
+  "InventorySorter": {
+   "SortKey": "00203"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "A Basic IFF (Identify Friend/Foe) Jamming unit that prevents enemy to ascertain a units allegiance replacing a cockpits sensor systems. Creates a low level ECM field but cannot enable Stealth. Can be used additionally to ECM Equipment.",
+  "Icon": "circuitry",
+  "Id": "Special_IFFJammer_MK1",
+  "Manufacturer": "Ceres",
+  "Model": "IFF Jammer",
+  "Name": "IFF Jammer",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "IFF Jammer MK1"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduces effectiveness of stealthed and ECM shielded units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ECM_SHIELD",
+    "Name": "IFFJAMMER2"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "LV_ECM_SHIELD_EMITTER_COUNT",
+    "Name": "ECM Shield Emitter Count"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD_EMITTER_COUNT"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.4,
+ "APCriticalChanceMultiplier": 0.06,
+ "APDamage": 2,
+ "APMaxArmorThickness": 100,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 24,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B27D37",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.75,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "1shot",
+    "MissileHP: 3",
+    "ThroughArmorDamage: 2",
+    "IsRocket: 10",
+    "InternalAmmo: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/rl"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 4,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03002"
+  }
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 15000,
+  "Details": "Tandem Charge Rocket Launcher are a Periphery Favourite to gamble on taking a target out fast, allowing the Rocket to pierce the target and explode internally.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-pod",
+  "Id": "Weapon_LRM_ROCKETTANDEM10",
+  "Manufacturer": "Death Blossom",
+  "Model": "Tandem Rocket Launcher",
+  "Name": "Tandem RL10",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Tandem Rocket 10"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "HitGenerator": "Individual",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "MissileHealth": 3,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 10,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 0.5,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM10",
+ "WeaponSubType": "LRM10",
+ "statusEffects": []
+}

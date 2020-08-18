@@ -1,0 +1,54 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The {side} Jump Jet actuator was damaged, reducing Jump Distance by 30%.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-LegJet1-{location}",
+    "Name": "{side} Leg Jets Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The {side} Jump Jet actuator was damaged, reducing Jump Distance by 60%.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-LegJet2-{location}",
+    "Name": "{side} Leg Jets Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.4",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

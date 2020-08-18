@@ -1,0 +1,107 @@
+{
+ "AIBattleValue": 90,
+ "AccuracyModifier": 0,
+ "ArmorDamageModifier": 1,
+ "Category": "SRM",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#ff0066",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.3,
+ "Description": {
+  "Cost": 0,
+  "Details": "Short range missiles, inferno.",
+  "Icon": null,
+  "Id": "Ammunition_SRM_MagPulse",
+  "Name": "Inferno SRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "EMP"
+ },
+ "HeatDamagePerShot": 2,
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "MissileHealth": 3,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit got by a EMP.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_MagPulse_Heat",
+    "Name": "MagPulse"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.98",
+    "operation": "Int_Multiply_Float",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "Effect_MagPulse_ECM",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

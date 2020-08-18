@@ -1,0 +1,101 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "NoUniqueCheck": true,
+   "presistantVFX": {
+    "VFXPrefab": "vfxPrfPrtl_miningSmokePlume_sm_loop",
+    "VFXScaleX": 0.5,
+    "VFXScaleY": 0.5,
+    "VFXScaleZ": 0.5
+   }
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 2",
+    "WpnAccuracy: -1",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "Mining and construction 'Mechs use Jackhammers to break apart rock or concrete. In an emergency, these powered hammers can be used against 'Mechs in melee combat. Like all Industrial weapons the Jackhammer suffers a small inherent penalty to hit.",
+  "Icon": "uixSvgIcon_weapon_Support",
+  "Id": "Weapon_Industrial_JackHammer",
+  "Manufacturer": "Finn MacCoul",
+  "Model": "Rock Breaker",
+  "Name": "Jackhammer",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Jackhammer"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 1,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": [],
+ "weaponCategoryID": "SpecialMelee"
+}

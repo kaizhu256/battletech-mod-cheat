@@ -1,0 +1,403 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "[[TGT_MW,{TGT_MW.Callsign}]] is recupterating in the MedBay, again, and has asked to speak with you. When you arrive, Decker waves wanly. \"Hi, Commander. I didn't do so hot, did I?\"\r\n\r\n\n\"You did take a big hit, Dekker,\" you say. \"Any battle you can walk away from though, eh?\"\n\r\n\r\nHe sighs. \"Yeah, but I'm starting to wonder if maybe I need a different motto than that. Do you have any advice for me, Commander? What can I do better? Do I need a different 'Mech? More training? Or am I just not cut out for this business?\"",
+  "Icon": "uixTxrSpot_MedBayPatient.png",
+  "Id": "event_mw_spotlight_dekker",
+  "Name": "Dekker in the MedBay"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "safe option",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Reassure him."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"You're doing fine, [[TGT_MW,{TGT_MW.Callsign}]]. We need people like you on the team. Just remember, when you get hurt, that's on me as your commanding officer. I'm grateful to have somebody like you doing what needs to be done. Most MechWarriors wouldn't stick around after what you've been through.\"\n\r\n\r\nDekker brightens noticeably. \"That's true. Nobody takes a hit like me, right?\"\n\r\n\r\n\"Right,\" you say. \"Well done.\"",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "high spirits"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_spotlight_dekker"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "tough guy option",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Take a tougher stance."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"[[TGT_MW,{TGT_MW.Callsign}]], you're thinking about this way too hard.\"\r\n\r\nHe stops in the middle of asking yet another question.\r\n\r\n\"A new motto won't protect you on the battlefield. You don't need more simulator time at this point in your career. And as for 'Mechs, you'll fight in whatever 'Mech I see fit to put you in, and you'll like it.\"\r\n\r\nDekker gulps at the tone of the conversation has taken a turn.\r\n\r\n\"Look, Dekker, you're a good pilot. Believe it. What you need is to get back out there and show those bastards that they can't keep you down.\"\r\n\r\nA glitter appears in Dekker’s eyes. \"Yes, Commander!\" he barks, his salute a bit awkward with the tubes and wires in his arm.",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "high spirits"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_spotlight_dekker",
+         "pilot_brave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_cautious"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Argo: Library]",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Encourage his continuing education."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_rec_library1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You consider. \"Your base skills are fine, but if you want to do the work, I can direct you to some rather imaginative works that might give you a new perspective. Something to do while you're stuck in here.\"\r\n\r\n\n\"Sure,\" [[TGT_MW,{TGT_MW.Callsign}]] says without much enthusiasm. \"Let's go with that.\"\n\r\n\r\nBut he doesn't really need more education in warfare, so after some thought, you provide him with the works of Arthur Conan Doyle.\r\n\r\nA few days later, his mood has significantly improved, although not the way you'd hoped. \"I'm learning to play the violin, Commander!\" he says, waving a compad with a virtual instrument. The MedBay staff, wincing, nod.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "gain xp"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_spotlight_dekker",
+         "pilot_bookish"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Recreation World]",
+    "Icon": null,
+    "Id": "outcome_3",
+    "Name": "Send him on a long vacation."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "planet_industry_recreation"
+      ],
+      "tagSetSourceFile": "Tags/PlanetTags"
+     },
+     "Scope": "StarSystem"
+    },
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Travel",
+       "op": "Equal",
+       "val": 0,
+       "valueConstant": "0"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "\"Piloting a 'Mech isn't for everybody. If you're having doubts, you need some time away, because obsessing about your failures in the cockpit is just going to get you killed. I'll arrange for you to have that time at our next port.\"\n\r\n\r\n[[TGT_MW,{TGT_MW.Callsign}]] looks startled. \"Commander? I didn't really...\"\r\n\r\nYou frown at him. \"And you aren't. You're going to get your head screwed on straight and get back here. Am I right?\"\n\r\n\r\n\"Yes, Commander!\"\n\r\n\r\nYou survey Dekker and feel confident he'll return a better MechWarrior.",
+      "Icon": null,
+      "Id": "outcome_3_0",
+      "Name": "time out on vacation world"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_SetTimeout",
+         "additionalValues": null,
+         "value": "30",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [
+         "event_mw_spotlight_dekker",
+         "pilot_dependable"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_rebellious"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_mw_spotlight_dekker"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 2,
+    "valueConstant": "2"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "name_Dekker"
+   ],
+   "tagSetSourceFile": "Tags/PilotNameTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

@@ -1,0 +1,50 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Power"
+   ],
+   "value": "1"
+  }
+ ],
+ "AdditionalCost": 1500,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "Notably, upgrading the power system will allow us to provide power to all three habitation pods, which means more room and more <i>Argo</i> systems operational.",
+ "Category": "POWER_SYSTEM",
+ "Description": {
+  "Cost": 0,
+  "Details": "Running power through patched-together conduits isn’t reliable or safe. Upgrading all the conduits throughout the <i>Argo</i> is a monumental task, but necessary for anything that places a significant load on the system.",
+  "Icon": "uixSvgIcon_shipUpgrade_power1",
+  "Id": "argoUpgrade_power2",
+  "Name": "Improved Power Conduits",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_EngineeringInnards",
+ "Location": "ENGINEERING",
+ "PurchaseCost": 360000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_power1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_power2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 20
+}

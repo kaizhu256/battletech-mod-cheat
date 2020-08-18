@@ -1,0 +1,318 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "Yang arrives at the morning briefing in a foul mood. \"Commander, if one more pilot shows up to complain that their favorite 'Mech isn't ready, I'm going to pitch someone out an airlock.\"\r\n\r\nDarius intervenes. \"How about we draft some of them to actually <i>help</i>? It might be educational for them and useful for you.\"\r\n\r\nDr. Murad has been deep in thought. \"The <i>Argo</i> has very powerful systems that are currently offline. If we could get them working, even only temporarily, it might help with the current workload.\"",
+  "Icon": "uixTxrSpot_MechBay.png",
+  "Id": "event_co_mechbayTempImprovements",
+  "Name": "Temporary Improvements"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "desperate option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Draft some pilots to help."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Yang takes you up on the offer, albeit reluctantly. \"Just throwing more bodies at the problem won't necessarily make things go faster. But if it will shut them up, I'm on board.\"\r\n\r\nLater that week, the Chief checks in with an update. \"As I feared, they were underfoot more than anything.\" He pauses then bobs his ahead a few times. \"Okay, okay, it was <i>a little bit</i> helpful. But any productivity increase over the next couple weeks is going to be from them not bugging me anymore.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Works just okay"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 40
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Argo: Repaired Power Conduits]",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Temporarily hook up the Automation systems."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_power1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Yang is more excited about Dr. Murad's assistance than babysitting some reluctantly drafted 'Mech jockeys.\r\n\r\nLater that week, Farah checks in with an update. \"Commander, these Star League-era systems are amazing, but challenging. The automation system is partially online now, maybe for a couple of weeks.\"\r\n\r\nChecking some calculations on her ubiquitous datapad, she arches an eyebrow. \"If we can spare the C-Bills, I'd like to spend the time to make this improvement permanent. The work on the Power Conduits was all the prep we needed to do. I'm ready when you are!\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Works better"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "Yang is more excited about Dr. Murad's assistance than babysitting some reluctantly drafted 'Mech jockeys.\r\n\r\nLater that week, Farah checks in with an update. \"Commander, these Star League-era systems are amazing, but challenging. The automation system is partially online now, maybe for a month.\"\r\n\r\nChecking some calculations on her ubiquitous datapad, she arches an eyebrow. \"If we can spare the C-Bills, I'd like to spend the time to make this improvement permanent. The work on the Power Conduits was all the prep we needed to do. I'm ready when you are!\"",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Works even better"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Argo: Repaired Power Conduits]",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Temporarily hook up the Refit Harnesses."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_power1"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Yang is more excited about Dr. Murad's assistance than babysitting some reluctantly drafted 'Mech jockeys.\r\n\r\nLater that week, Farah checks in with an update. \"Commander, these Star League-era systems are amazing but challenging. The Refit Harnesses are partially working now, maybe for a couple of weeks.\"\r\n\r\nChecking some calculations on her ubiquitous datapad, she arches an eyebrow. \"If we can spare the C-Bills, I'd like to spend the time to make this improvement permanent. The work on the Power Conduits was all the prep we needed to do. I'm ready when you are!\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Works better"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "Yang is more excited about Dr. Murad's assistance than babysitting some reluctantly drafted 'Mech jockeys.\r\n\r\nLater that week, Farah checks in with an update. \"Commander, these Star League era systems are amazing but challenging. The Refit Harnesses are partially working now, maybe for a month.\"\r\n\r\nChecking some calculations on her ubiquitous datapad, she arches an eyebrow. \"If we can spare the C-Bills, I'd like to spend the time to make this improvement permanent. The work on the Power Conduits was all the prep we needed to do. I'm ready when you are!\"",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "Works even better"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "argo_mechBay_automation1",
+    "argo_mechBay_refitHarness"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "TaskDuration",
+    "op": "GreaterThanOrEqual",
+    "val": 1,
+    "valueConstant": "1"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 100
+}

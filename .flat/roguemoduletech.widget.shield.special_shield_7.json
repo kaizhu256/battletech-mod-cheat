@@ -1,0 +1,196 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldShield: 7",
+    "DamageTaken: -14%",
+    "JumpDistance: -14%",
+    "Visibility: +14%",
+    "Signature: +14%",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "SpecialShield"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "autorepair",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 7
+  },
+  "InventorySorter": {
+   "SortKey": "00026"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 100000,
+  "Details": "Introduced in the late 31st Century on Solaris VII, the Combat Shield is a movable piece of armor that can be mounted on BattleMechs. The shield was first introduced as a method to add protection for a MechWarrior fighting in the arenas of Solaris. Shields are primary defensive equipment used to protect a 'Mech from Weapons fire and some forms of physical attacks. Equipping more than 1 wont yield additional effects, does not stack with other combat shields.",
+  "Icon": "swords-emblem",
+  "Id": "Special_Shield_7",
+  "Manufacturer": "Deadly Sins",
+  "Model": "Combat Shield",
+  "Name": "Combat Shield 7T",
+  "Purchasable": true,
+  "Rarity": 14,
+  "UIName": "Combat Shield 7T"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "All incoming damage reduced by 15%",
+    "Icon": "swords-emblem",
+    "Id": "StatusEffect-CombatShield",
+    "Name": "REDUCED DAMAGE TAKEN"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.86",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierAll"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTargetsCreator": true,
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Jump distance decreased by 20%",
+    "Icon": "swords-emblem",
+    "Id": "ShieldJumpPenalty",
+    "Name": "Jump Distance"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.86",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides increased Evasive bonus and reduced Visibility.",
+    "Icon": "uixSvgIcon_action_end",
+    "Id": "ShieldStealthBreak",
+    "Name": "Active Stealth Armor"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.14",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Active Null Signature Systems reduce visibility and grant Bulwark.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "ShieldStealthBreak2",
+    "Name": "Null Signature Systems"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.14",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "CombatGuarded",
+    "Name": "EVASIVE MOVE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "GuardedIsUpgraded"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

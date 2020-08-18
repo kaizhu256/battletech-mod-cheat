@@ -1,0 +1,765 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "The sound of running feet and worried voices awakens you in the night. Moment's later an orderly knocks on your door requesting your presence in the medbay. [[TGT_MW,{TGT_MW.Callsign}]]'s injuries are more serious than anyone realized. A group of medtechs are clustered around the bed trying to stabilize the patient.",
+  "Icon": "uixTxrSpot_MedBayDoc.png",
+  "Id": "event_mw_gravewounds",
+  "Name": "A Turn For The Worse"
+ },
+ "EventType": "NORMAL",
+ "OneTimeEvent": false,
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation option",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Stand back and let the medtechs work."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You step back and let your people do their job. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "Relapse 1 injury"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_AddInjury",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You step back and let your people do their job. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": null,
+      "Id": "outcome_0_1",
+      "Name": "Relapse 2 injuries"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_AddInjuries",
+         "additionalValues": null,
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You step back and let your people do their job. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]] suffers a pulmonary embolism and dies on the operating table.",
+      "Icon": null,
+      "Id": "outcome_0_2",
+      "Name": "Serious complications, MW dies."
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Kill",
+         "additionalValues": [
+          "declared dead on the operating table."
+         ],
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You step back and let your people do their job. Several hours later you get the good news. [[TGT_MW,{TGT_MW.Callsign}]] has responded well to emergency treatment and is out of danger.",
+      "Icon": null,
+      "Id": "outcome_0_3",
+      "Name": "Improvement"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Heal",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Pay to improve odds",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Tell them to save [[TGT_MW,{TGT_MW.Callsign}]] at any cost."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [
+       "argo_medbay_hospital"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 100000,
+       "valueConstant": "100000"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You tell the head medtech they have a blank check to use any supplies they need. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "Relapse 1 injury, pay cbills and medtechpoints"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_AddInjury",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You tell the head medtech they have a blank check to use any supplies they need. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Relapse 2 injuries pay cbills and medtechpoints"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You tell the head medtech they have a blank check to use any supplies they need. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": null,
+      "Id": "outcome_1_2",
+      "Name": "Relapse 3 injuries Almost definitely dead. pay cbills and medtechpoints"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_AddInjuries",
+         "additionalValues": null,
+         "value": "3",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You tell the head medtech they have a blank check to use any supplies they need. Several hours later you get the good news. [[TGT_MW,{TGT_MW.Callsign}]] has responded well to emergency treatment and is out of danger.",
+      "Icon": null,
+      "Id": "outcome_1_3",
+      "Name": "Improvement, pay cbills and medtechpoints"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-100000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Stand back and let your well equipped hospital staff do their job.",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Stand back and let your well equipped hospital staff do their job."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "argo_medbay_hospital"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "The hospital staff do their best. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "Relapse 1 injury."
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_AddInjury",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "The hospital staff do their best. Unfortunately after hours of heroic effort things have gone from bad to worse. [[TGT_MW,{TGT_MW.Callsign}]]'s condition deteriorates.",
+      "Icon": null,
+      "Id": "outcome_2_1",
+      "Name": "Relapse 2 injuries."
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_AddInjuries",
+         "additionalValues": null,
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "The hospital staff do their best. Several hours later you get the good news. [[TGT_MW,{TGT_MW.Callsign}]] has responded well to emergency treatment and is out of danger.",
+      "Icon": null,
+      "Id": "outcome_2_2",
+      "Name": "Mechwarrior stabilized."
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "The hospital staff do their best. Several hours later you get the good news. [[TGT_MW,{TGT_MW.Callsign}]] has responded well to emergency treatment and should now recover more quickly.",
+      "Icon": "",
+      "Id": "outcome_2_3",
+      "Name": "Improvement, pay cbills and medtechpoints"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": true,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 7,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "GreaterThanOrEqual",
+    "val": 1,
+    "valueConstant": "1"
+   }
+  ],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "Tags": {
+  "items": [],
+  "tagSetSourceFile": "tags/EventTags"
+ },
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

@@ -1,0 +1,47 @@
+{
+ "AdditionalCost": 2800,
+ "AssignedCastDefId": "castDef_SumireDefault",
+ "AssignedCastDescription": "A JumpShip pilot told me there's an off-the-books digital distribution service. They get tri-vid and books from DropShips and sell them under the table. It would be more interesting than the decade-old 'Mech magazines Yang keeps putting in the library, anyway.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "Active subscriptions to a variety of e-book services, periodicals, and tri-vid channels make the library even more appealing to everyone.",
+  "Icon": "uixSvgIcon_shipUpgrade_libraryUpgrade",
+  "Id": "argoUpgrade_rec_library2",
+  "Name": "Improved Library",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_Library",
+ "Location": "SHIP",
+ "PurchaseCost": 450000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_rec_library1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_library2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 15
+}

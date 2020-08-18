@@ -1,0 +1,61 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Short Split Template",
+  "Icon": "limitedgladiator",
+  "Id": "fp_limitedgladiator5azd",
+  "Name": "Limited Gladiator Combat <b><color=#ff0d00>HARD </color></b> Divisional"
+ },
+ "Difficulty": 8,
+ "FlashpointDescriberCastDefId": "castDef_FP_justinAllard_AllardDefault",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "You have qualified for a Divisional Gladiatorial Fight. <b><color=#ff0d00>HARD </color></b> difficulty. Division",
+ "InProgressTimeout": 0,
+ "InternalName": "limited gladiator 5azd",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_other_gamesworld"
+   ],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_limitedgladiator5azd",
+ "PotentialEmployers": [
+  "MercenaryReviewBoard"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_limitedgladiator5azd_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_limitedgladiator5az_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_division3",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 1
+}

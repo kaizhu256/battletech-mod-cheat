@@ -1,0 +1,136 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.002,
+ "APMaxArmorThickness": 1.2,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "Target Painter",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "Cooldown": 3,
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 60",
+    "AreaOfEffectSTABDmg: 30",
+    "AreaOfEffectHeatDmg: 20",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 24",
+    "FireTerrainDuration: 2",
+    "FireTerrainStrength: 6",
+    "DesignMask: RoughTerrain",
+    "NoAA",
+    "WpnCooldown: 3",
+    "DelayedImpact: 2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/t/tag"
+   },
+   {
+    "CategoryID": "OffBoardTAG"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1210000,
+  "Details": "This TAG was rewired to call on supporting Fire from nearby Artillery to Shell the target with a selection of munitions",
+  "Icon": "LightTAG",
+  "Id": "Weapon_Laser_TAG_Barrage",
+  "Manufacturer": "NAIS",
+  "Model": "Target Acquisition Gear",
+  "Name": "TAG",
+  "Purchasable": false,
+  "Rarity": 15,
+  "UIName": "TAG Barrage"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "NotUseInMelee": true,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_TAG",
+ "WeaponSubType": "SmallLaserER",
+ "deferredEffect": {
+  "AOEDamage": 60,
+  "AOEHeatDamage": 20,
+  "AOEInstability": 30,
+  "AOERange": 60,
+  "FireDurationWithoutForest": 2,
+  "FireTerrainCellRadius": 6,
+  "FireTerrainChance": 1,
+  "FireTerrainStrength": 6,
+  "RangeColor": {
+   "C": "#00FF00",
+   "I": 1.5
+  },
+  "SFX": "big_explosion",
+  "TerrainVFX": "vfxPrfPrtl_terrainLavaCracks_loop",
+  "TerrainVFXScale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  },
+  "VFX": "vfxPrfPrtl_artilleryImpact_barrage",
+  "VFXtime": 10,
+  "damageApplyTime": 4,
+  "id": "BARRAGE",
+  "rounds": 2,
+  "statusEffects": [],
+  "statusEffectsRangeFalloff": true,
+  "sticky": true,
+  "tempDesignMask": "DesignMaskRough",
+  "tempDesignMaskCellRadius": 8,
+  "tempDesignMaskTurns": 3,
+  "text": "Barrage Incoming",
+  "waitVFX": "vfxPrfPrtl_artillerySmokeSignal_loop"
+ },
+ "statusEffects": []
+}

@@ -1,0 +1,161 @@
+{
+ "AllowedLocations": "Legs",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "LegJetsUpper",
+    "JumpCapacity: 2",
+    "JumpHeat: 0",
+    "DFASelfDamage: -20%",
+    "WalkSpeed: +10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "LegHip"
+   },
+   {
+    "CategoryID": "LegUpperActuator"
+   },
+   {
+    "CategoryID": "LegJJ"
+   }
+  ],
+  "CriticalEffects": {
+   "OnDestroyedEffectIDs": [
+    "CriticalEffect-LegJet2-{location}",
+    "CriticalEffect-LegUpperActuatorDestroyed-{location}",
+    "CriticalEffect-HipDestroyed-{location}"
+   ],
+   "PenalizedEffectIDs": [
+    "CriticalEffect-LegJet1-{location}",
+    "CriticalEffect-LegUpperActuatorDestroyed-{location}"
+   ]
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 210000,
+  "Details": "These 'Jump Jets' are another almost lifelike growth that allows the Queen to leap and rush towards any target in a wild Frenzy",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_LegJet_Queen_Upper",
+  "Manufacturer": "Generic",
+  "Model": "Assault",
+  "Name": "Queen Jump Jet",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "Queen Upper Leg"
+ },
+ "DisallowedLocations": "Head, Arms",
+ "InventorySize": 2,
+ "JumpCapacity": 2,
+ "MaxTonnage": 200,
+ "MinTonnage": 200,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 3,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This Jump Jets Heat Generation per Hex",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-JumpHeatQueen",
+    "Name": "Jump Jet Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0",
+    "operation": "Float_Add",
+    "statName": "JumpHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Stronger Melee and faster Movement",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "QueenLegWalk",
+    "Name": "TSM ACTIVATED!"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "WalkSpeed"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "DFA attacks deal 10% less damage to the attacker.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "StatusEffect-Attack_SelfDamageDFA-T1",
+    "Name": "DFA SELF-INFLICTED DAMAGE DECREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "DFASelfDamage",
+    "targetWeaponSubType": "DFA"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

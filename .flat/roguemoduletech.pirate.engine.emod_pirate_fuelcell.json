@@ -1,0 +1,344 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "X2 Weight",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "FuelCell"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.01,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskSmoke",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "vfxPrfPrtl_artilleryImpact_single",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: X1.4",
+    "HeatGenerated: -80%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   },
+   {
+    "CategoryID": "Cooling"
+   },
+   {
+    "CategoryID": "EngineHeatBlock"
+   }
+  ],
+  "Cooling": {
+   "HeatSinkDefId": "Gear_HeatSink_Generic_Standard"
+  },
+  "EngineHeatBlock": {
+   "HeatSinkCount": 0
+  },
+  "Flags": {
+   "flags": [
+    "vital",
+    "engine_part",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "emod_engineslots_size2",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "emod_engineslots_size2",
+     "Location": "RightTorso"
+    }
+   ]
+  },
+  "Lootable": {
+   "ItemID": "emod_engineslots_FuelCell"
+  },
+  "Weights": {
+   "EngineFactor": 1.4
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "12000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30",
+    "TechCost": "[[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 12250000,
+  "Details": "This was a Light Engine until someone ripped out the Fusion compartment and wired a Fuel Cell into its assembly. They even managed to improve the energy converters wired into it. I can repair it, but this thing can never leave this 'Mech or be used otherwise. Cannot use Additional Cooling Kits, Exchanger or Banks.",
+  "Icon": "power-generator",
+  "Id": "emod_Pirate_FuelCell",
+  "Manufacturer": "Vlar",
+  "Model": "Fuel Cell",
+  "Name": "Fuel Cell Engine",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Fuel Cell (P)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 5,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Heat generation increased by 15%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_ICE",
+    "Name": "Increased Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.2",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionRange",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeRange"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionDamage",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeDamage"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionHeat",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionStability",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeStability"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionFireStrength",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeFireStrength"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionFireRadius",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeFireRadius"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "FuelCellExplosionMaskRadius",
+    "Name": "FuelCell EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "1.3",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeDesignMaskRadius"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

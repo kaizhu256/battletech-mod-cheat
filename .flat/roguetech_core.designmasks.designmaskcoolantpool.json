@@ -1,0 +1,73 @@
+{
+ "Custom": {
+  "CustomMoveCost": {
+   "Hover": {
+    "SprintMultiplier": 1,
+    "moveCost": 1
+   }
+  }
+ },
+ "Description": {
+  "Details": "Coolant Pools increase heat venting for units standing in within (-25 Heat). Units passing through Coolant Pools gain the Coolant Splash Effect (-15 Heat per turn for 2 turns).",
+  "Icon": "UixSvgIcon_designMask_coolantPool",
+  "Id": "DesignMaskCoolantPool",
+  "Name": "COOLANT POOL"
+ },
+ "audioSwitchRainingSurfaceType": "mud",
+ "audioSwitchSurfaceType": "dirt",
+ "canBurn": false,
+ "canExplode": false,
+ "energyDamageDealtMultiplier": 1,
+ "energyDamageTakenMultiplier": 1,
+ "grantsEvasive": false,
+ "grantsGuarded": false,
+ "heatPerTurn": -25,
+ "heatSinkMultiplier": 1,
+ "legStructureDamageMax": 0,
+ "legStructureDamageMin": 0,
+ "moveCostMechAssault": 1.25,
+ "moveCostMechHeavy": 1.2,
+ "moveCostMechLight": 1.1,
+ "moveCostMechMedium": 1.15,
+ "moveCostSprintMultiplier": 1.2,
+ "moveCostTrackedAssault": 1.15,
+ "moveCostTrackedHeavy": 1.1,
+ "moveCostTrackedLight": 1,
+ "moveCostTrackedMedium": 1.05,
+ "moveCostWheeledAssault": 1.25,
+ "moveCostWheeledHeavy": 1.2,
+ "moveCostWheeledLight": 1.1,
+ "moveCostWheeledMedium": 1.15,
+ "signatureMultiplier": 1,
+ "stabilityDamageMultiplier": 1,
+ "stickyEffect": {
+  "Description": {
+   "Details": "This unit moved through a coolant pool. Coolant Residue will remove an additional 15 heat on its next activation.",
+   "Icon": "UixSvgIcon_designMask_coolantPool",
+   "Id": "DesignMaskCoolantPool",
+   "Name": "COOLANT SPLASH"
+  },
+  "durationData": {
+   "duration": 2,
+   "stackLimit": 1,
+   "ticksOnMovements": true
+  },
+  "effectType": "StatisticEffect",
+  "nature": "Buff",
+  "statisticData": {
+   "modType": "System.Int32",
+   "modValue": "-15",
+   "operation": "Int_Add",
+   "statName": "EndMoveHeat"
+  },
+  "targetingData": {
+   "effectTargetType": "SingleTarget",
+   "showInStatusPanel": true,
+   "showInTargetPreview": true
+  }
+ },
+ "targetabilityModifier": 1,
+ "toHitFromModifier": 1,
+ "visibilityHeight": 1,
+ "visibilityMultiplier": 1
+}

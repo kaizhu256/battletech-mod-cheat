@@ -1,0 +1,81 @@
+{
+ "AccuracyModifier": 5,
+ "AlwaysIndirectVisuals": true,
+ "ArmorDamageModifier": 1.5,
+ "Category": "MORTAR",
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.5,
+ "Description": {
+  "Cost": 0,
+  "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
+  "Icon": null,
+  "Id": "Ammunition_Mortar_Fascam_Acid",
+  "Name": "Mortar Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "FASCAM"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 0.5,
+ "MaxMissRadius": 40,
+ "MinMissRadius": 10,
+ "MineField": {
+  "AOEDamage": 4,
+  "AOEHeat": 0,
+  "AOEInstability": 2,
+  "AOERange": 30,
+  "Chance": 0.44,
+  "Count": 4,
+  "Damage": 4,
+  "FireDurationWithoutForest": 0,
+  "FireOnSuccessHit": true,
+  "FireTerrainChance": 0.01,
+  "FireTerrainStrength": 0,
+  "Heat": 0,
+  "InstallCellRange": 10,
+  "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "VFXMinDistance": 30,
+  "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
+  "statusEffects": [
+   {
+    "Description": {
+     "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
+     "Icon": "uixSvgIcon_biome_Heated",
+     "Id": "Effect_AcidMine",
+     "Name": "Acid"
+    },
+    "durationData": {
+     "clearedWhenAttacked": false,
+     "duration": 2,
+     "stackLimit": -1,
+     "ticksOnActivations": true,
+     "ticksOnEndOfRound": false,
+     "ticksOnMovements": false,
+     "useActivationsOfTarget": true
+    },
+    "effectType": "StatisticEffect",
+    "nature": "Debuff",
+    "statisticData": {
+     "modType": "System.Single",
+     "modValue": "0.01",
+     "operation": "Float_Add",
+     "statName": "DamageReductionMultiplierAll"
+    },
+    "targetingData": {
+     "effectTargetType": "NotSet",
+     "effectTriggerType": "OnHit",
+     "extendDurationOnTrigger": 2,
+     "forcePathRebuild": false,
+     "forceVisRebuild": false,
+     "range": 0,
+     "showInStatusPanel": true,
+     "showInTargetPreview": true,
+     "specialRules": "NotSet",
+     "triggerLimit": 0
+    }
+   }
+  ]
+ },
+ "Type": "Normal"
+}

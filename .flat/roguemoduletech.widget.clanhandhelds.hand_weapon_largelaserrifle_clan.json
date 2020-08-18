@@ -1,0 +1,140 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.08,
+ "APMaxArmorThickness": 48,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "ChemLargeInternal",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#8A2BE2",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "HandHeld",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 6",
+    "ChemicalLaser",
+    "HandHeldAmmo: 20",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 6
+  },
+  "InventorySorter": {
+   "SortKey": "02008"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 40,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 120000,
+  "Details": "Debuting on Solaris VII have the Clans fielded this masterpiece of a Laser Rifle. Combining Clan advances to Laser Technology with a SLDF Laser Rifle is this weapon able to outmatch many opponents in the Arena as well as the Battlefield. \n\n <b><color=#F79232>20 rounds.</color></b> \n\n <b><color=#00ffff>Alternative firing modes allows either a stronger shot or Extreme Range with double ammo consumption</color> </b>",
+  "Icon": "ray-gun",
+  "Id": "Hand_Weapon_LargeLaserRifle_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "HH Large Chem Laser",
+  "Name": "HH L Chem Laser",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Clan Laser Rifle (L)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1125,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 6.6,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "Id": "x1",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "DamagePerShot": 40,
+   "Id": "x2",
+   "ShotsPerAmmo": 0.5,
+   "UIName": "DMG",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "DistantVariance": 0.55,
+   "DistantVarianceReversed": false,
+   "Id": "x3",
+   "LongRange": 450,
+   "MaxRange": 600,
+   "MiddleRange": 300,
+   "ShortRange": 150,
+   "ShotsPerAmmo": 0.5,
+   "UIName": "ER",
+   "isBaseMode": false,
+   "isDamageVariation": true,
+   "isHeatVariation": true,
+   "isStabilityVariation": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 0,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

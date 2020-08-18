@@ -1,0 +1,157 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-50% Structure Weight|",
+ "BonusValueB": "Reserves 14 Slots",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED",
+   "cae_ai_offence",
+   "cae_ai_speed"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "AutoActivateOnHeat": 27,
+   "AutoDeactivateOnHeat": 24,
+   "ButtonName": "TSM",
+   "CanNotBeActivatedManualy": true,
+   "NoUniqueCheck": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Stronger Melee and faster Movement",
+      "Icon": "uixSvgIcon_equipment_ActuatorArm",
+      "Id": "TSMActive",
+      "Name": "TSM ACTIVATED!"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.5",
+      "operation": "Float_Multiply",
+      "statName": "DamagePerShot",
+      "targetCollection": "Weapon",
+      "targetWeaponSubType": "Melee"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": true,
+      "showInStatusPanel": true,
+      "showInTargetPreview": true
+     }
+    },
+    {
+     "Description": {
+      "Details": "Stronger Melee and faster Movement",
+      "Icon": "uixSvgIcon_equipment_ActuatorArm",
+      "Id": "TSMActive1",
+      "Name": "TSM ACTIVATED!"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "60",
+      "operation": "Float_Add",
+      "statName": "WalkSpeed"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "StructureFactor: -25%",
+    "ActivateHeatLevel: 27",
+    "DeActivateHeatLevel: 24",
+    "ActiveMelee: X1.5",
+    "ActiveWalkSpeed: +60m",
+    "StructureTPCost: 25%",
+    "StructureCBCost: 40%",
+    "Reserved: 12",
+    "CarryWeight: X2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Structure"
+   },
+   {
+    "CategoryID": "EndoTSM"
+   }
+  ],
+  "Color": {
+   "UIColor": "Orange"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "OrangeHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Endo-TSM",
+   "ReservedSlots": 12,
+   "ShowIcon": false
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00010"
+  },
+  "StructureRepair": {
+   "StructureCBCost": 1.4,
+   "StructureTPCost": 1.25
+  },
+  "TSMInfo": {
+   "HandHeldFactor": 2
+  },
+  "Weights": {
+   "StructureFactor": 0.75
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1700 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+    "TechCost": "2.5 * [[Chassis.Tonnage]] / 6"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1500000,
+  "Details": "This Endo Composite Structure got interwoven with a Triple Strength Myomer prototype that grants improved Speed and Melee Damage.",
+  "Icon": "Structure",
+  "Id": "Lootable_structureslots_EndoTSM",
+  "Manufacturer": "L.A.W.",
+  "Model": "Structure",
+  "Name": "Endo-Composite + TSM",
+  "Purchasable": true,
+  "Rarity": 15,
+  "UIName": "Endo-TSM"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

@@ -1,0 +1,180 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 500,
+ "BonusValueA": "70 Stability|",
+ "BonusValueB": "-20% Stability Damage Taken",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Omni",
+    "SureFoot",
+    "StabDamageTaken: -20%",
+    "GyroStab: 70",
+    "GyroWeight: 20%",
+    "ArmorTPCost: -50%",
+    "StructureTPCost: -50%",
+    "ArmorCBCost: +20%",
+    "StructureCBCost: +25%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "Weights": {
+   "StructureFactor": 1.2
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "An OmniMech is a highly configurable type of BattleMech. OmniMechs mount some of their loadout in modular OmniPods. This gives Omnis the ability to replace damaged components and change battlefield role to fulfill mission requirements. Though not solely created for modular weapon loadouts, the OmniMech design greatly aids repair and construction. Once their modular weaponry and equipment is removed, the empty bays provide better access to repair the chassis. Damaged components such as arms and legs can be easily repaired in half the time it takes for common BattleMechs.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "Gear_Gyro_HeavyDuty_Omni",
+  "Manufacturer": "Luthien",
+  "Model": "Samurai",
+  "Name": "Samurai Heavy Gyro",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Omni Heavy Gyro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: This unit is GUARDED (50% damage reduction against ranged attacks to the front and side) from remaining stationary.Increases Melee Damage by 10%.",
+    "Icon": "uixSvgIcon_ability_bulwark",
+    "Id": "GyroSureFoot",
+    "Name": "BULWARK"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "GainEntrenchedOnNormalMove"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Incoming stability damage reduced by [AMT].",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "SamuraiStabDamageBuff",
+    "Name": "INCOMING STABILITY DAMAGE DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.8",
+    "operation": "Float_Multiply",
+    "statName": "ReceivedInstabilityMultiplier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Provides 70 stability and -20% stability damage taken.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "HD Gyro",
+    "Name": "Samurai"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "70.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

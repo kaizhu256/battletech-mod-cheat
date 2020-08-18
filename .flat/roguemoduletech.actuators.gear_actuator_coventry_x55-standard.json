@@ -1,0 +1,164 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Arm Mounted Accuracy|",
+ "BonusValueB": "- 4 Melee Accuracy",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartLower"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmAccuracy: +2",
+    "Radius: +10%",
+    "MeleeAcc: -4",
+    "ActuatorWeight: 10%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmLowerActuator"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "Weights": {
+   "StructureFactor": 1.1
+  }
+ },
+ "Description": {
+  "Cost": 100000,
+  "Details": "Weapon Actuators are a collection of specialized Servos and Compensators allowing a BattleMech's Arm mounted Weapons to Fire with greater Accuracy. <b><color=#800080>WEAPON LOWER ARM ACTUATOR.</color></b> Reduces Melee, Improves Arm Mounted Weapons.",
+  "Icon": "bracer",
+  "Id": "Gear_Actuator_Coventry_X55-Standard",
+  "Manufacturer": "Coventry",
+  "Model": "X55 Standard",
+  "Name": "Coventry X55 Standard Arm Mod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Weapon Mount"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1 Arm mounted accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-LowerAccuracy-{location}",
+    "Name": "Lower Arm Accuracy"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-2",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Melee attacks attempted have their hit decreased by 2.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-WeaponShoulderACC",
+    "Name": "MELEE HIT CHANCE DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "4.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Melee",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Increased PPC Damage.",
+    "Icon": "uixSvgIcon_skullAtlas",
+    "Id": "StatusEffect-FiringArc",
+    "Name": "PPC Capacitator"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "TurnRadius"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ]
+}

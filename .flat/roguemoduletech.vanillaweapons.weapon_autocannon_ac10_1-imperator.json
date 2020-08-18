@@ -1,0 +1,118 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.3,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AC10",
+ "AttackRecoil": 3,
+ "BattleValue": 123,
+ "BonusValueA": "+ 25% Crit.",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_variant",
+   "component_type_variant1",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ImperatorAC",
+    "WpnRecoil: 2",
+    "WeaponJAMFlat: 10%",
+    "RapidFireAC: 30%",
+    "DakkaBoom: 60",
+    "ModesCanMisfire",
+    "IsAC"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/ac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 60,
+   "HeatDamagePerAmmo": 10,
+   "StabilityDamagePerAmmo": 15
+  },
+  "InventorySorter": {
+   "SortKey": "01003"
+  }
+ },
+ "Damage": 60,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 168000,
+  "Details": "One of the most powerful and efficient weapons mounted in combat, AC/10s are known for their heavy damage and ability to stagger opponents. Like all Autocannon weaponry, AC/10s suffer from recoil effects from continuous fire.\n\n <b><color=#ffcc00>Uses AC10 Ammo.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_Autocannon_AC10_1-Imperator",
+  "Manufacturer": "Imperator",
+  "Model": "Heavy Autocannon",
+  "Name": "AC/10 Imperator",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "AC/10 Imperator"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.05,
+ "FlatJammingChance": 0.1,
+ "HeatDamage": 0,
+ "HeatGenerated": 9,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 15,
+ "InventorySize": 3,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "Id": "x1",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 9,
+   "Id": "x2",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 1,
+   "UIName": "RF",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 12,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

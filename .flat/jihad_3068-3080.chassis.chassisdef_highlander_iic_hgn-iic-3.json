@@ -1,0 +1,260 @@
+{
+ "BattleValue": 9642000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 90,
+ "DFAInstability": 45,
+ "DFASelfDamage": 90,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2931149,
+  "Details": "One of the most popular Star League BattleMechs, many a Highlander accompanied General Aleksandr Kerensky into exile. Some were mothballed, but many found their way into the toumans of the Clans. As technology advanced, the weapons systems were upgraded until the design known as the Highlander IIC finally emerged. With the use of newer, lighter weapons, the damage potential of the Highlander has roughly doubled. The IIC also contains enough ammunition that it rarely needs to conserve any during Trials. Clan scientists were forced to rearrange the placement of some weapons within the 'Mech to allow it proper ammo feeds, but the design is largely unchanged. It carries the maximum amount of Ferro-Fibrous armor that can be crammed on the frame, fourteen and a half tons. As with the original, the IIC carries enough jump jets to move up to ninety meters at a time, allowing MechWarriors to execute the Highlander Burial. This version introduced 3077 carries a HAG/20 with 4 tons of ammunition for long battlefield endurance and ECM Suite instead of the standard Gauss Rifle.",
+  "Icon": "HighlanderIIC",
+  "Id": "chassisdef_highlander_iic_HGN-IIC-3",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Highlander IIC",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "Highlander IIC"
+ },
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Reinforced_Legs",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "IsFixed": false,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_highlanderiic",
+ "Heatsinks": 0,
+ "InitialTonnage": 9,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 145,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 290,
+   "MaxRearArmor": 145,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 95,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 190,
+   "MaxRearArmor": 95,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 95,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 190,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MeleeDamage": 45,
+ "MeleeInstability": 23,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "highlanderiic",
+ "PrefabIdentifier": "chrprfmech_highlanderiicbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Clan Battlemech",
+ "Tonnage": 90,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "HGN-IIC-3",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "One of the most popular Star League BattleMechs, many a Highlander accompanied General Aleksandr Kerensky into exile. Some were mothballed, but many found their way into the toumans of the Clans. As technology advanced, the weapons systems were upgraded until the design known as the Highlander IIC finally emerged. With the use of newer, lighter weapons, the damage potential of the Highlander has roughly doubled. The IIC also contains enough ammunition that it rarely needs to conserve any during Trials. Clan scientists were forced to rearrange the placement of some weapons within the 'Mech to allow it proper ammo feeds, but the design is largely unchanged. It carries the maximum amount of Ferro-Fibrous armor that can be crammed on the frame, fourteen and a half tons. As with the original, the IIC carries enough jump jets to move up to ninety meters at a time, allowing MechWarriors to execute the Highlander Burial. This version introduced 3077 carries a HAG/20 with 4 tons of ammunition for long battlefield endurance and ECM Suite instead of the standard Gauss Rifle.",
+ "weightClass": "ASSAULT"
+}

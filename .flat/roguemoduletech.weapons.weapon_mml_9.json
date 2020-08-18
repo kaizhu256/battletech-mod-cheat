@@ -1,0 +1,112 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.35,
+ "APCriticalChanceMultiplier": 0.038,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 86,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MML",
+    "IndirectMML",
+    "DoesCluster"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/mml"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "03026"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 725000,
+  "Details": "Multi-Missile Launchers can fire both LRM and SRM, including any special warhead types, and are compatible with the Artemis IV fire control system. \n\n <b><color=#ffcc00>Uses SRM/LRM Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_MML_9",
+  "Manufacturer": "Jackson",
+  "Model": "Multi Missile Launcher",
+  "Name": "MML9",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "MML9"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 7,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 4,
+ "MaxRange": 840,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "LRM",
+   "Id": "LRM",
+   "UIName": "LRM",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "AmmoCategory": "SRM",
+   "DamagePerShot": 5,
+   "FireTerrainChance": 0.005,
+   "HeatGenerated": 2,
+   "Id": "SRM",
+   "IndirectFireCapable": false,
+   "Instability": 1,
+   "LongRange": -360,
+   "MaxRange": -480,
+   "MiddleRange": -240,
+   "MinRange": -180,
+   "ShortRange": -120,
+   "UIName": "SRM",
+   "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 9,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 6,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": []
+}

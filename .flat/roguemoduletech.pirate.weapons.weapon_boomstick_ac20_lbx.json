@@ -1,0 +1,132 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.2,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AlternateDamageCalc": true,
+ "AmmoCategory": "LBX20",
+ "AttackRecoil": 3,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 237,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-10",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: +50%",
+    "WpnRecoil: 4",
+    "WeaponJAM: 10",
+    "DmgFallOff: 65%",
+    "LBX",
+    "Melee: +20%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/ac"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01024"
+  }
+ },
+ "Damage": 100,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 324000,
+  "Details": "Leave it to some Periphery Junkhead to take a perfectly fine LBX and Redneck it into a 'Sawed Off Shotgun' and scribble stuff all over, where do they get this stuff... 'Klaatu barada nihikturhun'..... \n\n<b><color=#ffcc00>Uses LBX20 Ammo.</color></b>",
+  "Icon": "LBX",
+  "Id": "Weapon_Boomstick_AC20_LBX",
+  "Manufacturer": "GROOVY!",
+  "Model": "Sawed Off",
+  "Name": "Sawed-Off LBX/20",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "BOOMSTICK! LBX/20"
+ },
+ "DisableClustering": false,
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.65,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.08,
+ "HeatDamage": 0,
+ "HeatGenerated": 18,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 25,
+ "InventorySize": 6,
+ "MaxRange": 360,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "LBX20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  300
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Melee attacks deal 50% Extra damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-BoomMelee1",
+    "Name": "Hand Melee Damage"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 40 Stability",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Recoil: -1",
+    "GyroStab: 40"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  }
+ },
+ "Description": {
+  "Cost": 750000,
+  "Details": "Gyros counteract the massive amounts of momentum generated from 'Mech engines and allow for precision maneuvering and recovery from stability-impacting attacks. All 'Mechs come equipped with a stock Gyro, which can be upgraded for improved performance.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "Gear_Gyro_Artillery",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Artillery Gyro",
+  "Purchasable": false,
+  "Rarity": 10,
+  "UIName": "Gyro Artillery"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "The gyro helps establish center-of-mass equilibrium for the BattleMech.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "GyroGenericThreshhold",
+    "Name": "Gyroscopic Orientation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "40.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Artillery Gyro.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect_ArtyGyro",
+    "Name": "BALLISTIC WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

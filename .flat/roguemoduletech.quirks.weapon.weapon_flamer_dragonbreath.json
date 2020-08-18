@@ -1,0 +1,231 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "Head",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "Flame Breath!",
+ "BonusValueB": "Bonus WHEN overheat",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "AntiPersonnel",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -5
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PIRATEFLAMERDEBUFF: 25%",
+    "VariableDmg: 10",
+    "PipsIgnored: 1",
+    "HeatPerTurn: -3",
+    "OHDamage: 40%",
+    "DmgFallOff: 30%",
+    "Initiative: +1",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +5",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Cockpit"
+   },
+   {
+    "CategoryID": "w/e/p/flamer"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02001"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.15",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Damage": 15,
+ "DamageVariance": 10,
+ "Description": {
+  "Cost": 180000,
+  "Details": "Boss, I don't know what this is, but some jokester welded a flamer onto the cockpit, and hotwired a heat bank into it that runs through a coffee machine. This can only be installed in the head.",
+  "Icon": "dragon-breath",
+  "Id": "Weapon_Flamer_Dragonbreath",
+  "Manufacturer": "Real Joker",
+  "Model": "Pirate Flamethrower",
+  "Name": "Pirate Cockpit",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Dragon Breath"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.3,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 30,
+ "HeatGenerated": 5,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 1,
+ "MaxRange": 210,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.4,
+ "PrefabIdentifier": "Flamer",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  120,
+  150
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 2,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Provides + 1 Initiative and several buffs.",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "CockpitInitativeEffect",
+    "Name": "CockpitTechBonus"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "BaseInitiative"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit is coated with burning chemicals.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_DragonBreath",
+    "Name": "Dragon Breath"
+   },
+   "durationData": {
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.25",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Has a Flame Breath.",
+    "Icon": "uixSvgIcon_equipment_HeatBank",
+    "Id": "StatusEffect-Heat_Max-FB",
+    "Name": "MAX HEAT INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "3",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

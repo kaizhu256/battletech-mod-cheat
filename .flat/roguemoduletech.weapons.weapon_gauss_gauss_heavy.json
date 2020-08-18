@@ -1,0 +1,110 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 2.25,
+ "APMaxArmorThickness": 450,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "Torso",
+ "AmmoCategory": "HGAUSS",
+ "AttackRecoil": 18,
+ "BattleValue": 346,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DmgFallOff: 70%",
+    "WpnRecoil: 2",
+    "RecoilExponent: 0.5",
+    "AccuracyExponent: -0.3",
+    "TACExponent: -0.2",
+    "CRITExponent: -0.2",
+    "IsHeavyGauss",
+    "WeaponBoom: 100"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/gaussrifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 150,
+   "HeatDamagePerAmmo": 10,
+   "StabilityDamagePerAmmo": 30
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  }
+ },
+ "Damage": 150,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 725000,
+  "Details": "The Heavy Gauss Rifle is a new, deadly innovation by Lyran Alliance scientists in conjunction with a manufacturing cooperation between Defiance Industries and TharHes. Applying their ''bigger is better'' philosophy to Gauss technology, the Heavy Gauss Rifle is one of the heaviest battlefield weapons in existence.\n\n <b><color=#ffcc00>Uses Heavy Gauss Ammo. \n\n</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "HeavyGauss",
+  "Id": "Weapon_Gauss_Gauss_HEAVY",
+  "Manufacturer": "Defiance",
+  "Model": "Heavy Magnetic Cannon",
+  "Name": "Heavy Gauss Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Heavy Gauss Rifle"
+ },
+ "DisallowedLocations": "Arms",
+ "DistantVariance": 0.7,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 6,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 30,
+ "InventorySize": 8,
+ "MaxRange": 530,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 1.3,
+  "y": 1.3,
+  "z": 0.8
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 18,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "evasivePipsMods": {
+  "APCriticalChanceMultiplier": -0.2,
+  "AccuracyModifier": -0.35,
+  "CriticalChanceMultiplier": -0.2,
+  "RefireModifier": 0.5
+ },
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

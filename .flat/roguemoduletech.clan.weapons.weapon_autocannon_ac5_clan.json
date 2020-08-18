@@ -1,0 +1,112 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.225,
+ "APMaxArmorThickness": 90,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "UAC5",
+ "AttackRecoil": 2,
+ "BattleValue": 122,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_extreme",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 2",
+    "WeaponJAM: 2",
+    "WeaponJAMFlat: 12%",
+    "Ultra"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/uac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01102"
+  }
+ },
+ "Damage": 45,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 630000,
+  "Details": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/5 is a reliable long range weapon.  \n\n<b><color=#ffcc00>Uses UAC5 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "UltraAC",
+  "Id": "Weapon_Autocannon_AC5_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Tactical Autocannon",
+  "Name": "UAC/5 (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Ultra AC/5 (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.0375,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 11.25,
+ "InventorySize": 2,
+ "MaxRange": 840,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": -6,
+   "Id": "x1",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.12,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.03,
+   "Id": "x2",
+   "UIName": "x2",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "UAC5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  420,
+  630
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 2,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 7,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC5",
+ "WeaponSubType": "AC5",
+ "statusEffects": []
+}

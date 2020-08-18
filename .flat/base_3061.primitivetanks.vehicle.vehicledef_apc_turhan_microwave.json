@@ -1,0 +1,242 @@
+{
+ "ChassisID": "vehiclechassisdef_APC_TURHAN_MICROWAVE",
+ "Description": {
+  "Cost": 8650625,
+  "Details": "This was a Turhan Urban Assault Vehicle. Someone stuffed most of a space to ground microwave power transmission system into it's infantry bay. This large red button worries me.",
+  "Icon": "",
+  "Id": "vehicledef_APC_TURHAN_MICROWAVE",
+  "Name": "Turhan APC",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "Locations": [
+  {
+   "AssignedArmor": 150,
+   "CurrentArmor": 150,
+   "CurrentInternalStructure": 25,
+   "DamageLevel": "Functional",
+   "Location": "Front"
+  },
+  {
+   "AssignedArmor": 145,
+   "CurrentArmor": 145,
+   "CurrentInternalStructure": 25,
+   "DamageLevel": "Functional",
+   "Location": "Left"
+  },
+  {
+   "AssignedArmor": 145,
+   "CurrentArmor": 145,
+   "CurrentInternalStructure": 25,
+   "DamageLevel": "Functional",
+   "Location": "Right"
+  },
+  {
+   "AssignedArmor": 130,
+   "CurrentArmor": 130,
+   "CurrentInternalStructure": 25,
+   "DamageLevel": "Functional",
+   "Location": "Rear"
+  },
+  {
+   "AssignedArmor": 100,
+   "CurrentArmor": 100,
+   "CurrentInternalStructure": 25,
+   "DamageLevel": "Functional",
+   "Location": "Turret"
+  }
+ ],
+ "VehicleTags": {
+  "items": [
+   "unit_vehicle",
+   "unit_medium",
+   "unit_wheels",
+   "unit_vehicle_apc",
+   "unit_release",
+   "unit_generic",
+   "unit_bracket_med",
+   "unit_lance_tank",
+   "unit_primitive",
+   "aurigandirectorate",
+   "auriganpirates",
+   "auriganrestoration",
+   "castile",
+   "circinus",
+   "elysia",
+   "hanse",
+   "illyrian",
+   "locals",
+   "LocalsBrockwayRefugees",
+   "lothian",
+   "marian",
+   "magistracyofcanopus",
+   "magistracycentrella",
+   "oberon",
+   "outworld",
+   "taurianconcordat",
+   "tortuga",
+   "valkyrate",
+   "FlakJackals",
+   "auriganmercenaries",
+   "GrayDeathLegion",
+   "mercenaryreviewboard",
+   "MajestyMetals",
+   "Marauders",
+   "MasonsMarauders",
+   "PaladinProtectionLLC",
+   "RazorbackMercs",
+   "HostileMercenaries",
+   "KellHounds",
+   "SteelBeast",
+   "locals",
+   "LocalsBrockwayRefugees",
+   "SecuritySolutionsInc",
+   "BlackWidowCompany",
+   "BaumannGroup",
+   "BountyHunterAssociates"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Version": 1,
+ "inventory": [
+  {
+   "ComponentDefID": "Weapon_Laser_LargeLaser_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 0,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_MachineGun_MachineGun_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 2,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Weapon_MachineGun_MachineGun_0-STOCK",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 2,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Ammo_AmmunitionBox_Generic_MG",
+   "ComponentDefType": "AmmunitionBox",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_CrewCompartment",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_FCS_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Tank_Sensors_Generic",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_Wheeled_Left",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_Wheeled_Right",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "emod_armorslots_ferrosfibrous",
+   "ComponentDefType": "Upgrade",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Gear_Microwave_Cannon",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": 1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "Tank_Turret",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Turret"
+  },
+  {
+   "ComponentDefID": "emod_engine_180",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "emod_engineslots_std_center",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Left"
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Right"
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Standard",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  },
+  {
+   "ComponentDefID": "Tank_Coolant_System",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Rear"
+  }
+ ]
+}

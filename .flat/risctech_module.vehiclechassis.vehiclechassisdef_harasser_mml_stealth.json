@@ -1,0 +1,122 @@
+{
+ "BattleValue": 564,
+ "CustomParts": {
+  "MoveClamp": 0.5,
+  "MoveCost": "Hover"
+ },
+ "Description": {
+  "Cost": 585000,
+  "Details": "",
+  "Icon": "Harasser",
+  "Id": "vehiclechassisdef_HARASSER_MML_Stealth",
+  "Name": "Harasser Scout Tank",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_bandit",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 3.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  },
+  {
+   "x": -1.5,
+   "y": 4,
+   "z": 0
+  },
+  {
+   "x": 1.5,
+   "y": 4,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": -3.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 30,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 35,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 15,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 30,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_12-18cv",
+ "PathingCapDefID": "pathingdef_light_hover",
+ "PrefabBase": "bandit",
+ "PrefabIdentifier": "chrprfvhcl_banditbase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 25,
+ "TopSpeed": 195,
+ "TurnRadius": 130,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Wheeled",
+ "weightClass": "LIGHT"
+}

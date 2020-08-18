@@ -1,0 +1,122 @@
+{
+ "BattleValue": 993,
+ "Description": {
+  "Cost": 3458750,
+  "Details": "",
+  "Icon": "Vedette",
+  "Id": "vehiclechassisdef_VEDETTE_V9",
+  "Name": "Vedette Cavalry Tank",
+  "Purchasable": false,
+  "Rarity": 0
+ },
+ "HardpointDataDefID": "hardpointdatadef_vedette",
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 2.5,
+   "z": -0.5
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": 3
+  },
+  {
+   "x": -2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 2.5,
+   "z": 0
+  },
+  {
+   "x": 0,
+   "y": 1.5,
+   "z": -4.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Front",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Left",
+   "MaxArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Right",
+   "MaxArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Rear",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 25,
+   "InventorySlots": 0,
+   "Location": "Turret",
+   "MaxArmor": 100,
+   "Tonnage": 0
+  }
+ ],
+ "MovementCapDefID": "movedef_5-8cv",
+ "PathingCapDefID": "pathingdef_medium_tracked",
+ "PrefabBase": "vedette",
+ "PrefabIdentifier": "chrprfvhcl_vedettebase",
+ "Radius": 4,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Tonnage": 50,
+ "TopSpeed": 85,
+ "TurnRadius": 90,
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "It's a tank, Boss, they all look the same to me.",
+ "movementType": "Tracked",
+ "weightClass": "MEDIUM"
+}

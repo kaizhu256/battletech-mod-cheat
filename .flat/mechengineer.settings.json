@@ -1,0 +1,986 @@
+{
+ "AccuracyEffects": {
+  "CombatHUDTooltipName": "WEAPON MOUNT",
+  "CombatHUDTooltipNameDescription": "The name to call the ARM MOUNTED accuracy bonus in the combat tooltips.",
+  "Enabled": true,
+  "EnabledDescription": "Enables statistic effects for arm accuracy."
+ },
+ "ArmActuator": {
+  "CustomDescriptionTemplate": "<color=#00cc44><b>Arm Actuator Limit</b>: <b>{0}</b></color>\r\n",
+  "DefaultCBTDefHand": "emod_arm_part_hand",
+  "DefaultCBTDefLower": "emod_arm_part_lower",
+  "DefaultCBTHand": "emod_arm_part_hand",
+  "DefaultCBTLower": "emod_arm_part_lower",
+  "DefaultCBTShoulder": "emod_arm_part_shoulder",
+  "DefaultCBTUpper": "emod_arm_part_upper",
+  "DescriptionIdentifier": "ArmActuatorSupport",
+  "DescriptionTemplate": "<color=#00cc44><b>Arm Actuator Limit</b>: LeftArm <b>{0}</b> RightArm <b>{1}</b></color>\r\n",
+  "Enabled": true,
+  "EnabledDescription": "Enables CBT arm actuators with CC like handling.",
+  "ExtendHandLimit": true,
+  "ForceFullDefaultActuators": true,
+  "IgnoreFullActuatorsTag": "OmniMech",
+  "InterruptHandDropIfNoLower": false
+ },
+ "ArmorStructureChanges": {
+  "Enabled": true
+ },
+ "ArmorStructureRatio": {
+  "Enabled": false,
+  "SkipMechDefs": []
+ },
+ "AutoFixer": {
+  "AutoFixWeaponDefSlotsChanges": [],
+  "ChassisDefInitialToTotalTonnageFactor": 0.1,
+  "ChassisDefInitialTonnage": false,
+  "ChassisDefMaxJumpjets": false,
+  "ChassisDefMaxJumpjetsCount": 100,
+  "ChassisDefMaxJumpjetsRating": 400,
+  "ChassisDefSkip": [],
+  "ChassisDefSlotsChanges": null,
+  "CockpitCategorizer": null,
+  "CockpitSlotChange": null,
+  "CockpitTonnageChange": null,
+  "Enabled": true,
+  "GyroCategorizer": null,
+  "GyroSlotChange": null,
+  "LegUpgradesCategorizer": null,
+  "LegUpgradesSlotChange": null,
+  "MechDefAutoFixAgainstMaxFreeTonnage": [],
+  "MechDefCoolingDef": "emod_kit_shs",
+  "MechDefCoreDummy": "emod_engine_dummy",
+  "MechDefEngine": true,
+  "MechDefHeatBlockDef": "Gear_Engine_Heatsinks",
+  "MechDefSkip": [],
+  "UpgradeDefSkip": [
+   "Gear_Cockpit_Generic_Small",
+   "emod_arm_lower",
+   "Gear_Actuator_Coventry_X55-Standard",
+   "Gear_Actuator_Coventry_X65-Standard",
+   "Gear_Actuator_Coventry_X75-Standard",
+   "Gear_Actuator_Friedhof_Behemoth",
+   "Gear_Actuator_Friedhof_Gargantuan",
+   "Gear_Actuator_Friedhof_Colossus",
+   "Gear_Actuator_Friedhof_Compensator",
+   "Gear_Actuator_Friedhof_CompensatorPlus",
+   "Gear_Gyro_Ultralight",
+   "Gear_Gyro_HeavyDuty",
+   "Gear_Gyro_XL",
+   "Gear_Gyro_Compact",
+   "Gear_Spiked_Fist",
+   "Gear_Spiked_Boots",
+   "Gear_Cockpit_Tacticon_B2000_Battle_Computer",
+   "Gear_Actuator_CoolingJacket",
+   "Gear_Cockpit_VR_POD",
+   "Gear_Gyro_HE_Optima",
+   "Gear_FCS_Generic_Standard",
+   "Gear_FCS_Improved",
+   "Gear_TargetingTrackingSystem_RCA_InstaTrac-VIII",
+   "Gear_FCS_AdvancedTC",
+   "Gear_Sensors_Generic_Standard",
+   "Gear_Sensors_HighPowered",
+   "Gear_FCS_Defiance",
+   "Gear_Sensors_AR12",
+   "Gear_Cockpit_Ceres_Metals_Hardened",
+   "Gear_Cockpit_Ceres_Metals_Reinforced",
+   "Gear_Cockpit_Majesty_M_M_60KL",
+   "Gear_Cockpit_Generic_Standard",
+   "Gear_Cockpit_Majesty_M_M_120KL",
+   "Gear_Cockpit_Majesty_M_M_180KL",
+   "Gear_Cockpit_SLDF_Custom",
+   "Gear_Cockpit_StarCorps_Advanced",
+   "Gear_Cockpit_StarCorps_Enhanced",
+   "Gear_Cockpit_StarCorps_Improved",
+   "Gear_Cockpit_CLAN_EI",
+   "Gear_Cockpit_CLAN_Standard",
+   "Gear_Cockpit_DNI",
+   "Gear_Cockpit_SLDF_Standard",
+   "Gear_Cockpit_Primitive",
+   "Gear_Cockpit_Spiked_Helmet",
+   "Gear_Cockpit_LifeSupportA_Standard",
+   "Gear_Cockpit_LifeSupportB_Standard",
+   "Gear_Cockpit_CockpitFCS_Standard",
+   "Gear_Cockpit_SensorsB_Standard",
+   "Gear_Gyro_Generic_Standard",
+   "emod_arm_part_shoulder",
+   "emod_arm_part_upper",
+   "emod_arm_part_lower",
+   "emod_arm_part_hand",
+   "emod_leg_hip",
+   "emod_leg_upper",
+   "emod_leg_lower",
+   "emod_leg_foot"
+  ]
+ },
+ "BattleTechLoadFix": {
+  "Enabled": true
+ },
+ "ComponentExplosions": {
+  "Enabled": true,
+  "EnabledDescription": "Allows each component to define destructive forces in case they explode, also implements proper CASE."
+ },
+ "CompressFloatieMessages": {
+  "DebugDestroyedFloaties": true,
+  "Enabled": false,
+  "EnabledDescription": "Compresses similar floatie messages to a single message with a multiplier. E.g. MEDIUM LASER DESTROYED x 4"
+ },
+ "CriticalEffects": {
+  "CritDestroyedDeathText": "DESTROYED: Mech is incapacitated, reason is {0}",
+  "CritDestroyedText": "DESTROYED: {0}",
+  "CritFloatieMessage": "{0} CRIT",
+  "CritHitText": "HIT {0}: {1}",
+  "CritLinkedText": "Critical hits are linked to '{0}'",
+  "DescriptionIdentifier": "Criticals",
+  "DescriptionTemplate": "Critical Effects:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",
+  "DescriptionUseName": false,
+  "DestroyedFloatieMessage": "{0} DESTROYED",
+  "ElementTemplate": " <indent=10%><line-indent=-5%><line-height=65%>{{element}}</line-height></line-indent></indent>\r\n",
+  "Enabled": true,
+  "EnabledDescription": "Allows custom multiple critical hit states for individual components."
+ },
+ "DebugCycleCombatSounds": {
+  "Enabled": false
+ },
+ "DebugSaveMechToFile": {
+  "Enabled": false
+ },
+ "DebugScreenshotMechs": {
+  "Enabled": false,
+  "EnabledDescription": "Edit a mech then cancel, it then will go through all mechs and make screenshots for them. To improve loading times use the TagManager to blacklist all components so the MechLab doesn't have to load them.",
+  "OnlyInvalidMechs": true,
+  "OnlyInvalidMechsDescription": "Only make screenshots of mechs with invalid configurations.",
+  "ScreenshotDirectoryPath": "Screenshots",
+  "ScreenshotDirectoryPathDescription": "Create the directory manually first, otherwise it won't save any of the images."
+ },
+ "DynamicSlots": {
+  "DynamicSlotsValidateDropEnabled": true,
+  "DynamicSlotsValidateDropEnabledDescription": "Don't allow dropping of items that would exceed the available slots.",
+  "Enabled": true,
+  "EnabledDescription": "Allows components to take up space dynamically on a mech.",
+  "LocationPriorityOrder": [
+   "CenterTorso",
+   "Head",
+   "LeftTorso",
+   "LeftLeg",
+   "RightTorso",
+   "RightLeg",
+   "LeftArm",
+   "RightArm"
+  ],
+  "LocationPriorityOrderDescription": "From highest to lowest priority where to add dynamic slots too, relevant if locations have same amount of free slots. Visual impact only.",
+  "MovableSlotText": "Movable slot",
+  "ReservedSlotText": "Reserved slot"
+ },
+ "Engine": {
+  "AllowMixingHeatSinkTypes": false,
+  "AllowMixingHeatSinkTypesDescription": "Allow heat sinks patchwork.",
+  "AllowMountingAllRatings": false,
+  "AllowMountingAllRatingsDescription": "Allow mounting all fusion core rating regardless of min/max sprint factors.",
+  "AutoConvertJumpCapacityInDefToStat": true,
+  "AutoConvertJumpCapacityInDefToStatDescription": "All JumpCapacity values in JumpJetDefs will be auto-converted to the JumpCapacity statistic.",
+  "DefaultEngineHeatSinkId": "Gear_HeatSink_Generic_Standard",
+  "DefaultEngineHeatSinkIdDescription": "Default heat sink type for engines without a kit.",
+  "Enabled": true,
+  "EnabledDescription": "Provides engines that can be installed on mechs similar to how CBT works.",
+  "EnforceRulesForAdditionalInternalHeatSinks": true,
+  "EnforceRulesForAdditionalInternalHeatSinksDescription": "Can't have those juicy ++ cooling systems with smaller fusion cores than the rules allow it.",
+  "EngineMissingFallbackHeatSinkCapacity": 30,
+  "EngineMissingFallbackHeatSinkCapacityDescription": "Heat sink capacity if no engine is detected.",
+  "EngineRatingForChassisMovementStat": 250,
+  "EngineRatingForChassisMovementStatDescription": "The engine rating to use when evaluating the movement stat of a mech.",
+  "IgnoreLimitEngineChassisTag": "",
+  "JumpJetDefaultJumpHeat": 3,
+  "JumpJetDefaultJumpHeatDescription": "The heat the jump jet produces when fully* used (* jumping below max distance reduces produced heat). Can be adjusted using the JumpHeat statistic.",
+  "LimitEngineCoresToTonnage": true,
+  "MinimJumpHeat": 9,
+  "MinimJumpHeatDescription": "Minimum heat when doing a jump, even if only one jump jet exists and only when jumping one hex.",
+  "MinimumHeatSinksOnMech": 10,
+  "MinimumHeatSinksOnMechDescription": "Minimum heatsinks a mech requires.",
+  "MovementPointDistanceMultiplier": 25,
+  "MovementPointDistanceMultiplierDescription": "The distance of a TT movement point, 24 is vanilla CombatGameConstants.ExperimentalGridDistance .",
+  "RunMultiplier": 1.5,
+  "RunMultiplierDescription": "How much faster running is than walking."
+ },
+ "Globals": {
+  "Enabled": true,
+  "EnabledDescription": "Allows tooltips and other features to access the current mech from context."
+ },
+ "HardpointFix": {
+  "AllowDefaultLoadoutWeapons": false,
+  "AllowDefaultLoadoutWeaponsDescription": "Ignore limits that would prevent mounting default loadouts.",
+  "AutoFixChassisDefWeaponHardpointCounts": false,
+  "AutoFixChassisDefWeaponHardpointCountsDescription": "Changes chassis hardpoints based on configured prefabs.",
+  "AutoFixHardpointDataDefs": true,
+  "AutoFixHardpointDataDefsDescription": "HardpointDataDef should not contain duplicates and be grouped by slot (mh1 < mh2, eh1 = mh1).",
+  "Enabled": true,
+  "EnabledDescription": "Optimizes the way installed weapons are shown on a mech model.",
+  "EnforceHardpointLimits": false,
+  "EnforceHardpointLimitsDescription": "Enforces hardpoint limits in mechlab only allowing configured prefabs.",
+  "FallbackPrefabsForComponentDefIds": [
+   "Weapon_Mortar_MechMortar"
+  ],
+  "FallbackPrefabsForComponentDefIdsDescription": "A list of components that always should be assigned a weapon prefab to.",
+  "TraceLogDebugMappings": false,
+  "TraceLogDebugMappingsDescription": "Trace all GetComponentBlankNames and GetComponentPrefabName calls. Otherwise only some of them are logged.",
+  "WeaponPrefabMappings": [
+   {
+    "HardpointCandidates": [
+     "ac2",
+     "ac",
+     "ac5",
+     "lbx2",
+     "uac2",
+     "lbx",
+     "uac",
+     "lbx5",
+     "uac5",
+     "mg",
+     "ppc",
+     "laser",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "AC2"
+   },
+   {
+    "HardpointCandidates": [
+     "lbx2",
+     "lbx",
+     "lbx5",
+     "ac2",
+     "uac2",
+     "ac",
+     "uac",
+     "ac5",
+     "uac5",
+     "mg",
+     "ppc",
+     "laser",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "LBX2"
+   },
+   {
+    "HardpointCandidates": [
+     "uac2",
+     "uac5",
+     "uac",
+     "ac2",
+     "lbx2",
+     "ac",
+     "lbx",
+     "ac5",
+     "lbx5",
+     "mg",
+     "ppc",
+     "laser",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "UAC2"
+   },
+   {
+    "HardpointCandidates": [
+     "ams",
+     "laser",
+     "mg",
+     "machinegun",
+     "flamer",
+     "ac2",
+     "ppc"
+    ],
+    "PrefabIdentifier": "AMS"
+   },
+   {
+    "HardpointCandidates": [
+     "flamer",
+     "laser",
+     "mg",
+     "machinegun",
+     "ac2",
+     "ppc",
+     "ac",
+     "lbx",
+     "ams"
+    ],
+    "PrefabIdentifier": "Flamer"
+   },
+   {
+    "HardpointCandidates": [
+     "laser",
+     "flamer",
+     "mg",
+     "machinegun",
+     "ac2",
+     "ppc",
+     "ac",
+     "lbx",
+     "ams"
+    ],
+    "PrefabIdentifier": "Laser"
+   },
+   {
+    "HardpointCandidates": [
+     "ac5",
+     "ac",
+     "ac10",
+     "ac2",
+     "uac5",
+     "lbx5",
+     "lbx",
+     "rac2",
+     "uac2",
+     "lbx2",
+     "rac5",
+     "uac10",
+     "lbx10",
+     "rac10",
+     "ac20",
+     "lbx20",
+     "uac20",
+     "rac20",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "AC5"
+   },
+   {
+    "HardpointCandidates": [
+     "lbx5",
+     "lbx",
+     "lbx10",
+     "lbx2",
+     "ac5",
+     "uac5",
+     "ac",
+     "rac2",
+     "ac2",
+     "uac2",
+     "rac5",
+     "ac10",
+     "uac10",
+     "rac10",
+     "lbx20",
+     "ac20",
+     "uac20",
+     "rac20",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "LBX5"
+   },
+   {
+    "HardpointCandidates": [
+     "uac5",
+     "uac10",
+     "uac2",
+     "lbx5",
+     "ac5",
+     "ac",
+     "lbx",
+     "rac2",
+     "ac2",
+     "lbx2",
+     "rac5",
+     "ac10",
+     "lbx10",
+     "rac10",
+     "uac20",
+     "ac20",
+     "lbx20",
+     "rac20",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "UAC5"
+   },
+   {
+    "HardpointCandidates": [
+     "rac2",
+     "rac5",
+     "rac10",
+     "rac20",
+     "uac5",
+     "lbx5",
+     "ac5",
+     "ac",
+     "lbx",
+     "uac2",
+     "ac2",
+     "lbx2",
+     "uac10",
+     "ac10",
+     "lbx10",
+     "uac20",
+     "ac20",
+     "lbx20",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "RAC2"
+   },
+   {
+    "HardpointCandidates": [
+     "ac10",
+     "ac",
+     "ac5",
+     "ac20",
+     "lbx10",
+     "uac10",
+     "rac5",
+     "lbx",
+     "uac5",
+     "lbx5",
+     "rac2",
+     "rac10",
+     "lbx20",
+     "uac20",
+     "rac20",
+     "ac2",
+     "uac2",
+     "lbx2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "AC10"
+   },
+   {
+    "HardpointCandidates": [
+     "lbx10",
+     "lbx",
+     "lbx5",
+     "lbx20",
+     "ac10",
+     "uac10",
+     "rac5",
+     "ac",
+     "ac5",
+     "uac5",
+     "rac2",
+     "rac10",
+     "ac20",
+     "uac20",
+     "rac20",
+     "lbx2",
+     "ac2",
+     "uac2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "LBX10"
+   },
+   {
+    "HardpointCandidates": [
+     "uac10",
+     "ac10",
+     "lbx10",
+     "rac5",
+     "ac",
+     "lbx",
+     "uac5",
+     "ac5",
+     "lbx5",
+     "rac2",
+     "rac10",
+     "uac20",
+     "ac20",
+     "lbx20",
+     "rac20",
+     "uac2",
+     "ac2",
+     "lbx2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "UAC10"
+   },
+   {
+    "HardpointCandidates": [
+     "rac5",
+     "rac2",
+     "rac10",
+     "rac20",
+     "uac10",
+     "ac10",
+     "lbx10",
+     "ac",
+     "lbx",
+     "uac5",
+     "ac5",
+     "lbx5",
+     "uac20",
+     "ac20",
+     "lbx20",
+     "uac2",
+     "ac2",
+     "lbx2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "RAC5"
+   },
+   {
+    "HardpointCandidates": [
+     "ppc",
+     "ac20",
+     "ac",
+     "lbx",
+     "ac10",
+     "lbx10",
+     "laser",
+     "flamer",
+     "mg",
+     "ams"
+    ],
+    "PrefabIdentifier": "PPC"
+   },
+   {
+    "HardpointCandidates": [
+     "ac20",
+     "ac",
+     "ac10",
+     "lbx20",
+     "uac20",
+     "rac20",
+     "lbx",
+     "rac10",
+     "lbx10",
+     "uac10",
+     "rac5",
+     "ac5",
+     "uac5",
+     "lbx5",
+     "rac2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "AC20"
+   },
+   {
+    "HardpointCandidates": [
+     "lbx20",
+     "lbx",
+     "lbx10",
+     "ac20",
+     "uac20",
+     "rac20",
+     "ac",
+     "rac10",
+     "ac10",
+     "uac10",
+     "rac5",
+     "ac5",
+     "uac5",
+     "lbx5",
+     "rac2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "LBX20"
+   },
+   {
+    "HardpointCandidates": [
+     "uac20",
+     "uac10",
+     "ac20",
+     "lbx20",
+     "rac20",
+     "ac",
+     "lbx",
+     "rac10",
+     "ac10",
+     "lbx10",
+     "rac5",
+     "ac5",
+     "uac5",
+     "lbx5",
+     "rac2",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "UAC20"
+   },
+   {
+    "HardpointCandidates": [
+     "rac10",
+     "rac20",
+     "rac5",
+     "rac2",
+     "uac20",
+     "ac20",
+     "lbx20",
+     "ac",
+     "lbx",
+     "ac10",
+     "lbx10",
+     "uac10",
+     "ac5",
+     "uac5",
+     "lbx5",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "RAC10"
+   },
+   {
+    "HardpointCandidates": [
+     "rac20",
+     "rac10",
+     "rac5",
+     "rac2",
+     "ac20",
+     "lbx20",
+     "uac20",
+     "uac",
+     "ac",
+     "lbx",
+     "ac10",
+     "lbx10",
+     "uac10",
+     "ac5",
+     "uac5",
+     "ppc",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "RAC20"
+   },
+   {
+    "HardpointCandidates": [
+     "bfg",
+     "artillery",
+     "gauss",
+     "ac20",
+     "ac",
+     "ppc",
+     "lbx",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "BFG"
+   },
+   {
+    "HardpointCandidates": [
+     "gauss",
+     "ac20",
+     "ac",
+     "ppc",
+     "lbx",
+     "laser",
+     "mg",
+     "flamer",
+     "ams"
+    ],
+    "PrefabIdentifier": "Gauss"
+   },
+   {
+    "HardpointCandidates": [
+     "artillery",
+     "ac20",
+     "gauss",
+     "ac",
+     "lbx",
+     "ppc",
+     "ams",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser"
+    ],
+    "PrefabIdentifier": "artillery"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm5",
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "srm6",
+     "srm4",
+     "srm2",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "lrm5"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "lrm5",
+     "srm6",
+     "srm4",
+     "srm2",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "lrm10"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "lrm10",
+     "lrm5",
+     "srm6",
+     "srm4",
+     "srm2",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "lrm15"
+   },
+   {
+    "HardpointCandidates": [
+     "arrow",
+     "lrm5",
+     "lrm20",
+     "srm20",
+     "lrm15",
+     "lrm10",
+     "srm6",
+     "srm4",
+     "srm2",
+     "ppc",
+     "gauss",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "arrow"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm20",
+     "srm20",
+     "lrm15",
+     "lrm10",
+     "lrm5",
+     "srm6",
+     "srm4",
+     "srm2",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "lrm20"
+   },
+   {
+    "HardpointCandidates": [
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "MachineGun"
+   },
+   {
+    "HardpointCandidates": [
+     "srm2",
+     "srm4",
+     "srm6",
+     "lrm5",
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "srm2"
+   },
+   {
+    "HardpointCandidates": [
+     "srm4",
+     "srm6",
+     "srm2",
+     "lrm5",
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "srm4"
+   },
+   {
+    "HardpointCandidates": [
+     "srm6",
+     "srm4",
+     "srm2",
+     "lrm5",
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "machinegun",
+     "mg",
+     "flamer",
+     "laser",
+     "ams"
+    ],
+    "PrefabIdentifier": "srm6"
+   }
+  ]
+ },
+ "InvalidInventory": {
+  "Enabled": true
+ },
+ "MechLabSlots": {
+  "Enabled": true,
+  "HideECMButton": true,
+  "HideHelpButton": true,
+  "MechLabArmTopPadding": 120,
+  "MechLabGeneralSlots": 3,
+  "MechLabGeneralWidgetEnabled": true,
+  "MechLabGeneralWidgetLabel": "Specialist"
+ },
+ "MoveMultiplierStat": {
+  "Enabled": true
+ },
+ "NewSaveFolder": {
+  "Enabled": true,
+  "Path": "RogueTechSaves"
+ },
+ "OrderedStatusEffects": {
+  "Enabled": false,
+  "EnabledDescription": "Orders status effects, so e.g. install order of mechComponents does not matter for additive and multiplicative effects. Affects all statistic data.",
+  "Order": [
+   "Int_Add",
+   "Float_Add",
+   "Int_Multiply",
+   "Int_Multiply_Float",
+   "Float_Multiply",
+   "Float_Multiply_Int",
+   "Int_Subtract",
+   "Float_Subtract",
+   "Int_Divide",
+   "Int_Divide_Float",
+   "Float_Divide",
+   "Float_Divide_Int",
+   "Int_Divide_Denom",
+   "Int_Divide_Denom_Float",
+   "Float_Divide_Denom",
+   "Float_Divide_Denom_Int"
+  ],
+  "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemded unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'."
+ },
+ "OverrideDescriptions": {
+  "BonusDescriptionsDescriptionTemplate": "Traits:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",
+  "BonusDescriptionsElementTemplate": " <indent=10%><line-indent=-5%><line-height=65%>{{element}}</line-height></line-indent></indent>\r\n",
+  "Enabled": true
+ },
+ "OverrideGhostVFX": {
+  "Blacklisted": [],
+  "BlipStrong": "Weak",
+  "BlipWeak": "Weak",
+  "Enabled": false
+ },
+ "OverrideTonnage": {
+  "ArmorRoundingPrecision": 0.001,
+  "ArmorRoundingPrecisionDescription": "If not set, default is ARMOR_PER_STEP * TONNAGE_PER_ARMOR_POINT",
+  "Enabled": true,
+  "EnabledDescription": "Allows other features to override tonnage calculations.",
+  "KilogramStandardPrecision": 0.001,
+  "KilogramStandardPrecisionDescription": "Used for Small Support Vehicles, ProtoMechs and battlesuits.",
+  "MechLabMechInfoWidgetDecimalPlaces": 3,
+  "MechLabMechInfoWidgetDecimalPlacesDescription": "How many digits to show after the comma in the mech lab.",
+  "PrecisionEpsilon": 0.0001,
+  "PrecisionEpsilonDescription": "The maximum tonnage two values can be apart to be viewed as being the same, vanilla uses 100 grams.",
+  "TonnageStandardPrecision": 0.01,
+  "TonnageStandardPrecisionDescription": "Set to 0.001 for kg fractional accounting on BattleMechs, only modifies half-ton rounding operations as by rule",
+  "UnderweightWarningThreshold": 0.1,
+  "UnderweightWarningThresholdDescription": "How many tons a mech has to be underweight to show a warning"
+ },
+ "ShutdownInjuryProtection": {
+  "Enabled": true,
+  "EnabledDescription": "Pilots receive injury when mech receives overheat damage or has to shut down in case life support is destroyed.",
+  "HeatDamageInjuryEnabled": true,
+  "ShutdownInjuryEnabled": true
+ },
+ "TagManager": {
+  "BlacklistComponentTags": [
+   "component_type_stock",
+   "component_type_variant",
+   "component_type_lostech",
+   "fake_vehicle_chassis"
+  ],
+  "Enabled": false,
+  "SkirmishWhitelistTags": [],
+  "WhitelistComponentTags": []
+ },
+ "TurretLimitedAmmo": {
+  "Enabled": true,
+  "EnabledDescription": "Turrets use up ammo and don't explode once ammo is gone."
+ },
+ "TurretMechComponents": {
+  "Enabled": true,
+  "EnabledDescription": "Turrets can now use components and benefit from their status effects."
+ }
+}

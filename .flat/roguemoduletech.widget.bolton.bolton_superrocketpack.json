@@ -1,0 +1,223 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 4,
+ "AOEHeatDamage": 2,
+ "AOEInstability": 1,
+ "AOERange": 60,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AlwaysIndirectVisuals": true,
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#B27D37",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 16",
+    "AreaOfEffect: 60",
+    "AreaOfEffectDmg: 3",
+    "AreaOfEffectHeatDmg: 2",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainStrength: 2",
+    "FireTerrainDuration: 2",
+    "MissileHP: 4",
+    "InternalAmmoShots: 5",
+    "InternalAmmo: 4",
+    "IsRocket: 20",
+    "Visibility: +32%",
+    "Signature: +32%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 6,
+   "HeatDamagePerAmmo": 6,
+   "StabilityDamagePerAmmo": 3
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 16
+  },
+  "InventorySorter": {
+   "SortKey": "03004"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 2,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 29000,
+  "Details": "'There is no such thing as Overkill' Delivering a payload of extremely Volatile Explosive does this rocket show the ingenuity of those with nothing.<b><color=#F79232>5 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "missile-pod",
+  "Id": "BoltOn_SuperRocketPack",
+  "Manufacturer": "Death Blossom",
+  "Model": "Rocket Launcher",
+  "Name": "RL20",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Smoker"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDurationWithoutForest": 2,
+ "FireOnSuccessHit": true,
+ "FireTerrainCellRadius": 1,
+ "FireTerrainChance": 1,
+ "FireTerrainStrength": 2,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "LongVFXOnImpact": "vfxPrfPrtl_artillerySmokeSignal_loop",
+ "MaxRange": 600,
+ "MinRange": 0,
+ "MissileHealth": 4,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  200,
+  300,
+  500
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 20,
+ "SpreadRange": 80,
+ "StartingAmmoCapacity": 100,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.98",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.32",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.32",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "tempDesignMaskCellRadius": 6,
+ "tempDesignMaskOnImpact": "DesignMaskSmoke",
+ "tempDesignMaskOnImpactTurns": 2,
+ "weaponCategoryID": "Special"
+}

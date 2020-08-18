@@ -1,0 +1,101 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "NoUniqueCheck": true,
+   "presistantVFX": {
+    "VFXPrefab": "vfxPrfPrtl_miningSmokePlume_sm_loop",
+    "VFXScaleX": 0.5,
+    "VFXScaleY": 0.5,
+    "VFXScaleZ": 0.5
+   }
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeldMelee: 2.5",
+    "WpnAccuracy: -1",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 2.5
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 50,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 60000,
+  "Details": "Mining 'Mechs use arm-mounted Drills to excavate tunnels and extract ore. In an emergency, these heavy-duty drills can be used against 'Mechs in melee combat. Like all Industrial weapons the Mining Drill suffers a small inherent penalty to hit.",
+  "Icon": "uixSvgIcon_weapon_Support",
+  "Id": "Weapon_Industrial_MiningDrill",
+  "Manufacturer": "Finn MacCoul",
+  "Model": "Rock Cutter",
+  "Name": "Mining Drill",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Mining Drill"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 40,
+ "InventorySize": 1,
+ "MaxRange": 40,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  25,
+  25,
+  40
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": [],
+ "weaponCategoryID": "SpecialMelee"
+}

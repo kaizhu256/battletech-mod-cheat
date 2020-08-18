@@ -1,0 +1,67 @@
+{
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "PAGear",
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartShoulder, PartUpper, PartLower, PartHand"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BACLAW"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   },
+   {
+    "CategoryID": "ArmLowerActuator"
+   },
+   {
+    "CategoryID": "ArmHandActuator"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "An Actuator is a component within a BattleMech's limbs, composed of the joint, myomer bundles, and motor control units.",
+  "Icon": "grasping-claws",
+  "Id": "PA_BoardingClaw",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Hand Actuator",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Boarding Claws"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

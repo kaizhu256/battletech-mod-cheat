@@ -1,0 +1,144 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "HMG",
+ "AttackRecoil": 0,
+ "BattleValue": 6,
+ "BonusValueA": "Range Variance.",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: 50%",
+    "IsMG",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/mg"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01503"
+  }
+ },
+ "Damage": 3,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 108000,
+  "Details": "As its name implies, the Heavy Machine Gun is less a Machine Gun and more like an automated Grenade Launcher. The HMG does more damage and has a better chance of penetrating and destroying critical components, but weighs twice as much, and suffers from recoil. \n\n<b><color=#ffcc00>Uses HMG Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "MachineGun",
+  "Id": "Weapon_MachineGun_HEAVY_CLAN",
+  "Manufacturer": "CLAN",
+  "Model": "Machine Gun",
+  "Name": "HMG (C)",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "HMG (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 4,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 0.3,
+ "InventorySize": 1,
+ "MaxRange": 240,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "HeatGenerated": -2,
+   "Id": "x1",
+   "ShotsWhenFired": -3,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "HeatGenerated": -1,
+   "Id": "x2",
+   "ShotsWhenFired": -2,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "HeatGenerated": 0,
+   "Id": "x3",
+   "RefireModifier": 1,
+   "ShotsWhenFired": -1,
+   "UIName": "x3",
+   "isBaseMode": false
+  },
+  {
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "HeatGenerated": 0,
+   "Id": "x4",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 0,
+   "UIName": "x4",
+   "isBaseMode": true
+  },
+  {
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 1,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 1,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "HeatGenerated": 2,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 2,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  120,
+  150
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 4,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0.6,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": []
+}

@@ -1,0 +1,72 @@
+{
+ "AIBattleValue": 90,
+ "AccuracyModifier": 0,
+ "ArmorDamageModifier": 1,
+ "Category": "LRM",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#565B5B",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "DamageMultiplier": 0.5,
+ "Description": {
+  "Cost": 0,
+  "Details": "Long range missiles, inferno.",
+  "Icon": null,
+  "Id": "Ammunition_ILRM",
+  "Name": "Incendiary LRM Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Incendiary"
+ },
+ "FireDurationWithoutForest": 1,
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 0.095,
+ "FireTerrainStrength": 1,
+ "HeatDamagePerShot": 1,
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "MissileHealth": 2,
+ "Type": "Normal",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.98",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

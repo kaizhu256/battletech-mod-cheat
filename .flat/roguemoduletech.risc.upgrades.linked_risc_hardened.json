@@ -1,0 +1,134 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "Bulwark",
+ "BonusValueB": "Requires ECM",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Repairing",
+   "ButtonName": "Repair Systems",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "System OK",
+   "NoUniqueCheck": true,
+   "Repair": {
+    "AffectInstalledLocation": true,
+    "Armor": 20,
+    "BuildingLocations": [],
+    "InnerStructure": 10,
+    "MechArmorLocations": [],
+    "MechStructureLocations": [],
+    "TurnsSinceDamage": 2,
+    "VehicleLocations": [],
+    "repairTrigger": {
+     "AtEndOfTurn": true,
+     "OnActivation": false,
+     "OnDamage": "None"
+    }
+   }
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmorProtection: 50%",
+    "ArmorFactor: 40%",
+    "CritRes: 50%",
+    "HaarJel",
+    "HaarJelTurn",
+    "HaarJelArmor: 20",
+    "HaarJelStructure: 10",
+    "HaarJelDuration: 2",
+    "BreachImmunity",
+    "Reserved: 15",
+    "ArmorTPCost: X2",
+    "ArmorCBCost: X2"
+   ]
+  },
+  "CASE": {
+   "MaximumDamage": 3
+  },
+  "Category": [
+   {
+    "CategoryID": "Linked_RISC"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 30
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "RISC Armor"
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 60",
+    "TechCost": "1.05 * [[Chassis.Tonnage]] / 20"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Advances in Material Sciences since and recovered from the Star League in combination with RISC ingenuity alloed the creation of this Armor. Combining the Toughness of Hardened Structure and the weight savings of Heavy Ferro with a refurbished unique HarJel Self Repair System does this Armor turn anything into an undying Juggernaut.",
+  "Icon": "shieldcomb",
+  "Id": "Linked_RISC_Hardened",
+  "Manufacturer": "RISC",
+  "Model": "Hardened Ferro-Fibrous",
+  "Name": "Hardened Ferro-Fibrous",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Hardened Ferro-Fibrous"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Immune to Hull Breach",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "BreachImmunity",
+    "Name": "BreachImmunity"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "CBTBE_HullBreachImmunity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The Tanks Turret has been Damaged, reducing Accuracy by 1.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "CriticalEffect-TurretSystemsCrit1",
+    "Name": "Turret Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Turret has been Damaged, reducing Accuracy by 2.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "CriticalEffect-TurretSystemsCrit2",
+    "Name": "Turret Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "3",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Turret has been Damaged, reducing Accuracy by 3.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "CriticalEffect-TurretSystemsCrit3",
+    "Name": "Turret Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "5",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Turret has been Damaged, reducing Accuracy by 4.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "CriticalEffect-TurretSystemsCritRecoil1",
+    "Name": "Turret Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Turret has been Damaged, reducing Accuracy by 4.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "CriticalEffect-TurretSystemsCritRecoil2",
+    "Name": "Turret Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Turret has been Damaged, reducing Accuracy by 5.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "CriticalEffect-TurretSystemsCritRecoil3",
+    "Name": "Turret Damaged"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "4",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.12,
+ "APMaxArmorThickness": 24,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RAPLBGR",
+ "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "RAPLBGR: 4",
+    "WpnCrits: X2",
+    "PipsIgnored: 1",
+    "WpnAccuracy: -1",
+    "WpnRecoil: 6",
+    "WeaponJAM: 5",
+    "WeaponBoom: 80"
+   ]
+  },
+  "Category": {
+   "CategoryID": "w/a/g/raplbgr"
+  },
+  "ComponentExplosion": {
+   "ExplosionDamage": 80,
+   "HeatDamage": 30,
+   "StabilityDamage": 32
+  },
+  "InventorySorter": {
+   "SortKey": "01419"
+  }
+ },
+ "Damage": 8,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 2175600,
+  "Details": "A Clan Wolverine prototype Rotary AntiPersonal Large Bore Gauss Rifle, or RAPLBGR. With probably the worst acronym ever, this weapon is a reconceptualization of Project Omega's RGR, mainly made for annihilation of Elementals and infantry units from, but capable enough to damage other mechs.  \n\n<b><color=#ffcc00>Uses RAPLBGR Ammo.</color></b> \n\n<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_Rotary_AntiPersonal_Large_Bore_Gauss_Rifle",
+  "Manufacturer": "Shall-Not-Be-Named",
+  "Model": "Project Theta",
+  "Name": "RAPLBGR (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Rotary AP Large Bore Gauss Rifle (C)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.45,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDelayMultiplier": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3,
+ "InventorySize": 3,
+ "MaxRange": 390,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "HeatGenerated": -20,
+   "Id": "x1",
+   "RefireModifier": -4,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "HeatGenerated": -10,
+   "Id": "x2",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "EvasivePipsIgnored": 1,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 10,
+   "Id": "x4",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 5,
+ "RangeSplit": [
+  120,
+  240,
+  360
+ ],
+ "RefireModifier": 6,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 6,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

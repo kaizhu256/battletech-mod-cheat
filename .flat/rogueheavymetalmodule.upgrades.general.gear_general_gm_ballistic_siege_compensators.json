@@ -1,0 +1,100 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BonusValueA": "+ 20% Ballistic Dmg.",
+ "BonusValueB": "+ 40 Max Stability",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Description": {
+  "Cost": 0,
+  "Details": "The integrated Ballistic Siege Compensators of the Annihilator turn it into an indomitable killing machine. Specially tuned to the behemoth's stature and stride, this equipment increases maximum stability and Ballistic weaponry damage.",
+  "Icon": "UixSvgIcon_specialEquip_System",
+  "Id": "Gear_General_GM_Ballistic_Siege_Compensators",
+  "Manufacturer": "GM",
+  "Model": "",
+  "Name": "Ballistic Siege Compensators",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "BSC System"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Ballistic weapons on this unit deal [AMT] more damage, and maximum stability is increased by 40.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-BSC-BallisticBoost",
+    "Name": "BALLISTIC SIEGE COMPENSATORS"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.2",
+    "operation": "Float_Multiply",
+    "statName": "DamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Ballistic",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Increases the maximum stability rating of this unit by [AMT].",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-BSC-MaxStabilityBoost",
+    "Name": "MAX STABILITY INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "40.0",
+    "operation": "Float_Add",
+    "statName": "MaxStability",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "NotSet",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

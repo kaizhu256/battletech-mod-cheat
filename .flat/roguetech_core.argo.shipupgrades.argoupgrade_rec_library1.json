@@ -1,0 +1,47 @@
+{
+ "AdditionalCost": 1400,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "I swear to the gods, trying to read a technical readout in that lounge is impossible. Commander, I need to keep up with the latest tech to do my job, and I can't do it while the MechWarriors are playing beer pong over my head.",
+ "Category": "RECREATION",
+ "Description": {
+  "Cost": 0,
+  "Details": "A library is more than just a database and a stack of e-readers. It requires a dedicated space for quiet study and learning, as far from the raucous lounge as possible.",
+  "Icon": "uixSvgIcon_shipUpgrade_library",
+  "Id": "argoUpgrade_rec_library1",
+  "Name": "Library",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_Library",
+ "Location": "SHIP",
+ "PurchaseCost": 225000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_pod2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "Morale",
+   "typeString": "System.Int32",
+   "value": 2,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_rec_library1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

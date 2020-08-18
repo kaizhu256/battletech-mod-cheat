@@ -1,0 +1,177 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 500,
+ "BonusValueA": "+20% Stability Damage taken|",
+ "BonusValueB": "30 Stability",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "GyroStab: 40",
+    "GyroStab2: +25",
+    "GyroWeight: -35%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "CriticalHitStates": {
+   "HitEffects": [
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "Triple Stability Damage taken",
+       "Icon": "uixSvgIcon_equipment_Gyro",
+       "Id": "UL_Gyro_Critical",
+       "Name": "Gyro Critical"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "3.0",
+       "operation": "Float_Multiply",
+       "statName": "ReceivedInstabilityMultiplier"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    },
+    {
+     "State": 1,
+     "StatusEffect": {
+      "Description": {
+       "Details": "-15 Threshhold",
+       "Icon": "uixSvgIcon_equipment_Gyro",
+       "Id": "UL_Gyro_Critical2",
+       "Name": "Gyro Critical"
+      },
+      "durationData": {},
+      "effectType": "StatisticEffect",
+      "nature": "Debuff",
+      "statisticData": {
+       "modType": "System.Single",
+       "modValue": "-15.0",
+       "operation": "Float_Add",
+       "statName": "UnsteadyThreshold"
+      },
+      "targetingData": {
+       "effectTargetType": "Creator",
+       "effectTargetsCreator": true,
+       "effectTriggerType": "Passive"
+      }
+     }
+    }
+   ],
+   "MaxStates": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "Weights": {
+   "StructureFactor": 0.65
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.05",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1100000,
+  "Details": "A Unique variant of the Ultralight Gyro linked to advanced Stabilized providing sight and weight saving benefits without the stability penalty.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "lootable_Gyro_Ultralight_Stabilized",
+  "Manufacturer": "Luthien",
+  "Model": "Dragon",
+  "Name": "Dragon Ultralight Gyro",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Stabilized UL Gyro"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "UNSTEADY threshold increased to 60",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "ULPenalty2",
+    "Name": "Steadier 'Mech"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "40.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "The gyro helps establish center-of-mass equilibrium for the BattleMech.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "GyroGenericMax",
+    "Name": "Gyroscopic Orientation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "50.0",
+    "operation": "Float_Add",
+    "statName": "MaxStability"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

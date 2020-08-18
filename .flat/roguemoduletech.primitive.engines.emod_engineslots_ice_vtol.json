@@ -1,0 +1,317 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "X2 Weight",
+ "BonusValueB": "",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "CanNotBeActivatedManualy": true,
+   "ExplodeOnDamage": true,
+   "Explosion": {
+    "Chance": 0.01,
+    "ChanceActorStat": "EngineExplodeChance",
+    "DamageActorStat": "EngineExplodeDamage",
+    "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+    "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+    "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+    "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+    "HeatActorStat": "EngineExplodeHeat",
+    "RangeActorStat": "EngineExplodeRange",
+    "StabilityActorStat": "EngineExplodeStability",
+    "TempDesignMask": "DesignMaskSmoke",
+    "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+    "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius",
+    "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+    "VFX": "vfxPrfPrtl_artilleryImpact_single",
+    "VFXActorStat": "EngineExplodeVFX"
+   },
+   "NoUniqueCheck": true,
+   "statusEffects": []
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 0.7,
+   "ArmorTPCost": 0.8
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: X2",
+    "WalkSpeed: -20%",
+    "ArmorTPCost: -20%",
+    "ArmorCBCost: -30%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "EngineShield"
+   },
+   {
+    "CategoryID": "EnginePart"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00013"
+  },
+  "Lootable": {
+   "ItemID": "emod_engineslots_ICE_center"
+  },
+  "Weights": {
+   "EngineFactor": 2
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "11400 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 25",
+    "TechCost": "[[Chassis.Tonnage]] / 2"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 250000,
+  "Details": "For all intents and purposes identical to a modern internal combustion engine, the I.C.E. in BattleTech is used mainly for conventional vehicles and IndustrialMechs. Its power output is less than a fusion engine of similar mass, meaning an I.C.E. needs to be heavier in order to have the same engine rating of a fusion engine.",
+  "Icon": "power-generator",
+  "Id": "emod_engineslots_ICE_vtol",
+  "Manufacturer": "Vlar",
+  "Model": "I.C.E.",
+  "Name": "I.C. Engine",
+  "Purchasable": false,
+  "Rarity": 2,
+  "UIName": "Engine I.C."
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Easy to Spot",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "Obviously",
+    "Name": "Obvious Target"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_PROBE_PING"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionRange",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.5",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeRange"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionDamage",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeDamage"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionHeat",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeHeat"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionStability",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeStability"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionFireStrength",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeFireStrength"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionFireRadius",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "2",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeFireRadius"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Engine very boom",
+    "Icon": "uixSvgIcon_equipment_Cockpit",
+    "Id": "ICEExplosionMaskRadius",
+    "Name": "ICE EXTRA CRITICAL"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "effectsPersistAfterDestruction": true,
+    "modType": "System.Single",
+    "modValue": "1.3",
+    "operation": "Float_Multiply",
+    "statName": "EngineExplodeDesignMaskRadius"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

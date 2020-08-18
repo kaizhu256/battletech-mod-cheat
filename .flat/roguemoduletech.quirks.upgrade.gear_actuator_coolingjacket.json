@@ -1,0 +1,180 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Arms",
+ "BattleValue": 0,
+ "BonusValueA": "+ 2 Arm Mounted Accuracy|",
+ "BonusValueB": "- 4 Melee Accuracy",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmActuator": {
+   "Type": "PartUpper, PartShoulder"
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ArmAccuracy: +1",
+    "Recoil: -1",
+    "TEHeatgen: -15%",
+    "ChangerBoom: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "ArmShoulder"
+   },
+   {
+    "CategoryID": "ArmUpperActuator"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 10,
+   "HeatDamage": 30,
+   "StabilityDamage": 10
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00020"
+  },
+  "Lootable": {
+   "ItemID": "Lootable_Actuator_CoolingJacket"
+  }
+ },
+ "Description": {
+  "Cost": 800000,
+  "Details": "This 'Cooling Jacket' is barely more than a Heat Exchanger wired around arm actuators, i must say, im actually impressed at this  ...if doesnt blow up that is. <b><color=#800080>WEAPON LOWER ARM ACTUATOR.</color></b> Reduced Melee, Improves Mounted Weapons.",
+  "Icon": "pauldrons",
+  "Id": "Gear_Actuator_CoolingJacket",
+  "Manufacturer": "Genius",
+  "Model": "Cold Shoulder",
+  "Name": "Cold Shoulder Mod",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Cooling Jacket"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1 Arm mounted accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-ColdShoulderAccuracy-{location}",
+    "Name": "Mount Arm Accuracy"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Ballistic weapon attacks have their hit improved by 1.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-Recoil-ColdShoulder",
+    "Name": "BALLISTIC WEAPON HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation reduced by 20%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "StatusEffect-Heat_Shoulder",
+    "Name": "HEAT GENERATION DECREASED"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "0.85",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

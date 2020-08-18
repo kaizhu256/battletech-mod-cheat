@@ -1,0 +1,118 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.225,
+ "APMaxArmorThickness": 90,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AC5",
+ "AttackRecoil": 2,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_variant",
+   "component_type_variant2",
+   "range_very-long",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ImperatorAC+",
+    "RapidFireAC: 30%",
+    "DakkaBoom: 45",
+    "IsAC"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/ac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 45,
+   "HeatDamagePerAmmo": 6,
+   "StabilityDamagePerAmmo": 11
+  },
+  "InventorySorter": {
+   "SortKey": "01002"
+  }
+ },
+ "Damage": 45,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 140000,
+  "Details": "A flexible weapon, AC/5s strike a balance between long range, power, and performance. These weapons are commonly found on medium 'Mechs as their primary source of reliable damage. Like all Autocannon weaponry, AC/5s suffer from recoil effects from continuous fire.\n\n <b><color=#ffcc00>Uses AC5 Ammo.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_Autocannon_AC5_2-Imperator",
+  "Manufacturer": "Imperator",
+  "Model": "Tactical Autocannon",
+  "Name": "AC/5 Imperator (Deprecated)",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "AC/5 Imperator (Deprecated)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.0375,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 1,
+ "GunneryJammingMult": 0.02,
+ "HeatDamage": 0,
+ "HeatGenerated": 4,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 11.25,
+ "InventorySize": 2,
+ "MaxRange": 720,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "Id": "x1",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 1,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 5,
+   "Id": "x2",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 1,
+   "UIName": "RF",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 8,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC5",
+ "WeaponSubType": "AC5",
+ "statusEffects": []
+}

@@ -1,0 +1,100 @@
+{
+ "AllowedLocations": "RightTorso",
+ "BonusValueA": "+ LRM Clustering",
+ "BonusValueB": "+ 75% SRM Stb.Dmg.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Description": {
+  "Cost": 0,
+  "Details": "The Archer's Enhanced Missilery Suite greatly increases clustering in its LRM attacks, which causes greater damage to single locations. It also provides a massive boost to the stability damage of SRMs by improving in-flight trajectories.",
+  "Icon": "UixSvgIcon_specialEquip_System",
+  "Id": "Gear_General_Enhanced_Missilery_System",
+  "Manufacturer": "RCA",
+  "Model": "",
+  "Name": "Enhanced Missilery Suite",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "Missilery Suite"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Substantially increases the clustering of this unit's LRM weapons and boosts the stability damage of SRMs by 50%.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-EnhMS-ClusterBonusLRM",
+    "Name": "MISSILERY SUITE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "16",
+    "operation": "Float_Add",
+    "statName": "ClusteringModifier",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "LRM"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit deals [AMT] additional stability damage from SRMs.",
+    "Icon": "UixSvgIcon_specialEquip_System",
+    "Id": "StatusEffect-EnhMS-IncreasedStabDmgSRM",
+    "Name": "INCREASED STABILITY DAMAGE"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.50",
+    "operation": "Float_Multiply",
+    "statName": "Instability",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "Missile",
+    "targetWeaponSubType": "NotSet",
+    "targetWeaponType": "SRM"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

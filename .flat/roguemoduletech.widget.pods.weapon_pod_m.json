@@ -1,0 +1,101 @@
+{
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -2,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "AC20Internal",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsMelee",
+    "BoltOn: 3",
+    "DmgFallOff: 25%",
+    "1shot",
+    "PipsIgnored: 1",
+    "InternalAmmo: 25",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 25,
+   "StabilityDamagePerAmmo": 10
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 3
+  },
+  "InventorySorter": {
+   "SortKey": "04002"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 6,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "The M-Pod is based on the A-Pod and B-Pod, but uses larger explosives and a more directional blast to damage hard targets. Designed by engineers in the Solaris games, the M-Pod is essentially a modified canister of LB-X autocannon ammunition. When activated it sprays targets with a mixture of shrapnel and 'Mech sized shotgun pellets. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_POD_M",
+  "Manufacturer": "Solaris Arms",
+  "Model": "Explosive Canister",
+  "Name": "Anti-Mech Pod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "M POD"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.25,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 3,
+ "HitGenerator": "Cluster",
+ "IFFDef": "notblanksowontdamageselfbutcandamagefriendlies",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 25,
+ "InventorySize": 1,
+ "MaxRange": 120,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC5",
+ "ProjectilesPerShot": 20,
+ "RangeSplit": [
+  30,
+  60,
+  90
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": [],
+ "weaponCategoryID": "SpecialMelee"
+}

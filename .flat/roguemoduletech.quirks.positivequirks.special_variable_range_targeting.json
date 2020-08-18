@@ -1,0 +1,291 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "Long Range",
+   "ActiveByDefault": true,
+   "ButtonName": "VRT Mode",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "Short Range",
+   "Linkage": {
+    "OnActivate": {
+     "Activate": [],
+     "Deactivate": []
+    },
+    "OnDeactivate": {
+     "Activate": [],
+     "Deactivate": []
+    }
+   },
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccER",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.0",
+      "operation": "Float_Add",
+      "statName": "CACExtraLongRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccLR",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.0",
+      "operation": "Float_Add",
+      "statName": "CACLongRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccMR",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "-1.0",
+      "operation": "Float_Add",
+      "statName": "CACMediumRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccSR",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "-1.0",
+      "operation": "Float_Add",
+      "statName": "CACShortRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccER",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "-1.0",
+      "operation": "Float_Add",
+      "statName": "CACExtraLongRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccLR",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "-1.0",
+      "operation": "Float_Add",
+      "statName": "CACLongRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccMR",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.0",
+      "operation": "Float_Add",
+      "statName": "CACMediumRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "range bracket bonus accuracy",
+      "Icon": "uixSvgIcon_ability_precisionstrike",
+      "Id": "RangeBracketBonusAccSR",
+      "Name": "Bonus Accuracy at range"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.0",
+      "operation": "Float_Add",
+      "statName": "CACShortRangeAccuracyMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Activatable",
+    "Quirk"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 130000,
+  "Details": "A wide array of targeting sensors and computers are hardwired into this BattleMech allow the pilot to focus the systems to gain better at either short or long ranges. \n\n <b><color=#ffcc00>Activate Item to Swap between Long Range and Short Range Targeting.</color></b>",
+  "Icon": "SpecialistSlot",
+  "Id": "Special_Variable_Range_Targeting",
+  "Manufacturer": "General",
+  "Model": "Standard",
+  "Name": "Variable Range Targeting",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Variable Range Targeting"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": []
+}

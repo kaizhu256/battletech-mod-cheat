@@ -1,0 +1,285 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 40 Stability",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WeightedQuirk: 50%",
+    "Stealth",
+    "StealthSensors: 40%, 3, 1, 2, 3",
+    "MimeticStealth: 40%, 3, 3",
+    "Visibility: -30%",
+    "Signature: -30%",
+    "TEHeatgen: +10%",
+    "HeatPerTurn: +10",
+    "LocalEcm: 3"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "MechConfiguration": {},
+  "TSMInfo": {
+   "HandHeldFactor": 0.5
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "A 'OmniStealth' Suite. This System combines Stealth and Mimetic systems to give the Mech a edge in Battle.",
+  "Icon": "SpecialistSlot",
+  "Id": "Special_OmniStealth",
+  "Manufacturer": "RISC",
+  "Model": "Standard",
+  "Name": "Stealth OmniMech Gyro",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "OmniStealth"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "IPSUM SUCKUM",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "LV_ECM_SHIELD",
+    "Name": "ECM_Shield_OmniStealth"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "3",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+    "Icon": "uixSvgIcon_status_ECM-missileDef",
+    "Id": "LV_ECM_SHIELD_EMITTER_COUNT",
+    "Name": "ECM Shield Emitter Count"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_SHIELD_EMITTER_COUNT"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to detect with stealth",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_Stealth_Effect",
+    "Name": "STEALTH"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.6_3_1_2_3",
+    "operation": "Set",
+    "statName": "LV_STEALTH"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Makes the carrier much harder to see with eyes",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_MIMETIC",
+    "Name": "MIMETIC ARMOR"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.6_3_3",
+    "operation": "Set",
+    "statName": "LV_MIMETIC"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Signature_Decrease_Stealth",
+    "Name": "Stealth Signature Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "Stealth_Visibility_Decrease_Stealth",
+    "Name": "Stealth Visbility Decrease"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.7",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat generation",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "Stealth_Heat_Generation_Stealth",
+    "Name": "Increased Heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Heat Capacity Penalty",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "Stealth_Heat_Capacity_Stealth",
+    "Name": "Decreased Heat Capacity"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-10",
+    "operation": "Int_Add",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

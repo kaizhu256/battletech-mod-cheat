@@ -1,0 +1,90 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close",
+   "paweapon"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BANOAMMO",
+    "BAWEAPON",
+    "PipsIgnored: +1",
+    "WpnAccuracy: +1",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +10"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01502"
+  }
+ },
+ "Damage": 2,
+ "DamageVariance": 1,
+ "Description": {
+  "Cost": 28000,
+  "Details": "A Battle Armor Heavy Machine gun with enough ammo for any battle. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b> \n\n <b><color=#ffcc00>Requires no additional Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_PowerArmor_MG",
+  "Manufacturer": "CLAN",
+  "Model": "Machine Gun",
+  "Name": "MG",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "BA HMG"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 0.2,
+ "InventorySize": 1,
+ "MaxRange": 150,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "MachineGun",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  60,
+  90,
+  120
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 4,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 0.25,
+ "Type": "MachineGun",
+ "WeaponEffectID": "WeaponEffect-Weapon_MachineGun",
+ "WeaponSubType": "MachineGun",
+ "statusEffects": [],
+ "weaponCategoryID": "BattleArmor"
+}

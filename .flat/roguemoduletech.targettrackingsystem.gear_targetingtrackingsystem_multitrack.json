@@ -1,0 +1,117 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "BattleComputer"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MultiTracker",
+    "CalledShot: 4%",
+    "BattleComputer"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "BCMultiTrac"
+   },
+   {
+    "CategoryID": "MultiTracker"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "00027"
+  }
+ },
+ "Description": {
+  "Cost": 1020000,
+  "Details": "Battle Computers are Modular Pieces that can be added to a Targeting Computer FCS, greatly enhancing the Combat capabilities of any Mech it is installed on.",
+  "Icon": "uixSvgIcon_action_multitarget",
+  "Id": "Gear_TargetingTrackingSystem_MultiTrack",
+  "Manufacturer": "SLDF",
+  "Model": "Cameron VII",
+  "Name": "battleComputer Criticals",
+  "Purchasable": true,
+  "Rarity": 8,
+  "UIName": "BC Multi-Trac"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Called Shots twice as reliable",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "BC_CALLED_SHOT",
+    "Name": "Improved Called Shot"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.04",
+    "operation": "Float_Multiply",
+    "statName": "CalledShotBonusMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Enables multi-target.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "IRAllowMultiTargetEffect",
+    "Name": "IRMULTITARGET"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "IRAllowMultiTarget"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.01,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "HeavyFlamer",
+ "AttackRecoil": 0,
+ "BattleValue": 15,
+ "BonusValueA": "+Dmg|+Range|",
+ "BonusValueB": "X2 Bonus vs Overheat.",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Energy",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -5
+ },
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AmmoPerShot: 2",
+    "DmgFallOff: 40%",
+    "OHDamage: +35%",
+    "AlwaysStartsFire",
+    "NoAA",
+    "AccuracyUnit: Battle Armor",
+    "AccuracyUnit2: +5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/aflamer"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02001"
+  }
+ },
+ "Damage": 20,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 350000,
+  "Details": "The Vehicle Flamer performs the same as a 'Mech-mounted Flamer, venting superheated gases at a target to cause it to overheat/burn up. As most non-'Mech combat units lack expensive fusion reactors do Vehicle Flamers draw from a pool of combusting ''ammunition'' instead. <b><color=#F79232>Uses Heavy Flamer Ammo.</color></b>",
+  "Icon": "pyromaniac",
+  "Id": "Weapon_Flamer_Heavy_Vehicle",
+  "Manufacturer": "GM Flashpoint",
+  "Model": "Heavy Vehicle Flamer",
+  "Name": "Heavy Flamer",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Heavy Flamer"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.4,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 1,
+ "HeatDamage": 20,
+ "HeatGenerated": 15,
+ "IndirectFireCapable": false,
+ "Instability": 2,
+ "InventorySize": 2,
+ "MaxRange": 240,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.35,
+ "PrefabIdentifier": "Flamer",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  120,
+  150
+ ],
+ "RefireModifier": 0,
+ "ShotsPerAmmo": 0.5,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}

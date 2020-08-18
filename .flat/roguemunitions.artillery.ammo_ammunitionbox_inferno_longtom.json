@@ -1,0 +1,78 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LongTom_Inferno",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 5,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HeatDamage: 50",
+    "AreaOfEffectConversion: 80%",
+    "AreaOfEffect: 105",
+    "AreaOfEffectDmg: 50",
+    "AreaOfEffectSTABDmg: 25",
+    "AreaOfEffectHeatDmg: 50",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 80",
+    "FireTerrainDuration: 4",
+    "FireTerrainStrength: 15",
+    "ScatterRadius: 80, 250",
+    "LongTomAmmo: 5",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/o/artillery"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 100,
+   "HeatDamagePerAmmo": 50,
+   "StabilityDamagePerAmmo": 30
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000054"
+  },
+  "TRGBColor": {
+   "Color": "#DC143C",
+   "SkipText": true
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 1
+  }
+ },
+ "Description": {
+  "Cost": 60000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "Artillery",
+  "Id": "Ammo_AmmunitionBox_Inferno_LongTom",
+  "Manufacturer": "Generic",
+  "Model": "LongTom",
+  "Name": "LongTom Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LongTom Inferno"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

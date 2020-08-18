@@ -1,0 +1,160 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.125,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRAC2",
+ "AttackRecoil": 3,
+ "BattleValue": 118,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoilShot: 1",
+    "WeaponJAMFlatShot: 5%",
+    "WeaponJAM: 3",
+    "Rotary"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01201"
+  }
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 470000,
+  "Details": "The Rotary Autocannon is based only loosely on the Autocannon. While it has the same bore, it is capable of firing up to six times as many rounds as its standard cousin, allowing it to deal three times the damage of even an Ultra Autocannon. At the same time, each extra shot increases the amount of heat the autocannon builds and increases the chance for a jam. \n\n<b><color=#ffcc00>Uses RAC2 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "RotaryAC",
+  "Id": "Weapon_Autocannon_RAC2_light",
+  "Manufacturer": "Mydron",
+  "Model": "RAC2",
+  "Name": "RAC2",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Rotary AC/2"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.02,
+ "HeatDamage": 0,
+ "HeatGenerated": 3,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 2.5,
+ "InventorySize": 3,
+ "MaxRange": 720,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.05,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -2,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -1,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 2,
+   "GunneryJammingMult": 0.05,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 1,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 2,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 2,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "RAC2",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  360,
+  540
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 8,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC2",
+ "WeaponSubType": "AC2",
+ "statusEffects": []
+}

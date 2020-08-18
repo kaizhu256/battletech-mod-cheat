@@ -1,0 +1,517 @@
+{
+ "AdditionalObjects": [
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": null
+     }
+    ],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "SecondaryMechWarrior"
+   },
+   "Scope": "SecondaryMechWarrior"
+  }
+ ],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "argo_rec_gym",
+     "event_mw_corridorBocce"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Funds",
+     "op": "GreaterThan",
+     "val": 2000,
+     "valueConstant": "2000"
+    }
+   ],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "In the morning briefing, Sumire asks something unexpected: \"So, what's the story with those MechWarriors bowling in the barracks hallways?\"\r\n\r\nDarius crosses his arms over his chest. \"I've already put an end to that. [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] were calling it 'corridor bocce'… I shut it down as a matter of discipline.\"\r\n\r\nYou turn to Darius. \"How much trouble have their games caused?\"\r\n\r\n\"They're playing in unused corridors, so not much. But it was only a matter of time before something… or someone… got damaged. We should really repair the gym in Beta Pod instead.\"",
+  "Icon": "uixTxrSpot_EngineeringInnards.png",
+  "Id": "event_mw_corridorBocce",
+  "Name": "Corridor Bocce"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Let it be",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Let Darius' decision stand."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You confirm Darius's decision with a nod. \"That's that.\"\r\n\r\nLater in the day, you see [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] in the mess, looking dejected.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "MW level morale hit"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_corridorBocce"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "chance for damage",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Reverse Darius' decision."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You give permission for the MechWarriors to continue to play their game.\r\n\r\nThe next day, MechWarriors and crew crowd into a narrow barracks hallway to watch [[TGT_MW,{TGT_MW.Callsign}]] face off against [[SCN_MW,{SCN_MW.Callsign}]].\r\n\r\nIn the winning play, {TGT_MW.Callsign} bounces {TGT_MW.DET} final ball off the corridor wall twice to send {SCN_MW.Callsign}'s ball spinning away from scoring marker. The crew erupts in cheers, and continue to talk about it for days afterward.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "morale +1 and high-morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_corridorBocce"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "You give permission for the MechWarriors to continue to play their game.\r\n\r\nThe next day, MechWarriors and crew crowd into a narrow barracks hallway to watch [[TGT_MW,{TGT_MW.Callsign}]] face off against [[SCN_MW,{SCN_MW.Callsign}]].\r\n\r\nUnfortunately, an errant ball from {SCN_MW.Callsign} slams into an exposed power coupling and smashes it, blacking out the corridor and ending the game.\r\n\r\nYou can almost feel Dr. Murad's displeasure from six decks away. Closer at hand, however, is an \"I told you so\" look from Darius as he walks over and snatches the ball from {SCN_MW.Callsign}'s hand.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "morale -1 and low morale and Cbills"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_corridorBocce"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2000",
+         "valueConstant": null
+        },
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "chance of injury",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Host one last public game."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "The next day, MechWarriors and crew crowd into a narrow barracks hallway to watch [[TGT_MW,{TGT_MW.Callsign}]] face off against [[SCN_MW,{SCN_MW.Callsign}]] in one final game of corridor bocce.\r\n\r\nIn the winning play, {TGT_MW.Callsign} bounces {TGT_MW.DET} last ball off the corridor wall twice to send {SCN_MW.Callsign}'s spinning away toward the audience.\r\n\r\nThe crew erupts in cheers, and continue to talk about the match for days afterward.",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Morale +1"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_corridorBocce"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    },
+    {
+     "Description": {
+      "Details": "The next day, MechWarriors and crew crowd into a narrow barracks hallway to watch [[TGT_MW,{TGT_MW.Callsign}]] face off against [[SCN_MW,{SCN_MW.Callsign}]] in one final game of corridor bocce.\r\n\r\nIn what turns out to be the last play, {TGT_MW.Callsign} makes an unfortunate throw that causes {TGT_MW.DET} ball to ricochet off a protruding service panel, bounce up, and hit {SCN_MW.Callsign} square in the nose. {SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:collapse|Default:colllapses} to the floor in a heap.\r\n\r\nDespite the outcome, the crew continue to talk about the match for days afterward, and visit {SCN_MW.Callsign} in the MedBay for some light-hearted ribbing.",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "Morale +1 but injury"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_mw_corridorBocce"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": null
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

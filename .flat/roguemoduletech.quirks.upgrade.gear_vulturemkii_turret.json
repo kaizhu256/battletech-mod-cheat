@@ -1,0 +1,83 @@
+{
+ "AllowedLocations": "Torso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Turret: +3"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Turret"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "Lootable": {
+   "ItemID": "Gear_Turret"
+  }
+ },
+ "Description": {
+  "Cost": 300000,
+  "Details": "A BattleMech Turret can be mounted in any Location to increase Accuracy and Target Tracking of Any Weapons mounted in the Same Location",
+  "Icon": "turret",
+  "Id": "Gear_VultureMKII_Turret",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Turret Mount",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Turret Mount"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+3 Turret mounted accuracy.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "Status-TurretrAccuracy-{location}",
+    "Name": "Turret Accuracy"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-3",
+    "operation": "Float_Add",
+    "statName": "{location}.Accuracy"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

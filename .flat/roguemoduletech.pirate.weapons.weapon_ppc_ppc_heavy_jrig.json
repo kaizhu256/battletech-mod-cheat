@@ -1,0 +1,198 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.2,
+ "APMaxArmorThickness": 104,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AlternateDamageCalc": true,
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 333,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 15,
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#4B0082",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long",
+   "PiratePPCCap"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ModesCanMisfire",
+    "DmgFallOff: 55%",
+    "WpnRecoil: 2",
+    "PPCDEBUFF: 2",
+    "WeaponBoom: 100",
+    "PiratePPCCap",
+    "MineClearanceBoom: 2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/hppc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 100,
+   "StabilityDamage": 50
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02014"
+  }
+ },
+ "Damage": 80,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 980000,
+  "Details": "I... See Boss, this is a Heavy PPC but the safeties have been removed and a Capacitor is straight up wired into it, if you fire this too fast, it will overload and shut down   ...if you're lucky. \n\n <b><color=#00ffff>Can Toggle Between Fast Charge or Scatterblasr the Capacitator, exchanging Reliability for Accuracy or Shotgun like shot</color> </b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PPC_HEAVY_jrig",
+  "Manufacturer": "1D10T",
+  "Model": "Heavy Particle Projector Cannon",
+  "Name": "HPPC",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Heavy PPC+CAP (P)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.55,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.225,
+ "HeatDamage": 0,
+ "HeatGenerated": 50,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 16,
+ "InventorySize": 5,
+ "MaxRange": 700,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.3,
+   "Id": "Std",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.1,
+   "AccuracyModifier": -2,
+   "DamageOnJamming": true,
+   "DamagePerShot": -10,
+   "EvasivePipsIgnored": 2,
+   "FireTerrainChance": -0.025,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 10,
+   "Id": "FastCharge",
+   "RefireModifier": -1,
+   "UIName": "FC",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.5,
+   "AccuracyModifier": -2,
+   "DamageOnJamming": true,
+   "DamagePerShot": -76,
+   "EvasivePipsIgnored": 2,
+   "FireDelayMultiplier": 0.1,
+   "FireTerrainChance": 0.1,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 20,
+   "Id": "Shotgun",
+   "Instability": -15,
+   "ProjectilesPerShot": 9,
+   "RefireModifier": 2,
+   "UIName": "Scatter",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  400,
+  580
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 11,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPCER",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "Short Split Template",
+  "Icon": "SpaceHulk",
+  "Id": "fp_SuprisedGuests",
+  "Name": "Surprise Guests"
+ },
+ "Difficulty": 8,
+ "FlashpointDescriberCastDefId": "castDef_FP_Bishop",
+ "FlashpointLength": "SHORT",
+ "FlashpointShortDescription": "We have found a very large Unidentified Jumpship orbiting a planet. We would like your assistance evaluating the Planet it is floating over.",
+ "InProgressTimeout": 0,
+ "InternalName": "Suprise Guests",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {},
+ "MilestoneSetID": "ms_fp_SuprisedGuests",
+ "PotentialEmployers": [
+  "ComStar"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_SuprisedGuests_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_BlackGold",
+ "TargetFaction": "NoFaction",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 60
+}

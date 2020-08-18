@@ -1,0 +1,163 @@
+{
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.25,
+ "APMaxArmorThickness": 250,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "ThunderboltOS",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BoltOn: 2",
+    "InternalAmmoShots: 2",
+    "IsThunderbolt",
+    "Indirect",
+    "MissileHP: 4",
+    "InternalAmmo: 55",
+    "WpnAccuracy: -1",
+    "Visibility: +6%",
+    "Signature: +6%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 55,
+   "HeatDamagePerAmmo": 15,
+   "StabilityDamagePerAmmo": 15
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 3
+  },
+  "InventorySorter": {
+   "SortKey": "03001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 55,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "The Thunderbolt Missile was developed for the arenas of Solaris. Unlike most missile systems, the Thunderbolt was a single missile that smashed into its target. Though it was effective in the arenas, it didn't see widespread use in the field because the single missile was very vulnerable to Anti-Missile Systems. The missile launcher, though small, was awkward to mount and would only fit on the left or right torso of a 'Mech.",
+  "Icon": "thunderbolt",
+  "Id": "BoltOn_LRM_Thunderbolt_10_2pack",
+  "Manufacturer": "Solaris Munitions Inc",
+  "Model": "Thunderbolt Missile",
+  "Name": "Thunderbolt Missile",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Thunderbolt Missile"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0625,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 15,
+ "InventorySize": 1,
+ "MaxRange": 720,
+ "MinRange": 150,
+ "MissileHealth": 4,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "srm2",
+ "ProjectileSpeedMultiplier": 1.4,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 2,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+ "WeaponSubType": "LRM10",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.06",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.06",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

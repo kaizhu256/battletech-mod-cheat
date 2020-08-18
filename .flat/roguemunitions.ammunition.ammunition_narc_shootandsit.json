@@ -1,0 +1,90 @@
+{
+ "AIBattleValue": 70,
+ "ArmorDamageModifier": 1,
+ "Category": "NARC",
+ "ColorChangeRule": "t0",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#00FFFF",
+   "I": 5
+  }
+ ],
+ "CriticalDamageModifier": 1,
+ "Description": {
+  "Cost": 0,
+  "Details": "Sticky Bombs, they go off 1 turn after they land. We can't do pinpoint with these like TT. I'm making their niche high STAB damage.",
+  "Icon": null,
+  "Id": "Ammunition_Narc_ShootAndSit",
+  "Name": "Narc Ammo",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "StickyBomb"
+ },
+ "HeatGenerated": 0,
+ "HeatGeneratedModifier": 1,
+ "ISDamageModifier": 1,
+ "Type": "Normal",
+ "deferredEffect": {
+  "AOEDamage": 40,
+  "AOEHeatDamage": 0,
+  "AOEInstability": 40,
+  "AOERange": 30,
+  "FireDurationWithoutForest": 2,
+  "FireTerrainCellRadius": 3,
+  "FireTerrainChance": 0.05,
+  "FireTerrainStrength": 10,
+  "RangeColor": {
+   "C": "#00FF00",
+   "I": 1.5
+  },
+  "SFX": "AudioEventList_explosion_explosion_medium",
+  "TerrainVFX": "",
+  "TerrainVFXScale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  },
+  "VFX": "WFX_ExplosiveSmokeM",
+  "VFXtime": 1,
+  "damageApplyTime": 1,
+  "id": "NARCSHOOTANDSIT",
+  "rounds": 1,
+  "statusEffects": [
+   {
+    "Description": {
+     "Details": "This unit has been staggered by an explosion. It will take 150% stability damage from all attacks until its next activation.",
+     "Icon": "uixSvgIcon_designMask_rough",
+     "Id": "NARCPODUNSTEADY",
+     "Name": "STUMBLED"
+    },
+    "durationData": {
+     "duration": 2,
+     "stackLimit": 1,
+     "ticksOnMovements": true
+    },
+    "effectType": "StatisticEffect",
+    "nature": "Debuff",
+    "statisticData": {
+     "modType": "System.Single",
+     "modValue": "1.5",
+     "operation": "Float_Multiply",
+     "statName": "ReceivedInstabilityMultiplier"
+    },
+    "targetingData": {
+     "effectTargetType": "SingleTarget",
+     "showInStatusPanel": true,
+     "showInTargetPreview": true
+    }
+   }
+  ],
+  "statusEffectsRangeFalloff": true,
+  "sticky": true,
+  "tempDesignMask": "",
+  "tempDesignMaskCellRadius": 1,
+  "tempDesignMaskTurns": 1,
+  "text": "Explosive Pod",
+  "waitVFX": "vfxPrfPrtl_narcMarker_loop"
+ },
+ "statusEffects": []
+}

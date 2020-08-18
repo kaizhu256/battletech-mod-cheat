@@ -1,0 +1,42 @@
+{
+ "AdditionalCost": 6000,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "Improving the network linkages between our C&C systems should ease some of the burden",
+ "Description": {
+  "Cost": 0,
+  "Details": "<b><color=#F79232>Allows you to Command an Additional Mechwarrior Directly</color></b> \n\n The Command and Control systems were never really intended to support a Light Company’s worth of ‘Mechs, Commander. If we want to maintain communications with our pilots, we’ll need to upgrade our communication networks to deal with the additional bandwidth.",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_PilotSlot",
+  "Name": "Command Console",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 300000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_AdditionalPlayerMechSlots",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Pilotslot"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 6,
+ "shipUpgradeCategoryID": "BDMechControl"
+}

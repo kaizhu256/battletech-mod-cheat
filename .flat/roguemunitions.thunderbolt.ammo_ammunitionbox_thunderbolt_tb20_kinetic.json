@@ -1,0 +1,66 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_TBOLT20_Kinetic",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 3,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "NoIndirect",
+    "TAC: x2",
+    "Range: +25%",
+    "MinRangeDamage: 25%",
+    "ArmorDmgMod: +50%",
+    "VariableDmg: 20",
+    "Protected: 50%",
+    "MissileHP: 13",
+    "TBOLT20Ammo: 3"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/t/thunderbolt"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 50,
+   "StabilityDamagePerAmmo": 25
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000049"
+  }
+ },
+ "Description": {
+  "Cost": 30000,
+  "Details": "Kinetic Kill missiles use huge rocket motors to accelerate a heavy metal dart to high velocity. They penetrate armor well, but require time to reach full velocity. Damage increases at longer range. Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "thunderbolt",
+  "Id": "Ammo_AmmunitionBox_Thunderbolt_TB20_Kinetic",
+  "Manufacturer": "Generic",
+  "Model": "Thunderbolt",
+  "Name": "Thunderbolt 20 Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo TBM 20 Kinetic Kill"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

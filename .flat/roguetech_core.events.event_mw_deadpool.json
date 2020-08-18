@@ -1,0 +1,488 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Morale",
+     "op": "LessThan",
+     "val": 15,
+     "valueConstant": "15"
+    }
+   ],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "In an unused corridor near Gamma Pod, Darius shows you a strange chart written on the wall in chalk. Each row lists a MechWarrior callsign, and in the columns next to each name: a percentage and a number in C-Bills.\r\n\r\nAs you compare the C-Bill values and the relative experience of the MechWarriors listed, you realize that this is a perverse betting pool. The percentages must represent the survival odds for each MechWarrior.\r\n\r\nJust then [[TGT_MW,{TGT_MW.Callsign}]] rounds the corner and stops short. A stick of chalk falls from {TGT_MW.DET} fingers and snaps on the floor.",
+  "Icon": "uixTxrSpot_MechWarriorsTalking.png",
+  "Id": "event_mw_deadPool",
+  "Name": "Laying Wagers"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Let it slide."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Without a word, you give Darius a meaningful look and the two of you walk past the stunned MechWarrior.\r\n\r\nAfter you're out of earshot, Darius shares his thoughts. \"Given the current state of morale, perhaps this exercise serves some purpose in releasing the pressure. I'm not sure it's the right call to let it stay, but I guess we'll find out.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Morale up"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    },
+    {
+     "Description": {
+      "Details": "Without a word, you give Darius a meaningful look and the two of you walk past the stunned MechWarrior.\r\n\r\nAfter you're out of earshot, Darius shares his thoughts. \"Given the current state of morale, perhaps this exercise serves some purpose in releasing the pressure. I'm not sure it's the right call to let it stay, but I guess we'll find out.\"",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "Morale down"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 50
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Confrontation option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Put an end to this."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You give Darius a knowing look and turn to confront [[TGT_MW,{TGT_MW.Callsign}]].\r\n\r\n\"You think you're clever, but this kind of thing is only going to backfire in the end.\"\r\n\r\nAs you lay into the MechWarrior, Darius sets about scrubbing the wall until the chart is just a smear of chalk.\r\n\r\n{TGT_MW.Callsign} opens {TGT_MW.DET} mouth, but wisely shuts it immediately. It remains to be seen whether the loss of their betting pool will turn morale around, or just make it worse.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Morale down"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "You give Darius a knowing look and turn to confront [[TGT_MW,{TGT_MW.Callsign}]].\r\n\r\n\"You think you're clever, but this kind of thing is only going to backfire in the end.\"\r\n\r\nAs you lay into the MechWarrior, Darius sets about scrubbing the wall until the chart is just a smear of chalk.\r\n\r\n{TGT_MW.Callsign} opens {TGT_MW.DET} mouth, but wisely shuts it immediately. It remains to be seen whether the loss of their betting pool will turn morale around, or just make it worse.",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Morale up"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "risky option",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Debate the odds that {TGT_MW.Callsign} has assigned."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Much to Darius' surprise, you turn to the chart and start discussing the odds that [[TGT_MW,{TGT_MW.Callsign}]] has assigned to the various MechWarriors.\r\n\r\n\"The tricky part, Commander, was trying to find a sort of baseline for the math. We finally settled on what I call the 'Dekker Value'. I think it's a solid foundation\".\r\n\r\nDarius throws up his hands and walks off in a huff. As he leaves, you can't help but wonder if this betting pool has been helping to relieve the pressure, or if it will just cause more problems in the end.",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Morale up"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Much to Darius' surprise, you turn to the chart and start discussing the odds that [[TGT_MW,{TGT_MW.Callsign}]] has assigned to the various MechWarriors.\r\n\r\n\"The tricky part, Commander, was trying to find a sort of baseline for the math. We finally settled on what I call the 'Dekker Value'. I think it's a solid foundation\".\r\n\r\nDarius throws up his hands and walks off in a huff. As he leaves, you can't help but wonder if this betting pool has been helping to relieve the pressure, or if it will just cause more problems in the end.",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "Morale down"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "pilot_officer"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

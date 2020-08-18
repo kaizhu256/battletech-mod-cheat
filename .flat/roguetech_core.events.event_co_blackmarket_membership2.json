@@ -1,0 +1,216 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "In the morning briefing, Darius is unusually excited. \"Commander, our pirate friends have vouched for us with the cabal that controls access to the [[DM.BaseDescriptionDefs[LoreBlackMarket],Black Markets]] in the Periphery. They'll even waive the usual membership fee!\"\r\n\r\nSumire chuckles darkly. \"We keep such sterling company. Considering our reputation with the Great Houses, though, it's hard to find welcoming ports these days.\"\r\n\r\nDr. Murard reluctantly agrees. \"The Black Markets are almost our only option for new supplies. It's got to be worth the extra scrutiny we'll receive from the system authorities.\"",
+  "Icon": "uixTxrSpot_DailyBriefing.png",
+  "Id": "event_co_blackMarket_Membership2",
+  "Name": "A Black Market Invitation"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "non-participation",
+    "Icon": null,
+    "Id": "outcome_0",
+    "Name": "Pass on the opportunity for now."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Shaking your head, you deliver your decision. \"The pirates may think highly of us, but that doesn't make us one of them. We can make our own way for now, without relying on these criminal markets.\"\r\n\r\nDarius opens his mouth, as if to offer a counter-argument, but instead says, \"Moving on to other agenda items then...\"",
+      "Icon": null,
+      "Id": "outcome_0_0",
+      "Name": "Nothing happens, temp delay set"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_blackMarket_NOTYET"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_blackMarket_OFF"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Friendly with the Aurigan Pirates]",
+    "Icon": null,
+    "Id": "outcome_1",
+    "Name": "Accept the invitation."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Reputation.AuriganPirates",
+       "op": "GreaterThanOrEqual",
+       "val": 40,
+       "valueConstant": "[rep_friendly_min]"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "With a wave of your hand, you quiet the room. \"Let's grab this with both hands. We might not always be on good terms with the pirates.\"\r\n\r\nYang strokes his chin in contemplation. \"I need a cool pirate name now. Maybe <i>'Angry Yang'</i>, oooh, or <i>'Iron Beard'!</i> Whatcha think?\"",
+      "Icon": null,
+      "Id": "outcome_1_0",
+      "Name": "Membership"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_blackMarket_ON"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "company_blackMarket_NOTYET"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "BlackMarketAccess_Display",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "company_blackMarket_NOSHAKEDOWN"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 90,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "company_blackMarket_BANNED",
+    "company_blackMarket_OFF",
+    "company_blackMarket_ON"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Reputation.AuriganPirates",
+    "op": "GreaterThanOrEqual",
+    "val": 40,
+    "valueConstant": "[rep_friendly_min]"
+   }
+  ],
+  "RequirementTags": {
+   "items": [
+    "company_eatmore_pirates"
+   ],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 100
+}

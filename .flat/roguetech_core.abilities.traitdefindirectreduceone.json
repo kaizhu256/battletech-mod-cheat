@@ -1,0 +1,36 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "PASSIVE: 'Mechs piloted by this MechWarrior have their indirect fire penalties reduced by 1.",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitDefIndirectReduceOne",
+  "Name": "Improved Indirect Fire"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "Indirect fire penalties reduced by 1",
+    "Icon": "uixSvgIcon_ability_mastertactician",
+    "Id": "TraitDefIndirectReduceOne",
+    "Name": "Improved Indirect Fire"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "ToHitIndirectModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "OnActivation"
+   }
+  }
+ ],
+ "ShortDesc": "-1 Indirect Fire Penalty",
+ "Type": "IndirectBonus"
+}

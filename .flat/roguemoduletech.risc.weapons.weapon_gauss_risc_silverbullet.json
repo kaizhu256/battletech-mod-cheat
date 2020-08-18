@@ -1,0 +1,125 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 80,
+ "AOEInstability": 1,
+ "AOERange": 90,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.15,
+ "APMaxArmorThickness": 130,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "HGAUSS",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnCrits: +50%",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "AreaOfEffect: 90",
+    "AreaOfEffectDmg: 80",
+    "WpnRecoil: 3",
+    "RecoilExponent: 0.25",
+    "AccuracyExponent: -0.15",
+    "TACExponent: -0.1",
+    "CRITExponent: -0.1",
+    "ExplodiumFlat: 15%",
+    "IsRISCGauss"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HSBGR"
+   },
+   {
+    "CategoryID": "w/a/g/sb"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 60,
+   "HeatDamage": 25,
+   "StabilityDamage": 15
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  }
+ },
+ "Damage": 10,
+ "DamageOnJamming": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1560000,
+  "Details": "RISC Engineers took a retake on the 'failed' NAIS Silver Bullet Gauss Rifle and refit it to fire a extremely dense cluster of shots showering the target area in a dense deadly shrapnel shroud. <b><color=#ffcc00>Uses Heavy Gauss Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "SBGR",
+  "Id": "Weapon_Gauss_RISC_Silverbullet",
+  "Manufacturer": "StarCorps",
+  "Model": "Sub Munitions Cannon",
+  "Name": "Silver Bullet Gauss",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "RISC Silver Bullet Gauss"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FlatJammingChance": 0.15,
+ "GunneryJammingBase": 3,
+ "GunneryJammingMult": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 8,
+ "MaxRange": 810,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 1.35,
+  "y": 1.3,
+  "z": 1.2
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  390,
+  750
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 18,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "evasivePipsMods": {
+  "APCriticalChanceMultiplier": -0.15,
+  "AccuracyModifier": -0.2,
+  "CriticalChanceMultiplier": -0.15,
+  "RefireModifier": 0.35
+ },
+ "statusEffects": []
+}

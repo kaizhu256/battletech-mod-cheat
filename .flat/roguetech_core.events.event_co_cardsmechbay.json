@@ -1,0 +1,256 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "In the morning meeting, Yang has a complaint. \"The MechWarriors are spending too much time in the Mech Bay. They're playing card games on the floor and getting in the way. Can't they go somewhere else?\"\r\n\r\nDarius says, \"I can clarify that they are not to obstruct the crew. Sadly, we don't have any dedicated recreation facilities to keep them occupied. This kind of issue is likely to keep occurring.\"",
+  "Icon": "uixTxrSpot_YangTalking.png",
+  "Id": "event_co_cardsMechBay",
+  "Name": "Cards in the Mech Bay"
+ },
+ "EventType": "NORMAL",
+ "OneTimeEvent": false,
+ "Options": [
+  {
+   "Description": {
+    "Details": "Restrict card games to Barracks",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Restrict card games to Barracks."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius restricts card games and other \"disruptive entertainments\" to the Barracks, so the MechWarriors are less underfoot during crew shifts. Yang reports that, while MechWarriors still loiter around their 'Mechs, they aren't causing problems any longer.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Darius provides clarity"
+     },
+     "Results": [],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Allow card games on the mess deck",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Allow card games on the mess deck."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius sections off two tables at the far end of the mess as a temporary recreation space. The MechWarriors cheerfully move their card games, and Yang is glad to get them out of his hair.",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "The MechWarriors respond well to their space"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Darius sections off two tables at the far end of the mess as a temporary recreation space.\r\n\r\nLater in the week, Darius gives an update. \"Well, good news and bad news. The pilots have made themselves comfortable in the mess, but it's getting rowdy and disruptive even during designated dining hours.\"\r\n\r\nYang, however, is undeterred. \"As long as they're not causing trouble in my Mech Bay, they can have food fights every day.\"",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "The MechWarriors get rowdier"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 75
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Recreation World]",
+    "Icon": null,
+    "Id": "outcome_2",
+    "Name": "Send the MechWarriors on shore leave."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "planet_industry_recreation"
+      ],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "StarSystem"
+    },
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Travel",
+       "op": "Equal",
+       "val": 0,
+       "valueConstant": "0"
+      }
+     ],
+     "RequirementTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius grants shore leave to several of the most deserving, or perhaps the most disruptive, MechWarriors. \r\n\r\nRumors of the crazy things they got up to on [[TGT_SYSTEM,{TGT_SYSTEM.Name}]] make their way to the senior staff, but when they return, Darius imposes tighter discipline than before. The time off results in compliance with few further complaints.",
+      "Icon": null,
+      "Id": "outcome_2_0",
+      "Name": "Shore Leave"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "5",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "argo_rec_arcade",
+    "argo_rec_gym",
+    "argo_rec_lounge1",
+    "argo_rec_pool"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

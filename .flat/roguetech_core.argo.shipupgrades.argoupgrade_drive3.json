@@ -1,0 +1,57 @@
+{
+ "AdditionalCost": 5700,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "The <i>Argo</i>'s drive is <i>far</i> more powerful than I suspected. We may not ever bring it completely back online, but for now I can increase our thrust. While 3 g is not comfortable and the crew will complain, we'll cut our travel times significantly.",
+ "Category": "DRIVE_SYSTEM",
+ "Description": {
+  "Cost": 0,
+  "Details": "The <i>Argo</i>'s drive can be upgraded to allow for a severe High-G burn, but it's gonna be a strain on the System and Structure, and your budget.",
+  "Icon": "uixSvgIcon_shipUpgrade_drive2",
+  "Id": "argoUpgrade_drive3",
+  "Name": " High-G Burn Drive Upgrade",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_ArgoDrive2",
+ "Location": "ENGINEERING",
+ "PurchaseCost": 1720000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_drive2",
+   "argoUpgrade_power3",
+   "argoUpgrade_structure2"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "DriveTravelMultiplier",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 0.55,
+   "valueConstant": ""
+  },
+  {
+   "name": "DriveTravelMultiplier_Display",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 45,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_drive3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 30
+}

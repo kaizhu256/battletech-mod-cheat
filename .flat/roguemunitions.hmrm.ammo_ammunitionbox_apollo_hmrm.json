@@ -1,0 +1,73 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_HMRM_Apollo",
+ "BattleValue": 0,
+ "BonusValueA": "+2 Accuracy|+100% Crit|",
+ "BonusValueB": "+2 Indirect Accuracy",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PipsIgnored: +1",
+    "WpnAccuracy: +1",
+    "DoesCluster",
+    "ArtemisClustering: +2",
+    "HMRMDamage: -1",
+    "HMRMAmmo: 120",
+    "MissileHP: 3",
+    "ReqArtemis"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/s/hmrm"
+   },
+   {
+    "CategoryID": "ArtemisIVammo"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 7,
+   "StabilityDamagePerAmmo": 2
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000042"
+  },
+  "TRGBColor": {
+   "Color": "#454292",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "The Apollo Fire Control System was created by the Draconis Combine for the MRM specifically designed to be used with and requiring the Artemis System offer these Missiles unparalleled Accuracy . \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "MRM",
+  "Id": "Ammo_AmmunitionBox_Apollo_HMRM",
+  "Manufacturer": "Generic",
+  "Model": "H-MRM Apollo",
+  "Name": "H-MRM Apollo Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo H-MRM Apollo"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

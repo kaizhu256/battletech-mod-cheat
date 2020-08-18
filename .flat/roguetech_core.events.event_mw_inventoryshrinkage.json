@@ -1,0 +1,514 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "MODIFIED_STAT_MedTechSkill"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Morale",
+     "op": "LessThan",
+     "val": 15,
+     "valueConstant": "15"
+    },
+    {
+     "obj": "MedTechSkill",
+     "op": "GreaterThanOrEqual",
+     "val": 4,
+     "valueConstant": "4"
+    }
+   ],
+   "RequirementTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "Scope": "Company"
+  }
+ ],
+ "Description": {
+  "Details": "Darius knocks on the door of your quarters. \"Commander, we have a problem.\" You gesture for him to enter.\r\n\r\n\"[[TGT_MW,{TGT_MW.Callsign}]] has been stealing med supplies and selling them while on shore leave. Morale <i>has</i> been low lately, but theft of company resources is a fireable offense. It's your call, Commander.\"",
+  "Icon": "uixTxrSpot_Crates.png",
+  "Id": "event_mw_inventoryShrinkage",
+  "Name": "Managing Inventory Shrinkage"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Non-participation option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Let it slide for now."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius frowns at your decision. \"Commander, I hate to just let this go, but you're the boss.\"\r\n\r\nLater in the week, you see [[TGT_MW,{TGT_MW.Callsign}]] in the mess hall. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} obviously in a good mood, as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:joke|Default:jokes} around with the other MechWarriors at the table.\r\n\r\nDarius catches your eye from where he's sitting, looks over at {TGT_MW.Callsign}, then back at his food.",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "Get high morale"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 45,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "extreme option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Fire {TGT_MW.Callsign}."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "That evening, [[TGT_MW,{TGT_MW.Callsign}]] arrives in your office. When {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:see|Default:sees} your expression, a cloud of worry passes over {TGT_MW.DET} face.\r\n\r\nDarius drags out a footlocker with the MechWarrior's callsign clearly printed on the side, and empties its contents. Pilfered medical supplies cascade to the floor.\r\n\r\nYou say, \"Soldier, you're lucky that we don't vent you from an airlock. Until we can dump you on the nearest planet, though, you're confined to quarters. And don't expect a severance package or a glowing letter of referral.\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "fired"
+     },
+     "Results": [
+      {
+       "Actions": [
+        {
+         "Type": "MechWarrior_Fire",
+         "additionalValues": null,
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Money option",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Revoke shore leave privileges and garnish {TGT_MW.DET} wages."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "That evening, [[TGT_MW,{TGT_MW.Callsign}]] arrives in your office. When {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:see|Default:sees} your expression, a cloud of worry passes over {TGT_MW.DET} face.\r\n\r\nDarius drags out a footlocker with the MechWarrior's callsign clearly printed on the side, and empties its contents. Pilfered medical supplies cascade to the floor.\r\n\r\nYou say, \"Soldier, it's lucky for you that you've got skills in a 'Mech, or we'd vent you from an airlock. For the next month, though, you're barred from shore leave, and we'll be docking your pay until we recoup costs for all the supplies you've stolen.\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Money"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_morale_low"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [
+         "pilot_morale_high"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_dishonest"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "10000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[Black Market Access]",
+    "Icon": null,
+    "Id": "outcome_3",
+    "Name": "Put {TGT_MW.Callsign} to work for the company, instead of {TGT_MW.REFL}."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "planet_other_blackmarket"
+      ],
+      "tagSetSourceFile": "Tags/PlanetTags"
+     },
+     "Scope": "StarSystem"
+    },
+    {
+     "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Travel",
+       "op": "Equal",
+       "val": 0,
+       "valueConstant": "0"
+      }
+     ],
+     "RequirementTags": {
+      "items": [
+       "company_blackMarket_ON"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": [],
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Darius's slow grin tells you how much he likes your idea.\r\n\r\n\"I just so happen to have some connections in this system's black markets. I'll put [[TGT_MW,{TGT_MW.Callsign}]] in touch with them. {TGT_MW.SUBJ_C} clearly {TGT_MW.Gender?NonBinary:have|Default:has} a knack for this. Yeah, we can definitely turn this to our advantage.\"",
+      "Icon": "",
+      "Id": "outcome_3_0",
+      "Name": "Make some money"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "25000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "chain_shoreLeave"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 60,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "pilot_criminal"
+        ],
+        "tagSetSourceFile": "Tags/PilotTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": null,
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "pilot_dependable",
+    "pilot_honest"
+   ],
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

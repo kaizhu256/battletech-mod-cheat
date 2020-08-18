@@ -1,0 +1,81 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "Category": [
+   {
+    "CategoryID": "MotiveSystemRight"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "VehicleCriticalEffects": {
+   "LinkedStatisticName": "VehicleMotiveHoverCrits",
+   "OnDestroyedEffectIDs": [
+    "CriticalEffect-VehicleMotiveCruiseHoverCrit1",
+    "CriticalEffect-VehicleMotiveFlankHoverCrit1",
+    "CriticalEffect-MotiveTankCritPenalty3"
+   ]
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "Hover Propulsion",
+  "Icon": "uixSvgIcon_equipment_HeatBank",
+  "Id": "Gear_Hover_Right",
+  "Manufacturer": "Generic",
+  "Model": "Hover Propulsion",
+  "Name": "Hover Propulsion",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Hover Propulsion"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "TankCritPenalizedMotiveR",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.1",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

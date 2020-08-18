@@ -1,0 +1,155 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.2,
+ "APMaxArmorThickness": 104,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 15,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long",
+   "PiratePPCCap"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 4",
+    "DmgFallOff: 60%",
+    "WpnRecoil: 3",
+    "MineClearanceBoom: 2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/hppc"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02014"
+  }
+ },
+ "Damage": 80,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 780000,
+  "Details": "A Word of Blake Heavy PPC Design with Integrated Capacitator, the 'Divine Wrath' is able to fire a even stronger and devastating Particle Beam at a longe range and without the minimum range. \n\n <b><color=#00ffff>Left Click on Chance to Hit during battle to toggle the Capacitator. Active Capacitator increase Damage, Heat and Range at a chance to 'jam'.</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_HEAVY_CAPACITATOR",
+  "Manufacturer": "Word of Blake",
+  "Model": "Divine Wrath",
+  "Name": "HPPC+CAP",
+  "Purchasable": true,
+  "Rarity": 6,
+  "UIName": "Heavy PPC CAP"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.6,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.225,
+ "HeatDamage": 0,
+ "HeatGenerated": 50,
+ "IndirectFireCapable": false,
+ "Instability": 16,
+ "InventorySize": 5,
+ "MaxRange": 700,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.99,
+   "Id": "CAPOFF",
+   "UIName": "OFF",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.99,
+   "DamagePerShot": 30,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.075,
+   "HeatGenerated": 20,
+   "Id": "CAPON",
+   "Instability": 12,
+   "LongRange": 60,
+   "MaxRange": 80,
+   "MiddleRange": 50,
+   "RefireModifier": 1,
+   "ShortRange": 40,
+   "UIName": "ON",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  400,
+  580
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 11,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "4",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

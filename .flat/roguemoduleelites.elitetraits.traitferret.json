@@ -1,0 +1,39 @@
+{
+ "ActivationTime": "Passive",
+ "Description": {
+  "Details": "Missile defense",
+  "Icon": "uixSvgIcon_ability_mastertactician",
+  "Id": "TraitFerret",
+  "Name": "AI d11 buff"
+ },
+ "DisplayParams": "ShowInPilotToolTip",
+ "EffectData": [
+  {
+   "Description": {
+    "Details": "This unit can not be targeted by indirect attacks",
+    "Icon": "uixSvgIcon_action_evasivemove",
+    "Id": "TraitEliteFerret",
+    "Name": "IndirectImmune"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "IsIndirectImmune"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ],
+ "ShortDesc": "",
+ "Type": "HeatReduction"
+}

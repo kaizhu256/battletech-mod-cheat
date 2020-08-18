@@ -1,0 +1,160 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 10,
+ "AOEHeatDamage": 10,
+ "AOERange": 30,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.1,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": -1,
+ "AdditionalImpactVFX": "vfxPrfPrtl_artilleryImpact_single",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "CenterTorso",
+ "AlwaysIndirectVisuals": true,
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 0,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ClearMineFieldRadius": 8,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 1",
+    "AreaOfEffect: 30",
+    "AreaOfEffectDmg: 10",
+    "AreaOfEffectHeatDmg: 10",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 16",
+    "FireTerrainDuration: 2",
+    "FireTerrainStrength: 10",
+    "MineClearanceBoom: 1",
+    "HandHeldAmmo: 1",
+    "NoAA",
+    "Bomb"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Grenade"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 20,
+   "HeatDamagePerAmmo": 60,
+   "StabilityDamagePerAmmo": 10
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 1
+  },
+  "InventorySorter": {
+   "SortKey": "04001"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 10,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "And Saint Attila raised the hand grenade up on high, saying, 'O Lord, bless this Thy hand grenade that, with it, Thou mayest blow Thine enemies to tiny bits in Thy mercy.' And the Lord did grin, and the people did feast upon the lambs and sloths and carp and anchovies and orangutans and breakfast cereals and fruit bats and large chunks......",
+  "Icon": "molotov",
+  "Id": "Hand_Weapon_Molotov",
+  "Manufacturer": "Antioch",
+  "Model": "Bomb Inferno",
+  "Name": "Bomb Inferno",
+  "Purchasable": true,
+  "Rarity": 7,
+  "UIName": "Grenade Inferno"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireOnSuccessHit": true,
+ "FireTerrainCellRadius": 4,
+ "FireTerrainChance": 1,
+ "FireTerrainStrength": 10,
+ "HeatDamage": 10,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 320,
+ "MinRange": 120,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  160,
+  220,
+  280
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "AC20",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.96",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ],
+ "weaponCategoryID": "Special"
+}

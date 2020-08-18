@@ -1,0 +1,1212 @@
+{
+ "AdditionalObjects": [
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [
+     {
+      "obj": "Injuries",
+      "op": "Equal",
+      "val": 0,
+      "valueConstant": "0"
+     }
+    ],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "SecondaryMechWarrior"
+   },
+   "Scope": "SecondaryMechWarrior"
+  },
+  {
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "SecondaryMech"
+   },
+   "Scope": "SecondaryMech"
+  }
+ ],
+ "AdditionalRequirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "MODIFIED_STAT_MechTechSkill",
+     "MODIFIED_STAT_MedTechSkill"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "RequirementComparisons": [
+    {
+     "obj": "Travel",
+     "op": "Equal",
+     "val": 0,
+     "valueConstant": "0"
+    },
+    {
+     "obj": "MedTechSkill",
+     "op": "GreaterThanOrEqual",
+     "val": 3,
+     "valueConstant": "3"
+    },
+    {
+     "obj": "MechTechSkill",
+     "op": "GreaterThanOrEqual",
+     "val": 5,
+     "valueConstant": "5"
+    }
+   ],
+   "RequirementTags": {
+    "items": [
+     "argo_pod2"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  },
+  {
+   "ExclusionTags": {
+    "items": null,
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "planet_pop_large"
+    ],
+    "tagSetSourceFile": "Tags/PlanetTags"
+   },
+   "Scope": "StarSystem"
+  }
+ ],
+ "Description": {
+  "Details": "Emergency klaxons blare as Darius reports, \"Commander, this planet's orbit is choked with space junk and an uncharted cloud of debris is about to hit the <i>Argo</i>. There's not much we can do to avoid it on such short notice. If we get hit, we're going to feel it.\"\r\n\r\nSumire grins mischievously. \"I could take the Leopard out and mount an aggressive defense! [[TGT_MW,{TGT_MW.Callsign}]] can fire the guns, while I dodge the debris.\"\r\n\r\nDarius says, \"If we do that, we need to decide which systems to prioritize defending.\"",
+  "Icon": "uixTxrSpot_UnidentifiedObject.png",
+  "Id": "event_mw_crowdedSpace",
+  "Name": "Crowded Space"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "Mech Bay option",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Prioritize protecting the Mech Bay."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, the MedBay suffered damage that ruined numerous supplies and equipment. They'll be struggling for the next couple weeks. Fortunately, that's the only significant damage report.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "MedBay skill loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, the Barracks suffered extensive damage. [[SCN_MW,{SCN_MW.Callsign}]] was wounded there. And [[TGT_MW,{TGT_MW.Callsign}]] took a minor injury aboard the Leopard.\"",
+      "Icon": "",
+      "Id": "outcome_0_1",
+      "Name": "Barracks loss, and TGT-MW injury"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, both the MedBay and the Barracks suffered damage, and [[SCN_MW,{SCN_MW.Callsign}]] was wounded. Fortunately, that's the only significant damage report.\"",
+      "Icon": "",
+      "Id": "outcome_0_2",
+      "Name": "Barracks Morale loss, SCN MW injured, MedBay too"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "MedBay option",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Prioritize protecting the MedBay."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, the Barracks suffered extensive damage, and [[SCN_MW,{SCN_MW.Callsign}]] was wounded.\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Barracks Morale loss, SCN MW injured"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, the Mech Bay suffered extensive damage, and [[TGT_MW,{TGT_MW.Callsign}]] took a minor injury aboard the Leopard.\"",
+      "Icon": "",
+      "Id": "outcome_1_1",
+      "Name": "Mech Bay loss, TGT-MW Injury"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, both the Mech Bay and the Barracks suffered extensive damage, and [[SCN_MW,{SCN_MW.Callsign}]] was wounded.\"",
+      "Icon": "",
+      "Id": "outcome_1_2",
+      "Name": "Mech Bay & Barracks loss, SCN MW injured"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "Barracks option",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Prioritize protecting the Barracks."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, the Mech Bay suffered damage that ruined a fair amount of equipment. They'll be struggling for the next couple weeks. Fortunately, that's the only significant damage report.\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Mech Bay skill loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for action, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, and its weapons erupt into action.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, the MedBay suffered extensive damage.  Also [[TGT_MW,{TGT_MW.Callsign}]] took a minor injury aboard the Leopard.\"",
+      "Icon": "",
+      "Id": "outcome_2_1",
+      "Name": "MedBay skill loss, TGT MW injured"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Techs prep the Leopard for takeoff, the bridge crew tracks the incoming debris, and everyone else secures breakables. At last, the Leopard pushes away from the docking collar, spirals gracefully towards the debris cloud, its weapons spitting fire in all directions.\r\n\r\nThere's shuddering and banging as the <i>Argo</i> passes through the cloud. Then it's past and the clatter fades away. Darius announces, \"Commander, both the MedBay and Mech Bay suffered damage that ruined supplies and equipment. They'll be struggling for the next couple weeks. Fortunately, that's the only significant damage report.\"",
+      "Icon": "",
+      "Id": "outcome_2_2",
+      "Name": "MedBay skill loss, Mech Bay skill loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        },
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "MechWarrior",
+       "Stats": [
+        {
+         "name": "ExperienceUnspent",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "100",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "roll the dice option",
+    "Icon": "",
+    "Id": "outcome_3",
+    "Name": "Don't risk the Leopard and MechWarriors."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Yang and Murad prepare their staff to deal with any technical problems as they arise. Sumire tracks the incoming debris, and everyone else gets ready for a bumpy ride. Finally, there's nothing more to wait for. The <i>Argo</i> is rocked by impact after impact, the clatter interspersed with cursing from the comms.\r\n\r\nThen the <i>Argo</i> is through and the noise fades. Darius announces, \"Commander, the MedBay suffered extensive damage. So did the Barracks, including an injury to [[SCN_MW,{SCN_MW.Callsign}]].\"",
+      "Icon": "",
+      "Id": "outcome_3_0",
+      "Name": "MedBay skill loss, Morale loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Yang and Murad prepare their staff to deal with any technical problems as they arise. Sumire tracks the incoming debris, and everyone else gets ready for a bumpy ride. Finally, there's nothing more to wait for. The <i>Argo</i> is rocked by impact after impact, the clatter interspersed with cursing from the comms.\r\n\r\nThen the <i>Argo</i> is through and the noise fades. Darius announces, \"Commander, the Mech Bay suffered extensive damage. So did the Barracks, including an injury to [[SCN_MW,{SCN_MW.Callsign}]].\"",
+      "Icon": "",
+      "Id": "outcome_3_1",
+      "Name": "Morale loss, Mech Bay skill loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "SecondaryMechWarrior",
+       "Stats": [
+        {
+         "name": "Injuries",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "2",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Yang and Murad prepare their staff to deal with any technical problems as they arise. Sumire tracks the incoming debris, and everyone else gets ready for a bumpy ride. Finally, there's nothing more to wait for. The <i>Argo</i> is rocked by impact after impact, the clatter interspersed with cursing from the comms.\r\n\r\nThen the <i>Argo</i> is through and the noise fades. Darius announces, \"Commander, the MedBay suffered extensive damage. So did the Mech Bay. It looks like this will be haunting us for a couple of weeks.\"",
+      "Icon": "",
+      "Id": "outcome_3_2",
+      "Name": "MedBay skill loss, Mechbay skill loss"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        },
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 25
+    },
+    {
+     "Description": {
+      "Details": "Everyone aboard the <i>Argo</i> snaps into action. Yang and Murad prepare their staff to deal with any technical problems as they arise. Sumire tracks the incoming debris, and everyone else gets ready for a bumpy ride. Finally, there's nothing more to wait for. The <i>Argo</i> is rocked by impact after impact, the clatter interspersed with cursing from the comms.\r\n\r\nThen the <i>Argo</i> is through and the noise fades. Darius announces, \"Commander, the MedBay suffered extensive damage. So did the Mech Bay, as well as the Barracks. It looks like this will be haunting us for a couple of weeks, but at least nobody was injured.\"",
+      "Icon": "",
+      "Id": "outcome_3_3",
+      "Name": "Catastrophe"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MedTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-2",
+         "valueConstant": null
+        },
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-4",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 25
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "Injuries",
+    "op": "Equal",
+    "val": 0,
+    "valueConstant": "0"
+   },
+   {
+    "obj": "Gunnery",
+    "op": "GreaterThanOrEqual",
+    "val": 5,
+    "valueConstant": "5"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": "Tags/PilotTags"
+  },
+  "Scope": "MechWarrior"
+ },
+ "Scope": "MechWarrior",
+ "ValidationState": "UNTESTED",
+ "Weight": 10
+}

@@ -1,0 +1,86 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "Torso",
+ "BattleValue": 500,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "GyroStab: 40",
+    "GyroWeight: -50%",
+    "GyroReserved: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "OmniGyroXXLSide"
+   },
+   {
+    "CategoryID": "OmniGyroXXL"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 40
+  },
+  "CriticalEffects": {
+   "OnDestroyedEffectIDs": [
+    "CriticalEffect-GyroDestroyed"
+   ],
+   "PenalizedEffectIDs": [
+    [
+     "CriticalEffect-GyroCrit"
+    ]
+   ]
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "Sorter": {
+   "Order": 1
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]] * 1.2",
+    "TechCost": "[[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 600000,
+  "Details": "Based upon Comstar's groundbreaking XL gyro has Vining Engineering and Salvage Team managed to push the technology even further, further reducing the weight of the mechs gyro, but doubling its size going even into the side Torsos.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "OmniGyro_XXL_Side",
+  "Manufacturer": "VENS",
+  "Model": "XXL Gyro",
+  "Name": "XXL Gyro",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Gyro XXL"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 2,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": []
+}

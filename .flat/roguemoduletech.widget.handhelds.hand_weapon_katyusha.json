@@ -1,0 +1,117 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.3,
+ "APCriticalChanceMultiplier": 0.035,
+ "APMaxArmorThickness": 84,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "Rocket",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#955E0B",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "HandHeld"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 20",
+    "1shot",
+    "WpnAccuracy: -1",
+    "MissileHP: 1",
+    "IsRocket: 20",
+    "InternalAmmo: 12",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 12,
+   "StabilityDamagePerAmmo": 4
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 20
+  },
+  "InventorySorter": {
+   "SortKey": "03004"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 12,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 29000,
+  "Details": "Heavy Rocket Launcher operate on the same Principle as the normal widespread Rocket Launcher, being unguided bolted on One Shot Throwaway Launchers do they carrier a heavier payload..<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "panzerfaust",
+  "Id": "Hand_Weapon_Katyusha",
+  "Manufacturer": "Death Blossom",
+  "Model": "Rocket Launcher",
+  "Name": "HRL180",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Katyusha"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0075,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 330,
+ "MinRange": 0,
+ "MissileHealth": 1,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 180,
+ "StartingAmmoCapacity": 180,
+ "Tonnage": 0,
+ "Type": "LRM",
+ "Unguided": true,
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

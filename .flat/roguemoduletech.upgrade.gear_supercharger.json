@@ -1,0 +1,105 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+40%Walk|+10%Sprint|",
+ "BonusValueB": "+15% Heat Generated",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "cae_ai_explode",
+   "cae_ai_heat",
+   "cae_ai_speed"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ButtonName": "SuperCharger",
+   "CanNotBeActivatedManualy": false,
+   "FailChancePerTurn": 0.2,
+   "FailFlatChance": 0.1,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Myomer Accelerator Signal Circuitry",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "MASCWalk",
+      "Name": "MASC"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.5",
+      "operation": "Float_Add",
+      "statName": "CBTBE_RunMultiMod"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": true,
+      "forceVisRebuild": false,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "EngineWeight: +5%",
+    "Activatable",
+    "ActiveRunMod: +50%",
+    "FailChance: 10%",
+    "FailChanceTurn: 20%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "WeaponBoom: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Supercharger"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 30,
+   "StabilityDamage": 100
+  },
+  "InventorySorter": {
+   "SortKey": "00023"
+  },
+  "Weights": {
+   "EngineFactor": 1.05
+  }
+ },
+ "Description": {
+  "Cost": 420000,
+  "Details": "The supercharger allows a 'Mech to exceed its normal engine output, increasing walk and run distance at the cost of higher heat generation. <b><color=#099ff2>Activatable: EXPLODES ON FAILURE!</color></b> Some superstitious believe it causes the common cold.",
+  "Icon": "wingfoot",
+  "Id": "Gear_Supercharger",
+  "Manufacturer": "Deadly Sins",
+  "Model": "Supercharger",
+  "Name": "Supercharger",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Supercharger"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

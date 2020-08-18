@@ -1,0 +1,117 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Melee Hit",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "component_type_variant1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MeleeAcc: +1",
+    "GyroStab: 40"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Gyro"
+   }
+  ],
+  "ComponentExplosion": {
+   "StabilityDamage": 100
+  },
+  "InventorySorter": {
+   "SortKey": "00022"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "[[Chassis.Tonnage]]",
+    "TechCost": "1"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 300000,
+  "Details": "Gyros counteract the massive amounts of momentum generated from 'Mech engines and allow for precision maneuvering and recovery from stability-impacting attacks. All 'Mechs come equipped with a stock Gyro, which can be upgraded for improved performance.",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "Gear_Gyro_Coventry_Mark-75",
+  "Manufacturer": "Coventry",
+  "Model": "Mark 75",
+  "Name": "Coventry Mark 75 Gyro",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Gyro Melee"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Melee attacks attempted have their hit improved by +1.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-Attack_ToHitMelee-T1",
+    "Name": "MELEE HIT CHANCE IMPROVED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "The gyro helps establish center-of-mass equilibrium for the BattleMech.",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "GyroGenericThreshhold",
+    "Name": "Gyroscopic Orientation"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "40.0",
+    "operation": "Float_Add",
+    "statName": "UnsteadyThreshold"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

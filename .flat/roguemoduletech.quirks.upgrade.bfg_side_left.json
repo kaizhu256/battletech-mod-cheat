@@ -1,0 +1,85 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "LeftTorso",
+ "BattleValue": 0,
+ "BonusValueA": "-0.75t",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "BLACKLISTED",
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "DmgFallOff: 35%",
+    "WpnRecoil: 2",
+    "Explodium: 10",
+    "WeaponBoom: 100",
+    "BFG",
+    "WeaponBoom: 50",
+    "WeaponReserved: 6"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HGR"
+   },
+   {
+    "CategoryID": "BFG"
+   },
+   {
+    "CategoryID": "BFG_Side_Left"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 100,
+   "HeatDamage": 100,
+   "StabilityDamage": 100
+  },
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00012"
+  },
+  "Sorter": {
+   "Order": 1
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+    "TechCost": "1.15 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1293333,
+  "Details": "This is a collection of patchwork materials (e.g. ferro-fibrous armour, endo steel structure, or ultralight composites) which provide the same degree of protection at a lighter weight, but at the cost of critical slots. ",
+  "Icon": "uixSvgIcon_equipment_Gyro",
+  "Id": "BFG_Side_Left",
+  "Manufacturer": "SLDF",
+  "Model": "SLDF Railgun",
+  "Name": "BFG Left Torso Piece",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "BFG 9000"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 3,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": []
+}

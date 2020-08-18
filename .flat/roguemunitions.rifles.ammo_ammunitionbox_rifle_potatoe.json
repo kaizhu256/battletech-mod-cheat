@@ -1,0 +1,63 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_RiflePot",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 30,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "PRifleAmmo.{location}"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PotRifleAmmo: 30"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/a/a/rifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 20,
+   "StabilityDamagePerAmmo": 8
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000001"
+  },
+  "TRGBColor": {
+   "Color": "#584242",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 5000,
+  "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "rifle",
+  "Id": "Ammo_AmmunitionBox_Rifle_Potatoe",
+  "Manufacturer": "Generic",
+  "Model": "Potato Rifle Ammo",
+  "Name": "Rifle Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Rifle Periphery"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

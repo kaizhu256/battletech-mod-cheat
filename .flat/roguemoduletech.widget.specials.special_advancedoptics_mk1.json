@@ -1,0 +1,143 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+1 Defense.",
+ "BonusValueB": "+1 Missile Defense.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Special: 0.3",
+    "NewAdvancedZoom: 540",
+    "ThermalVision: 1, 65, 200",
+    "NightVision"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Special"
+   },
+   {
+    "CategoryID": "AdvZoom"
+   },
+   {
+    "CategoryID": "ThermalVision"
+   },
+   {
+    "CategoryID": "NightVision"
+   }
+  ],
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0.3
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 200000,
+  "Details": "This Module allows any Mech to employ Advanced Optics, including a Zoom, Thermal and Night Vision Mode",
+  "Icon": "circuitry",
+  "Id": "Special_AdvancedOptics_MK1",
+  "Manufacturer": "Mitchell",
+  "Model": "J-Peep Farsight",
+  "Name": "Advanced Optics",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Advanced Optics MK1"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "PASSIVE: Enables Night Vision.",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "NightVision",
+    "Name": "Night Vision Mode"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Boolean",
+    "modValue": "true",
+    "operation": "Set",
+    "statName": "LV_NIGHT_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "range bracket bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "Zoom Vision Effect",
+    "Name": "Bonus Accuracy at range"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "-1_0_18",
+    "operation": "Set",
+    "statName": "LV_ZOOM_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "heat bonus accuracy",
+    "Icon": "uixSvgIcon_ability_precisionstrike",
+    "Id": "Heat Vision Effect",
+    "Name": "Bonus Accuracy against heat"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "-1_65_200",
+    "operation": "Set",
+    "statName": "LV_HEAT_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

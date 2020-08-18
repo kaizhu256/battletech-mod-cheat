@@ -1,0 +1,127 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+ 1 Acc. (Gauss)",
+ "BonusValueB": "- 1 Recoil (Gauss)",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "GaussAccuracy: +1",
+    "RecoilGauss: -1",
+    "Quirk"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PositiveQuirk"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "default",
+    "ignore_damage",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00201"
+  },
+  "MechConfiguration": {}
+ },
+ "Description": {
+  "Cost": 130000,
+  "Details": "This BattleMech features Gauss Rifle mounts of exceptional design and construction which leads to a marked increase in accuracy and reliability for such weapons.",
+  "Icon": "SpecialistSlot",
+  "Id": "Special_Accurate_Weapon_Gauss",
+  "Manufacturer": "Fabrique Nationale",
+  "Model": "Model 2711G",
+  "Name": "Accurate Weapon - Gauss",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Accurate Weapon - Gauss"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "+1Acc, -1 Recoil for Gauss Weapons.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-FCS_AC2",
+    "Name": "Gauss Accuracy Quirk"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "modType": "System.Single",
+    "modValue": "-1.0",
+    "operation": "Float_Add",
+    "statName": "AccuracyModifier",
+    "targetAmmoCategory": "GAUSS",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Gauss",
+    "targetWeaponType": "Gauss"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "+1Acc, -1 Recoil for Gauss Weapons.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "StatusEffect-FCS_AC21",
+    "Name": "Gauss Accuracy Quirk"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "RefireModifier",
+    "targetAmmoCategory": "GAUSS",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Gauss",
+    "targetWeaponType": "Gauss"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

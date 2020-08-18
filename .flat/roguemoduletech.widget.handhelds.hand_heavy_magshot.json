@@ -1,0 +1,121 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1.5,
+ "APCriticalChanceMultiplier": 1.6,
+ "APDamage": 10,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "MagShot",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Damage Falloff|",
+ "BonusValueB": "1 Recoil",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 10",
+    "ThroughArmorDamage: 10",
+    "HandHeldAmmo: 10",
+    "DmgFallOff: 33%",
+    "WpnRecoil: 2",
+    "RecoilExponent: 0.5",
+    "AccuracyExponent: -0.3",
+    "TACExponent: -0.2",
+    "CRITExponent: -0.2",
+    "IsGauss",
+    "WeaponBoom: 50"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 40,
+   "HeatDamagePerAmmo": 5,
+   "StabilityDamagePerAmmo": 5
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 10
+  },
+  "InventorySorter": {
+   "SortKey": "01414"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 20,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 950000,
+  "Details": "Built from several pieces of light Gauss Rifles and King David Rifles is this rifle able to Penetrate Armor exceptionally well but suffers drastic damage loss at range and is unstable <b><color=#F79232>10 rounds.</color></b>. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Hand_Heavy_Magshot",
+  "Manufacturer": "Johnston",
+  "Model": "Heavy Mag Shot",
+  "Name": "Sniper Rifle Rifle",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Sniper Rifle"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.33,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 1,
+ "MaxRange": 930,
+ "MinRange": 180,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectileScale": {
+  "x": 0.5,
+  "y": 0.5,
+  "z": 0.7
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  240,
+  420,
+  840
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 0,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "evasivePipsMods": {
+  "APCriticalChanceMultiplier": -0.2,
+  "AccuracyModifier": -0.35,
+  "CriticalChanceMultiplier": -0.2,
+  "RefireModifier": 0.5
+ },
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

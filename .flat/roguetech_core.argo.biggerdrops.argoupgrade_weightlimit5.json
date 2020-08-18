@@ -1,0 +1,46 @@
+{
+ "AdditionalCost": 10000,
+ "AssignedCastDefId": "castDef_YangDefault",
+ "AssignedCastDescription": "Tune the Engine and drop them hot, Boss.",
+ "Description": {
+  "Cost": 0,
+  "Details": "The engine work continues, Commander. We've almost got those engines back up to their rated output. A little more tweaking should do it. <b><color=#F79232>Increases Drop Weight Limit by 50 tons</color></b>",
+  "Icon": "uixSvgIcon_shipUpgrade_automation",
+  "Id": "argoUpgrade_WeightLimit5",
+  "Name": "Engine Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_YangWorking",
+ "Location": "UNKNOWN",
+ "PurchaseCost": 300000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_JunkyardLeopard",
+   "argoUpgrade_DropSlot3",
+   "argoUpgrade_PilotSlot3",
+   "argoUpgrade_drive2",
+   "argoUpgrade_WeightLimit4",
+   "argoUpgrade_storage"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "BiggerDrops_MaxTonnage",
+   "typeString": "System.Int32",
+   "value": 50,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "JunkyardLeopard_Weightlimit5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 11,
+ "shipUpgradeCategoryID": "BDDropTonnage"
+}

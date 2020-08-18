@@ -1,0 +1,177 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "- 4 Heat / Turn",
+ "BonusValueB": "- 3% heat generated",
+ "ComponentSubType": "Heatsink",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "HeatSink",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationMessage": "COOLSHOT!",
+   "AutoActivateOnIncomingHeat": 50,
+   "AutoDeactivateOverheatLevel": 0.2,
+   "ButtonName": "CoolShot",
+   "CanNotBeActivatedManualy": true,
+   "DeactivationMessage": "Heat Nominal",
+   "FailChancePerTurn": 0.1,
+   "FailFlatChance": 0.1,
+   "FailPilotingBase": 5,
+   "FailPilotingMult": 0.1,
+   "FailRoundsStart": 2,
+   "NoUniqueCheck": true,
+   "SelfCrit": true,
+   "incomingHeatActivationType": "Threshhold",
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Emergency Coolant System drastically improves the mechs cooling",
+      "Icon": "uixSvgIcon_action_evasivemove",
+      "Id": "EmergencyCooling",
+      "Name": "Emergency Coolant System"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "35",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Special: 50%",
+    "EmergencyCoolant: 0",
+    "ActivateHeatDamage: 50",
+    "DeActivateHeatLevel: 20%",
+    "ActiveHeatPerTurn: -35",
+    "FailChance: 10%",
+    "FailChanceTurn: 10%",
+    "FailCritSelf",
+    "FailReducPilot",
+    "CPBoom: 30",
+    "Visibility: +5%",
+    "Signature: +5%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CoolShot"
+   },
+   {
+    "CategoryID": "Special"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 15,
+   "HeatDamage": 30,
+   "StabilityDamage": 15
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 0
+  },
+  "InventorySorter": {
+   "SortKey": "00015"
+  },
+  "MechConfiguration": {},
+  "TSMInfo": {
+   "HandHeldFactor": 0.5
+  }
+ },
+ "Description": {
+  "Cost": 810000,
+  "Details": "Leave it to Pirates to fail at fixing up a Emergency Coolant System and instead hotwire it externally directly into the coolant System.... <b><color=#099ff2>VOLATILE!</color></b>.",
+  "Icon": "CoolantPod",
+  "Id": "Special_CoolShot",
+  "Manufacturer": "Junkrat",
+  "Model": "Emergency Coolant",
+  "Name": "Coolshot",
+  "Purchasable": true,
+  "Rarity": 12,
+  "UIName": "CoolShot"
+ },
+ "DisallowedLocations": "All",
+ "DissipationCapacity": 0,
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Signature Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltySensor",
+    "Name": "BoltOn Sensor Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "SensorSignatureModifier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visibility Statuseffect.",
+    "Icon": "uixSvgIcon_equipment_TTS",
+    "Id": "BoltOnPenaltyVisual",
+    "Name": "BoltOn Visual Penalty"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.05",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

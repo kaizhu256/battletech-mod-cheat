@@ -1,0 +1,158 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.3,
+ "APMaxArmorThickness": 120,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RAC10",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "Recoil 6",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoilShot: 1",
+    "WeaponJAMFlatShot: 7%",
+    "Rotary"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rac"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01203"
+  }
+ },
+ "Damage": 56,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 1340000,
+  "Details": "Clan scientists managed to stabilize experimental RISC RAC10, while reducing it size, at the cost of an extra ton of weight. \n\n <b><color=#ffcc00>Uses RAC10 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "RotaryAC",
+  "Id": "Weapon_Autocannon_RAC10_CLAN",
+  "Manufacturer": "MekTek",
+  "Model": "Clan RAC10",
+  "Name": "RAC10 (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Rotary AC/10 (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.05,
+ "HeatDamage": 0,
+ "HeatGenerated": 24,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 5,
+ "MaxRange": 570,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.07,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -16,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.14,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -8,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.21,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.28,
+   "FlatJammingChance": 0.28,
+   "GunneryJammingBase": 4,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 8,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 16,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.42,
+   "GunneryJammingBase": 7,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 24,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "RAC10",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  510
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 15,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
+ "WeaponSubType": "AC10",
+ "statusEffects": []
+}

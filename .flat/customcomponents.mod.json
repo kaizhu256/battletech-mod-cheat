@@ -1,0 +1,352 @@
+{
+ "Author": "Denadan",
+ "ConflictsWith": [],
+ "CustomResourceTypes": [
+  "CCCategories",
+  "CCDefaults",
+  "CCTagRestrictions",
+  "CustomSVGIcon"
+ ],
+ "DLL": "CustomComponents.dll",
+ "DLLEntryPoint": "CustomComponents.Control.Init",
+ "DependsOn": [],
+ "Enabled": true,
+ "Hidden": true,
+ "Manifest": [],
+ "Name": "CustomComponents",
+ "Settings": {
+  "AllowDropBlackListed": true,
+  "BaseECMValidation": false,
+  "Categories": [],
+  "CenterTorsoDestroyedParts": 1,
+  "CheckWeaponCount": true,
+  "ColorTags": [
+   {
+    "Color": "#51838af0",
+    "Tag": "w/a/a/ac"
+   },
+   {
+    "Color": "#5c959df0",
+    "Tag": "w/a/a/lac"
+   },
+   {
+    "Color": "#467178f0",
+    "Tag": "w/a/a/hvac"
+   },
+   {
+    "Color": "#006e6ef0",
+    "Tag": "w/a/a/rac"
+   },
+   {
+    "Color": "#074050f0",
+    "Tag": "w/a/a/uac"
+   },
+   {
+    "Color": "#135040f0",
+    "Tag": "w/a/a/lbx"
+   },
+   {
+    "Color": "#395d62f0",
+    "Tag": "w/a/a/rifle"
+   },
+   {
+    "Color": "#1c4597f0",
+    "Tag": "w/a/g/gaussrifle"
+   },
+   {
+    "Color": "#0e557cf0",
+    "Tag": "w/a/g/sb"
+   },
+   {
+    "Color": "#1b5badf0",
+    "Tag": "w/a/g/hag"
+   },
+   {
+    "Color": "#0000a5f0",
+    "Tag": "w/a/g/railgun"
+   },
+   {
+    "Color": "#21709ff0",
+    "Tag": "w/a/g/magshot"
+   },
+   {
+    "Color": "#0000a5f0",
+    "Tag": "w/a/g/raplbgr"
+   },
+   {
+    "Color": "#0000a5f0",
+    "Tag": "w/a/g/taser"
+   },
+   {
+    "Color": "#009393f0",
+    "Tag": "w/a/o/mg"
+   },
+   {
+    "Color": "#7b1d3cf0",
+    "Tag": "w/a/o/artillery"
+   },
+   {
+    "Color": "#7b1d23f0",
+    "Tag": "w/a/o/mortar"
+   },
+   {
+    "Color": "#4c763ef0",
+    "Tag": "w/e/l/laser"
+   },
+   {
+    "Color": "#4c933ef0",
+    "Tag": "w/e/l/pulse"
+   },
+   {
+    "Color": "#4c933ef0",
+    "Tag": "w/e/l/x-pulse"
+   },
+   {
+    "Color": "#4c933ef0",
+    "Tag": "w/e/l/vspl"
+   },
+   {
+    "Color": "#4c933ef0",
+    "Tag": "w/e/l/erpulse"
+   },
+   {
+    "Color": "#3c5e31f0",
+    "Tag": "w/e/l/er"
+   },
+   {
+    "Color": "#3c5e31f0",
+    "Tag": "w/e/l/heavy"
+   },
+   {
+    "Color": "#3c5e31f0",
+    "Tag": "w/e/l/bombast"
+   },
+   {
+    "Color": "#3c5e31f0",
+    "Tag": "w/e/l/binary"
+   },
+   {
+    "Color": "#4c763ef0",
+    "Tag": "w/e/l/re"
+   },
+   {
+    "Color": "#4c766ef0",
+    "Tag": "w/e/l/chemical"
+   },
+   {
+    "Color": "#056800f0",
+    "Tag": "w/e/p/ppc"
+   },
+   {
+    "Color": "#045400f0",
+    "Tag": "w/e/p/erppc"
+   },
+   {
+    "Color": "#045400f0",
+    "Tag": "w/e/p/hppc"
+   },
+   {
+    "Color": "#068300f0",
+    "Tag": "w/e/p/snppc"
+   },
+   {
+    "Color": "#068300f0",
+    "Tag": "w/e/p/lppc"
+   },
+   {
+    "Color": "#068300f0",
+    "Tag": "w/e/p/tsemp"
+   },
+   {
+    "Color": "#72a909f0",
+    "Tag": "w/e/p/plasma"
+   },
+   {
+    "Color": "#7f8f07f0",
+    "Tag": "w/e/p/flamer"
+   },
+   {
+    "Color": "#7f8f07f0",
+    "Tag": "w/e/p/aflamer"
+   },
+   {
+    "Color": "#a55575f0",
+    "Tag": "w/m/s/srm"
+   },
+   {
+    "Color": "#c55575f0",
+    "Tag": "w/m/s/ssrm"
+   },
+   {
+    "Color": "#855088f0",
+    "Tag": "w/m/s/mml"
+   },
+   {
+    "Color": "#775573f0",
+    "Tag": "w/m/s/rl"
+   },
+   {
+    "Color": "#955585f0",
+    "Tag": "w/m/s/mrm"
+   },
+   {
+    "Color": "#741b47f0",
+    "Tag": "w/m/s/hmrm"
+   },
+   {
+    "Color": "#6d4f9bf0",
+    "Tag": "w/m/l/lrm"
+   },
+   {
+    "Color": "#8052caf0",
+    "Tag": "w/m/l/slrm"
+   },
+   {
+    "Color": "#8052caf0",
+    "Tag": "w/m/l/elrm"
+   },
+   {
+    "Color": "#8052caf0",
+    "Tag": "w/m/l/enlrm"
+   },
+   {
+    "Color": "#351c75f0",
+    "Tag": "w/m/l/atm"
+   },
+   {
+    "Color": "#432395f0",
+    "Tag": "w/m/l/iatm"
+   },
+   {
+    "Color": "#8b1d2cf0",
+    "Tag": "w/m/t/thunderbolt"
+   },
+   {
+    "Color": "#8b1d2cf0",
+    "Tag": "w/m/t/arrowiv"
+   },
+   {
+    "Color": "#ad5b05f0",
+    "Tag": "w/s/a/ams"
+   },
+   {
+    "Color": "#c26606f0",
+    "Tag": "w/s/a/lams"
+   },
+   {
+    "Color": "#ba9526f0",
+    "Tag": "w/s/t/tag"
+   },
+   {
+    "Color": "#ba9526f0",
+    "Tag": "w/s/t/narc"
+   },
+   {
+    "Color": "#917a51f0",
+    "Tag": "w/s/m/melee"
+   },
+   {
+    "Color": "#917a51f0",
+    "Tag": "w/s/m/ac"
+   },
+   {
+    "Color": "#917a51f0",
+    "Tag": "w/s/m/energy"
+   },
+   {
+    "Color": "#917a51f0",
+    "Tag": "w/s/m/pa"
+   },
+   {
+    "Color": "#c01836f0",
+    "Tag": "w/s/m/explode"
+   },
+   {
+    "Color": "#cc9900",
+    "Tag": "w/s/h/HandHeld"
+   },
+   {
+    "Color": "#cc9900",
+    "Tag": "w/s/h/BoltOn"
+   },
+   {
+    "Color": "#51838af0",
+    "Tag": "ProtoAC"
+   },
+   {
+    "Color": "#351c75f0",
+    "Tag": "Fusiliade"
+   },
+   {
+    "Color": "#432395f0",
+    "Tag": "iFusiliade"
+   },
+   {
+    "Color": "#6d4f9bf0",
+    "Tag": "ProtoLRM"
+   },
+   {
+    "Color": "#a55575f0",
+    "Tag": "ProtoSRM"
+   },
+   {
+    "Color": "#917a51f0",
+    "Tag": "ProtoMelee"
+   },
+   {
+    "Color": "#135040f0",
+    "Tag": "ProtoLBX"
+   }
+  ],
+  "DebugInfo": "ComponentInstall, MechValidation",
+  "DefaultFlagBackgroundColor": "UpgradeColor",
+  "DefaultFlagOverlayCColor": {
+   "A": 25,
+   "B": 180,
+   "G": 255,
+   "R": 180
+  },
+  "Defaults": [],
+  "DontUseFilter": false,
+  "EjectRecoveryBonus": 0.5,
+  "FixDeletedComponents": true,
+  "FixSaveGameMech": false,
+  "HeadRecoveryPenaly": 0,
+  "IgnoreAutofixTags": [
+   "fake_vehicle_chassis",
+   "noautofix"
+  ],
+  "InvalidFlagBackgroundColor": "Red",
+  "LimbRecoveryPenalty": 0.08,
+  "LogLevel": "Debug",
+  "MaxWeaponCount": 14,
+  "NoLootCTDestroyed": false,
+  "OmniTechCostBySize": false,
+  "OmniTechFlag": "OmniMech",
+  "OmniTechInstallCost": 1,
+  "OverrideMechPartCalculation": true,
+  "OverrideRecoveryChance": true,
+  "OverrideSalvageGeneration": true,
+  "PreinstalledOverlayCColor": {
+   "A": 30,
+   "B": 30,
+   "G": 90,
+   "R": 200
+  },
+  "RunAutofixer": true,
+  "SalvageArmWeight": 0.75,
+  "SalvageHeadWeight": 0.33,
+  "SalvageLegWeight": 0.75,
+  "SalvageTorsoWeight": 1,
+  "SalvageUnrecoveredMech": true,
+  "TagRestrictionDropValidateIncompatibleTags": true,
+  "TagRestrictionDropValidateRequiredTags": true,
+  "TagRestrictions": [],
+  "TaggedDefaults": [],
+  "TestEnableAllTags": false,
+  "TorsoRecoveryPenalty": 0.2,
+  "UseDefaultFixedColor": false,
+  "WrongWeaponCountMessage": "Cannot equip more then {0} weapons"
+ },
+ "Website": "https://github.com/Denadan/CustomComponents"
+}

@@ -1,0 +1,240 @@
+{
+ "BattleValue": 4596000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 50,
+ "DFAInstability": 25,
+ "DFASelfDamage": 50,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 850472,
+  "Details": "First walking off the production line in late 3050, the 5D Enforcer is a major upgrade to the standard 'Mech, meeting many of its pilots' desire for something faster, better-protected and with more endurance. The Nissan 200 engine has been removed and replaced with a Magna 250 Extralight Engine, increasing the Enforcer's top speed to 86.4 km/h and the amount of space available for other additions. The armor has been stripped from the 'Mech and replaced with StarGuard CIV Ferro-Fibrous armor with CASE to protect against an ammunition explosion while the weapons payload has also been changed. Retaining the small laser both the Autocannon/10 and the Large Laser were replaced for a new Mydron Excel LB-X Autocannon/10, fed by two tons of ammunition, and a BlazeFire Sweetshot ER Large Laser. Finally, an additional jump jet was added, increasing the jumping distance by thirty meters to keep up with the Enforcer's new speed profile.",
+  "Icon": "uixTxrIcon_enforcer",
+  "Id": "chassisdef_enforcer_ENF-5D",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Enforcer",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Enforcer"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Improved_Cooling_Jacket_Autocannon",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_enforcer",
+ "Heatsinks": 0,
+ "InitialTonnage": 5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 6,
+   "z": 2.5
+  },
+  {
+   "x": -2.5,
+   "y": 6,
+   "z": 2.5
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 60,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    }
+   ],
+   "InternalStructure": 40,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 80,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 60,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 120,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 25,
+ "MeleeInstability": 13,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "enforcer",
+ "PrefabIdentifier": "chrPrfMech_enforcerBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Fire Support & Skirmisher",
+ "Tonnage": 50,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "ENF-5D",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "First walking off the production line in late 3050, the 5D Enforcer is a major upgrade to the standard 'Mech, meeting many of its pilots' desire for something faster, better-protected and with more endurance. The Nissan 200 engine has been removed and replaced with a Magna 250 Extralight Engine, increasing the Enforcer's top speed to 86.4 km/h and the amount of space available for other additions. The armor has been stripped from the 'Mech and replaced with StarGuard CIV Ferro-Fibrous armor with CASE to protect against an ammunition explosion while the weapons payload has also been changed. Retaining the small laser both the Autocannon/10 and the Large Laser were replaced for a new Mydron Excel LB-X Autocannon/10, fed by two tons of ammunition, and a BlazeFire Sweetshot ER Large Laser. Finally, an additional jump jet was added, increasing the jumping distance by thirty meters to keep up with the Enforcer's new speed profile.",
+ "weightClass": "MEDIUM"
+}

@@ -1,0 +1,212 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.016,
+ "APMaxArmorThickness": 9.6,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 40,
+ "BonusValueA": "Target Painter|",
+ "BonusValueB": "Damage Falloff.",
+ "Category": "AntiPersonnel",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "TAG: 5",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "DmgFallOff: 25%",
+    "Painter: +2",
+    "PainterSensors: 15%",
+    "PainterVisibility: 15%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/t/tag"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "04003"
+  }
+ },
+ "Damage": 8,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 310000,
+  "Details": "Captain, this piece is either from a genius or a moron. The Maniac put a filter on the output to essentially ''brand'' the target. Even worse they wrote a random generator to always 'paint' something else ... eff these punks!",
+  "Icon": "TAG",
+  "Id": "Weapon_Laser_TAG_pirate",
+  "Manufacturer": "Funny Guy",
+  "Model": "Pirate TAG'er",
+  "Name": "TAGGER",
+  "Purchasable": false,
+  "Rarity": 5,
+  "UIName": "TAGGER"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.25,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireTerrainChance": 0.01,
+ "HeatDamage": 1,
+ "HeatGenerated": 4,
+ "IndirectFireCapable": false,
+ "Instability": 0,
+ "InventorySize": 2,
+ "MaxRange": 540,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  270,
+  420
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1.5,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_TAG",
+ "WeaponSubType": "SmallLaserER",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This target was TAG'ed. +1 to hit.",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect",
+    "Name": "Target Acquired"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 5,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.String",
+    "modValue": "0.15_2_-2",
+    "operation": "Set",
+    "statName": "LV_TAG"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "TAG increases Visibility",
+    "Icon": "uixSvgIcon_artillery",
+    "Id": "PainterEffect2",
+    "Name": "Detected"
+   },
+   "durationData": {
+    "duration": 5,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "SpottingVisibilityMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "Visual indicator of the TAG effect",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "StatusEffect-TAG-IndicatorVFX",
+    "Name": "TAG MARKED"
+   },
+   "durationData": {
+    "duration": 5,
+    "stackLimit": 1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "VFXEffect",
+   "nature": "Debuff",
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "hideApplicationFloatie": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": {
+    "attachToImpactPoint": true,
+    "duration": -1,
+    "facesAttacker": false,
+    "isAttached": true,
+    "isOneShot": false,
+    "location": -1,
+    "vfxName": "vfxPrfPrtl_TAGmarker_loop"
+   }
+  }
+ ]
+}

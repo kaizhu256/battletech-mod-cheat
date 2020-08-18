@@ -1,0 +1,81 @@
+{
+ "AllowedLocations": "All",
+ "BattleValue": 0,
+ "BonusValueA": "Requires",
+ "BonusValueB": "ECM",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Stealth",
+    "StealthSensors: 50%, 4, 2, 3, 4",
+    "ActiveVisibility: -15%",
+    "ActiveSignature: -25%",
+    "JumpDistance: 10%",
+    "ArmorFactor: +10%",
+    "StealthReserved: 1",
+    "TEHeatgen: +10%",
+    "HeatPerTurn: +9",
+    "CASEDArmor: 10",
+    "ReqECM",
+    "ArmorTPCost: 35%",
+    "ArmorCBCost: 65%"
+   ]
+  },
+  "CASE": {
+   "MaximumDamage": 10
+  },
+  "Category": [
+   {
+    "CategoryID": "Linked_LAM_Stealth"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "LAM Stealth System"
+  },
+  "ErrorMessage": "Stealth Armor requires a ECM!",
+  "Flags": {
+   "flags": [
+    "default",
+    "not_broken",
+    "no_salvage",
+    "autorepair"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "TRGBColor": {
+   "Color": "#5F24AC"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "An Attempt to create advanced Recon Units has Shengli Arm's incorporated their latest advanced of Stealth tech into a LAM Alumium Armor. Reserves 1 slot in every Location except the Head and requires an ECM.",
+  "Icon": "StealthArmor",
+  "Id": "Linked_LAM_stealth",
+  "Manufacturer": "Shengli Arms",
+  "Model": "Armor",
+  "Name": "Stealth Armor",
+  "Purchasable": true,
+  "Rarity": 99,
+  "UIName": "Stealth LAM"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

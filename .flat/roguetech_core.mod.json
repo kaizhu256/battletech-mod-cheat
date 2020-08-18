@@ -1,0 +1,252 @@
+{
+ "Author": "LadyAlekto",
+ "ConflictsWith": [
+  "RogueTech Enhanced",
+  "RogueTech Enhanced Clans"
+ ],
+ "Contact": "fakeemail@fakeemail.com",
+ "CustomResourceTypes": [
+  "MEBonusDescriptions",
+  "MECriticalEffects",
+  "CCCategories",
+  "CCDefaults",
+  "CCTagRestrictions",
+  "CustomSVGIcon"
+ ],
+ "DLL": "RtCore.dll",
+ "DataAddendumEntries": [
+  {
+   "name": "BattleTech.FactionEnumeration",
+   "path": "Faction.json"
+  },
+  {
+   "name": "BattleTech.AmmoCategoryEnumeration",
+   "path": "AmmoCategory.json"
+  },
+  {
+   "name": "BattleTech.WeaponCategoryEnumeration",
+   "path": "WeaponCategory.json"
+  },
+  {
+   "name": "BattleTech.ContractTypeEnumeration",
+   "path": "ContractType.json"
+  },
+  {
+   "name": "BattleTech.ShipUpgradeCategoryEnumeration",
+   "path": "ShipUpgradeCategory.json"
+  }
+ ],
+ "DependsOn": [
+  "AbilityRealizer",
+  "Rogue Munitions",
+  "BiggerDrops",
+  "BTRandomStartByDifficultyMenu",
+  "CBTBehaviorsEnhanced",
+  "CleverGirl",
+  "CommunityBundles",
+  "CustomActivatableEquipment",
+  "Custom Ammo Categories",
+  "CustomComponents",
+  "CustomFilters",
+  "CustomLocalization",
+  "CustomSalvage",
+  "CustomUnits",
+  "DisorderlyWithdrawal",
+  "DropCostPerMech",
+  "EvasivePipsGainedAdditionalRestorer",
+  "FastWorkOrderMover",
+  "FYLS",
+  "InnerSphereMap",
+  "GlobalDifficulty",
+  "HideCareerModeDays",
+  "HighDifficultyLanceSpawnFixer",
+  "IttyBittyLivingSpace",
+  "JWCompatFunction",
+  "LootMagnet",
+  "LowVisibility",
+  "MechEngineer",
+  "Mission Control",
+  "MonthlyMoraleReset",
+  "Monthly Tech Adjustment",
+  "More is Less",
+  "OnePointArmorStep",
+  "PanicSystem",
+  "Pilot Fatigue",
+  "PilotHealthPopup",
+  "Repair Bays",
+  "RoguePortraits",
+  "RogueModuleTech",
+  "SkillBasedInit",
+  "Stabile Piloting",
+  "VehicleEvasivePipsGainiedAdditionalFix",
+  "Rogue Pilots Module",
+  "BattletechPerformanceFix",
+  "Armor",
+  "Pilot Quirks",
+  "DynamicShops",
+  "Base 3061",
+  "Base 3061 Uniques",
+  "IRBTModUtils",
+  "HandHeld"
+ ],
+ "Description": "Contains the basic rules of RogueTech - Core Module",
+ "Enabled": true,
+ "Manifest": [
+  {
+   "Path": "icons",
+   "ShouldMergeJSON": false,
+   "Type": "SVGAsset"
+  },
+  {
+   "Path": "categories/",
+   "ShouldMergeJSON": false,
+   "Type": "CCCategories"
+  },
+  {
+   "Path": "tagRestrictions/",
+   "ShouldMergeJSON": false,
+   "Type": "CCTagRestrictions"
+  },
+  {
+   "Path": "defaults/",
+   "ShouldMergeJSON": false,
+   "Type": "CCDefaults"
+  },
+  {
+   "Path": "bonusDescriptions/",
+   "ShouldMergeJSON": false,
+   "Type": "MEBonusDescriptions"
+  },
+  {
+   "Path": "criticalEffects/",
+   "ShouldMergeJSON": false,
+   "Type": "MECriticalEffects"
+  },
+  {
+   "Path": "Mech/hardpoints",
+   "Type": "HardpointDataDef"
+  },
+  {
+   "Path": "Mech/move",
+   "Type": "MovementCapabilitiesDef"
+  },
+  {
+   "Path": "GameTips",
+   "ShouldAppendText": false,
+   "Type": "GameTip"
+  },
+  {
+   "Path": "abilities",
+   "Type": "AbilityDef"
+  },
+  {
+   "Path": "turretpilots",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "portraits",
+   "Type": "Sprite"
+  },
+  {
+   "Path": "data",
+   "Type": "ItemCollectionDef"
+  },
+  {
+   "Path": "weapons",
+   "Type": "WeaponDef"
+  },
+  {
+   "Path": "DesignMasks",
+   "Type": "DesignMaskDef"
+  },
+  {
+   "Path": "Behaviours",
+   "Type": "BehaviorVariableScope"
+  },
+  {
+   "Path": "MechStatistics",
+   "Type": "MechStatisticsConstants"
+  },
+  {
+   "Path": "CombatGame",
+   "Type": "CombatGameConstants"
+  },
+  {
+   "Path": "AudioConstant",
+   "Type": "AudioConstants"
+  },
+  {
+   "Path": "SimGame",
+   "Type": "SimGameConstants"
+  },
+  {
+   "AddToDB": true,
+   "Path": "events",
+   "Type": "SimGameEventDef"
+  },
+  {
+   "AddToDB": true,
+   "Path": "cargosevents",
+   "Type": "SimGameEventDef"
+  },
+  {
+   "Path": "AItraits",
+   "Type": "AbilityDef"
+  },
+  {
+   "Path": "Lances",
+   "Type": "LanceDef"
+  },
+  {
+   "Path": "Contracts",
+   "Type": "ContractOverride"
+  },
+  {
+   "Path": "Argo/BiggerDrops",
+   "Type": "ShipModuleUpgrade"
+  },
+  {
+   "Path": "Argo/shipUpgrades",
+   "Type": "ShipModuleUpgrade"
+  },
+  {
+   "Path": "Argo/statdesc",
+   "Type": "SimGameStatDescDef"
+  },
+  {
+   "Path": "TankEngines",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "TankDefaults",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "TurretDefaults",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "TurretEngineParts",
+   "Type": "HeatSinkDef"
+  },
+  {
+   "Path": "tankmovement",
+   "Type": "MovementCapabilitiesDef"
+  },
+  {
+   "Path": "carquirks",
+   "Type": "UpgradeDef"
+  },
+  {
+   "Path": "pathing",
+   "Type": "PathingCapabilitiesDef"
+  }
+ ],
+ "Name": "RogueTech Core",
+ "Settings": {
+  "FailedLogoPath": "usethelauncher.png",
+  "LogoPath": "uixTxr_landingLogo.png"
+ },
+ "Version": "Osmium Beta 1.7.7 HF5",
+ "Website": ""
+}

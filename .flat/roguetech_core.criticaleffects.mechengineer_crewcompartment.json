@@ -1,0 +1,79 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The Tanks Crew has been Shaken reducing Max Evasion by 1.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-CrewCompartmentCrit1",
+    "Name": "Crew Shaken"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-1",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Crew has been Wounded reducing Max Evasion by 2.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-CrewCompartmentCrit2",
+    "Name": "Crew Shaken"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-3",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The Tanks Commander has been Killed reducing Max Evasion by 3.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "CriticalEffect-CrewCompartmentCrit3",
+    "Name": "Commander Killed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "-5",
+    "operation": "Int_Add",
+    "statName": "MaxEvasivePips"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

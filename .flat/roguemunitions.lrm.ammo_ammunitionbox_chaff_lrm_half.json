@@ -1,0 +1,68 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_Chaff",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 60,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Dueppel",
+    "ImpAccuracy: 1",
+    "ImpSight: -10%",
+    "ImpSensors: -40%",
+    "LRMDamage: -75%",
+    "MissileHP: 2",
+    "LRMAmmo: 60"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 2,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00040"
+  },
+  "TRGBColor": {
+   "Color": "#ECD26A",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 10000,
+  "Details": "Based on one of the most Ancient Electronic Countermeasures, these rockets carry a payload of Chaff and release a blinding strobe light on detonation to fool any and all kinds of Sensors. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_Chaff_LRM_half",
+  "Manufacturer": "Generic",
+  "Model": "Chaff LRM",
+  "Name": "LRM Chaff Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Ammo LRM Chaff"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0.5,
+ "statusEffects": []
+}

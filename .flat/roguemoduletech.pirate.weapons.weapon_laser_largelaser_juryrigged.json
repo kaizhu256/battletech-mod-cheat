@@ -1,0 +1,133 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.08,
+ "APMaxArmorThickness": 48,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 132,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorsTable": [
+  {
+   "C": "#FFFFFF",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Streak",
+    "PipsIgnored: 1",
+    "WpnAccuracy: +1",
+    "IsLaser",
+    "VariableDmg: 10",
+    "HeatEfficiency: -2"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/laser"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "02008"
+  }
+ },
+ "Damage": 40,
+ "DamageVariance": 10,
+ "Description": {
+  "Cost": 140000,
+  "Details": "Boss, I'm speechless. I have no idea how it works and the rat's nest of wires and mismatched circuits inside is absolutely horrifying. But this is basically a Streak Laser. If fires a constant low power spotting beam and has sensors to analyze reflections. You can hold down the trigger but it will only discharge when it's pointed at something with armor plating.",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_Laser_LargeLaser_JuryRigged",
+  "Manufacturer": "Crap",
+  "Model": "Large Laser",
+  "Name": "L Laser",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Slayser"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireTerrainChance": 0.1125,
+ "HeatDamage": 2,
+ "HeatGenerated": 25,
+ "HitGenerator": "Streak",
+ "IndirectFireCapable": false,
+ "Instability": 6.6,
+ "InventorySize": 2,
+ "MaxRange": 660,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  330,
+  480
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Streak": true,
+ "Tonnage": 6,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "This unit is coated with burning chemicals.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_InfernoSRMHeat",
+    "Name": "INFERNO"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "2",
+    "operation": "Int_Subtract",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_LRM_AX",
+ "BattleValue": 0,
+ "BonusValueA": "-25%Dmg&Stab|",
+ "BonusValueB": "+1 Heat Dmg.",
+ "Capacity": 120,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_variant",
+   "BLACKLISTED"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnAccuracy: -2",
+    "LRMDamage: -60%",
+    "AreaOfEffect: 45",
+    "AreaOfEffectDmg: 2",
+    "AcidSRM: 1%",
+    "ArmorDmgMod: +50%",
+    "StructureDmgMod: -50%",
+    "Range: -33%",
+    "ScatterRadius: 15, 120",
+    "MissileHP: 1",
+    "LRMAmmo: 120"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 3,
+   "HeatDamagePerAmmo": 3,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00008"
+  },
+  "TRGBColor": {
+   "Color": "#1D7F23",
+   "SkipText": true
+  }
+ },
+ "Description": {
+  "Cost": 460000,
+  "Details": "Another Periphery jury rig of Swarm Munitions, this replaces the Warhead with an AX compound, melting and weaking any Armor it hits. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "lrm",
+  "Id": "Ammo_AmmunitionBox_AX_LRM",
+  "Manufacturer": "Echidnae",
+  "Model": "LRM-T",
+  "Name": "LRM Typhon Ammo",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "LRM Typhon"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}

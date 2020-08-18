@@ -1,0 +1,57 @@
+{
+ "AllowRefitTime": true,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "A local militia would like your help with a pirate issue.",
+  "Icon": "theredcorsair",
+  "Id": "fp_redcorsair",
+  "Name": "The Red Corsair"
+ },
+ "Difficulty": 7,
+ "FlashpointDescriberCastDefId": "castDef_LocalsDefault",
+ "FlashpointLength": "LONG",
+ "FlashpointShortDescription": "Commander, we have a pirate with some high tech looting and plundering the planet. We need your help.",
+ "InProgressTimeout": 0,
+ "InternalName": "redcorsair",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [],
+   "tagSetSourceFile": ""
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_redcorsair",
+ "PotentialEmployers": [
+  "Locals"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_redcorsair_complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "RT_FP_redcorsair",
+ "TargetFaction": "AuriganPirates",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 150
+}

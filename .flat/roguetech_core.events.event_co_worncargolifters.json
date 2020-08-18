@@ -1,0 +1,316 @@
+{
+ "AdditionalObjects": [],
+ "AdditionalRequirements": [],
+ "Description": {
+  "Details": "In the morning briefing, Yang says, \"I've got a mystery here. The cargo lifters need replacing, but someone ripped the diagnostic circuits out of our spares. Unless those are returned, the spares can't balance.\"\r\n\r\nDr. Murad makes a face. \"Oh, yes. I raided those to patch holes in the <i>Argo</i>'s internal sensors. Without them, the systems won't manage air circulation properly. And then… we get the bad odor funk. Sweat. Old food. <i>Radishes</i>.\"\r\n\r\nDr. Murad's faraway gaze returns to Yang. \"I did intend to tell you, but then the <i>Argo</i> went and broke again.\"",
+  "Icon": "uixTxrSpot_DailyBriefing.png",
+  "Id": "event_co_wornCargoLifters",
+  "Name": "Worn Out Lifters"
+ },
+ "EventType": "NORMAL",
+ "Options": [
+  {
+   "Description": {
+    "Details": "mechbay okay, morale down",
+    "Icon": "",
+    "Id": "outcome_0",
+    "Name": "Return the circuits to the lifters."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You shake your head. \"We need Mech Bay at full capacity. To hell with the smell!\"\r\n\r\nDr. Murad returns the diagnostic circuits, and Yang puts the spare cargo lifters into service. Technically, everything is fine. And then there's the funk. Everyone complains about the funk. Every time the odor is mentioned, Dr. Murad shudders. \"I did tell you. Radishes.\"",
+      "Icon": "",
+      "Id": "outcome_0_0",
+      "Name": "morale down"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_wornCargoLifters"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Morale",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-10",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "mechbay down, morale okay",
+    "Icon": "",
+    "Id": "outcome_1",
+    "Name": "Keep the <i>Argo</i>'s air clean."
+   },
+   "RequirementList": [],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You nod vigorously. \"If the environmental systems break, we all feel it.\"\r\n\r\nYang shrugs and outlines the efficiency hit to the Mech Bay, ending with \"We've made do with less. We'll just have to get creative.\"",
+      "Icon": "",
+      "Id": "outcome_1_0",
+      "Name": "Yang's team trudges on"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 14,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_wornCargoLifters"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": null,
+       "TemporaryResult": false
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  },
+  {
+   "Description": {
+    "Details": "[¢50,000, Manufacturing World]",
+    "Icon": "",
+    "Id": "outcome_2",
+    "Name": "Buy replacements."
+   },
+   "RequirementList": [
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [],
+     "RequirementTags": {
+      "items": [
+       "planet_industry_manufacturing"
+      ],
+      "tagSetSourceFile": "Tags/PlanetTags"
+     },
+     "Scope": "StarSystem"
+    },
+    {
+     "ExclusionTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "RequirementComparisons": [
+      {
+       "obj": "Travel",
+       "op": "Equal",
+       "val": 0,
+       "valueConstant": "0"
+      },
+      {
+       "obj": "Funds",
+       "op": "GreaterThan",
+       "val": 50000,
+       "valueConstant": "50000"
+      }
+     ],
+     "RequirementTags": {
+      "items": null,
+      "tagSetSourceFile": ""
+     },
+     "Scope": "Company"
+    }
+   ],
+   "Requirements": {
+    "ExclusionTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": [],
+    "RequirementTags": {
+     "items": null,
+     "tagSetSourceFile": ""
+    },
+    "Scope": "Company"
+   },
+   "ResultSets": [
+    {
+     "Description": {
+      "Details": "You say, \"If we completely replace the equipment, then we won't need to reclaim the sensors. Chief, see what you can find planet-side.\"\r\n\r\nBoth Dr. Murad and Yang breathe a sigh of relief.\r\n\r\nLater in the week, Yang gives an update. \"{TGT_SYSTEM.Name} has plenty of parts and skilled labor. I replaced the lifters, and I picked up compatible circuits for the spares. We should be good for a while. Unless <i>someone</i> raids the Mech Bay for parts again.\"\r\n\r\nDr. Murad cringes. \"I <i>did</i> say that I was sorry…\"",
+      "Icon": "",
+      "Id": "outcome_2_0",
+      "Name": "Spend money"
+     },
+     "Results": [
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": [
+         "event_co_wornCargoLifters"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "Requirements": null,
+       "ResultDuration": 0,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "Funds",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "-50000",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": false
+      },
+      {
+       "Actions": null,
+       "AddedTags": {
+        "items": null,
+        "tagSetSourceFile": "Tags/CompanyTags"
+       },
+       "ForceEvents": null,
+       "RemovedTags": {
+        "items": null,
+        "tagSetSourceFile": ""
+       },
+       "Requirements": null,
+       "ResultDuration": 30,
+       "Scope": "Company",
+       "Stats": [
+        {
+         "name": "MechTechSkill",
+         "set": false,
+         "typeString": "System.Int32",
+         "value": "1",
+         "valueConstant": null
+        }
+       ],
+       "TemporaryResult": true
+      }
+     ],
+     "Weight": 100
+    }
+   ]
+  }
+ ],
+ "PublishState": "PUBLISHED",
+ "Requirements": {
+  "ExclusionTags": {
+   "items": [
+    "event_co_wornCargoLifters",
+    "MODIFIED_STAT_MechTechSkill"
+   ],
+   "tagSetSourceFile": "Tags/CompanyTags"
+  },
+  "RequirementComparisons": [
+   {
+    "obj": "ExpenseLevel",
+    "op": "LessThan",
+    "val": 0,
+    "valueConstant": "0"
+   },
+   {
+    "obj": "TaskDuration",
+    "op": "GreaterThan",
+    "val": 0,
+    "valueConstant": "0"
+   },
+   {
+    "obj": "MechTechSkill",
+    "op": "GreaterThanOrEqual",
+    "val": 2,
+    "valueConstant": "2"
+   }
+  ],
+  "RequirementTags": {
+   "items": null,
+   "tagSetSourceFile": ""
+  },
+  "Scope": "Company"
+ },
+ "Scope": "Company",
+ "ValidationState": "UNTESTED",
+ "Weight": 40
+}

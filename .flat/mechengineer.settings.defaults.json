@@ -1,0 +1,800 @@
+{
+ "AccuracyEffects": {
+  "CombatHUDTooltipName": "WEAPON MOUNT",
+  "CombatHUDTooltipNameDescription": "The name to call the ARM MOUNTED accuracy bonus in the combat tooltips.",
+  "Enabled": true,
+  "EnabledDescription": "Enables statistic effects for arm accuracy."
+ },
+ "ArmActuator": {
+  "CustomDescriptionTemplate": "<color=#F79B26FF><b>Arm Actuator Limit</b>: {0}</color>\r\n",
+  "DefaultCBTDefHand": "emod_arm_part_hand",
+  "DefaultCBTDefLower": "emod_arm_part_lower",
+  "DefaultCBTHand": "emod_arm_part_hand",
+  "DefaultCBTLower": "emod_arm_part_lower",
+  "DefaultCBTShoulder": "emod_arm_part_shoulder",
+  "DefaultCBTUpper": "emod_arm_part_upper",
+  "DescriptionIdentifier": "ArmActuatorSupport",
+  "DescriptionTemplate": "<color=#F79B26FF><b>Arm Actuator Limit</b>: <b>{0}</b> on left and <b>{1}</b> on right</color>\r\n",
+  "Enabled": true,
+  "EnabledDescription": "Enables CBT arm actuators with CC like handling.",
+  "ExtendHandLimit": true,
+  "ForceFullDefaultActuators": false,
+  "IgnoreFullActuatorsTag": null,
+  "InterruptHandDropIfNoLower": false
+ },
+ "ArmorStructureChanges": {
+  "Enabled": true,
+  "EnabledDescription": "Enables statistic effects for multiplying structure and armor values, happens before/after combat."
+ },
+ "ArmorStructureRatio": {
+  "Enabled": true,
+  "EnabledDescription": "CBT rule enforcement, that armor at every mechs location is not more than 2 times the structure, head is allowed to be 3 times.",
+  "IgnoreChassisTag": "ignore_armor_structure_ratio"
+ },
+ "AutoFixer": {
+  "AutoFixWeaponDefSlotsChanges": [
+   {
+    "SlotChange": {
+     "By": 2,
+     "From": 2,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "AC5"
+   },
+   {
+    "SlotChange": {
+     "By": 4,
+     "From": 3,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "AC10"
+   },
+   {
+    "SlotChange": {
+     "By": 6,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "AC20"
+   },
+   {
+    "SlotChange": {
+     "By": 2,
+     "From": 5,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "Gauss"
+   },
+   {
+    "SlotChange": {
+     "By": 1,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "LRM20"
+   },
+   {
+    "SlotChange": {
+     "By": -2,
+     "From": 3,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "TAG"
+   },
+   {
+    "SlotChange": {
+     "By": 3,
+     "From": 1,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": {
+     "By": 1,
+     "From": 5,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Type": "LB2X"
+   },
+   {
+    "SlotChange": {
+     "By": 3,
+     "From": 2,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "LB5X"
+   },
+   {
+    "SlotChange": {
+     "By": 2,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "LB10X"
+   },
+   {
+    "SlotChange": {
+     "By": 5,
+     "From": 6,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "LB20X"
+   },
+   {
+    "SlotChange": {
+     "By": 2,
+     "From": 1,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "UAC2"
+   },
+   {
+    "SlotChange": {
+     "By": 3,
+     "From": 2,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "UAC5"
+   },
+   {
+    "SlotChange": {
+     "By": 4,
+     "From": 3,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "UAC10"
+   },
+   {
+    "SlotChange": {
+     "By": 6,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "TonnageChange": null,
+    "Type": "UAC20"
+   }
+  ],
+  "ChassisDefInitialToTotalTonnageFactor": 0.1,
+  "ChassisDefInitialTonnage": true,
+  "ChassisDefMaxJumpjets": true,
+  "ChassisDefMaxJumpjetsCount": 8,
+  "ChassisDefMaxJumpjetsRating": 400,
+  "ChassisDefSlotsChanges": [
+   {
+    "Change": {
+     "By": 2,
+     "From": 10,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "LeftTorso"
+   },
+   {
+    "Change": {
+     "By": 2,
+     "From": 10,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "RightTorso"
+   },
+   {
+    "Change": {
+     "By": 2,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "LeftLeg"
+   },
+   {
+    "Change": {
+     "By": 2,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "RightLeg"
+   },
+   {
+    "Change": {
+     "By": 5,
+     "From": 1,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "Head"
+   },
+   {
+    "Change": {
+     "By": 11,
+     "From": 4,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "CenterTorso"
+   },
+   {
+    "Change": {
+     "By": 4,
+     "From": 8,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "LeftArm"
+   },
+   {
+    "Change": {
+     "By": 4,
+     "From": 8,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "RightArm"
+   },
+   {
+    "Change": {
+     "By": 4,
+     "From": 2,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "LeftLeg"
+   },
+   {
+    "Change": {
+     "By": 4,
+     "From": 2,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "RightLeg"
+   },
+   {
+    "Change": {
+     "By": 3,
+     "From": 3,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "Head"
+   },
+   {
+    "Change": {
+     "By": 1,
+     "From": 11,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "LeftArm"
+   },
+   {
+    "Change": {
+     "By": 1,
+     "From": 11,
+     "FromIsMin": false,
+     "NewMin": null
+    },
+    "Location": "RightArm"
+   }
+  ],
+  "CockpitCategorizer": {
+   "AllowedLocations": "Head",
+   "AutoAddCategoryIdIfMissing": true,
+   "CategoryId": "Cockpit",
+   "ComponentType": "Upgrade",
+   "Prefix": "Gear_Cockpit_"
+  },
+  "CockpitSlotChange": {
+   "By": 0,
+   "From": 1,
+   "FromIsMin": false,
+   "NewMin": null
+  },
+  "CockpitTonnageChange": {
+   "By": 3,
+   "From": 0,
+   "FromIsMin": false,
+   "NewMin": null
+  },
+  "Enabled": true,
+  "EnabledDescription": "Fixes up mechs, chassis and components to adhere to CBT rules and defaults. Done programmatically to be compatible to new mechs in the future.",
+  "GyroCategorizer": {
+   "AllowedLocations": "CenterTorso",
+   "AutoAddCategoryIdIfMissing": true,
+   "CategoryId": "Gyro",
+   "ComponentType": "Upgrade",
+   "Prefix": "Gear_Gyro_"
+  },
+  "GyroSlotChange": {
+   "By": 1,
+   "From": 3,
+   "FromIsMin": false,
+   "NewMin": null
+  },
+  "LegUpgradesCategorizer": {
+   "AllowedLocations": "Legs",
+   "AutoAddCategoryIdIfMissing": true,
+   "CategoryId": "LegFootActuator",
+   "ComponentType": "Upgrade",
+   "Prefix": null
+  },
+  "LegUpgradesSlotChange": {
+   "By": -1,
+   "From": 3,
+   "FromIsMin": true,
+   "NewMin": 1
+  },
+  "MechDefAutoFixAgainstMaxFreeTonnage": [
+   "mechdef_atlas_AS7-D-HT",
+   "mechdef_blackknight_BL-6b-KNT",
+   "mechdef_highlander_HGN-732b"
+  ],
+  "MechDefAutoFixInitialTonnageDiffThreshold": 0.4,
+  "MechDefCoolingDef": "emod_kit_shs",
+  "MechDefCoreDummy": "emod_engine_dummy",
+  "MechDefEngine": true,
+  "MechDefHeatBlockDef": "emod_engine_cooling"
+ },
+ "ComponentExplosions": {
+  "Enabled": true,
+  "EnabledDescription": "Allows each component to define destructive forces in case they explode, also implements proper CASE."
+ },
+ "CompressFloatieMessages": {
+  "Enabled": true,
+  "EnabledDescription": "Compresses similar floatie messages to a single message with a multiplier. E.g. MEDIUM LASER DESTROYED x 4"
+ },
+ "CriticalEffects": {
+  "CritDestroyedDeathText": "DESTROYED: Mech is incapacitated, reason is {0}",
+  "CritDestroyedText": "DESTROYED: {0}",
+  "CritFloatieMessage": "{0} CRIT",
+  "CritHitText": "HIT {0}: {1}",
+  "CritLinkedText": "Critical hits are linked to '{0}'",
+  "DescriptionIdentifier": "Criticals",
+  "DescriptionTemplate": "Critical Effects:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",
+  "DescriptionUseName": false,
+  "DestroyedFloatieMessage": "{0} DESTROYED",
+  "ElementTemplate": " <indent=10%><line-indent=-5%><line-height=65%>{{element}}</line-height></line-indent></indent>\r\n",
+  "Enabled": true,
+  "EnabledDescription": "Allows custom multiple critical hit states for individual components."
+ },
+ "DamageIgnore": {
+  "Enabled": true,
+  "EnabledDescription": "Enables ignore_damage flag."
+ },
+ "DebugCycleCombatSounds": {
+  "Enabled": false,
+  "EnabledDescription": "Cycle through SFX sounds when pressing a specific button on the start menu",
+  "SpecificButton": "Skirmish"
+ },
+ "DebugSaveMechToFile": {
+  "Enabled": false,
+  "EnabledDescription": "Saves mechdefs to 'MechEngineer/Saves' when saving a mech in the mechlab"
+ },
+ "DebugScreenshotMechs": {
+  "Enabled": false,
+  "EnabledDescription": "Edit a mech then cancel, it then will go through all mechs and make screenshots for them. To improve loading times use the TagManager to blacklist all components so the MechLab doesn't have to load them.",
+  "OnlyInvalidMechs": false,
+  "OnlyInvalidMechsDescription": "Only make screenshots of mechs with invalid configurations.",
+  "ScreenshotDirectoryPath": "screenshots",
+  "ScreenshotDirectoryPathDescription": "Create the directory manually first, otherwise it won't save any of the images."
+ },
+ "DynamicSlots": {
+  "DynamicSlotsValidateDropEnabled": true,
+  "DynamicSlotsValidateDropEnabledDescription": "Don't allow dropping of items that would exceed the available slots.",
+  "Enabled": true,
+  "EnabledDescription": "Allows components to take up space dynamically on a mech.",
+  "LocationPriorityOrder": [
+   "CenterTorso",
+   "Head",
+   "LeftTorso",
+   "LeftLeg",
+   "RightTorso",
+   "RightLeg",
+   "LeftArm",
+   "RightArm"
+  ],
+  "LocationPriorityOrderDescription": "From highest to lowest priority where to add dynamic slots too, relevant if locations have same amount of free slots. Visual impact only.",
+  "MovableSlotText": "movable slot",
+  "ReservedSlotText": "reserved slot"
+ },
+ "Engine": {
+  "AllowMixingHeatSinkTypes": false,
+  "AllowMixingHeatSinkTypesDescription": "Allow heat sinks patchwork.",
+  "AllowMountingAllRatings": false,
+  "AllowMountingAllRatingsDescription": "Allow mounting all fusion core rating regardless of min/max sprint factors.",
+  "AutoConvertJumpCapacityInDefToStat": true,
+  "AutoConvertJumpCapacityInDefToStatDescription": "All JumpCapacity values in JumpJetDefs will be auto-converted to the JumpCapacity statistic.",
+  "CBTWalkAndRunMPRounding": false,
+  "CBTWalkAndRunMPRoundingDescription": "If true, walking MPs are rounded down and running MPs are rounded up.",
+  "DefaultEngineHeatSinkId": "Gear_HeatSink_Generic_Standard",
+  "DefaultEngineHeatSinkIdDescription": "Default heat sink type for engines without a kit.",
+  "Enabled": true,
+  "EnabledDescription": "Provides engines that can be installed on mechs similar to how CBT works.",
+  "EnforceRulesForAdditionalInternalHeatSinks": true,
+  "EnforceRulesForAdditionalInternalHeatSinksDescription": "Can't have those juicy ++ cooling systems with smaller fusion cores than the rules allow it.",
+  "EngineMissingFallbackHeatSinkCapacity": 30,
+  "EngineMissingFallbackHeatSinkCapacityDescription": "Heat sink capacity if no engine is detected.",
+  "EngineRatingForChassisMovementStat": 250,
+  "EngineRatingForChassisMovementStatDescription": "The engine rating to use when evaluating the movement stat of a mech.",
+  "IgnoreLimitEngineChassisTag": "",
+  "JumpJetDefaultJumpHeat": 3,
+  "JumpJetDefaultJumpHeatDescription": "The heat the jump jet produces when fully* used (* jumping below max distance reduces produced heat). Can be adjusted using the JumpHeat statistic.",
+  "JumpJetMovementPointDistanceMultiplier": null,
+  "JumpJetMovementPointDistanceMultiplierDescription": "The distance of a TT movement point when calculating jump distances, if undefined falls back to MovementPointDistanceMultiplier.",
+  "LimitEngineCoresToTonnage": true,
+  "MinimJumpHeat": 9,
+  "MinimJumpHeatDescription": "Minimum heat when doing a jump, even if only one jump jet exists and only when jumping one hex.",
+  "MinimumHeatSinksOnMech": 10,
+  "MinimumHeatSinksOnMechDescription": "Minimum heatsinks a mech requires.",
+  "MovementPointDistanceMultiplier": 24,
+  "MovementPointDistanceMultiplierDescription": "The distance of a TT movement point, 24 is vanilla CombatGameConstants.ExperimentalGridDistance .",
+  "RunMultiplier": 1.5,
+  "RunMultiplierDescription": "How much faster running is than walking."
+ },
+ "Globals": {
+  "Enabled": true,
+  "EnabledDescription": "Allows tooltips and other features to access the current mech from context."
+ },
+ "HardpointFix": {
+  "AllowDefaultLoadoutWeapons": false,
+  "AllowDefaultLoadoutWeaponsDescription": "Ignore limits that would prevent mounting default loadouts.",
+  "AutoFixChassisDefWeaponHardpointCounts": false,
+  "AutoFixChassisDefWeaponHardpointCountsDescription": "Changes chassis hardpoints based on configured prefabs.",
+  "Enabled": true,
+  "EnabledDescription": "Optimizes the way installed weapons are shown on a mech model.",
+  "EnforceHardpointLimits": false,
+  "EnforceHardpointLimitsDescription": "Enforces hardpoint limits in mechlab only allowing configured prefabs.",
+  "FallbackPrefabsForComponentDefIds": [
+   "Weapon_Mortar_MechMortar"
+  ],
+  "FallbackPrefabsForComponentDefIdsDescription": "A list of components that always should be assigned a weapon prefab to.",
+  "TraceLogDebugMappings": false,
+  "TraceLogDebugMappingsDescription": "Trace all GetComponentBlankNames and GetComponentPrefabName calls. Otherwise only some of them are logged.",
+  "WeaponPrefabMappings": [
+   {
+    "HardpointCandidates": [
+     "ac2",
+     "uac2",
+     "rac2",
+     "lbx2",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "AC2"
+   },
+   {
+    "HardpointCandidates": [
+     "ac5",
+     "uac5",
+     "rac5",
+     "lbx5",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "AC5"
+   },
+   {
+    "HardpointCandidates": [
+     "ac10",
+     "uac10",
+     "lbx10",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "AC10"
+   },
+   {
+    "HardpointCandidates": [
+     "ac20",
+     "uac20",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "AC20"
+   },
+   {
+    "HardpointCandidates": [
+     "lbx10",
+     "lbx20",
+     "lbx5",
+     "lbx2",
+     "ac10",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "lbx10"
+   },
+   {
+    "HardpointCandidates": [
+     "uac5",
+     "uac20",
+     "uac10",
+     "uac2",
+     "ac5",
+     "ac20",
+     "ac10",
+     "ac2",
+     "rac5",
+     "lbx5",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "uac5"
+   },
+   {
+    "HardpointCandidates": [
+     "artillery",
+     "ac20",
+     "uac20",
+     "lbx20",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "artillery"
+   },
+   {
+    "HardpointCandidates": [
+     "mortar",
+     "ac20",
+     "uac20",
+     "lbx20",
+     "ac",
+     "lbx"
+    ],
+    "PrefabIdentifier": "mortar"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm5",
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20"
+    ],
+    "PrefabIdentifier": "lrm5"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm10",
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "lrm5",
+     "rl10"
+    ],
+    "PrefabIdentifier": "lrm10"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm15",
+     "lrm20",
+     "srm20",
+     "lrm10",
+     "lrm5",
+     "rl20",
+     "rl15"
+    ],
+    "PrefabIdentifier": "lrm15"
+   },
+   {
+    "HardpointCandidates": [
+     "lrm20",
+     "srm20",
+     "lrm15",
+     "lrm10",
+     "lrm5",
+     "rl20",
+     "rl15",
+     "rl10"
+    ],
+    "PrefabIdentifier": "lrm20"
+   },
+   {
+    "HardpointCandidates": [
+     "machinegun",
+     "mg",
+     "lmg",
+     "hmg"
+    ],
+    "PrefabIdentifier": "MachineGun"
+   },
+   {
+    "HardpointCandidates": [
+     "srm2",
+     "srm4",
+     "srm6"
+    ],
+    "PrefabIdentifier": "srm2"
+   },
+   {
+    "HardpointCandidates": [
+     "srm4",
+     "srm6",
+     "srm2"
+    ],
+    "PrefabIdentifier": "srm4"
+   },
+   {
+    "HardpointCandidates": [
+     "srm6",
+     "srm4",
+     "srm2"
+    ],
+    "PrefabIdentifier": "srm6"
+   },
+   {
+    "HardpointCandidates": [
+     "PPC",
+     "ppc",
+     "hppc",
+     "lppc",
+     "snppc"
+    ],
+    "PrefabIdentifier": "PPC"
+   },
+   {
+    "HardpointCandidates": [
+     "gauss",
+     "hgauss",
+     "lgauss"
+    ],
+    "PrefabIdentifier": "Gauss"
+   }
+  ]
+ },
+ "InvalidInventory": {
+  "Enabled": true,
+  "EnabledDescription": "Make sure invalid mech configurations can't be saved in skirmish and can't be fielded in the campaign."
+ },
+ "LocationalEffects": {
+  "Enabled": true,
+  "EnabledDescription": "Allows other features to support locational statistic effects."
+ },
+ "MechLabSlots": {
+  "Enabled": true,
+  "EnabledDescription": "Makes the mech lab adhere to any custom mech slot counts.",
+  "HideECMButton": false,
+  "HideHelpButton": false,
+  "MechLabArmTopPadding": 120,
+  "MechLabGeneralSlots": 3,
+  "MechLabGeneralWidgetLabel": "General"
+ },
+ "MoveMultiplierStat": {
+  "Enabled": true,
+  "EnabledDescription": "Introduces a new statistic effect to allow easy manipulation of (mech only) movement."
+ },
+ "OrderedStatusEffects": {
+  "Enabled": true,
+  "EnabledDescription": "Orders status effects, so e.g. install order of mechComponents does not matter for additive and multiplicative effects. Affects all statistic data.",
+  "Order": [
+   "Int_Add",
+   "Float_Add",
+   "Int_Multiply",
+   "Int_Multiply_Float",
+   "Float_Multiply",
+   "Float_Multiply_Int",
+   "Int_Subtract",
+   "Float_Subtract",
+   "Int_Divide",
+   "Int_Divide_Float",
+   "Float_Divide",
+   "Float_Divide_Int",
+   "Int_Divide_Denom",
+   "Int_Divide_Denom_Float",
+   "Float_Divide_Denom",
+   "Float_Divide_Denom_Int"
+  ],
+  "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemded unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'."
+ },
+ "OverrideDescriptions": {
+  "BonusDescriptionsDescriptionTemplate": "Traits:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",
+  "BonusDescriptionsElementTemplate": " <indent=10%><line-indent=-5%><line-height=65%>{{element}}</line-height></line-indent></indent>\r\n",
+  "DescriptionIdentifier": "Bonuses",
+  "Enabled": true,
+  "EnabledDescription": "Allows other features to override tooltips and descriptions, also provides bonus description management."
+ },
+ "OverrideGhostVFX": {
+  "Blacklisted": [
+   "vfxPrfPrtl_ECM_loop",
+   "vfxPrfPrtl_ECM_opponent_loop",
+   "vfxPrfPrtl_ECMcarrierAura_loop"
+  ],
+  "BlipStrong": "Weak",
+  "BlipWeak": "Weak",
+  "Enabled": true,
+  "EnabledDescription": "Allows to turn off or reduce the strong and weak ghost effects of ECM, and allows to remove the ECM globe effect."
+ },
+ "OverrideStatTooltips": {
+  "AvgRangeTitleText": "Movement",
+  "CloseRangeMax": 89,
+  "DurabilityTitleText": "Long Range",
+  "Enabled": true,
+  "EnabledDescription": "Overrides stat tooltips of mechs including 'progress bar' summaries.",
+  "FirepowerTitleText": "Close Range",
+  "HeatEfficiencyTitleText": "Heat Efficiency",
+  "LongRangeMax": 569,
+  "MediumRangeMax": 359,
+  "MeleeTitleText": "Durability",
+  "MovementTitleText": "Medium Range"
+ },
+ "OverrideTonnage": {
+  "ArmorRoundingPrecision": null,
+  "ArmorRoundingPrecisionDescription": "If not set, default is ARMOR_PER_STEP * TONNAGE_PER_ARMOR_POINT",
+  "Enabled": true,
+  "EnabledDescription": "Allows other features to override tonnage calculations.",
+  "KilogramStandardPrecision": 0.001,
+  "KilogramStandardPrecisionDescription": "Used for Small Support Vehicles, ProtoMechs and battlesuits.",
+  "MechLabMechInfoWidgetDecimalPlaces": 3,
+  "MechLabMechInfoWidgetDecimalPlacesDescription": "How many digits to show after the comma in the mech lab.",
+  "PrecisionEpsilon": 0.0001,
+  "PrecisionEpsilonDescription": "The maximum tonnage two values can be apart to be viewed as being the same, vanilla uses 100 grams.",
+  "TonnageStandardPrecision": 0.5,
+  "TonnageStandardPrecisionDescription": "Set to 0.001 for kg fractional accounting on BattleMechs, only modifies half-ton rounding operations as by rule",
+  "UnderweightWarningThreshold": 1,
+  "UnderweightWarningThresholdDescription": "How many tons a mech has to be underweight to show a warning"
+ },
+ "ShutdownInjuryProtection": {
+  "Enabled": true,
+  "EnabledDescription": "Pilots receive injury when mech receives overheat damage or has to shut down in case life support is destroyed.",
+  "HeatDamageInjuryEnabled": true,
+  "ShutdownInjuryEnabled": true
+ },
+ "TagManager": {
+  "BlacklistComponentTags": [],
+  "BlacklistComponentTagsDescription": "Blacklists components with specified tags, has precedence over whitelisting.",
+  "BlacklistMechTags": [],
+  "BlacklistMechTagsDescription": "Similar to BlacklistComponentTags but with MechTags",
+  "Enabled": false,
+  "EnabledDescription": "Manipulates MechDef and ComponentDef Tags",
+  "LostechStockWeaponVariantDescription": "Fixes lostech variant weapon tagging by checking if id ends with -STOCK.",
+  "LostechStockWeaponVariantFix": true,
+  "SkirmishWhitelistTags": [
+   "component_type_stock"
+  ],
+  "SkirmishWhitelistTagsDescription": "Components with these tags will appear in the skirmish mechlab, blacklisted tagged items never appear.",
+  "WhitelistComponentTags": [
+   "component_type_stock",
+   "component_type_variant",
+   "component_type_lostech"
+  ],
+  "WhitelistComponentTagsDescription": "Whitelists components with specified tags.",
+  "WhitelistMechTags": [
+   "unit_release"
+  ],
+  "WhitelistMechTagsDescription": "Similar to WhitelistComponentTags but with MechTags"
+ },
+ "TurretLimitedAmmo": {
+  "Enabled": true,
+  "EnabledDescription": "Turrets use up ammo and don't explode once ammo is gone."
+ },
+ "TurretMechComponents": {
+  "Enabled": true,
+  "EnabledDescription": "Turrets can now use components and benefit from their status effects."
+ }
+}

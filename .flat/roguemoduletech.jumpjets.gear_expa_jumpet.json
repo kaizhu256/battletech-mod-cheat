@@ -1,0 +1,83 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "350% Jump Jet Dist.",
+ "BonusValueB": "Bulwark/Stealth",
+ "ComponentSubType": "Functionality",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "JumpJet",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "JumpDistance: +350%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "PartialWing"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "no_salvage"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00028"
+  }
+ },
+ "Description": {
+  "Cost": 125000,
+  "Details": "Jump jet and electronics suite for the Medium Power Armour.",
+  "Icon": "uixSvgIcon_action_jump",
+  "Id": "Gear_EXPA_Jumpet",
+  "Manufacturer": "Generic",
+  "Model": "S",
+  "Name": "PA jump jets",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "PA Jump Jets"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "JumpCapacity": 1,
+ "MaxTonnage": 5,
+ "MinTonnage": 5,
+ "PrefabIdentifier": "JumpJet",
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Increases PA Jump Distance",
+    "Icon": "uixSvgIcon_equipment_Gyro",
+    "Id": "StatusEffect-EXPA-Jump",
+    "Name": "JUMP DISTANCE INCREASED"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": 1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "3.5",
+    "operation": "Float_Multiply",
+    "statName": "JumpDistanceMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false,
+    "showInTargetPreview": false
+   }
+  }
+ ]
+}

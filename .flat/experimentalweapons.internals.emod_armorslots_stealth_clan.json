@@ -1,0 +1,274 @@
+{
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "Reqs. ECM",
+ "BonusValueB": "CASE ENABLED!",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "ClanArmor",
+   "StealthArmor"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ActivatableComponent": {
+   "ActivationIsBuff": true,
+   "ActivationMessage": "Stealth Activated",
+   "ActiveByDefault": true,
+   "ButtonName": "Stealth",
+   "CanNotBeActivatedManualy": false,
+   "DeactivationMessage": "Stealth Deactivated",
+   "Linkage": {
+    "OnActivate": {
+     "Activate": [
+      "Camouflage",
+      "ECM Mode"
+     ],
+     "Deactivate": []
+    },
+    "OnDeactivate": {
+     "Activate": [],
+     "Deactivate": [
+      "Camouflage"
+     ]
+    }
+   },
+   "NoUniqueCheck": true,
+   "offlineStatusEffects": [],
+   "statusEffects": [
+    {
+     "Description": {
+      "Details": "Makes the carrier much harder to detect with stealth",
+      "Icon": "uixSvgIcon_status_ECM-ghost",
+      "Id": "LV_Stealth_Effect",
+      "Name": "STEALTH"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": 1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.String",
+      "modValue": "0.7_3_2_2_3",
+      "operation": "Set",
+      "statName": "LV_STEALTH"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "forcePathRebuild": false,
+      "forceVisRebuild": true,
+      "range": 0,
+      "showInStatusPanel": false,
+      "showInTargetPreview": false,
+      "specialRules": "NotSet"
+     }
+    },
+    {
+     "Description": {
+      "Details": "Signature Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Signature_Decrease_CSTEALTH",
+      "Name": "Stealth Signature Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.80",
+      "operation": "Float_Multiply",
+      "statName": "SensorSignatureModifier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Visibility Statuseffect.",
+      "Icon": "uixSvgIcon_equipment_TTS",
+      "Id": "Stealth_Visibility_Decrease_CSTEALTH",
+      "Name": "Stealth Visbility Decrease"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "0.80",
+      "operation": "Float_Multiply",
+      "statName": "SpottingVisibilityMultiplier"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat generation",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Generation_CSTEALTH",
+      "Name": "Increased Heat"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Buff",
+     "statisticData": {
+      "modType": "System.Single",
+      "modValue": "1.1",
+      "operation": "Float_Multiply",
+      "statName": "HeatGenerated",
+      "targetCollection": "Weapon"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    },
+    {
+     "Description": {
+      "Details": "Heat Capacity Penalty",
+      "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+      "Id": "Stealth_Heat_Capacity_CSTEALTH",
+      "Name": "Decreased Heat Capacity"
+     },
+     "durationData": {
+      "duration": -1,
+      "stackLimit": -1
+     },
+     "effectType": "StatisticEffect",
+     "nature": "Debuff",
+     "statisticData": {
+      "modType": "System.Int32",
+      "modValue": "-6",
+      "operation": "Int_Add",
+      "statName": "HeatSinkCapacity"
+     },
+     "targetingData": {
+      "effectTargetType": "Creator",
+      "effectTriggerType": "Passive",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+     }
+    }
+   ]
+  },
+  "ArmorRepair": {
+   "ArmorCBCost": 1.45,
+   "ArmorTPCost": 1.35
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "CASE",
+    "Stealth",
+    "StealthSensors: 70%, 3, 2, 2, 3",
+    "Visibility: -20%",
+    "Signature: -20%",
+    "StealthReserved: 1",
+    "HeatGenerated: +10%",
+    "HeatPerTurn: +6",
+    "ReqECM",
+    "ArmorTPCost: 35%",
+    "ArmorCBCost: 45%"
+   ]
+  },
+  "CASE": {
+   "AllLocations": true
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "CriticalEffects": {
+   "LinkedStatisticName": "Stealth System"
+  },
+  "ErrorMessage": "Stealth Armor requires a ECM!",
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "Linked": {
+   "Links": [
+    {
+     "ComponentDefId": "Linked_stealth_clan",
+     "Location": "LeftTorso"
+    },
+    {
+     "ComponentDefId": "Linked_stealth_clan",
+     "Location": "RightTorso"
+    },
+    {
+     "ComponentDefId": "Linked_stealth_clan",
+     "Location": "LeftArm"
+    },
+    {
+     "ComponentDefId": "Linked_stealth_clan",
+     "Location": "RightArm"
+    },
+    {
+     "ComponentDefId": "Linked_stealth_clan",
+     "Location": "LeftLeg"
+    },
+    {
+     "ComponentDefId": "Linked_stealth_clan",
+     "Location": "RightLeg"
+    }
+   ]
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "2600 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 45",
+    "TechCost": "1.4 * [[Chassis.Tonnage]] / 10"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 1200000,
+  "Details": "Seeing the Stealth Armor made by the Capellan Confederation on the invasions, the Society took into researching and equipping it with clan technology. Used mostly on experimental low cost stealth units. Reserves 6 slots and requires an ECM. <b><color=#00ff00>CASE Enabled</color></b>",
+  "Icon": "StealthArmor",
+  "Id": "emod_armorslots_stealth_CLAN",
+  "Manufacturer": "Society",
+  "Model": "Armor",
+  "Name": "Stealth Armor (C)",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Stealth (C)"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 0,
+ "statusEffects": []
+}

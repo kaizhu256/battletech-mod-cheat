@@ -1,0 +1,108 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.08,
+ "APMaxArmorThickness": 48,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "AmmoCategory": "ChemLargeInternal",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#8A2BE2",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "HandHeld",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "HandHeld: 4.5",
+    "ChemicalLaser",
+    "HandHeldAmmo: 10",
+    "HandHeldArmored"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "HandHeld"
+   },
+   {
+    "CategoryID": "w/s/h/HandHeld"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed",
+    "ignore_damage"
+   ]
+  },
+  "HandHeld": {
+   "HandsUsed": true,
+   "Tonnage": 4
+  },
+  "InventorySorter": {
+   "SortKey": "02008"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 40,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 120000,
+  "Details": "This is an Amazing Relic, a Large Laser Rifle! Just look at this boss, designed to be carried by Mech's into Combat without requiring to rewire anything. These SLDF BlackHeart guys have been crafty!\n\n <b><color=#F79232>10 rounds.</color></b>",
+  "Icon": "ray-gun",
+  "Id": "Hand_Weapon_LargeLaserRifle",
+  "Manufacturer": "SLDF",
+  "Model": "HH Medium Chem Laser",
+  "Name": "HH L Chem Laser",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Laser Rifle (L)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1125,
+ "HeatDamage": 0,
+ "HeatGenerated": 0,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 6.6,
+ "InventorySize": 1,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 10,
+ "Tonnage": 0,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+ "WeaponSubType": "LargeLaser",
+ "statusEffects": [],
+ "weaponCategoryID": "Special"
+}

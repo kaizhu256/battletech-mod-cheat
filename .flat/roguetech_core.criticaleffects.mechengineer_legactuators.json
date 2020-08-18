@@ -1,0 +1,129 @@
+{
+ "Settings": [
+  {
+   "Description": {
+    "Details": "The {side} hip actuator was destroyed, reducing walk and sprint distances by 40%.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-HipDestroyed-{location}",
+    "Name": "{side} Hip Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.4",
+    "operation": "Float_Subtract",
+    "statName": "MoveMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The {side} upper leg actuator was destroyed, reducing walk and sprint distances by 10%.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-LegUpperActuatorDestroyed-{location}",
+    "Name": "{side} Upper Leg Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Subtract",
+    "statName": "MoveMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The {side} lower leg actuator was destroyed, reducing walk and sprint distances by 10%.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-LegLowerActuatorDestroyed-{location}",
+    "Name": "{side} Lower Leg Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Subtract",
+    "statName": "MoveMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "The {side} foot actuator was destroyed, reducing walk and sprint distances by 10%.",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-LegFootActuatorDestroyed-{location}",
+    "Name": "{side} Foot Destroyed"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.1",
+    "operation": "Float_Subtract",
+    "statName": "MoveMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  },
+  {
+   "Description": {
+    "Details": "Hit has been destroyed making piloting checks harder to pass",
+    "Icon": "uixSvgIcon_equipment_ActuatorLeg",
+    "Id": "CriticalEffect-HipDestroyed-{location}-pilot-pen",
+    "Name": "Hip Destroyed Piloting Penalty"
+   },
+   "durationData": {
+    "duration": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Subtract",
+    "statName": "CBTBE_ActuatorDamage_Malus"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": true,
+    "showInTargetPreview": true
+   }
+  }
+ ]
+}

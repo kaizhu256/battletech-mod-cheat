@@ -1,0 +1,66 @@
+{
+ "Actions": [
+  {
+   "Type": "Ship_SetRepairState",
+   "additionalValues": [
+    "Drive"
+   ],
+   "value": "1"
+  }
+ ],
+ "AdditionalCost": 1000,
+ "AssignedCastDefId": "castDef_FarahDefault",
+ "AssignedCastDescription": "The Argo's drive is only operating at a fraction of its potential, Commander. With some time and materials, I believe I can boost the output of the secondary fusion reactors - to put it simply, I'll make the Argo go faster.",
+ "Category": "DRIVE_SYSTEM",
+ "Description": {
+  "Cost": 0,
+  "Details": "The <i>Argo</i>'s drive was enough to get it off the surface of a low-gravity moon, but much of the supporting infrastructure was damaged in the escape, and running the drive at full power requires extensive repairs. Once the repairs are complete, the drive can generate 1.5 g of thrust.",
+  "Icon": "uixSvgIcon_shipUpgrade_drive1",
+  "Id": "argoUpgrade_drive1",
+  "Name": "Drive Repairs",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_ArgoDrive1",
+ "Location": "ENGINEERING",
+ "PurchaseCost": 360000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_drive0",
+   "argoUpgrade_power2",
+   "argoUpgrade_structure1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "DriveTravelMultiplier",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 0.8,
+   "valueConstant": ""
+  },
+  {
+   "name": "DriveTravelMultiplier_Display",
+   "set": true,
+   "typeString": "System.Single",
+   "value": 20,
+   "valueConstant": ""
+  },
+  {
+   "name": "MechTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_drive1"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 10
+}

@@ -1,0 +1,112 @@
+{
+ "AMSImmune": true,
+ "AOECapable": true,
+ "AOEDamage": 6,
+ "AOEInstability": 6,
+ "AOERange": 120,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 200,
+ "AccuracyModifier": -2,
+ "AllowedLocations": "CenterTorso",
+ "AlwaysIndirectVisuals": true,
+ "AmmoCategory": "POD",
+ "AttackRecoil": 4,
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsMelee",
+    "BoltOn: 2",
+    "1shot",
+    "NoSelfHarm",
+    "AreaOfEffectDmg: 25",
+    "AreaOfEffect: 120",
+    "PipsIgnored: 10",
+    "AccuracyUnit: PowerArmor",
+    "AccuracyUnit2: +20",
+    "AccuracyUnit: Mech/Vehicle",
+    "AccuracyUnit2: -100",
+    "NoAA"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/h/BoltOn"
+   },
+   {
+    "CategoryID": "BoltOn"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 10,
+   "StabilityDamagePerAmmo": 5
+  },
+  "HandHeld": {
+   "HandsUsed": false,
+   "Tonnage": 2
+  },
+  "InventorySorter": {
+   "SortKey": "04002"
+  },
+  "MechConfiguration": {}
+ },
+ "Damage": 30,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 15000,
+  "Details": "Anti-Battle Armor Pod or B-Pod functions like an Anti-Personnel Pod except that it is designed to blast through the armor of battle suits. It does this by using explosive bomblets instead of shrapnel. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_POD_B",
+  "Manufacturer": "Solaris Arms",
+  "Model": "Explosive Canister",
+  "Name": "Anti-BattleArmor Pod",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "B POD"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 10,
+ "HeatDamage": 0,
+ "HeatGenerated": 2,
+ "HitGenerator": "Cluster",
+ "IFFDef": "notblanksowontdamageselfbutcandamagefriendlies",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 12.5,
+ "InventorySize": 1,
+ "MaxRange": 60,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "AC2",
+ "ProjectilesPerShot": 4,
+ "RangeSplit": [
+  60,
+  60,
+  60
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 1,
+ "Tonnage": 0,
+ "Type": "SRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+ "WeaponSubType": "SRM2",
+ "statusEffects": [],
+ "weaponCategoryID": "SpecialMelee"
+}

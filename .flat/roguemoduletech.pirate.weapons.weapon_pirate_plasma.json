@@ -1,0 +1,183 @@
+{
+ "AOECapable": true,
+ "AOEDamage": 30,
+ "AOEHeatDamage": 30,
+ "AOEInstability": 0,
+ "AOERange": 90,
+ "APArmorShardsMod": 0,
+ "APCriticalChanceMultiplier": 0,
+ "APMaxArmorThickness": 1,
+ "AccuracyModifier": 0,
+ "AdditionalImpactVFX": "WFX_LPlasma",
+ "AdditionalImpactVFXScaleX": 1,
+ "AdditionalImpactVFXScaleY": 1,
+ "AdditionalImpactVFXScaleZ": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Plasma",
+ "AttackRecoil": 4,
+ "BattleValue": 420,
+ "BonusValueA": "Bonus vs Overheat|",
+ "BonusValueB": "Damage Falloff.",
+ "CantHitUnaffecedByPathing": true,
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#00FF00",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 0,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "OHDamage: 70%",
+    "PLASMADEBUFF: 15%",
+    "DmgFallOff: 25%",
+    "WpnRecoil: 2",
+    "AreaOfEffect: 90",
+    "AreaOfEffectDmg: 30",
+    "AreaOfEffectHeatDmg: 30",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 20",
+    "FireTerrainDuration: 3",
+    "FireTerrainStrength: 15",
+    "ExplodiumFlat: 10%",
+    "WeaponBoom: 20",
+    "NoAA",
+    "IsPlasma"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/plasma"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 20,
+   "HeatDamage": 40,
+   "StabilityDamage": 20
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02016"
+  }
+ },
+ "Damage": 15,
+ "DamageOnJamming": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 860000,
+  "Details": "I dont wanna know what Moonshine was responsible for this. Someone hotwired a Clan and Standard Plasma Cannon together but with only 1 feeding system. On the upside this spreads the Plasma reaction all over its impact area. On the other hand it probably explodes. \n\n<b><color=#ffcc00>Uses Plasma Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "plasma-bolt",
+  "Id": "Weapon_Pirate_PLASMA",
+  "Manufacturer": "Victory",
+  "Model": "Plasma Cannon",
+  "Name": "Plasma Cannon",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Plasma Cannon (P)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.25,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDurationWithoutForest": 3,
+ "FireOnSuccessHit": true,
+ "FireTerrainCellRadius": 5,
+ "FireTerrainChance": 1,
+ "FireTerrainStrength": 15,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 5,
+ "GunneryJammingMult": 0.015,
+ "HeatDamage": 15,
+ "HeatGenerated": 50,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 4,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 1.7,
+ "PrefabIdentifier": "PPC",
+ "ProjectileScale": {
+  "x": 1.3,
+  "y": 1.3,
+  "z": 0.8
+ },
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  200,
+  300,
+  500
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 10,
+ "Type": "Flamer",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "Flamer",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "High energy residue reduces heat efficiency by 15%.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "PLASMA-Effect",
+    "Name": "Plasma Residue"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 1,
+    "stackLimit": 5,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "1.15",
+    "operation": "Float_Multiply",
+    "statName": "HeatGenerated",
+    "targetCollection": "Weapon"
+   },
+   "targetingData": {
+    "effectTargetType": "SingleTarget",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

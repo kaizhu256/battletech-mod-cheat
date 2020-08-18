@@ -1,0 +1,167 @@
+{
+ "AMSHitChance": -0.5,
+ "AOECapable": false,
+ "APArmorShardsMod": 0.35,
+ "APCriticalChanceMultiplier": 0.045,
+ "APMaxArmorThickness": 60,
+ "AccuracyModifier": -1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Flamer",
+ "AttackRecoil": 1,
+ "BattleValue": 0,
+ "BonusValueA": "+1Accuracy",
+ "BonusValueB": "+1EvasionIgnore",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "paweapon",
+   "range_close"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "BAWEAPON",
+    "PipsIgnored: +1",
+    "WpnAccuracy: +1",
+    "MissileHP: 2",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainStrength: 2",
+    "FireTerrainDuration: 1",
+    "Inferno: 1",
+    "AMSChance: -50%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/s/m/pa"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "04001"
+  }
+ },
+ "Damage": 1,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 20000,
+  "Details": "A single Tubed Inferno SRM Launcher with a single reload. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+  "Icon": "uixSvgIcon_weapon_Missile",
+  "Id": "Weapon_PowerArmor_INFERNO_CLAN",
+  "Manufacturer": "Holly",
+  "Model": "BA Short-Range Missile Launcher",
+  "Name": "BA I-SRM",
+  "Purchasable": true,
+  "Rarity": 20,
+  "UIName": "BA I-SRM (C)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FireDurationWithoutForest": 1,
+ "FireOnSuccessHit": true,
+ "FireTerrainChance": 1,
+ "FireTerrainStrength": 2,
+ "HeatDamage": 8,
+ "HeatGenerated": 0,
+ "IndirectFireCapable": false,
+ "Instability": 1,
+ "InventorySize": 1,
+ "MaxRange": 120,
+ "MinRange": 0,
+ "MissileHealth": 2,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "srm2",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  30,
+  60,
+  90
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 2,
+ "Tonnage": 0.2,
+ "Type": "SRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
+ "WeaponSubType": "SRM2",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.97",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "This unit is coated with burning chemicals.",
+    "Icon": "uixSvgIcon_biome_Heated",
+    "Id": "Effect_InfernoSRMHeat",
+    "Name": "INFERNO"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Subtract",
+    "statName": "HeatSinkCapacity"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": true,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ],
+ "weaponCategoryID": "BattleArmor"
+}

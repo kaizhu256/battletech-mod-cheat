@@ -1,0 +1,67 @@
+{
+ "AllowRefitTime": false,
+ "AvailableTimeout": 0,
+ "Description": {
+  "Details": "The journey with Grey Death Legion",
+  "Icon": "falconsFury_titlecard.png",
+  "Id": "fp_falconsFury",
+  "Name": "Falcon's Fury"
+ },
+ "Difficulty": 10,
+ "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+ "FlashpointLength": "MEDIUM",
+ "FlashpointShortDescription": "Clan Jade Falcon is planning an attack on Sudeten. Gray Death Legion, on behalf of House Steiner, offered us to participate in a defensive operation.",
+ "InProgressTimeout": 0,
+ "InternalName": "falconsFury",
+ "LanceDropTonnageHint": "None",
+ "LocationRequirements": {
+  "ExclusionTags": {
+   "items": [
+    "fp_finished_falconsFury"
+   ],
+   "tagSetSourceFile": ""
+  },
+  "RequirementComparisons": [],
+  "RequirementTags": {
+   "items": [
+    "planet_name_sudeten"
+   ],
+   "tagSetSourceFile": "Tags/PlanetNameTags"
+  },
+  "Scope": "StarSystem"
+ },
+ "MilestoneSetID": "ms_fp_falconsFury",
+ "PotentialEmployers": [
+  "GrayDeathLegion"
+ ],
+ "PublishState": "PUBLISHED",
+ "Repeatable": false,
+ "Requirements": [
+  {
+   "ExclusionTags": {
+    "items": [
+     "flashpoint_FalconsFury_Complete"
+    ],
+    "tagSetSourceFile": ""
+   },
+   "RequirementComparisons": [],
+   "RequirementTags": {
+    "items": [
+     "flashpoint_fightingGhosts_complete"
+    ],
+    "tagSetSourceFile": "Tags/CompanyTags"
+   },
+   "Scope": "Company"
+  }
+ ],
+ "RewardCollectionID": "itemCollection_reward_fp_falconsFury",
+ "Tags": {
+  "items": [],
+  "tagSetSourceFile": "tags/FlashpointTags"
+ },
+ "TargetFaction": "ClanJadeFalcon",
+ "UnitDropTonnageHint": "None",
+ "UseAvailableTimeoutOverride": false,
+ "UseInProgressTimeoutOverride": false,
+ "Weight": 50
+}

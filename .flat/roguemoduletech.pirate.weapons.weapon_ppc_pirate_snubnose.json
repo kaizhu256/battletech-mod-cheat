@@ -1,0 +1,155 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.163,
+ "APMaxArmorThickness": 84.5,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 149,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#66CDAA",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-10",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PPCDEBUFF: 1",
+    "WpnRecoil: 3",
+    "WpnAccuracy: -1",
+    "DmgFallOff: 35%",
+    "Explodium: 10%",
+    "WeaponBoom: 70"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/snppc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 70,
+   "StabilityDamage": 35
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02012"
+  }
+ },
+ "Damage": 15,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 780000,
+  "Details": "The Snub-Nose PPC is to a Particle Projector Cannon as a sawed-off is to a shotgun. And in typical periphery fashion they thought to improve it further by removing the EM Shielding, interfering with the 'Mech's Systems and spreading the shot out.... <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PIRATE_SNUBNOSE",
+  "Manufacturer": "Devils's Light",
+  "Model": "SN Particle Projector Cannon",
+  "Name": "Snub-Nose-PPC",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "SnubNose PPC (P)"
+ },
+ "DisableClustering": false,
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.35,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.175,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 8,
+ "InventorySize": 3,
+ "MaxRange": 550,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 5,
+ "RangeSplit": [
+  300,
+  360,
+  490
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 5,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPCSnub",
+ "WeaponSubType": "PPC",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

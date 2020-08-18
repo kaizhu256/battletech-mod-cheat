@@ -1,0 +1,83 @@
+{
+ "AllowedLocations": "Head",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "AdvancedSensors: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "CockpitSensors"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "default"
+   ]
+  },
+  "Lootable": {
+   "ItemID": "lootable_Sensors_Generic_Standard"
+  }
+ },
+ "Description": {
+  "Cost": 0,
+  "Details": "A Basic Sensors Suite.",
+  "Icon": "uixSvgIcon_equipment_Comms",
+  "Id": "Gear_Sensors_Generic_Standard",
+  "Manufacturer": "Generic",
+  "Model": "Standard",
+  "Name": "Standard Sensors",
+  "Purchasable": false,
+  "Rarity": 0,
+  "UIName": "Sensors Basic"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Provides detailed information on enemy units",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "LV_ADVANCED_SENSORS",
+    "Name": "Advanced Sensors"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  }
+ ]
+}

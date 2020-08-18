@@ -1,0 +1,138 @@
+{
+ "AbsoluteModifier": 0,
+ "AllowedLocations": "CenterTorso",
+ "BattleValue": 0,
+ "BonusValueA": "+20% Kinetic Protection|",
+ "BonusValueB": "-10% Energy Protection.",
+ "ComponentSubType": "NotSet",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Upgrade",
+ "CriticalComponent": false,
+ "Custom": {
+  "ArmorRepair": {
+   "ArmorCBCost": 1.25,
+   "ArmorTPCost": 1.2
+  },
+  "BonusDescriptions": {
+   "Bonuses": [
+    "MeleeDamageTaken: -35%",
+    "CritRes: -50%",
+    "Reserved: 6",
+    "ArmorTPCost: 20%",
+    "ArmorCBCost: 25%"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "Armor"
+   }
+  ],
+  "Color": {
+   "UIColor": "Gold"
+  },
+  "DynamicSlots": {
+   "BackgroundColor": "GoldHalf",
+   "BonusAText": "Dynamic Slot",
+   "BonusBText": " ",
+   "NameText": "Impact Resistant",
+   "ReservedSlots": 6,
+   "ShowIcon": false
+  },
+  "InventorySorter": {
+   "SortKey": "00009"
+  },
+  "WorkOrderCosts": {
+   "Install": {
+    "CBillCost": "1000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+    "TechCost": "1.2 * [[Chassis.Tonnage]] / 15"
+   }
+  }
+ },
+ "Description": {
+  "Cost": 160000,
+  "Details": "Impact Resistant Armor was originally developed by Lyran Commonwealth engineers for use on Solaris VII and other gladiatorial combat worlds. The armor consists of a flexible sealant that covers interlocking rings, covered by a thick flexible outer shell similar to tank treads. These rings flex when hit by a 'Mech sized melee weapon, reducing the damage. Despite being effective against physical weapons, the armor's flexibility means it is more likely to fail against armor-piercing ammunition and in hostile environments. Reserves 6 slots.",
+  "Icon": "uixSvgIcon_mwFury",
+  "Id": "emod_armorslots_impactresistant",
+  "Manufacturer": "Solaris",
+  "Model": "Impact Resistant",
+  "Name": "Impact Resistant",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Impact Resistant"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "RelativeModifier": 0,
+ "StatName": null,
+ "Tonnage": 0,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Takes less Kinetic Damage.",
+    "Icon": "uixSvgIcon_mwFury",
+    "Id": "StatusEffect-ImpactBonus",
+    "Name": "Reactive Plating"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": -1,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.65",
+    "operation": "Float_Multiply",
+    "statName": "DamageReductionMultiplierMelee"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  },
+  {
+   "Description": {
+    "Details": "MORE SPEED.",
+    "Icon": "uixSvgIcon_run_n_gun",
+    "Id": "ImpactCritPenalty",
+    "Name": "ChargerSprint"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1.5",
+    "operation": "Float_Multiply",
+    "statName": "CriticalHitChanceReceivedMultiplier"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "showInStatusPanel": false
+   }
+  }
+ ]
+}

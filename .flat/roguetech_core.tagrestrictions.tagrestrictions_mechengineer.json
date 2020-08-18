@@ -1,0 +1,660 @@
+{
+ "Settings": [
+  {
+   "IncompatibleTags": [
+    "ArmHandActuator",
+    "emod_arm_omni_hand",
+    "emod_arm_omni_lower"
+   ],
+   "Tag": "Riscpult"
+  },
+  {
+   "IncompatibleTags": [
+    "CASE",
+    "CASEDQUIRK"
+   ],
+   "RequiredTags": [],
+   "Tag": "CasedArmor"
+  },
+  {
+   "IncompatibleTags": [
+    "StealthSystem",
+    "MimeticSystem",
+    "MimeticSystemAdd",
+    "StealthSystemAdd",
+    "Chameleon",
+    "StealthX",
+    "SocietyChameleon"
+   ],
+   "RequiredTags": [],
+   "Tag": "Special_OmniStealth"
+  },
+  {
+   "IncompatibleTags": [
+    "CASE2",
+    "CASE",
+    "CASEDQUIRK"
+   ],
+   "RequiredTags": [],
+   "Tag": "Gear_armorslots_RISC"
+  },
+  {
+   "IncompatibleTags": [
+    "Riscpult",
+    "ArmLowerActuator"
+   ],
+   "RequiredTags": [
+    "OmniMech"
+   ],
+   "Tag": "OmniLowerActuator"
+  },
+  {
+   "IncompatibleTags": [
+    "Riscpult",
+    "ArmHandActuator"
+   ],
+   "RequiredTags": [
+    "OmniMech"
+   ],
+   "Tag": "OmniHandActuator"
+  },
+  {
+   "IncompatibleTags": [
+    "ArmLowerActuator",
+    "Riscpult"
+   ],
+   "RequiredTags": [
+    "OmniMech"
+   ],
+   "Tag": "emod_arm_omni_lower"
+  },
+  {
+   "IncompatibleTags": [
+    "ArmHandActuator",
+    "Riscpult"
+   ],
+   "RequiredAnyTags": [
+    "emod_arm_omni_lower"
+   ],
+   "RequiredTags": [
+    "OmniMech"
+   ],
+   "Tag": "emod_arm_omni_hand"
+  },
+  {
+   "IncompatibleTags": [
+    "Riscpult",
+    "OmniHand.LeftArm",
+    "OmniLower.LeftArm"
+   ],
+   "RequiredAnyTags": [],
+   "RequiredTags": [
+    "OmniMech"
+   ],
+   "Tag": "ActuatorEnhancementSystem.LeftArm"
+  },
+  {
+   "IncompatibleTags": [
+    "Riscpult",
+    "OmniHand.RightArm",
+    "OmniLower.RightArm"
+   ],
+   "RequiredAnyTags": [],
+   "RequiredTags": [
+    "OmniMech"
+   ],
+   "Tag": "ActuatorEnhancementSystem.RightArm"
+  },
+  {
+   "IncompatibleTags": [
+    "ActuatorEnhancementSystem.LeftArm"
+   ],
+   "RequiredTags": [],
+   "Tag": "OmniLower.LeftArm"
+  },
+  {
+   "IncompatibleTags": [
+    "ActuatorEnhancementSystem.RightArm"
+   ],
+   "RequiredTags": [],
+   "Tag": "OmniLower.RightArm"
+  },
+  {
+   "IncompatibleTags": [
+    "ActuatorEnhancementSystem.LeftArm"
+   ],
+   "RequiredTags": [
+    "OmniLower.LeftArm"
+   ],
+   "Tag": "OmniHand.LeftArm"
+  },
+  {
+   "IncompatibleTags": [
+    "ActuatorEnhancementSystem.RightArm"
+   ],
+   "RequiredTags": [
+    "OmniLower.RightArm"
+   ],
+   "Tag": "OmniHand.RightArm"
+  },
+  {
+   "IncompatibleTags": [
+    "OmniRestriction.LeftArm"
+   ],
+   "Tag": "OmniActuator.LeftArm"
+  },
+  {
+   "IncompatibleTags": [
+    "OmniRestriction.RightArm"
+   ],
+   "Tag": "OmniActuator.RightArm"
+  },
+  {
+   "IncompatibleTags": [
+    "OmniMech"
+   ],
+   "RequiredTags": [],
+   "Tag": "Gear_LaserInsulator"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.RightArm"
+   ],
+   "Tag": "Insulator.RightArm"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.LeftArm"
+   ],
+   "Tag": "Insulator.LeftArm"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.LeftTorso"
+   ],
+   "Tag": "Insulator.LeftTorso"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.RightTorso"
+   ],
+   "Tag": "Insulator.RightTorso"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.LeftLeg"
+   ],
+   "Tag": "Insulator.LeftLeg"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.RightLeg"
+   ],
+   "Tag": "Insulator.RightLeg"
+  },
+  {
+   "RequiredTags": [
+    "LaserIns.Head"
+   ],
+   "Tag": "Insulator.Head"
+  },
+  {
+   "RequiredTags": [
+    "TargetingComputer"
+   ],
+   "Tag": "BattleComputer"
+  },
+  {
+   "RequiredTags": [
+    "VTOL"
+   ],
+   "Tag": "Bomb"
+  },
+  {
+   "IncompatibleTags": [
+    "SpecialJammer"
+   ],
+   "Tag": "Gear_Cockpit_SolarisCage"
+  },
+  {
+   "IncompatibleTags": [
+    "HarJel2",
+    "HarJel3",
+    "StealthArmor",
+    "Gear_Reactive_Plating",
+    "Gear_Reflective_Coating",
+    "default_armorslots_clanferrolamellor",
+    "Gear_armorslots_RISC",
+    "Structure_InternalRepairSystem",
+    "OmniStealth",
+    "SocietyChameleon",
+    "Chameleon"
+   ],
+   "Tag": "HarJel1"
+  },
+  {
+   "IncompatibleTags": [
+    "HarJel1",
+    "HarJel3",
+    "StealthArmor",
+    "Gear_Reactive_Plating",
+    "Gear_Reflective_Coating",
+    "default_armorslots_clanferrolamellor",
+    "Gear_armorslots_RISC",
+    "Structure_InternalRepairSystem",
+    "OmniStealth",
+    "SocietyChameleon",
+    "Chameleon"
+   ],
+   "Tag": "HarJel2"
+  },
+  {
+   "IncompatibleTags": [
+    "HarJel2",
+    "HarJel1",
+    "StealthArmor",
+    "Gear_Reactive_Plating",
+    "Gear_Reflective_Coating",
+    "default_armorslots_clanferrolamellor",
+    "Gear_armorslots_RISC",
+    "Structure_InternalRepairSystem",
+    "OmniStealth",
+    "SocietyChameleon",
+    "Chameleon"
+   ],
+   "Tag": "HarJel3"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_armorslots_Spiked"
+   ],
+   "Tag": "Gear_Solaris_Spikes"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_Solaris_Spikes"
+   ],
+   "Tag": "Gear_armorslots_Spiked"
+  },
+  {
+   "IncompatibleTags": [
+    "emod_case",
+    "quirk_cased_ferro",
+    "Quirk_LAM_stealth",
+    "CASEDQUIRK"
+   ],
+   "Tag": "emod_case2"
+  },
+  {
+   "IncompatibleTags": [
+    "emod_case2",
+    "quirk_cased_ferro",
+    "Quirk_LAM_stealth",
+    "CASEDQUIRK"
+   ],
+   "Tag": "emod_case"
+  },
+  {
+   "RequiredAnyTags": [
+    "ClanArmor",
+    "quirk_cased_ferro",
+    "Quirk_LAM_stealth",
+    "CASEDQUIRK"
+   ],
+   "Tag": "emod_clancase2"
+  },
+  {
+   "IncompatibleTags": [
+    "PPCCAP",
+    "Gear_FCS_K4pult"
+   ],
+   "Tag": "ChassisSupport"
+  },
+  {
+   "IncompatibleTags": [
+    "StealthSystem",
+    "SocietyChameleon",
+    "Chameleon",
+    "ModularArmor",
+    "ModularRearArmor",
+    "emod_kit_lhs",
+    "Gear_HeatSink_Generic_Laser_Clan",
+    "OmniStealth",
+    "Structure_InternalRepairSystem",
+    "StealthSystemAdd",
+    "MimeticSystem",
+    "StealthArmor"
+   ],
+   "RequiredTags": [
+    "ElectronicCounterMeasures"
+   ],
+   "Tag": "StealthX"
+  },
+  {
+   "IncompatibleTags": [
+    "MimeticSystem",
+    "SocietyChameleon",
+    "Chameleon",
+    "ModularArmor",
+    "ModularRearArmor",
+    "emod_kit_lhs",
+    "Gear_HeatSink_Generic_Laser_Clan",
+    "OmniStealth",
+    "Structure_InternalRepairSystem",
+    "StealthX"
+   ],
+   "RequiredTags": [
+    "StealthSystem",
+    "StealthArmor"
+   ],
+   "Tag": "MimeticSystemAdd"
+  },
+  {
+   "IncompatibleTags": [
+    "StealthSystem",
+    "Chameleon",
+    "SocietyChameleon",
+    "ModularArmor",
+    "ModularRearArmor",
+    "emod_kit_lhs",
+    "Gear_HeatSink_Generic_Laser_Clan",
+    "OmniStealth",
+    "Structure_InternalRepairSystem",
+    "StealthX"
+   ],
+   "RequiredTags": [
+    "MimeticSystem",
+    "StealthArmor"
+   ],
+   "Tag": "StealthSystemAdd"
+  },
+  {
+   "IncompatibleTags": [
+    "ModularArmor",
+    "ModularRearArmor",
+    "emod_kit_lhs",
+    "Gear_HeatSink_Generic_Laser_Clan",
+    "OmniStealth",
+    "Structure_InternalRepairSystem",
+    "StealthX",
+    "Chameleon",
+    "SocietyChameleon"
+   ],
+   "RequiredTags": [
+    "ElectronicCounterMeasures",
+    "StealthArmor"
+   ],
+   "Tag": "MimeticSystem"
+  },
+  {
+   "IncompatibleTags": [
+    "StealthX",
+    "ModularArmor",
+    "ModularRearArmor",
+    "emod_kit_lhs",
+    "Gear_HeatSink_Generic_Laser_Clan",
+    "OmniStealth",
+    "Structure_InternalRepairSystem",
+    "Chameleon",
+    "SocietyChameleon"
+   ],
+   "RequiredTags": [
+    "ElectronicCounterMeasures",
+    "StealthArmor"
+   ],
+   "Tag": "StealthSystem"
+  },
+  {
+   "IncompatibleTags": [
+    "StealthX",
+    "ModularArmor",
+    "ModularRearArmor",
+    "emod_kit_lhs",
+    "Gear_HeatSink_Generic_Laser_Clan",
+    "OmniStealth",
+    "Structure_InternalRepairSystem",
+    "Chameleon",
+    "SocietyChameleon"
+   ],
+   "RequiredTags": [
+    "ElectronicCounterMeasures"
+   ],
+   "Tag": "StealthArmor"
+  },
+  {
+   "RequiredTags": [
+    "DirectNeuralInterface"
+   ],
+   "Tag": "VirtualRealityPilotingPod"
+  },
+  {
+   "IncompatibleTags": [
+    "InternalRepairSystem"
+   ],
+   "RequiredTags": [
+    "SocietyNOVA"
+   ],
+   "Tag": "SocietyChameleon"
+  },
+  {
+   "IncompatibleTags": [
+    "InternalRepairSystem"
+   ],
+   "Tag": "Chameleon"
+  },
+  {
+   "RequiredTags": [
+    "Gear_Sensors_AR14"
+   ],
+   "Tag": "Gear_quirk_ChameleonLightPolarizationShield"
+  },
+  {
+   "IncompatibleTags": [
+    "TTSComp",
+    "CLANTTS",
+    "Gear_FCS_Athena",
+    "Gear_FCS_Howler"
+   ],
+   "Tag": "w/m/t/arrowiv"
+  },
+  {
+   "RequiredTags": [
+    "SocietyChameleon"
+   ],
+   "Tag": "SocietyNOVA"
+  },
+  {
+   "RequiredTags": [
+    "Gear_quirk_ChameleonLightPolarizationShield"
+   ],
+   "Tag": "Gear_Sensors_AR14"
+  },
+  {
+   "IncompatibleTags": [
+    "CLANTTS",
+    "C3i",
+    "C3Slave",
+    "C3Master"
+   ],
+   "Tag": "Gear_FCS_Athena"
+  },
+  {
+   "IncompatibleTags": [
+    "HeatBank",
+    "Exchanger",
+    "HBStandard",
+    "HBImproved",
+    "HBBulk",
+    "HBClan",
+    "TE1",
+    "TE2",
+    "TE3",
+    "TEC",
+    "Gear_Engine_Heatsinks_1",
+    "Gear_Engine_Heatsinks_2",
+    "Gear_Engine_Heatsinks_3",
+    "Gear_Engine_Heatsinks_4",
+    "Gear_Engine_Heatsinks_5",
+    "Gear_Engine_Heatsinks_6",
+    "Gear_Engine_Heatsinks_7",
+    "Gear_EmergencyCoolant",
+    "Gear_EmergencyCoolant_1",
+    "Gear_EmergencyCoolant_2",
+    "Gear_EmergencyCoolant_3",
+    "Gear_EmergencyCoolant_4",
+    "Gear_EmergencyCoolant_5",
+    "Gear_EmergencyCoolant_6",
+    "emod_kit_dhs_proto",
+    "emod_kit_dhs",
+    "emod_kit_cdhs",
+    "emod_kit_chs"
+   ],
+   "Tag": "FuelCell"
+  },
+  {
+   "IncompatibleTags": [
+    "PPCCAP",
+    "Gear_FCS_K4pult"
+   ],
+   "Tag": "Weapon_PPC_PPC_HEAVY_jrig"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_FCS_Athena",
+    "CLANTTS"
+   ],
+   "Tag": "TTSComp"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_FCS_Athena",
+    "TTSComp"
+   ],
+   "RequiredTags": [
+    "ClanFCS"
+   ],
+   "Tag": "CLANTTS"
+  },
+  {
+   "IncompatibleTags": [
+    "Supercharger",
+    "MASC"
+   ],
+   "Tag": "Shock"
+  },
+  {
+   "IncompatibleTags": [
+    "MASC",
+    "TSM",
+    "IndustrialTSM"
+   ],
+   "Tag": "EndoTSM"
+  },
+  {
+   "IncompatibleTags": [
+    "MASC",
+    "EndoTSM",
+    "IndustrialTSM"
+   ],
+   "Tag": "TSM"
+  },
+  {
+   "IncompatibleTags": [
+    "MASC",
+    "IndustrialTSM"
+   ],
+   "Tag": "AdvMASC"
+  },
+  {
+   "IncompatibleTags": [
+    "TSM",
+    "EndoTSM",
+    "IndustrialTSM"
+   ],
+   "Tag": "MASC"
+  },
+  {
+   "IncompatibleTags": [
+    "C3Master",
+    "C3i"
+   ],
+   "Tag": "C3Slave"
+  },
+  {
+   "IncompatibleTags": [
+    "C3Slave",
+    "C3i"
+   ],
+   "Tag": "C3Master"
+  },
+  {
+   "IncompatibleTags": [
+    "C3Slave",
+    "C3Master"
+   ],
+   "Tag": "C3i"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_Myomer_TSM",
+    "IndustrialTSM",
+    "Gear_MASC",
+    "Gear_MASC_CLAN",
+    "Gear_Supercharger",
+    "Gear_Combat_Shield_Small",
+    "Gear_Combat_Shield_Medium",
+    "Gear_Combat_Shield",
+    "Weapon_Industrial_LaserCutter",
+    "Weapon_Industrial_ArcWelder",
+    "Weapon_Industrial_Chainsaw",
+    "Weapon_Industrial_Cultivator",
+    "Weapon_Elite_2_PlasmaTorch",
+    "Weapon_Elite_2_LaserDrill",
+    "Weapon_Elite_2_Jackhammer",
+    "Weapon_Elite_2_Chainsword",
+    "Weapon_Industrial_MiningDrill",
+    "Weapon_Industrial_JackHammer",
+    "Weapon_Industrial_PlasmaTorch",
+    "Stealth",
+    "StealthX",
+    "Gear_armorslots_NullSignatureSystem",
+    "emod_structureslots_LAM",
+    "emod_armorslots_LAM",
+    "emod_Engine_LAM",
+    "Gear_structureslots_Composite",
+    "emod_structureslots_endocomposite",
+    "emod_structureslots_endosteel",
+    "emod_structureslots_clanendosteel",
+    "emod_armorslots_heatHeatDissipating",
+    "emod_armorslots_clanHeatDissipating",
+    "emod_armorslots_impactresistant",
+    "emod_armorslots_NullSignatureSystem_CLAN",
+    "emod_armorslots_stealth_CLAN",
+    "emod_structure_wheeled_conversiongear",
+    "StealthArmor",
+    "lootable_ChameleonLightPolarizationShield",
+    "Structure_InternalRepairSystem",
+    "EndoTSM"
+   ],
+   "Tag": "Superheavy"
+  },
+  {
+   "IncompatibleTags": [
+    "PiratePPCCap"
+   ],
+   "Tag": "Gear_PPC_Capacitator"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_PPC_Capacitator"
+   ],
+   "Tag": "Gear_FCS_K4pult"
+  },
+  {
+   "IncompatibleTags": [
+    "Gear_PPC_Capacitator"
+   ],
+   "Tag": "Gear_FCS_Gungnir"
+  }
+ ]
+}

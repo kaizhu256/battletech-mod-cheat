@@ -1,0 +1,54 @@
+{
+ "AdditionalCost": 18500,
+ "AssignedCastDefId": "castDef_DariusDefault",
+ "AssignedCastDescription": "We're taking enough injuries to keep our current medical staff fully tasked, Commander, and that makes me worry about our future capacity. These battles aren't getting any easier. We have the space for another Med Bay, and I'm sure we'd find it useful.",
+ "Category": "MED_BAY",
+ "Description": {
+  "Cost": 0,
+  "Details": "The fully upgraded field hospital has enough bed space, diagnostic equipment, and surgeries to allow fully half the company to be treated at once. The cost includes the salary of an additional skilled MedTech to treat your injured MechWarriors.",
+  "Icon": "uixSvgIcon_shipUpgrade_medbay3",
+  "Id": "argoUpgrade_medBay3",
+  "Name": "Med Bay 3",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": ""
+ },
+ "Illustration": "uixTxrSpot_MedBay",
+ "Location": "SHIP",
+ "PurchaseCost": 2250000,
+ "RequiredModules": {
+  "items": [
+   "argoUpgrade_medBay2",
+   "argoUpgrade_pod3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Requirements": [],
+ "Stats": [
+  {
+   "name": "MedTechSkill",
+   "typeString": "System.Int32",
+   "value": 1,
+   "valueConstant": ""
+  },
+  {
+   "name": "IncapacitatedDeathChance",
+   "typeString": "System.Single",
+   "value": -0.03,
+   "valueConstant": ""
+  },
+  {
+   "name": "LethalDeathChance",
+   "typeString": "System.Single",
+   "value": -0.03,
+   "valueConstant": ""
+  }
+ ],
+ "Tags": {
+  "items": [
+   "argo_medBay3"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "TechCost": 20
+}

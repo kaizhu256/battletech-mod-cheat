@@ -1,0 +1,130 @@
+{
+ "AMSImmune": true,
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 300,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LongTom",
+ "AttackRecoil": 6,
+ "BattleValue": 368,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_extreme"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "IsArtillery",
+    "FLAKmode",
+    "DIRECTmode",
+    "WpnRecoil: 5",
+    "ForbiddenRange: 180"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01330"
+  }
+ },
+ "Damage": 150,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 3500000,
+  "Details": "The Long Tom Artillery Piece is the largest conventional artillery piece designed by Armstrong Industries. It is the primary weapon of the LT-MOB-25 Mobile Long Tom Artillery vehicle, which is better known as the Mobile Long Tom.\n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b> \n\n <b><color=#ffcc00>Uses LongTom Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Artillery_LONGTOM",
+  "Manufacturer": "GM",
+  "Model": "Long Tom Artillery",
+  "Name": "Long Tom Artillery",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Long Tom Artillery"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.085,
+ "HeatDamage": 0,
+ "HeatGenerated": 60,
+ "ImprovedBallistic": true,
+ "Instability": 35,
+ "InventorySize": 12,
+ "MaxRange": 3000,
+ "MinRange": 180,
+ "Modes": [
+  {
+   "AccuracyModifier": 4,
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 0,
+   "EvasivePipsIgnored": 15,
+   "ForbiddenRange": 180,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "LongRange": -2400,
+   "MaxRange": -2400,
+   "MiddleRange": -2400,
+   "ShortRange": -2400,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "DirectFireModifier": 53,
+   "EvasivePipsIgnored": 15,
+   "Id": "flak",
+   "IndirectFireCapable": false,
+   "MinRange": -180,
+   "UIName": "FLAK",
+   "isBaseMode": false
+  },
+  {
+   "AccuracyModifier": 5,
+   "AlwaysIndirectVisuals": true,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 2,
+   "EvasivePipsIgnored": 15,
+   "ForbiddenRange": 180,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "MaxMissRadius": 45,
+   "MinMissRadius": 10,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  3000,
+  3000,
+  3000
+ ],
+ "RefireModifier": 5,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 30,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

@@ -1,0 +1,65 @@
+{
+ "AllowedLocations": "All",
+ "AmmoID": "Ammunition_Fluid_Inferno",
+ "BattleValue": 0,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Capacity": 8,
+ "ComponentSubType": "Ammunition",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "AmmunitionBox",
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Inferno: 15",
+    "AlwaysStartsFire",
+    "FluidInfernoAmmo: 8",
+    "VolatileAmmo"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "a/s/m/melee"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 1,
+   "HeatDamagePerAmmo": 8,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "000036"
+  },
+  "VolatileAmmo": {
+   "damageWeighting": 0.7
+  }
+ },
+ "Description": {
+  "Cost": 10000,
+  "Details": "Pressurized Canister containing Inferno for the Fluid gun, coating the Target in burning Chemicals. On a Critical Hit, the Pressurized Container will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. \n\n <b><color=#00ffff>Left Click on Ammo count during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color> </b>",
+  "Icon": "uixSvgIcon_ammoBox_Support",
+  "Id": "Ammo_AmmunitionBox_Fluid_Inferno",
+  "Manufacturer": "Generic",
+  "Model": "Inferno",
+  "Name": "Inferno Ammo",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Ammo Fluid Inferno"
+ },
+ "DisallowedLocations": "All",
+ "InventorySize": 1,
+ "PrefabIdentifier": "",
+ "Tonnage": 1,
+ "statusEffects": []
+}
