@@ -47,6 +47,9 @@
       <HintPath>..\CustomComponents\CustomComponents.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="CustomSalvage">
+      <HintPath>..\CustomSalvage\CustomSalvage.dll</HintPath>
+    </Reference>
     <Reference Include="InControl, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\BATTLETECH\Managed\InControl.dll</HintPath>
     </Reference>
@@ -88,8 +91,8 @@
         copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\BattletechModCheat\"
         copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\BattletechModCheat\"
         copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\BattletechModCheat\"
-        <!--
         rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\"
+        <!--
         "\Games\BATTLETECH\BattleTech.exe"
         -->
       )

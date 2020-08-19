@@ -1,7 +1,7 @@
 # BattletechModCheat
 
-#### changelog 2020.8.3
-- add cheat_enginevalidation_off
+#### changelog 2020.8.16
+- add cheat_salvagemechparts_all
 - none
 
 #### todo
@@ -32,9 +32,13 @@
     // (roguetech-compatible)
     "cheat_contractreputationloss_low": "1",
 
+    // cheat - all mechparts available for salvage
+    // (roguetech-compatible)
+    "cheat_salvagemechparts_all": "1",
+
     // cheat - 300 salvage in contracts
     // (roguetech-compatible)
-    "cheat_contractsalvage_300": "1",
+    "cheat_salvagetotal_300": "1",
 
     // cheat - sort contracts by difficulty
     "cheat_contractsort_bydifficulty": "",

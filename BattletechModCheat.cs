@@ -327,8 +327,6 @@ namespace BattletechModCheat
 
     // patch - cheat_contractreputationloss_cheap
 
-    // patch - cheat_contractsalvage_300
-
     // patch - cheat_contractsort_bydifficulty
     [HarmonyPatch(typeof(SGContractsWidget))]
     [HarmonyPatch("GetContractComparePriority")]
@@ -768,6 +766,25 @@ namespace BattletechModCheat
             return false;
         }
     }
+
+    // patch - cheat_salvagemechparts_all
+    [HarmonyPatch(typeof(CustomSalvage.PartsNumCalculations))]
+    [HarmonyPatch("PartDestroyed")]
+    public class
+    Patch_CustomSalvage_PartsNumCalculations_PartDestroyed
+    {
+        public static void
+        Postfix(ref int __result)
+        {
+            if (Local.state.getItem("cheat_salvagemechparts_all") != "")
+            {
+                __result = UnityGameInstance.BattleTechGame.Simulation.Constants
+                    .Story.DefaultMechPartMax;
+            }
+        }
+    }
+
+    // patch - cheat_salvagetotal_300
 
     // patch - cheat_sensorlockfire_on
     [HarmonyPatch(typeof(OrderSequence))]
@@ -1214,8 +1231,8 @@ namespace BattletechModCheat
 {
     ""DefaultIndex"": 0,
     ""Enabled"": true,
-    ""ID"": ""cheat_contractsalvage_300"",
-    ""Name"": ""cheat_contractsalvage_300"",
+    ""ID"": ""cheat_salvagetotal_300"",
+    ""Name"": ""cheat_salvagetotal_300"",
     ""Options"": [
         {
             ""DifficultyConstants"": [
@@ -1230,13 +1247,13 @@ namespace BattletechModCheat
                     ""ConstantValue"": ""0""
                 }
             ],
-            ""ID"": ""cheat_contractsalvage_300_on"",
+            ""ID"": ""cheat_salvagetotal_300_on"",
             ""Name"": ""On"",
             ""TelemetryEventDesc"": ""1""
         }
     ],
     ""StartOnly"": false,
-    ""TelemetryEventName"": ""cheat_contractsalvage_300"",
+    ""TelemetryEventName"": ""cheat_salvagetotal_300"",
     ""Toggle"": false,
     ""Tooltip"": """",
     ""UIOrder"": 1000,
