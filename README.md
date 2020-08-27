@@ -1,7 +1,7 @@
 # BattletechModCheat
 
-#### changelog 2020.8.16
-- add cheat_salvagemechparts_all
+#### changelog 2020.8.25
+- include debug file CustomSalvage.dll
 - none
 
 #### todo
