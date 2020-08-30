@@ -1,0 +1,118 @@
+{
+ "AMSImmune": true,
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 200,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "Sniper",
+ "AttackRecoil": 5,
+ "BattleValue": 77,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Indirect",
+    "FLAKmode",
+    "WpnRecoil: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01331"
+  }
+ },
+ "Damage": 100,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 3500000,
+  "Details": "The Sniper Rifle Artillery Piece is the smaller cousin to the Long Tom Artillery Piece designed by Armstrong Industries. As the second most-powerful tube artillery in the Inner Sphere, the Sniper can cripple or destroy most light and medium BattleMechs with a single hit.\n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b> \n\n<b><color=#ffcc00>Uses Sniper Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Artillery_SNIPER_Cannon",
+  "Manufacturer": "GM",
+  "Model": "Sniper Artillery",
+  "Name": "Sniper Artillery",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "Sniper Artillery"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0585,
+ "HeatDamage": 0,
+ "HeatGenerated": 30,
+ "ImprovedBallistic": true,
+ "Instability": 25,
+ "InventorySize": 10,
+ "MaxRange": 660,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": true,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "DirectFireModifier": 56,
+   "EvasivePipsIgnored": 15,
+   "Id": "flak",
+   "IndirectFireCapable": false,
+   "MinRange": -90,
+   "UIName": "FLAK",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": true,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 1,
+   "ForbiddenRange": 120,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "MaxMissRadius": 45,
+   "MinMissRadius": 10,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  150,
+  330,
+  510
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 15,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

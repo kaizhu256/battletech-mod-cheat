@@ -1,0 +1,236 @@
+{
+ "AI": {
+  "FollowPlayer": {
+   "MaxDistanceFromTargetBeforeSprinting": 120,
+   "Pathfinding": "Alternative",
+   "StopWhen": "OnEnemyDetected",
+   "Target": "LanceOrder",
+   "TargetZoneRadius": 120,
+   "TicksToWaitForPathfinding": 20,
+   "TimeToWaitForPathfinding": 60
+  }
+ },
+ "AdditionalLances": {
+  "AlwaysDisplayHiddenObjectiveIfPrimary": false,
+  "BasedOnVisibleSkullValue": true,
+  "DisableAllies": false,
+  "DisableEnemies": false,
+  "DisableIfFlashpointContract": true,
+  "DisableWhenMaxTonnage": {
+   "Enable": false,
+   "Limited": false,
+   "LimitedToUnder": 300
+  },
+  "DropWeightInfluence": {
+   "AllySpawnInfluencePerHalfSkullAbove": -0.1,
+   "AllySpawnInfluencePerHalfSkullBelow": 0.1,
+   "Enable": true,
+   "EnemySpawnInfluencePerHalfSkullAbove": 0.1,
+   "EnemySpawnInfluencePerHalfSkullBelow": -0.1
+  },
+  "Enable": true,
+  "EnableForFlashpoints": false,
+  "ExcludeContractTypes": [
+   "SoloDuel",
+   "DuoDuel",
+   "AttackDefend"
+  ],
+  "ExcludeFromAutocomplete": [
+   "DefendBase",
+   "FireMission"
+  ],
+  "HideObjective": true,
+  "IsPrimaryObjectiveIn": [
+   "SimpleBattle",
+   "CaptureBase"
+  ],
+  "MatchAllyLanceCountToEnemy": false,
+  "ShowObjectiveOnLanceDetected": true,
+  "SkullValueMatters": true,
+  "UseDialogue": true,
+  "UseElites": false,
+  "UseGeneralProfileForSkirmish": true
+ },
+ "DebugMode": false,
+ "DebugSkirmishMode": true,
+ "DynamicWithdraw": {
+  "DisorderlyWithdrawalCompatibility": true,
+  "Enable": false,
+  "EnableForFlashpoints": false,
+  "ExcludeContractTypes": [
+   "SoloDuel",
+   "DuoDuel"
+  ],
+  "MaxDistanceForZone": 288,
+  "MinDistanceForZone": 50
+ },
+ "EnableAdditionalPlayerMechsForFlashpoints": false,
+ "EnableFlashpointOverrides": false,
+ "ExtendedBoundaries": {
+  "Enable": true,
+  "EnableForFlashpoints": false,
+  "ExcludeContractTypes": [
+   "SoloDuel",
+   "DuoDuel",
+   "DefendBase"
+  ],
+  "IncreaseBoundarySizeByPercentage": 0.1,
+  "Overrides": [
+   {
+    "ContractTypeName": "CaptureBase",
+    "IncreaseBoundarySizeByPercentage": 0.75,
+    "MapId": "mapGeneral_frigidSteppes_iTnd"
+   },
+   {
+    "ContractTypeName": "CaptureBase",
+    "IncreaseBoundarySizeByPercentage": 0.75,
+    "MapId": "mapGeneral_icyOutpost_iGlc"
+   },
+   {
+    "ContractTypeName": "SimpleBattle",
+    "IncreaseBoundarySizeByPercentage": 0.75,
+    "MapId": "mapGeneral_highPeak_iGlc"
+   },
+   {
+    "ContractTypeName": "FireMission",
+    "IncreaseBoundarySizeByPercentage": 0.5
+   },
+   {
+    "ContractTypeName": "SimpleBattle",
+    "IncreaseBoundarySizeByPercentage": 0.55,
+    "MapId": "mapGeneral_desertDam_aDes"
+   },
+   {
+    "ContractTypeName": "SimpleBattle",
+    "IncreaseBoundarySizeByPercentage": 0.3,
+    "MapId": "mapGeneral_lostWorld_vJung"
+   }
+  ]
+ },
+ "ExtendedLances": {
+  "Autofill": true,
+  "Enable": true,
+  "EnableForFlashpoints": false,
+  "ExcludeContractTypes": [
+   "SoloDuel",
+   "DuoDuel"
+  ],
+  "LanceSizes": {
+   "5": [
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanBurrock"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanCloudCobra"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanCoyote"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanDiamondShark"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanFireMandrill"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanGhostBear"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanGoliathScorpion"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanHellsHorses"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanIceHellion"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanJadeFalcon"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanNovaCat"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClansGeneric"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanSmokeJaguar"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanSnowRaven"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanStarAdder"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanSteelViper"
+    },
+    {
+     "DifficultyMod": -1,
+     "Faction": "ClanWolf"
+    }
+   ],
+   "6": [
+    {
+     "DifficultyMod": -2,
+     "Faction": "ComStar"
+    },
+    {
+     "DifficultyMod": -2,
+     "Faction": "WordOfBlake"
+    }
+   ]
+  },
+  "SkipWhenExcludeTagsContain": [
+   "no_extended_lance"
+  ],
+  "SkipWhenTaggedWithAll": [],
+  "SkipWhenTaggedWithAny": [
+   "lance_type_solo"
+  ]
+ },
+ "HotDrop": {
+  "Enable": false,
+  "EnableForFlashpoints": false,
+  "EvasionPipsOnHotDrop": 6,
+  "ExcludeContractTypes": [
+   "SoloDuel",
+   "DuoDuel"
+  ],
+  "GuardOnHotDrop": false,
+  "IncludeAllyTurrets": false,
+  "IncludeEnemies": true,
+  "IncludeEnemyTurrets": false
+ },
+ "RandomSpawns": {
+  "Enable": true,
+  "EnableForFlashpoints": false,
+  "ExcludeContractTypes": [
+   "SoloDuel",
+   "DuoDuel"
+  ]
+ },
+ "Spawners": {
+  "SpawnLanceAtEdgeBoundary": {
+   "MaxBuffer": 200,
+   "MinBuffer": 100
+  }
+ },
+ "VersionCheck": false
+}

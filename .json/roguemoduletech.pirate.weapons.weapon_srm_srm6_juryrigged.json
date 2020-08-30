@@ -1,0 +1,104 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.35,
+ "APCriticalChanceMultiplier": 0.042,
+ "APMaxArmorThickness": 55,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "SRM",
+ "AttackRecoil": 1,
+ "BattleValue": 47,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_standard",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-10"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 2,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "VariableDmg: 4",
+    "WpnRecoil: 1",
+    "WeaponJAM: 10%",
+    "WeaponJAMFlat: 30%",
+    "Explodium: 10",
+    "WeaponBoom: 40"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/s/srm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 40,
+   "StabilityDamage": 20
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03007"
+  }
+ },
+ "Damage": 11,
+ "DamageVariance": 4,
+ "Description": {
+  "Cost": 219000,
+  "Details": "This monstrosity is actually two SRM4s strapped together with what looks like bailing wire and a mutilated power coupling system.  Several of the missile tubes will occasionally fail to fire.",
+  "Icon": "SRM",
+  "Id": "Weapon_SRM_SRM6_JuryRigged",
+  "Manufacturer": "TharHes",
+  "Model": "Short-Range Missile Launcher",
+  "Name": "Pirate SRM6",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "SRM6 (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.0125,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 1,
+ "GunneryJammingMult": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 14,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3,
+ "InventorySize": 4,
+ "MaxRange": 330,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "srm6",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  90,
+  180,
+  270
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 7,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 4,
+ "Type": "SRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_SRM6",
+ "WeaponSubType": "SRM6",
+ "statusEffects": []
+}

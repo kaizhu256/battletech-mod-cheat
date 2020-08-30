@@ -1,0 +1,177 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.2,
+ "APCriticalChanceMultiplier": 0.125,
+ "APMaxArmorThickness": 65,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 3,
+ "BattleValue": 238,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ClearMineFieldRadius": 8,
+ "ColorChangeRule": "t0",
+ "ColorsTable": [
+  {
+   "C": "#0000CD",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long",
+   "PiratePPCCap"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ModesCanMisfire",
+    "WpnRecoil: 1",
+    "PPCDEBUFF: 1",
+    "WeaponBoom: 55",
+    "PiratePPCCap",
+    "MineClearanceBoom: 1"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/p/ppc"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamage": 55,
+   "StabilityDamage": 30
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02011"
+  }
+ },
+ "Damage": 50,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 220000,
+  "Details": "Particle Projector Cannons are technological Marvel's, that is until some paint sniffing jackass comes along and hardwires a Capacitator straight into the gun. Theres a 'Safetys are for lusahs' scratched in where they should be!.\n\n <b><color=#00ffff>Can Toggle Between Fast or Overcharging the Capacitator, exchanging Reliability for Accuracy or Damage</color> </b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "PPC",
+  "Id": "Weapon_PPC_PPC_JRCAP",
+  "Manufacturer": "Magna",
+  "Model": "Particle Projector Cannon",
+  "Name": "PPC",
+  "Purchasable": true,
+  "Rarity": 0,
+  "UIName": "PPC+CAP (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 40,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 4,
+ "MaxRange": 600,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "Id": "Std",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AccuracyModifier": -2,
+   "DamageOnJamming": true,
+   "EvasivePipsIgnored": 2,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 8,
+   "Id": "FastCharge",
+   "RefireModifier": -1,
+   "UIName": "FC",
+   "isBaseMode": false
+  },
+  {
+   "DamageOnJamming": true,
+   "DamagePerShot": 20,
+   "FireTerrainChance": 0.0875,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 12,
+   "Id": "OverCharge",
+   "Instability": 4,
+   "UIName": "DMG",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "PPC",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  360,
+  540
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 8,
+ "Type": "PPC",
+ "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+ "WeaponSubType": "PPC",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "EM Interference reduces sensor efficiency.",
+    "Icon": "uixSvgIcon_status_sensorsImpaired",
+    "Id": "AbilityDefPPC",
+    "Name": "SENSORS IMPAIRED"
+   },
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": 2,
+    "stackLimit": -1,
+    "ticksOnActivations": true,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Debuff",
+   "statisticData": {
+    "modType": "System.Int32",
+    "modValue": "1",
+    "operation": "Int_Add",
+    "statName": "LV_ECM_JAMMED"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

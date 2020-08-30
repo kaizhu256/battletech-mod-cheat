@@ -1,0 +1,118 @@
+{
+ "AMSImmune": true,
+ "AOEEffectsFalloff": true,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.5,
+ "APMaxArmorThickness": 300,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LongTom",
+ "AttackRecoil": 6,
+ "BattleValue": 329,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "Indirect",
+    "FLAKmode",
+    "WpnRecoil: 4"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/o/artillery"
+   }
+  ],
+  "InventorySorter": {
+   "SortKey": "01330"
+  }
+ },
+ "Damage": 150,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 3500000,
+  "Details": "The Long Tom Artillery Cannon is a scaled down version of the Long Tom Artillery Piece designed for use as an on-board indirect fire weapon. Capable of being mounted on 'Mechs, combat vehicles, and AeroSpace Fighters, the Long Tom Cannon is a snub-nosed version of the artillery piece of the same name.\n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b> \n\n <b><color=#ffcc00>Uses LongTom Ammo.</color></b>",
+  "Icon": "Artillery",
+  "Id": "Weapon_Artillery_LONGTOM_Cannon",
+  "Manufacturer": "GM",
+  "Model": "Long Tom Cannon",
+  "Name": "Long Tom Cannon",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "Long Tom Cannon"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.085,
+ "HeatDamage": 0,
+ "HeatGenerated": 60,
+ "ImprovedBallistic": true,
+ "Instability": 35,
+ "InventorySize": 9,
+ "MaxRange": 780,
+ "MinRange": 120,
+ "Modes": [
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": true,
+   "Id": "directfire",
+   "IndirectFireCapable": false,
+   "UIName": "Direct",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": false,
+   "CantHitUnaffecedByPathing": false,
+   "DirectFireModifier": 56,
+   "EvasivePipsIgnored": 15,
+   "Id": "flak",
+   "IndirectFireCapable": false,
+   "MinRange": -120,
+   "UIName": "FLAK",
+   "isBaseMode": false
+  },
+  {
+   "AlwaysIndirectVisuals": true,
+   "CantHitUnaffecedByPathing": true,
+   "DirectFireModifier": 1,
+   "ForbiddenRange": 120,
+   "Id": "indirectfire",
+   "IndirectFireCapable": true,
+   "MaxMissRadius": 45,
+   "MinMissRadius": 10,
+   "UIName": "Indirect",
+   "isBaseMode": true
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "artillery",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  180,
+  390,
+  600
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 20,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
+ "WeaponSubType": "AC20",
+ "statusEffects": []
+}

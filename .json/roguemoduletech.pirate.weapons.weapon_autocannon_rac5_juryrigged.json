@@ -1,0 +1,166 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.056,
+ "APMaxArmorThickness": 22,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RAC5",
+ "AttackRecoil": 5,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 400,
+ "BonusValueA": "Unknown|",
+ "BonusValueB": "SHOOTAH.",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 4",
+    "VariableDmg: 3",
+    "Explodium: 5",
+    "DakkaBoom: 55",
+    "Dakkaray: 5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 55,
+   "HeatDamagePerAmmo": 6,
+   "StabilityDamagePerAmmo": 9
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01202"
+  }
+ },
+ "Damage": 11,
+ "DamageNotDivided": true,
+ "DamageVariance": 3,
+ "Description": {
+  "Cost": 1970000,
+  "Details": "However a Pirate got their hands on a functional RAC5, and however they couldn't just leave it well enough alone! They increased the ammo feed, removed the safety limiters and for good measure torched occult symbols all over it.... \n\n<b><color=#ffcc00>Uses Heavy RAC5 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "RotaryAC",
+  "Id": "Weapon_Autocannon_RAC5_JuryRigged",
+  "Manufacturer": "Satan",
+  "Model": "Pirate RAC5",
+  "Name": "Pirate RAC5",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Rotary AC/5 (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.009,
+ "HeatDamage": 0,
+ "HeatGenerated": 21,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3,
+ "InventorySize": 6,
+ "MaxRange": 530,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "HeatGenerated": -14,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "HeatGenerated": -7,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.015,
+   "HeatGenerated": 7,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 14,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.045,
+   "HeatGenerated": 21,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "RAC5",
+ "ProjectilesPerShot": 5,
+ "RangeSplit": [
+  150,
+  300,
+  450
+ ],
+ "RefireModifier": 4,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 15,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC5",
+ "WeaponSubType": "AC5",
+ "statusEffects": []
+}

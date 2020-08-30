@@ -1,0 +1,149 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.08,
+ "APMaxArmorThickness": 48,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 1,
+ "BattleValue": 75,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "SPIKES!",
+ "Category": "Energy",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_standard"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "VariableDmg: 6",
+    "Melee2: 5",
+    "DmgFallOff: 15%",
+    "ERLaser",
+    "IsLaser"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/er"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02006"
+  }
+ },
+ "Damage": 40,
+ "DamageVariance": 6,
+ "Description": {
+  "Cost": 520000,
+  "Details": "In my in-depth study of pirate-ology I've discovered that if you put spikes on it, it'll do more damage.  If you're the kind to down a handle of rum and shoot yourself out of an airlock this design will make complete sense to you.",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_MediumLaserER_JuryRigged",
+  "Manufacturer": "SCI",
+  "Model": "Extended-Range Medium Laser",
+  "Name": "Pirate ER M Laser",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "ER Med. Laser (P)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.15,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.1,
+ "HeatDamage": 0,
+ "HeatGenerated": 20,
+ "IndirectFireCapable": false,
+ "Instability": 4,
+ "InventorySize": 2,
+ "MaxRange": 470,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  130,
+  250,
+  350
+ ],
+ "RefireModifier": 0,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_LaserER_Medium",
+ "WeaponSubType": "MediumLaser",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Melee attacks deal 6 more damage.",
+    "Icon": "uixSvgIcon_equipment_ActuatorArm",
+    "Id": "StatusEffect-MeleeSpikes-ERmed",
+    "Name": "SPIKEY"
+   },
+   "actorBurningData": null,
+   "durationData": {
+    "clearedWhenAttacked": false,
+    "duration": -1,
+    "stackLimit": 2,
+    "ticksOnActivations": false,
+    "ticksOnEndOfRound": false,
+    "ticksOnMovements": false,
+    "useActivationsOfTarget": false
+   },
+   "effectType": "StatisticEffect",
+   "floatieData": null,
+   "instantModData": null,
+   "nature": "Buff",
+   "poorlyMaintainedEffectData": null,
+   "statisticData": {
+    "additionalRules": "NotSet",
+    "appliesEachTick": false,
+    "effectsPersistAfterDestruction": false,
+    "modType": "System.Single",
+    "modValue": "5.0",
+    "operation": "Float_Add",
+    "statName": "DamagePerShot",
+    "targetAmmoCategory": "NotSet",
+    "targetCollection": "Weapon",
+    "targetWeaponCategory": "NotSet",
+    "targetWeaponSubType": "Melee",
+    "targetWeaponType": "NotSet"
+   },
+   "tagData": null,
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": true,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   },
+   "vfxData": null
+  }
+ ]
+}

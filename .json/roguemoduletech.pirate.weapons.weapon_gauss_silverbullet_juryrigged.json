@@ -1,0 +1,141 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 1.05,
+ "APMaxArmorThickness": 210,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AlternateHeatDamageCalc": true,
+ "AmmoCategory": "GAUSS",
+ "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 198,
+ "BonusValueA": "Damage Falloff",
+ "BonusValueB": "",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "ModesCanMisfire",
+    "WpnRecoil: 1",
+    "WeaponBoom: 60",
+    "SBGR: 7"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/sb"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 70,
+   "HeatDamagePerAmmo": 5,
+   "StabilityDamagePerAmmo": 18
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01417"
+  }
+ },
+ "Damage": 70,
+ "DamageNotDivided": true,
+ "DamageVariance": 0,
+ "Description": {
+  "Cost": 350000,
+  "Details": "Some Pirate got their hands on a silver bullet gauss rifle and thought it was a good idea to add an ammo feeder system that accepts basically anything remotely magnetic, even frontloading Scrap Metal from the Field!... There has been broken down knives and spoons in there.... \n\n<b><color=#ffcc00>Uses Gauss Ammo.</color></b>\n\n<b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch to less safe alternate firing modes</color> </b>",
+  "Icon": "SBGR",
+  "Id": "Weapon_Gauss_Silverbullet_JuryRigged",
+  "Manufacturer": "Junker",
+  "Model": "Silverware Cannon",
+  "Name": "Silver Ware Gauss",
+  "Purchasable": true,
+  "Rarity": 10,
+  "UIName": "SB Gauss (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "HeatDamage": 0,
+ "HeatGenerated": 5,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 17.5,
+ "InventorySize": 6,
+ "MaxRange": 700,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.3,
+   "Id": "Std",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.1,
+   "APArmorShardsMod": 0,
+   "APMaxArmorThickness": 1,
+   "AccuracyModifier": -1,
+   "AttackRecoil": 1,
+   "CriticalChanceMultiplier": 1,
+   "DamageOnJamming": true,
+   "DamagePerShot": -58,
+   "DistantVariance": 0.35,
+   "EvasivePipsIgnored": 1,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 2,
+   "Id": "Cluster",
+   "ProjectilesPerShot": 6,
+   "UIName": "Cluster",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "AmmoCategory": "NotSet",
+   "AttackRecoil": 2,
+   "DamageMultiplier": 0.2,
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.3,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.03,
+   "Id": "Scrap",
+   "ProjectilesPerShot": 4,
+   "UIName": "Scrap",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  120,
+  310,
+  600
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 14,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": []
+}

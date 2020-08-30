@@ -1,0 +1,106 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.25,
+ "APCriticalChanceMultiplier": 0.025,
+ "APMaxArmorThickness": 25,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "LRM",
+ "AttackRecoil": 1,
+ "BattleValue": 191,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "WHOOOOSH",
+ "Category": "Missile",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-10"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 1",
+    "Explodium: 10",
+    "DakkaBoom: 5",
+    "VariableDmg: 2",
+    "Indirect",
+    "DoesCluster"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/m/l/lrm"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 5,
+   "HeatDamagePerAmmo": 1,
+   "StabilityDamagePerAmmo": 1
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "03014"
+  }
+ },
+ "Damage": 5,
+ "DamageVariance": 2,
+ "Description": {
+  "Cost": 834000,
+  "Details": "This WAS an LRM20, they somehow managed to override any safeties, removed the guidance computer, and sped up the feeding mechanism. If this explodes and sends you after Kerensky don't ask me to fix it. <b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "lrm",
+  "Id": "Weapon_LRM_LRM30_JuryRigged",
+  "Manufacturer": "Jackson",
+  "Model": "Long-Range Missile Launcher",
+  "Name": "Pirate LRM30",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "LRM30 (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 0.1,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 25,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": true,
+ "Instability": 1,
+ "InventorySize": 5,
+ "MaxRange": 666,
+ "MinRange": 66,
+ "MissileVolleyIntervalMultiplier": 3.1,
+ "MissileVolleySize": 30,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "lrm20",
+ "ProjectileSpeedMultiplier": 1.1,
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  210,
+  390,
+  500
+ ],
+ "RefireModifier": 1,
+ "ShotsWhenFired": 30,
+ "StartingAmmoCapacity": 0,
+ "StatusEffectsPerHit": true,
+ "Tonnage": 12,
+ "Type": "LRM",
+ "WeaponEffectID": "WeaponEffect-Weapon_LRM20",
+ "WeaponSubType": "LRM20",
+ "statusEffects": []
+}

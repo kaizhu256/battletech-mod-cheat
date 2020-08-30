@@ -1,0 +1,153 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.125,
+ "APMaxArmorThickness": 50,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "AC5",
+ "AttackRecoil": 2,
+ "BattleValue": 75,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "BURNEY",
+ "Category": "Ballistic",
+ "ColorSpeedChange": 5,
+ "ColorsTable": [
+  {
+   "C": "#DC143C",
+   "I": 5
+  },
+  {
+   "C": "#0000CD",
+   "I": 5
+  },
+  {
+   "C": "#EE82EE",
+   "I": 5
+  },
+  {
+   "C": "#EE82EE",
+   "I": 5
+  },
+  {
+   "C": "#F3F34A",
+   "I": 5
+  }
+ ],
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-jam_chance_multiplier-10"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 2",
+    "VariableDmg: 9",
+    "OHDamage: X3",
+    "WeaponJAM: 10",
+    "IsAC"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/ac"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01002"
+  }
+ },
+ "Damage": 25,
+ "DamageVariance": 9,
+ "Description": {
+  "Cost": 318000,
+  "Details": "You shouldn't let pirates touch anything! I'm not sure what they were trying to do with this thing. Use it at your own risk.",
+  "Icon": "uixSvgIcon_weapon_Ballistic",
+  "Id": "Weapon_Autocannon_AC5_IN_JuryRigged",
+  "Manufacturer": "GM",
+  "Model": "Tactical Autocannon",
+  "Name": "Pirate AC/5",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "AC/5 (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireTerrainChance": 0.25,
+ "HeatDamage": 20,
+ "HeatGenerated": 9,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 10,
+ "InventorySize": 3,
+ "MaxRange": 690,
+ "MinRange": 90,
+ "OverheatedDamageMultiplier": 3,
+ "PrefabIdentifier": "AC5",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  190,
+  340,
+  530
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 8,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC5",
+ "WeaponSubType": "AC5",
+ "statusEffects": [
+  {
+   "Description": {
+    "Details": "Reduce Heat Damage by 1%",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
+    "Id": "HeatDamageTakenSoftCapMultiplier",
+    "Name": "Heat Damage SoftCap"
+   },
+   "durationData": {
+    "duration": 1,
+    "stackLimit": 45,
+    "ticksOnActivations": true,
+    "useActivationsOfTarget": true
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "0.95",
+    "operation": "Float_Multiply",
+    "statName": "CACIncomingHeatMult"
+   },
+   "targetingData": {
+    "effectTargetType": "NotSet",
+    "effectTriggerType": "OnHit",
+    "extendDurationOnTrigger": 0,
+    "forcePathRebuild": false,
+    "forceVisRebuild": false,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet",
+    "triggerLimit": 0
+   }
+  }
+ ]
+}

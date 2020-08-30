@@ -1,0 +1,117 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.1,
+ "APCriticalChanceMultiplier": 0.025,
+ "APMaxArmorThickness": 14.4,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "NotSet",
+ "AttackRecoil": 0,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 21,
+ "BonusValueA": "",
+ "BonusValueB": "",
+ "Category": "Energy",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "component_type_stock",
+   "LaserIns.{location}",
+   "range_short"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 2",
+    "VariableDmg: 6",
+    "MultiLaser",
+    "DoesCluster",
+    "IsLaser",
+    "ModesCanMisfire"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/e/l/laser"
+   }
+  ],
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "02002"
+  }
+ },
+ "Damage": 12,
+ "DamageNotDivided": true,
+ "DamageVariance": 6,
+ "Description": {
+  "Cost": 115000,
+  "Details": "If you slap three Small Lasers together, and jury-rig the mount point and power supply, you'll get this piece of work. I didn't know that duct tape could petrify like that. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "uixSvgIcon_weapon_Energy",
+  "Id": "Weapon_SmallLaser_JuryRigged",
+  "Manufacturer": "not Martell",
+  "Model": "Small Laser",
+  "Name": "Pirate S Laser",
+  "Purchasable": true,
+  "Rarity": 1,
+  "UIName": "Sm. Laser (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 0.03,
+ "FireTerrainChance": 0.03,
+ "HeatDamage": 1,
+ "HeatGenerated": 13,
+ "HitGenerator": "Cluster",
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 3,
+ "InventorySize": 2,
+ "MaxRange": 180,
+ "MinRange": 0,
+ "Modes": [
+  {
+   "Id": "Base",
+   "UIName": "STD",
+   "isBaseMode": true
+  },
+  {
+   "DamageOnJamming": true,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 5,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 13,
+   "Id": "Double",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 1,
+   "UIName": "DBL",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Laser",
+ "ProjectilesPerShot": 3,
+ "RangeSplit": [
+  60,
+  90,
+  120
+ ],
+ "RefireModifier": 2,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 1.5,
+ "Type": "Laser",
+ "WeaponEffectID": "WeaponEffect-Weapon_Laser_Small",
+ "WeaponSubType": "SmallLaser",
+ "statusEffects": []
+}

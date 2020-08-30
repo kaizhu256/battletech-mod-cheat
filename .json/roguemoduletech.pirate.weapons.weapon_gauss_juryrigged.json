@@ -1,0 +1,109 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 0.5,
+ "APCriticalChanceMultiplier": 0.975,
+ "APMaxArmorThickness": 195,
+ "AccuracyModifier": 1,
+ "AllowedLocations": "All",
+ "AmmoCategory": "GAUSS",
+ "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 256,
+ "BonusValueA": "Unknown",
+ "BonusValueB": "30 Var.Dmg.",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_very-long",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1.5,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "PipsIgnored: 1",
+    "WpnAccuracy: -1",
+    "VariableDmg: 30",
+    "WpnRecoil: 3",
+    "Explodium: 5",
+    "WpnCrits: +50%",
+    "WeaponJAM: 10%",
+    "IsGauss",
+    "WeaponBoom: 65"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/g/gaussrifle"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 65,
+   "HeatDamagePerAmmo": 10,
+   "StabilityDamagePerAmmo": 30
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01416"
+  }
+ },
+ "Damage": 65,
+ "DamageNotDivided": true,
+ "DamageVariance": 30,
+ "Description": {
+  "Cost": 450000,
+  "Details": "How pirates even got their hands on a Gauss Rifle is beyond me. They've modified the barrel and breach to only shoot ammunition that's been shaved down into spikes that caused the end of the barrel to explode. It's a whole day's work just to make a ton of spiked ammunition. You're not going to make us do that, are you? \n\n<b><color=#ffcc00>Uses Gauss Ammo.</color></b>\n\n<b><color=#099ff2>VOLATILE!</color></b>",
+  "Icon": "GAUSS",
+  "Id": "Weapon_Gauss_JuryRigged",
+  "Manufacturer": "SCI",
+  "Model": "Magnetic Cannon",
+  "Name": "Pirate Gauss Rifle",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Gauss Rifle (P)"
+ },
+ "DisallowedLocations": "All",
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 1,
+ "FlatJammingChance": 0.1,
+ "GunneryJammingBase": 1,
+ "GunneryJammingMult": 0.01,
+ "HeatDamage": 0,
+ "HeatGenerated": 10,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 30,
+ "InventorySize": 6,
+ "MaxRange": 640,
+ "MinRange": 0,
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "Gauss",
+ "ProjectilesPerShot": 1,
+ "RangeSplit": [
+  260,
+  300,
+  540
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 1,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 11,
+ "Type": "Gauss",
+ "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+ "WeaponSubType": "Gauss",
+ "statusEffects": []
+}

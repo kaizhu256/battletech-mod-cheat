@@ -1,0 +1,180 @@
+{
+ "AOECapable": false,
+ "APArmorShardsMod": 1,
+ "APCriticalChanceMultiplier": 0.031,
+ "APMaxArmorThickness": 12,
+ "AccuracyModifier": 0,
+ "AllowedLocations": "All",
+ "AmmoCategory": "RAC2",
+ "AttackRecoil": 3,
+ "BallisticDamagePerPallet": true,
+ "BattleValue": 236,
+ "BonusValueA": "Unknown|",
+ "BonusValueB": "DAKKA",
+ "Category": "Ballistic",
+ "ComponentSubType": "Weapon",
+ "ComponentTags": {
+  "items": [
+   "OmniRestriction.{location}",
+   "component_type_stock",
+   "range_long",
+   "wr-jammable_weapon",
+   "wr-damage_when_jam",
+   "wr-jam_chance_multiplier-5"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "ComponentType": "Weapon",
+ "CriticalChanceMultiplier": 1,
+ "CriticalComponent": false,
+ "Custom": {
+  "BonusDescriptions": {
+   "Bonuses": [
+    "WpnRecoil: 3",
+    "VariableDmg: 2",
+    "Explodium: 5",
+    "DakkaBoom: 30",
+    "Dakkaray: 5"
+   ]
+  },
+  "Category": [
+   {
+    "CategoryID": "w/a/a/rac"
+   }
+  ],
+  "ComponentExplosion": {
+   "ExplosionDamagePerAmmo": 30,
+   "HeatDamagePerAmmo": 3,
+   "StabilityDamagePerAmmo": 6
+  },
+  "Flags": {
+   "flags": [
+    "not_broken",
+    "not_destroyed"
+   ]
+  },
+  "InventorySorter": {
+   "SortKey": "01201"
+  }
+ },
+ "Damage": 6,
+ "DamageNotDivided": true,
+ "DamageVariance": 2,
+ "Description": {
+  "Cost": 1470000,
+  "Details": "Technically its not a RAC2 but some junkhead welded a couple AC2 together, linked their triggers and added additional feeding belts ....and i have no idea what *that* does. \n\n<b><color=#ffcc00>Uses Heavy RAC2 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+  "Icon": "RotaryAC",
+  "Id": "Weapon_Autocannon_RAC2_JuryRigged",
+  "Manufacturer": "Hellion",
+  "Model": "Ultra RAC2",
+  "Name": "Pirate RAC2",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Rotary AC/2 (P)"
+ },
+ "DisallowedLocations": "All",
+ "DistantVariance": 0.5,
+ "DistantVarianceReversed": false,
+ "EvasiveDamageMultiplier": 0,
+ "EvasivePipsIgnored": 0,
+ "FireDelayMultiplier": 1,
+ "FireTerrainChance": 0.005,
+ "HeatDamage": 0,
+ "HeatGenerated": 15,
+ "ImprovedBallistic": true,
+ "IndirectFireCapable": false,
+ "Instability": 2,
+ "InventorySize": 6,
+ "MaxRange": 560,
+ "MinRange": 90,
+ "Modes": [
+  {
+   "AIHitChanceCap": 0.1,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -10,
+   "Id": "x1",
+   "RefireModifier": -2,
+   "ShotsWhenFired": -2,
+   "UIName": "x1",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.15,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "HeatGenerated": -5,
+   "Id": "x2",
+   "RefireModifier": -1,
+   "ShotsWhenFired": -1,
+   "UIName": "x2",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.2,
+   "FlatJammingChance": 0.2,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.05,
+   "Id": "x3",
+   "UIName": "x3",
+   "isBaseMode": true
+  },
+  {
+   "AIHitChanceCap": 0.25,
+   "FlatJammingChance": 0.25,
+   "GunneryJammingBase": 3,
+   "GunneryJammingMult": 0.04,
+   "HeatGenerated": 5,
+   "Id": "x4",
+   "RefireModifier": 1,
+   "ShotsWhenFired": 1,
+   "UIName": "x4",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.3,
+   "FlatJammingChance": 0.35,
+   "GunneryJammingBase": 6,
+   "GunneryJammingMult": 0.03,
+   "HeatGenerated": 10,
+   "Id": "x5",
+   "RefireModifier": 2,
+   "ShotsWhenFired": 2,
+   "UIName": "x5",
+   "isBaseMode": false
+  },
+  {
+   "AIHitChanceCap": 0.4,
+   "FlatJammingChance": 0.45,
+   "GunneryJammingBase": 7,
+   "GunneryJammingMult": 0.02,
+   "HeatGenerated": 15,
+   "Id": "x6",
+   "RefireModifier": 3,
+   "ShotsWhenFired": 3,
+   "UIName": "x6",
+   "isBaseMode": false
+  }
+ ],
+ "OverheatedDamageMultiplier": 0,
+ "PrefabIdentifier": "RAC2",
+ "ProjectilesPerShot": 5,
+ "RangeSplit": [
+  165,
+  330,
+  490
+ ],
+ "RefireModifier": 3,
+ "ShotsWhenFired": 3,
+ "StartingAmmoCapacity": 0,
+ "Tonnage": 12,
+ "Type": "Autocannon",
+ "WeaponEffectID": "WeaponEffect-Weapon_AC2",
+ "WeaponSubType": "AC2",
+ "isDamageVariation": true,
+ "isHeatVariation": true,
+ "isStabilityVariation": true,
+ "statusEffects": []
+}
