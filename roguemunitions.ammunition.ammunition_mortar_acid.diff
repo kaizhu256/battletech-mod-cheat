@@ -1,0 +1,74 @@
+--- ./roguemunitions.ammunition.ammunition_mortar.json	2020-08-24 20:32:30.337752700 -0500
++++ ./roguemunitions.ammunition.ammunition_mortar_acid.json	2020-08-24 20:32:30.342753400 -0500
+@@ -1,26 +1,63 @@
+ {
+  "AOECapable": true,
+- "AOEDamage": 4,
++ "AOEDamage": 2,
+  "AOEInstability": 1,
+  "AOERange": 45,
+  "AlwaysIndirectVisuals": true,
+- "ArmorDamageModifier": 1,
++ "ArmorDamageModifier": 1.5,
+  "Category": "MORTAR",
+- "ClearMineFieldRadius": 8,
+  "CriticalDamageModifier": 1,
+  "Description": {
+   "Cost": 0,
+   "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
+   "Icon": null,
+-  "Id": "Ammunition_Mortar",
++  "Id": "Ammunition_Mortar_Acid",
+   "Name": "Mortar Ammo",
+   "Purchasable": false,
+   "Rarity": 0,
+-  "UIName": "Std"
++  "UIName": "Acid"
+  },
+  "HeatGenerated": 0,
+  "HeatGeneratedModifier": 1,
+- "HideIfOnlyVariant": true,
+- "ISDamageModifier": 1,
+- "Type": "Normal"
++ "ISDamageModifier": 0.5,
++ "Type": "Normal",
++ "statusEffects": [
++  {
++   "Description": {
++    "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
++    "Icon": "uixSvgIcon_biome_Heated",
++    "Id": "Effect_Acid_Mortar_DMG",
++    "Name": "Acid"
++   },
++   "durationData": {
++    "clearedWhenAttacked": false,
++    "duration": 2,
++    "stackLimit": -1,
++    "ticksOnActivations": true,
++    "ticksOnEndOfRound": false,
++    "ticksOnMovements": false,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "nature": "Debuff",
++   "statisticData": {
++    "modType": "System.Single",
++    "modValue": "0.01",
++    "operation": "Float_Add",
++    "statName": "DamageReductionMultiplierAll"
++   },
++   "targetingData": {
++    "effectTargetType": "NotSet",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 2,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": true,
++    "showInTargetPreview": true,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   }
++  }
++ ]
+ }

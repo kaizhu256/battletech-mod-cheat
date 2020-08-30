@@ -1,0 +1,95 @@
+--- ./roguemunitions.ammunition.ammunition_longtom.json	2020-08-23 11:37:34.261916300 -0500
++++ ./roguemunitions.ammunition.ammunition_longtom_inferno.json	2020-08-23 11:37:34.261916300 -0500
+@@ -1,33 +1,79 @@
+ {
++ "AIBattleValue": 90,
+  "AOECapable": true,
+- "AOEDamage": 150,
+- "AOEInstability": 75,
++ "AOEDamage": 50,
++ "AOEHeatDamage": 50,
++ "AOEInstability": 25,
+  "AOERange": 105,
+  "AdditionalImpactVFX": "WFX_BELarger",
+- "AdditionalImpactVFXScaleX": 3,
+- "AdditionalImpactVFXScaleY": 3,
+- "AdditionalImpactVFXScaleZ": 3,
++ "AdditionalImpactVFXScaleX": 1,
++ "AdditionalImpactVFXScaleY": 1,
++ "AdditionalImpactVFXScaleZ": 1,
+  "ArmorDamageModifier": 1,
+  "Category": "LongTom",
+- "ChassisTagsAccuracyModifiers": {
+-  "unit_vtol": -50
+- },
+- "ClearMineFieldRadius": 21,
++ "ColorChangeRule": "t0",
++ "ColorsTable": [
++  {
++   "C": "#DC143C",
++   "I": 5
++  }
++ ],
+  "CriticalDamageModifier": 1,
+  "DamageMultiplier": 0.2,
+  "Description": {
+   "Cost": 0,
+   "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
+   "Icon": null,
+-  "Id": "Ammunition_LongTom",
++  "Id": "Ammunition_LongTom_Inferno",
+   "Name": "Long Tom Ammo",
+   "Purchasable": false,
+   "Rarity": 0,
+-  "UIName": "HE"
++  "UIName": "Inferno"
+  },
++ "FireDurationWithoutForest": 4,
++ "FireOnSuccessHit": true,
++ "FireTerrainCellRadius": 20,
++ "FireTerrainChance": 0.75,
++ "FireTerrainStrength": 15,
++ "HeatDamagePerShot": 50,
+  "HeatGenerated": 0,
+  "HeatGeneratedModifier": 1,
+- "HideIfOnlyVariant": true,
+  "ISDamageModifier": 1,
+- "Type": "Normal"
++ "Type": "Normal",
++ "statusEffects": [
++  {
++   "Description": {
++    "Details": "Reduce Heat Damage by 1%",
++    "Icon": "uixSvgIcon_equipment_ThermalExchanger",
++    "Id": "HeatDamageTakenSoftCapMultiplier",
++    "Name": "Heat Damage SoftCap"
++   },
++   "durationData": {
++    "duration": 1,
++    "stackLimit": 45,
++    "ticksOnActivations": true,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "nature": "Buff",
++   "statisticData": {
++    "modType": "System.Single",
++    "modValue": "0.95",
++    "operation": "Float_Multiply",
++    "statName": "CACIncomingHeatMult"
++   },
++   "targetingData": {
++    "effectTargetType": "NotSet",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 0,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": false,
++    "showInTargetPreview": false,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   }
++  }
++ ]
+ }

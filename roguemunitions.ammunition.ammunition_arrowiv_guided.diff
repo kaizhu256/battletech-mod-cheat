@@ -1,0 +1,49 @@
+--- ./roguemunitions.ammunition.ammunition_arrowiv.json	2020-08-23 11:37:34.085917400 -0500
++++ ./roguemunitions.ammunition.ammunition_arrowiv_guided.json	2020-08-23 11:37:34.101917700 -0500
+@@ -1,38 +1,29 @@
+ {
+- "AOECapable": true,
+- "AOEDamage": 100,
+- "AOEInstability": 50,
+- "AOERange": 75,
++ "AccuracyModifier": -1,
+  "AdditionalImpactVFX": "WFX_ExplosiveSmokeM",
+- "AdditionalImpactVFXScaleX": 2,
+- "AdditionalImpactVFXScaleY": 2,
+- "AdditionalImpactVFXScaleZ": 2,
++ "AdditionalImpactVFXScaleX": 1,
++ "AdditionalImpactVFXScaleY": 1,
++ "AdditionalImpactVFXScaleZ": 1,
+  "ArmorDamageModifier": 1,
+  "Category": "ArrowIV",
+- "ChassisTagsAccuracyModifiers": {
+-  "unit_vtol": -50
+- },
+- "ClearMineFieldRadius": 15,
+  "CriticalDamageModifier": 1,
+- "DamageMultiplier": 0.2,
+  "Description": {
+   "Cost": 0,
+   "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
+   "Icon": null,
+-  "Id": "Ammunition_ArrowIV",
++  "Id": "Ammunition_ArrowIV_Guided",
+   "Name": "AC/20 Ammo",
+   "Purchasable": false,
+   "Rarity": 0,
+-  "UIName": "STD"
++  "UIName": "Guided"
+  },
+- "FireDurationWithoutForest": 0,
+- "FireOnSuccessHit": true,
++ "DirectFireModifier": -1,
++ "EvasivePipsIgnored": 1,
+  "FireTerrainCellRadius": 6,
+  "FireTerrainChance": 0.02,
+  "FireTerrainStrength": 15,
+  "HeatGenerated": 0,
+  "HeatGeneratedModifier": 1,
+- "HideIfOnlyVariant": true,
+  "ISDamageModifier": 1,
+  "MissileHealth": 20,
+  "Type": "Normal"
