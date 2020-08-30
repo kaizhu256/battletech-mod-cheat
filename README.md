@@ -1,7 +1,8 @@
 # BattletechModCheat
 
-#### changelog 2020.8.25
-- include debug file CustomSalvage.dll
+#### changelog 2020.8.29
+- add file scriptData.js to aggregate roguetech data into csv
+- disable jumpjet cheat
 - none
 
 #### todo
@@ -46,7 +47,7 @@
     // cheat - skip intro
     "cheat_introskip_on": "1",
 
-    // cheat - in roguetech, disable engine-limits on heatsinks and jumpjets
+    // cheat - in roguetech, disable engine-limits on heatsinks
     // (roguetech-compatible)
     "cheat_enginevalidation_off": "1",
 

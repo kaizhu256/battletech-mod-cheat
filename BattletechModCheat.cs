@@ -571,7 +571,6 @@ namespace BattletechModCheat
             }
         }
     }
-    */
     [HarmonyPatch(typeof(MechEngineer.Errors))]
     [HarmonyPatch("Add")]
     public class
@@ -597,6 +596,7 @@ namespace BattletechModCheat
             return true;
         }
     }
+    */
 
     // patch - cheat_mechcomponentsize_1
     /*

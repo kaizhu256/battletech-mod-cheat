@@ -5,11 +5,13 @@
 node ../BattletechModCheat/scriptData.js taskFileFlatten
 node ../BattletechModCheat/scriptData.js taskSqliteExportAll
 node ../scriptData.js taskSqliteExportAll
-node ../scriptData.js taskSqliteExport data.ammo "\\.ammunition_"
-node ../scriptData.js taskSqliteExport data.ammobox "ammunitionbox"
-node ../scriptData.js taskSqliteExport data.gear "\\.armors\\.\\|\\.emod_\\|\\.gear_\\|slots_"
-node ../scriptData.js taskSqliteExport data.chassis "chassisdef"
-node ../scriptData.js taskSqliteExport data.weapon "\\.weapon_"
+node ../scriptData.js taskSqliteExport data.ammo
+node ../scriptData.js taskSqliteExport data.ammobox
+node ../scriptData.js taskSqliteExport data.gear
+node ../scriptData.js taskSqliteExport .data.chassisdef
+node ../scriptData.js taskSqliteExport .data.mechdef
+node ../scriptData.js taskSqliteExport data.weapon
+node ../scriptData.js taskSqliteExportChassis
  */
 
 
@@ -325,17 +327,40 @@ Definition of the CSV Format
             onErrorThrow
         );
     };
-    taskDict.taskSqliteExport = function (file, rgx) {
+    taskDict.taskSqliteExport = function (file, onError) {
+        let rgx;
         let rowList;
-        function sqliteExport(err) {
+        function sqliteExport() {
             let db;
             let header;
             let sqlite3;
-            onErrorThrow(err);
             // init header
             header = {};
             rowList.forEach(function (row) {
+                let auraDict;
                 let hardpointDict;
+                // init auraDict
+                Array.from(row.Auras || []).forEach(function (aura) {
+                    auraDict = auraDict || {};
+                    auraDict[aura.Name] = {
+                        rng: Number(aura.Range)
+                    };
+                    Array.from(
+                        aura.statusEffects || []
+                    ).forEach(function (statusEffect) {
+                        auraDict[aura.Name].val = (
+                            auraDict[aura.Name].val || Number(
+                                statusEffect.statisticData
+                                && statusEffect.statisticData.modValue
+                            )
+                        );
+                    });
+                });
+                if (auraDict) {
+                    row.aura2 = auraDict;
+                    header.aura2 = header.aura2 || 0;
+                    header.aura2 += 1;
+                }
                 // init hardpointDict
                 Array.from(row.Locations || []).forEach(function (elem) {
                     Array.from(elem.Hardpoints || []).forEach(function (elem) {
@@ -448,7 +473,11 @@ Definition of the CSV Format
                 "prefabidentifier",
                 "rangesplit",
                 "tonnage"
-            ]).reverse()).forEach(function (col) {
+            ]).concat(
+                header.filter(function (elem) {
+                    return elem.indexOf("aura2_") === 0;
+                })
+            ).reverse()).forEach(function (col) {
                 let ii;
                 ii = header.indexOf(col);
                 if (ii >= 0) {
@@ -468,7 +497,7 @@ Definition of the CSV Format
                     /\W/g
                 ), "_");
             });
-            console.error("header - " + JSON.stringify(header));
+            // console.error("header - " + JSON.stringify(header));
             // reset db
             try {
                 fs.unlinkSync("." + file + ".sqlite3");
@@ -483,12 +512,16 @@ Definition of the CSV Format
                 }).join(",") + ");");
                 stmt = db.prepare(
                     "INSERT INTO tmp1 VALUES("
-                    + ",JSON(?)".repeat(header.length).slice(1)
+                    + ",?".repeat(header.length).slice(1)
                     + ");"
                 );
                 rowList.forEach(function (row) {
                     stmt.run(row.map(function (val) {
-                        return JSON.stringify(val);
+                        return (
+                            (typeof val === "object" && val)
+                            ? JSON.stringify(val)
+                            : val
+                        );
                     }));
                 });
                 stmt.finalize();
@@ -501,35 +534,62 @@ Definition of the CSV Format
                         "prefabidentifier ASC",
                         "hardpoint2 DESC",
                         // gear
+                        "componentsubtype ASC",
                         "componenttype ASC",
                         // all
                         "description_cost DESC",
                         "battlevalue DESC",
                         "description_id ASC"
-                        //!! "ammocategory",
-                        //!! "damage",
-                        //!! "heatdamage",
-                        //!! "heatgenerated",
-                        //!! "instability",
-                        //!! "inventorysize",
-                        //!! "rangesplit",
-                        //!! "tonnage"
+                    // "ammocategory",
+                    // "damage",
+                    // "heatdamage",
+                    // "heatgenerated",
+                    // "instability",
+                    // "inventorysize",
+                    // "rangesplit",
+                    // "tonnage"
                     ]).filter(function (elem) {
                         return header.indexOf(elem.split(" ")[0]) >= 0;
                     }).join(",")
                 );
                 db.all("SELECT * FROM data1;", function (err, data) {
                     onErrorThrow(err);
-                    fs.writeFileSync(
-                        file + ".csv",
-                        csvFromJson(data, header).replace((
-                            /\r/g
-                        ), "")
-                    );
+                    fs.writeFile((
+                        file + ".csv"
+                    ), csvFromJson(data, header).replace((
+                        /\r/g
+                    ), ""), onError || onErrorThrow);
                 });
+                switch (file) {
+                case "data.gear":
+                    db.all((
+                        "SELECT * FROM data1 "
+                        + "WHERE aura2 like '%';"
+                    ), function (err, data) {
+                        onErrorThrow(err);
+                        fs.writeFileSync(
+                            "data.gear.ecm.csv",
+                            csvFromJson(data, header).replace((
+                                /\r/g
+                            ), "")
+                        );
+                    });
+                    break;
+                }
             });
             db.close();
         }
+        // init rgx
+        rgx = {
+            "data.ammo": "\\\\.ammunition_",
+            "data.ammobox": "ammunitionbox",
+            "data.gear":
+            "\\\\.armors\\\\.\\\\|\\\\.emod_\\\\|\\\\.gear_\\\\|slots_",
+            ".data.chassisdef": "chassisdef",
+            ".data.mechdef": "mechdef\\\\|vehicledef",
+            "data.weapon": "\\\\.weapon_"
+        };
+        rgx = rgx[file];
         // export file to db
         rowList = [];
         fileListProcess(
@@ -549,28 +609,90 @@ Definition of the CSV Format
                     onError();
                 });
             },
-            sqliteExport
+            function (err) {
+                onErrorThrow(err);
+                sqliteExport(onError);
+            }
         );
     };
     taskDict.taskSqliteExportAll = function () {
-        [
-            [
-                "data.ammo", "\\\\.ammunition_"
-            ], [
-                "data.ammobox", "ammunitionbox"
-            ], [
-                "data.gear",
-                "\\\\.armors\\\\.\\\\|\\\\.emod_\\\\|\\\\.gear_\\\\|slots_"
-            ], [
-                "data.chassis", "chassisdef"
-            ], [
-                "data.weapon", "\\\\.weapon_"
-            ]
-        ].forEach(function (argList) {
-            taskDict.taskSqliteExport(...argList);
+        Promise.all([
+            ".data.chassisdef",
+            ".data.mechdef",
+            "data.ammo",
+            "data.ammobox",
+            "data.gear",
+            "data.weapon"
+        ].map(function (file) {
+            return new Promise(function (resolve) {
+                taskDict.taskSqliteExport(file, function (err) {
+                    onErrorThrow(err);
+                    resolve();
+                });
+            });
+        })).then(function () {
+            taskDict.taskSqliteExportChassis();
         });
     };
+    taskDict.taskSqliteExportChassis = function (onError) {
+        let db;
+        let file;
+        let sqlite3;
+        file = "data.chassis";
+        // reset db
+        try {
+            fs.unlinkSync("." + file + ".sqlite3");
+        } catch (ignore) {}
+        sqlite3 = require("./lib.sqlite3.js");
+        db = new sqlite3.Database("." + file + ".sqlite3");
+        db.serialize(function () {
+            db.run(
+                "ATTACH DATABASE '..data.chassisdef.sqlite3' AS chassisdef;\n"
+            );
+            db.run(
+                "ATTACH DATABASE '..data.mechdef.sqlite3' AS mechdef;\n"
+            );
+            db.run(
+                "CREATE TABLE data1 AS\n"
+                + "SELECT * FROM chassisdef.data1 AS chassis1\n"
+                + "LEFT JOIN mechdef.data1 AS mech1 ON\n"
+                + "mech1.chassisid = chassis1.description_id\n"
+                + "ORDER BY chassis1.rowid;\n"
+            );
+            db.all((
+                "SELECT * FROM data1\n"
+                + "WHERE fixedequipment like '%emod_engine_4%';"
+            ), function (err, data) {
+                onErrorThrow(err);
+                fs.writeFile((
+                    "data.chassis.emod_engine_400.csv"
+                ), csvFromJson(data).replace((
+                    /\r/g
+                ), ""), onErrorThrow);
+            });
+            db.all((
+                "SELECT * FROM data1\n"
+                + "WHERE inventory like '%emod_kit_dhs_proto%';"
+            ), function (err, data) {
+                onErrorThrow(err);
+                fs.writeFile((
+                    "data.chassis.emod_kit_dhs_proto.csv"
+                ), csvFromJson(data).replace((
+                    /\r/g
+                ), ""), onErrorThrow);
+            });
+            db.all("SELECT * FROM data1;", function (err, data) {
+                onErrorThrow(err);
+                fs.writeFile((
+                    file + ".csv"
+                ), csvFromJson(data).replace((
+                    /\r/g
+                ), ""), onError || onErrorThrow);
+            });
+        });
+        db.close();
+    };
     if (taskDict.hasOwnProperty(process.argv[2])) {
-        taskDict[process.argv[2]](...process.argv.slice(3));
+        taskDict[process.argv[2]](process.argv[3]);
     }
 }());
