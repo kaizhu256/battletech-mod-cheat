@@ -1,8 +1,8 @@
 # BattletechModCheat
 
 #### changelog 2020.8.29
-- add file scriptData.js to aggregate roguetech data into csv
-- disable jumpjet cheat
+- update roguetech dll dependencies
+- update cheat_salvagefullmech_on to improve repair salvage
 - none
 
 #### todo
@@ -12,9 +12,13 @@
 1.  install BattleTech and ModTek
 2.  copy this mod into directory BATTLETECH\Mods\
 3.  when first run, this mod will automatically create a file `settings.json`
-    in its own directory with all-cheats disabled
-4.  to enable cheats, edit `settings.json`
-    by replacing each cheat's flag from empty-string "" to "1":
+    in its own directory with below cheat-settings
+4.  to enable/disable cheats, edit file
+    `BATTLETECH\Mods\BattletechModCheat\settings.json`
+    by replacing each cheat's value with either "1" or empty-string "",
+    respectively
+5.  if you are updating roguetech, repeat steps 2 to 4
+    each time roguetech is updated
 ```javascript
 {
     // cheat - ammoboxes have infinite ammo
@@ -33,9 +37,9 @@
     // (roguetech-compatible)
     "cheat_contractreputationloss_low": "1",
 
-    // cheat - all mechparts available for salvage
+    // cheat - salvage full-mech from one mech-part
     // (roguetech-compatible)
-    "cheat_salvagemechparts_all": "1",
+    "cheat_salvagefullmech_on": "1",
 
     // cheat - 300 salvage in contracts
     // (roguetech-compatible)
@@ -45,6 +49,7 @@
     "cheat_contractsort_bydifficulty": "",
 
     // cheat - skip intro
+    // (roguetech-compatible)
     "cheat_introskip_on": "1",
 
     // cheat - in roguetech, disable engine-limits on heatsinks
@@ -55,6 +60,7 @@
     "cheat_mechbayrepair_multi": "",
 
     // cheat - mech-components take up only 1 slot
+    // (roguetech-compatible)
     "cheat_mechcomponentsize_1": "1",
 
     // cheat - can add weapon/equipment/armor to mech over its weight-limit
@@ -62,6 +68,7 @@
     "cheat_mechweightlimit_off": "1",
 
     // cheat - pilot-abilities have have 0 cooldown
+    // (roguetech-compatible)
     "cheat_pilotabilitycooldown_0": "1",
 
     // cheat - reset pilot-skills by shift-clicking skills-tab in barracks
@@ -72,6 +79,7 @@
     "cheat_pilotskillcost_low": "1",
 
     // cheat - unused pilot-xp is no longer nagged by darius if pilot-skills are maxed
+    // (roguetech-compatible)
     "cheat_pilotxpnag_off": "1",
 
     // cheat - mech can sensorlock-and-fire
@@ -79,7 +87,7 @@
 
     // cheat - sell items to shop for 50% (instead of 10%)
     // (roguetech-compatible)
-    "cheat_shopsellprice_high": "1",
+    "cheat_shopsellprice_high": "0",
 
     // cheat - mech can sprint-and-melee
     "cheat_sprintmelee_on": "",

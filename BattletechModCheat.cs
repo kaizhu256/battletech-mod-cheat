@@ -554,49 +554,6 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_enginevalidation_off
-    /*
-    [HarmonyPatch(typeof(ChassisDef))]
-    [HarmonyPatch("FromJSON")]
-    public class
-    Patch_ChassisDef_FromJSON
-    {
-        public static void
-        Postfix(ChassisDef __instance)
-        {
-            if (Local.state.getItem("cheat_enginevalidation_off") != "")
-            {
-                Traverse.Create(__instance).Property(
-                    "MaxJumpjets"
-                ).SetValue(5000);
-            }
-        }
-    }
-    [HarmonyPatch(typeof(MechEngineer.Errors))]
-    [HarmonyPatch("Add")]
-    public class
-    Patch_MechEngineer_Errors_Add
-    {
-        public static bool
-        Prefix(MechValidationType type, string message)
-        {
-            if (
-                Local.state.getItem("cheat_enginevalidation_off") != ""
-                && (
-                    message.IndexOf(
-                        "JUMP JETS: This Mech mounts too many jumpjets "
-                    ) == 0
-                    || message.IndexOf(
-                        "HEAT SINKS: This Mech has too few heat sinks "
-                    ) == 0
-                )
-            )
-            {
-                return false;
-            }
-            return true;
-        }
-    }
-    */
 
     // patch - cheat_mechcomponentsize_1
     /*
@@ -707,7 +664,6 @@ namespace BattletechModCheat
                 .Render();
             return false;
         }
-
         public static void
         PilotReskill(SGBarracksMWDetailPanel __instance, Pilot ___curPilot)
         {
@@ -727,6 +683,11 @@ namespace BattletechModCheat
                 + sim.GetLevelRangeCost(1, pilotDef.SkillGuts - 1)
                 + sim.GetLevelRangeCost(1, pilotDef.SkillTactics - 1)
             );
+            // handle xpUsed overflow
+            if (xpUsed < 0)
+            {
+                xpUsed = 0x40000000;
+            }
             // reset ___curPilot
             Traverse.Create(pilotDef).Property("BasePiloting").SetValue(1);
             Traverse.Create(pilotDef).Property("BaseGunnery").SetValue(1);
@@ -767,7 +728,33 @@ namespace BattletechModCheat
         }
     }
 
-    // patch - cheat_salvagemechparts_all
+    // patch - cheat_salvagefullmech_on
+    [HarmonyPatch(typeof(CustomSalvage.ChassisHandler.AssemblyChancesResult), MethodType.Constructor)]
+    [HarmonyPatch(new Type[] {
+        typeof(MechDef),
+        typeof(SimGameState),
+        typeof(int)
+    })]
+    public class
+    Patch_AssemblyChancesResult_constructor
+    {
+        public static void
+        Postfix(CustomSalvage.ChassisHandler.AssemblyChancesResult __instance)
+        {
+            if (Local.state.getItem("cheat_salvagefullmech_on") != "")
+            {
+                Traverse.Create(__instance).Property(
+                    "LimbChance"
+                ).SetValue(Math.Max(__instance.LimbChance, 1.0f));
+                Traverse.Create(__instance).Property(
+                    "CompFChance"
+                ).SetValue(Math.Max(__instance.CompFChance, 1.0f));
+                Traverse.Create(__instance).Property(
+                    "CompNFChance"
+                ).SetValue(Math.Max(__instance.CompNFChance, 1.0f));
+            }
+        }
+    }
     [HarmonyPatch(typeof(CustomSalvage.PartsNumCalculations))]
     [HarmonyPatch("PartDestroyed")]
     public class
@@ -778,8 +765,7 @@ namespace BattletechModCheat
         {
             if (Local.state.getItem("cheat_salvagemechparts_all") != "")
             {
-                __result = UnityGameInstance.BattleTechGame.Simulation.Constants
-                    .Story.DefaultMechPartMax;
+                __result = 2;
             }
         }
     }
@@ -1107,7 +1093,7 @@ namespace BattletechModCheat
     ""StartOnly"": false,
     ""TelemetryEventName"": ""cheat_contractreputationloss_low"",
     ""Toggle"": false,
-    ""Tooltip"": ""lose -25% (instead of -80%) reputation from contract-target"",
+    ""Tooltip"": """",
     ""UIOrder"": 1000,
     ""Visible"": false
 },
@@ -1198,7 +1184,7 @@ namespace BattletechModCheat
     ""StartOnly"": false,
     ""TelemetryEventName"": ""cheat_contractban_off"",
     ""Toggle"": false,
-    ""Tooltip"": ""unlock all contract-difficulties"",
+    ""Tooltip"": """",
     ""UIOrder"": 1000,
     ""Visible"": false
 },
@@ -1224,7 +1210,38 @@ namespace BattletechModCheat
     ""StartOnly"": false,
     ""TelemetryEventName"": ""cheat_pilotskillcost_low"",
     ""Toggle"": false,
-    ""Tooltip"": ""cheap pilot-skills"",
+    ""Tooltip"": """",
+    ""UIOrder"": 1000,
+    ""Visible"": false
+},
+{
+    ""DefaultIndex"": 0,
+    ""Enabled"": true,
+    ""ID"": ""cheat_salvagefullmech_on"",
+    ""Name"": ""cheat_salvagefullmech_on"",
+    ""Options"": [
+        {
+            ""DifficultyConstants"": [
+                {
+                    ""ConstantName"": ""DefaultMechPartMax"",
+                    ""ConstantType"": ""CareerMode"",
+                    ""ConstantValue"": ""1""
+                },
+                {
+                    ""ConstantName"": ""DefaultMechPartMax"",
+                    ""ConstantType"": ""Story"",
+                    ""ConstantValue"": ""1""
+                }
+            ],
+            ""ID"": ""cheat_salvagefullmech_on_on"",
+            ""Name"": ""On"",
+            ""TelemetryEventDesc"": ""1""
+        }
+    ],
+    ""StartOnly"": false,
+    ""TelemetryEventName"": ""cheat_salvagefullmech_on"",
+    ""Toggle"": false,
+    ""Tooltip"": """",
     ""UIOrder"": 1000,
     ""Visible"": false
 },
