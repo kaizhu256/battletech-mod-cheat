@@ -66,8 +66,8 @@
    {
     "SlotChange": {
      "By": 2,
-     "From": 5,
-     "FromIsMin": false,
+     "From": 4,
+     "FromIsMin": true,
      "NewMin": null
     },
     "TonnageChange": null,
@@ -179,6 +179,19 @@
     "Type": "UAC20"
    }
   ],
+  "AutoFixWeaponDefSplitting": true,
+  "AutoFixWeaponDefSplittingDynamicSlotTemplate": {
+   "BackgroundColor": null,
+   "BonusAText": "",
+   "BonusBText": "",
+   "InnerAdjacentOnly": true,
+   "NameText": "",
+   "ReservedSlots": 0,
+   "ShowFixedEquipmentOverlay": true,
+   "ShowIcon": false
+  },
+  "AutoFixWeaponDefSplittingFixedSize": 7,
+  "AutoFixWeaponDefSplittingLargerThan": 7,
   "ChassisDefInitialToTotalTonnageFactor": 0.1,
   "ChassisDefInitialTonnage": true,
   "ChassisDefMaxJumpjets": true,
@@ -350,16 +363,73 @@
    "FromIsMin": true,
    "NewMin": 1
   },
-  "MechDefAutoFixAgainstMaxFreeTonnage": [
-   "mechdef_atlas_AS7-D-HT",
-   "mechdef_blackknight_BL-6b-KNT",
-   "mechdef_highlander_HGN-732b"
-  ],
-  "MechDefAutoFixInitialTonnageDiffThreshold": 0.4,
-  "MechDefCoolingDef": "emod_kit_shs",
   "MechDefCoreDummy": "emod_engine_dummy",
   "MechDefEngine": true,
-  "MechDefHeatBlockDef": "emod_engine_cooling"
+  "MechDefHeatBlockDef": "emod_engine_cooling",
+  "MechLocationNamingTemplates": [
+   {
+    "Tags": [
+     "unit_vtol"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "FRONT"
+      },
+      {
+       "location": "RightArm",
+       "text": "REAR"
+      },
+      {
+       "location": "LeftLeg",
+       "text": "LEFT SIDE"
+      },
+      {
+       "location": "RightLeg",
+       "text": "RIGHT SIDE"
+      },
+      {
+       "location": "Head",
+       "text": "ROTOR"
+      }
+     ]
+    }
+   },
+   {
+    "Tags": [
+     "fake_vehicle_chassis"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "FRONT"
+      },
+      {
+       "location": "RightArm",
+       "text": "REAR"
+      },
+      {
+       "location": "LeftLeg",
+       "text": "LEFT SIDE"
+      },
+      {
+       "location": "RightLeg",
+       "text": "RIGHT SIDE"
+      },
+      {
+       "location": "Head",
+       "text": "TURRET"
+      }
+     ]
+    }
+   }
+  ],
+  "MechLocationNamingTemplatesDescription": "If any of the listed tags are found, and the chassis has no ChassisLocationNaming component, add the associated ChassisLocationNaming component",
+  "MechTagsAutoFixEnabled": [
+   "unit_release"
+  ]
  },
  "ComponentExplosions": {
   "Enabled": true,
@@ -428,12 +498,8 @@
   "AllowMixingHeatSinkTypesDescription": "Allow heat sinks patchwork.",
   "AllowMountingAllRatings": false,
   "AllowMountingAllRatingsDescription": "Allow mounting all fusion core rating regardless of min/max sprint factors.",
-  "AutoConvertJumpCapacityInDefToStat": true,
-  "AutoConvertJumpCapacityInDefToStatDescription": "All JumpCapacity values in JumpJetDefs will be auto-converted to the JumpCapacity statistic.",
   "CBTWalkAndRunMPRounding": false,
   "CBTWalkAndRunMPRoundingDescription": "If true, walking MPs are rounded down and running MPs are rounded up.",
-  "DefaultEngineHeatSinkId": "Gear_HeatSink_Generic_Standard",
-  "DefaultEngineHeatSinkIdDescription": "Default heat sink type for engines without a kit.",
   "Enabled": true,
   "EnabledDescription": "Provides engines that can be installed on mechs similar to how CBT works.",
   "EnforceRulesForAdditionalInternalHeatSinks": true,
@@ -457,6 +523,8 @@
   "RunMultiplier": 1.5,
   "RunMultiplierDescription": "How much faster running is than walking."
  },
+ "GeneratedSettingsFilesReadonly": true,
+ "GeneratedSettingsFilesReadonlyDescription": "If true, generated last and default settings files are set to readonly, to indicate that those are not intended to be edited.",
  "Globals": {
   "Enabled": true,
   "EnabledDescription": "Allows tooltips and other features to access the current mech from context."
@@ -668,6 +736,10 @@
    }
   ]
  },
+ "HeatSinkCapacityStat": {
+  "Enabled": true,
+  "EnabledDescription": "Required by the engine feature to work. Disabled the mech.GetHeatSinkDissipation method."
+ },
  "InvalidInventory": {
   "Enabled": true,
   "EnabledDescription": "Make sure invalid mech configurations can't be saved in skirmish and can't be fielded in the campaign."
@@ -683,7 +755,8 @@
   "HideHelpButton": false,
   "MechLabArmTopPadding": 120,
   "MechLabGeneralSlots": 3,
-  "MechLabGeneralWidgetLabel": "General"
+  "MechLabGeneralWidgetLabel": "General",
+  "MechLabViewMechAnchorY": -20
  },
  "MoveMultiplierStat": {
   "Enabled": true,
@@ -692,6 +765,8 @@
  "OrderedStatusEffects": {
   "Enabled": true,
   "EnabledDescription": "Orders status effects, so e.g. install order of mechComponents does not matter for additive and multiplicative effects. Affects all statistic data.",
+  "FilterStatistics": null,
+  "FilterStatisticsDescription": "If set, only statistics listed by name will be reordered.",
   "Order": [
    "Int_Add",
    "Float_Add",
@@ -710,7 +785,12 @@
    "Float_Divide_Denom",
    "Float_Divide_Denom_Int"
   ],
-  "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemded unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'."
+  "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemed unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'.",
+  "OtherStatisticsRequired": [
+   "BaseInitiative",
+   "DamageLevel"
+  ],
+  "OtherStatisticsRequiredDescription": "One of the listed statistics is required to be in the same statCollection, otherwise no reordering occurs."
  },
  "OverrideDescriptions": {
   "BonusDescriptionsDescriptionTemplate": "Traits:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",

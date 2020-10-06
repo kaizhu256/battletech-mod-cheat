@@ -31,6 +31,19 @@
  },
  "AutoFixer": {
   "AutoFixWeaponDefSlotsChanges": [],
+  "AutoFixWeaponDefSplitting": true,
+  "AutoFixWeaponDefSplittingDynamicSlotTemplate": {
+   "BackgroundColor": null,
+   "BonusAText": "",
+   "BonusBText": "",
+   "InnerAdjacentOnly": true,
+   "NameText": null,
+   "ReservedSlots": 0,
+   "ShowFixedEquipmentOverlay": true,
+   "ShowIcon": true
+  },
+  "AutoFixWeaponDefSplittingFixedSize": 7,
+  "AutoFixWeaponDefSplittingLargerThan": 7,
   "ChassisDefInitialToTotalTonnageFactor": 0.1,
   "ChassisDefInitialTonnage": false,
   "ChassisDefMaxJumpjets": false,
@@ -52,6 +65,108 @@
   "MechDefEngine": true,
   "MechDefHeatBlockDef": "Gear_Engine_Heatsinks",
   "MechDefSkip": [],
+  "MechLocationNamingTemplates": [
+   {
+    "Tags": [
+     "PowerArmor"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "Trooper 3"
+      },
+      {
+       "location": "RightArm",
+       "text": "Trooper 4"
+      },
+      {
+       "location": "LeftLeg",
+       "text": ""
+      },
+      {
+       "location": "RightLeg",
+       "text": ""
+      },
+      {
+       "location": "CenterTorso",
+       "text": "Commander"
+      },
+      {
+       "location": "RightTorso",
+       "text": "Trooper 1"
+      },
+      {
+       "location": "LeftTorso",
+       "text": "Trooper 2"
+      },
+      {
+       "location": "Head",
+       "text": "Equipment"
+      }
+     ]
+    }
+   },
+   {
+    "Tags": [
+     "unit_vtol"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "FRONT"
+      },
+      {
+       "location": "RightArm",
+       "text": "REAR"
+      },
+      {
+       "location": "LeftLeg",
+       "text": "LEFT SIDE"
+      },
+      {
+       "location": "RightLeg",
+       "text": "RIGHT SIDE"
+      },
+      {
+       "location": "Head",
+       "text": "MOTIVE"
+      }
+     ]
+    }
+   },
+   {
+    "Tags": [
+     "fake_vehicle_chassis"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "FRONT"
+      },
+      {
+       "location": "RightArm",
+       "text": "REAR"
+      },
+      {
+       "location": "LeftLeg",
+       "text": "LEFT SIDE"
+      },
+      {
+       "location": "RightLeg",
+       "text": "RIGHT SIDE"
+      },
+      {
+       "location": "Head",
+       "text": "TURRET"
+      }
+     ]
+    }
+   }
+  ],
+  "MechTagsAutoFixEnabled": [],
   "UpgradeDefSkip": [
    "Gear_Cockpit_Generic_Small",
    "emod_arm_lower",
@@ -201,6 +316,8 @@
   "RunMultiplier": 1.5,
   "RunMultiplierDescription": "How much faster running is than walking."
  },
+ "GeneratedSettingsFilesReadonly": false,
+ "GeneratedSettingsFilesReadonlyDescription": "If true, generated last and default settings files are set to readonly, to indicate that those are not intended to be edited.",
  "Globals": {
   "Enabled": true,
   "EnabledDescription": "Allows tooltips and other features to access the current mech from context."

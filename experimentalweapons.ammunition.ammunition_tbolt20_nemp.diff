@@ -1,0 +1,305 @@
+--- ./roguemunitions.ammunition.ammunition_tbolt20_he.json	2020-08-24 20:32:30.477067700 -0500
++++ ./experimentalweapons.ammunition.ammunition_tbolt20_nemp.json	2020-08-24 20:32:23.560965200 -0500
+@@ -1,43 +1,282 @@
+ {
++ "AIBattleValue": 90,
+  "AOECapable": true,
+- "AOEDamage": 60,
+- "AOEInstability": 30,
+- "AOERange": 60,
+- "AccuracyModifier": -2,
+- "AdditionalImpactVFX": "WFX_ExplosiveSmokeL",
+- "AdditionalImpactVFXScaleX": 5,
+- "AdditionalImpactVFXScaleY": 5,
+- "AdditionalImpactVFXScaleZ": 5,
+- "AlwaysIndirectVisuals": true,
++ "AOEDamage": 1,
++ "AOEHeatDamage": 20,
++ "AOERange": 90,
++ "AdditionalImpactVFX": "WFX_Nuke",
++ "AdditionalImpactVFXScaleX": 1,
++ "AdditionalImpactVFXScaleY": 1,
++ "AdditionalImpactVFXScaleZ": 1,
+  "ArmorDamageModifier": 1,
+  "Category": "TBOLT20",
+- "ClearMineFieldRadius": 15,
+  "ColorChangeRule": "t0",
+  "ColorSpeedChange": 5,
+  "ColorsTable": [
+   {
+-   "C": "#A16BC6",
++   "C": "#DE6437",
+    "I": 5
+   }
+  ],
+  "CriticalDamageModifier": 1,
+- "DamageMultiplier": 0.4,
++ "DamagePerShot": -99,
+  "Description": {
+   "Cost": 0,
+-  "Details": "High Explosive warhead with AOE and minefield clearance, but low direct damage",
++  "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
+   "Icon": null,
+-  "Id": "Ammunition_TBOLT20_HE",
+-  "Name": "Thunderbolt 20 Ammo",
++  "Id": "Ammunition_TBOLT20_NEMP",
++  "Name": "Thunderbolt 20 NEMP Ammo",
+   "Purchasable": false,
+   "Rarity": 0,
+-  "UIName": "High Explosive"
++  "UIName": "NEMP"
+  },
+- "FireOnSuccessHit": true,
++ "FireTerrainChance": 0.1,
++ "HeatDamagePerShot": 50,
+  "HeatGenerated": 0,
+  "HeatGeneratedModifier": 1,
+  "ISDamageModifier": 1,
+- "MissileHealth": 12,
+- "ProjectileSpeedMultiplier": 0.9,
+  "Type": "Normal",
+- "statusEffects": []
++ "statusEffects": [
++  {
++   "Description": {
++    "Details": "This unit is coated with burning chemicals. Heatsink efficiency reduced by 20.",
++    "Icon": "uixSvgIcon_biome_Heated",
++    "Id": "Effect_Thermobolt",
++    "Name": "Thermobaric Explosion"
++   },
++   "durationData": {
++    "clearedWhenAttacked": false,
++    "duration": 2,
++    "stackLimit": -1,
++    "ticksOnActivations": true,
++    "ticksOnEndOfRound": false,
++    "ticksOnMovements": false,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "nature": "Debuff",
++   "statisticData": {
++    "modType": "System.Int32",
++    "modValue": "20",
++    "operation": "Int_Subtract",
++    "statName": "HeatSinkCapacity"
++   },
++   "targetingData": {
++    "effectTargetType": "NotSet",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 2,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": true,
++    "showInTargetPreview": true,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   }
++  },
++  {
++   "Description": {
++    "Details": "The Mech's Systems have been scrambled.",
++    "Icon": "uixSvgIcon_shipUpgrade_power2",
++    "Id": "TSEMP-Effect",
++    "Name": "TSEMP"
++   },
++   "actorBurningData": null,
++   "durationData": {
++    "clearedWhenAttacked": false,
++    "duration": 2,
++    "stackLimit": 6,
++    "ticksOnActivations": true,
++    "ticksOnEndOfRound": false,
++    "ticksOnMovements": false,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "floatieData": null,
++   "instantModData": null,
++   "nature": "Debuff",
++   "poorlyMaintainedEffectData": null,
++   "statisticData": {
++    "additionalRules": "NotSet",
++    "appliesEachTick": false,
++    "effectsPersistAfterDestruction": false,
++    "modType": "System.Single",
++    "modValue": "2.0",
++    "operation": "Float_Add",
++    "statName": "AccuracyModifier",
++    "targetAmmoCategory": "NotSet",
++    "targetCollection": "NotSet",
++    "targetWeaponCategory": "NotSet",
++    "targetWeaponSubType": "NotSet",
++    "targetWeaponType": "NotSet"
++   },
++   "tagData": null,
++   "targetingData": {
++    "effectTargetType": "NotSet",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 0,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": true,
++    "showInTargetPreview": false,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   },
++   "vfxData": null
++  },
++  {
++   "Description": {
++    "Details": "The Mech's Movement is reduced.",
++    "Icon": "uixSvgIcon_status_sensorsImpaired",
++    "Id": "TSEMP-Effect1",
++    "Name": "Walk Impaired"
++   },
++   "actorBurningData": null,
++   "durationData": {
++    "clearedWhenAttacked": false,
++    "duration": 2,
++    "stackLimit": 6,
++    "ticksOnActivations": true,
++    "ticksOnEndOfRound": false,
++    "ticksOnMovements": false,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "floatieData": null,
++   "instantModData": null,
++   "nature": "Debuff",
++   "poorlyMaintainedEffectData": null,
++   "statisticData": {
++    "additionalRules": "NotSet",
++    "appliesEachTick": false,
++    "effectsPersistAfterDestruction": false,
++    "modType": "System.Single",
++    "modValue": "0.6",
++    "operation": "Float_Multiply",
++    "statName": "WalkSpeed",
++    "targetAmmoCategory": "NotSet",
++    "targetCollection": "NotSet",
++    "targetWeaponCategory": "NotSet",
++    "targetWeaponSubType": "NotSet",
++    "targetWeaponType": "NotSet"
++   },
++   "tagData": null,
++   "targetingData": {
++    "effectTargetType": "NotSet",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 0,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": false,
++    "showInTargetPreview": false,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   },
++   "vfxData": null
++  },
++  {
++   "Description": {
++    "Details": "The Mech's Movement is reduced.",
++    "Icon": "uixSvgIcon_status_sensorsImpaired",
++    "Id": "TSEMP-Effect2",
++    "Name": "Move Impaired"
++   },
++   "actorBurningData": null,
++   "durationData": {
++    "clearedWhenAttacked": false,
++    "duration": 2,
++    "stackLimit": 6,
++    "ticksOnActivations": true,
++    "ticksOnEndOfRound": false,
++    "ticksOnMovements": false,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "floatieData": null,
++   "instantModData": null,
++   "nature": "Debuff",
++   "poorlyMaintainedEffectData": null,
++   "statisticData": {
++    "additionalRules": "NotSet",
++    "appliesEachTick": false,
++    "effectsPersistAfterDestruction": false,
++    "modType": "System.Single",
++    "modValue": "0.6",
++    "operation": "Float_Multiply",
++    "statName": "RunSpeed",
++    "targetAmmoCategory": "NotSet",
++    "targetCollection": "NotSet",
++    "targetWeaponCategory": "NotSet",
++    "targetWeaponSubType": "NotSet",
++    "targetWeaponType": "NotSet"
++   },
++   "tagData": null,
++   "targetingData": {
++    "effectTargetType": "NotSet",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 0,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": false,
++    "showInTargetPreview": false,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   },
++   "vfxData": null
++  },
++  {
++   "Description": {
++    "Details": "The Mech's cooling is impaired.",
++    "Icon": "uixSvgIcon_status_sensorsImpaired",
++    "Id": "TSEMP-Effect3",
++    "Name": "Cooling Impaired"
++   },
++   "actorBurningData": null,
++   "durationData": {
++    "clearedWhenAttacked": false,
++    "duration": 2,
++    "stackLimit": 6,
++    "ticksOnActivations": true,
++    "ticksOnEndOfRound": false,
++    "ticksOnMovements": false,
++    "useActivationsOfTarget": true
++   },
++   "effectType": "StatisticEffect",
++   "floatieData": null,
++   "instantModData": null,
++   "nature": "Debuff",
++   "poorlyMaintainedEffectData": null,
++   "statisticData": {
++    "additionalRules": "NotSet",
++    "appliesEachTick": false,
++    "effectsPersistAfterDestruction": false,
++    "modType": "System.Single",
++    "modValue": "1.5",
++    "operation": "Float_Multiply",
++    "statName": "HeatGenerated",
++    "targetAmmoCategory": "NotSet",
++    "targetCollection": "Weapon",
++    "targetWeaponCategory": "NotSet",
++    "targetWeaponSubType": "NotSet",
++    "targetWeaponType": "NotSet"
++   },
++   "tagData": null,
++   "targetingData": {
++    "effectTargetType": "SingleTarget",
++    "effectTriggerType": "OnHit",
++    "extendDurationOnTrigger": 0,
++    "forcePathRebuild": false,
++    "forceVisRebuild": false,
++    "range": 0,
++    "showInStatusPanel": false,
++    "showInTargetPreview": false,
++    "specialRules": "NotSet",
++    "triggerLimit": 0
++   },
++   "vfxData": null
++  }
++ ]
+ }

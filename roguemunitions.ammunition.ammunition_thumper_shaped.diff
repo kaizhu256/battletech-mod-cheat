@@ -1,0 +1,45 @@
+--- .json/roguemunitions.ammunition.ammunition_thumper.json	2020-09-07 19:30:56.221745200 -0500
++++ .json/roguemunitions.ammunition.ammunition_thumper_shaped.json	2020-09-07 19:30:56.221745200 -0500
+@@ -1,33 +1,27 @@
+ {
+- "AOECapable": true,
+- "AOEDamage": 75,
+- "AOEInstability": 32,
+- "AOERange": 45,
++ "AccuracyModifier": -1,
+  "AdditionalImpactVFX": "WFX_ExplosiveSmokeS",
+- "AdditionalImpactVFXScaleX": 2,
+- "AdditionalImpactVFXScaleY": 2,
+- "AdditionalImpactVFXScaleZ": 2,
++ "AdditionalImpactVFXScaleX": 1,
++ "AdditionalImpactVFXScaleY": 1,
++ "AdditionalImpactVFXScaleZ": 1,
+  "ArmorDamageModifier": 1,
+  "Category": "Thumper",
+- "ChassisTagsAccuracyModifiers": {
+-  "unit_vtol": -50
+- },
+- "ClearMineFieldRadius": 15,
++ "CriticalChanceMultiplier": 1,
+  "CriticalDamageModifier": 1,
+- "DamageMultiplier": 0.2,
+  "Description": {
+   "Cost": 0,
+   "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
+   "Icon": null,
+-  "Id": "Ammunition_Thumper",
++  "Id": "Ammunition_Thumper_Shaped",
+   "Name": "Thumper Ammo",
+   "Purchasable": false,
+   "Rarity": 0,
+-  "UIName": "HE"
++  "UIName": "SC"
+  },
++ "DirectFireModifier": 0,
++ "EvasivePipsIgnored": 0,
+  "HeatGenerated": 0,
+  "HeatGeneratedModifier": 1,
+- "HideIfOnlyVariant": true,
+  "ISDamageModifier": 1,
+  "Type": "Normal"
+ }

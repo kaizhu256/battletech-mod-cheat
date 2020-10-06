@@ -37,10 +37,10 @@
    "statusEffects": [
     {
      "Description": {
-      "Details": "Increases spotting distance.",
+      "Details": "Increases sensor distance",
       "Icon": "uixSvgIcon_equipment_Cockpit",
       "Id": "AdvZoom-Spotting_Gain",
-      "Name": "SPOTTING DISTANCE INCREASED"
+      "Name": "SENSOR DISTANCE INCREASED"
      },
      "durationData": {
       "duration": 2,
@@ -50,7 +50,7 @@
      "nature": "Buff",
      "statisticData": {
       "modType": "System.Single",
-      "modValue": "1.2",
+      "modValue": "1.5",
       "operation": "Float_Multiply",
       "statName": "SensorDistanceAbsolute"
      },
@@ -76,7 +76,7 @@
      "nature": "Buff",
      "statisticData": {
       "modType": "System.Single",
-      "modValue": "1.2",
+      "modValue": "1.5",
       "operation": "Float_Multiply",
       "statName": "SpotterDistanceAbsolute"
      },
@@ -96,8 +96,8 @@
     "Activatable",
     "ActivatableUses: 3",
     "ActivatableDuration: 2",
-    "ActiveSensors: 20%",
-    "ActiveSight: 20%"
+    "ActiveSensors: 50%",
+    "ActiveSight: 50%"
    ]
   },
   "Category": [
